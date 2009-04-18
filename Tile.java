@@ -1,3 +1,4 @@
+import java.awt.*;
 
 //one square on a map
 class Tile {
