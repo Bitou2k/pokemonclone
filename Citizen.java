@@ -1,0 +1,3 @@
+
+class Citizen extends Entity {
+}
