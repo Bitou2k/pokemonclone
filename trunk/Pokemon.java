@@ -1,4 +1,6 @@
 
+import java.util.*;
+
 //a pokemon owned by the player or a rival trainer, or a prototype for generating a wild pokemon/evolving a pokemon
 class Pokemon {
 	String name;
@@ -12,7 +14,7 @@ class Pokemon {
 	int currentAttack, currentDefence, currentSpeed, currentSpecial; //the ones that may be lowered in battle
 	int attack, defence, speed, special; //the base stat
 	List<Move> moves; //up to 4
-	Map<int,Move> futureMoves; //level learned -> move
-	Map<int,Pokemon> futureEvolves; //level -> pokemon prototype
+	Map<Integer,Move> futureMoves; //level learned -> move
+	Map<Integer,Pokemon> futureEvolves; //level -> pokemon prototype
 	
 }

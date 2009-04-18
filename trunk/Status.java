@@ -1,5 +1,5 @@
 
-enum Status = {
+enum Status {
 	NORMAL,
 	POSIONED,
 	BURNED,

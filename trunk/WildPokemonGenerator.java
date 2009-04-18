@@ -1,5 +1,7 @@
 
+import java.util.*;
+
 class WildPokemonGenerator {
 
-	Map<Pokemon,double> pairs; //pokemon prototype->probobility
+	Map<Pokemon,Double> pairs; //pokemon prototype->probobility
 }
