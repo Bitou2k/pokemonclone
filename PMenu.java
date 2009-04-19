@@ -4,7 +4,7 @@ import java.util.*;
 
 //this would be easier if Java had closures.....
 
-class PMenu extends ScreenOwner {
+class PMenu extends Presenter {
 
 
 	static PMenu createStartMenu(){
