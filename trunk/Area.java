@@ -3,7 +3,7 @@ import java.awt.*;
 import java.util.*;
 
 //the area or map that is a grid of Tiles
-class Area extends ScreenOwner {
+class Area extends Presenter {
 
 	java.util.List<Tile> tiles;
 	java.util.List<Entity> entities;

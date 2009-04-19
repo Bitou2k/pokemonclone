@@ -10,7 +10,7 @@ class PokemonGame extends JFrame implements KeyListener {
 	private java.util.List<Area> areas; 
 	
 	//the current area, battle, or menu that is the root to be displayed and receive key events
-	private ScreenOwner currentScreenOwner = PMenu.createStartMenu(); 
+	private Presenter currentPresenter = PMenu.createStartMenu(); 
 	
 	//the player
 	private Player ash;
@@ -27,7 +27,9 @@ class PokemonGame extends JFrame implements KeyListener {
 	}
 	
 	public void paint(Graphics g){
-		currentScreenOwner.drawOn((Graphics2D)g);
+		g.setColor(Color.GRAY);
+		g.fillRect(0,0,320,240);
+		currentPresenter.drawOn((Graphics2D)g);
 	}
 	
 	public void keyPressed(KeyEvent e){
@@ -37,7 +39,7 @@ class PokemonGame extends JFrame implements KeyListener {
 		if(n==KeyEvent.VK_LEFT) c='A';
 		if(n==KeyEvent.VK_DOWN) c='S';
 		if(n==KeyEvent.VK_RIGHT) c='D';
-		currentScreenOwner.keyPressed(c);
+		currentPresenter.keyPressed(c);
 	}
 	
 	public void keyReleased(KeyEvent e){}

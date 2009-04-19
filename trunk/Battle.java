@@ -1,6 +1,6 @@
 import java.awt.*;
 
-class Battle extends ScreenOwner {
+class Battle extends Presenter {
 
 	Battler ash;
 	Battler enemy;

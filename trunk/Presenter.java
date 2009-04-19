@@ -2,7 +2,8 @@
 import java.awt.*;
 
 //an area, battle, or menu that is the root to be displayed and receive key events
-abstract class ScreenOwner {
+//screenowner has been renamed presenter in honor of Hopscotch
+abstract class Presenter {
 	
 	Game game; //the game i'm in
 	
