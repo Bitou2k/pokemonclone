@@ -5,7 +5,11 @@ import java.awt.*;
 //screenowner has been renamed presenter in honor of Hopscotch
 abstract class Presenter {
 	
-	Game game; //the game i'm in
+	PokemonGame shell; //the shell i'm in
+	
+	public void setShell(PokemonGame shell){
+		this.shell=shell;
+	}
 	
 	abstract void drawOn(Graphics2D g);
 	abstract void keyPressed(char key);
