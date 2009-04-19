@@ -24,6 +24,13 @@ class PMenu extends Presenter {
 	
 	void drawOn(Graphics2D g){
 		
+		g.setColor(Color.WHITE);
+		g.fillRect(0,0,320,choices.size()*10);
+		
+		g.setColor(Color.BLACK);
+		for(int i=0; i<choices.size(); i++){
+			g.drawString(choices.get(i),0,i*10+10);
+		}
 	}
 	
 	void keyPressed(char key){}

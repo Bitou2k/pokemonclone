@@ -10,7 +10,7 @@ class PokemonGame extends JFrame implements KeyListener {
 	private java.util.List<Area> areas; 
 	
 	//the current area, battle, or menu that is the root to be displayed and receive key events
-	private Presenter currentPresenter = PMenu.createStartMenu(); 
+	private Presenter currentPresenter;
 	
 	//the player
 	private Player ash;
@@ -24,9 +24,18 @@ class PokemonGame extends JFrame implements KeyListener {
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setSize(320,240);
 		setVisible(true);
+		
+		enterPresenter(PMenu.createStartMenu());
 	}
 	
-	public void paint(Graphics g){
+	public void enterPresenter(Presenter p){
+		currentPresenter = p;
+		p.setShell(this);
+		repaint();
+	}
+	
+	public synchronized void paint(Graphics g){
+		g.translate(4,30); //origin as the visible part, not the corner hidden under the title bar
 		g.setColor(Color.GRAY);
 		g.fillRect(0,0,320,240);
 		currentPresenter.drawOn((Graphics2D)g);
