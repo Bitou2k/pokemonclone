@@ -1,3 +1,78 @@
+<note>pokemon should be added in reverse order so the forward references of evolution don't point to as-yet-unloaded pokemon</note>
+
+
+
+<pokemon>
+	<number>5</number>
+	<name>Charmeleon</name>
+	<description>When it swings its burning tail, it elevates the temperature to unbearably high levels</description>
+	<image>icon005.gif</image>
+	<type>Fire</type>
+	<type2></type2>
+	<hp>58</hp>
+	<attack>64</attack>
+	<defense>58</defense>
+	<sp atk>80</sp atk>
+	<sp def>65</sp def>
+	<speed>80</speed>
+	<evolution>
+		<level>32</level>
+		<target>Charizard</target>
+	</evolution>
+</pokemon>
+
+<pokemon>
+	<number>4</number>
+	<name>Charmander</name>
+	<description>Obviously prefers hot places. When it rains, steam is said to spout from the tip of its tail.</description>
+	<image>icon004.gif</image>
+	<type>Fire</type>
+	<type2></type2>
+	<hp>39</hp>
+	<attack>52</attack>
+	<defense>43</defense>
+	<sp atk>60</sp atk>
+	<sp def>50</sp def>
+	<speed>65</speed>
+	<evolution>
+		<level>16</level>
+		<target>Charmeleon</target>
+	</evolution>
+</pokemon>
+
+<pokemon>
+	<number>3</number>
+	<name>Venusaur</name>
+	<image>icon003.gif</image>
+	<description>The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.</description>
+	<type>Grass</type>
+	<type2>Poison</type2>
+	<hp>80</hp>
+	<attack>82</attack>
+	<defense>83</defense>
+	<sp atk>100</sp atk>
+	<sp def>100</sp def>
+	<speed>80</speed>
+</pokemon>
+
+<pokemon>
+	<number>2</number>
+	<name>Ivysaur</name>
+	<image>icon002.gif</image>
+	<description>When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.</description>
+	<type>Grass</type>
+	<type2>Poison</type2>
+	<hp>60</hp>
+	<attack>62</attack>
+	<defense>63</defense>
+	<sp atk>80</sp atk>
+	<sp def>80</sp def>
+	<speed>80</speed>
+	<evolution>
+		<level>32</level>
+		<target>Venusaur</target>
+	</evolution>
+</pokemon>
 <pokemon>
 	<number>1</number>
 	<name>Bulbasaur</name>
@@ -47,54 +122,4 @@
 	</HMs>
 	<TMs>
 	</TMs>
-</pokemon>
-<pokemon>
-	<number>2</number>
-	<name>Ivysaur</name>
-	<image>icon002.gif</image>
-	<description>When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.</description>
-	<type>Grass</type>
-	<type2>Poison</type2>
-	<hp>60</hp>
-	<attack>62</attack>
-	<defense>63</defense>
-	<sp atk>80</sp atk>
-	<sp def>80</sp def>
-	<speed>80</speed>
-	<evolution>
-		<level>32</level>
-		<target>Venusaur</target>
-	</evolution>
-</pokemon>
-<pokemon>
-	<number>3</number>
-	<name>Venusaur</name>
-	<image>icon003.gif</image>
-	<description>The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.</description>
-	<type>Grass</type>
-	<type2>Poison</type2>
-	<hp>80</hp>
-	<attack>82</attack>
-	<defense>83</defense>
-	<sp atk>100</sp atk>
-	<sp def>100</sp def>
-	<speed>80</speed>
-</pokemon>
-<pokemon>
-	<number>4</number>
-	<name>Charmander</name>
-	<description>Obviously prefers hot places. When it rains, steam is said to spout from the tip of its tail.</description>
-	<image>icon004.gif</image>
-	<type>Fire</type>
-	<type2></type2>
-	<hp>39</hp>
-	<attack>52</attack>
-	<defense>43</defense>
-	<sp atk>60</sp atk>
-	<sp def>50</sp def>
-	<speed>65</speed>
-	<evolution>
-		<level>16</level>
-		<target>Charmeleon</target>
-	</evolution>
 </pokemon>
