@@ -1,0 +1,97 @@
+<pokemon>
+	<number>1</number>
+	<name>Bulbasaur</name>
+	<image>icon001.gif</image>
+	<description>A strange seed was planted on its back at birth. The plant sprouts and grows with this POKÈMON.</description>
+	<type>Grass</type>
+	<type2>Poison</type2>
+	<hp>45</hp>
+	<attack>49</attack>
+	<defense>49</defense>
+	<sp atk>65</sp atk>
+	<sp def>65</sp def>
+	<speed>45</speed>
+	<evolution>
+		<level>16</level>
+		<target>Ivysaur</target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Tackle</name>
+		</move>
+		<move>
+			<level>3</level>
+			<name>Growl</name>
+		</move>
+		<move>
+			<level>7</level>
+			<name>Leech Seed</name>
+		</move>
+		<move>
+			<level>9</level>
+			<name>Vine Whip</name>
+		</move>
+		<move>
+			<level>13</level>
+			<name>Poisonpowder</name>
+		</move>
+		<move>
+			<level>19</level>
+			<name>Razor Leaf</name>
+		</move>
+	</moves>
+	<HMs>
+		<HM>Cut</HM>
+		<HM>Strength</HM>
+	</HMs>
+	<TMs>
+	</TMs>
+</pokemon>
+<pokemon>
+	<number>2</number>
+	<name>Ivysaur</name>
+	<image>icon002.gif</image>
+	<description>When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.</description>
+	<type>Grass</type>
+	<type2>Poison</type2>
+	<hp>60</hp>
+	<attack>62</attack>
+	<defense>63</defense>
+	<sp atk>80</sp atk>
+	<sp def>80</sp def>
+	<speed>80</speed>
+	<evolution>
+		<level>32</level>
+		<target>Venusaur</target>
+	</evolution>
+</pokemon>
+<pokemon>
+	<number>3</number>
+	<name>Venusaur</name>
+	<image>icon003.gif</image>
+	<description>The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.</description>
+	<type>Grass</type>
+	<type2>Poison</type2>
+	<hp>80</hp>
+	<attack>82</attack>
+	<defense>83</defense>
+	<sp atk>100</sp atk>
+	<sp def>100</sp def>
+	<speed>80</speed>
+</pokemon>
+
+<pokemon>
+	<number>0</number>
+	<name></name>
+	<description></description>
+	<image></image>
+	<type></type>
+	<type2></type2>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<sp atk></sp atk>
+	<sp def></sp def>
+	<speed></speed>
+</pokemon>

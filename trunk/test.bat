@@ -1,0 +1,2 @@
+java PokemonGame
+pause
