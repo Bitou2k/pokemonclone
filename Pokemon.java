@@ -27,17 +27,21 @@ class Pokemon {
 		try{
 			Node root = Node.documentRootFrom("pokemon.nml");
 			
-			for(Node pokemonN : root.childrenNamed("pokemon")){
-				Pokemon p = new Pokemon();
-				p.pokedexNumber = new Integer(pokemonN.contentOf("number"));
-				p.name = pokemonN.contentOf("name");
-				p.image = new ImageIcon("./icons/"+pokemonN.contentOf("image"));
-				p.description = pokemonN.contentOf("description");
+			for(Node n : root.subnodes("pokemon")){
 				
-				prototypes.add(p);
+				prototypes.add( Pokemon.fromNode(n) );
 			}
 			
 		}catch(Exception e){e.printStackTrace();}
+	}
+	
+	static Pokemon fromNode(Node n){
+		Pokemon p = new Pokemon();
+		p.pokedexNumber = new Integer(n.contentOf("number"));
+		p.name = n.contentOf("name");
+		p.image = new ImageIcon("./icons/"+n.contentOf("image"));
+		p.description = n.contentOf("description");
+		return p;		
 	}
 	
 }

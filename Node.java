@@ -3,17 +3,12 @@ import java.io.*;
 import java.util.*;
 
 //  like xml without attributes, namespace, or the <thisisanopenedandclosedtag/> shortcut
-//
-//  <anodesname>nodecontent<achildnode>childcontent</achildnode>morefirstnodecontent</anodesname>
-//
+//  node names are case-insenstive
+//  a stanza is a top level node of a document
 //
 public class Node
 {
-	private String name="";
-	private String content="";
-	private List<Node> children = new ArrayList<Node>();
-	private Node parent=null;
-	
+
 	public Node(){}
 	public Node(String name){
 		this.name=name;
@@ -22,64 +17,48 @@ public class Node
 		this.name=name;
 		this.content=content;
 	}
-	public Node(Node parent){
-		this.parent = parent;
+	public Node(Node supernode){
+		this.supernode = supernode;
 	}
 	
-	public String name(){
-		return name;
-	}
-	public void name(String x){
-		name=x;
-	}
+	public String name(){return name;}
+	public void name(String x) {name=x;}
 	
-	public String content(){
-		return content;
-	}
-	public void content(String x){
-		content = x;
-	}
-	private void appendContent(String c){
-		content += c;
-	}
+	public String content() {return content;}
+	public void content(String x) {content = x;}
 	
-	public List<Node> children(){
-		return children;
+	public List<Node> subnodes() {return subnodes;}
+	public Node addSubnode(String name,String contents){
+		return addSubnode(new Node(name,contents));
 	}
-	public Node addChild(String name,String contents){
-		return addChild(new Node(name,contents));
-	}
-	public Node addChild(Node n){
-		children.add(n);
-		n.parent = this;
+	public Node addSubnode(Node n){
+		subnodes.add(n);
+		n.supernode = this;
 		return n;
 	}
-	public Node childNamed(String name){
-		for(Node n:children){
-			if(n.name.equalsIgnoreCase(name)) return n;
+	public Node subnode(String subnodeName){
+		for(Node n:subnodes){
+			if(n.name.equalsIgnoreCase(subnodeName)) return n;
 		}
 		return null;
 	}
-	public List<Node> childrenNamed(String name){
+	public List<Node> subnodes(String subnodeName){
 		List<Node> matches = new ArrayList<Node>();
-		for(Node n:children){
-			if(n.name.equalsIgnoreCase(name)) matches.add(n);
+		for(Node n:subnodes){
+			if(n.name.equalsIgnoreCase(subnodeName)) matches.add(n);
 		}
 		return matches;
 	}
-	public String contentOf(String childName){
-		return childNamed(childName).content();
+	public String contentOf(String subnodeName){
+		Node n = subnode(subnodeName);
+		if(n!=null) return n.content();
+		return "";
 	}
-	
-	private Node parent()	{
-		return parent;
-	}
-	
 	
 	public String encoded(){
 		String x="";
 		x+="<"+encode(name)+">"+encode(content);
-		for(Node n: children) x+= n.encoded();
+		for(Node n: subnodes) x+= n.encoded();
 		x+="</"+encode(name)+">";
 		return x;
 	}
@@ -97,25 +76,16 @@ public class Node
 		}
 	}
 	
-	public String toString() {
-		String x="";
-		x+=name+"(c="+content+")(p="+(parent==null?"null":parent.name)+")\n";
-		for(Node n: children) x+= "\t"+n.toString()+"";
-		return x;
-	}
-	
-	
 	//return a node containing all stanzas as children
 	public static Node documentRootFrom(String filename) throws IOException
 	{
 		InputStream is = new FileInputStream(filename);
 		Node root = new Node(filename);
-		for(Node n: parseAllFrom(is))
-			root.addChild(n);
+		for(Node n: parseAllFrom(is)) root.addSubnode(n);
 		return root;
 	}
 	
-	//parse and return all stanzas from the stream, an empty collection is failure before any parsed
+	//parse and return all stanzas from the stream, an empty collection if failure before any parsed
 	public static List<Node> parseAllFrom(InputStream is)
 	{
 		ArrayList<Node> nodes = new ArrayList<Node>();
@@ -152,11 +122,11 @@ public class Node
 				name = name.substring(1);
 				if(name.equalsIgnoreCase(top.name()))
 				{
-					Node parent = top.parent();
-					if(parent==null) //root node
+					Node supernode = top.supernode;
+					if(supernode==null) //root node
 						return top;
 					else
-						top = parent;
+						top = supernode;
 				}
 				else
 				{
@@ -167,11 +137,31 @@ public class Node
 			else
 			{
 				//an open tag
-				Node child = new Node(name);
-				top.addChild(child);
-				top = child;
+				top = top.addSubnode(name,"");
 			}
 		}
+	}
+	
+	
+		/////////////////////////PRIVATE
+	private String name="";
+	private String content="";
+	private List<Node> subnodes = new ArrayList<Node>(); //or children
+	private Node supernode = null; //or parent
+	
+	private void appendContent(String c){
+		content += c;
+	}
+	private Node supernode() {
+		return supernode;
+	}
+	
+	//for debugging
+	public String toString() {
+		String x="";
+		x+=name+"(c="+content+")(p="+(supernode==null?"null":supernode.name)+")\n";
+		for(Node n: subnodes) x+= "\t"+n.toString()+"";
+		return x;
 	}
 	
 	//Smalltalk provides a better version of this by default

@@ -19,6 +19,6 @@ class StartScreen extends Presenter {
 	void keyPressed(char key){}
 	synchronized void step(){
 		current++;
-		if(current> Pokemon.prototypes.size()) current=0;
+		if(current>=Pokemon.prototypes.size()) current=0;
 	}
 }
