@@ -1,5 +1,138 @@
 <note>pokemon should be added in reverse order so the forward references of evolution don't point to as-yet-unloaded pokemon</note>
 
+
+<pokemon>
+	<number>16</number>
+	<name>Pidgey</name>
+	<description>A common sight in forests and woods. It flaps its wings at ground level to kick up blinding sand.</description>
+	<image>icon016.gif</image>
+	<type>Normal</type>
+	<type2>Flying</type2>
+	<species>Tiny Bird</species>
+	<hp>40</hp>
+	<attack>45</attack>
+	<defense>40</defense>
+	<sp atk>35</sp atk>
+	<sp def>35</sp def>
+	<speed>56</speed>
+	<evolution>
+		<level>18</level>
+		<target>Pidgeotto</target>
+	</evolution>
+</pokemon>
+
+<pokemon>
+	<number>15</number>
+	<name>Beedrill</name>
+	<description>Flies at high speed and attacks using its large venomous stingers on its forelegs and tail.</description>
+	<image>icon015.gif</image>
+	<type>Bug</type>
+	<type2>Poison</type2>
+	<species>Poison Bee</species>
+	<hp>65</hp>
+	<attack>80</attack>
+	<defense>40</defense>
+	<sp atk>45</sp atk>
+	<sp def>80</sp def>
+	<speed>75</speed>
+</pokemon>
+
+<pokemon>
+	<number>14</number>
+	<name>Kakuna</name>
+	<description>Almost incapable of moving, this POKÈMON can only harden its shell to protect itself from predators.</description>
+	<image>icon014.gif</image>
+	<type>Bug</type>
+	<type2>Poison</type2>
+	<species>Cocoon</species>
+	<hp>45</hp>
+	<attack>25</attack>
+	<defense>50</defense>
+	<sp atk>25</sp atk>
+	<sp def>25</sp def>
+	<speed>35</speed>
+	<evolution>
+		<level>10</level>
+		<target>Beedrill</target>
+	</evolution>
+</pokemon>
+
+<pokemon>
+	<number>13</number>
+	<name>Weedle</name>
+	<description>Often found in forests, eating leaves. It has a sharp venomous stinger on its head.</description>
+	<image>icon013.gif</image>
+	<type>Bug</type>
+	<type2>Poison</type2>
+	<species>Hairy Bug</species>
+	<hp>40</hp>
+	<attack>35</attack>
+	<defense>30</defense>
+	<sp atk>20</sp atk>
+	<sp def>20</sp def>
+	<speed>50</speed>
+	<evolution>
+		<level>7</level>
+		<target>Kakuna</target>
+	</evolution>
+</pokemon>
+
+<pokemon>
+	<number>12</number>
+	<name>Butterfree</name>
+	<description>In battle, it flaps its wings at high speed to release highly toxic dust into the air.</description>
+	<image>icon012.gif</image>
+	<type>Bug</type>
+	<type2>Flying</type2>
+	<species>Butterfly</species>
+	<hp>60</hp>
+	<attack>45</attack>
+	<defense>50</defense>
+	<sp atk>80</sp atk>
+	<sp def>80</sp def>
+	<speed>70</speed>
+</pokemon>
+
+<pokemon>
+	<number>11</number>
+	<name>Metapod</name>
+	<description>This POKÈMON is vulnerable to attack while its shell is soft, exposing its weak and tender body.</description>
+	<image>icon011.gif</image>
+	<type>Bug</type>
+	<type2></type2>
+	<species>Cocoon</species>
+	<hp>50</hp>
+	<attack>20</attack>
+	<defense>55</defense>
+	<sp atk>25</sp atk>
+	<sp def>25</sp def>
+	<speed>30</speed>
+	<evolution>
+		<level>10</level>
+		<target>Butterfree</target>
+	</evolution>
+</pokemon>
+
+<pokemon>
+	<number>10</number>
+	<name>Caterpie</name>
+	<description>Its short feet are tipped with suction pads that enable it to tirelessly climb slopes and walls.</description>
+	<image>icon010.gif</image>
+	<type>Bug</type>
+	<type2></type2>
+	<species>Worm</species>
+	<hp>45</hp>
+	<attack>30</attack>
+	<defense>35</defense>
+	<sp atk>20</sp atk>
+	<sp def>20</sp def>
+	<speed>45</speed>
+	<evolution>
+		<level>7</level>
+		<target>Metapod</target>
+	</evolution>
+</pokemon>
+
 <pokemon>
 	<number>9</number>
 	<name>Blastoise</name>
