@@ -1,6 +1,72 @@
 <note>pokemon should be added in reverse order so the forward references of evolution don't point to as-yet-unloaded pokemon</note>
 
+<pokemon>
+	<number>9</number>
+	<name>Blastoise</name>
+	<description>A brutal POKÈMON with pressurized water jets on its shell. They are used for high speed tackles.</description>
+	<image>icon009.gif</image>
+	<type>Water</type>
+	<type2></type2>
+	<hp>79</hp>
+	<attack>83</attack>
+	<defense>100</defense>
+	<sp atk>85</sp atk>
+	<sp def>105</sp def>
+	<speed>78</speed>
+</pokemon>
 
+<pokemon>
+	<number>8</number>
+	<name>Wartortle</name>
+	<description>Often hides in water to stalk unwary prey. For swimming fast, it moves its ears to maintain balance.</description>
+	<image>icon008.gif</image>
+	<type>Water</type>
+	<type2></type2>
+	<hp>59</hp>
+	<attack>63</attack>
+	<defense>80</defense>
+	<sp atk>65</sp atk>
+	<sp def>80</sp def>
+	<speed>58</speed>
+	<evolution>
+		<level>36</level>
+		<target>Blastoise</target>
+	</evolution>
+</pokemon>
+
+<pokemon>
+	<number>7</number>
+	<name>Squirtle</name>
+	<description>After birth, its back swells and hardens into a shell. Powerfully sprays foam from its mouth.</description>
+	<image>icon007.gif</image>
+	<type>Water</type>
+	<type2></type2>
+	<hp>44</hp>
+	<attack>48</attack>
+	<defense>65</defense>
+	<sp atk>50</sp atk>
+	<sp def>64</sp def>
+	<speed>43</speed>
+	<evolution>
+		<level>16</level>
+		<target>Wartortle</target>
+	</evolution>
+</pokemon>
+
+<pokemon>
+	<number>6</number>
+	<name>Charizard</name>
+	<description>Spits fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.</description>
+	<image>icon006.gif</image>
+	<type>Fire</type>
+	<type2>Flying</type2>
+	<hp>78</hp>
+	<attack>84</attack>
+	<defense>78</defense>
+	<sp atk>109</sp atk>
+	<sp def>85</sp def>
+	<speed>100</speed>
+</pokemon>
 
 <pokemon>
 	<number>5</number>
@@ -16,7 +82,7 @@
 	<sp def>65</sp def>
 	<speed>80</speed>
 	<evolution>
-		<level>32</level>
+		<level>36</level>
 		<target>Charizard</target>
 	</evolution>
 </pokemon>
