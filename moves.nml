@@ -1,4 +1,7 @@
-<note>pokemon should be added in reverse order so the forward references of evolution don't point to as-yet-unloaded pokemon</note>
+<note>
+data from
+http://bulbapedia.bulbagarden.net/wiki/List_of_moves
+</note>
 
 <move>
 	<name>Acid</name>
