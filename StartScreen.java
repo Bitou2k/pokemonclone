@@ -13,11 +13,11 @@ class StartScreen extends Presenter {
 		g.fillRect(0,0,320,240);
 		
 		Pokemon p = Pokemon.prototypes.get(current);
-		p.image.paintIcon(null,g,50,50);
+		p.image.paintIcon(null,g,0,0);
 		g.setColor(Color.BLACK);
-		g.drawString(""+p.pokedexNumber,90,50);
-		g.drawString(p.name,90,60);
-		g.drawString(p.description,90,70);
+		g.drawString(""+p.pokedexNumber,0,50);
+		g.drawString(p.name,0,60);
+		g.drawString(p.description,0,70);
 	}
 	
 	void keyPressed(char key){}
