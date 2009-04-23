@@ -1,5 +1,74 @@
 <note>pokemon should be added in reverse order so the forward references of evolution don't point to as-yet-unloaded pokemon</note>
 
+<pokemon>
+	<number>20</number>
+	<name>Raticate</name>
+	<description>It uses its whiskers to maintain its balance. It apparently slows down if they are cut off.</description>
+	<image>icon020.gif</image>
+	<type>Normal</type>
+	<type2></type2>
+	<species>Mouse</species>
+	<hp>55</hp>
+	<attack>81</attack>
+	<defense>60</defense>
+	<sp atk>60</sp atk>
+	<sp def>70</sp def>
+	<speed>97</speed>
+</pokemon>
+<pokemon>
+	<number>19</number>
+	<name>Rattata</name>
+	<description>Bites anything when it attacks. Small and very quick, it is a common sight in many places.</description>
+	<image>icon019.gif</image>
+	<type>Normal</type>
+	<type2></type2>
+	<species>Mouse</species>
+	<hp>30</hp>
+	<attack>56</attack>
+	<defense>35</defense>
+	<sp atk>25</sp atk>
+	<sp def>35</sp def>
+	<speed>72</speed>
+	<evolution>
+		<level>20</level>
+		<target>Raticate</target>
+	</evolution>
+</pokemon>
+<pokemon>
+	<number>18</number>
+	<name>Pidgeot</name>
+	<description>When hunting, it skims the surface of water at high speed to pick off unwary prey such as MAGIKARP.</description>
+	<image>icon018.gif</image>
+	<type>Normal</type>
+	<type2>Flying</type2>
+	<species>Bird</species>
+	<hp>83</hp>
+	<attack>80</attack>
+	<defense>75</defense>
+	<sp atk>70</sp atk>
+	<sp def>70</sp def>
+	<speed>91</speed>
+</pokemon>
+
+<pokemon>
+	<number>17</number>
+	<name>Pidgeotto</name>
+	<description>Very protective of its sprawling territorial area, this POKÈMON will fiercely peck at any intruder.</description>
+	<image>icon017.gif</image>
+	<type>Normal</type>
+	<type2>Flying</type2>
+	<species>Bird</species>
+	<hp>63</hp>
+	<attack>60</attack>
+	<defense>55</defense>
+	<sp atk>50</sp atk>
+	<sp def>59</sp def>
+	<speed>71</speed>
+	<evolution>
+		<level>36</level>
+		<target>Pidgeot</target>
+	</evolution>
+</pokemon>
 
 <pokemon>
 	<number>16</number>
@@ -20,7 +89,6 @@
 		<target>Pidgeotto</target>
 	</evolution>
 </pokemon>
-
 <pokemon>
 	<number>15</number>
 	<name>Beedrill</name>
