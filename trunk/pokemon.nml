@@ -1,5 +1,79 @@
 <note>pokemon should be added in reverse order so the forward references of evolution don't point to as-yet-unloaded pokemon</note>
 
+
+<pokemon>
+	<number>24</number>
+	<name>Arbok</name>
+	<description>It is rumored that the ferocious warning markings on its belly differ from area to area.</description>
+	<image>icon024.gif</image>
+	<type>Poison</type>
+	<type2></type2>
+	<species>Cobra</species>
+	<hp>60</hp>
+	<attack>85</attack>
+	<defense>69</defense>
+	<sp atk>65</sp atk>
+	<sp def>79</sp def>
+	<speed>80</speed>
+</pokemon>
+
+<pokemon>
+	<number>23</number>
+	<name>Ekans</name>
+	<description>Moves silently and stealthily. Eats the eggs of birds, such as PIDGEY and SPEAROW, whole.</description>
+	<image>icon023.gif</image>
+	<type>Poison</type>
+	<type2></type2>
+	<species>Snake</species>
+	<hp>35</hp>
+	<attack>60</attack>
+	<defense>44</defense>
+	<sp atk>40</sp atk>
+	<sp def>54</sp def>
+	<speed>55</speed>
+	<evolution>
+		<level>22</level>
+		<target>Arbok</target>
+	</evolution>
+</pokemon>
+
+
+<pokemon>
+	<number>22</number>
+	<name>Fearow</name>
+	<description>With its huge and magnificent wings, it can keep aloft without ever having to land for rest.</description>
+	<image>icon022.gif</image>
+	<type>Normal</type>
+	<type2>Flying</type2>
+	<species>Beak</species>
+	<hp>65</hp>
+	<attack>90</attack>
+	<defense>65</defense>
+	<sp atk>61</sp atk>
+	<sp def>61</sp def>
+	<speed>100</speed>
+</pokemon>
+
+<pokemon>
+	<number>21</number>
+	<name>Spearow</name>
+	<description>Eats bugs in grassy areas. It has to flap its short wings at high speed to stay airborne.</description>
+	<image>icon021.gif</image>
+	<type>Normal</type>
+	<type2>Flying</type2>
+	<species>Tiny Bird</species>
+	<hp>40</hp>
+	<attack>60</attack>
+	<defense>30</defense>
+	<sp atk>31</sp atk>
+	<sp def>31</sp def>
+	<speed>70</speed>
+	<evolution>
+		<level>20</level>
+		<target>Fearow</target>
+	</evolution>
+</pokemon>
+
 <pokemon>
 	<number>20</number>
 	<name>Raticate</name>
