@@ -360,6 +360,13 @@
 		<level>36</level>
 		<target>Charizard</target>
 	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name></name>
+		</move>
+	</moves>
+
 </pokemon>
 
 <pokemon>
@@ -413,6 +420,44 @@
 		<level>32</level>
 		<target>Venusaur</target>
 	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Tackle</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Growl</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Leech Seed</name>
+		</move>
+		<move>
+			<level>3</level>
+			<name>Growl</name>
+		</move>
+		<move>
+			<level>7</level>
+			<name>Leech Seed</name>
+		</move>
+		<move>
+			<level>9</level>
+			<name>Vine Whip</name>
+		</move>
+		<move>
+			<level>13</level>
+			<name>Poisonpowder</name>
+		</move>
+		<move>
+			<level>20</level>
+			<name>Razor Leaf</name>
+		</move>
+		<move>
+			<level>44</level>
+			<name>Solarbeam</name>
+		</move>
+	</moves>
 </pokemon>
 <pokemon>
 	<number>1</number>
