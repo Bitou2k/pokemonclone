@@ -1,0 +1,56 @@
+<note>pokemon should be added in reverse order so the forward references of evolution don't point to as-yet-unloaded pokemon</note>
+
+<move>
+	<name>Acid</name>
+	<type>Poison</type>
+	<category>Special</category>
+	<power>40</power>
+	<accuracy>100</accuracy>
+	<pp>30</pp>
+	<effect>May lower opponent's Defense or Special Defense one stage.</effect>
+	<prob>10</prob>
+</move>
+
+<move>
+	<name>Absorb</name>
+	<type>Grass</type>
+	<category>Special</category>
+	<power>20</power>
+	<accuracy>100</accuracy>
+	<pp>25</pp>
+	<effect>User recovers half of the HP inflicted on opponent.</effect>
+	<prob>-</prob>
+</move>
+
+<move>
+	<name></name>
+	<type></type>
+	<category></category>
+	<power></power>
+	<accuracy></accuracy>
+	<pp></pp>
+	<effect></effect>
+	<prob></prob>
+</move>
+
+<move>
+	<name></name>
+	<type></type>
+	<category></category>
+	<power></power>
+	<accuracy></accuracy>
+	<pp></pp>
+	<effect></effect>
+	<prob></prob>
+</move>
+
+<move>
+	<name></name>
+	<type></type>
+	<category></category>
+	<power></power>
+	<accuracy></accuracy>
+	<pp></pp>
+	<effect></effect>
+	<prob></prob>
+</move>
