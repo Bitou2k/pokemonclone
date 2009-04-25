@@ -38,6 +38,7 @@ class Pokemon {
 		Pokemon p = new Pokemon();
 		p.pokedexNumber = new Integer(n.contentOf("number"));
 		p.name = n.contentOf("name");
+		//p.type = Enum.valueOf(Type.class,n.contentOf("type"));
 		p.image = new ImageIcon("./icons/"+n.contentOf("image"));
 		p.description = n.contentOf("description");
 		p.futureMoves = movesFromNode(n.subnode("moves"));
