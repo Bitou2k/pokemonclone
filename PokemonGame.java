@@ -26,6 +26,7 @@ class PokemonGame extends JFrame implements KeyListener {
 		setVisible(true);
 		
 		enterPresenter(new StartScreen());
+		//enterPresenter(new Area());
 		
 		new Thread(){
 			public void run(){

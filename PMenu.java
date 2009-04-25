@@ -6,7 +6,6 @@ import java.util.*;
 
 class PMenu extends Presenter {
 
-
 	static PMenu createStartMenu(){
 		PMenu m = new PMenu();
 		m.addChoice("Continue");
@@ -14,9 +13,9 @@ class PMenu extends Presenter {
 		m.addChoice("Quit");
 		return m;
 	}
-	
 
 	java.util.List<String> choices = new ArrayList<String>();
+	int selected=1;
 
 	void addChoice(String x){
 		choices.add(x);
