@@ -1,5 +1,76 @@
 <note>pokemon should be added in reverse order so the forward references of evolution don't point to as-yet-unloaded pokemon</note>
 
+<pokemon>
+	<number>28</number>
+	<name>Sandslash</name>
+	<description>Curls up into a spiny ball when threatened. It can roll while curled up to attack or escape.</description>
+	<image>icon028.gif</image>
+	<type>Ground</type>
+	<type2></type2>
+	<species>Mouse</species>
+	<hp>75</hp>
+	<attack>100</attack>
+	<defense>110</defense>
+	<sp atk>45</sp atk>
+	<sp def>55</sp def>
+	<speed>65</speed>
+</pokemon>
+
+<pokemon>
+	<number>27</number>
+	<name>Sandshrew</name>
+	<description>Burrows deep underground in arid locations far from water. It only emerges to hunt for food.</description>
+	<image>icon027.gif</image>
+	<type>Ground</type>
+	<type2></type2>
+	<species>Mouse</species>
+	<hp>50</hp>
+	<attack>75</attack>
+	<defense>85</defense>
+	<sp atk>20</sp atk>
+	<sp def>30</sp def>
+	<speed>40</speed>
+	<evolution>
+		<level>22</level>
+		<target>Sandslash</target>
+	</evolution>
+</pokemon>
+
+<pokemon>
+	<number>26</number>
+	<name>Raichu</name>
+	<description>Its long tail serves as a ground to protect itself from its own high voltage power.</description>
+	<image>icon026.gif</image>
+	<type>Electric</type>
+	<type2></type2>
+	<species>Mouse</species>
+	<hp>60</hp>
+	<attack>90</attack>
+	<defense>55</defense>
+	<sp atk>90</sp atk>
+	<sp def>80</sp def>
+	<speed>100</speed>
+</pokemon>
+
+<pokemon>
+	<number>25</number>
+	<name>Pikachu</name>
+	<description>When several of these POKÈMON gather, their electricity could build and cause lightning storms.</description>
+	<image>icon025.gif</image>
+	<type>Electric</type>
+	<type2></type2>
+	<species>Mouse</species>
+	<hp>35</hp>
+	<attack>55</attack>
+	<defense>30</defense>
+	<sp atk>50</sp atk>
+	<sp def>40</sp def>
+	<speed>90</speed>
+	<evolution>
+		<level>Tunderstone</level>
+		<target>Raichu</target>
+	</evolution>
+</pokemon>
 
 <pokemon>
 	<number>24</number>
