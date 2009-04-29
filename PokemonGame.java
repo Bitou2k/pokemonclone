@@ -25,8 +25,8 @@ class PokemonGame extends JFrame implements KeyListener {
 		setSize(320,240);
 		setVisible(true);
 		
-		enterPresenter(new StartScreen());
-		//enterPresenter(new Area());
+		//enterPresenter(new StartScreen());
+		enterPresenter(new Area());
 		
 		new Thread(){
 			public void run(){
@@ -61,6 +61,7 @@ class PokemonGame extends JFrame implements KeyListener {
 		if(n==KeyEvent.VK_DOWN) c='S';
 		if(n==KeyEvent.VK_RIGHT) c='D';
 		currentPresenter.keyPressed(c);
+		repaint();
 	}
 	
 	public void keyReleased(KeyEvent e){}
