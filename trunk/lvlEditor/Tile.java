@@ -1,16 +1,26 @@
 import java.awt.*;
 
-class Tile{
-	Image image;
-	String name;
-	byte byteCode;
-	int locX;
-	int locY;
+public class Tile{
+	private Image image;
+	private String name;
+	private byte byteCode;
+	private int locX;
+	private int locY;
 	
-	Tile(Image i, String s, byte b, int x, int y)
+	public void setX(int x){locX = x;}
+	public void setY(int y) {locY = y;}
+	
+	Tile(int x, int y)
 	{
-		image = i; name = s; byteCode = b; locX = x; locY = y;
+		locX = x;
+		locY = y;
 	}
+	
+	public String toString()
+	{
+		return "( " + Integer.toString(locX) + ", " + Integer.toString(locY) + " )";
+	}
+
 }
 	
 	
