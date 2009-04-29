@@ -7,7 +7,7 @@ class Area extends Presenter {
 
 	java.util.List<Tile> tiles = new ArrayList<Tile>();
 	java.util.List<Entity> entities = new ArrayList<Entity>();
-	Player player;  
+	Player player = new Player();  
 	WildPokemonGenerator gen; //for grassy areas
 	
 	Area()
@@ -15,13 +15,24 @@ class Area extends Presenter {
 		for(int x=0;x<12;x++)
 			for(int y=0;y<9;y++)
 				tiles.add(new Tile(x,y));
+				
+		tile(5,5).entity(player);
+	}
+	
+	Tile tile(int x, int y)
+	{
+		for(Tile t: tiles)
+			if(t.x==x && t.y==y) return t;
+		return null;
 	}
 	
 	void move(int dx, int dy)
 	{
-		//find player
-		//see if target tile is valid
-		//place in new target
+		Tile t = player.tile();
+		t.entity(null);
+		
+		Tile t2 = tile(t.x+dx,t.y+dy);
+		t2.entity(player);
 	}
 	
 	void drawOn(Graphics2D g)

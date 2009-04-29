@@ -19,9 +19,18 @@ class Tile {
 		this.x=x;this.y=y;this.type=type;
 	}
 	
+	void entity(Entity e) {entity=e; if(e!=null)e.tile(this);}
+	Entity entity() {return entity;}
+	
 	void drawOn(Graphics2D g)
 	{
+		int size = 20;
+		
 		g.setColor(Color.BLUE);
-		g.fillRect(x*10+2,y*10+2,x*10+8,y*10+8);	
+		g.translate(20*x,20*y);
+			g.fillRect(3,3,17,17);	
+			if(entity!=null) entity.drawOn(g);
+		
+		g.translate(-20*x,-20*y);
 	}
 }
