@@ -11,6 +11,7 @@ class Main extends JFrame implements ActionListener  {
 
 	static int lvlWidth = 40;
 	static int lvlHeight = 40;
+	static final int SQAUARESIDE = 16; // each square in the origional pokemon seems to be 16x16
 	Tile tiles[][];
 	Tile currentTile;
 
@@ -84,19 +85,18 @@ class Main extends JFrame implements ActionListener  {
 		}
 		public synchronized void paint(Graphics g)
 		{
-			//g.translate(10, 30); //origin as the visible part, not the corner hidden under the title bar
 			g.setColor(Color.BLACK);
-			g.fillRect(0, 0, lvlWidth * 10, lvlHeight * 10);
+			g.fillRect(0, 0, lvlWidth * SQAUARESIDE, lvlHeight * SQAUARESIDE);
 			g.setColor(Color.RED);
-			for (int x = 0; x <= lvlWidth * 10; x += 10)
-				g.drawLine(x, 0, x, lvlHeight * 10);
-			for (int y = 0; y <= lvlHeight * 10; y += 10)
-				g.drawLine(0, y, lvlWidth * 10, y);
+			for (int x = 0; x <= lvlWidth * SQAUARESIDE; x += SQAUARESIDE)
+				g.drawLine(x, 0, x, lvlHeight * SQAUARESIDE);
+			for (int y = 0; y <= lvlHeight * SQAUARESIDE; y += SQAUARESIDE)
+				g.drawLine(0, y, lvlWidth * SQAUARESIDE, y);
 
 		}
 		public Dimension getPreferredSize()
 		{
-			return new Dimension(lvlWidth * 10 + 20, lvlHeight * 10 + 50);
+			return new Dimension(lvlWidth * SQAUARESIDE + 20, lvlHeight * SQAUARESIDE + 50);
 		}
 		public void mouseClicked(MouseEvent e)
 		{
@@ -104,8 +104,8 @@ class Main extends JFrame implements ActionListener  {
 			mouseX = e.getX();// - 10; //Translated for width
 			mouseY = e.getY();// - 30; //Translated for height
 			System.out.println(mouseX +", " + mouseY);
-			if(mouseX > 0 && mouseY > 0 && mouseX <= lvlWidth * 10 - 1 && mouseY < lvlHeight * 10 - 1)
-			currentTile = tiles[mouseX / 10][mouseY / 10];
+			if(mouseX > 0 && mouseY > 0 && mouseX <= lvlWidth * SQAUARESIDE - 1 && mouseY < lvlHeight * SQAUARESIDE - 1)
+			currentTile = tiles[mouseX / SQAUARESIDE][mouseY / SQAUARESIDE];
 			System.out.println(currentTile);
 		}
 
@@ -119,8 +119,8 @@ class Main extends JFrame implements ActionListener  {
 			mouseX = e.getX();// - 10; //Translated for width
 			mouseY = e.getY();// - 30; //Translated for height
 			System.out.println(mouseX +", " + mouseY);
-			if(mouseX > 0 && mouseY > 0 && mouseX <= lvlWidth * 10 - 1 && mouseY < lvlHeight * 10 - 1)
-			currentTile = tiles[mouseX / 10][mouseY / 10];
+			if(mouseX > 0 && mouseY > 0 && mouseX <= lvlWidth * SQAUARESIDE - 1 && mouseY < lvlHeight * SQAUARESIDE - 1)
+			currentTile = tiles[mouseX / SQAUARESIDE][mouseY / SQAUARESIDE];
 			System.out.println(currentTile);
 		}
 		public void mouseReleased(MouseEvent e) { System.out.println("Release"); }
