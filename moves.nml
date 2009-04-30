@@ -3,57 +3,168 @@ data from
 http://bulbapedia.bulbagarden.net/wiki/List_of_moves
 </note>
 
-<move>
-	<name>Acid</name>
-	<type>Poison</type>
-	<category>Special</category>
-	<power>40</power>
-	<accuracy>100</accuracy>
-	<pp>30</pp>
-	<effect>May lower opponent's Defense or Special Defense one stage.</effect>
-	<prob>10</prob>
-</move>
-
-<move>
-	<name>Absorb</name>
-	<type>Grass</type>
-	<category>Special</category>
-	<power>20</power>
-	<accuracy>100</accuracy>
-	<pp>25</pp>
-	<effect>User recovers half of the HP inflicted on opponent.</effect>
-	<prob>-</prob>
-</move>
-
-<move>
-	<name></name>
-	<type></type>
-	<category></category>
-	<power></power>
-	<accuracy></accuracy>
-	<pp></pp>
-	<effect></effect>
-	<prob></prob>
-</move>
-
-<move>
-	<name></name>
-	<type></type>
-	<category></category>
-	<power></power>
-	<accuracy></accuracy>
-	<pp></pp>
-	<effect></effect>
-	<prob></prob>
-</move>
-
-<move>
-	<name></name>
-	<type></type>
-	<category></category>
-	<power></power>
-	<accuracy></accuracy>
-	<pp></pp>
-	<effect></effect>
-	<prob></prob>
-</move>
+<move><number>1</number><name>Pound</name><type>Normal</type><category>Physical</category><contest>Tough</contest><pp>35</pp><power>40</power><accuracy>100%</accuracy></move>
+<move><number>2</number><name>Karate Chop</name><type>Fighting</type><category>Physical</category><contest>Tough</contest><pp>25</pp><power>50</power><accuracy>100%</accuracy></move>
+<move><number>3</number><name>DoubleSlap</name><type>Normal</type><category>Physical</category><contest>Tough</contest><pp>10</pp><power>15</power><accuracy>85%</accuracy></move>
+<move><number>4</number><name>Comet Punch</name><type>Normal</type><category>Physical</category><contest>Tough</contest><pp>15</pp><power>18</power><accuracy>85%</accuracy></move>
+<move><number>5</number><name>Mega Punch</name><type>Normal</type><category>Physical</category><contest>Tough</contest><pp>20</pp><power>80</power><accuracy>85%</accuracy></move>
+<move><number>6</number><name>Pay Day</name><type>Normal</type><category>Physical</category><contest>Smart</contest><pp>20</pp><power>40</power><accuracy>100%</accuracy></move>
+<move><number>7</number><name>Fire Punch</name><type>Fire</type><category>Physical</category><contest>Beauty</contest><pp>15</pp><power>75</power><accuracy>100%</accuracy></move>
+<move><number>8</number><name>Ice Punch</name><type>Ice</type><category>Physical</category><contest>Beauty</contest><pp>15</pp><power>75</power><accuracy>100%</accuracy></move>
+<move><number>9</number><name>ThunderPunch</name><type>Electric</type><category>Physical</category><contest>Cool</contest><pp>15</pp><power>75</power><accuracy>100%</accuracy></move>
+<move><number>10</number><name>Scratch</name><type>Normal</type><category>Physical</category><contest>Tough</contest><pp>35</pp><power>40</power><accuracy>100%</accuracy></move>
+<move><number>11</number><name>ViceGrip</name><type>Normal</type><category>Physical</category><contest>Tough</contest><pp>30</pp><power>55</power><accuracy>100%</accuracy></move>
+<move><number>12</number><name>Guillotine</name><type>Normal</type><category>Physical</category><contest>Cool</contest><pp>5</pp><power>OHKO</power><accuracy>30%</accuracy></move>
+<move><number>13</number><name>Razor Wind</name><type>Normal</type><category>Special</category><contest>Cool</contest><pp>10</pp><power>80</power><accuracy>100%</accuracy></move>
+<move><number>14</number><name>Swords Dance</name><type>Normal</type><category>Status</category><contest>Beauty</contest><pp>30</pp><power>–</power><accuracy>–</accuracy></move>
+<move><number>15</number><name>Cut</name><type>Normal</type><category>Physical</category><contest>Cool</contest><pp>30</pp><power>50</power><accuracy>95%</accuracy></move>
+<move><number>16</number><name>Gust</name><type>Normal</type><category>Special</category><contest>Smart</contest><pp>35</pp><power>40</power><accuracy>100%</accuracy></move>
+<move><number>17</number><name>Wing Attack</name><type>Flying</type><category>Physical</category><contest>Cool</contest><pp>35</pp><power>60</power><accuracy>100%</accuracy></move>
+<move><number>18</number><name>Whirlwind</name><type>Normal</type><category>Status</category><contest>Smart</contest><pp>20</pp><power>–</power><accuracy>100%</accuracy></move>
+<move><number>19</number><name>Fly</name><type>Flying</type><category>Physical</category><contest>Smart</contest><pp>15</pp><power>90</power><accuracy>95%</accuracy></move>
+<move><number>20</number><name>Bind</name><type>Normal</type><category>Physical</category><contest>Tough</contest><pp>20</pp><power>15</power><accuracy>75%</accuracy></move>
+<move><number>21</number><name>Slam</name><type>Normal</type><category>Physical</category><contest>Tough</contest><pp>20</pp><power>80</power><accuracy>75%</accuracy></move>
+<move><number>22</number><name>Vine Whip</name><type>Grass</type><category>Physical</category><contest>Cool</contest><pp>15</pp><power>35</power><accuracy>100%</accuracy></move>
+<move><number>23</number><name>Stomp</name><type>Normal</type><category>Physical</category><contest>Tough</contest><pp>20</pp><power>65</power><accuracy>100%</accuracy></move>
+<move><number>24</number><name>Double Kick</name><type>Fighting</type><category>Physical</category><contest>Cool</contest><pp>30</pp><power>30</power><accuracy>100%</accuracy></move>
+<move><number>25</number><name>Mega Kick</name><type>Normal</type><category>Physical</category><contest>Cool</contest><pp>5</pp><power>120</power><accuracy>75%</accuracy></move>
+<move><number>26</number><name>Jump Kick</name><type>Fighting</type><category>Physical</category><contest>Cool</contest><pp>25</pp><power>70</power><accuracy>95%</accuracy></move>
+<move><number>27</number><name>Rolling Kick</name><type>Fighting</type><category>Physical</category><contest>Cool</contest><pp>15</pp><power>60</power><accuracy>85%</accuracy></move>
+<move><number>28</number><name>Sand-Attack</name><type>Ground</type><category>Status</category><contest>Cute</contest><pp>15</pp><power>–</power><accuracy>100%</accuracy></move>
+<move><number>29</number><name>Headbutt</name><type>Normal</type><category>Physical</category><contest>Tough</contest><pp>15</pp><power>70</power><accuracy>100%</accuracy></move>
+<move><number>30</number><name>Horn Attack</name><type>Normal</type><category>Physical</category><contest>Cool</contest><pp>25</pp><power>65</power><accuracy>100%</accuracy></move>
+<move><number>31</number><name>Fury Attack</name><type>Normal</type><category>Physical</category><contest>Cool</contest><pp>20</pp><power>15</power><accuracy>85%</accuracy></move>
+<move><number>32</number><name>Horn Drill</name><type>Normal</type><category>Physical</category><contest>Cool</contest><pp>5</pp><power>OHKO</power><accuracy>30%</accuracy></move>
+<move><number>33</number><name>Tackle</name><type>Normal</type><category>Physical</category><contest>Tough</contest><pp>35</pp><power>35</power><accuracy>95%</accuracy></move>
+<move><number>34</number><name>Body Slam</name><type>Normal</type><category>Physical</category><contest>Tough</contest><pp>15</pp><power>85</power><accuracy>100%</accuracy></move>
+<move><number>35</number><name>Wrap</name><type>Normal</type><category>Physical</category><contest>Tough</contest><pp>20</pp><power>15</power><accuracy>85%</accuracy></move>
+<move><number>36</number><name>Take Down</name><type>Normal</type><category>Physical</category><contest>Tough</contest><pp>20</pp><power>90</power><accuracy>85%</accuracy></move>
+<move><number>37</number><name>Thrash</name><type>Normal</type><category>Physical</category><contest>Tough</contest><pp>20</pp><power>90</power><accuracy>100%</accuracy></move>
+<move><number>38</number><name>Double-Edge</name><type>Normal</type><category>Physical</category><contest>Tough</contest><pp>15</pp><power>120</power><accuracy>100%</accuracy></move>
+<move><number>39</number><name>Tail Whip</name><type>Normal</type><category>Status</category><contest>Cute</contest><pp>30</pp><power>–</power><accuracy>100%</accuracy></move>
+<move><number>40</number><name>Poison Sting</name><type>Poison</type><category>Physical</category><contest>Smart</contest><pp>35</pp><power>15</power><accuracy>100%</accuracy></move>
+<move><number>41</number><name>Twineedle</name><type>Bug</type><category>Physical</category><contest>Cool</contest><pp>20</pp><power>25</power><accuracy>100%</accuracy></move>
+<move><number>42</number><name>Pin Missile</name><type>Bug</type><category>Physical</category><contest>Cool</contest><pp>20</pp><power>14</power><accuracy>85%</accuracy></move>
+<move><number>43</number><name>Leer</name><type>Normal</type><category>Status</category><contest>Cool</contest><pp>30</pp><power>–</power><accuracy>100%</accuracy></move>
+<move><number>44</number><name>Bite</name><type>Normal</type><category>Physical</category><contest>Tough</contest><pp>25</pp><power>60</power><accuracy>100%</accuracy></move>
+<move><number>45</number><name>Growl</name><type>Normal</type><category>Status</category><contest>Cute</contest><pp>40</pp><power>–</power><accuracy>100%</accuracy></move>
+<move><number>46</number><name>Roar</name><type>Normal</type><category>Status</category><contest>Cool</contest><pp>20</pp><power>–</power><accuracy>100%</accuracy></move>
+<move><number>47</number><name>Sing</name><type>Normal</type><category>Status</category><contest>Cute</contest><pp>15</pp><power>–</power><accuracy>55%</accuracy></move>
+<move><number>48</number><name>Supersonic</name><type>Normal</type><category>Status</category><contest>Smart</contest><pp>20</pp><power>–</power><accuracy>55%</accuracy></move>
+<move><number>49</number><name>SonicBoom</name><type>Normal</type><category>Special</category><contest>Cool</contest><pp>20</pp><power>20 *</power><accuracy>90%</accuracy></move>
+<move><number>50</number><name>Disable</name><type>Normal</type><category>Status</category><contest>Smart</contest><pp>20</pp><power>–</power><accuracy>55%</accuracy></move>
+<move><number>51</number><name>Acid</name><type>Poison</type><category>Special</category><contest>Smart</contest><pp>30</pp><power>40</power><accuracy>100%</accuracy></move>
+<move><number>52</number><name>Ember</name><type>Fire</type><category>Special</category><contest>Beauty</contest><pp>25</pp><power>40</power><accuracy>100%</accuracy></move>
+<move><number>53</number><name>Flamethrower</name><type>Fire</type><category>Special</category><contest>Beauty</contest><pp>15</pp><power>95</power><accuracy>100%</accuracy></move>
+<move><number>54</number><name>Mist</name><type>Ice</type><category>Status</category><contest>Beauty</contest><pp>30</pp><power>–</power><accuracy>–</accuracy></move>
+<move><number>55</number><name>Water Gun</name><type>Water</type><category>Special</category><contest>Cute</contest><pp>25</pp><power>40</power><accuracy>100%</accuracy></move>
+<move><number>56</number><name>Hydro Pump</name><type>Water</type><category>Special</category><contest>Beauty</contest><pp>5</pp><power>120</power><accuracy>80%</accuracy></move>
+<move><number>57</number><name>Surf</name><type>Water</type><category>Special</category><contest>Beauty</contest><pp>15</pp><power>95</power><accuracy>100%</accuracy></move>
+<move><number>58</number><name>Ice Beam</name><type>Ice</type><category>Special</category><contest>Beauty</contest><pp>10</pp><power>95</power><accuracy>100%</accuracy></move>
+<move><number>59</number><name>Blizzard</name><type>Ice</type><category>Special</category><contest>Beauty</contest><pp>5</pp><power>120</power><accuracy>70%</accuracy></move>
+<move><number>60</number><name>Psybeam</name><type>Psychic</type><category>Special</category><contest>Beauty</contest><pp>20</pp><power>65</power><accuracy>100%</accuracy></move>
+<move><number>61</number><name>BubbleBeam</name><type>Water</type><category>Special</category><contest>Beauty</contest><pp>20</pp><power>65</power><accuracy>100%</accuracy></move>
+<move><number>62</number><name>Aurora Beam</name><type>Ice</type><category>Special</category><contest>Beauty</contest><pp>20</pp><power>65</power><accuracy>100%</accuracy></move>
+<move><number>63</number><name>Hyper Beam</name><type>Normal</type><category>Special</category><contest>Cool</contest><pp>5</pp><power>150</power><accuracy>90%</accuracy></move>
+<move><number>64</number><name>Peck</name><type>Flying</type><category>Physical</category><contest>Cool</contest><pp>35</pp><power>35</power><accuracy>100%</accuracy></move>
+<move><number>65</number><name>Drill Peck</name><type>Flying</type><category>Physical</category><contest>Cool</contest><pp>20</pp><power>80</power><accuracy>100%</accuracy></move>
+<move><number>66</number><name>Submission</name><type>Fighting</type><category>Physical</category><contest>Cool</contest><pp>25</pp><power>80</power><accuracy>80%</accuracy></move>
+<move><number>67</number><name>Low Kick</name><type>Fighting</type><category>Physical</category><contest>Tough</contest><pp>20</pp><power>Varies</power><accuracy>100%</accuracy></move>
+<move><number>68</number><name>Counter</name><type>Fighting</type><category>Physical</category><contest>Tough</contest><pp>20</pp><power>Varies</power><accuracy>100%</accuracy></move>
+<move><number>69</number><name>Seismic Toss</name><type>Fighting</type><category>Physical</category><contest>Tough</contest><pp>20</pp><power>Varies</power><accuracy>100%</accuracy></move>
+<move><number>70</number><name>Strength</name><type>Normal</type><category>Physical</category><contest>Tough</contest><pp>15</pp><power>80</power><accuracy>100%</accuracy></move>
+<move><number>71</number><name>Absorb</name><type>Grass</type><category>Special</category><contest>Smart</contest><pp>25</pp><power>20</power><accuracy>100%</accuracy></move>
+<move><number>72</number><name>Mega Drain</name><type>Grass</type><category>Special</category><contest>Smart</contest><pp>15</pp><power>40</power><accuracy>100%</accuracy></move>
+<move><number>73</number><name>Leech Seed</name><type>Grass</type><category>Status</category><contest>Smart</contest><pp>10</pp><power>–</power><accuracy>90%</accuracy></move>
+<move><number>74</number><name>Growth</name><type>Normal</type><category>Status</category><contest>Beauty</contest><pp>40</pp><power>–</power><accuracy>–</accuracy></move>
+<move><number>75</number><name>Razor Leaf</name><type>Grass</type><category>Physical</category><contest>Cool</contest><pp>25</pp><power>55</power><accuracy>95%</accuracy></move>
+<move><number>76</number><name>SolarBeam</name><type>Grass</type><category>Special</category><contest>Cool</contest><pp>10</pp><power>120</power><accuracy>100%</accuracy></move>
+<move><number>77</number><name>PoisonPowder</name><type>Poison</type><category>Status</category><contest>Smart</contest><pp>35</pp><power>–</power><accuracy>75%</accuracy></move>
+<move><number>78</number><name>Stun Spore</name><type>Grass</type><category>Status</category><contest>Smart</contest><pp>30</pp><power>–</power><accuracy>75%</accuracy></move>
+<move><number>79</number><name>Sleep Powder</name><type>Grass</type><category>Status</category><contest>Smart</contest><pp>15</pp><power>–</power><accuracy>75%</accuracy></move>
+<move><number>80</number><name>Petal Dance</name><type>Grass</type><category>Special</category><contest>Beauty</contest><pp>20</pp><power>70</power><accuracy>100%</accuracy></move>
+<move><number>81</number><name>String Shot</name><type>Bug</type><category>Status</category><contest>Smart</contest><pp>40</pp><power>–</power><accuracy>95%</accuracy></move>
+<move><number>82</number><name>Dragon Rage</name><type>Dragon</type><category>Special</category><contest>Cool</contest><pp>10</pp><power>40 *</power><accuracy>100%</accuracy></move>
+<move><number>83</number><name>Fire Spin</name><type>Fire</type><category>Special</category><contest>Beauty</contest><pp>15</pp><power>15</power><accuracy>70%</accuracy></move>
+<move><number>84</number><name>ThunderShock</name><type>Electric</type><category>Special</category><contest>Cool</contest><pp>30</pp><power>40</power><accuracy>100%</accuracy></move>
+<move><number>85</number><name>Thunderbolt</name><type>Electric</type><category>Special</category><contest>Cool</contest><pp>15</pp><power>95</power><accuracy>100%</accuracy></move>
+<move><number>86</number><name>Thunder Wave</name><type>Electric</type><category>Status</category><contest>Cool</contest><pp>20</pp><power>–</power><accuracy>100%</accuracy></move>
+<move><number>87</number><name>Thunder</name><type>Electric</type><category>Special</category><contest>Cool</contest><pp>10</pp><power>120</power><accuracy>70%</accuracy></move>
+<move><number>88</number><name>Rock Throw</name><type>Rock</type><category>Physical</category><contest>Tough</contest><pp>15</pp><power>50</power><accuracy>90%</accuracy></move>
+<move><number>89</number><name>Earthquake</name><type>Ground</type><category>Physical</category><contest>Tough</contest><pp>10</pp><power>100</power><accuracy>100%</accuracy></move>
+<move><number>90</number><name>Fissure</name><type>Ground</type><category>Physical</category><contest>Tough</contest><pp>5</pp><power>OHKO</power><accuracy>30%</accuracy></move>
+<move><number>91</number><name>Dig</name><type>Ground</type><category>Physical</category><contest>Smart</contest><pp>10</pp><power>80</power><accuracy>100%</accuracy></move>
+<move><number>92</number><name>Toxic</name><type>Poison</type><category>Status</category><contest>Smart</contest><pp>10</pp><power>–</power><accuracy>85%</accuracy></move>
+<move><number>93</number><name>Confusion</name><type>Psychic</type><category>Special</category><contest>Smart</contest><pp>25</pp><power>50</power><accuracy>100%</accuracy></move>
+<move><number>94</number><name>Psychic</name><type>Psychic</type><category>Special</category><contest>Smart</contest><pp>10</pp><power>90</power><accuracy>100%</accuracy></move>
+<move><number>95</number><name>Hypnosis</name><type>Psychic</type><category>Status</category><contest>Smart</contest><pp>20</pp><power>–</power><accuracy>60%</accuracy></move>
+<move><number>96</number><name>Meditate</name><type>Psychic</type><category>Status</category><contest>Beauty</contest><pp>40</pp><power>–</power><accuracy>–</accuracy></move>
+<move><number>97</number><name>Agility</name><type>Psychic</type><category>Status</category><contest>Cool</contest><pp>30</pp><power>–</power><accuracy>–</accuracy></move>
+<move><number>98</number><name>Quick Attack</name><type>Normal</type><category>Physical</category><contest>Cool</contest><pp>30</pp><power>40</power><accuracy>100%</accuracy></move>
+<move><number>99</number><name>Rage</name><type>Normal</type><category>Physical</category><contest>Cool</contest><pp>20</pp><power>20</power><accuracy>100%</accuracy></move>
+<move><number>100</number><name>Teleport</name><type>Psychic</type><category>Status</category><contest>Cool</contest><pp>20</pp><power>–</power><accuracy>–</accuracy></move>
+<move><number>101</number><name>Night Shade</name><type>Ghost</type><category>Special</category><contest>Smart</contest><pp>15</pp><power>Varies</power><accuracy>100%</accuracy></move>
+<move><number>102</number><name>Mimic</name><type>Normal</type><category>Status</category><contest>Cute</contest><pp>10</pp><power>–</power><accuracy>100%</accuracy></move>
+<move><number>103</number><name>Screech</name><type>Normal</type><category>Status</category><contest>Smart</contest><pp>40</pp><power>–</power><accuracy>85%</accuracy></move>
+<move><number>104</number><name>Double Team</name><type>Normal</type><category>Status</category><contest>Cool</contest><pp>15</pp><power>–</power><accuracy>–</accuracy></move>
+<move><number>105</number><name>Recover</name><type>Normal</type><category>Status</category><contest>Smart</contest><pp>10</pp><power>–</power><accuracy>–</accuracy></move>
+<move><number>106</number><name>Harden</name><type>Normal</type><category>Status</category><contest>Tough</contest><pp>30</pp><power>–</power><accuracy>–</accuracy></move>
+<move><number>107</number><name>Minimize</name><type>Normal</type><category>Status</category><contest>Cute</contest><pp>20</pp><power>–</power><accuracy>–</accuracy></move>
+<move><number>108</number><name>SmokeScreen</name><type>Normal</type><category>Status</category><contest>Smart</contest><pp>20</pp><power>–</power><accuracy>100%</accuracy></move>
+<move><number>109</number><name>Confuse Ray</name><type>Ghost</type><category>Status</category><contest>Smart</contest><pp>10</pp><power>–</power><accuracy>100%</accuracy></move>
+<move><number>110</number><name>Withdraw</name><type>Water</type><category>Status</category><contest>Cute</contest><pp>40</pp><power>–</power><accuracy>–</accuracy></move>
+<move><number>111</number><name>Defense Curl</name><type>Normal</type><category>Status</category><contest>Cute</contest><pp>40</pp><power>–</power><accuracy>–</accuracy></move>
+<move><number>112</number><name>Barrier</name><type>Psychic</type><category>Status</category><contest>Cool</contest><pp>20</pp><power>–</power><accuracy>–</accuracy></move>
+<move><number>113</number><name>Light Screen</name><type>Psychic</type><category>Status</category><contest>Beauty</contest><pp>30</pp><power>–</power><accuracy>–</accuracy></move>
+<move><number>114</number><name>Haze</name><type>Ice</type><category>Status</category><contest>Beauty</contest><pp>30</pp><power>–</power><accuracy>–</accuracy></move>
+<move><number>115</number><name>Reflect</name><type>Psychic</type><category>Status</category><contest>Smart</contest><pp>20</pp><power>–</power><accuracy>–</accuracy></move>
+<move><number>116</number><name>Focus Energy</name><type>Normal</type><category>Status</category><contest>Cool</contest><pp>30</pp><power>–</power><accuracy>–</accuracy></move>
+<move><number>117</number><name>Bide</name><type>Normal</type><category>Physical</category><contest>Tough</contest><pp>10</pp><power>Varies</power><accuracy>100%</accuracy></move>
+<move><number>118</number><name>Metronome</name><type>Normal</type><category>Status</category><contest>Cute</contest><pp>10</pp><power>–</power><accuracy>–</accuracy></move>
+<move><number>119</number><name>Mirror Move</name><type>Flying</type><category>Status</category><contest>Smart</contest><pp>20</pp><power>–</power><accuracy>–</accuracy></move>
+<move><number>120</number><name>Selfdestruct</name><type>Normal</type><category>Physical</category><contest>Beauty</contest><pp>5</pp><power>200</power><accuracy>100%</accuracy></move>
+<move><number>121</number><name>Egg Bomb</name><type>Normal</type><category>Physical</category><contest>Tough</contest><pp>10</pp><power>100</power><accuracy>75%</accuracy></move>
+<move><number>122</number><name>Lick</name><type>Ghost</type><category>Physical</category><contest>Tough</contest><pp>30</pp><power>20</power><accuracy>100%</accuracy></move>
+<move><number>123</number><name>Smog</name><type>Poison</type><category>Special</category><contest>Tough</contest><pp>20</pp><power>20</power><accuracy>70%</accuracy></move>
+<move><number>124</number><name>Sludge</name><type>Poison</type><category>Special</category><contest>Tough</contest><pp>20</pp><power>65</power><accuracy>100%</accuracy></move>
+<move><number>125</number><name>Bone Club</name><type>Ground</type><category>Physical</category><contest>Tough</contest><pp>20</pp><power>65</power><accuracy>85%</accuracy></move>
+<move><number>126</number><name>Fire Blast</name><type>Fire</type><category>Special</category><contest>Beauty</contest><pp>5</pp><power>120</power><accuracy>85%</accuracy></move>
+<move><number>127</number><name>Waterfall</name><type>Water</type><category>Physical</category><contest>Tough</contest><pp>15</pp><power>80</power><accuracy>100%</accuracy></move>
+<move><number>128</number><name>Clamp</name><type>Water</type><category>Physical</category><contest>Tough</contest><pp>10</pp><power>35</power><accuracy>75%</accuracy></move>
+<move><number>129</number><name>Swift</name><type>Normal</type><category>Special</category><contest>Cool</contest><pp>20</pp><power>60</power><accuracy>–</accuracy></move>
+<move><number>130</number><name>Skull Bash</name><type>Normal</type><category>Physical</category><contest>Tough</contest><pp>15</pp><power>100</power><accuracy>100%</accuracy></move>
+<move><number>131</number><name>Spike Cannon</name><type>Normal</type><category>Physical</category><contest>Cool</contest><pp>15</pp><power>20</power><accuracy>100%</accuracy></move>
+<move><number>132</number><name>Constrict</name><type>Normal</type><category>Physical</category><contest>Tough</contest><pp>35</pp><power>10</power><accuracy>100%</accuracy></move>
+<move><number>133</number><name>Amnesia</name><type>Psychic</type><category>Status</category><contest>Cute</contest><pp>20</pp><power>–</power><accuracy>–</accuracy></move>
+<move><number>134</number><name>Kinesis</name><type>Psychic</type><category>Status</category><contest>Smart</contest><pp>15</pp><power>–</power><accuracy>80%</accuracy></move>
+<move><number>135</number><name>Softboiled</name><type>Normal</type><category>Status</category><contest>Beauty</contest><pp>10</pp><power>–</power><accuracy>100%</accuracy></move>
+<move><number>136</number><name>Hi Jump Kick</name><type>Fighting</type><category>Physical</category><contest>Cool</contest><pp>20</pp><power>100</power><accuracy>90%</accuracy></move>
+<move><number>137</number><name>Glare</name><type>Normal</type><category>Status</category><contest>Tough</contest><pp>30</pp><power>–</power><accuracy>75%</accuracy></move>
+<move><number>138</number><name>Dream Eater</name><type>Psychic</type><category>Special</category><contest>Smart</contest><pp>15</pp><power>100</power><accuracy>100%</accuracy></move>
+<move><number>139</number><name>Poison Gas</name><type>Poison</type><category>Status</category><contest>Smart</contest><pp>40</pp><power>–</power><accuracy>55%</accuracy></move>
+<move><number>140</number><name>Barrage</name><type>Normal</type><category>Physical</category><contest>Tough</contest><pp>20</pp><power>15</power><accuracy>85%</accuracy></move>
+<move><number>141</number><name>Leech Life</name><type>Bug</type><category>Physical</category><contest>Smart</contest><pp>15</pp><power>20</power><accuracy>100%</accuracy></move>
+<move><number>142</number><name>Lovely Kiss</name><type>Normal</type><category>Status</category><contest>Beauty</contest><pp>10</pp><power>–</power><accuracy>75%</accuracy></move>
+<move><number>143</number><name>Sky Attack</name><type>Flying</type><category>Physical</category><contest>Cool</contest><pp>5</pp><power>140</power><accuracy>90%</accuracy></move>
+<move><number>144</number><name>Transform</name><type>Normal</type><category>Status</category><contest>Smart</contest><pp>10</pp><power>–</power><accuracy>–</accuracy></move>
+<move><number>145</number><name>Bubble</name><type>Water</type><category>Special</category><contest>Cute</contest><pp>30</pp><power>20</power><accuracy>100%</accuracy></move>
+<move><number>146</number><name>Dizzy Punch</name><type>Normal</type><category>Physical</category><contest>Cool</contest><pp>10</pp><power>70</power><accuracy>100%</accuracy></move>
+<move><number>147</number><name>Spore</name><type>Grass</type><category>Status</category><contest>Beauty</contest><pp>15</pp><power>–</power><accuracy>100%</accuracy></move>
+<move><number>148</number><name>Flash</name><type>Normal</type><category>Status</category><contest>Beauty</contest><pp>20</pp><power>–</power><accuracy>70%</accuracy></move>
+<move><number>149</number><name>Psywave</name><type>Psychic</type><category>Special</category><contest>Smart</contest><pp>15</pp><power>Varies</power><accuracy>80%</accuracy></move>
+<move><number>150</number><name>Splash</name><type>Normal</type><category>Status</category><contest>Cute</contest><pp>40</pp><power>–</power><accuracy>–</accuracy></move>
+<move><number>151</number><name>Acid Armor</name><type>Poison</type><category>Status</category><contest>Tough</contest><pp>40</pp><power>–</power><accuracy>–</accuracy></move>
+<move><number>152</number><name>Crabhammer</name><type>Water</type><category>Physical</category><contest>Tough</contest><pp>10</pp><power>90</power><accuracy>85%</accuracy></move>
+<move><number>153</number><name>Explosion</name><type>Normal</type><category>Physical</category><contest>Beauty</contest><pp>5</pp><power>250</power><accuracy>100%</accuracy></move>
+<move><number>154</number><name>Fury Swipes</name><type>Normal</type><category>Physical</category><contest>Tough</contest><pp>15</pp><power>18</power><accuracy>80%</accuracy></move>
+<move><number>155</number><name>Bonemerang</name><type>Ground</type><category>Physical</category><contest>Tough</contest><pp>10</pp><power>50</power><accuracy>90%</accuracy></move>
+<move><number>156</number><name>Rest</name><type>Psychic</type><category>Status</category><contest>Cute</contest><pp>10</pp><power>–</power><accuracy>–</accuracy></move>
+<move><number>157</number><name>Rock Slide</name><type>Rock</type><category>Physical</category><contest>Tough</contest><pp>10</pp><power>75</power><accuracy>90%</accuracy></move>
+<move><number>158</number><name>Hyper Fang</name><type>Normal</type><category>Physical</category><contest>Cool</contest><pp>15</pp><power>80</power><accuracy>90%</accuracy></move>
+<move><number>159</number><name>Sharpen</name><type>Normal</type><category>Status</category><contest>Cute</contest><pp>30</pp><power>–</power><accuracy>–</accuracy></move>
+<move><number>160</number><name>Conversion</name><type>Normal</type><category>Status</category><contest>Beauty</contest><pp>30</pp><power>–</power><accuracy>–</accuracy></move>
+<move><number>161</number><name>Tri Attack</name><type>Normal</type><category>Special</category><contest>Beauty</contest><pp>10</pp><power>80</power><accuracy>100%</accuracy></move>
+<move><number>162</number><name>Super Fang</name><type>Normal</type><category>Physical</category><contest>Tough</contest><pp>10</pp><power>Varies</power><accuracy>90%</accuracy></move>
+<move><number>163</number><name>Slash</name><type>Normal</type><category>Physical</category><contest>Cool</contest><pp>20</pp><power>70</power><accuracy>100%</accuracy></move>
+<move><number>164</number><name>Substitute</name><type>Normal</type><category>Status</category><contest>Smart</contest><pp>10</pp><power>–</power><accuracy>–</accuracy></move>
+<move><number>165</number><name>Struggle</name><type>Normal</type><category>Physical</category><contest>Cool</contest><pp>1</pp><power>50</power><accuracy>100%</accuracy></move>
