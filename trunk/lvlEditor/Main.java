@@ -5,13 +5,15 @@ import javax.swing.*;
 //the shell for a Game
 class Main extends JFrame implements ActionListener  {
 
+	static final String[] supportedTiles = { "Blank", "Sparce Grass", "More Grass", "Grass", "Poke Grass", "Water TL", "Water T", "Water TR", "Water R", "Water L", "Water", "Berryl", "Sign", "Fence" };
 	JTextField height = new JTextField("40", 10), width = new JTextField("40", 10);
-	JComboBox tile = new JComboBox(new String[]{"a","b"});
+	JComboBox tile = new JComboBox(supportedTiles);
 	JButton generate = new JButton("generate");
 
 	static int lvlWidth = 40;
 	static int lvlHeight = 40;
-	static final int SQAUARESIDE = 16; // each square in the origional pokemon seems to be 16x16
+	public static final int SQUARESIDE = 16; // each square in the origional pokemon seems to be 16x16
+	static String tileType = supportedTiles[1];
 	Tile tiles[][];
 	Tile currentTile;
 
@@ -37,6 +39,7 @@ class Main extends JFrame implements ActionListener  {
 		setSize(500,500);
 		setVisible(true);
 		setTileValues();
+		currentTile = tiles[0][0];
 	}
 
 	public void actionPerformed(ActionEvent e)
@@ -55,7 +58,7 @@ class Main extends JFrame implements ActionListener  {
 		tiles = new Tile[lvlWidth][lvlHeight];
 
 		setTileValues();
-		//check();
+		currentTile = tiles[0][0];
 		repaint();
 	}
 
@@ -86,17 +89,21 @@ class Main extends JFrame implements ActionListener  {
 		public synchronized void paint(Graphics g)
 		{
 			g.setColor(Color.BLACK);
-			g.fillRect(0, 0, lvlWidth * SQAUARESIDE, lvlHeight * SQAUARESIDE);
+			g.fillRect(0, 0, lvlWidth * SQUARESIDE, lvlHeight * SQUARESIDE);
 			g.setColor(Color.RED);
-			for (int x = 0; x <= lvlWidth * SQAUARESIDE; x += SQAUARESIDE)
-				g.drawLine(x, 0, x, lvlHeight * SQAUARESIDE);
-			for (int y = 0; y <= lvlHeight * SQAUARESIDE; y += SQAUARESIDE)
-				g.drawLine(0, y, lvlWidth * SQAUARESIDE, y);
+			for (int x = 0; x <= lvlWidth * SQUARESIDE; x += SQUARESIDE)
+				g.drawLine(x, 0, x, lvlHeight * SQUARESIDE);
+			for (int y = 0; y <= lvlHeight * SQUARESIDE; y += SQUARESIDE)
+				g.drawLine(0, y, lvlWidth * SQUARESIDE, y);
+
+			for (int x = 0; x < lvlWidth; x++)
+				for (int y = 0; y < lvlHeight; y++)
+					tiles[x][y].drawImage(this, g);
 
 		}
 		public Dimension getPreferredSize()
 		{
-			return new Dimension(lvlWidth * SQAUARESIDE + 20, lvlHeight * SQAUARESIDE + 50);
+			return new Dimension(lvlWidth * SQUARESIDE + 20, lvlHeight * SQUARESIDE + 50);
 		}
 		public void mouseClicked(MouseEvent e)
 		{
@@ -104,9 +111,12 @@ class Main extends JFrame implements ActionListener  {
 			mouseX = e.getX();// - 10; //Translated for width
 			mouseY = e.getY();// - 30; //Translated for height
 			System.out.println(mouseX +", " + mouseY);
-			if(mouseX > 0 && mouseY > 0 && mouseX <= lvlWidth * SQAUARESIDE - 1 && mouseY < lvlHeight * SQAUARESIDE - 1)
-			currentTile = tiles[mouseX / SQAUARESIDE][mouseY / SQAUARESIDE];
+			if(mouseX > 0 && mouseY > 0 && mouseX <= lvlWidth * SQUARESIDE - 1 && mouseY < lvlHeight * SQUARESIDE - 1)
+			currentTile = tiles[mouseX / SQUARESIDE][mouseY / SQUARESIDE];
+			tileType = (String)tile.getSelectedItem();
+			currentTile.set(tileType);
 			System.out.println(currentTile);
+			repaint();
 		}
 
 		public void mouseEntered(MouseEvent e) { System.out.println("Entered"); }
@@ -118,10 +128,13 @@ class Main extends JFrame implements ActionListener  {
 			int mouseX, mouseY;
 			mouseX = e.getX();// - 10; //Translated for width
 			mouseY = e.getY();// - 30; //Translated for height
-			System.out.println(mouseX +", " + mouseY);
-			if(mouseX > 0 && mouseY > 0 && mouseX <= lvlWidth * SQAUARESIDE - 1 && mouseY < lvlHeight * SQAUARESIDE - 1)
-			currentTile = tiles[mouseX / SQAUARESIDE][mouseY / SQAUARESIDE];
+			System.out.println(mouseX + ", " + mouseY);
+			if (mouseX > 0 && mouseY > 0 && mouseX <= lvlWidth * SQUARESIDE - 1 && mouseY < lvlHeight * SQUARESIDE - 1)
+				currentTile = tiles[mouseX / SQUARESIDE][mouseY / SQUARESIDE];
+			tileType = (String)tile.getSelectedItem();
+			currentTile.set(tileType);
 			System.out.println(currentTile);
+			repaint();
 		}
 		public void mouseReleased(MouseEvent e) { System.out.println("Release"); }
 		// Invoked when a mouse button has been released on a component.
