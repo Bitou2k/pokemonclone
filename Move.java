@@ -6,4 +6,6 @@ class Move {
 	Type type;
 	int currentPP;
 	int PP;
+	
+	String compareName; //lowercased, removed spaces and hypens
 }
