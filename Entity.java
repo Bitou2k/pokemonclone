@@ -12,6 +12,6 @@ class Entity {
 	void drawOn(Graphics2D g){
 	
 		g.setColor(Color.RED);
-		g.fillOval(10,10,4,4);
+		g.fillOval(tile.width()/2-2,tile.height()/2-2,4,4);
 	}
 }

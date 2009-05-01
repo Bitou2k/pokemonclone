@@ -22,15 +22,16 @@ class Tile {
 	void entity(Entity e) {entity=e; if(e!=null)e.tile(this);}
 	Entity entity() {return entity;}
 	
+	int width(){return 16;}
+	int height(){return 16;}
+	
 	void drawOn(Graphics2D g)
-	{
-		int size = 20;
-		
+	{	
 		g.setColor(Color.BLUE);
-		g.translate(20*x,20*y);
-			g.fillRect(3,3,17,17);	
+		g.translate(width()*x,height()*y);
+			g.fillRect(2,2,14,14);	
 			if(entity!=null) entity.drawOn(g);
 		
-		g.translate(-20*x,-20*y);
+		g.translate(-width()*x,-height()*y);
 	}
 }
