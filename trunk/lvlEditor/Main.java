@@ -5,7 +5,10 @@ import javax.swing.*;
 //the shell for a Game
 class Main extends JFrame implements ActionListener  {
 
-	static final String[] supportedTiles = { "Blank", "Sparce Grass", "More Grass", "Grass", "Poke Grass", "Water TL", "Water T", "Water TR", "Water R", "Water L", "Water", "Berryl", "Sign", "Fence" };
+	static final String[] supportedTiles = { "Blank", "Sparce Grass", "More Grass", "Grass", "Poke Grass",
+		"Water TL", "Water T", "Water TR", "Water R", "Water L", "Water", "Barryl", "Sign", "Fence",
+	"Flower 1", "Flower 2", "Door", "Small House BL", "Small House B Windows", "Small House BR", "Small House ML",
+	"Small House M Window", "Small House M Windows", "Small House MR", "Small House TL","Small House TM", "Small House TR"};
 	JTextField height = new JTextField("40", 10), width = new JTextField("40", 10);
 	JComboBox tile = new JComboBox(supportedTiles);
 	JButton generate = new JButton("generate");
