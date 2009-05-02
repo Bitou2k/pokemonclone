@@ -1,12 +1,13 @@
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
+import java.io.*;
 
 //the shell for a Game
 class Main extends JFrame implements ActionListener  {
 
 	static final String[] supportedTiles = { "Blank", "Sparce Grass", "More Grass", "Grass", "Poke Grass",
-		"Water TL", "Water T", "Water TR", "Water R", "Water L", "Water", "Barryl", "Sign", "Fence",
+		"Water TL", "Water T", "Water TR", "Water R", "Water L", "Water", "Barrel", "Sign", "Fence",
 	"Flower 1", "Flower 2", "Door", "Small House BL", "Small House B Windows", "Small House BR", "Small House ML",
 	"Small House M Window", "Small House M Windows", "Small House MR", "Small House TL","Small House TM", "Small House TR"};
 	JTextField height = new JTextField("40", 10), width = new JTextField("40", 10);
@@ -50,19 +51,39 @@ class Main extends JFrame implements ActionListener  {
 		if (e.getSource() == width)
 		{
 			lvlWidth = new Integer(width.getText());
+			tiles = new Tile[lvlWidth][lvlHeight];
+			setTileValues();
+			currentTile = tiles[0][0];
+			repaint();
 		}
 		else if (e.getSource() == height)
 		{
 			lvlHeight = new Integer(height.getText());
+			tiles = new Tile[lvlWidth][lvlHeight];
+			setTileValues();
+			currentTile = tiles[0][0];
+			repaint();
 		}
 		else if(e.getSource() ==generate)
 		{
-		}
-		tiles = new Tile[lvlWidth][lvlHeight];
 
-		setTileValues();
-		currentTile = tiles[0][0];
-		repaint();
+
+			Node mapNode = new Node("map");
+			for(int x = 0; x < lvlWidth; x++)
+				for (int y = 0; y < lvlHeight; y++)
+				{
+					Node tileNode = new Node("tile");
+					tileNode.addSubnode("type", tiles[x][y].toString());
+					tileNode.addSubnode("position", tiles[x][y].getLocation());
+					mapNode.addSubnode(tileNode);
+				}
+			try
+			{
+				OutputStream os = new java.io.FileOutputStream("level.nml");
+				mapNode.tryWriteOn(os); os.flush();os.close();
+			}
+			catch (Exception ex) { }
+		}
 	}
 
 	public void setTileValues()
@@ -71,15 +92,6 @@ class Main extends JFrame implements ActionListener  {
 		for(int x = 0; x < lvlWidth; x++)
 			for(int y = 0; y < lvlHeight; y++)
 				tiles[x][y] = new Tile(x, y);
-	}
-
-	public void check()
-	{
-		for (int x = 0; x < lvlWidth; x++)
-			for (int y = 0; y < lvlHeight; y++)
-			{
-				System.out.println(tiles[x][y].toString());
-			}
 	}
 
 
