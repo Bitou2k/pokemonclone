@@ -42,6 +42,15 @@ public class Tile{
 	{
 		return name;
 	}
+	
+	public Node asNode()
+	{
+		Node tileNode = new Node("tile");
+		tileNode.addSubnode("type", name );
+		tileNode.addSubnode("x", ""+locX );
+		tileNode.addSubnode("y", ""+locY );
+		return tileNode;
+	}
 
 }
 	
