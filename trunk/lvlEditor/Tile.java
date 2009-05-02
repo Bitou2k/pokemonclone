@@ -13,17 +13,16 @@ public class Tile{
 	public void setY(int y) {locY = y;}
 
 	public int getX() { return locX;}
-	public int getY() { return locY; }
+	public int getY() { return locY;}
+
+	public String getLocation() { return Integer.toString(locX) + ", " + Integer.toString(locY); }
+
 	public void set(String s) 
 	{
 		image = new ImageIcon("./tileImages/" + s + ".png");
 		name = s;
 	}
 
-	public ImageIcon getIcon()
-	{
-		return image;
-	}
 	
 	Tile(int x, int y)
 	{
@@ -37,12 +36,11 @@ public class Tile{
 		{
 			image.paintIcon(c, g, locX * SQUARESIDE, locY * SQUARESIDE);
 		}
-		System.out.println(image);
 	}
 	
 	public String toString()
 	{
-		return "( " + Integer.toString(locX) + ", " + Integer.toString(locY) + " ): " + name;
+		return name;
 	}
 
 }
