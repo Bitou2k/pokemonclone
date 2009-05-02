@@ -4,7 +4,8 @@ import javax.swing.*;
 
 public class Tile{
 	private ImageIcon image;
-	private String name;
+	private String imageName="";
+	private String target=""; //where you should go when steping on this tile(ie, a door)
 	private int locX;
 	private int locY;
 	static final int SQUARESIDE = 16; // each square in the origional pokemon seems to be 16x16
@@ -20,7 +21,15 @@ public class Tile{
 	public void set(String s) 
 	{
 		image = new ImageIcon("./tileImages/" + s + ".png");
-		name = s;
+		imageName = s;
+	}
+	void setTarget(String s)
+	{
+		target = s;
+	}
+	String getTarget()
+	{
+		return target;
 	}
 
 	
@@ -40,13 +49,14 @@ public class Tile{
 	
 	public String toString()
 	{
-		return name;
+		return asNode().encoded();
 	}
 	
 	public Node asNode()
 	{
 		Node tileNode = new Node("tile");
-		tileNode.addSubnode("type", name );
+		tileNode.addSubnode("image", imageName );
+		tileNode.addSubnode("target", target );
 		tileNode.addSubnode("x", ""+locX );
 		tileNode.addSubnode("y", ""+locY );
 		return tileNode;
