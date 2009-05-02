@@ -14,6 +14,7 @@ class Main extends JFrame implements ActionListener  {
 	JComboBox tile = new JComboBox(supportedTiles);
 	JButton save = new JButton("Save");
 	JButton load = new JButton("Load");
+	JLabel location = new JLabel("");
 
 	static int lvlWidth = 10;
 	static int lvlHeight = 10;
@@ -34,6 +35,7 @@ class Main extends JFrame implements ActionListener  {
 		sidePanel.add(tile);
 		sidePanel.add(save);
 		sidePanel.add(load);
+		sidePanel.add(location);
 
 		height.addActionListener(this);
 		width.addActionListener(this);
@@ -120,7 +122,8 @@ class Main extends JFrame implements ActionListener  {
 					int x = new Integer( tileNode.contentOf("x"));
 					int y = new Integer( tileNode.contentOf("y"));
 					Tile t = new Tile(x,y);
-					t.set(tileNode.contentOf("type"));
+					t.set(tileNode.contentOf("image"));
+					t.setTarget(tileNode.contentOf("target"));
 					tiles[x][y] = t;
 				}
 				
@@ -150,11 +153,12 @@ class Main extends JFrame implements ActionListener  {
 	}
 
 
-	class DisplayView extends JComponent implements MouseListener
+	class DisplayView extends JComponent implements MouseListener, MouseMotionListener
 	{
 		public DisplayView()
 		{
 			addMouseListener(this);
+			addMouseMotionListener(this);
 		}
 		public synchronized void paint(Graphics g)
 		{
@@ -175,6 +179,17 @@ class Main extends JFrame implements ActionListener  {
 		{
 			return new Dimension(lvlWidth * SQUARESIDE + 20, lvlHeight * SQUARESIDE + 50);
 		}
+		public void mouseMoved(MouseEvent e)
+		{
+			int mouseX = e.getX();// - 10; //Translated for width
+			int mouseY = e.getY();// - 30; //Translated for height
+			if(mouseX > 0 && mouseY > 0 && mouseX <= lvlWidth * SQUARESIDE - 1 && mouseY < lvlHeight * SQUARESIDE - 1)
+				currentTile = tiles[mouseX / SQUARESIDE][mouseY / SQUARESIDE];
+				
+			location.setText(currentTile.getLocation());
+		}
+		public void mouseDragged(MouseEvent e){}
+		
 		public void mouseClicked(MouseEvent e)
 		{
 			int mouseX, mouseY;
@@ -214,7 +229,9 @@ class Main extends JFrame implements ActionListener  {
 	}
 
 	
-	public static void main(String[] args){
+	public static void main(String[] args) throws Exception {
+	
+		UIManager.setLookAndFeel( UIManager.getSystemLookAndFeelClassName() );
 		new Main();
 	}
 }
