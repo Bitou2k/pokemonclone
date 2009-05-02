@@ -1,3 +1,7 @@
+
+package lvlEditor;
+import game.Node;
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
