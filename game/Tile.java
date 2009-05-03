@@ -1,6 +1,8 @@
 package game;
 
 import java.awt.*;
+import java.io.*;
+import javax.swing.*;
 
 //one square on a map
 class Tile {
@@ -21,6 +23,11 @@ class Tile {
 		this.x=x;this.y=y;this.type=type;
 	}
 	
+	void imageFrom(String s)
+	{
+		img = new ImageIcon("./tileImages/" + s + ".png").getImage();
+	}
+	
 	void entity(Entity e) {entity=e; if(e!=null)e.tile(this);}
 	Entity entity() {return entity;}
 	
@@ -31,7 +38,8 @@ class Tile {
 	{	
 		g.setColor(Color.BLUE);
 		g.translate(width()*x,height()*y);
-			g.fillRect(2,2,14,14);	
+			g.fillRect(2,2,14,14);
+			g.drawImage(img,0,0,null);
 			if(entity!=null) entity.drawOn(g);
 		
 		g.translate(-width()*x,-height()*y);

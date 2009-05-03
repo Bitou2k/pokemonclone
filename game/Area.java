@@ -1,6 +1,8 @@
 package game;
 
 import java.awt.*;
+import javax.swing.*;
+import java.io.*;
 import java.util.*;
 
 //the area or map that is a grid of Tiles
@@ -13,9 +15,21 @@ class Area extends Presenter {
 	
 	Area()
 	{
-		for(int x=0;x<12;x++)
-			for(int y=0;y<9;y++)
-				tiles.add(new Tile(x,y));
+	//	for(int x=0;x<12;x++)
+	//		for(int y=0;y<9;y++)
+	//			tiles.add(new Tile(x,y));
+try{		
+		Node mapNode = Node.parseFrom(new FileInputStream("palletTown.nml"));
+		for(Node tileNode: mapNode.subnodes("tile"))
+		{
+			int x = new Integer( tileNode.contentOf("x"));
+			int y = new Integer( tileNode.contentOf("y"));
+			Tile t = new Tile(x,y);
+			t.imageFrom(tileNode.contentOf("image"));
+			tiles.add(t);
+		}
+}catch(Exception ex){}				
+				
 				
 		tile(5,5).entity(player);
 	}

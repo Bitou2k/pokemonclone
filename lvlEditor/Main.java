@@ -126,9 +126,11 @@ class Main extends JFrame implements ActionListener  {
 					int x = new Integer( tileNode.contentOf("x"));
 					int y = new Integer( tileNode.contentOf("y"));
 					Tile t = new Tile(x,y);
-					t.set(tileNode.contentOf("image"));
-					t.setTarget(tileNode.contentOf("target"));
-					tiles[x][y] = t;
+					
+			t.set(tileNode.contentOf("image"));
+			t.setTarget(tileNode.contentOf("target"));
+			tiles[x][y] = t;
+			
 				}
 				
 				currentTile = tiles[0][0];
