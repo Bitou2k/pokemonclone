@@ -22,11 +22,7 @@ try{
 		Node mapNode = Node.parseFrom(new FileInputStream("palletTown.nml"));
 		for(Node tileNode: mapNode.subnodes("tile"))
 		{
-			int x = new Integer( tileNode.contentOf("x"));
-			int y = new Integer( tileNode.contentOf("y"));
-			Tile t = new Tile(x,y);
-			t.imageFrom(tileNode.contentOf("image"));
-			tiles.add(t);
+			tiles.add(Tile.fromNode(tileNode));
 		}
 }catch(Exception ex){}				
 				
@@ -43,11 +39,13 @@ try{
 	
 	void move(int dx, int dy)
 	{
-		Tile t = player.tile();
-		t.entity(null);
+		Tile now = player.tile();
+		Tile next = tile(now.x+dx,now.y+dy);
 		
-		Tile t2 = tile(t.x+dx,t.y+dy);
-		t2.entity(player);
+		if(next.isObstacle()) return;
+			
+		now.entity(null);
+		next.entity(player);
 	}
 	
 	void drawOn(Graphics2D g)

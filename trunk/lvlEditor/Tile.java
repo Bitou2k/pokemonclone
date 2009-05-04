@@ -9,7 +9,8 @@ import javax.swing.*;
 public class Tile{
 	private ImageIcon image;
 	private String imageName="";
-	private String target=""; //where you should go when steping on this tile(ie, a door)
+	private String target="";
+	private String type="Unset type";
 	private int locX;
 	private int locY;
 	static final int SQUARESIDE = 16; // each square in the origional pokemon seems to be 16x16
@@ -22,38 +23,23 @@ public class Tile{
 
 	public String getLocation() { return Integer.toString(locX) + ", " + Integer.toString(locY); }
 
-	public void set(String s) 
+	public void setImage(String s) 
 	{
 		image = new ImageIcon("./tileImages/" + s + ".png");
 		imageName = s;
 	}
-	void setTarget(String s)
-	{
-		target = s;
-	}
-	String getTarget()
-	{
-		return target;
-	}
+	public String getImage() {return imageName;}
+	
+	public void setTarget(String s) {target = s;}
+	public String getTarget() {return target;}
 
+	public void setType(String s) {type = s;}
+	public String getType() {return type;}
 	
 	Tile(int x, int y)
 	{
 		locX = x;
 		locY = y;
-	}
-
-	public void drawImage(Component c, Graphics g)
-	{
-		if (image != null)
-		{
-			image.paintIcon(c, g, locX * SQUARESIDE, locY * SQUARESIDE);
-		}
-	}
-	
-	public String toString()
-	{
-		return asNode().encoded();
 	}
 	
 	public Node asNode()
@@ -61,11 +47,39 @@ public class Tile{
 		Node tileNode = new Node("tile");
 		tileNode.addSubnode("image", imageName );
 		tileNode.addSubnode("target", target );
+		tileNode.addSubnode("type", type );
 		tileNode.addSubnode("x", ""+locX );
 		tileNode.addSubnode("y", ""+locY );
 		return tileNode;
 	}
+	
+	static Tile fromNode(Node tileNode)
+	{
+		int x = new Integer( tileNode.contentOf("x"));
+		int y = new Integer( tileNode.contentOf("y"));
+		Tile t = new Tile(x,y);
+		t.setImage(tileNode.contentOf("image"));
+		t.setType(tileNode.contentOf("type"));
+		t.setTarget(tileNode.contentOf("target"));
+		return t;
+	}
 
+	public void drawImage(Component c, Graphics g)
+	{
+		if (image != null)
+			image.paintIcon(c, g, locX * SQUARESIDE, locY * SQUARESIDE);
+	}
+	
+	public String toString()
+	{
+		return "a Tile(" + 
+			+ locX + ","
+			+ locY + ","
+			+ imageName + ","
+			+ type + ","
+			+ target + ")";
+	}
 }
+
 	
 	

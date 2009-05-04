@@ -14,11 +14,24 @@ class Main extends JFrame implements ActionListener  {
 		"Water TL", "Water T", "Water TR", "Water R", "Water L", "Water", "Barrel", "Sign", "Fence",
 	"Flower 1", "Flower 2", "Door", "Small House BL", "Small House B Windows", "Small House BR", "Small House ML",
 	"Small House M Window", "Small House M Windows", "Small House MR", "Small House TL","Small House TM", "Small House TR"};
-	JTextField height = new JTextField("40", 3), width = new JTextField("40", 3);
+	
+	String[] types = {
+		"door", //(->targetmap,targetx,targety)
+		"pokegrassOrCave", // (->wildgeneratorid)
+		"walkable", // (->trainer or entity id or blank)
+		"obstacle", // (->blank)
+		"water" //(->generator)
+		};
+	
+	JTextField name = new JTextField("newmap", 5);
+	JTextField height = new JTextField("40", 3);
+	JTextField width = new JTextField("40", 3);
 	JComboBox tile = new JComboBox(supportedTiles);
+	JComboBox type = new JComboBox(types);
+	JTextField target = new JTextField("",5);
 	JButton save = new JButton("Save");
 	JButton load = new JButton("Load");
-	JLabel location = new JLabel("");
+	JLabel location = new JLabel("<hoveroveratile>");
 
 	static int lvlWidth = 10;
 	static int lvlHeight = 10;
@@ -31,15 +44,22 @@ class Main extends JFrame implements ActionListener  {
 		super("LEVEL EDITOR!");
 
 
-		JPanel sidePanel = new JPanel();
-		sidePanel.add(new JLabel("Width:"));
-		sidePanel.add(width);
-		sidePanel.add(new JLabel("Height:"));
-		sidePanel.add(height);
-		sidePanel.add(tile);
-		sidePanel.add(save);
-		sidePanel.add(load);
-		sidePanel.add(location);
+		JPanel top = new JPanel();
+		top.add(new JLabel("Name:"));
+		top.add(name);
+		top.add(new JLabel("Width:"));
+		top.add(width);
+		top.add(new JLabel("Height:"));
+		top.add(height);
+		top.add(save);
+		top.add(load);
+		top.add(location);
+		
+		JPanel bottom = new JPanel();
+		bottom.add(tile);
+		bottom.add(type);
+		bottom.add(new JLabel("->"));
+		bottom.add(target);
 
 		height.addActionListener(this);
 		width.addActionListener(this);
@@ -47,9 +67,9 @@ class Main extends JFrame implements ActionListener  {
 		load.addActionListener(this);
 
 		add(new JScrollPane(new DisplayView()));
-		add(sidePanel, BorderLayout.NORTH);
+		add(top, BorderLayout.NORTH);
+		add(bottom, BorderLayout.SOUTH);
 
-		
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setSize(500,500);
 		setVisible(true);
@@ -97,6 +117,7 @@ class Main extends JFrame implements ActionListener  {
 			Node mapNode = new Node("map");
 			mapNode.addSubnode("width",""+lvlWidth);
 			mapNode.addSubnode("height",""+lvlHeight);
+			mapNode.addSubnode("name",name.getText());
 			for(int x = 0; x < lvlWidth; x++)
 				for (int y = 0; y < lvlHeight; y++)
 					mapNode.addSubnode( tiles[x][y].asNode() );
@@ -115,6 +136,7 @@ class Main extends JFrame implements ActionListener  {
 			try{
 				String filename = getFile("Load");
 				Node mapNode = Node.parseFrom(new FileInputStream(filename));
+				name.setText(mapNode.contentOf("name"));
 				int w = new Integer( mapNode.contentOf("width"));
 				int h = new Integer( mapNode.contentOf("height"));
 				resizeMap(w,h);
@@ -123,14 +145,9 @@ class Main extends JFrame implements ActionListener  {
 				
 				for(Node tileNode: mapNode.subnodes("tile"))
 				{
-					int x = new Integer( tileNode.contentOf("x"));
-					int y = new Integer( tileNode.contentOf("y"));
-					Tile t = new Tile(x,y);
+					Tile t = Tile.fromNode(tileNode);
 					
-			t.set(tileNode.contentOf("image"));
-			t.setTarget(tileNode.contentOf("target"));
-			tiles[x][y] = t;
-			
+					tiles[t.getX()][t.getY()] = t;
 				}
 				
 				currentTile = tiles[0][0];
@@ -158,6 +175,30 @@ class Main extends JFrame implements ActionListener  {
 				tiles[x][y] = new Tile(x, y);
 	}
 
+	void pushTile(Tile t)
+	{
+		currentTile.setImage( (String)tile.getSelectedItem() );
+		currentTile.setType( (String)type.getSelectedItem() );
+		currentTile.setTarget( target.getText() );
+		
+		location.setText(currentTile.toString());
+		repaint();
+	}
+	
+	void pullTile(Tile t)
+	{
+	
+		target.setText( currentTile.getTarget() );
+		tile.setSelectedItem( currentTile.getImage());
+		type.setSelectedItem( currentTile.getType());
+			
+		repaint();
+	}
+	
+	String upToSpace(String s)
+	{
+		return s.substring(0,s.indexOf(' '));
+	}
 
 	class DisplayView extends JComponent implements MouseListener, MouseMotionListener
 	{
@@ -192,22 +233,14 @@ class Main extends JFrame implements ActionListener  {
 			if(mouseX > 0 && mouseY > 0 && mouseX <= lvlWidth * SQUARESIDE - 1 && mouseY < lvlHeight * SQUARESIDE - 1)
 				currentTile = tiles[mouseX / SQUARESIDE][mouseY / SQUARESIDE];
 				
-			location.setText(currentTile.getLocation());
+			location.setText(currentTile.toString());
 		}
 		public void mouseDragged(MouseEvent e){}
 		
 		public void mouseClicked(MouseEvent e)
 		{
-			int mouseX, mouseY;
-			mouseX = e.getX();// - 10; //Translated for width
-			mouseY = e.getY();// - 30; //Translated for height
-			System.out.println(mouseX +", " + mouseY);
-			if(mouseX > 0 && mouseY > 0 && mouseX <= lvlWidth * SQUARESIDE - 1 && mouseY < lvlHeight * SQUARESIDE - 1)
-			currentTile = tiles[mouseX / SQUARESIDE][mouseY / SQUARESIDE];
-			tileType = (String)tile.getSelectedItem();
-			currentTile.set(tileType);
-			System.out.println(currentTile);
-			repaint();
+			if(e.getButton()==1) pushTile(currentTile);
+			else pullTile(currentTile);
 		}
 
 		public void mouseEntered(MouseEvent e) { System.out.println("Entered"); }
@@ -216,16 +249,7 @@ class Main extends JFrame implements ActionListener  {
 		// Invoked when the mouse exits a component.
 		public void mousePressed(MouseEvent e)
 		{
-			int mouseX, mouseY;
-			mouseX = e.getX();// - 10; //Translated for width
-			mouseY = e.getY();// - 30; //Translated for height
-			System.out.println(mouseX + ", " + mouseY);
-			if (mouseX > 0 && mouseY > 0 && mouseX <= lvlWidth * SQUARESIDE - 1 && mouseY < lvlHeight * SQUARESIDE - 1)
-				currentTile = tiles[mouseX / SQUARESIDE][mouseY / SQUARESIDE];
-			tileType = (String)tile.getSelectedItem();
-			currentTile.set(tileType);
-			System.out.println(currentTile);
-			repaint();
+			
 		}
 		public void mouseReleased(MouseEvent e) { System.out.println("Release"); }
 		// Invoked when a mouse button has been released on a component.
