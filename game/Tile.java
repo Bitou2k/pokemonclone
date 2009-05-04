@@ -7,21 +7,29 @@ import javax.swing.*;
 //one square on a map
 class Tile {
 
-	enum TileType { GROUND, BARRIER, DOOR, WATER, TALLGRASS } //and more
-
 	int x,y;
-	TileType type;
+	String type;
+	String target;
 	Image img;
 	Entity entity;
 	
 	Tile(int x, int y)
 	{
-		this(x,y,TileType.GROUND);
+		this.x=x; this.y=y;
 	}
-	Tile(int x, int y, TileType type)
+	
+	static Tile fromNode(Node tileNode)
 	{
-		this.x=x;this.y=y;this.type=type;
+		int x = new Integer( tileNode.contentOf("x"));
+		int y = new Integer( tileNode.contentOf("y"));
+		Tile t = new Tile(x,y);
+		t.imageFrom(tileNode.contentOf("image"));
+		t.type = (tileNode.contentOf("type"));
+		t.target = (tileNode.contentOf("target"));
+		return t;
 	}
+	
+	boolean isObstacle(){ return type.equals("obstacle");}
 	
 	void imageFrom(String s)
 	{
