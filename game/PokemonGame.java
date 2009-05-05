@@ -29,7 +29,6 @@ class PokemonGame extends JComponent implements KeyListener {
 					currentPresenter.step();
 					repaint();
 				}catch(Exception e){}
-				
 			}
 		}.start();
 		
