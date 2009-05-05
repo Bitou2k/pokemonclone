@@ -6,6 +6,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import java.io.*;
+import java.util.*;
 
 //the shell for a Game
 class Main extends JFrame implements ActionListener  {
@@ -14,6 +15,27 @@ class Main extends JFrame implements ActionListener  {
 		"Water TL", "Water T", "Water TR", "Water R", "Water L", "Water", "Barrel", "Sign", "Fence",
 	"Flower 1", "Flower 2", "Door", "Small House BL", "Small House B Windows", "Small House BR", "Small House ML",
 	"Small House M Window", "Small House M Windows", "Small House MR", "Small House TL","Small House TM", "Small House TR"};
+	
+	Vector<TileLabel> getAvailableTiles()
+	{
+		Vector<TileLabel> v = new Vector<TileLabel>();
+		for(File f : new File("./tileImages/").listFiles())
+			v.add(new TileLabel(f));
+		return v;
+	}
+	class TileLabel extends JLabel
+	{
+		String n;
+		TileLabel(File f){
+			this(f, f.getName().substring(0, f.getName().indexOf(".")) );
+		}
+		TileLabel(File f, String n)
+		{
+			super(n,new ImageIcon(f.toString()),JLabel.LEFT);
+			this.n=n;
+		}
+		public String toString(){return n;}
+	}
 	
 	String[] types = {
 		"door", //(->targetmap,targetx,targety)
@@ -26,7 +48,7 @@ class Main extends JFrame implements ActionListener  {
 	JTextField name = new JTextField("newmap", 5);
 	JTextField height = new JTextField("40", 3);
 	JTextField width = new JTextField("40", 3);
-	JComboBox tile = new JComboBox(supportedTiles);
+	JComboBox tile = new JComboBox(getAvailableTiles());
 	JComboBox type = new JComboBox(types);
 	JTextField target = new JTextField("",5);
 	JButton save = new JButton("Save");
@@ -43,6 +65,7 @@ class Main extends JFrame implements ActionListener  {
 	Main(){
 		super("LEVEL EDITOR!");
 
+		tile.setRenderer(new JLabelCellRenderer());
 
 		JPanel top = new JPanel();
 		top.add(new JLabel("Name:"));
@@ -268,6 +291,22 @@ class Main extends JFrame implements ActionListener  {
 	
 
 
+	}
+	
+	
+	class JLabelCellRenderer extends DefaultListCellRenderer {
+	    public Component getListCellRendererComponent(JList list,Object value, int index,boolean iss,boolean chf)
+	    {
+			if(value instanceof JLabel)
+			{
+				JLabel l = (JLabel)value;
+				super.getListCellRendererComponent(list, value, index, iss, chf);
+				setText(l.getText());
+				setIcon(l.getIcon());
+				return this;
+			}
+			return new JLabel();
+	    }
 	}
 
 	
