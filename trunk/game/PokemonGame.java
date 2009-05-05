@@ -33,7 +33,7 @@ class PokemonGame extends JComponent implements KeyListener {
 			}
 		}.start();
 		
-		//setPreferredSize(320,240);
+		setPreferredSize(new Dimension(16*20,16*18));
 	}
 	
 	public void enterPresenter(Presenter p){
@@ -72,9 +72,8 @@ class PokemonGame extends JComponent implements KeyListener {
 		f.addKeyListener(pg);
 		f.add(pg);
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		f.setSize(320,240);
+		f.pack();
+		f.setResizable(false);
 		f.setVisible(true);
-		
-		
 	}
 }
