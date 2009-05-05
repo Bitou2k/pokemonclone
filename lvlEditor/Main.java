@@ -11,16 +11,17 @@ import java.util.*;
 //the shell for a Game
 class Main extends JFrame implements ActionListener  {
 
-	static final String[] supportedTiles = { "Blank", "Sparce Grass", "More Grass", "Grass", "Poke Grass",
-		"Water TL", "Water T", "Water TR", "Water R", "Water L", "Water", "Barrel", "Sign", "Fence",
-	"Flower 1", "Flower 2", "Door", "Small House BL", "Small House B Windows", "Small House BR", "Small House ML",
-	"Small House M Window", "Small House M Windows", "Small House MR", "Small House TL","Small House TM", "Small House TR"};
+	Map<String,TileLabel> tileDic = new HashMap<String,TileLabel>();
 	
 	Vector<TileLabel> getAvailableTiles()
 	{
 		Vector<TileLabel> v = new Vector<TileLabel>();
 		for(File f : new File("./tileImages/").listFiles())
-			v.add(new TileLabel(f));
+		{
+			TileLabel t = new TileLabel(f);
+			v.add(t);
+			tileDic.put(t.toString(),t);
+		}
 		return v;
 	}
 	class TileLabel extends JLabel
@@ -58,7 +59,7 @@ class Main extends JFrame implements ActionListener  {
 	static int lvlWidth = 10;
 	static int lvlHeight = 10;
 	public static final int SQUARESIDE = 16; // each square in the origional pokemon seems to be 16x16
-	static String tileType = supportedTiles[1];
+	//static String tileType = supportedTiles[1];
 	Tile tiles[][] = new Tile[10][10];
 	Tile currentTile;
 
@@ -212,7 +213,7 @@ class Main extends JFrame implements ActionListener  {
 	{
 	
 		target.setText( currentTile.getTarget() );
-		tile.setSelectedItem( currentTile.getImage());
+		tile.setSelectedItem( tileDic.get(currentTile.getImage()) );
 		type.setSelectedItem( currentTile.getType());
 			
 		repaint();
