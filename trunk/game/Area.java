@@ -50,8 +50,10 @@ try{
 	
 	void drawOn(Graphics2D g)
 	{
-		g.setColor(Color.WHITE);
-		g.fillRect(0,0,320,240);
+		g.setColor(Color.BLACK);
+		g.fillRect(0,0,16*20,16*18);
+		
+		g.translate( (player.tile().x-10)*-16, (player.tile().y-10)*-16);
 		
 		for(Tile t:tiles) t.drawOn(g);
 	}
