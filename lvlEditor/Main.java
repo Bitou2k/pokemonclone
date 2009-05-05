@@ -27,7 +27,7 @@ class Main extends JFrame implements ActionListener  {
 	{
 		String n;
 		TileLabel(File f){
-			this(f, f.getName().substring(0, f.getName().indexOf(".")) );
+			this(f, f.getName() );
 		}
 		TileLabel(File f, String n)
 		{
@@ -200,8 +200,8 @@ class Main extends JFrame implements ActionListener  {
 
 	void pushTile(Tile t)
 	{
-		currentTile.setImage( (String)tile.getSelectedItem() );
-		currentTile.setType( (String)type.getSelectedItem() );
+		currentTile.setImage( tile.getSelectedItem().toString() );
+		currentTile.setType( type.getSelectedItem().toString() );
 		currentTile.setTarget( target.getText() );
 		
 		location.setText(currentTile.toString());
