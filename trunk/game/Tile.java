@@ -33,7 +33,7 @@ class Tile {
 	
 	void imageFrom(String s)
 	{
-		img = new ImageIcon("./tileImages/" + s + ".png").getImage();
+		img = new ImageIcon("./tileImages/" + s).getImage();
 	}
 	
 	void entity(Entity e) {entity=e; if(e!=null)e.tile(this);}
