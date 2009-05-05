@@ -5,7 +5,7 @@ import java.awt.event.*;
 import javax.swing.*;
 
 //the shell for a Game
-class PokemonGame extends JFrame implements KeyListener {
+class PokemonGame extends JComponent implements KeyListener {
 
 	//all the areas in a game
 	private java.util.List<Area> areas; 
@@ -18,13 +18,6 @@ class PokemonGame extends JFrame implements KeyListener {
 	
 	
 	PokemonGame(){
-		super("PokemonClone!");
-		
-		addKeyListener(this);
-		
-		setDefaultCloseOperation(EXIT_ON_CLOSE);
-		setSize(320,240);
-		setVisible(true);
 		
 		//enterPresenter(new StartScreen());
 		enterPresenter(new Area());
@@ -39,6 +32,8 @@ class PokemonGame extends JFrame implements KeyListener {
 				
 			}
 		}.start();
+		
+		//setPreferredSize(320,240);
 	}
 	
 	public void enterPresenter(Presenter p){
@@ -48,7 +43,6 @@ class PokemonGame extends JFrame implements KeyListener {
 	}
 	
 	public synchronized void paint(Graphics g){
-		g.translate(4,30); //origin as the visible part, not the corner hidden under the title bar
 		g.setColor(Color.GRAY);
 		g.fillRect(0,0,320,240);
 		currentPresenter.drawOn((Graphics2D)g);
@@ -72,6 +66,15 @@ class PokemonGame extends JFrame implements KeyListener {
 	
 	//ew, static is the root of all evil
 	public static void main(String[] args){
-		new PokemonGame();
+		
+		JFrame f = new JFrame("PokemonClone!");
+		PokemonGame pg = new PokemonGame();
+		f.addKeyListener(pg);
+		f.add(pg);
+		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		f.setSize(320,240);
+		f.setVisible(true);
+		
+		
 	}
 }
