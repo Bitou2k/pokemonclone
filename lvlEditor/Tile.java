@@ -27,6 +27,8 @@ public class Tile{
 	{
 		image = new ImageIcon("./tileImages/" + s + ".png");
 		imageName = s;
+
+		System.out.println(image);
 	}
 	public String getImage() {return imageName;}
 	
