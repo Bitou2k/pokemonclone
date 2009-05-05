@@ -219,13 +219,15 @@ class Main extends JFrame implements ActionListener  {
 
 			for (int x = 0; x < lvlWidth; x++)
 				for (int y = 0; y < lvlHeight; y++)
-					if(tiles[x][y]!=null) tiles[x][y].drawImage(this, g);
+					if(tiles[x][y]!=null) 
+						tiles[x][y].drawImage(this, g);
 
 		}
 		public Dimension getPreferredSize()
 		{
 			return new Dimension(lvlWidth * SQUARESIDE + 20, lvlHeight * SQUARESIDE + 50);
 		}
+		boolean mouseDown = false;
 		public void mouseMoved(MouseEvent e)
 		{
 			int mouseX = e.getX();// - 10; //Translated for width
@@ -234,8 +236,15 @@ class Main extends JFrame implements ActionListener  {
 				currentTile = tiles[mouseX / SQUARESIDE][mouseY / SQUARESIDE];
 				
 			location.setText(currentTile.toString());
+
+			if (mouseDown) mouseClicked(e);
 		}
-		public void mouseDragged(MouseEvent e){}
+		public void mouseDragged(MouseEvent e)
+		{
+			mouseMoved(e);
+			if(e.getButton()==1) pushTile(currentTile);
+			else pullTile(currentTile);
+		}
 		
 		public void mouseClicked(MouseEvent e)
 		{
@@ -245,13 +254,16 @@ class Main extends JFrame implements ActionListener  {
 
 		public void mouseEntered(MouseEvent e) { System.out.println("Entered"); }
 		// Invoked when the mouse enters a component.
-		public void mouseExited(MouseEvent e) { System.out.println("Exited"); }
+		public void mouseExited(MouseEvent e) { mouseDown = false; System.out.println("Exited"); }
 		// Invoked when the mouse exits a component.
 		public void mousePressed(MouseEvent e)
 		{
-			
+			mouseDown = true;
+
+			if (e.getButton() == 1) pushTile(currentTile);
+			else pullTile(currentTile);
 		}
-		public void mouseReleased(MouseEvent e) { System.out.println("Release"); }
+		public void mouseReleased(MouseEvent e) { mouseDown = false; System.out.println("Release"); }
 		// Invoked when a mouse button has been released on a component.
 	
 
