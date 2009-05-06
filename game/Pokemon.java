@@ -4,7 +4,9 @@ import java.util.*;
 import java.awt.*;
 import javax.swing.*;
 
-//a pokemon owned by the player or a rival trainer, or a prototype for generating a wild pokemon/evolving a pokemon
+/**
+ *A particular pokemon owned by the player or a rival trainer.
+ */
 class Pokemon {
 	String name;
 	String nickname;
@@ -19,10 +21,6 @@ class Pokemon {
 	int currentAttack, currentDefence, currentSpeed, currentSpecial; //the ones that may be lowered in battle
 	int attack, defence, speed, special; //the base stat
 	ArrayList<Move> moves; //up to 4
-	Map<Integer,String> futureMoves; //level learned -> move
-	Map<Integer,Pokemon> futureEvolves; //level -> pokemon prototype
-	
-
 	
 	static ArrayList<Pokemon> prototypes = new ArrayList<Pokemon>();
 	static { loadPrototypes(); }
@@ -42,7 +40,7 @@ class Pokemon {
 		//p.type = Enum.valueOf(Type.class,n.contentOf("type"));
 		p.image = new ImageIcon("./icons/"+n.contentOf("image"));
 		p.description = n.contentOf("description");
-		p.futureMoves = movesFromNode(n.subnode("moves"));
+		//p.futureMoves = movesFromNode(n.subnode("moves"));
 		return p;		
 	}
 	static Map<Integer,String> movesFromNode(Node n){
