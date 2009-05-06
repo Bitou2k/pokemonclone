@@ -270,8 +270,6 @@ class Main extends JFrame implements ActionListener  {
 			if (mouseX > 0 && mouseY > 0 && mouseX <= lvlWidth * SQUARESIDE - 1 && mouseY < lvlHeight * SQUARESIDE - 1)
 				currentTile = tiles[mouseX / SQUARESIDE][mouseY / SQUARESIDE];
 				pushTile(currentTile);
-			
-
 		}
 		
 		public void mouseClicked(MouseEvent e)
