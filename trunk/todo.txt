@@ -9,6 +9,4 @@ seperate pokemon and pokedexpokemon classes
 
 make menu presenter do something
 
-get icons for Ash in all four directions
-
 obsticle's target should be the text to be displayed for signs
