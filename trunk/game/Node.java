@@ -3,46 +3,80 @@ package game;
 import java.io.*;
 import java.util.*;
 
-//  like xml without attributes, namespace, or the <thisisanopenedandclosedtag/> shortcut
-//  node names are case-insenstive
-//  a stanza is a top level node of a document
-//
+/**
+*  parser/generator of a simplified version of xml;
+*  node names are case-insenstive;
+* a stanza is a top level node of a document
+*/
 public class Node
 {
 
-	public Node(){}
+	public Node(){
+		this("","");
+	}
 	public Node(String name){
-		this.name=name;
+		this(name,"");
 	}
 	public Node(String name, String content){
 		if(name!=null)this.name=name;
 		if(content!=null)this.content=content;
 	}
-	public Node(Node supernode){
+	private Node(Node supernode){
 		this.supernode = supernode;
 	}
 	
+	/**
+	*Returns the name of this node
+	 */
 	public String name(){return name;}
+	/**
+	*Sets the name of this node
+	 */
 	public void name(String x) {name=x;}
 	
+	/**
+	*Returns the content of this node
+	 */
 	public String content() {return content;}
+	/**
+	*Sets the content of this node
+	 */
 	public void content(String x) {content = x;}
 	
+	/**
+	*Returns an enumeration of all subnodes of this node
+	 */
 	public List<Node> subnodes() {return subnodes;}
+	
+	/**
+	*Adds a subnode with the given name and content.
+	 */
 	public Node addSubnode(String name,String contents){
 		return addSubnode(new Node(name,contents));
 	}
+	
+	/**
+	*Adds a subnode
+	 */
 	public Node addSubnode(Node n){
 		subnodes.add(n);
 		n.supernode = this;
 		return n;
 	}
+	
+	/**
+	*Returns the first found subnode with the given name
+	 */
 	public Node subnode(String subnodeName){
 		for(Node n:subnodes){
 			if(n.name.equalsIgnoreCase(subnodeName)) return n;
 		}
 		return null;
 	}
+	
+	/**
+	*Returns an enumeration of all subnodes with the given name
+	 */
 	public List<Node> subnodes(String subnodeName){
 		List<Node> matches = new ArrayList<Node>();
 		for(Node n:subnodes){
@@ -50,13 +84,18 @@ public class Node
 		}
 		return matches;
 	}
+	
+	/**
+	*Returns the content of the first subnode with the given name
+	 */
 	public String contentOf(String subnodeName){
 		Node n = subnode(subnodeName);
 		if(n!=null) return n.content();
 		return "";
 	}
 	
-	public String encoded(){
+	
+	private String encoded(){
 		String x="";
 		x+="<"+encode(name)+">"+encode(content);
 		for(Node n: subnodes) x+= n.encoded();
@@ -64,11 +103,17 @@ public class Node
 		return x;
 	}
 
+	/**
+	*Writes this stanza to the given stream
+	 */
 	public void writeOn(OutputStream os) throws IOException	{
 		os.write( encoded().getBytes() );
 		os.flush();
 	}
 	
+	/**
+	*Writes this stanza to the given stream, ignoring any errors
+	 */
 	public void tryWriteOn(OutputStream os){
 		try{
 			writeOn(os);
@@ -77,7 +122,9 @@ public class Node
 		}
 	}
 	
-	//return a node containing all stanzas as children
+	/**
+	*Returns a node containing all stanzas in the given file as children
+	 */
 	public static Node documentRootFrom(String filename) throws IOException
 	{
 		InputStream is = new FileInputStream(filename);
@@ -86,7 +133,9 @@ public class Node
 		return root;
 	}
 	
-	//parse and return all stanzas from the stream, an empty collection if failure before any parsed
+	/**
+	*Parses and returns all stanzas from the stream, an empty collection if failure before any parsed
+	 */
 	public static List<Node> parseAllFrom(InputStream is)
 	{
 		ArrayList<Node> nodes = new ArrayList<Node>();
@@ -98,7 +147,9 @@ public class Node
 		return nodes;
 	}
 	
-	//parse and return the next stanza, useful for streaming apps
+	/**
+	*Parse and return the next stanza, useful for streaming apps
+	 */
 	public static Node parseFrom(InputStream is) throws IOException
 	{
 		Node top = new Node();
@@ -184,7 +235,7 @@ public class Node
 		return new String(bytes,0,pos);
 	}
 	
-	public static String encode(String x)
+	private static String encode(String x)
 	{
 		x = x.replace("&","&amp;");
 		x = x.replace("<","&lt;");
@@ -192,7 +243,7 @@ public class Node
 		return x;
 	}
 	
-	public static String decode(String x)
+	private static String decode(String x)
 	{
 		x = x.replace("&lt;","<");
 		x = x.replace("&gt;",">");

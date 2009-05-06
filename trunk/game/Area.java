@@ -5,11 +5,12 @@ import javax.swing.*;
 import java.io.*;
 import java.util.*;
 
-//the area or map that is a grid of Tiles
+/**
+ *A grid of Tiles in the game, also known as a map.
+ */
 class Area extends Presenter {
 
-
-	static Map<String,Area> areas = new HashMap<String,Area>();
+	private static Map<String,Area> areas = new HashMap<String,Area>();
 	
 	static
 	{
@@ -34,7 +35,11 @@ class Area extends Presenter {
 		}
 		
 	}
-	static Area named(String x)
+	
+	/**
+	 *Returns a loaded map with the given name, only maps in the root directory will be loaded.
+	 */
+	public static Area named(String x)
 	{
 		return areas.get(x);
 	}
