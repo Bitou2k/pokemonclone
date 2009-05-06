@@ -235,16 +235,17 @@ class Main extends JFrame implements ActionListener  {
 		{
 			g.setColor(Color.BLACK);
 			g.fillRect(0, 0, lvlWidth * SQUARESIDE, lvlHeight * SQUARESIDE);
-			g.setColor(Color.RED);
-			for (int x = 0; x <= lvlWidth * SQUARESIDE; x += SQUARESIDE)
-				g.drawLine(x, 0, x, lvlHeight * SQUARESIDE);
-			for (int y = 0; y <= lvlHeight * SQUARESIDE; y += SQUARESIDE)
-				g.drawLine(0, y, lvlWidth * SQUARESIDE, y);
 
 			for (int x = 0; x < lvlWidth; x++)
 				for (int y = 0; y < lvlHeight; y++)
 					if(tiles[x][y]!=null) 
 						tiles[x][y].drawImage(this, g);
+
+			g.setColor(Color.RED);
+			for (int x = 0; x <= lvlWidth * SQUARESIDE; x += SQUARESIDE)
+				g.drawLine(x, 0, x, lvlHeight * SQUARESIDE);
+			for (int y = 0; y <= lvlHeight * SQUARESIDE; y += SQUARESIDE)
+				g.drawLine(0, y, lvlWidth * SQUARESIDE, y);
 
 		}
 		public Dimension getPreferredSize()
