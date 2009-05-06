@@ -58,7 +58,7 @@ class Tile {
 	
 	void drawOn(Graphics2D g)
 	{	
-		g.setColor(Color.BLUE);
+		g.setColor(Color.BLACK);
 		g.translate(width()*x,height()*y);
 			g.fillRect(2,2,14,14);
 			g.drawImage(img,0,0,null);
