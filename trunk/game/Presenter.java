@@ -8,6 +8,7 @@ abstract class Presenter {
 	
 	PokemonGame shell; //the shell i'm in
 	
+	public PokemonGame shell(){return shell;}
 	public void setShell(PokemonGame shell){
 		this.shell=shell;
 	}

@@ -20,7 +20,10 @@ class PokemonGame extends JComponent implements KeyListener {
 	PokemonGame(){
 		
 		//enterPresenter(new StartScreen());
-		enterPresenter(new Area());
+		
+		Area a = Area.named("route01");
+		a.playerAt(5,5);
+		enterPresenter(a);
 		
 		new Thread(){
 			public void run(){

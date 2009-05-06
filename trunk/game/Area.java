@@ -8,28 +8,61 @@ import java.util.*;
 //the area or map that is a grid of Tiles
 class Area extends Presenter {
 
+
+	static Map<String,Area> areas = new HashMap<String,Area>();
+	
+	static
+	{
+		try
+		{
+		for(File f: new File("./").listFiles() )
+		{
+			try
+			{
+
+				Area a = new Area(f);
+				areas.put(a.name,a);
+				
+			}
+			catch(Exception exx)
+			{
+			}
+		}
+		}
+		catch(Exception ex)
+		{
+		}
+		
+	}
+	static Area named(String x)
+	{
+		return areas.get(x);
+	}
+
 	java.util.List<Tile> tiles = new ArrayList<Tile>();
 	java.util.List<Entity> entities = new ArrayList<Entity>();
 	Player player = new Player();  
 	WildPokemonGenerator gen; //for grassy areas
+	String name;
 	
-	Area()
+	Area(File f) throws Exception
 	{
-	//	for(int x=0;x<12;x++)
-	//		for(int y=0;y<9;y++)
-	//			tiles.add(new Tile(x,y));
-try{		
-		//Node mapNode = Node.parseFrom(new FileInputStream("palletTown.nml"));
-		Node mapNode = Node.parseFrom(new FileInputStream("route01.nml"));
+		Node mapNode = Node.parseFrom(new FileInputStream(f));
+		name = mapNode.contentOf("name");
 		
 		for(Node tileNode: mapNode.subnodes("tile"))
 		{
 			tiles.add(Tile.fromNode(tileNode));
 		}
-}catch(Exception ex){}				
+		if(tiles.size()==0) throw new Exception();
 				
-				
-		tile(5,5).entity(player);
+	}
+	
+	void playerAt(int x,int y)
+	{
+		Tile now = player.tile();
+		if(now!=null) now.entity(null);
+		tile(x,y).entity(player);
 	}
 	
 	Tile tile(int x, int y)
@@ -45,6 +78,18 @@ try{
 		Tile next = tile(now.x+dx,now.y+dy);
 		
 		if(next.isObstacle()) return;
+		
+		if(next.isDoor())
+		{
+		System.out.println(next.target);
+		System.out.println(next.targetX());
+		System.out.println(next.targetY());
+		
+			Area a = Area.named(next.targetMap());
+			a.playerAt(next.targetX(),next.targetY());
+			shell().enterPresenter(a);
+			return;
+		}
 			
 		now.entity(null);
 		next.entity(player);

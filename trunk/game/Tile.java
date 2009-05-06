@@ -30,6 +30,20 @@ class Tile {
 	}
 	
 	boolean isObstacle(){ return type.equals("obstacle");}
+	boolean isDoor(){ return type.equals("door")&& !target.equals("");}
+	
+	String targetMap()
+	{
+		return target.substring(0,target.indexOf(":"));
+	}
+	int targetX()
+	{
+		return new Integer(target.substring(target.indexOf(":")+1,target.indexOf(",")));
+	}
+	int targetY()
+	{
+		return new Integer(target.substring(target.indexOf(",")+1));
+	}
 	
 	void imageFrom(String s)
 	{

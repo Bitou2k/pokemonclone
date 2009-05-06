@@ -39,9 +39,9 @@ class Main extends JFrame implements ActionListener  {
 	}
 	
 	String[] types = {
+		"walkable", // (->trainer or entity id or blank)
 		"door", //(->targetmap,targetx,targety)
 		"pokegrassOrCave", // (->wildgeneratorid)
-		"walkable", // (->trainer or entity id or blank)
 		"obstacle", // (->blank)
 		"water" //(->generator)
 		};
