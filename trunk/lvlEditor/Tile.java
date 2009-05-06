@@ -14,6 +14,7 @@ public class Tile{
 	private int locX;
 	private int locY;
 	static final int SQUARESIDE = 16; // each square in the origional pokemon seems to be 16x16
+
 	
 	public void setX(int x){locX = x;}
 	public void setY(int y) {locY = y;}
@@ -42,6 +43,8 @@ public class Tile{
 	{
 		locX = x;
 		locY = y;
+		setImage("Null"); // starts all tiles as null black tile
+		type = "obstacle";// and they should be obstacles
 	}
 	
 	public Node asNode()
