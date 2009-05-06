@@ -19,7 +19,9 @@ class Area extends Presenter {
 	//		for(int y=0;y<9;y++)
 	//			tiles.add(new Tile(x,y));
 try{		
-		Node mapNode = Node.parseFrom(new FileInputStream("palletTown.nml"));
+		//Node mapNode = Node.parseFrom(new FileInputStream("palletTown.nml"));
+		Node mapNode = Node.parseFrom(new FileInputStream("route01.nml"));
+		
 		for(Node tileNode: mapNode.subnodes("tile"))
 		{
 			tiles.add(Tile.fromNode(tileNode));

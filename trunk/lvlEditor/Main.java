@@ -261,7 +261,7 @@ class Main extends JFrame implements ActionListener  {
 				
 			location.setText(currentTile.toString());
 
-			if (mouseDown) mouseClicked(e);
+			//if (mouseDown) mouseClicked(e);
 		}
 		public void mouseDragged(MouseEvent e)
 		{
