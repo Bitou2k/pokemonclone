@@ -44,9 +44,16 @@ class PokedexPokemon {
 		//p.futureMoves = movesFromNode(n.subnode("moves"));
 		
 	}
+	
+	/**
+	*!Unimplemented.
+	*/
+	public Pokemon makeWildAtLevel(int level)
+	{
+		return null;
+	}
 		
-		
-	static ArrayList<PokedexPokemon> pokemon = new ArrayList<PokedexPokemon>();
+	private static ArrayList<PokedexPokemon> pokemon = new ArrayList<PokedexPokemon>();
 	static { loadPrototypes(); }
 	
 	private static void loadPrototypes(){
