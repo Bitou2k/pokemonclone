@@ -4,7 +4,9 @@ import java.awt.*;
 import java.io.*;
 import javax.swing.*;
 
-//one square on a map
+/**one square on a map
+ *
+ */
 class Tile {
 
 	int x,y;
@@ -56,7 +58,10 @@ class Tile {
 	int width(){return 16;}
 	int height(){return 16;}
 	
-	void drawOn(Graphics2D g)
+	/**
+	 *Draw my background image, and then any entity on top of it.
+	 */
+	public void drawOn(Graphics2D g)
 	{	
 		g.setColor(Color.BLACK);
 		g.translate(width()*x,height()*y);
@@ -65,5 +70,13 @@ class Tile {
 			if(entity!=null) entity.drawOn(g);
 		
 		g.translate(-width()*x,-height()*y);
+	}
+	
+	/**
+	 *Step my entity
+	 */
+	public void step()
+	{
+		if(entity!=null) entity.step();
 	}
 }
