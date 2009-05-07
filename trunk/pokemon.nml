@@ -536,53 +536,6 @@
 </pokemon>
 
 <pokemon>
-	<number>140</number>
-	<name>Kabuto</name>
-	<image>icon140.gif</image>
-	<description>A POKEMON that was resurrected from a fossil found in what was once the ocean floor eons ago.</description>
-	<type>Rock</type>
-	<type2>Water</type2>
-	<hp>30</hp>
-	<attack>80</attack>
-	<defense>90</defense>
-	<sp atk>55</sp atk>
-	<sp def>45</sp def>
-	<speed>55</speed>
-	<evolution>
-		<level>40</level>
-		<target>Kabutops</target>
-	</evolution>
-	<moves>
-		<move>
-			<level>1</level>
-			<name>Scratch</name>
-		</move>
-		<move>
-			<level>1</level>
-			<name>Harden</name>
-		</move>
-		<move>
-			<level>34</level>
-			<name>Absorb</name>
-		</move>
-		<move>
-			<level>39</level>
-			<name>Slash</name>
-		</move>
-		<move>
-			<level>44</level>
-			<name>Leer</name>
-		</move>
-		<move>
-			<level>49</level>
-			<name>Hydro Pump</name>
-		</move>
-	</moves>
-	<HMs>03</HMs>
-	<TMs>02,03,05,06,08,09,10,11,12,13,14,15,17,19,20,31,32,33,34,40,44,50</TMs>
-</pokemon>
-
-<pokemon>
 	<number>139</number>
 	<name>Omastar</name>
 	<image>icon139.gif</image>
