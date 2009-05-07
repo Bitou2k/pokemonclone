@@ -956,6 +956,342 @@
 </pokemon>
 
 <pokemon>
+	<number>132</number>
+	<name>Ditto</name>
+	<image>icon132.gif</image>
+	<description>Capable of copying an enemy's genetic code to instantly transform itself into a duplicate of the enemy.</description>
+	<type>Normal</type>
+	<type2></type2>
+	<hp>48</hp>
+	<attack>48</attack>
+	<defense>48</defense>
+	<sp atk>48</sp atk>
+	<sp def>48</sp def>
+	<speed>48</speed>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Transform</name>
+		</move>
+	</moves>
+	<HMs></HMs>
+	<TMs></TMs>
+</pokemon>
+
+<pokemon>
+	<number>131</number>
+	<name>Lapras</name>
+	<image>icon131.gif</image>
+	<description>A POKEMON that has been over hunted almost to extinction. It can ferry people across the water.</description>
+	<type>Water</type>
+	<type2>Ice</type2>
+	<hp>130</hp>
+	<attack>85</attack>
+	<defense>80</defense>
+	<sp atk>85</sp atk>
+	<sp def>95</sp def>
+	<speed>60</speed>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Water Gun</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Growl</name>
+		</move>
+		<move>
+			<level>16</level>
+			<name>Sing</name>
+		</move>
+		<move>
+			<level>20</level>
+			<name>Mist</name>
+		</move>
+		<move>
+			<level>25</level>
+			<name>Body Slam</name>
+		</move>
+		<move>
+			<level>31</level>
+			<name>Confuse Ray</name>
+		</move>
+		<move>
+			<level>38</level>
+			<name>Ice Beam</name>
+		</move>
+		<move>
+			<level>46</level>
+			<name>Hydro Pump</name>
+		</move>
+	</moves>
+	<HMs>03,04</HMs>
+	<TMs>06,07,08,09,10,11,12,13,14,15,20,22,23,24,25,29,31,32,33,34,40,44,46,50</TMs>
+</pokemon>
+
+<pokemon>
+	<number>130</number>
+	<name>Gyarados</name>
+	<image>icon130.gif</image>
+	<description>Rarely seen in the wild. Huge and vicious, it is capable of destroying entire cities in a rage.</description>
+	<type>Water</type>
+	<type2>Flying</type2>
+	<hp>95</hp>
+	<attack>125</attack>
+	<defense>79</defense>
+	<sp atk>60</sp atk>
+	<sp def>100</sp def>
+	<speed>81</speed>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Splash</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Tackle</name>
+		</move>
+		<move>
+			<level>20</level>
+			<name>Bite</name>
+		</move>
+		<move>
+			<level>25</level>
+			<name>Dragon Rage</name>
+		</move>
+		<move>
+			<level>32</level>
+			<name>Leer</name>
+		</move>
+		<move>
+			<level>41</level>
+			<name>Hydro Pump</name>
+		</move>
+		<move>
+			<level>52</level>
+			<name>Hyper Beam</name>
+		</move>
+	</moves>
+	<HMs>03,04</HMs>
+	<TMs>14,15,20,23,24,25,31,32,33,34,38,40,44,50</TMs>
+</pokemon>
+
+<pokemon>
+	<number>129</number>
+	<name>Magikarp</name>
+	<image>icon129.gif</image>
+	<description>In the distant past, it was somewhat stronger than the horribly weak descendants that exist today.</description>
+	<type>Water</type>
+	<type2></type2>
+	<hp>20</hp>
+	<attack>10</attack>
+	<defense>55</defense>
+	<sp atk>15</sp atk>
+	<sp def>20</sp def>
+	<speed>80</speed>
+	<evolution>
+		<level>20</level>
+		<target>Gyarados</target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Splash</name>
+		</move>
+		<move>
+			<level>15</level>
+			<name>Tackle</name>
+		</move>
+	</moves>
+	<HMs></HMs>
+	<TMs></TMs>
+</pokemon>
+
+<pokemon>
+	<number>128</number>
+	<name>Tauros</name>
+	<image>icon128.gif</image>
+	<description>When it targets an enemy, it charges furiously while whipping its body with its long tails.</description>
+	<type>Normal</type>
+	<type2></type2>
+	<hp>75</hp>
+	<attack>100</attack>
+	<defense>95</defense>
+	<sp atk>40</sp atk>
+	<sp def>70</sp def>
+	<speed>110</speed>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Tackle</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Stomp</name>
+		</move>
+		<move>
+			<level>28</level>
+			<name>Tail Whip</name>
+		</move>
+		<move>
+			<level>35</level>
+			<name>Leer</name>
+		</move>
+		<move>
+			<level>44</level>
+			<name>Rage</name>
+		</move>
+		<move>
+			<level>51</level>
+			<name>Take Down</name>
+		</move>
+	</moves>
+	<HMs>04</HMs>
+	<TMs>06,07,08,09,10,13,14,15,20,24,25,26,27,31,32,34,38,40,44,50</TMs>
+</pokemon>
+
+<pokemon>
+	<number>127</number>
+	<name>Pinsir</name>
+	<image>icon127.gif</image>
+	<description>If it fails to crush the victim in its pincers, it will swing it around and toss it hard.</description>
+	<type>Bug</type>
+	<type2></type2>
+	<hp>65</hp>
+	<attack>125</attack>
+	<defense>100</defense>
+	<sp atk>55</sp atk>
+	<sp def>70</sp def>
+	<speed>85</speed>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Vicegrip</name>
+		</move>
+		<move>
+			<level>25</level>
+			<name>Seismic Toss</name>
+		</move>
+		<move>
+			<level>30</level>
+			<name>Guillotine</name>
+		</move>
+		<move>
+			<level>36</level>
+			<name>Focus Energy</name>
+		</move>
+		<move>
+			<level>43</level>
+			<name>Harden</name>
+		</move>
+		<move>
+			<level>49</level>
+			<name>Slash</name>
+		</move>
+		<move>
+			<level>54</level>
+			<name>Swords Dance</name>
+		</move>
+	</moves>
+	<HMs>01,04</HMs>
+	<TMs>03,06,08,09,10,15,17,19,20,31,32,34,44,50</TMs>
+</pokemon>
+
+<pokemon>
+	<number>126</number>
+	<name>Magmar</name>
+	<image>icon126.gif</image>
+	<description>Its body always burns with an orange glow that enables it to hide perfectly among flames.</description>
+	<type>Fire</type>
+	<type2></type2>
+	<hp>65</hp>
+	<attack>95</attack>
+	<defense>57</defense>
+	<sp atk>100</sp atk>
+	<sp def>85</sp def>
+	<speed>93</speed>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Ember</name>
+		</move>
+		<move>
+			<level>36</level>
+			<name>Leer</name>
+		</move>
+		<move>
+			<level>39</level>
+			<name>Confuse Ray</name>
+		</move>
+		<move>
+			<level>43</level>
+			<name>Fire Punch</name>
+		</move>
+		<move>
+			<level>48</level>
+			<name>Smokescreen</name>
+		</move>
+		<move>
+			<level>52</level>
+			<name>Smog</name>
+		</move>
+		<move>
+			<level>55</level>
+			<name>Flamethrower</name>
+		</move>
+	</moves>
+	<HMs>04</HMs>
+	<TMs>01,05,06,08,09,10,15,17,18,19,20,29,30,31,32,34,35,38,40,44,46,50</TMs>
+</pokemon>
+
+<pokemon>
+	<number>125</number>
+	<name>Electabuzz</name>
+	<image>icon125.gif</image>
+	<description>Normally found near power plants, they can wander away and cause major blackouts in cities.</description>
+	<type>Electric</type>
+	<type2></type2>
+	<hp>65</hp>
+	<attack>83</attack>
+	<defense>57</defense>
+	<sp atk>95</sp atk>
+	<sp def>85</sp def>
+	<speed>105</speed>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Quick Attack</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Leer</name>
+		</move>
+		<move>
+			<level>34</level>
+			<name>Thundershock</name>
+		</move>
+		<move>
+			<level>37</level>
+			<name>Screech</name>
+		</move>
+		<move>
+			<level>42</level>
+			<name>Thunder Punch</name>
+		</move>
+		<move>
+			<level>49</level>
+			<name>Light Screen</name>
+		</move>
+		<move>
+			<level>54</level>
+			<name>Thunder</name>
+		</move>
+	</moves>
+	<HMs>04,05</HMs>
+	<TMs>01,05,06,08,09,10,15,17,18,19,20,24,25,29,30,31,32,33,34,35,39,40,44,45,46,50</TMs>
+</pokemon>
+
+<pokemon>
 	<number>28</number>
 	<name>Sandslash</name>
 	<description>Curls up into a spiny ball when threatened. It can roll while curled up to attack or escape.</description>
