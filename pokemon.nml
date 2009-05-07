@@ -1,5 +1,675 @@
 <note>pokemon should be added in reverse order so the forward references of evolution don't point to as-yet-unloaded pokemon</note>
+<pokemon>
+	<number>151</number>
+	<name>Mew</name>
+	<image>icon151.gif</image>
+	<description>So rare that it is still said to be a mirage by many experts. Only a few people have seen it worldwide.</description>
+	<type>Psychic</type>
+	<type2></type2>
+	<hp>100</hp>
+	<attack>100</attack>
+	<defense>100</defense>
+	<sp atk>100</sp atk>
+	<sp def>100</sp def>
+	<speed>100</speed>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Pound</name>
+		</move>
+		<move>
+			<level>10</level>
+			<name>Transform</level>
+		</move>
+		<move>
+			<level>20</level>
+			<name>Mega Punch</name>
+		</move>
+		<move>
+			<level>30</level>
+			<name>Metronome</level>
+		</move>
+		<move>
+			<level>40</level>
+			<name>Psychic</name>
+		</move>
+	</moves>
+	<HMs>01,02,03,04,05</HMs>
+	<TMs>01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50</TMs>
+</pokemon>
 
+<pokemon>
+	<number>150</number>
+	<name>Mewtwo</name>
+	<image>icon150.gif</image>
+	<description>It was created by a scientist after years of horrific gene splicing and DNA engineering experiments.</description>
+	<type>Psychic</type>
+	<type2></type2>
+	<hp>106</hp>
+	<attack>110</attack>
+	<defense>90</defense>
+	<sp atk>154</sp atk>
+	<sp def>90</sp def>
+	<speed>130</speed>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Confusion</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Disable</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Swift</name>
+		</move>
+		<move>
+			<level>63</level>
+			<name>Barrier</name>
+		</move>
+		<move>
+			<level>66</level>
+			<name>Psychic</name>
+		</move>
+		<move>
+			<level>70</level>
+			<name>Recover</name>
+		</move>
+		<move>
+			<level>75</level>
+			<name>Mist</name>
+		</move>
+		<move>
+			<level>81</level>
+			<name>Amnesia</name>
+		</move>
+	</moves>
+	<HMs>04,05</HMs>
+	<TMs>01,05,06,08,09,10,11,12,13,14,15,16,17,18,19,20,22,24,25,29,30,31,32,33,34,35,36,38,40,44,45,46,49,50</TMs>
+</pokemon>
+
+<pokemon>
+	<number>149</number>
+	<name>Dragonite</name>
+	<image>icon149.gif</image>
+	<description>An extremely rarely seen marine POKEMON. Its intelligence is said to match that of humans.</description>
+	<type>Dragon</type>
+	<type2>Flying</type2>
+	<hp>91</hp>
+	<attack>134</attack>
+	<defense>95</defense>
+	<sp atk>100</sp atk>
+	<sp def>100</sp def>
+	<speed>80</speed>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Wrap</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Leer</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Thunderwave</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Dragon Rage</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Slam</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Agility</name>
+		</move>
+		<move>
+			<level>60</level>
+			<name>Hyper Beam</name>
+		</move>
+	</moves>
+	<HMs>04,05</HMs>
+	<TMs>01,05,06,08,09,10,11,12,13,14,15,16,17,18,19,20,22,24,25,29,30,31,32,33,34,35,36,38,40,44,45,46,49,50</TMs>
+</pokemon>
+
+<pokemon>
+	<number>148</number>
+	<name>Dragonair</name>
+	<image>icon148.gif</image>
+	<description>A mystical POKEMON that exudes a gentle aura. Has the ability to change climate conditions.</description>
+	<type>Dragon</type>
+	<type2></type2>
+	<hp>61</hp>
+	<attack>84</attack>
+	<defense>65</defense>
+	<sp atk>70</sp atk>
+	<sp def>70</sp def>
+	<speed>70</speed>
+	<evolution>
+		<level>55</level>
+		<target>Dragonite</target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Wrap</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Leer</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Thunderwave</name>
+		</move>
+		<move>
+			<level>20</level>
+			<name>Agility</name>
+		</move>
+		<move>
+			<level>35</level>
+			<name>Slam</name>
+		</move>
+		<move>
+			<level>45</level>
+			<name>Dragon Rage</name>
+		</move>
+		<move>
+			<level>55</level>
+			<name>Hyper Beam</name>
+		</move>
+	</moves>
+	<HMs>03</HMs>
+	<TMs>06,07,08,09,10,11,12,13,14,20,23,24,25,31,32,33,4,38,39,40,44,45,50</TMs>
+</pokemon>
+
+<pokemon>
+	<number>147</number>
+	<name>Dratini</number>
+	<image>icon147.gif</image>
+	<description>Long considered a mythical POKEMON until recently when a small colony was found living underwater.</description>
+	<type>Dragon</type>
+	<type2></type2>
+	<hp>41</hp>
+	<attack>64</attack>
+	<defense>45</defense>
+	<sp atk>50</sp atk>
+	<sp def>50</sp def>
+	<speed>50</speed>
+	<evolution>
+		<level>30</level>
+		<target>Dragonair</target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Wrap</name>
+		</mome>
+		<move>
+			<level>1</level>
+			<name>Leer</name>
+		</mome>
+		<move>
+			<level>10</level>
+			<name>Thunderwave</name>
+		</mome>
+		<move>
+			<level>20</level>
+			<name>Agility</name>
+		</mome>
+		<move>
+			<level>30</level>
+			<name>Slam</name>
+		</mome>
+		<move>
+			<level>40</level>
+			<name>Dragon Rage</name>
+		</mome>
+		<move>
+			<level>50</level>
+			<name>Hyper Beam</name>
+		</mome>
+	</moves>
+	<HMs>03</HMs>
+	<TMs>06,8,09,10,11,12,13,4,20,23,24,25,31,32,33,34,38,39,40,44,45,50</TMs>
+</pokemon>
+
+<pokemon>
+	<number>146</number>
+	<name>Moltres</name>
+	<image>icon146.gif</image>
+	<description>Known as the legendary bird of fire. Every flap of its wings creates a dazzling flash of flames.</description>
+	<type>Fire</type>
+	<type2>Flying</type2>
+	<hp>90</hp>
+	<attack>100</attack>
+	<defense>90</defense>
+	<sp atk>125</sp atk>
+	<sp def>85</sp def>
+	<speed>90</speed>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Peck</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Fire Spin</name>
+		</move>
+		<move>
+			<level>51</level>
+			<name>Leer</name>
+		</move>
+		<move>
+			<level>55</level>
+			<name>Agility</name>
+		</move>
+		<move>
+			<level>60</level>
+			<name>Sky Attack</name>
+		</move>
+	</moves>
+	<HMs>02</HMs>
+	<TMs>02,04,0609,10,15,20,31,32,3,34,38,39,43,44,50</TMs>
+</pokemon>
+
+<pokemon>
+	<number>145</number>
+	<name>Zapdos</name>
+	<image>icon145.gif</image>
+	<description>A legendary bird POKEMON that is said to appear from clouds while dropping enormous lightning bolts.</description>
+	<type>Electric</type>
+	<type2>Flying</type2>
+	<hp>90</hp>
+	<attack>90</attack>
+	<defense>85</defense>
+	<sp atk>125</sp atk>
+	<sp def>80</sp def>
+	<speed>125</speed>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Drill Peck</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Thundershock</name>
+		</move>
+		<move>
+			<level>51</level>
+			<name>Thunder</name>
+		</move>
+		<move>
+			<level>55</level>
+			<name>Agility</name>
+		</move>
+		<move>
+			<level>60</level>
+			<name>Light Screen</name>
+		</move>
+	</moves>
+	<HMs>02,05</HMs>
+	<TMs>02,04,06,09,10,15,20,24,25,31,32,33,34,39,43,44,45,50</TMs>
+</pokemon>
+
+<pokemon>
+	<number>144</number>
+	<name>Articuno</name>
+	<image>image144.gif</image>
+	<description>A legendary bird POKEMON that is said to appear to doomed people who are lost in icy mountains.</description>
+	<type>Ice</type>
+	<type2>Flying</type2>
+	<hp>90</hp>
+	<attack>85</attack>
+	<defense>100</defense>
+	<sp atk>95</sp atk>
+	<sp def>125</sp def>
+	<speed>85</speed>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Peck</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Ice Beam</name>
+		</move>
+		<move>
+			<level>51</level>
+			<name>Blizzard</name>
+		</move>
+		<move>
+			<level>55</level>
+			<name>Agility</name>
+		</move>
+		<move>
+			<level>60</level>
+			<name>Mist</name>
+		</move>
+	</moves>
+	<HMs>02</HMs>
+	<TMs>02,04,06,09,10,11,12,13,14,15,20,31,32,33,34,39,43,44,50</TMs>
+</pokemon>
+
+<pokemon>
+	<number>143</number>
+	<name>Snorlax</name>
+	<image>image143.gif</image>
+	<description>Very lazy. Just eats and sleeps. As its rotund bulk builds, it becomes steadily more slothful.</description>
+	<type>Normal</type>
+	<type2></type2>
+	<hp>160</hp>
+	<attack>110</attack>
+	<defense>65</defense>
+	<sp atk>65</sp atk>
+	<sp def>110</sp def>
+	<speed>30</speed>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Amnesia</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Headbutt</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Rest</name>
+		</move>
+		<move>
+			<level>35</level>
+			<name>Body Slam</name>
+		</move>
+		<move>
+			<level>41</level>
+			<name>Harden</name>
+		</move>
+		<move>
+			<level>48</level>
+			<name>Double Edge</name>
+		</move>
+		<move>
+			<level>56</level>
+			<name>Hyper Beam</name>
+		</move>
+	</moves>
+	<HMs>03,04</HMs>
+	<TMs>01,05,06,08,09,10,11,12,13,14,15,16,17,18,19,20,22,24,25,26,27,29,31,32,33,34,35,36,38,40,44,46,48,50</TMs>
+</pokemon>
+
+<pokemon>
+	<number>142</number>
+	<name>Aerodactyl</name>
+	<image>image142.gif</image>
+	<description>A ferocious, prehistoric POKEMON that goes for the enemy's throat with its serrated saw-like fangs.</description>
+	<type>Rock</type>
+	<type2>Flying</type2>
+	<hp>80</hp>
+	<attack>105</attack>
+	<defense>65</defense>
+	<sp atk>60</sp atk>
+	<sp def>75</sp def>
+	<speed>130</speed>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Wing Attack</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Agility</name>
+		</move>
+		<move>
+			<level>33</level>
+			<name>Supersonic</name>
+		</move>
+		<move>
+			<level>38</level>
+			<name>Bite</name>
+		</move>
+		<move>
+			<level>45</level>
+			<name>Take Down</name>
+		</move>
+		<move>
+			<level>54</level>
+			<name>Hyper Beam</name>
+		</move>
+	</moves>
+	<HMs>02</HMs>
+	<TMs>02,06,09,10,15,20,23,31,32,33,34,38,39,43,44,50</TMs>
+</pokemon>
+
+<pokemon>
+	<number>141</number>
+	<name>Kabutops</name>
+	<description>Its sleek shape is perfect for swimming. It slashes prey with its claws and drains the body fluids.</description>
+	<type>Rock</type>
+	<type2>Water</type2>
+	<hp>60</hp>
+	<atttack>115</attack>
+	<defense>105</defense>
+	<sp atk>65</sp atk>
+	<sp def>70</sp def>
+	<speed>80</speed>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Scratch</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Harden</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Absorb</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Slash</name>
+		</move>
+		<move>
+			<level>46</level>
+			<name>Leer</name>
+		</move>
+		<move>
+			<level>53</level>
+			<name>Hydro Pump</name>
+		</move>
+	</moves>
+	<HMs>01,03</HMs>
+	<TMs>02,03,05,06,08,09,10,11,12,13,14,15,17,19,20,31,32,33,34,40,44,50</TMs>
+</pokemon>
+
+<pokemon>
+	<number>140</number>
+	<name>Kabuto</number>
+	<image>icon140.gif</image>
+	<description>A POKEMON that was resurrected from a fossil found in what was once the ocean floor eons ago.</description>
+	<type>Rock</type>
+	<type2>Water</type2>
+	<hp>30</hp>
+	<attack>80</attack>
+	<defense>90</defense>
+	<sp atk>55</sp atk>
+	<sp def>45</sp def>
+	<speed>55</speed>
+	<evolution>
+		<level>40</level>
+		<target>Kabutops</target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Scratch</name>
+		</mome>
+		<move>
+			<level>1</level>
+			<name>Harden</name>
+		</mome>
+		<move>
+			<level>34</level>
+			<name>Absorb</name>
+		</mome>
+		<move>
+			<level>39</level>
+			<name>Slash</name>
+		</mome>
+		<move>
+			<level>44</level>
+			<name>Leer</name>
+		</mome>
+		<move>
+			<level>49</level>
+			<name>Hydro Pump</name>
+		</mome>
+	</moves>
+	<HMs>03</HMs>
+	<TMs>02,03,05,06,08,09,10,11,12,13,14,15,17,19,20,31,32,33,34,40,44,50</TMs>
+</pokemon>
+
+<pokemon>
+	<number>140</number>
+	<name>Kabuto</number>
+	<image>icon140.gif</image>
+	<description>A POKEMON that was resurrected from a fossil found in what was once the ocean floor eons ago.</description>
+	<type>Rock</type>
+	<type2>Water</type2>
+	<hp>30</hp>
+	<attack>80</attack>
+	<defense>90</defense>
+	<sp atk>55</sp atk>
+	<sp def>45</sp def>
+	<speed>55</speed>
+	<evolution>
+		<level>40</level>
+		<target>Kabutops</target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Scratch</name>
+		</mome>
+		<move>
+			<level>1</level>
+			<name>Harden</name>
+		</mome>
+		<move>
+			<level>34</level>
+			<name>Absorb</name>
+		</mome>
+		<move>
+			<level>39</level>
+			<name>Slash</name>
+		</mome>
+		<move>
+			<level>44</level>
+			<name>Leer</name>
+		</mome>
+		<move>
+			<level>49</level>
+			<name>Hydro Pump</name>
+		</mome>
+	</moves>
+	<HMs>03</HMs>
+	<TMs>02,03,05,06,08,09,10,11,12,13,14,15,17,19,20,31,32,33,34,40,44,50</TMs>
+</pokemon>
+
+<pokemon>
+	<number>139</number>
+	<name>Omastar</number>
+	<image>icon139.gif</image>
+	<description>A prehistoric POKEMON that died out when its heavy shell made it impossible to catch prey.</description>
+	<type>Rock</type>
+	<type2>Water</type2>
+	<hp>70</hp>
+	<attack>60</attack>
+	<defense>125</defense>
+	<sp atk>115</sp atk>
+	<sp def>70</sp def>
+	<speed>55</speed>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Withdraw</name>
+		</mome>
+		<move>
+			<level>1</level>
+			<name>Water Gun</name>
+		</mome>
+		<move>
+			<level>1</level>
+			<name>Horn Attack</name>
+		</mome>
+		<move>
+			<level>1</level>
+			<name>Leer</name>
+		</mome>
+		<move>
+			<level>44</level>
+			<name>Spike Cannon</name>
+		</mome>
+		<move>
+			<level>49</level>
+			<name>Hydro Pump</name>
+		</mome>
+	</moves>
+	<HMs>03</HMs>
+	<TMs>06,07,08,09,10,11,12,13,14,15,17,19,20,31,32,3,34,40,44,50</TMs>
+</pokemon>
+
+<pokemon>
+	<number>138</number>
+	<name>Omanyte</number>
+	<image>icon138.gif</image>
+	<description>Although long extinct, in rare cases, it can be genetically resurrected from fossils.</description>
+	<type>Rock</type>
+	<type2>Water</type2>
+	<hp>35</hp>
+	<attack>40</attack>
+	<defense>100</defense>
+	<sp atk>90</sp atk>
+	<sp def>55</sp def>
+	<speed>35</speed>
+	<evolution>
+		<level>40</level>
+		<target>Omastar</target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Withdraw</name>
+		</mome>
+		<move>
+			<level>1</level>
+			<name>Water Gun</name>
+		</mome>
+		<move>
+			<level>34</level>
+			<name>Horn Attack</name>
+		</mome>
+		<move>
+			<level>39</level>
+			<name>Leer</name>
+		</mome>
+		<move>
+			<level>46</level>
+			<name>Spike Cannon</name>
+		</mome>
+		<move>
+			<level>53</level>
+			<name>Hydro Pump</name>
+		</mome>
+	</moves>
+	<HMs>03</HMs>
+	<TMs>06,08,09,10,11,12,13,14,20,31,32,33,34,44,50</TMs>
+</pokemon>
 <pokemon>
 	<number>28</number>
 	<name>Sandslash</name>
