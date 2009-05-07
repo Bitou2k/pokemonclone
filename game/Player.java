@@ -16,6 +16,7 @@ class Player extends Battler {
 	final ImageIcon imgDown = new ImageIcon("./entityImages/Player Front.png");
 	final ImageIcon imgRight = new ImageIcon("./entityImages/Player Right.png");
 	final ImageIcon imgLeft = new ImageIcon("./entityImages/Player Left.png");
+	final ImageIcon imgUp = new ImageIcon("./entityImages/Player Up.png");
 	
 	Player()
 	{
@@ -34,7 +35,7 @@ class Player extends Battler {
 		 */
 		switch(d){
 		case 0:
-			//ii = imgUp;
+			ii = imgUp;
 			break;
 		case 2:
 			ii = imgDown;

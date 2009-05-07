@@ -114,7 +114,8 @@ class Area extends Presenter {
 		if(key=='A'){move(-1,0);player.setDirection(1);}
 		if(key=='S'){move(0,1); player.setDirection(2);}
 		if(key=='D'){move(1,0); player.setDirection(3);}
-		if(key=='W'){move(0,-1); /*player.setDirection(0);*/}
+		if(key=='W'){move(0,-1); player.setDirection(0);}
+		if(key=='Q'){shell().enterPresenter(new PokedexScreen(this));}
 	}
 	void step(){}
 }
