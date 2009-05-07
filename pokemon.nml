@@ -670,6 +670,290 @@
 	<HMs>03</HMs>
 	<TMs>06,08,09,10,11,12,13,14,20,31,32,33,34,44,50</TMs>
 </pokemon>
+
+<pokemon>
+	<number>137</number>
+	<name>Porygon</number>
+	<image>icon137.gif</image>
+	<description>A POKEMON that consists entirely of programming code. Capable of moving freely in cyberspace.</description>
+	<type>Normal</type>
+	<type2></type2>
+	<hp>65</hp>
+	<attack>60</attack>
+	<defense>70</defense>
+	<sp atk>85</sp atk>
+	<sp def>75</sp def>
+	<speed>40</speed>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Tackle</name>
+		</mome>
+		<move>
+			<level>1</level>
+			<name>Conversion</name>
+		</mome>
+		<move>
+			<level>1</level>
+			<name>Sharpen</name>
+		</mome>
+		<move>
+			<level>23</level>
+			<name>Psybeam</name>
+		</mome>
+		<move>
+			<level>28</level>
+			<name>Recover</name>
+		</mome>
+		<move>
+			<level>35</level>
+			<name>Agility</name>
+		</mome>
+		<move>
+			<level>42</level>
+			<name>Tri Attack</name>
+		</move>
+	</moves>
+	<HMs>05</HMs>
+	<TMs>06,09,10,13,14,15,20,24,25,29,30,31,32,33,34,39,40,44,45,46,49,50</TMs>
+</pokemon>
+
+<pokemon>
+	<number>136</number>
+	<name>Flareon</number>
+	<image>icon136.gif</image>
+	<description>When storing thermal energy in its body, its temperature could soar to over 1600 degrees.</description>
+	<type>Fire</type>
+	<type2></type2>
+	<hp>65</hp>
+	<attack>130</attack>
+	<defense>60</defense>
+	<sp atk>95</sp atk>
+	<sp def>110</sp def>
+	<speed>65</speed>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Tackle</name>
+		</mome>
+		<move>
+			<level>1</level>
+			<name>Sand Attack</name>
+		</mome>
+		<move>
+			<level>27</level>
+			<name>Quick Attack</name>
+		</mome>
+		<move>
+			<level>31</level>
+			<name>Ember</name>
+		</mome>
+		<move>
+			<level>37</level>
+			<name>Tail Whip</name>
+		</mome>
+		<move>
+			<level>40</level>
+			<name>Bite</name>
+		</mome>
+		<move>
+			<level>42</level>
+			<name>Leer</name>
+		</move>
+		<move>
+			<level>44</level>
+			<name>Fire Spin</name>
+		</move>
+		<move>
+			<level>48</level>
+			<name>Rage</name>
+		</move>
+		<move>
+			<level>54</level>
+			<name>Flamethrower</name>
+		</move>
+	</moves>
+	<HMs></HMs>
+	<TMs>06,08,09,10,15,20,31,32,33,34,38,39,40,50</TMs>
+</pokemon>
+
+<pokemon>
+	<number>135</number>
+	<name>Jolteon</name>
+	<image>icon135.gif</image>
+	<description>It accumulates negative ions in the atmosphere to blast out 10000-volt lightning bolts.</description>
+	<type>Electric</type>
+	<type2></type2>
+	<hp>65</hp>
+	<attack>65</attack>
+	<defense>60</defense>
+	<sp atk>110</sp atk>
+	<sp def>95</sp def>
+	<speed>130</speed>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Tackle</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Sand Attack</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Growl</name>
+		</move>
+		<move>
+			<level>27</level>
+			<name>Quick Attack</name>
+		</move>
+		<move>
+			<level>31</level>
+			<name>Thundershock</name>
+		</move>
+		<move>
+			<level>37</level>
+			<name>Tail Whip</name>
+		</move>
+		<move>
+			<level>40</level>
+			<name>Thunder Wave</name>
+		</move>
+		<move>
+			<level>42</level>
+			<name>Double Kick</name>
+		</move>
+		<move>
+			<level>44</level>
+			<name>Agility</name>
+		</move>
+		<move>
+			<level>48</level>
+			<name>Pin Missle</name>
+		</move>
+		<move>
+			<level>54</level>
+			<name>Thunder</name>
+		</move>
+	</moves>
+	<HMs>05</HMs>
+	<TMs>06,08,09,10,15,20,24,25,31,32,33,34,39,40,44,45</TMs>
+</pokemon>
+
+<pokemon>
+	<number>134</number>
+	<name>Vaporeon</name>
+	<image>icon134.gif</image>
+	<description>Lives close to water. Its long tail is ridged with a fin which is often mistaken for a mermaid's.</description>
+	<type>Water</type>
+	<type2></type2>
+	<hp>130</hp>
+	<attack>65</attack>
+	<defense>60</defense>
+	<sp atk>110</sp atk>
+	<sp def>95</sp def>
+	<speed>65</speed>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Tackle</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Sand Attack</name>
+		</move>
+		<move>
+			<level>27</level>
+			<name>Quick Attack</name>
+		</move>
+		<move>
+			<level>31</level>
+			<name>Water Gun</name>
+		</move>
+		<move>
+			<level>37</level>
+			<name>Tail Whip</name>
+		</move>
+		<move>
+			<level>40</level>
+			<name>Bite</name>
+		</move>
+		<move>
+			<level>42</level>
+			<name>Acid Armor</name>
+		</move>
+		<move>
+			<level>44</level>
+			<name>Haze</name>
+		</move>
+		<move>
+			<level>48</level>
+			<name>Mist</name>
+		</move>
+		<move>
+			<level>54</level>
+			<name>Hydro Pump</name>
+		</move>
+	</moves>
+	<HMs>03</HMs>
+	<TMs>06,08,09,10,11,12,13,14,15,20,31,32,33,34,39,40,44,50</TMs>
+</pokemon>
+
+<pokemon>
+	<number>133</number>
+	<name>Eevee</name>
+	<image>icon133.gif</image>
+	<description>Its genetic code is irregular. It may mutate if it is exposed to radiation from element STONEs.</description>
+	<type>Normal</type>
+	<type2></type2>
+	<hp>55</hp>
+	<attack>55</attack>
+	<defense>50</defense>
+	<sp atk>45</sp atk>
+	<sp def>65</sp def>
+	<speed>55</speed>
+	<evolution>
+		<level>Water Stone</level>
+		<target>Vaporeon</target>
+	</evolution>
+	<evolution>
+		<level>Thunder Stone</level>
+		<target>Jolteon</target>
+	</evolution>
+	<evolution>
+		<level>Fire Stone</level>
+		<target>Flareon</target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Tackle</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Sand Attack</name>
+		</move>
+		<move>
+			<level>27</level>
+			<name>Quick Attack</name>
+		</move>
+		<move>
+			<level>31</level>
+			<name>Tail Whip</name>
+		</move>
+		<move>
+			<level>37</level>
+			<name>Bite</name>
+		</move>
+		<move>
+			<level>45</level>
+			<name>Take Down</name>
+		</move>
+	</moves>
+	<HMs></HMs>
+	<TMs>06,08,09,10,20,31,32,33,34,39,40,44,50</TMs>
+</pokemon>
+
 <pokemon>
 	<number>28</number>
 	<name>Sandslash</name>
