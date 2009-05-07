@@ -537,6 +537,7 @@
 	<description>A strange seed was planted on its back at birth. The plant sprouts and grows with this POKÈMON.</description>
 	<type>Grass</type>
 	<type2>Poison</type2>
+	<species>Seed Pokemon</species>
 	<hp>45</hp>
 	<attack>49</attack>
 	<defense>49</defense>
@@ -553,7 +554,7 @@
 			<name>Tackle</name>
 		</move>
 		<move>
-			<level>3</level>
+			<level>1</level>
 			<name>Growl</name>
 		</move>
 		<move>
@@ -561,22 +562,30 @@
 			<name>Leech Seed</name>
 		</move>
 		<move>
-			<level>9</level>
+			<level>13</level>
 			<name>Vine Whip</name>
 		</move>
 		<move>
-			<level>13</level>
+			<level>20</level>
 			<name>Poisonpowder</name>
 		</move>
 		<move>
-			<level>19</level>
+			<level>27</level>
 			<name>Razor Leaf</name>
 		</move>
+		<move>
+			<level>34</level>
+			<name>Growth</name>
+		</move>
+		<move>
+			<level>41</level>
+			<name>Sleep Powder</name>
+		</move>
+		<move>
+			<level>48</level>
+			<name>Solar Beam</name>
+		</move>
 	</moves>
-	<HMs>
-		<HM>Cut</HM>
-		<HM>Strength</HM>
-	</HMs>
-	<TMs>
-	</TMs>
+	<HMs>01</HMs>
+	<TMs>03,06,08,09,10,20,21,22,31,32,33,34,44,50</TMs>
 </pokemon>
