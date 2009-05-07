@@ -23,7 +23,9 @@ class Area extends Presenter {
 		{
 			tiles.add(Tile.fromNode(tileNode));
 		}
-		if(tiles.size()==0) throw new Exception();		
+		if(tiles.size()==0) throw new Exception();
+
+		System.out.println("Loaded Area: "+name);
 	}
 	
 	/**

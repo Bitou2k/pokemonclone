@@ -1,12 +1,13 @@
 
-assign people from class pokemon ranges and maps
 
 get move data
 
 finish medium(80x80) pokemon icons
 
-seperate pokemon and pokedexpokemon classes
+load in the front and back view images for battles
 
-make menu presenter do something
+add toString() methods
+
+[ryan]make menu presenter do something
 
 obsticle's target should be the text to be displayed for signs
