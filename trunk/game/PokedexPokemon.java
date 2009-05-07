@@ -43,6 +43,7 @@ class PokedexPokemon {
 		
 		//p.futureMoves = movesFromNode(n.subnode("moves"));
 		
+		System.out.println("Loaded PokedexPokemon: "+name);
 	}
 	
 	/**
