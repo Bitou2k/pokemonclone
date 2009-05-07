@@ -19,7 +19,7 @@
 		</move>
 		<move>
 			<level>10</level>
-			<name>Transform</level>
+			<name>Transform</name>
 		</move>
 		<move>
 			<level>20</level>
@@ -27,7 +27,7 @@
 		</move>
 		<move>
 			<level>30</level>
-			<name>Metronome</level>
+			<name>Metronome</name>
 		</move>
 		<move>
 			<level>40</level>

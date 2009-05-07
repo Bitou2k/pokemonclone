@@ -92,7 +92,7 @@ class Area extends Presenter {
 		
 			Area a = Area.named(next.targetMap());
 			a.playerAt(next.targetX(),next.targetY());
-			shell().enterPresenter(a);
+			enterPresenter(a);
 			return;
 		}
 			
@@ -115,7 +115,7 @@ class Area extends Presenter {
 		if(key=='S'){move(0,1); player.setDirection(2);}
 		if(key=='D'){move(1,0); player.setDirection(3);}
 		if(key=='W'){move(0,-1); player.setDirection(0);}
-		if(key=='Q'){shell().enterPresenter(new PokedexScreen(this));}
+		if(key=='Q'){enterPresenter(new PokedexScreen(this));}
 	}
 	void step(){}
 }

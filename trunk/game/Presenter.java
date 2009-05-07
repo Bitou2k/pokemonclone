@@ -10,14 +10,32 @@ abstract class Presenter {
 	private PokemonGame shell; //the shell i'm in
 	
 	/**
-	 *Returns the containing shell; a presenter may hand over focus to another presenter using shell().enterPresenter(anotherPresenter)
+	 *Hand over focus to another presenter.
 	 */
-	public PokemonGame shell(){return shell;}
+	public void enterPresenter(Presenter newPresenter)
+	{
+		shell.enterPresenter(newPresenter);
+	}
+	
+	/**
+	 *Don't use this.
+	 */
 	public void setShell(PokemonGame shell){
 		this.shell=shell;
 	}
 	
+	/**
+	 *Draw this presenter to the screen,  DO NOTHING ELSE.
+	 */
 	abstract void drawOn(Graphics2D g);
+	
+	/**
+	 *Respond to a key stroke.
+	 */
 	abstract void keyPressed(char key);
+	
+	/**
+	 *Called once a second, do things like having citizens walk around.
+	 */
 	abstract void step();
 }

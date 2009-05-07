@@ -33,9 +33,7 @@ public class PokedexScreen extends Presenter{
 	public void step(){}
 	
 	public void keyPressed(char key){
-		if (key == 'Q')
-			shell().enterPresenter(oldPresenter);
-			
+		if (key == 'Q')	enterPresenter(oldPresenter);
 	}
 
 }
