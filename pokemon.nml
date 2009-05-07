@@ -189,7 +189,7 @@
 
 <pokemon>
 	<number>147</number>
-	<name>Dratini</number>
+	<name>Dratini</name>
 	<image>icon147.gif</image>
 	<description>Long considered a mythical POKEMON until recently when a small colony was found living underwater.</description>
 	<type>Dragon</type>
@@ -208,31 +208,31 @@
 		<move>
 			<level>1</level>
 			<name>Wrap</name>
-		</mome>
+		</move>
 		<move>
 			<level>1</level>
 			<name>Leer</name>
-		</mome>
+		</move>
 		<move>
 			<level>10</level>
 			<name>Thunderwave</name>
-		</mome>
+		</move>
 		<move>
 			<level>20</level>
 			<name>Agility</name>
-		</mome>
+		</move>
 		<move>
 			<level>30</level>
 			<name>Slam</name>
-		</mome>
+		</move>
 		<move>
 			<level>40</level>
 			<name>Dragon Rage</name>
-		</mome>
+		</move>
 		<move>
 			<level>50</level>
 			<name>Hyper Beam</name>
-		</mome>
+		</move>
 	</moves>
 	<HMs>03</HMs>
 	<TMs>06,8,09,10,11,12,13,4,20,23,24,25,31,32,33,34,38,39,40,44,45,50</TMs>
