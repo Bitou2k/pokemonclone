@@ -5,7 +5,7 @@ public class PokedexScreen extends Presenter{
 	*make a scrollable JTextArea...etc.
 	*/
 	public PokedexScreen(){
-	
+		
 	}
 	
 	public void drawOn(Graphics2D g){
