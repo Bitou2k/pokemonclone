@@ -154,6 +154,8 @@ class Main extends JFrame implements ActionListener  {
 				os.close();
 			}
 			catch (Exception ex) { }
+			
+			JOptionPane.showMessageDialog(this,  "Save complete", "Done", JOptionPane.PLAIN_MESSAGE);
 		}
 		else if(e.getSource() == load)
 		{
