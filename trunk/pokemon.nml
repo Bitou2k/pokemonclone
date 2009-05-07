@@ -537,7 +537,7 @@
 
 <pokemon>
 	<number>140</number>
-	<name>Kabuto</number>
+	<name>Kabuto</name>
 	<image>icon140.gif</image>
 	<description>A POKEMON that was resurrected from a fossil found in what was once the ocean floor eons ago.</description>
 	<type>Rock</type>
