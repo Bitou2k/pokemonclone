@@ -319,7 +319,7 @@
 <pokemon>
 	<number>144</number>
 	<name>Articuno</name>
-	<image>image144.gif</image>
+	<image>icon144.gif</image>
 	<description>A legendary bird POKEMON that is said to appear to doomed people who are lost in icy mountains.</description>
 	<type>Ice</type>
 	<type2>Flying</type2>
@@ -358,7 +358,7 @@
 <pokemon>
 	<number>143</number>
 	<name>Snorlax</name>
-	<image>image143.gif</image>
+	<image>icon143.gif</image>
 	<description>Very lazy. Just eats and sleeps. As its rotund bulk builds, it becomes steadily more slothful.</description>
 	<type>Normal</type>
 	<type2></type2>
@@ -405,7 +405,7 @@
 <pokemon>
 	<number>142</number>
 	<name>Aerodactyl</name>
-	<image>image142.gif</image>
+	<image>icon142.gif</image>
 	<description>A ferocious, prehistoric POKEMON that goes for the enemy's throat with its serrated saw-like fangs.</description>
 	<type>Rock</type>
 	<type2>Flying</type2>
@@ -448,7 +448,7 @@
 <pokemon>
 	<number>141</number>
 	<name>Kabutops</name>
-	<image>image141.gif</image>
+	<image>icon141.gif</image>
 	<description>Its sleek shape is perfect for swimming. It slashes prey with its claws and drains the body fluids.</description>
 	<type>Rock</type>
 	<type2>Water</type2>
