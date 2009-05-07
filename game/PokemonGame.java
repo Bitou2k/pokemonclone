@@ -51,10 +51,15 @@ class PokemonGame extends JComponent implements KeyListener {
 	public void keyPressed(KeyEvent e){
 		int n = e.getKeyCode();
 		char c = e.getKeyChar();
+		c = Character.toUpperCase(c);
 		if(n==KeyEvent.VK_UP) c='W';
 		if(n==KeyEvent.VK_LEFT) c='A';
 		if(n==KeyEvent.VK_DOWN) c='S';
 		if(n==KeyEvent.VK_RIGHT) c='D';
+		if(n==KeyEvent.VK_ENTER) c='A';
+		if(n==KeyEvent.VK_BACK_SPACE) c='B';
+		if(c=='Z') c='A';
+		if(c=='X') c='B';
 		currentPresenter.keyPressed(c);
 		repaint();
 	}
