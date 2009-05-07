@@ -43,7 +43,7 @@ public class Tile{
 	{
 		locX = x;
 		locY = y;
-		setImage("Null"); // starts all tiles as null black tile
+		setImage("Null.PNG"); // starts all tiles as null black tile
 		type = "obstacle";// and they should be obstacles
 	}
 	
