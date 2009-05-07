@@ -13,9 +13,8 @@ class PokedexPokemon {
 	private String description;
 	private Image image;
 	private int number;
-	private int hp; //max
 	private Type type1, type2;
-	private int attack, defense, spAttack, spDefense, speed; //the base stat
+	private int hp, attack, defense, spAttack, spDefense, speed; //the base stat
 	private Map<Integer,String> moves; //A dictionary of level learned->move
 	private Map<String,PokedexPokemon> evolutions;//A dictionary of condition(level,trade,stone)->pokedexpokemon
 		
@@ -23,6 +22,20 @@ class PokedexPokemon {
 	public String description(){return description;}
 	public Image image(){return image;}
 	public int number(){return number;}
+	
+	public Type type(){return type1;}
+	/**
+	*Null for pokemon with only one type.
+	*/
+	public Type type2(){return type2;}
+	
+	
+	public int hp(){return hp;}
+	public int attack(){return attack;}
+	public int defense(){return defense;}
+	public int spAttack(){return spAttack;}
+	public int spDefense(){return spDefense;}
+	public int speed(){return speed;}
 		
 	private PokedexPokemon(Node n)
 	{	
@@ -30,8 +43,8 @@ class PokedexPokemon {
 		name = n.contentOf("name");
 		image = new ImageIcon("./icons/"+n.contentOf("image")).getImage();
 		description = n.contentOf("description");
-		type1 = getType(n.contentOf("type"));
-		type2 = getType(n.contentOf("type2"));
+		type1 = getTypeNamed(n.contentOf("type"));
+		type2 = getTypeNamed(n.contentOf("type2"));
 		
 		hp = new Integer(n.contentOf("hp"));
 		attack = new Integer(n.contentOf("attack"));
@@ -71,13 +84,11 @@ class PokedexPokemon {
 		return pokemon;
 	}
 	
-	private static Type getType(String n)
+	private static Type getTypeNamed(String n)
 	{
-		try
-		{
+		try{
 			return Type.valueOf(n.toUpperCase());
-		}
-		catch(Exception ex){}
+		}catch(Exception ex){}
 		return null;
 	}
 	private static Map<Integer,String> movesFromNode(Node n){
