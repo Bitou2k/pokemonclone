@@ -1,6 +1,7 @@
+
 package game;
 
-enum Type {
+public enum Type {
 	NORMAL {
 		double coefOn(Type defender){ return 333;}
 	},

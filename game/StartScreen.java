@@ -13,17 +13,17 @@ class StartScreen extends Presenter {
 		g.setColor(Color.WHITE);
 		g.fillRect(0,0,320,240);
 		
-		Pokemon p = Pokemon.prototypes.get(current);
-		p.image.paintIcon(null,g,0,0);
-		g.setColor(Color.BLACK);
-		g.drawString(""+p.pokedexNumber,0,50);
-		g.drawString(p.name,0,60);
-		g.drawString(p.description,0,70);
+	//	Pokemon p = Pokemon.prototypes.get(current);
+	//	p.image.paintIcon(null,g,0,0);
+	//	g.setColor(Color.BLACK);
+	//	g.drawString(""+p.pokedexNumber,0,50);
+	//	g.drawString(p.name,0,60);
+	//	g.drawString(p.description,0,70);
 	}
 	
 	void keyPressed(char key){}
 	synchronized void step(){
-		current++;
-		if(current>=Pokemon.prototypes.size()) current=0;
+		//current++;
+		//if(current>=Pokemon.prototypes.size()) current=0;
 	}
 }
