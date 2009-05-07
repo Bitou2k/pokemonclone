@@ -19,12 +19,9 @@ class PokemonGame extends JComponent implements KeyListener {
 	
 	PokemonGame(){
 		
-		//enterPresenter(new StartScreen());
-		PokedexPokemon.all();
+		enterPresenter(new StartPresenter());
 		
-		Area a = Area.named("route01");
-		a.playerAt(5,5);
-		enterPresenter(a);
+		Area.named("");
 		
 		new Thread(){
 			public void run(){
@@ -46,8 +43,8 @@ class PokemonGame extends JComponent implements KeyListener {
 	}
 	
 	public synchronized void paint(Graphics g){
-		g.setColor(Color.GRAY);
-		g.fillRect(0,0,320,240);
+		g.setColor(Color.RED);
+		g.fillRect(0,0,16*20,16*18);
 		currentPresenter.drawOn((Graphics2D)g);
 	}
 	
@@ -67,7 +64,7 @@ class PokemonGame extends JComponent implements KeyListener {
 
 	
 	
-	//ew, static is the root of all evil
+	//in the Beginning, there was Main and it was Good
 	public static void main(String[] args){
 		
 		JFrame f = new JFrame("PokemonClone!");
