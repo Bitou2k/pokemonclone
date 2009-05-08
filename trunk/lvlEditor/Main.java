@@ -99,23 +99,56 @@ class Main extends JFrame implements ActionListener  {
 		setSize(500,500);
 		setVisible(true);
 		
-		resizeMap(20,20);
+		resizeMap(20,20,-1);
 	}
 
-	void resizeMap(int newW, int newH)
+	void resizeMap(int newW, int newH, int location)
 	{
 		Tile[][] newTiles = new Tile[newW][newH];
+		
+		JOptionPane.showMessageDialog(this,  "" + location, "Done", JOptionPane.PLAIN_MESSAGE);
 		
 		//fill with default tiles
 		for(int x=0; x<newW; x++)
 			for(int y=0; y<newH; y++)
 				newTiles[x][y] = new Tile(x,y);
 				
+		int offset_target_x = 0;
+		int offset_target_y = 0;
+		int offset_source_x = 0;
+		int offset_source_y = 0;
+		
+		// resizing from text box
+		if(location != -1)
+		{
+			// changing width
+			if(newW > lvlWidth && location == 0)
+				offset_target_x = newW - lvlWidth;
+			else if(newW > lvlWidth && location == 1)
+				offset_target_x = 0;
+			else if(newW < lvlWidth && location == 0)
+				offset_source_x = lvlWidth - newW;
+			else if(newW < lvlWidth && location == 1)
+				offset_source_x = 0;
+			else if(newH > lvlHeight && location == 0)
+				offset_target_y = newH - lvlHeight;
+			else if(newH > lvlHeight && location == 1)
+				offset_target_y = 0;
+			else if(newH < lvlHeight && location == 0)
+				offset_source_y = lvlHeight - newH;
+			else if(newH < lvlHeight && location == 1)
+				offset_source_y = 0;
+		}
+				
 		//copy over orginals that will fit
-		for(int x=0; x<newW && x<lvlWidth; x++)
-			for(int y=0; y<newH && y<lvlHeight; y++)
-				if(tiles[x][y]!=null)
-					newTiles[x][y] = tiles[x][y];
+		for(int x=0; x<(newW-offset_target_x) && x<(lvlWidth-offset_source_x); x++)
+			for(int y=0; y<(newH-offset_target_y) && y<(lvlHeight-offset_source_y); y++)
+				if(tiles[x+offset_source_x][y+offset_source_y]!=null)
+				{
+					newTiles[x+offset_target_x][y+offset_target_y] = tiles[x+offset_source_x][y+offset_source_y];
+					newTiles[x+offset_target_x][y+offset_target_y].setX(x+offset_target_x);
+					newTiles[x+offset_target_x][y+offset_target_y].setY(y+offset_target_y);
+				}
 					
 		tiles = newTiles;
 		lvlWidth = newW; width.setText(""+lvlWidth);
@@ -128,11 +161,15 @@ class Main extends JFrame implements ActionListener  {
 	{
 		if (e.getSource() == width)
 		{
-			resizeMap(new Integer(width.getText()), lvlHeight);
+			Object[] possibleValues = {"Left", "Right"};
+			Object selectedValue = JOptionPane.showInputDialog(null, "Which Side?", "Input", JOptionPane.INFORMATION_MESSAGE, null, possibleValues, possibleValues[1]);
+			resizeMap(new Integer(width.getText()), lvlHeight, (selectedValue=="Left")?(0):(1));
 		}
 		else if (e.getSource() == height)
 		{
-			resizeMap(lvlWidth, new Integer(height.getText()));
+			Object[] possibleValues = {"Top", "Bottom"};
+			Object selectedValue = JOptionPane.showInputDialog(null, "Which Side?", "Input", JOptionPane.INFORMATION_MESSAGE, null, possibleValues, possibleValues[1]);
+			resizeMap(lvlWidth, new Integer(height.getText()), (selectedValue=="Top")?(0):(1));
 		}
 		else if(e.getSource() == save)
 		{
@@ -166,7 +203,7 @@ class Main extends JFrame implements ActionListener  {
 				name.setText(mapNode.contentOf("name"));
 				int w = new Integer( mapNode.contentOf("width"));
 				int h = new Integer( mapNode.contentOf("height"));
-				resizeMap(w,h);
+				resizeMap(w,h,-1);
 				
 				
 				
