@@ -2,7 +2,7 @@ package game;
 
 enum Status {
 	NORMAL,
-	POSIONED,
+	POSIONED, // way to spell poisioned wrong!
 	BURNED,
 	SLEEPING,
 	PARLYZED,
