@@ -6,7 +6,13 @@ class WildPokemonGenerator {
 
 	private String name;
 	private double chanceOfAnything;
-	private Map<PokedexPokemon,Double> pairs; //pokemon prototype->probobility
+	private List<Choice> choices; 
+	
+	private class Choice{
+		private String pokemon;
+		private int level;
+		private double chance;
+	}
 	
 	private WildPokemonGenerator(Node n)
 	{
