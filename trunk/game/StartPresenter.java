@@ -23,6 +23,7 @@ class StartPresenter extends Presenter {
 		g.drawString("Credits:",0,100);
 		g.drawString("(add yourself but no one else!)",0,110);
 		g.drawString("Ryan Macnak",0,120);
+		g.drawString("Michal Broniek",0,130);
 	}
 	
 	public void keyPressed(char key){
