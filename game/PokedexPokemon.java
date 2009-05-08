@@ -64,7 +64,11 @@ class PokedexPokemon {
 	*/
 	public Pokemon makeWildAtLevel(int level)
 	{
-		return null;
+		//INCORRECT QUICK IMPLEMENTATION
+		Pokemon p = new Pokemon();
+		p.name = "Mewtwo";
+		p.level = level;
+		return p;
 	}
 		
 	private static ArrayList<PokedexPokemon> pokemon = new ArrayList<PokedexPokemon>();
