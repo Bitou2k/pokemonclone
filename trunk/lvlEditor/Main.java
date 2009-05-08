@@ -106,8 +106,6 @@ class Main extends JFrame implements ActionListener  {
 	{
 		Tile[][] newTiles = new Tile[newW][newH];
 		
-		JOptionPane.showMessageDialog(this,  "" + location, "Done", JOptionPane.PLAIN_MESSAGE);
-		
 		//fill with default tiles
 		for(int x=0; x<newW; x++)
 			for(int y=0; y<newH; y++)
