@@ -31,7 +31,7 @@ class Tile {
 		return t;
 	}
 	
-	boolean isObstacle(){ return type.equals("obstacle");}
+	boolean isObstacle(){ return type.equals("obstacle") || type.equals("water");}
 	boolean isDoor(){ return type.equals("door")&& !target.equals("");}
 	
 	String targetMap()
