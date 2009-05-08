@@ -88,7 +88,7 @@ class Area extends Presenter {
 	{
 		//fill background with black
 		g.setColor(Color.BLACK);
-		g.fillRect(0,0,16*20,16*18);
+		g.fillRect(0,0,16*20+2,16*18+2);
 		
 		//make the player the center
 		g.translate( (player.tile().x-10)*-16, (player.tile().y-10)*-16);
