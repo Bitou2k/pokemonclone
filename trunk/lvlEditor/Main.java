@@ -110,40 +110,35 @@ class Main extends JFrame implements ActionListener  {
 		for(int x=0; x<newW; x++)
 			for(int y=0; y<newH; y++)
 				newTiles[x][y] = new Tile(x,y);
-				
+		
+		//these offset values are used to determine
+		//where the space will be added to the new tile array
 		int offset_target_x = 0;
 		int offset_target_y = 0;
 		int offset_source_x = 0;
 		int offset_source_y = 0;
 		
-		// resizing from text box
-		if(location != -1)
-		{
-			// changing width
-			if(newW > lvlWidth && location == 0)
-				offset_target_x = newW - lvlWidth;
-			else if(newW > lvlWidth && location == 1)
-				offset_target_x = 0;
-			else if(newW < lvlWidth && location == 0)
-				offset_source_x = lvlWidth - newW;
-			else if(newW < lvlWidth && location == 1)
-				offset_source_x = 0;
-			else if(newH > lvlHeight && location == 0)
-				offset_target_y = newH - lvlHeight;
-			else if(newH > lvlHeight && location == 1)
-				offset_target_y = 0;
-			else if(newH < lvlHeight && location == 0)
-				offset_source_y = lvlHeight - newH;
-			else if(newH < lvlHeight && location == 1)
-				offset_source_y = 0;
-		}
+		//the offsets are only changed when tiles are being added/removed above & to the left
+		//otherwise the offsets can remain at zero.
+		if(newW > lvlWidth && location == 0)
+			offset_target_x = newW - lvlWidth;
+		else if(newW < lvlWidth && location == 0)
+			offset_source_x = lvlWidth - newW;
+		else if(newH > lvlHeight && location == 0)
+			offset_target_y = newH - lvlHeight;
+		else if(newH < lvlHeight && location == 0)
+			offset_source_y = lvlHeight - newH;
 				
 		//copy over orginals that will fit
+		//account for the offsets in the checks so we dont get out of bounds errors
 		for(int x=0; x<(newW-offset_target_x) && x<(lvlWidth-offset_source_x); x++)
 			for(int y=0; y<(newH-offset_target_y) && y<(lvlHeight-offset_source_y); y++)
 				if(tiles[x+offset_source_x][y+offset_source_y]!=null)
 				{
 					newTiles[x+offset_target_x][y+offset_target_y] = tiles[x+offset_source_x][y+offset_source_y];
+					// since the tile's location is part of the tile object, we get conflicts when
+					// moving tiles to new locations (after adding space above or to the left)
+					// so we reset the tile's location values to the correct ones
 					newTiles[x+offset_target_x][y+offset_target_y].setX(x+offset_target_x);
 					newTiles[x+offset_target_x][y+offset_target_y].setY(y+offset_target_y);
 				}
