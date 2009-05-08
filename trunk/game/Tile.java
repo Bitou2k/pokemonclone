@@ -33,6 +33,16 @@ class Tile {
 	
 	boolean isObstacle(){ return type.equals("obstacle") || type.equals("water");}
 	boolean isDoor(){ return type.equals("door")&& !target.equals("");}
+	boolean isGrass(){ return type.equals("pokegrassOrCave"); }
+	
+	Pokemon genPokemon(){
+		try
+		{
+			return WildPokemonGenerator.named(target).generatePokemon();
+		}
+		catch(Exception ex){}
+		return null;
+	}
 	
 	String targetMap()
 	{

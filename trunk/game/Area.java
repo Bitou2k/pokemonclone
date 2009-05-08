@@ -65,6 +65,15 @@ class Area extends Presenter {
 			enterPresenter(a);
 			return;
 		}
+		if(next.isGrass())
+		{
+			Pokemon p = now.genPokemon();
+			if(p!=null)
+			{
+				//open battle
+				enterPresenter(new Battle(p,this));
+			}
+		}
 			
 		now.entity(null);
 		next.entity(player);
