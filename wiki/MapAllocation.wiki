@@ -1,11 +1,11 @@
-To sort out the confusion, everyone should put *'s before maps that are finished and put their names next to the cities/building/etc. that they are working on/going to work on.
+To sort out the confusion, everyone should put +'s before maps that are finished and put their names next to the cities/building/etc. that they are working on/going to work on.
 
-*  1. Pallet Town
-*  2. Route 1
-*  3. Viridian City
-*  4. Routes 2 & 22 (Route 2 is complete)
++  1. Pallet Town
++  2. Route 1
++  3. Viridian City
++  4. Routes 2 & 22 (Route 2 is complete)
    5. Viridian Forest
-*  6. Pewter City
++  6. Pewter City
    7. Route 3
    8. Mt. Moon
    9. Route 4
@@ -16,7 +16,7 @@ To sort out the confusion, everyone should put *'s before maps that are finished
   14. S.S. Anne 
   15. Route 11
   16. Diglett's Cave
-* 17. Routes 9 & 10  (Route 9 is complete)
++ 17. Routes 9 & 10  (Route 9 is complete)
   18. Rock Tunnel
   19. Lavender Town
   20. Routes 7 & 8
@@ -26,14 +26,14 @@ To sort out the confusion, everyone should put *'s before maps that are finished
   24. Saffron City
   25. Silph Company
   26. Routes 16, 17, & 18
-* 27. Fuchsia City
++ 27. Fuchsia City
   28. Safari Zone
   29. Routes 12 & 13
   30. Routes 14 & 15
   31. Route 21
-* 32. Cinnabar Island
++ 32. Cinnabar Island
   33. Pokémon Mansion
-* 34. Power Plant
++ 34. Power Plant
   35. Routes 19 & 20
   36. Seafoam Island
   38. Route 23
