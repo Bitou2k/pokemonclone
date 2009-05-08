@@ -42,8 +42,9 @@ class Main extends JFrame implements ActionListener  {
 		"walkable", // (->trainer or entity id or blank)
 		"door", //(->targetmap,targetx,targety)
 		"pokegrassOrCave", // (->wildgeneratorid)
-		"obstacle", // (->blank)
-		"water" //(->generator)
+		"obstacle", // (->blank or text for a sign)
+		"water", //(->generator)
+		"cliff" //(->T L R or D)
 		};
 	
 	JTextField name = new JTextField("newmap", 5);
