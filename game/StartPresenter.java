@@ -14,7 +14,7 @@ class StartPresenter extends Presenter {
 		g.setColor(Color.WHITE);
 		g.fillRect(0,0,16*20,16*18);
 		
-		g.drawImage(p.image(),0,0,null);
+		g.drawImage(p.image32(),100,0,null);
 		g.setColor(Color.BLACK);
 		g.drawString("No. "+p.number(),0,50);
 		g.drawString(p.name(),0,60);

@@ -11,16 +11,18 @@ class PokedexPokemon {
 	
 	private String name;
 	private String description;
-	private Image image;
+	private Image image32;
+	private Image image80;
 	private int number;
 	private Type type1, type2;
 	private int hp, attack, defense, spAttack, spDefense, speed; //the base stat
-	private Map<Integer,String> moves; //A dictionary of level learned->move
+	private Map<String,Integer> moves; //A dictionary of move->level learned
 	private Map<String,PokedexPokemon> evolutions;//A dictionary of condition(level,trade,stone)->pokedexpokemon
 		
 	public String name(){return name;}
 	public String description(){return description;}
-	public Image image(){return image;}
+	public Image image32(){return image32;}
+	public Image image80(){return image80;}
 	public int number(){return number;}
 	
 	public Type type(){return type1;}
@@ -36,12 +38,33 @@ class PokedexPokemon {
 	public int spAttack(){return spAttack;}
 	public int spDefense(){return spDefense;}
 	public int speed(){return speed;}
+	
+	/**
+	*Returns a dictionary of MOVELEARN==>LEVELLEARNED.
+	*/
+	public Map<String,Integer> moveslearned(){return moves;}
+	public java.util.List<String> movesLearnedAtLevel(int level)
+	{
+		LinkedList<String> ms = new LinkedList<String>();
+		for(String m: moves.keySet())
+		{
+			int l = moves.get(m);
+			if(l==level) ms.add(m);
+		}
+		return ms;
+	}
+	
+	/**
+	*Returns a dictionary of EVOLVECONDITION(level,trade,stone)==>POKEMONEVOLVEDINTO.
+	*/
+	public Map<String,PokedexPokemon> evolutions(){return evolutions;}
 		
 	private PokedexPokemon(Node n)
 	{	
 		number = new Integer(n.contentOf("number"));
 		name = n.contentOf("name");
-		image = new ImageIcon("./icons/"+n.contentOf("image")).getImage();
+		image32 = new ImageIcon("./icons/"+n.contentOf("image")).getImage();
+		//image80 = new ImageIcon("./icons/"+n.contentOf("image80")).getImage();
 		description = n.contentOf("description");
 		type1 = getTypeNamed(n.contentOf("type"));
 		type2 = getTypeNamed(n.contentOf("type2"));

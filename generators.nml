@@ -15,10 +15,14 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 	<overallchance>0.01</overallchance>
 	<pokemon>
 		<name>Pidgy</name>
+		<level>3</level>
 		<chance>0.5</chance>
 	</pokemon>
 	<pokemon>
 		<name>Rattata</name>
+		<level>3</level>
 		<chance>0.5</chance>
 	</pokemon>
 </generator>
+
+
