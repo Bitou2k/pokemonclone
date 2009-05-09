@@ -20,6 +20,7 @@ class PokemonGame extends JComponent implements KeyListener {
 	PokemonGame(){
 	
 		Move.named("x");
+		TM.numbered(5);
 		
 		enterPresenter(new StartPresenter());
 		

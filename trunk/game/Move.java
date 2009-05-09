@@ -18,6 +18,12 @@ public class Move {
 	public int number(){return number;}
 	public String name(){return name;}
 	public Type type(){return type;}
+	/**
+	*Physical, special, etc
+	*/
+	public String category(){return category;}
+	public int pp(){return pp;}
+	public int power(){return power;}
 	
 	private Move(Node n)
 	{
