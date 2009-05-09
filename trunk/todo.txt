@@ -12,7 +12,5 @@ put <frontImage> and <backImage> fields in pokemon.nml
 add toString() methods
 
 [ryan]make menu presenter do something
-[ryan]load in TMs and HMs
-[ryan]pass player between areas instead of relocating copies
 
 obsticle's target should be the text to be displayed for signs
