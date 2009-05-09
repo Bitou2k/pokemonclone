@@ -7,7 +7,10 @@ class Entity {
 
 	Tile tile;
 	
-	void tile(Tile t){tile=t;}
+	void tile(Tile t){
+		if(tile!=null)tile.entity(null);
+		tile=t;
+	}
 	Tile tile(){return tile;}
 	
 	void drawOn(Graphics2D g){

@@ -14,17 +14,17 @@ class Tile {
 	String target;
 	Image img;
 	Entity entity;
-	
-	Tile(int x, int y)
+	Area a;
+	Tile(int x, int y, Area a)
 	{
-		this.x=x; this.y=y;
+		this.x=x; this.y=y; this.a=a;
 	}
 	
-	static Tile fromNode(Node tileNode)
+	static Tile fromNode(Node tileNode, Area a)
 	{
 		int x = new Integer( tileNode.contentOf("x"));
 		int y = new Integer( tileNode.contentOf("y"));
-		Tile t = new Tile(x,y);
+		Tile t = new Tile(x,y,a);
 		t.imageFrom(tileNode.contentOf("image"));
 		t.type = (tileNode.contentOf("type"));
 		t.target = (tileNode.contentOf("target"));
@@ -62,7 +62,13 @@ class Tile {
 		img = new ImageIcon("./tileImages/" + s).getImage();
 	}
 	
-	void entity(Entity e) {entity=e; if(e!=null)e.tile(this);}
+	void entity(Entity e) {
+		entity=e; 
+		if(e!=null)
+		{
+			e.tile(this);
+		}
+	}
 	Entity entity() {return entity;}
 	
 	int width(){return 16;}

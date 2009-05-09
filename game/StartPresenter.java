@@ -37,7 +37,9 @@ class StartPresenter extends Presenter {
 		if(loading) return;
 		
 		Area a = Area.named("route01");
-		a.playerAt(5,5);
+		Player p = new Player();
+		a.player(p);
+		a.tileAt(5,5).entity(p);
 		enterPresenter(a);
 	}
 	

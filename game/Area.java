@@ -11,7 +11,7 @@ import java.util.*;
 class Area extends Presenter {
 
 	private java.util.List<Tile> tiles = new ArrayList<Tile>();
-	private Player player = new Player();  
+	private Player player; 
 	private String name;
 	
 	private Area(File f) throws Exception
@@ -21,22 +21,14 @@ class Area extends Presenter {
 		
 		for(Node tileNode: mapNode.subnodes("tile"))
 		{
-			tiles.add(Tile.fromNode(tileNode));
+			tiles.add(Tile.fromNode(tileNode, this));
 		}
 		if(tiles.size()==0) throw new Exception();
 
 		System.out.println("Loaded Area: "+name);
 	}
 	
-	/**
-	 *Place the player at the given tile
-	 */
-	public void playerAt(int x,int y)
-	{
-		Tile now = player.tile();
-		if(now!=null) now.entity(null);
-		tileAt(x,y).entity(player);
-	}
+	void player(Player p){player=p;}
 	
 	/**
 	 *Find the tile with the given coordinated
@@ -61,7 +53,8 @@ class Area extends Presenter {
 			System.out.println(next.targetY());
 		
 			Area a = Area.named(next.targetMap());
-			a.playerAt(next.targetX(),next.targetY());
+			a.player(player);
+			a.tileAt(next.targetX(),next.targetY()).entity(player);
 			enterPresenter(a);
 			return;
 		}
