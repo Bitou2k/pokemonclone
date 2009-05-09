@@ -10,6 +10,8 @@ class StartPresenter extends Presenter {
 	private java.util.List<PokedexPokemon> ps = PokedexPokemon.all();
 	private PokedexPokemon p = ps.get(0);
 	
+	static boolean loading=true;
+	
 	public void drawOn(Graphics2D g){	
 		g.setColor(Color.WHITE);
 		g.fillRect(0,0,16*20,16*18);
@@ -23,6 +25,7 @@ class StartPresenter extends Presenter {
 		g.drawString(p.name(),0,80);
 		g.drawString(p.description(),0,90);
 		
+		if(loading) g.drawString("Loading maps...",0,110);
 		g.drawString("Credits:",0,120);
 		g.drawString("(add yourself but no one else!)",0,130);
 		g.drawString("Ryan Macnak",0,140);
@@ -31,6 +34,8 @@ class StartPresenter extends Presenter {
 	
 	public void keyPressed(char key){
 	
+		if(loading) return;
+		
 		Area a = Area.named("route01");
 		a.playerAt(5,5);
 		enterPresenter(a);
