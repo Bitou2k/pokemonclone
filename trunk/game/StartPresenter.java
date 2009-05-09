@@ -25,12 +25,13 @@ class StartPresenter extends Presenter {
 		g.drawString(p.name(),0,80);
 		g.drawString(p.description(),0,90);
 		
-		if(loading) g.drawString("Loading maps...",0,110);
 		g.drawString("Credits:",0,120);
 		g.drawString("(add yourself but no one else!)",0,130);
 		g.drawString("Ryan Macnak",0,140);
 		g.drawString("Michal Broniek",0,150);
-	}
+
+		if(loading) g.drawString("Loading maps...",0,200);
+		}
 	
 	public void keyPressed(char key){
 	
