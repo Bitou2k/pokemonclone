@@ -11,8 +11,7 @@ class PokedexPokemon {
 	
 	private String name;
 	private String description;
-	private Image image32;
-	private Image image80;
+	private Image image32, image80, imageFront, imageBack;
 	private int number;
 	private Type type1, type2;
 	private int hp, attack, defense, spAttack, spDefense, speed; //the base stat
@@ -23,6 +22,8 @@ class PokedexPokemon {
 	public String description(){return description;}
 	public Image image32(){return image32;}
 	public Image image80(){return image80;}
+	public Image imageFront(){return imageFront;}
+	public Image imageBack(){return imageBack;}
 	public int number(){return number;}
 	
 	public Type type(){return type1;}
@@ -64,7 +65,10 @@ class PokedexPokemon {
 		number = new Integer(n.contentOf("number"));
 		name = n.contentOf("name");
 		image32 = new ImageIcon("./icons/"+n.contentOf("image")).getImage();
-		//image80 = new ImageIcon("./icons/"+n.contentOf("image80")).getImage();
+		image80 = new ImageIcon(n.contentOf("image80")).getImage();
+		imageFront = new ImageIcon(n.contentOf("imageFront")).getImage();
+		imageBack = new ImageIcon(n.contentOf("imageBack")).getImage();
+		
 		description = n.contentOf("description");
 		type1 = getTypeNamed(n.contentOf("type"));
 		type2 = getTypeNamed(n.contentOf("type2"));

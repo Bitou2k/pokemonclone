@@ -19,12 +19,8 @@ class PokemonGame extends JComponent implements KeyListener {
 	
 	PokemonGame(){
 	
-		Move.named("x");
-		TM.numbered(5);
-		
 		enterPresenter(new StartPresenter());
 		
-		Area.named("");
 		
 		new Thread(){
 			public void run(){
@@ -75,6 +71,9 @@ class PokemonGame extends JComponent implements KeyListener {
 	//in the Beginning, there was Main and it was Good
 	public static void main(String[] args){
 		
+		TM.numbered(5);
+		
+		
 		JFrame f = new JFrame("PokemonClone!");
 		PokemonGame pg = new PokemonGame();
 		f.addKeyListener(pg);
@@ -83,5 +82,8 @@ class PokemonGame extends JComponent implements KeyListener {
 		f.pack();
 		f.setResizable(false);
 		f.setVisible(true);
+		
+		
+		Area.named("");
 	}
 }

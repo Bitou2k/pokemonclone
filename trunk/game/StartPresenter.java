@@ -14,16 +14,19 @@ class StartPresenter extends Presenter {
 		g.setColor(Color.WHITE);
 		g.fillRect(0,0,16*20,16*18);
 		
-		g.drawImage(p.image32(),100,0,null);
+		g.drawImage(p.image32(),0,0,null);
+		g.drawImage(p.image80(),32,0,null);
+		g.drawImage(p.imageFront(),32+80,0,null);
+		g.drawImage(p.imageBack(),32+80+64,0,null);
 		g.setColor(Color.BLACK);
-		g.drawString("No. "+p.number(),0,50);
-		g.drawString(p.name(),0,60);
-		g.drawString(p.description(),0,70);
+		g.drawString("No. "+p.number(),0,70);
+		g.drawString(p.name(),0,80);
+		g.drawString(p.description(),0,90);
 		
-		g.drawString("Credits:",0,100);
-		g.drawString("(add yourself but no one else!)",0,110);
-		g.drawString("Ryan Macnak",0,120);
-		g.drawString("Michal Broniek",0,130);
+		g.drawString("Credits:",0,120);
+		g.drawString("(add yourself but no one else!)",0,130);
+		g.drawString("Ryan Macnak",0,140);
+		g.drawString("Michal Broniek",0,150);
 	}
 	
 	public void keyPressed(char key){
