@@ -7,14 +7,12 @@ assign pokedex to someone else, seigle will get battle
 
 finish medium(80x80) pokemon icons
 put <image80> field in pokemon.nml
-
-load in the front and back view images for battles
 put <frontImage> and <backImage> fields in pokemon.nml
 
 add toString() methods
 
 [ryan]make menu presenter do something
 [ryan]load in TMs and HMs
-[ryan]place player between areas instead of relocating copies
+[ryan]pass player between areas instead of relocating copies
 
 obsticle's target should be the text to be displayed for signs
