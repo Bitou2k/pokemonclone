@@ -72,6 +72,7 @@ class PokemonGame extends JComponent implements KeyListener {
 	public static void main(String[] args){
 		
 		TM.numbered(5);
+		HM.numbered(5);
 		
 		
 		JFrame f = new JFrame("PokemonClone!");
@@ -85,5 +86,6 @@ class PokemonGame extends JComponent implements KeyListener {
 		
 		
 		Area.named("");
+		StartPresenter.loading=false;
 	}
 }
