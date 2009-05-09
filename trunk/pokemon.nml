@@ -45,6 +45,9 @@
 	<number>150</number>
 	<name>Mewtwo</name>
 	<image>icon150.gif</image>
+	<image80>./icons80/mewtwo.png</image80>
+	<imageFront>./PokeFronts/150.png</imageFront>
+	<imageBack>./PokeBacks/150.png</imageBack>
 	<description>It was created by a scientist after years of horrific gene splicing and DNA engineering experiments.</description>
 	<type>Psychic</type>
 	<type2></type2>
