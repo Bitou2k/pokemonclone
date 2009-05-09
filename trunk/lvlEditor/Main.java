@@ -44,7 +44,7 @@ class Main extends JFrame implements ActionListener  {
 		"pokegrassOrCave", // (->wildgeneratorid)
 		"obstacle", // (->blank or text for a sign)
 		"water", //(->generator)
-		"cliff" //(->T L R or D)
+		"spinner" //->N S E or W
 		};
 	
 	JTextField name = new JTextField("newmap", 5);
