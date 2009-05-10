@@ -3,7 +3,7 @@ have map people write the generators for their maps and hook up the tiles
 
 actual implemention of Generator>>generatePokemon
 
-assign pokedex to someone else, seigle will get battle
+assign pokedex to someone else, siegle will get battle
 
 finish medium(80x80) pokemon icons
 put <image80> field in pokemon.nml
