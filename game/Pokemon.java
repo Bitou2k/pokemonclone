@@ -21,5 +21,7 @@ class Pokemon {
 	int currentAttack, currentDefence, currentSpeed, currentSpecial; //the ones that may be lowered in battle
 	int attack, defence, speed, special; //the base stat
 	ArrayList<Move> moves; //up to 4
-		
+	
+	public String getName(){return name;}		
 }
+
