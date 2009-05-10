@@ -113,8 +113,9 @@ class Area extends Presenter {
 	 */
 	public static Area named(String name){
 		for(Area a: areas)
-			if(a.name.equals(name))
+			if(a.name.equalsIgnoreCase(name))
 				return a;
+		System.out.println("There is no area named "+name);
 		return null;
 	}
 	private static LinkedList<Area> areas = new LinkedList<Area>();

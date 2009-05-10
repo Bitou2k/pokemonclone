@@ -44,6 +44,7 @@ class Main extends JFrame implements ActionListener  {
 		"pokegrassOrCave", // (->wildgeneratorid)
 		"obstacle", // (->blank or text for a sign)
 		"water", //(->generator)
+		"cliff",
 		"spinner" //->N S E or W
 		};
 	
@@ -81,9 +82,11 @@ class Main extends JFrame implements ActionListener  {
 		top.add(location);
 		
 		JPanel bottom = new JPanel();
+		bottom.add(new JLabel("Image:"));
 		bottom.add(tile);
+		bottom.add(new JLabel("Type:"));
 		bottom.add(type);
-		bottom.add(new JLabel("->"));
+		bottom.add(new JLabel("Target:"));
 		bottom.add(target);
 
 		height.addActionListener(this);
@@ -100,6 +103,18 @@ class Main extends JFrame implements ActionListener  {
 		setVisible(true);
 		
 		resizeMap(20,20,-1);
+		
+		
+		String x = "How to use the target field:\n"
+		+"typefield==>targetfield\n"
+		+"walkable==>trainer/entity id or blank\n"
+		+"door==>targetMapName:x,y\n"
+		+"obstacle==>blank or display string for a sign\n"
+		+"pokegrassOrCave==>wildpokemongenerator id\n"
+		+"water==>wildpokemongenerator id\n"
+		+"cliff==>N,S,E,orW (the direction you travel when jumping down it)\n"
+		+"spinner==>N,S,E,orW (the direction it pushes you)";
+		JOptionPane.showMessageDialog(this,  x, "Info", JOptionPane.PLAIN_MESSAGE);
 	}
 
 	void resizeMap(int newW, int newH, int location)

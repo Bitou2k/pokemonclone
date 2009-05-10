@@ -27,15 +27,15 @@ abstract class Presenter {
 	/**
 	 *Draw this presenter to the screen,  DO NOTHING ELSE.
 	 */
-	abstract void drawOn(Graphics2D g);
+	public abstract void drawOn(Graphics2D g);
 	
 	/**
 	 *Respond to a key stroke.
 	 */
-	abstract void keyPressed(char key);
+	public abstract void keyPressed(char key);
 	
 	/**
 	 *Called once a second, do things like having citizens walk around.
 	 */
-	abstract void step();
+	public abstract void step();
 }
