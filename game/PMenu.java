@@ -22,7 +22,7 @@ class PMenu extends Presenter {
 		choices.add(x);
 	}
 	
-	void drawOn(Graphics2D g){
+	public void drawOn(Graphics2D g){
 		
 		g.setColor(Color.WHITE);
 		g.fillRect(0,0,320,choices.size()*10);
@@ -33,6 +33,6 @@ class PMenu extends Presenter {
 		}
 	}
 	
-	void keyPressed(char key){}
-	void step(){}
+	public void keyPressed(char key){}
+	public void step(){}
 }

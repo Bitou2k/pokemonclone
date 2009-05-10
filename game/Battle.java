@@ -24,14 +24,14 @@ class Battle extends Presenter {
 	private ImageIcon cursor = new ImageIcon("./resources/arrow.png");
 	
 	private Pokemon p; private Presenter oldP;
-	Battle(Pokemon p, Presenter oldP)
+	public Battle(Pokemon p, Presenter oldP)
 	{	
 		menuIndexX = 0;
 		menuIndexY = 0;
 		this.p=p; this.oldP=oldP;
 	}
 	
-	void drawOn(Graphics2D g){
+	public void drawOn(Graphics2D g){
 		g.setColor(Color.WHITE);
 		g.fillRect(0,0,16*20,16*18);
 		g.setColor(Color.BLACK);
@@ -44,7 +44,7 @@ class Battle extends Presenter {
 		
 		if (stage < 3) //3 seconds
 		{			
-			g.drawString("A wild Andrew has appeared!!",TEXTX,225);
+			g.drawString("A wild "+p.nickname()+" has appeared!!",TEXTX,225);
 			g.drawImage(ashImage.getImage(),10,100, null);			
 		}
 		else{
@@ -52,10 +52,9 @@ class Battle extends Presenter {
 			g.drawImage(cursor.getImage(),140 + menuIndexX * 100,220 + menuIndexY * 35,null);
 		}
 		
-		stage++;
 		
 	}
-	void keyPressed(char key){
+	public void keyPressed(char key){
 		if(stage > 3 /*&& stage < someothernum*/){
 			if(key == 'W'){if(menuIndexY ==1) menuIndexY = 0;}
 			else if (key=='S'){if(menuIndexY == 0)menuIndexY = 1;}
@@ -64,7 +63,8 @@ class Battle extends Presenter {
 			else enterPresenter(oldP);
 		}
 	}
-	void step(){
+	public void step(){
+		stage++;
 		
 	}
 

@@ -12,16 +12,21 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 
 <generator>
 	<name>palletGen</name>
-	<overallchance>0.01</overallchance>
+	<overallchance>0.11</overallchance>
 	<pokemon>
-		<name>Pidgy</name>
+		<name>Pidgey</name>
 		<level>3</level>
-		<chance>0.5</chance>
+		<chance>0.49</chance>
 	</pokemon>
 	<pokemon>
 		<name>Rattata</name>
 		<level>3</level>
-		<chance>0.5</chance>
+		<chance>0.49</chance>
+	</pokemon>
+	<pokemon>
+		<name>Mewtwo</name>
+		<level>70</level>
+		<chance>0.02</chance>
 	</pokemon>
 </generator>
 

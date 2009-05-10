@@ -86,16 +86,9 @@ class PokedexPokemon {
 		System.out.println("Loaded PokedexPokemon: "+name);
 	}
 	
-	/**
-	*!Unimplemented.
-	*/
 	public Pokemon makeWildAtLevel(int level)
 	{
-		//INCORRECT QUICK IMPLEMENTATION
-		Pokemon p = new Pokemon();
-		p.name = "Mewtwo";
-		p.level = level;
-		return p;
+		return new Pokemon(this,level);
 	}
 		
 	private static ArrayList<PokedexPokemon> pokemon = new ArrayList<PokedexPokemon>();
@@ -131,12 +124,14 @@ class PokedexPokemon {
 	
 	public static PokedexPokemon named(String name){
 		for(PokedexPokemon p: pokemon)
-			if(p.name.equals(name))return p;
+			if(p.name.equalsIgnoreCase(name))return p;
+		System.out.println("There is no pokemon named "+name);
 		return null;
 	}
 	public static PokedexPokemon withNumber(int no){
 		for(PokedexPokemon p: pokemon)
 			if(p.number==no)return p;
+		System.out.println("There is no pokemon numbered "+no);
 		return null;
 	}
 
