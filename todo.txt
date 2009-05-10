@@ -1,8 +1,6 @@
 
 have map people write the generators for their maps and hook up the tiles
 
-actual implemention of Generator>>generatePokemon
-
 assign pokedex to someone else, siegle will get battle
 
 finish medium(80x80) pokemon icons
@@ -12,5 +10,4 @@ put <frontImage> and <backImage> fields in pokemon.nml
 add toString() methods
 
 [ryan]make menu presenter do something
-
-obsticle's target should be the text to be displayed for signs
+[ryan]speed up area loading with imagereduce
