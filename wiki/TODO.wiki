@@ -1,0 +1,16 @@
+
+wildgenerators [jake]
+
+pokedex
+
+battle [seigle]
+
+
+menu presenter [ryan]
+toString() debugging methods [ryan]
+
+champion chavez sprites
+
+rival smith sprites
+
+unbeatablepokemon skorupa sprites
