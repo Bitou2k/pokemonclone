@@ -14,8 +14,8 @@ class Species {
 	private Image image32, image80, imageFront, imageBack;
 	private int number;
 	private Type type1, type2;
-	private int hp, attack, defense, spAttack, spDefense, speed; //the base stat
-	private Map<String,Integer> moves; //A dictionary of move->level learned
+	private int hp, attack, defense, spAttack, spDefense, speed; 
+	private Map<Move,Integer> moves;
 	private Map<String,Species> evolutions;//A dictionary of condition(level,trade,stone)->pokedexpokemon
 	private List<TM> tms = new LinkedList<TM>();
 	private List<HM> hms = new LinkedList<HM>();
@@ -48,11 +48,11 @@ class Species {
 	/**
 	*Returns a dictionary of MOVELEARN==>LEVELLEARNED.
 	*/
-	public Map<String,Integer> movesLearned(){return moves;}
-	public java.util.List<String> movesLearnedAtLevel(int level)
+	public Map<Move,Integer> movesLearned(){return moves;}
+	public List<Move> movesLearnedAtLevel(int level)
 	{
-		LinkedList<String> ms = new LinkedList<String>();
-		for(String m: moves.keySet())
+		LinkedList<Move> ms = new LinkedList<Move>();
+		for(Move m: moves.keySet())
 		{
 			int l = moves.get(m);
 			if(l==level) ms.add(m);
@@ -87,6 +87,10 @@ class Species {
 		
 		
 		//p.futureMoves = movesFromNode(n.subnode("moves"));
+		
+		//load tms
+		
+		//load hms
 		
 		System.out.println("Loaded Species: "+name);
 	}

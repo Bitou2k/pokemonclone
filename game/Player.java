@@ -8,14 +8,14 @@ import javax.swing.ImageIcon;
 
 //you
 class Player extends Battler {
-	String name;
+
+	String name = "Ash";
 	List<Pokemon> party;
 	List<Item> pack;
-
 	Pokedex pokedex;
 
-
 	Direction d  = Direction.NORTH;
+
 	boolean inStride = false;
 	boolean isOne = false;
 	
@@ -32,12 +32,6 @@ class Player extends Battler {
 	final ImageIcon imgUpStrideTwo = new ImageIcon("./entityImages/Player Up StrideTwo.png");
 	final ImageIcon imgUpStrideOne = new ImageIcon("./entityImages/Player Up StrideOne.png");
 
-
-	
-	Player()
-	{
-	
-	}
 
 	void step()
 	{
@@ -119,9 +113,4 @@ class Player extends Battler {
 
 		this.d = d;
 	}
-//	public Map getSeenIt(){
-//		Map<PokedexPokemon,Boolean> returnMap;
-//		seenIt.putAll(returnMap);
-//		return returnMap;
-//	}
 }
