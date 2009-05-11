@@ -16,6 +16,11 @@ abstract class Presenter {
 	{
 		shell.enterPresenter(newPresenter);
 	}
+
+public void repaint()
+{
+	shell.repaint();
+}
 	
 	/**
 	 *Don't use this.
