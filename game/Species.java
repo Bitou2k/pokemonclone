@@ -1,7 +1,7 @@
 package game;
 
 import java.util.*;
-import java.awt.*;
+import java.awt.Image;
 import javax.swing.*;
 
 /**
@@ -17,7 +17,9 @@ class Species {
 	private int hp, attack, defense, spAttack, spDefense, speed; //the base stat
 	private Map<String,Integer> moves; //A dictionary of move->level learned
 	private Map<String,Species> evolutions;//A dictionary of condition(level,trade,stone)->pokedexpokemon
-		
+	private List<TM> tms = new LinkedList<TM>();
+	private List<HM> hms = new LinkedList<HM>();
+	
 	public String name(){return name;}
 	public String description(){return description;}
 	public Image image32(){return image32;}
@@ -40,10 +42,13 @@ class Species {
 	public int spDefense(){return spDefense;}
 	public int speed(){return speed;}
 	
+	public List<TM> learnableTMs(){return tms;}
+	public List<HM> learnableHMs(){return hms;}
+	
 	/**
 	*Returns a dictionary of MOVELEARN==>LEVELLEARNED.
 	*/
-	public Map<String,Integer> moveslearned(){return moves;}
+	public Map<String,Integer> movesLearned(){return moves;}
 	public java.util.List<String> movesLearnedAtLevel(int level)
 	{
 		LinkedList<String> ms = new LinkedList<String>();

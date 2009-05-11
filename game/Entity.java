@@ -5,7 +5,7 @@ import java.awt.*;
 //something that may occupy a Tile
 class Entity {
 
-	Tile tile;
+	private Tile tile;
 	
 	void tile(Tile t){
 		if(tile!=null)tile.entity(null);

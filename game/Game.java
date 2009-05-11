@@ -13,8 +13,8 @@ class Game extends JComponent implements KeyListener {
 	private Presenter currentPresenter;
 	private Player player = new Player();
 		
-	Game(){
-	
+	private Game()
+	{
 		enterPresenter(new StartPresenter());
 		
 		new Thread(){
@@ -40,10 +40,10 @@ class Game extends JComponent implements KeyListener {
 	
 	public Player player()
 	{
-		return player();
+		return player;
 	}
 	
-	public synchronized void paint(Graphics g){
+	public void paint(Graphics g){
 		g.setColor(Color.RED);
 		g.fillRect(0,0,16*20,16*18);
 		currentPresenter.drawOn((Graphics2D)g);
@@ -76,7 +76,6 @@ class Game extends JComponent implements KeyListener {
 		TM.numbered(5);
 		HM.numbered(5);
 		
-		
 		JFrame f = new JFrame("PokemonClone!");
 		Game g = new Game();
 		f.addKeyListener(g);
@@ -86,10 +85,7 @@ class Game extends JComponent implements KeyListener {
 		f.setResizable(false);
 		f.setVisible(true);
 		
-		
 		Area.named("");
 		StartPresenter.loading=false;
 	}
-	
-	public Player getPlayerInstance(){return null;}
 }

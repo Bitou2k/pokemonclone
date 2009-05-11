@@ -93,6 +93,12 @@ public class Node
 		if(n!=null) return n.content();
 		return "";
 	}
+	public int icontentOf(String subnodeName){
+		return new Integer(contentOf(subnodeName));
+	}
+	public double dcontentOf(String subnodeName){
+		return new Double(contentOf(subnodeName));
+	}
 	
 	
 	private String encoded(){
