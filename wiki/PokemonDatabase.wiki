@@ -1,0 +1,27 @@
+#summary Assignments of who is coding what chunk of pokemon.
+
+= Introduction =
+
+Everyone who is programming a chunk of the pokemon database should update this page with what chunk they plan on doing and how far they are to get this done as quickly and efficiently as possible.
+
+Remember to work backwards!
+
+
+= Details =
+1-25: In database, but needs revising
+finished through: 25
+
+26-50: ?
+finished through:?
+
+51-75: ?
+finished through: ?
+
+76-100: ?
+finished through: ?
+
+100-125: Richard
+finished through: 118
+
+125-151: Broniek?
+finished through: 
