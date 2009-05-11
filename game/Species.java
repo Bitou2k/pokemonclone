@@ -103,7 +103,7 @@ class Species {
 	private static ArrayList<Species> species = new ArrayList<Species>();
 	static { 
 		try{
-			Node root = Node.documentRootFrom("./pokemon.nml");
+			Node root = Node.documentRootFrom("./pokemon/pokemon.nml");
 			for(Node n : root.subnodes("pokemon"))
 				species.add( new Species(n) );
 				
