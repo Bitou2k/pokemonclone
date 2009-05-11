@@ -82,9 +82,5 @@ class Player extends Battler {
 
 		this.d = d;
 	}
-	public Map getSeenIt(){
-		Map<PokedexPokemon,Boolean> returnMap;
-		seenIt.putAll(returnMap);
-		return returnMap;
-	}
+	
 }
