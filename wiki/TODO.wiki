@@ -1,13 +1,12 @@
-
-wildgenerators [jake]
+wildgenerators (jake)
 
 pokedex
 
-battle [seigle]
+battle (seigle)
 
 
-menu presenter [ryan]
-toString() debugging methods [ryan]
+menu presenter (ryan)
+toString() debugging methods (ryan)
 
 champion chavez sprites
 
