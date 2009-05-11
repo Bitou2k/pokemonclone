@@ -33,7 +33,6 @@ class Player extends Battler {
 	
 	Player()
 	{
-<<<<<<< .mine
 	//CHANGE THIS --we've seen all of the ones we've added--we've caught every other one
 		boolean seen = true;
 		ArrayList<PokedexPokemon> p = PokedexPokemon.all();
@@ -42,15 +41,6 @@ class Player extends Battler {
 			caughtIt.put(p.get(i),seen);
 			seen = !seen;
 		}
-=======
-		//List<PokedexPokemon> pokeList = PokedexPokemon.all();
-		//pokeList = PokedexPokemon.all();
-		//boolean seen = true;
-		//for (PokedexPokemon p : pokeList){
-		//	seenIt.put(p,seen);
-		//	seen = !seen;
-		//}
->>>>>>> .r209
 	}
 
 	void step()
