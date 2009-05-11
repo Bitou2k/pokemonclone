@@ -70,9 +70,8 @@ class Battle extends Presenter {
 			else enterPresenter(oldP);
 		}
 	}
-	public void step(){
+	public void step(int ms){
 		stage++;
-		
 	}
 
 }

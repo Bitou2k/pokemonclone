@@ -7,31 +7,40 @@ import java.awt.*;
  */
 abstract class Presenter {
 	
-	private PokemonGame shell; //the shell i'm in
+	private Game game;
 	
 	/**
 	 *Hand over focus to another presenter.
 	 */
 	public void enterPresenter(Presenter newPresenter)
 	{
-		shell.enterPresenter(newPresenter);
+		game.enterPresenter(newPresenter);
 	}
 
-	public void sleep(int ms)
+	/**
+	 *Convience on game().player()
+	 */
+	public Player player()
 	{
-		try{Thread.sleep(ms);
-		}catch(Exception ex){}
-	}
-	public void repaint()
-	{
-		shell.repaint();
+		return game().player();
 	}
 	
 	/**
-	 *Don't use this.
+	*Request repaint on the receiver.
+	*/
+	public void repaint()
+	{
+		game.repaint();
+	}
+	
+	/**
+	 *Don't touch this.
 	 */
-	public void setShell(PokemonGame shell){
-		this.shell=shell;
+	public void initGame(Game g){
+		game=g;
+	}
+	public Game game(){
+		return game;
 	}
 	
 	/**
@@ -47,5 +56,5 @@ abstract class Presenter {
 	/**
 	 *Called at 10Hz, do things like having citizens walk around.
 	 */
-	public void step(int ms){}
+	public abstract void step(int ms);
 }

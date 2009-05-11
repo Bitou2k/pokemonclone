@@ -112,7 +112,7 @@ class Player extends Battler {
 		}
 
 		if(inStride)
-			g.drawImage(ii.getImage(), d.dx*-8, d.dy*-8, null);
+			g.drawImage(ii.getImage(), d.dx()*-8, d.dy()*-8, null);
 		else
 			g.drawImage(ii.getImage(),0,0,null);
 	}

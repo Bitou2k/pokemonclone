@@ -31,19 +31,16 @@ class StartPresenter extends Presenter {
 		g.drawString("Adam Hendrickson", 0, 150);
 		g.drawString("Michal Broniek",0,160);
 		g.drawString("Andrew Siegle",0,170);
-		
-
 
 		if(loading) g.drawString("Loading maps...",0,200);
-		}
+	}
 	
 	public void keyPressed(char key){
 	
 		if(loading) return;
 		
 		Area a = Area.named("route01");
-		Player p = new Player();
-		a.player(p);
+		Player p = game().player();
 		a.tileAt(5,5).entity(p);
 		enterPresenter(a);
 	}

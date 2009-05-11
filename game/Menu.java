@@ -1,21 +1,22 @@
 package game;
 
-import java.awt.*;
+import java.awt.Graphics2D;
+import java.awt.Color;
 import java.util.*;
 
 //this would be easier if Java had closures.....
 
-class PMenu extends Presenter {
+class Menu extends Presenter {
 
-	static PMenu createStartMenu(){
-		PMenu m = new PMenu();
+	static Menu createStartMenu(){
+		Menu m = new Menu();
 		m.addChoice("Continue");
 		m.addChoice("New");
 		m.addChoice("Quit");
 		return m;
 	}
 
-	java.util.List<String> choices = new ArrayList<String>();
+	List<String> choices = new ArrayList<String>();
 	int selected=1;
 
 	void addChoice(String x){
@@ -34,5 +35,5 @@ class PMenu extends Presenter {
 	}
 	
 	public void keyPressed(char key){}
-	public void step(){}
+	public void step(int ms){}
 }

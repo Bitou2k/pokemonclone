@@ -31,10 +31,7 @@ public class PokedexScreen extends Presenter{
 	* true: pokemon list has focus, false: menu has focus
 	*/
 	boolean pkmn; 
-	/**
-	* current player instance
-	*/
-	Player ash;
+
 	/**
 	* contains the strings for the pokedex
 	*/
@@ -52,7 +49,6 @@ public class PokedexScreen extends Presenter{
 		pkmnCursorIndex = 0;
 		menuCursorIndex = 0;
 		pkmn = true;
-		ash = ((Area)oldP).player;
 		topIndex = 0;
 		
 		//set the pokedex strings
@@ -61,13 +57,13 @@ public class PokedexScreen extends Presenter{
 		for (int i = 0; i < pokeList.size(); i++){
 			Species p = pokeList.get(i);
 			System.out.println(p.name());
-			if (ash.seenIt.get(p) == true){
+			if (player().seenIt.get(p) == true){
 				pokedexString.add(p.name());
 			}
 			else{
 				pokedexString.add("----------");
 			}
-			caughtList.add((Boolean)ash.caughtIt.get(p));
+			caughtList.add((Boolean)player().caughtIt.get(p));
 		}
 		
 		
@@ -101,7 +97,7 @@ public class PokedexScreen extends Presenter{
 		g.drawImage(menuArrow.getImage(), 240, 158 + menuCursorIndex * 31, null);
 	}
 	
-	public void step(){}
+	public void step(int ms){}
 	
 	public void keyPressed(char key){
 		if (key == 'Q')	enterPresenter(oldPresenter);
