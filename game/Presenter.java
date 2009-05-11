@@ -17,10 +17,15 @@ abstract class Presenter {
 		shell.enterPresenter(newPresenter);
 	}
 
-public void repaint()
-{
-	shell.repaint();
-}
+	public void sleep(int ms)
+	{
+		try{Thread.sleep(ms);
+		}catch(Exception ex){}
+	}
+	public void repaint()
+	{
+		shell.repaint();
+	}
 	
 	/**
 	 *Don't use this.
@@ -40,7 +45,7 @@ public void repaint()
 	public abstract void keyPressed(char key);
 	
 	/**
-	 *Called once a second, do things like having citizens walk around.
+	 *Called at 10Hz, do things like having citizens walk around.
 	 */
-	public abstract void step();
+	public void step(int ms){}
 }

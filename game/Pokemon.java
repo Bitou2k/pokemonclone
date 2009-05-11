@@ -8,7 +8,7 @@ import javax.swing.*;
  *A particular pokemon owned by the player or a rival trainer.
  */
 class Pokemon {
-	private PokedexPokemon prototype;
+	private Species species;
 	private String nickname;
 	private int level;
 	private Status status = Status.NORMAL;
@@ -16,16 +16,16 @@ class Pokemon {
 	private int hp, attack, defense, speed, special; //the base stat
 	private ArrayList<Move> moves = new ArrayList<Move>(); //up to 4
 	
-	Pokemon(PokedexPokemon proto, int level)
+	Pokemon(Species s, int level)
 	{
-		prototype = proto;
-		nickname = proto.name();
+		species = s;
+		nickname = s.name();
 		this.level = level;
 		
-		hp = proto.hp();
+		hp = s.hp();
 		currentHp=hp;
-		attack = proto.attack();
-		defense = proto.defense();
+		attack = s.attack();
+		defense = s.defense();
 		restoreStats();
 	}
 	
@@ -37,6 +37,6 @@ class Pokemon {
 	}
 		
 	public String nickname(){return nickname;}		
-	public PokedexPokemon prototype(){return prototype;}
+	public Species species(){return species;}
 }
 

@@ -9,12 +9,12 @@ class WildPokemonGenerator {
 	private List<Choice> choices = new LinkedList<Choice>(); 
 	
 	private class Choice{
-		private PokedexPokemon pokemon;
+		private Species pokemon;
 		private int level;
 		private double chance;
 		
 		private Choice(Node n){
-			pokemon = PokedexPokemon.named(n.contentOf("name"));
+			pokemon = Species.named(n.contentOf("name"));
 			level = new Integer(n.contentOf("level"));
 			chance = new Double(n.contentOf("chance"));
 		}

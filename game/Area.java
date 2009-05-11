@@ -59,10 +59,6 @@ class Area extends Presenter {
 			return;
 
 		}
-
-		//player.drawWalk(this.g, dx, dy);
-		player.inStride=true;
-
 		if(next.isGrass())
 		{
 			Pokemon p = now.genPokemon();
@@ -72,7 +68,9 @@ class Area extends Presenter {
 				enterPresenter(new Battle(p,this));
 			}
 		}
-			
+		
+		player.inStride=true;
+		player.isOne=true;
 		now.entity(null);
 		next.entity(player);
 	}
