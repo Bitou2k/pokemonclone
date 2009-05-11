@@ -23,7 +23,8 @@ class Battle extends Presenter {
 	private ImageIcon playerBar = new ImageIcon("./resources/battle/playerbar.png");
 	private ImageIcon cursor = new ImageIcon("./resources/arrow.png");
 	
-	private Pokemon p; private Presenter oldP;
+	private Pokemon p; 
+	private Presenter oldP;
 	public Battle(Pokemon p, Presenter oldP)
 	{	
 		menuIndexX = 0;

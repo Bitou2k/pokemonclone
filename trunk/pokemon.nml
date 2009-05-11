@@ -2,7 +2,7 @@
 <pokemon>
 	<number>151</number>
 	<name>Mew</name>
-	<image>icon151.gif</image>
+	<image32>./icons32/icon151.gif</image32>
 	<image80>./icons80/mew.png</image80>
 	<imageFront>./PokeFronts/151.png</imageFront>
 	<imageBack>./PokeBacks/151.png</imageBack>
@@ -44,7 +44,7 @@
 <pokemon>
 	<number>150</number>
 	<name>Mewtwo</name>
-	<image>icon150.gif</image>
+	<image32>./icons32/icon150.gif</image32>
 	<image80>./icons80/mewtwo.png</image80>
 	<imageFront>./PokeFronts/150.png</imageFront>
 	<imageBack>./PokeBacks/150.png</imageBack>
@@ -98,7 +98,10 @@
 <pokemon>
 	<number>149</number>
 	<name>Dragonite</name>
-	<image>icon149.gif</image>
+	<image32>./icons32/icon149.gif</image32>
+	<image80>./icons80/dragonite.png</image80>
+	<imageFront>./PokeFronts/149.png</imageFront>
+	<imageBack>./PokeBacks/149.png</imageBack>
 	<description>An extremely rarely seen marine POKEMON. Its intelligence is said to match that of humans.</description>
 	<type>Dragon</type>
 	<type2>Flying</type2>
@@ -145,7 +148,7 @@
 <pokemon>
 	<number>148</number>
 	<name>Dragonair</name>
-	<image>icon148.gif</image>
+	<image>./icons32/icon148.gif</image>
 	<description>A mystical POKEMON that exudes a gentle aura. Has the ability to change climate conditions.</description>
 	<type>Dragon</type>
 	<type2></type2>
