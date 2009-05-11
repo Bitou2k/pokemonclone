@@ -69,8 +69,7 @@ class Area extends Presenter {
 			}
 		}
 		
-		player.inStride=true;
-		player.isOne=true;
+		player.stride=2;
 		now.entity(null);
 		next.entity(player);
 	}
@@ -99,8 +98,12 @@ class Area extends Presenter {
 		g.setColor(Color.BLACK);
 		g.fillRect(0,0,16*20+2,16*18+2);
 		
+		
 		//make the player the center
-		g.translate( (player.tile().x-10)*-16, (player.tile().y-10)*-16);
+		int yf = (player.d==Direction.NORTH || player.d==Direction.SOUTH && player.inStride() ? -8 : 0);
+		int xf = (player.d==Direction.EAST || player.d==Direction.WEST && player.inStride() ? -8 : 0);
+		
+		g.translate( (player.tile().x-10)*-16-xf, (player.tile().y-10)*-16-yf);
 
 		//draw each tile
 		for(Tile t:tiles) t.drawSelfOn(g);
