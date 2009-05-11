@@ -9,10 +9,32 @@ public class PokedexScreen extends Presenter{
 	*TODO
 	*
 	*/
+	
+	/**
+	* the presenter to go back to
+	*/
 	Presenter oldPresenter;
+	/**
+	*  cursor index next to the pokemon
+	*/
 	int pkmnCursorIndex;
+	/**
+	* cursor index next to the menu
+	*/
 	int menuCursorIndex;
-	boolean pkmn;
+	/**
+	* true: pokemon list has focus, false: menu has focus
+	*/
+	boolean pkmn; 
+	/**
+	* current player instance
+	*/
+	Player ash;
+	/**
+	* contains the strings for the pokedex
+	*/
+	ArrayList<String> pokedexString = new ArrayList<String>;
+	
 	
 	final ImageIcon ii = new ImageIcon("./resources/pokedex.png");
 	final ImageIcon arrow = new ImageIcon("./resources/arrow.png");
@@ -23,6 +45,20 @@ public class PokedexScreen extends Presenter{
 		pkmnCursorIndex = 0;
 		menuCursorIndex = 0;
 		pkmn = true;
+		ash = ((Area)oldP).player;
+		
+		//set the pokedex strings
+		Map<PokdexPokemon,Boolean> seenIt = ash.getSeenIt();
+		List<PokedexPokemon> pokeList = PokedexPokemon.all();
+		for (PokedexPokemon p : pokeList){
+			if (seenIt.get(p)){
+				pokedexString.add(p.name());
+			}
+			else{
+				pokedexString.add("----------");
+			}
+		}
+		
 	}
 	
 	public void drawOn(Graphics2D g){

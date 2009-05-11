@@ -11,7 +11,7 @@ import java.util.*;
 class Area extends Presenter {
 
 	private java.util.List<Tile> tiles = new ArrayList<Tile>();
-	private Player player; 
+	Player player; 
 	private String name;
 	
 	private Area(File f) throws Exception
