@@ -79,6 +79,7 @@ class Area extends Presenter {
 	 */
 	public void keyPressed(char key){
 		Player player = player();
+		if(player.inStride())return;
 		
 		if(key=='A'){move(-1,0);player.setDirection(Direction.WEST);}
 		if(key=='S'){move(0,1); player.setDirection(Direction.SOUTH);}
@@ -101,7 +102,7 @@ class Area extends Presenter {
 		
 		//make the player the center
 		int yf = (player.d==Direction.NORTH || player.d==Direction.SOUTH && player.inStride() ? -8 : 0);
-		int xf = (player.d==Direction.EAST || player.d==Direction.WEST && player.inStride() ? -8 : 0);
+		int xf = (player.d==Direction.EAST || player.d==Direction.WEST && player.inStride() ? 8 : 0);
 		
 		g.translate( (player.tile().x-10)*-16-xf, (player.tile().y-10)*-16-yf);
 
