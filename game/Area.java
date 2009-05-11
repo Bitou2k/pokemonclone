@@ -57,7 +57,12 @@ class Area extends Presenter {
 			a.tileAt(next.targetX(),next.targetY()).entity(player);
 			enterPresenter(a);
 			return;
+
 		}
+
+		//player.drawWalk(this.g, dx, dy);
+		player.inStride=true;
+
 		if(next.isGrass())
 		{
 			Pokemon p = now.genPokemon();
@@ -76,10 +81,10 @@ class Area extends Presenter {
 	 *Move player on arrow keys, enter pokedex on Q.
 	 */
 	public void keyPressed(char key){
-		if(key=='A'){move(-1,0);player.setDirection(1);}
-		if(key=='S'){move(0,1); player.setDirection(2);}
-		if(key=='D'){move(1,0); player.setDirection(3);}
-		if(key=='W'){move(0,-1); player.setDirection(0);}
+		if(key=='A'){move(-1,0);player.setDirection(Direction.WEST);}
+		if(key=='S'){move(0,1); player.setDirection(Direction.SOUTH);}
+		if(key=='D'){move(1,0); player.setDirection(Direction.EAST);}
+		if(key=='W'){move(0,-1); player.setDirection(Direction.NORTH);}
 		if(key=='Q'){enterPresenter(new PokedexScreen(this));}
 	}
 	
