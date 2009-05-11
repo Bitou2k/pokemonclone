@@ -17,6 +17,8 @@ class PokemonGame extends JComponent implements KeyListener {
 	private Player ash;
 	
 	
+	
+	
 	PokemonGame(){
 	
 		enterPresenter(new StartPresenter());
@@ -88,4 +90,6 @@ class PokemonGame extends JComponent implements KeyListener {
 		Area.named("");
 		StartPresenter.loading=false;
 	}
+	
+	public Player getPlayerInstance(){return ash;}
 }

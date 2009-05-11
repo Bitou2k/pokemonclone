@@ -8,7 +8,7 @@ class Player extends Battler {
 	String name;
 	java.util.List<Pokemon> party;
 	java.util.List<Item> pack;
-	Map<Pokemon,Boolean> seenIt;
+	Map<PokedexPokemon,Boolean> seenIt;
 	Map<Pokemon,Boolean> caughtIt;
 
 
@@ -28,7 +28,12 @@ class Player extends Battler {
 	
 	Player()
 	{
-		
+		List<PokedexPokemon> pokeList = PokedexPokemon.all();
+		boolean seen = true;
+		for (PokedexPokemon p : pokeList){
+			seenIt.put(p,seen);
+			seen = !seen;
+		}
 	}
 
 	void step()
@@ -76,5 +81,10 @@ class Player extends Battler {
 		 */
 
 		this.d = d;
+	}
+	public Map getSeenIt(){
+		Map<PokedexPokemon,Boolean> returnMap;
+		seenIt.putAll(returnMap);
+		return returnMap;
 	}
 }

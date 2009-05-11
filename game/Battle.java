@@ -42,8 +42,12 @@ class Battle extends Presenter {
 		g.drawImage(playerBar.getImage(),155,145,null);
 		g.drawImage(bottomFrame.getImage(),0,195,null);
 		
+		Image image = p.prototype().imageFront();
 		
-		g.drawImage(p.prototype().imageFront(),185,20,null);
+		//TODO::MAKE THIS WORK
+		//Image pokeImage = image.getScaledInstance(160,-1,Image.SCALE_SMOOTH);
+		
+		g.drawImage(image,185,20,null);
 		
 		if (stage < 3) //3 seconds
 		{			
