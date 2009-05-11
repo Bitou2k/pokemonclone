@@ -16,8 +16,8 @@ class Player extends Battler {
 
 	Direction d  = Direction.NORTH;
 
-	boolean inStride = false;
-	boolean isOne = false;
+	int stride=0;
+	//2,1,0
 	
 	ImageIcon ii = new ImageIcon("./entityImages/Player Front.png");
 	
@@ -33,84 +33,45 @@ class Player extends Battler {
 	final ImageIcon imgUpStrideOne = new ImageIcon("./entityImages/Player Up StrideOne.png");
 
 
-	void step()
+	void step(int ms)
 	{
-		if(inStride && isOne)
-		{
-			isOne=false;
-		}
-		else if(inStride)
-		{
-			inStride = false;
-		}
+		if(ms%100!=0)return;
+		
+		stride--;
+		if(stride<0)stride=0;
+	}
+	
+	boolean inStride()
+	{
+		return stride > 0;
 	}
 
 	void drawOn(Graphics2D g){
-		switch (d)
-		{
-			case NORTH:
-				if (inStride)
-				{
-					if (isOne)
-						ii = imgUpStrideOne;
-					else
-						ii = imgUpStrideTwo;
-					isOne = !isOne;
-				}
-				else
-					ii = imgDown;
-				break;
-			case SOUTH:
-				if (inStride)
-				{
-					if (isOne)
-						ii = imgDownStrideOne;
-					else
-						ii = imgDownStrideTwo;
-					isOne = !isOne;
-				}
-				else
-					ii = imgDown;
-				break;
-			case EAST:
-				if (inStride)
-				{
-					if (isOne)
-						ii = imgRightStride;
-					else
-						ii = imgRight;
-					isOne = !isOne;
-				}
-				else
-					ii = imgRight;
-				break;
-			case WEST:
-				if (inStride)
-				{
-					if (isOne)
-						ii = imgLeftStride;
-					else
-						ii = imgLeft;
-					isOne = !isOne;
-				}
-				else
-					ii = imgLeft;
-				break;
-		}
-
-		if(inStride)
-			g.drawImage(ii.getImage(), d.dx()*-8, d.dy()*-8, null);
-		else
-			g.drawImage(ii.getImage(),0,0,null);
+			g.drawImage(getImage(), d.dx()*-4*stride, d.dy()*-4*stride, null);
+	}
+	
+	private Image getImage()
+	{
+		if(d==Direction.NORTH && stride==0) return imgUp.getImage();
+		if(d==Direction.NORTH && stride==1) return imgUpStrideOne.getImage();
+		if(d==Direction.NORTH && stride==2) return imgUpStrideTwo.getImage();
+		
+		if(d==Direction.SOUTH && stride==0) return imgDown.getImage();
+		if(d==Direction.SOUTH && stride==1) return imgDownStrideOne.getImage();
+		if(d==Direction.SOUTH && stride==2) return imgDownStrideTwo.getImage();
+		
+		if(d==Direction.EAST && stride==0) return imgRight.getImage();
+		if(d==Direction.EAST && stride==1) return imgRightStride.getImage();
+		if(d==Direction.EAST && stride==2) return imgRightStride.getImage();
+		
+		if(d==Direction.EAST && stride==0) return imgLeft.getImage();
+		if(d==Direction.EAST && stride==1) return imgLeftStride.getImage();
+		if(d==Direction.EAST && stride==2) return imgLeftStride.getImage();
+		
+		return null;//error!
 	}
 	
 	public void setDirection(Direction d){
-		/*
-		 * 0	1	2	3
-		 * w	a	s	d
-		 *u	l	r	d   up left down right
-		 */
-
 		this.d = d;
 	}
 }
