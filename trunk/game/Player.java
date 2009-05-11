@@ -1,15 +1,18 @@
 package game;
 import java.util.*;
-import java.awt.*;
-import javax.swing.*;
+import java.awt.Color;
+import java.awt.Graphics2D;
+import java.awt.Font;
+import java.awt.Image;
+import javax.swing.ImageIcon;
 
 //you
 class Player extends Battler {
 	String name;
-	java.util.List<Pokemon> party;
-	java.util.List<Item> pack;
-	HashMap<PokedexPokemon,Boolean> seenIt = new HashMap<PokedexPokemon,Boolean>();
-	HashMap<PokedexPokemon,Boolean> caughtIt = new HashMap<PokedexPokemon,Boolean>();
+	List<Pokemon> party;
+	List<Item> pack;
+	Map<Species,Boolean> seenIt = new HashMap<Species,Boolean>();
+	Map<Species,Boolean> caughtIt = new HashMap<Species,Boolean>();
 
 
 	Direction d  = Direction.NORTH;
@@ -35,7 +38,7 @@ class Player extends Battler {
 	{
 	//CHANGE THIS --we've seen all of the ones we've added--we've caught every other one
 		boolean seen = true;
-		ArrayList<PokedexPokemon> p = PokedexPokemon.all();
+		List<Species> p = Species.all();
 		for (int i = 0; i < p.size(); i++){
 			seenIt.put(p.get(i),true);
 			caughtIt.put(p.get(i),seen);
@@ -45,7 +48,14 @@ class Player extends Battler {
 
 	void step()
 	{
-		inStride = false;
+		if(inStride && isOne)
+		{
+			isOne=false;
+		}
+		else if(inStride)
+		{
+			inStride = false;
+		}
 	}
 
 	void drawOn(Graphics2D g){
@@ -102,7 +112,7 @@ class Player extends Battler {
 		}
 
 		if(inStride)
-			g.drawImage(ii.getImage(), d.dx*8, d.dy*8, null);
+			g.drawImage(ii.getImage(), d.dx*-8, d.dy*-8, null);
 		else
 			g.drawImage(ii.getImage(),0,0,null);
 	}

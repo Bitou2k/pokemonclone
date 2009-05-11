@@ -42,7 +42,7 @@ class Battle extends Presenter {
 		g.drawImage(playerBar.getImage(),155,145,null);
 		g.drawImage(bottomFrame.getImage(),0,195,null);
 		
-		Image image = p.prototype().imageFront();
+		Image image = p.species().imageFront();
 		
 		//TODO::MAKE THIS WORK
 		//Image pokeImage = image.getScaledInstance(160,-1,Image.SCALE_SMOOTH);

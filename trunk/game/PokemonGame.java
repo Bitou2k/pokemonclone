@@ -26,9 +26,11 @@ class PokemonGame extends JComponent implements KeyListener {
 		
 		new Thread(){
 			public void run(){
+				int ms=0;
 				while(true) try{
-					Thread.sleep(1000);
-					currentPresenter.step();
+					Thread.sleep(100);
+					ms+=100;
+					currentPresenter.step(ms);
 					repaint();
 				}catch(Exception e){}
 			}

@@ -7,7 +7,7 @@ import javax.swing.*;
 /**
  *A prototype for generating a wild pokemon, evolving a pokemon, or viewing pokedex data.
  */
-class PokedexPokemon {
+class Species {
 	
 	private String name;
 	private String description;
@@ -16,7 +16,7 @@ class PokedexPokemon {
 	private Type type1, type2;
 	private int hp, attack, defense, spAttack, spDefense, speed; //the base stat
 	private Map<String,Integer> moves; //A dictionary of move->level learned
-	private Map<String,PokedexPokemon> evolutions;//A dictionary of condition(level,trade,stone)->pokedexpokemon
+	private Map<String,Species> evolutions;//A dictionary of condition(level,trade,stone)->pokedexpokemon
 		
 	public String name(){return name;}
 	public String description(){return description;}
@@ -58,13 +58,13 @@ class PokedexPokemon {
 	/**
 	*Returns a dictionary of EVOLVECONDITION(level,trade,stone)==>POKEMONEVOLVEDINTO.
 	*/
-	public Map<String,PokedexPokemon> evolutions(){return evolutions;}
+	public Map<String,Species> evolutions(){return evolutions;}
 		
-	private PokedexPokemon(Node n)
+	private Species(Node n)
 	{	
 		number = new Integer(n.contentOf("number"));
 		name = n.contentOf("name");
-		image32 = new ImageIcon("./icons/"+n.contentOf("image")).getImage();
+		image32 = new ImageIcon(n.contentOf("image32")).getImage();
 		image80 = new ImageIcon(n.contentOf("image80")).getImage();
 		imageFront = new ImageIcon(n.contentOf("imageFront")).getImage();
 		imageBack = new ImageIcon(n.contentOf("imageBack")).getImage();
@@ -83,7 +83,7 @@ class PokedexPokemon {
 		
 		//p.futureMoves = movesFromNode(n.subnode("moves"));
 		
-		System.out.println("Loaded PokedexPokemon: "+name);
+		System.out.println("Loaded Species: "+name);
 	}
 	
 	public Pokemon makeWildAtLevel(int level)
@@ -91,24 +91,19 @@ class PokedexPokemon {
 		return new Pokemon(this,level);
 	}
 		
-	private static ArrayList<PokedexPokemon> pokemon = new ArrayList<PokedexPokemon>();
-	static { loadPrototypes(); }
-	
-	private static void loadPrototypes(){
+	private static ArrayList<Species> species = new ArrayList<Species>();
+	static { 
 		try{
 			Node root = Node.documentRootFrom("./pokemon.nml");
 			for(Node n : root.subnodes("pokemon"))
-				pokemon.add( new PokedexPokemon(n) );
+				species.add( new Species(n) );
 				
-			System.out.println(pokemon.size()+" pokemon!");
+			System.out.println(species.size()+" species!");
 		}catch(Exception e){e.printStackTrace();}
 	}
 	
-	/*public static java.util.List<PokedexPokemon> all(){
-		return pokemon;
-	}*/
-	public static ArrayList<PokedexPokemon> all(){
-		return pokemon;
+	public static java.util.List<Species> all(){
+		return species;
 	}
 	
 	private static Type getTypeNamed(String n)
@@ -125,16 +120,16 @@ class PokedexPokemon {
 		return moves;
 	}
 	
-	public static PokedexPokemon named(String name){
-		for(PokedexPokemon p: pokemon)
-			if(p.name.equalsIgnoreCase(name))return p;
-		System.out.println("There is no pokemon named "+name);
+	public static Species named(String name){
+		for(Species s: species)
+			if(s.name.equalsIgnoreCase(name))return s;
+		System.out.println("There is no species named "+name);
 		return null;
 	}
-	public static PokedexPokemon withNumber(int no){
-		for(PokedexPokemon p: pokemon)
-			if(p.number==no)return p;
-		System.out.println("There is no pokemon numbered "+no);
+	public static Species withNumber(int no){
+		for(Species s: species)
+			if(s.number==no)return s;
+		System.out.println("There is no species numbered "+no);
 		return null;
 	}
 

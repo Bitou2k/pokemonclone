@@ -1,6 +1,9 @@
 package game;
 
-import java.awt.*;
+import java.awt.Graphics2D;
+import java.awt.Font;
+import java.awt.Image;
+import java.awt.Color;
 import java.awt.event.*;
 import javax.swing.*;
 import java.util.*;
@@ -53,10 +56,10 @@ public class PokedexScreen extends Presenter{
 		topIndex = 0;
 		
 		//set the pokedex strings
-		ArrayList<PokedexPokemon> pokeList = PokedexPokemon.all();
+		List<Species> pokeList = Species.all();
 		
 		for (int i = 0; i < pokeList.size(); i++){
-			PokedexPokemon p = pokeList.get(i);
+			Species p = pokeList.get(i);
 			System.out.println(p.name());
 			if (ash.seenIt.get(p) == true){
 				pokedexString.add(p.name());
