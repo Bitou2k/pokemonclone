@@ -29,6 +29,7 @@ class StartPresenter extends Presenter {
 		g.drawString("(add yourself but no one else!)",0,130);
 		g.drawString("Ryan Macnak",0,140);
 		g.drawString("Michal Broniek",0,150);
+		g.drawString("Andrew Siegle",0,160);
 
 		if(loading) g.drawString("Loading maps...",0,200);
 		}
