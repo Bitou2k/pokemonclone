@@ -6,6 +6,35 @@ Everyone who is programming a chunk of the pokemon database should update this p
 
 Remember to work backwards!
 
+= Template =
+
+<pokemon>
+	<number></number>
+	<name></name>
+	<image>icon000.gif</image>
+	<image80>./icons80/name.png</image80>
+	<imageFront>./PokeFronts/000.png</imageFront>
+	<imageBack>./PokeBacks/000.png</imageBack>
+	<description></description>
+	<type></type>
+	<type2></type2>
+	<species></species>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<sp atk></sp atk>
+	<sp def></sp def>
+	<speed></speed>
+	<moves>
+		<move>
+			<level></level>
+			<name></name>
+		</move>
+	</moves>
+	<HMs></HMs>
+	<TMs></TMs>
+</pokemon>
+
 
 = Details =
 1-25: In database, but needs revising
