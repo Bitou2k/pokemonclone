@@ -3,6 +3,7 @@ package game;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
+import java.util.*;
 
 public class PokedexScreen extends Presenter{
 	/*
@@ -33,7 +34,7 @@ public class PokedexScreen extends Presenter{
 	/**
 	* contains the strings for the pokedex
 	*/
-	ArrayList<String> pokedexString = new ArrayList<String>;
+	ArrayList<String> pokedexString = new ArrayList<String>();
 	
 	
 	final ImageIcon ii = new ImageIcon("./resources/pokedex.png");
@@ -47,9 +48,9 @@ public class PokedexScreen extends Presenter{
 		pkmn = true;
 		ash = ((Area)oldP).player;
 		
-		//set the pokedex strings
-		Map<PokdexPokemon,Boolean> seenIt = ash.getSeenIt();
-		List<PokedexPokemon> pokeList = PokedexPokemon.all();
+		/*set the pokedex strings
+		Map<PokedexPokemon,Boolean> seenIt = ash.getSeenIt();
+		java.util.List<PokedexPokemon> pokeList = PokedexPokemon.all();
 		for (PokedexPokemon p : pokeList){
 			if (seenIt.get(p)){
 				pokedexString.add(p.name());
@@ -57,7 +58,7 @@ public class PokedexScreen extends Presenter{
 			else{
 				pokedexString.add("----------");
 			}
-		}
+		}*/
 		
 	}
 	
