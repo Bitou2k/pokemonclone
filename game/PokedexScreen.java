@@ -36,7 +36,6 @@ public class PokedexScreen extends Presenter{
 	* contains the strings for the pokedex
 	*/
 	ArrayList<String> pokedexString = new ArrayList<String>();
-	ArrayList<Boolean> caughtList = new ArrayList<Boolean>();
 	
 	
 	final ImageIcon ii = new ImageIcon("./resources/pokedex.png");
@@ -51,21 +50,25 @@ public class PokedexScreen extends Presenter{
 		pkmn = true;
 		topIndex = 0;
 		
-		//set the pokedex strings
-		List<Species> pokeList = Species.all();
+	}
+	
+	//I shouldn't do this here but for now
+	public void initGame(Game g)
+	{
+		super.initGame(g);
 		
-		for (int i = 0; i < pokeList.size(); i++){
-			Species p = pokeList.get(i);
-			System.out.println(p.name());
-			if (player().seenIt.get(p) == true){
-				pokedexString.add(p.name());
+		//set the pokedex strings
+		for (Species s: Species.all()){
+
+			System.out.println(s.name());
+			if (player().pokedex.hasSeen(s) == true){
+				pokedexString.add(s.name());
 			}
 			else{
 				pokedexString.add("----------");
 			}
-			caughtList.add((Boolean)player().caughtIt.get(p));
+			
 		}
-		
 		
 	}
 	
@@ -80,8 +83,8 @@ public class PokedexScreen extends Presenter{
 		//drawString (str, x, y)
 		for (int i = 0; i < 6; i++){			
 			g.drawString(pokedexString.get((pokedexString.size() - 1 - i - topIndex) % pokedexString.size()),X,Y);
-			if (caughtList.get((pokedexString.size() - 1 - i - topIndex) % pokedexString.size()))
-				g.drawImage(pokeball.getImage(),X-20, Y - 15, null);
+			//if (caughtList.get((pokedexString.size() - 1 - i - topIndex) % pokedexString.size()))
+				//g.drawImage(pokeball.getImage(),X-20, Y - 15, null);
 			Y += inc;
 		}
 		ImageIcon pkmnArrow,menuArrow;

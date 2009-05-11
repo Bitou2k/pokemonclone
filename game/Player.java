@@ -11,8 +11,8 @@ class Player extends Battler {
 	String name;
 	List<Pokemon> party;
 	List<Item> pack;
-	Map<Species,Boolean> seenIt = new HashMap<Species,Boolean>();
-	Map<Species,Boolean> caughtIt = new HashMap<Species,Boolean>();
+
+	Pokedex pokedex;
 
 
 	Direction d  = Direction.NORTH;
@@ -36,14 +36,7 @@ class Player extends Battler {
 	
 	Player()
 	{
-	//CHANGE THIS --we've seen all of the ones we've added--we've caught every other one
-		boolean seen = true;
-		List<Species> p = Species.all();
-		for (int i = 0; i < p.size(); i++){
-			seenIt.put(p.get(i),true);
-			caughtIt.put(p.get(i),seen);
-			seen = !seen;
-		}
+	
 	}
 
 	void step()
