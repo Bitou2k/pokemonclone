@@ -14,56 +14,89 @@ class Player extends Battler {
 
 	Direction d  = Direction.NORTH;
 	boolean inStride = false;
+	boolean isOne = false;
 	
 	ImageIcon ii = new ImageIcon("./entityImages/Player Front.png");
 	
 	final ImageIcon imgDown = new ImageIcon("./entityImages/Player Front.png");
+	final ImageIcon imgDownStrideTwo = new ImageIcon("./entityImages/Player Front StrideTwo.png");
+	final ImageIcon imgDownStrideOne = new ImageIcon("./entityImages/Player Front StrideOne.png");
 	final ImageIcon imgRight = new ImageIcon("./entityImages/Player Right.png");
-	final ImageIcon imgLeft = new ImageIcon("./entityImages/Player Left.png");
-	final ImageIcon imgUp = new ImageIcon("./entityImages/Player Up.png");
-	final ImageIcon imgDownStride = new ImageIcon("./entityImages/Player Front Stride.png");
 	final ImageIcon imgRightStride = new ImageIcon("./entityImages/Player Right Stide.png");
+	final ImageIcon imgLeft = new ImageIcon("./entityImages/Player Left.png");
 	final ImageIcon imgLeftStride = new ImageIcon("./entityImages/Player Left Stride.png");
-	final ImageIcon imgUpStride = new ImageIcon("./entityImages/Player Up Stride.png");
+	final ImageIcon imgUp = new ImageIcon("./entityImages/Player Up.png");
+	final ImageIcon imgUpStrideTwo = new ImageIcon("./entityImages/Player Up StrideTwo.png");
+	final ImageIcon imgUpStrideOne = new ImageIcon("./entityImages/Player Up StrideOne.png");
+
+
 	
 	Player()
 	{
-		/*java.util.List<PokedexPokemon> pokeList = PokedexPokemon.all();
-		boolean seen = true;
-		for (PokedexPokemon p : pokeList){
-			seenIt.put(p,seen);
-			seen = !seen;
-		}*/
+		//List<PokedexPokemon> pokeList = PokedexPokemon.all();
+		//pokeList = PokedexPokemon.all();
+		//boolean seen = true;
+		//for (PokedexPokemon p : pokeList){
+		//	seenIt.put(p,seen);
+		//	seen = !seen;
+		//}
 	}
 
 	void step()
 	{
 		inStride = false;
 	}
-	void drawWalk(Graphics2D g, int dx, int dy)
-	{
-		g.drawImage(ii.getImage(), dx * 4, dy * 4, null);
-		//shell.repaint();
-		g.drawImage(ii.getImage(), dx * 8, dy * 8, null);
-		//shell.repaint();
-		g.drawImage(ii.getImage(), dx * 12, 3 * dy * 12, null);
-		//shell.repaint();
-	}
 
 	void drawOn(Graphics2D g){
 		switch (d)
 		{
 			case NORTH:
-				ii = (inStride ? imgUpStride : imgUp);
+				if (inStride)
+				{
+					if (isOne)
+						ii = imgUpStrideOne;
+					else
+						ii = imgUpStrideTwo;
+					isOne = !isOne;
+				}
+				else
+					ii = imgDown;
 				break;
 			case SOUTH:
-				ii = (inStride ? imgDownStride : imgDown);
+				if (inStride)
+				{
+					if (isOne)
+						ii = imgDownStrideOne;
+					else
+						ii = imgDownStrideTwo;
+					isOne = !isOne;
+				}
+				else
+					ii = imgDown;
 				break;
 			case EAST:
-				ii = (inStride ? imgRightStride : imgRight);
+				if (inStride)
+				{
+					if (isOne)
+						ii = imgRightStride;
+					else
+						ii = imgRight;
+					isOne = !isOne;
+				}
+				else
+					ii = imgRight;
 				break;
 			case WEST:
-				ii = (inStride ? imgLeftStride : imgLeft);
+				if (inStride)
+				{
+					if (isOne)
+						ii = imgLeftStride;
+					else
+						ii = imgLeft;
+					isOne = !isOne;
+				}
+				else
+					ii = imgLeft;
 				break;
 		}
 
@@ -82,5 +115,9 @@ class Player extends Battler {
 
 		this.d = d;
 	}
-	
+//	public Map getSeenIt(){
+//		Map<PokedexPokemon,Boolean> returnMap;
+//		seenIt.putAll(returnMap);
+//		return returnMap;
+//	}
 }
