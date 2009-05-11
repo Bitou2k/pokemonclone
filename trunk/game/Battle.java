@@ -42,6 +42,9 @@ class Battle extends Presenter {
 		g.drawImage(playerBar.getImage(),155,145,null);
 		g.drawImage(bottomFrame.getImage(),0,195,null);
 		
+		
+		g.drawImage(p.prototype().imageFront(),185,20,null);
+		
 		if (stage < 3) //3 seconds
 		{			
 			g.drawString("A wild "+p.nickname()+" has appeared!!",TEXTX,225);

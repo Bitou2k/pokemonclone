@@ -1415,6 +1415,7 @@
 	<name>Rattata</name>
 	<description>Bites anything when it attacks. Small and very quick, it is a common sight in many places.</description>
 	<image>icon019.gif</image>
+	<imageFront>./PokeFronts/19.png</imageFront>
 	<type>Normal</type>
 	<type2></type2>
 	<species>Mouse</species>
@@ -1470,6 +1471,7 @@
 	<name>Pidgey</name>
 	<description>A common sight in forests and woods. It flaps its wings at ground level to kick up blinding sand.</description>
 	<image>icon016.gif</image>
+	<imageFront>./PokeFronts/16.png</imageFront>
 	<type>Normal</type>
 	<type2>Flying</type2>
 	<species>Tiny Bird</species>
