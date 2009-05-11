@@ -320,14 +320,27 @@ class Main extends JFrame implements ActionListener  {
 				currentTile = tiles[mouseX / SQUARESIDE][mouseY / SQUARESIDE];
 				pushTile(currentTile);
 		}
-		
+
 		public void mouseClicked(MouseEvent e)
 		{
 			if (e.getButton() == 1)
 			{
 				pushTile(currentTile);
 			}
-			else pullTile(currentTile);
+			else if (e.getButton() == 3)
+			{
+				pullTile(currentTile);
+			}
+			else
+			{
+				for (int x = 0; x < lvlWidth; x++)
+					for (int y = 0; y < lvlHeight; y++)
+						if(tiles[x][y].getImage() == currentTile.getImage())
+						{
+							tiles[x][y].setType(currentTile.getType());
+						}
+			}
+				
 		}
 
 		public void mouseEntered(MouseEvent e) { }
