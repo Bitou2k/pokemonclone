@@ -8,8 +8,8 @@ class Player extends Battler {
 	String name;
 	java.util.List<Pokemon> party;
 	java.util.List<Item> pack;
-	Map<PokedexPokemon,Boolean> seenIt;
-	Map<Pokemon,Boolean> caughtIt;
+	HashMap<PokedexPokemon,Boolean> seenIt = new HashMap<PokedexPokemon,Boolean>();
+	HashMap<PokedexPokemon,Boolean> caughtIt = new HashMap<PokedexPokemon,Boolean>();
 
 
 	Direction d  = Direction.NORTH;
@@ -33,6 +33,16 @@ class Player extends Battler {
 	
 	Player()
 	{
+<<<<<<< .mine
+	//CHANGE THIS --we've seen all of the ones we've added--we've caught every other one
+		boolean seen = true;
+		ArrayList<PokedexPokemon> p = PokedexPokemon.all();
+		for (int i = 0; i < p.size(); i++){
+			seenIt.put(p.get(i),true);
+			caughtIt.put(p.get(i),seen);
+			seen = !seen;
+		}
+=======
 		//List<PokedexPokemon> pokeList = PokedexPokemon.all();
 		//pokeList = PokedexPokemon.all();
 		//boolean seen = true;
@@ -40,6 +50,7 @@ class Player extends Battler {
 		//	seenIt.put(p,seen);
 		//	seen = !seen;
 		//}
+>>>>>>> .r209
 	}
 
 	void step()

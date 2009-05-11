@@ -104,7 +104,10 @@ class PokedexPokemon {
 		}catch(Exception e){e.printStackTrace();}
 	}
 	
-	public static java.util.List<PokedexPokemon> all(){
+	/*public static java.util.List<PokedexPokemon> all(){
+		return pokemon;
+	}*/
+	public static ArrayList<PokedexPokemon> all(){
 		return pokemon;
 	}
 	
