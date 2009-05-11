@@ -48,17 +48,16 @@ public class PokedexScreen extends Presenter{
 		pkmn = true;
 		ash = ((Area)oldP).player;
 		
-		/*set the pokedex strings
-		Map<PokedexPokemon,Boolean> seenIt = ash.getSeenIt();
+		//set the pokedex strings
 		java.util.List<PokedexPokemon> pokeList = PokedexPokemon.all();
-		for (PokedexPokemon p : pokeList){
-			if (seenIt.get(p)){
+		for (PokedexPokemon p : PokedexPokemon.all()){
+			if (ash.seenIt.get(p)){
 				pokedexString.add(p.name());
 			}
 			else{
 				pokedexString.add("----------");
 			}
-		}*/
+		}
 		
 	}
 	
