@@ -1,3 +1,4 @@
 javac game/*.java
 pause
-java game.PokemonGame
+java game.Game
+pause

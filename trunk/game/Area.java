@@ -1,6 +1,8 @@
 package game;
 
-import java.awt.*;
+import java.awt.Graphics2D;
+import java.awt.Color;
+import java.awt.Image;
 import javax.swing.*;
 import java.io.*;
 import java.util.*;
@@ -10,8 +12,7 @@ import java.util.*;
  */
 class Area extends Presenter {
 
-	private java.util.List<Tile> tiles = new ArrayList<Tile>();
-	Player player; 
+	private List<Tile> tiles = new ArrayList<Tile>(); 
 	private String name;
 	
 	private Area(File f) throws Exception
@@ -28,8 +29,6 @@ class Area extends Presenter {
 		System.out.println("Loaded Area: "+name);
 	}
 	
-	void player(Player p){player=p;}
-	
 	/**
 	 *Find the tile with the given coordinated
 	 */
@@ -42,6 +41,8 @@ class Area extends Presenter {
 	
 	private void move(int dx, int dy)
 	{
+		Player player = player();
+		
 		Tile now = player.tile();
 		Tile next = tileAt(now.x+dx,now.y+dy);
 		
@@ -53,7 +54,6 @@ class Area extends Presenter {
 			System.out.println(next.targetY());
 		
 			Area a = Area.named(next.targetMap());
-			a.player(player);
 			a.tileAt(next.targetX(),next.targetY()).entity(player);
 			enterPresenter(a);
 			return;
@@ -79,6 +79,8 @@ class Area extends Presenter {
 	 *Move player on arrow keys, enter pokedex on Q.
 	 */
 	public void keyPressed(char key){
+		Player player = player();
+		
 		if(key=='A'){move(-1,0);player.setDirection(Direction.WEST);}
 		if(key=='S'){move(0,1); player.setDirection(Direction.SOUTH);}
 		if(key=='D'){move(1,0); player.setDirection(Direction.EAST);}
@@ -91,6 +93,8 @@ class Area extends Presenter {
 	 */
 	public void drawOn(Graphics2D g)
 	{
+		Player player = player();
+		
 		//fill background with black
 		g.setColor(Color.BLACK);
 		g.fillRect(0,0,16*20+2,16*18+2);
@@ -99,15 +103,16 @@ class Area extends Presenter {
 		g.translate( (player.tile().x-10)*-16, (player.tile().y-10)*-16);
 
 		//draw each tile
-		for(Tile t:tiles) t.drawOn(g);
+		for(Tile t:tiles) t.drawSelfOn(g);
+		for(Tile t:tiles) t.drawEntityOn(g);
 	}
 	
 	/**
 	 *Step each tile
 	 */
-	public void step(){
+	public void step(int ms){
 		for(Tile t:tiles)
-			t.step();
+			t.step(ms);
 	}
 	
 	

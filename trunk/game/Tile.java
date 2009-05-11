@@ -75,24 +75,31 @@ class Tile {
 	int height(){return 16;}
 	
 	/**
-	 *Draw my background image, and then any entity on top of it.
+	 *Draw my background image.
 	 */
-	public void drawOn(Graphics2D g)
+	public void drawSelfOn(Graphics2D g)
 	{	
 		g.setColor(Color.BLACK);
 		g.translate(width()*x,height()*y);
-			g.fillRect(2,2,14,14);
+			g.fillRect(0,0,16,16);
 			g.drawImage(img,0,0,null);
 			if(entity!=null) entity.drawOn(g);
-		
+		g.translate(-width()*x,-height()*y);
+	}
+	
+	public void drawEntityOn(Graphics2D g)
+	{	
+		g.setColor(Color.BLACK);
+		g.translate(width()*x,height()*y);
+			if(entity!=null) entity.drawOn(g);
 		g.translate(-width()*x,-height()*y);
 	}
 	
 	/**
 	 *Step my entity
 	 */
-	public void step()
+	public void step(int ms)
 	{
-		if(entity!=null) entity.step();
+		if(entity!=null) entity.step(ms);
 	}
 }
