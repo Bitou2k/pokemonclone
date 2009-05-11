@@ -28,7 +28,7 @@ class Player extends Battler {
 	
 	Player()
 	{
-		List<PokedexPokemon> pokeList = PokedexPokemon.all();
+		java.util.List<PokedexPokemon> pokeList = PokedexPokemon.all();
 		boolean seen = true;
 		for (PokedexPokemon p : pokeList){
 			seenIt.put(p,seen);
