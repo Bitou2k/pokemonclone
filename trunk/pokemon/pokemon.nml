@@ -148,7 +148,10 @@
 <pokemon>
 	<number>148</number>
 	<name>Dragonair</name>
-	<image>.pokemon/icons32/icon148.gif</image>
+	<image32>./pokemon/icons32/icon148.gif</image32>
+	<image80>./pokemon/icons80/dragonair.png</image80>
+	<imageFront>./pokemon/iconsFront/148.png</imageFront>
+	<imageBack>./pokemon/iconsBack/148.png</imageBack>
 	<description>A mystical POKEMON that exudes a gentle aura. Has the ability to change climate conditions.</description>
 	<type>Dragon</type>
 	<type2></type2>
@@ -199,7 +202,10 @@
 <pokemon>
 	<number>147</number>
 	<name>Dratini</name>
-	<image>icon147.gif</image>
+	<image32>./pokemon/icons32/icon147.gif</image32>
+	<image80>./pokemon/icons80/dratini.png</image80>
+	<imageFront>./pokemon/iconsFront/147.png</imageFront>
+	<imageBack>./pokemon/iconsBack/147.png</imageBack>
 	<description>Long considered a mythical POKEMON until recently when a small colony was found living underwater.</description>
 	<type>Dragon</type>
 	<type2></type2>
@@ -250,7 +256,10 @@
 <pokemon>
 	<number>146</number>
 	<name>Moltres</name>
-	<image>icon146.gif</image>
+	<image32>./pokemon/icons32/icon146.gif</image32>
+	<image80>./pokemon/icons80/moltres.png</image80>
+	<imageFront>./pokemon/iconsFront/146.png</imageFront>
+	<imageBack>./pokemon/iconsBack/146.png</imageBack>
 	<description>Known as the legendary bird of fire. Every flap of its wings creates a dazzling flash of flames.</description>
 	<type>Fire</type>
 	<type2>Flying</type2>
@@ -289,7 +298,7 @@
 <pokemon>
 	<number>145</number>
 	<name>Zapdos</name>
-	<image>icon145.gif</image>
+	<image32>icon145.gif</image32>
 	<description>A legendary bird POKEMON that is said to appear from clouds while dropping enormous lightning bolts.</description>
 	<type>Electric</type>
 	<type2>Flying</type2>
@@ -328,7 +337,7 @@
 <pokemon>
 	<number>144</number>
 	<name>Articuno</name>
-	<image>icon144.gif</image>
+	<image32>icon144.gif</image32>
 	<description>A legendary bird POKEMON that is said to appear to doomed people who are lost in icy mountains.</description>
 	<type>Ice</type>
 	<type2>Flying</type2>
@@ -367,7 +376,7 @@
 <pokemon>
 	<number>143</number>
 	<name>Snorlax</name>
-	<image>icon143.gif</image>
+	<image32>icon143.gif</image32>
 	<description>Very lazy. Just eats and sleeps. As its rotund bulk builds, it becomes steadily more slothful.</description>
 	<type>Normal</type>
 	<type2></type2>
@@ -414,7 +423,7 @@
 <pokemon>
 	<number>142</number>
 	<name>Aerodactyl</name>
-	<image>icon142.gif</image>
+	<image32>icon142.gif</image32>
 	<description>A ferocious, prehistoric POKEMON that goes for the enemy's throat with its serrated saw-like fangs.</description>
 	<type>Rock</type>
 	<type2>Flying</type2>
@@ -457,7 +466,7 @@
 <pokemon>
 	<number>141</number>
 	<name>Kabutops</name>
-	<image>icon141.gif</image>
+	<image32>icon141.gif</image32>
 	<description>Its sleek shape is perfect for swimming. It slashes prey with its claws and drains the body fluids.</description>
 	<type>Rock</type>
 	<type2>Water</type2>
@@ -500,7 +509,7 @@
 <pokemon>
 	<number>140</number>
 	<name>Kabuto</name>
-	<image>icon140.gif</image>
+	<image32>icon140.gif</image32>
 	<description>A POKEMON that was resurrected from a fossil found in what was once the ocean floor eons ago.</description>
 	<type>Rock</type>
 	<type2>Water</type2>
@@ -547,7 +556,7 @@
 <pokemon>
 	<number>139</number>
 	<name>Omastar</name>
-	<image>icon139.gif</image>
+	<image32>icon139.gif</image32>
 	<description>A prehistoric POKEMON that died out when its heavy shell made it impossible to catch prey.</description>
 	<type>Rock</type>
 	<type2>Water</type2>
@@ -590,7 +599,7 @@
 <pokemon>
 	<number>138</number>
 	<name>Omanyte</name>
-	<image>icon138.gif</image>
+	<image32>icon138.gif</image32>
 	<description>Although long extinct, in rare cases, it can be genetically resurrected from fossils.</description>
 	<type>Rock</type>
 	<type2>Water</type2>
@@ -637,7 +646,7 @@
 <pokemon>
 	<number>137</number>
 	<name>Porygon</name>
-	<image>icon137.gif</image>
+	<image32>icon137.gif</image32>
 	<description>A POKEMON that consists entirely of programming code. Capable of moving freely in cyberspace.</description>
 	<type>Normal</type>
 	<type2></type2>
@@ -684,7 +693,7 @@
 <pokemon>
 	<number>136</number>
 	<name>Flareon</name>
-	<image>icon136.gif</image>
+	<image32>icon136.gif</image32>
 	<description>When storing thermal energy in its body, its temperature could soar to over 1600 degrees.</description>
 	<type>Fire</type>
 	<type2></type2>
@@ -743,7 +752,7 @@
 <pokemon>
 	<number>135</number>
 	<name>Jolteon</name>
-	<image>icon135.gif</image>
+	<image32>icon135.gif</image32>
 	<description>It accumulates negative ions in the atmosphere to blast out 10000-volt lightning bolts.</description>
 	<type>Electric</type>
 	<type2></type2>
@@ -806,7 +815,7 @@
 <pokemon>
 	<number>134</number>
 	<name>Vaporeon</name>
-	<image>icon134.gif</image>
+	<image32>icon134.gif</image32>
 	<description>Lives close to water. Its long tail is ridged with a fin which is often mistaken for a mermaid's.</description>
 	<type>Water</type>
 	<type2></type2>
@@ -865,7 +874,7 @@
 <pokemon>
 	<number>133</number>
 	<name>Eevee</name>
-	<image>icon133.gif</image>
+	<image32>icon133.gif</image32>
 	<description>Its genetic code is irregular. It may mutate if it is exposed to radiation from element STONEs.</description>
 	<type>Normal</type>
 	<type2></type2>
@@ -920,7 +929,7 @@
 <pokemon>
 	<number>132</number>
 	<name>Ditto</name>
-	<image>icon132.gif</image>
+	<image32>icon132.gif</image32>
 	<description>Capable of copying an enemy's genetic code to instantly transform itself into a duplicate of the enemy.</description>
 	<type>Normal</type>
 	<type2></type2>
@@ -943,7 +952,7 @@
 <pokemon>
 	<number>131</number>
 	<name>Lapras</name>
-	<image>icon131.gif</image>
+	<image32>icon131.gif</image32>
 	<description>A POKEMON that has been over hunted almost to extinction. It can ferry people across the water.</description>
 	<type>Water</type>
 	<type2>Ice</type2>
@@ -994,7 +1003,7 @@
 <pokemon>
 	<number>130</number>
 	<name>Gyarados</name>
-	<image>icon130.gif</image>
+	<image32>icon130.gif</image32>
 	<description>Rarely seen in the wild. Huge and vicious, it is capable of destroying entire cities in a rage.</description>
 	<type>Water</type>
 	<type2>Flying</type2>
@@ -1041,7 +1050,7 @@
 <pokemon>
 	<number>129</number>
 	<name>Magikarp</name>
-	<image>icon129.gif</image>
+	<image32>icon129.gif</image32>
 	<description>In the distant past, it was somewhat stronger than the horribly weak descendants that exist today.</description>
 	<type>Water</type>
 	<type2></type2>
@@ -1072,7 +1081,7 @@
 <pokemon>
 	<number>128</number>
 	<name>Tauros</name>
-	<image>icon128.gif</image>
+	<image32>icon128.gif</image32>
 	<description>When it targets an enemy, it charges furiously while whipping its body with its long tails.</description>
 	<type>Normal</type>
 	<type2></type2>
@@ -1115,7 +1124,7 @@
 <pokemon>
 	<number>127</number>
 	<name>Pinsir</name>
-	<image>icon127.gif</image>
+	<image32>icon127.gif</image32>
 	<description>If it fails to crush the victim in its pincers, it will swing it around and toss it hard.</description>
 	<type>Bug</type>
 	<type2></type2>
@@ -1162,7 +1171,7 @@
 <pokemon>
 	<number>126</number>
 	<name>Magmar</name>
-	<image>icon126.gif</image>
+	<image32>icon126.gif</image32>
 	<description>Its body always burns with an orange glow that enables it to hide perfectly among flames.</description>
 	<type>Fire</type>
 	<type2></type2>
@@ -1209,7 +1218,7 @@
 <pokemon>
 	<number>125</number>
 	<name>Electabuzz</name>
-	<image>icon125.gif</image>
+	<image32>icon125.gif</image32>
 	<description>Normally found near power plants, they can wander away and cause major blackouts in cities.</description>
 	<type>Electric</type>
 	<type2></type2>
@@ -1257,7 +1266,7 @@
 	<number>28</number>
 	<name>Sandslash</name>
 	<description>Curls up into a spiny ball when threatened. It can roll while curled up to attack or escape.</description>
-	<image>icon028.gif</image>
+	<image32>icon028.gif</image32>
 	<type>Ground</type>
 	<type2></type2>
 	<species>Mouse</species>
@@ -1273,7 +1282,7 @@
 	<number>27</number>
 	<name>Sandshrew</name>
 	<description>Burrows deep underground in arid locations far from water. It only emerges to hunt for food.</description>
-	<image>icon027.gif</image>
+	<image32>icon027.gif</image32>
 	<type>Ground</type>
 	<type2></type2>
 	<species>Mouse</species>
@@ -1293,7 +1302,7 @@
 	<number>26</number>
 	<name>Raichu</name>
 	<description>Its long tail serves as a ground to protect itself from its own high voltage power.</description>
-	<image>icon026.gif</image>
+	<image32>icon026.gif</image32>
 	<type>Electric</type>
 	<type2></type2>
 	<species>Mouse</species>
@@ -1309,7 +1318,7 @@
 	<number>25</number>
 	<name>Pikachu</name>
 	<description>When several of these POKÈMON gather, their electricity could build and cause lightning storms.</description>
-	<image>icon025.gif</image>
+	<image32>icon025.gif</image32>
 	<type>Electric</type>
 	<type2></type2>
 	<species>Mouse</species>
@@ -1329,7 +1338,7 @@
 	<number>24</number>
 	<name>Arbok</name>
 	<description>It is rumored that the ferocious warning markings on its belly differ from area to area.</description>
-	<image>icon024.gif</image>
+	<image32>icon024.gif</image32>
 	<type>Poison</type>
 	<type2></type2>
 	<species>Cobra</species>
@@ -1345,7 +1354,7 @@
 	<number>23</number>
 	<name>Ekans</name>
 	<description>Moves silently and stealthily. Eats the eggs of birds, such as PIDGEY and SPEAROW, whole.</description>
-	<image>icon023.gif</image>
+	<image32>icon023.gif</image32>
 	<type>Poison</type>
 	<type2></type2>
 	<species>Snake</species>
@@ -1366,7 +1375,7 @@
 	<number>22</number>
 	<name>Fearow</name>
 	<description>With its huge and magnificent wings, it can keep aloft without ever having to land for rest.</description>
-	<image>icon022.gif</image>
+	<image32>icon022.gif</image32>
 	<type>Normal</type>
 	<type2>Flying</type2>
 	<species>Beak</species>
@@ -1382,7 +1391,7 @@
 	<number>21</number>
 	<name>Spearow</name>
 	<description>Eats bugs in grassy areas. It has to flap its short wings at high speed to stay airborne.</description>
-	<image>icon021.gif</image>
+	<image32>icon021.gif</image32>
 	<type>Normal</type>
 	<type2>Flying</type2>
 	<species>Tiny Bird</species>
@@ -1402,7 +1411,7 @@
 	<number>20</number>
 	<name>Raticate</name>
 	<description>It uses its whiskers to maintain its balance. It apparently slows down if they are cut off.</description>
-	<image>icon020.gif</image>
+	<image32>icon020.gif</image32>
 	<type>Normal</type>
 	<type2></type2>
 	<species>Mouse</species>
@@ -1417,7 +1426,7 @@
 	<number>19</number>
 	<name>Rattata</name>
 	<description>Bites anything when it attacks. Small and very quick, it is a common sight in many places.</description>
-	<image>icon019.gif</image>
+	<image32>icon019.gif</image32>
 	<imageFront>./PokeFronts/19.png</imageFront>
 	<type>Normal</type>
 	<type2></type2>
@@ -1437,7 +1446,7 @@
 	<number>18</number>
 	<name>Pidgeot</name>
 	<description>When hunting, it skims the surface of water at high speed to pick off unwary prey such as MAGIKARP.</description>
-	<image>icon018.gif</image>
+	<image32>icon018.gif</image32>
 	<type>Normal</type>
 	<type2>Flying</type2>
 	<species>Bird</species>
@@ -1453,7 +1462,7 @@
 	<number>17</number>
 	<name>Pidgeotto</name>
 	<description>Very protective of its sprawling territorial area, this POKÈMON will fiercely peck at any intruder.</description>
-	<image>icon017.gif</image>
+	<image32>icon017.gif</image32>
 	<type>Normal</type>
 	<type2>Flying</type2>
 	<species>Bird</species>
@@ -1473,7 +1482,7 @@
 	<number>16</number>
 	<name>Pidgey</name>
 	<description>A common sight in forests and woods. It flaps its wings at ground level to kick up blinding sand.</description>
-	<image>icon016.gif</image>
+	<image32>icon016.gif</image32>
 	<imageFront>./PokeFronts/16.png</imageFront>
 	<type>Normal</type>
 	<type2>Flying</type2>
@@ -1493,7 +1502,7 @@
 	<number>15</number>
 	<name>Beedrill</name>
 	<description>Flies at high speed and attacks using its large venomous stingers on its forelegs and tail.</description>
-	<image>icon015.gif</image>
+	<image32>icon015.gif</image32>
 	<type>Bug</type>
 	<type2>Poison</type2>
 	<species>Poison Bee</species>
@@ -1509,7 +1518,7 @@
 	<number>14</number>
 	<name>Kakuna</name>
 	<description>Almost incapable of moving, this POKÈMON can only harden its shell to protect itself from predators.</description>
-	<image>icon014.gif</image>
+	<image32>icon014.gif</image32>
 	<type>Bug</type>
 	<type2>Poison</type2>
 	<species>Cocoon</species>
@@ -1529,7 +1538,7 @@
 	<number>13</number>
 	<name>Weedle</name>
 	<description>Often found in forests, eating leaves. It has a sharp venomous stinger on its head.</description>
-	<image>icon013.gif</image>
+	<image32>icon013.gif</image32>
 	<type>Bug</type>
 	<type2>Poison</type2>
 	<species>Hairy Bug</species>
@@ -1549,7 +1558,7 @@
 	<number>12</number>
 	<name>Butterfree</name>
 	<description>In battle, it flaps its wings at high speed to release highly toxic dust into the air.</description>
-	<image>icon012.gif</image>
+	<image32>icon012.gif</image32>
 	<type>Bug</type>
 	<type2>Flying</type2>
 	<species>Butterfly</species>
@@ -1565,7 +1574,7 @@
 	<number>11</number>
 	<name>Metapod</name>
 	<description>This POKÈMON is vulnerable to attack while its shell is soft, exposing its weak and tender body.</description>
-	<image>icon011.gif</image>
+	<image32>icon011.gif</image32>
 	<type>Bug</type>
 	<type2></type2>
 	<species>Cocoon</species>
@@ -1585,7 +1594,7 @@
 	<number>10</number>
 	<name>Caterpie</name>
 	<description>Its short feet are tipped with suction pads that enable it to tirelessly climb slopes and walls.</description>
-	<image>icon010.gif</image>
+	<image32>icon010.gif</image32>
 	<type>Bug</type>
 	<type2></type2>
 	<species>Worm</species>
@@ -1605,7 +1614,7 @@
 	<number>9</number>
 	<name>Blastoise</name>
 	<description>A brutal POKÈMON with pressurized water jets on its shell. They are used for high speed tackles.</description>
-	<image>icon009.gif</image>
+	<image32>icon009.gif</image32>
 	<type>Water</type>
 	<type2></type2>
 	<hp>79</hp>
@@ -1620,7 +1629,7 @@
 	<number>8</number>
 	<name>Wartortle</name>
 	<description>Often hides in water to stalk unwary prey. For swimming fast, it moves its ears to maintain balance.</description>
-	<image>icon008.gif</image>
+	<image32>icon008.gif</image32>
 	<type>Water</type>
 	<type2></type2>
 	<hp>59</hp>
@@ -1639,7 +1648,7 @@
 	<number>7</number>
 	<name>Squirtle</name>
 	<description>After birth, its back swells and hardens into a shell. Powerfully sprays foam from its mouth.</description>
-	<image>icon007.gif</image>
+	<image32>icon007.gif</image32>
 	<type>Water</type>
 	<type2></type2>
 	<hp>44</hp>
@@ -1658,7 +1667,7 @@
 	<number>6</number>
 	<name>Charizard</name>
 	<description>Spits fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.</description>
-	<image>icon006.gif</image>
+	<image32>icon006.gif</image32>
 	<type>Fire</type>
 	<type2>Flying</type2>
 	<hp>78</hp>
@@ -1673,7 +1682,7 @@
 	<number>5</number>
 	<name>Charmeleon</name>
 	<description>When it swings its burning tail, it elevates the temperature to unbearably high levels</description>
-	<image>icon005.gif</image>
+	<image32>icon005.gif</image32>
 	<type>Fire</type>
 	<type2></type2>
 	<hp>58</hp>
@@ -1699,7 +1708,7 @@
 	<number>4</number>
 	<name>Charmander</name>
 	<description>Obviously prefers hot places. When it rains, steam is said to spout from the tip of its tail.</description>
-	<image>icon004.gif</image>
+	<image32>icon004.gif</image32>
 	<type>Fire</type>
 	<type2></type2>
 	<hp>39</hp>
@@ -1717,7 +1726,7 @@
 <pokemon>
 	<number>3</number>
 	<name>Venusaur</name>
-	<image>icon003.gif</image>
+	<image32>icon003.gif</image32>
 	<description>The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.</description>
 	<type>Grass</type>
 	<type2>Poison</type2>
@@ -1732,7 +1741,7 @@
 <pokemon>
 	<number>2</number>
 	<name>Ivysaur</name>
-	<image>icon002.gif</image>
+	<image32>icon002.gif</image32>
 	<description>When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.</description>
 	<type>Grass</type>
 	<type2>Poison</type2>
@@ -1788,7 +1797,7 @@
 <pokemon>
 	<number>1</number>
 	<name>Bulbasaur</name>
-	<image>icon001.gif</image>
+	<image32>icon001.gif</image32>
 	<description>A strange seed was planted on its back at birth. The plant sprouts and grows with this POKÈMON.</description>
 	<type>Grass</type>
 	<type2>Poison</type2>
