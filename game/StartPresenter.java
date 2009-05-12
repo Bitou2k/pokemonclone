@@ -35,7 +35,7 @@ class StartPresenter extends Presenter {
 		if(loading) g.drawString("Loading maps...",0,200);
 	}
 	
-	public void keyPressed(char key){
+	public void buttonPressed(Button b){
 	
 		if(loading) return;
 		

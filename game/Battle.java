@@ -62,12 +62,12 @@ class Battle extends Presenter {
 		
 		
 	}
-	public void keyPressed(char key){
+	public void buttonPressed(Button b){
 		if(stage > 3 /*&& stage < someothernum*/){
-			if(key == 'W'){if(menuIndexY ==1) menuIndexY = 0;}
-			else if (key=='S'){if(menuIndexY == 0)menuIndexY = 1;}
-			else if (key=='A'){if(menuIndexX == 1)menuIndexX = 0;}
-			else if (key=='D'){if(menuIndexX == 0)menuIndexX = 1;}
+			if(b==Button.UP){if(menuIndexY ==1) menuIndexY = 0;}
+			else if (b==Button.DOWN){if(menuIndexY == 0)menuIndexY = 1;}
+			else if (b==Button.LEFT){if(menuIndexX == 1)menuIndexX = 0;}
+			else if (b==Button.RIGHT){if(menuIndexX == 0)menuIndexX = 1;}
 			else enterPresenter(oldP);
 		}
 	}

@@ -77,15 +77,15 @@ class Area extends Presenter {
 	/**
 	 *Move player on arrow keys, enter pokedex on Q.
 	 */
-	public void keyPressed(char key){
+	public void buttonPressed(Button b){
 		Player player = player();
 		if(player.inStride())return;
 		
-		if(key=='A'){move(-1,0);player.setDirection(Direction.WEST);}
-		if(key=='S'){move(0,1); player.setDirection(Direction.SOUTH);}
-		if(key=='D'){move(1,0); player.setDirection(Direction.EAST);}
-		if(key=='W'){move(0,-1); player.setDirection(Direction.NORTH);}
-		if(key=='Q'){enterPresenter(new PokedexScreen(this));}
+		if(b==Button.LEFT){move(-1,0);player.setDirection(Direction.WEST);}
+		if(b==Button.DOWN){move(0,1); player.setDirection(Direction.SOUTH);}
+		if(b==Button.RIGHT){move(1,0); player.setDirection(Direction.EAST);}
+		if(b==Button.UP){move(0,-1); player.setDirection(Direction.NORTH);}
+		if(b==Button.START){enterPresenter(new PokedexScreen(this));}
 	}
 	
 	/**

@@ -3,6 +3,7 @@ package game;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
+import java.util.*;
 
 /**
 *The shell for a game, a window containing a presenter.
@@ -12,9 +13,13 @@ class Game extends JComponent implements KeyListener {
 	//the current area, battle, or menu that is the root to be displayed and receive key events
 	private Presenter currentPresenter;
 	private Player player = new Player();
+	private Map<Button,Boolean> bs = new HashMap<Button,Boolean>();
 		
 	private Game()
 	{
+		for(Button b: Button.values())
+			bs.put(b,false);
+	
 		enterPresenter(new StartPresenter());
 		
 		new Thread(){
@@ -49,26 +54,37 @@ class Game extends JComponent implements KeyListener {
 		currentPresenter.drawOn((Graphics2D)g);
 	}
 	
-	public void keyPressed(KeyEvent e){
-		int n = e.getKeyCode();
-		char c = e.getKeyChar();
-		c = Character.toUpperCase(c);
-		if(n==KeyEvent.VK_UP) c='W';
-		if(n==KeyEvent.VK_LEFT) c='A';
-		if(n==KeyEvent.VK_DOWN) c='S';
-		if(n==KeyEvent.VK_RIGHT) c='D';
-		if(n==KeyEvent.VK_ENTER) c='A';
-		if(n==KeyEvent.VK_BACK_SPACE) c='B';
-		if(c=='Z') c='A';
-		if(c=='X') c='B';
-		currentPresenter.keyPressed(c);
-		repaint();
+	public boolean isDown(Button b)
+	{
+		return bs.get(b);
 	}
 	
-	public void keyReleased(KeyEvent e){}
+	public void keyPressed(KeyEvent e){
+		Button b = buttonForEvent(e);
+		bs.put(b,true);
+		currentPresenter.buttonPressed(b);
+		repaint();
+	}
+	public void keyReleased(KeyEvent e){
+		Button b = buttonForEvent(e);
+		bs.put(b,false);
+	}
 	public void keyTyped(KeyEvent e){}//pressed and released
 
-	
+	private Button buttonForEvent(KeyEvent e)
+	{
+		if(e.getKeyCode()==KeyEvent.VK_ENTER) return Button.A;
+		if(e.getKeyCode()==KeyEvent.VK_A) return Button.A;
+		if(e.getKeyCode()==KeyEvent.VK_BACK_SPACE) return Button.B;
+		if(e.getKeyCode()==KeyEvent.VK_B) return Button.B;
+		if(e.getKeyCode()==KeyEvent.VK_UP) return Button.UP;
+		if(e.getKeyCode()==KeyEvent.VK_DOWN) return Button.DOWN;
+		if(e.getKeyCode()==KeyEvent.VK_LEFT) return Button.LEFT;
+		if(e.getKeyCode()==KeyEvent.VK_RIGHT) return Button.RIGHT;
+		if(e.getKeyCode()==KeyEvent.VK_Q) return Button.START;
+		
+		return null;
+	}
 	
 	//in the Beginning, there was Main and it was Good
 	public static void main(String[] args){
