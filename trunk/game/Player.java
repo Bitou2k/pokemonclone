@@ -12,7 +12,7 @@ class Player extends Battler {
 	String name = "Ash";
 	List<Pokemon> party;
 	List<Item> pack;
-	Pokedex pokedex;
+	Pokedex pokedex = new Pokedex();
 
 	Direction d  = Direction.NORTH;
 
