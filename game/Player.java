@@ -25,7 +25,7 @@ class Player extends Battler {
 	final ImageIcon imgDownStrideTwo = new ImageIcon("./entityImages/Player Front StrideTwo.png");
 	final ImageIcon imgDownStrideOne = new ImageIcon("./entityImages/Player Front StrideOne.png");
 	final ImageIcon imgRight = new ImageIcon("./entityImages/Player Right.png");
-	final ImageIcon imgRightStride = new ImageIcon("./entityImages/Player Right Stide.png");
+	final ImageIcon imgRightStride = new ImageIcon("./entityImages/Player Right Stride.png");
 	final ImageIcon imgLeft = new ImageIcon("./entityImages/Player Left.png");
 	final ImageIcon imgLeftStride = new ImageIcon("./entityImages/Player Left Stride.png");
 	final ImageIcon imgUp = new ImageIcon("./entityImages/Player Up.png");
@@ -64,9 +64,9 @@ class Player extends Battler {
 		if(d==Direction.EAST && stride==1) return imgRightStride.getImage();
 		if(d==Direction.EAST && stride==2) return imgRightStride.getImage();
 		
-		if(d==Direction.EAST && stride==0) return imgLeft.getImage();
-		if(d==Direction.EAST && stride==1) return imgLeftStride.getImage();
-		if(d==Direction.EAST && stride==2) return imgLeftStride.getImage();
+		if(d==Direction.WEST && stride==0) return imgLeft.getImage();
+		if(d==Direction.WEST && stride==1) return imgLeftStride.getImage();
+		if(d==Direction.WEST && stride==2) return imgLeftStride.getImage();
 		
 		return null;//error!
 	}
