@@ -62,9 +62,16 @@ public class PokedexScreen extends Presenter{
 		g.setColor(Color.BLACK);
 		g.setFont(new Font("Courier New",Font.BOLD,25));
 		//drawString (str, x, y)
+		
+		ArrayList<Species> speciesList = new ArrayList<Species>();
+		for (int x = 0; x < Species.all().size(); x++){
+			speciesList.add(0,Species.all().get(x));
+		}
 		for (int i = 0; i < 6; i++){	
-
-			Species s = Species.all().get(topIndex+i+1);
+			
+			Species s = speciesList.get((i + topIndex) % (speciesList.size()));
+			
+			
 			
 			g.drawString( player().pokedex.hasSeen(s) ? s.name() : "----------" , X,Y );
 			if ( player().pokedex.hasCaught(s) )
@@ -104,7 +111,10 @@ public class PokedexScreen extends Presenter{
 		else if (b==Button.DOWN){
 			if(pkmn){
 				if (pkmnCursorIndex != 5){ pkmnCursorIndex++;}
-				else {topIndex++;}
+				else {
+					topIndex++;
+					if (topIndex == Species.all().size()) topIndex = 0;
+				}
 			}
 			else{
 				if (menuCursorIndex != 5) menuCursorIndex++;
@@ -113,7 +123,11 @@ public class PokedexScreen extends Presenter{
 		else if (b==Button.UP){
 			if(pkmn){
 				if (pkmnCursorIndex != 0){ pkmnCursorIndex--;}
-				else {topIndex--;}
+				else 
+				{
+					topIndex--;
+					if (topIndex == -1) topIndex = Species.all().size() - 1;
+				}
 			}
 			else{
 				if (menuCursorIndex != 0) menuCursorIndex--;
