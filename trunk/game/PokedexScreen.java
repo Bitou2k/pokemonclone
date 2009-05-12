@@ -102,9 +102,9 @@ public class PokedexScreen extends Presenter{
 	
 	public void step(int ms){}
 	
-	public void keyPressed(char key){
-		if (key == 'Q')	enterPresenter(oldPresenter);
-		else if (key == 'S'){
+	public void buttonPressed(Button b){
+		if (b==Button.START)	enterPresenter(oldPresenter);
+		else if (b==Button.DOWN){
 			if(pkmn){
 				if (pkmnCursorIndex != 5){ pkmnCursorIndex++;}
 				else {topIndex++;}
@@ -113,7 +113,7 @@ public class PokedexScreen extends Presenter{
 				if (menuCursorIndex != 5) menuCursorIndex++;
 			}
 		}
-		else if (key == 'W'){
+		else if (b==Button.UP){
 			if(pkmn){
 				if (pkmnCursorIndex != 0){ pkmnCursorIndex--;}
 				else {topIndex--;}
@@ -122,6 +122,6 @@ public class PokedexScreen extends Presenter{
 				if (menuCursorIndex != 0) menuCursorIndex--;
 			}
 		}
-		else if (key == 'A' || key == 'D') pkmn = !pkmn;
+		else if (b==Button.LEFT || b==Button.RIGHT) pkmn = !pkmn;
 	}
 }

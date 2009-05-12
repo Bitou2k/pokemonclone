@@ -34,6 +34,6 @@ class Menu extends Presenter {
 		}
 	}
 	
-	public void keyPressed(char key){}
+	public void buttonPressed(Button b){}
 	public void step(int ms){}
 }

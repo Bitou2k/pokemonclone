@@ -16,7 +16,12 @@ abstract class Presenter {
 	{
 		game.enterPresenter(newPresenter);
 	}
-
+	
+	public boolean isDown(Button b)
+	{
+		return game.isDown(b);
+	}
+	
 	/**
 	 *Convience on game().player()
 	 */
@@ -49,9 +54,9 @@ abstract class Presenter {
 	public abstract void drawOn(Graphics2D g);
 	
 	/**
-	 *Respond to a key stroke.
+	 *Respond to a button push.
 	 */
-	public abstract void keyPressed(char key);
+	public abstract void buttonPressed(Button b);
 	
 	/**
 	 *Called at 10Hz, do things like having citizens walk around.
