@@ -88,6 +88,17 @@ public class PokedexScreen extends Presenter{
 	
 	public void step(int ms){}
 	
+
+	private String padLeft(String str,String fill){
+		if (str.length() < 3)
+			str = fill + str;
+		if (str.length() < 3)
+			return padLeft(str,fill);
+		else
+			return str;
+	}
+
+
 	public void buttonPressed(Button b){
 		if (b==Button.START)	enterPresenter(oldPresenter);
 		else if (b==Button.DOWN){
