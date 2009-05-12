@@ -61,11 +61,11 @@ class Player extends Battler {
 		if(d==Direction.SOUTH && stride==2) return imgDownStrideTwo.getImage();
 		
 		if(d==Direction.EAST && stride==0) return imgRight.getImage();
-		if(d==Direction.EAST && stride==1) return imgRightStride.getImage();
+		if(d==Direction.EAST && stride==1) return imgRight.getImage();
 		if(d==Direction.EAST && stride==2) return imgRightStride.getImage();
 		
 		if(d==Direction.WEST && stride==0) return imgLeft.getImage();
-		if(d==Direction.WEST && stride==1) return imgLeftStride.getImage();
+		if(d==Direction.WEST && stride==1) return imgLeft.getImage();
 		if(d==Direction.WEST && stride==2) return imgLeftStride.getImage();
 		
 		return null;//error!
