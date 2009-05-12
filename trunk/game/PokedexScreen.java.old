@@ -36,6 +36,9 @@ public class PokedexScreen extends Presenter{
 	* contains the strings for the pokedex
 	*/
 	ArrayList<String> pokedexString = new ArrayList<String>();
+	int intSeen;
+	int intCaught;
+	final int NUMOFLINES = 7;
 	
 	
 	final ImageIcon ii = new ImageIcon("./resources/pokedex.png");
@@ -49,6 +52,7 @@ public class PokedexScreen extends Presenter{
 		menuCursorIndex = 0;
 		pkmn = true;
 		topIndex = 0;
+		intSeen = 0;intCaught = 0;
 		
 	}
 	
@@ -65,9 +69,10 @@ public class PokedexScreen extends Presenter{
 				pokedexString.add(s.name());
 			}
 			else{
-				pokedexString.add("----------");
+				pokedexString.add(0,"----------");
 			}
 			
+			if((Boolean)ash.caughtIt.get(p)) intCaught++;
 		}
 		
 	}
@@ -76,22 +81,18 @@ public class PokedexScreen extends Presenter{
 		g.drawImage(ii.getImage(),0,0,null);
 		//trying to find right placement for names
 		int Y = 75;
-		int inc = 40; //increment for y
+		int inc = 30; //increment for y
 		int X = 50;
+		
 		g.setColor(Color.BLACK);
-		g.setFont(new Font("Courier New",Font.BOLD,25));
+		g.setFont(new Font("Courier New",Font.BOLD,20));
 		//drawString (str, x, y)
-		for (int i = 0; i < 6; i++){	
-
-			Species s = Species.all().get(topIndex+i+1);
-			
-			g.drawString( player().pokedex.hasSeen(s) ? s.name() : "----------" , X,Y );
-			if ( player().pokedex.hasCaught(s) )
+		for (int i = 0; i < NUMOFLINES; i++){			
+			g.drawString(pokedexString.get((i + topIndex) % pokedexString.size()),X,Y);
+			if (caughtList.get((i + topIndex) % pokedexString.size()))
 				g.drawImage(pokeball.getImage(),X-20, Y - 15, null);
 			Y += inc;
 		}
-		
-		
 		ImageIcon pkmnArrow,menuArrow;
 		if (pkmn){
 			pkmnArrow = arrow;
@@ -103,16 +104,30 @@ public class PokedexScreen extends Presenter{
 		}
 		g.drawImage(pkmnArrow.getImage(), X - 40, 60 + pkmnCursorIndex * inc, null);
 		g.drawImage(menuArrow.getImage(), 240, 158 + menuCursorIndex * 31, null);
+		g.drawString(padLeft(Integer.toString(intSeen),"0"),265,75);
+		g.drawString(padLeft(Integer.toString(intCaught),"0"),265,120);
 	}
 	
 	public void step(int ms){}
 	
-	public void buttonPressed(Button b){
-		if (b==Button.START)	enterPresenter(oldPresenter);
-		else if (b==Button.DOWN){
+	private String padLeft(String str,String fill){
+		if (str.length() < 3)
+			str = fill + str;
+		if (str.length() < 3)
+			return padLeft(str,fill);
+		else
+			return str;
+	}
+	
+	public void keyPressed(char key){
+		if (key == 'Q')	enterPresenter(oldPresenter);
+		else if (key == 'S'){
 			if(pkmn){
-				if (pkmnCursorIndex != 5){ pkmnCursorIndex++;}
-				else {topIndex++;}
+				if (pkmnCursorIndex != NUMOFLINES-1){ pkmnCursorIndex++;}
+				else {
+					topIndex++;
+					if (topIndex == pokedexString.size()) topIndex = 0;
+				}
 			}
 			else{
 				if (menuCursorIndex != 5) menuCursorIndex++;
@@ -121,7 +136,10 @@ public class PokedexScreen extends Presenter{
 		else if (b==Button.UP){
 			if(pkmn){
 				if (pkmnCursorIndex != 0){ pkmnCursorIndex--;}
-				else {topIndex--;}
+				else {
+					topIndex--;
+					if (topIndex == -1) topIndex = pokedexString.size() - 1;
+				}
 			}
 			else{
 				if (menuCursorIndex != 0) menuCursorIndex--;
