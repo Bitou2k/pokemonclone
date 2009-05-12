@@ -383,7 +383,7 @@
 	<number>143</number>
 	<name>Snorlax</name>
 	<image32>./pokemon/icons32/icon143.gif</image32>
-	<image80>./pokemon/icons80/snorlaz.png</image80>
+	<image80>./pokemon/icons80/snorlax.png</image80>
 	<imageFront>./pokemon/iconsFront/143.png</imageFront>
 	<imageBack>./pokemon/iconsBack/143.png</imageBack>
 	<description>Very lazy. Just eats and sleeps. As its rotund bulk builds, it becomes steadily more slothful.</description>

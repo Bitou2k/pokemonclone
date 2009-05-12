@@ -10,7 +10,7 @@ import javax.swing.*;
 class Pokemon {
 	private Species species;
 	private String nickname;
-	private int level;
+	private int level, xp;
 	private Status status = Status.NORMAL;
 	private int currentHp, currentAttack, currentDefense, currentSpeed, currentSpecial; //the ones that may be lowered in battle
 	private int hp, attack, defense, speed, special; //the base stat
