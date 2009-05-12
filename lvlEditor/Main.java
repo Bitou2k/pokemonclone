@@ -238,7 +238,7 @@ class Main extends JFrame implements ActionListener  {
 			
 		return "";
 	}
-
+/*
 	public void setTileValues()
 	{
 		tiles = new Tile[lvlWidth][lvlHeight];
@@ -246,6 +246,7 @@ class Main extends JFrame implements ActionListener  {
 			for(int y = 0; y < lvlHeight; y++)
 				tiles[x][y] = new Tile(x, y);
 	}
+*/
 
 	void pushTile(Tile t)
 	{
@@ -333,12 +334,19 @@ class Main extends JFrame implements ActionListener  {
 			}
 			else
 			{
+				JOptionPane j = new JOptionPane();
+				Object value = j.showInputDialog(this, new JLabel("Type"),
+				"Make all " +currentTile.getImage() + " this type!", 
+				JOptionPane.WARNING_MESSAGE, new ImageIcon(currentTile.getImage()), types, types[0]);
+				if(value != null)
+				{
 				for (int x = 0; x < lvlWidth; x++)
 					for (int y = 0; y < lvlHeight; y++)
 						if(tiles[x][y].getImage() == currentTile.getImage())
 						{
-							tiles[x][y].setType(currentTile.getType());
+							tiles[x][y].setType((String)value);
 						}
+				}
 			}
 				
 		}
