@@ -79,6 +79,8 @@ public class PokedexScreen extends Presenter{
 			Y += inc;
 		}
 		
+		g.drawString( ""+player().pokedex.allSeen().size() , 270, 75 );
+		g.drawString( ""+player().pokedex.allCaught().size() , 270, 75+50 );
 		
 		ImageIcon pkmnArrow,menuArrow;
 		if (pkmn){
