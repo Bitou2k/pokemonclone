@@ -106,7 +106,7 @@ class Species {
 			Node root = Node.documentRootFrom("./pokemon/pokemon.nml");
 			for(Node n : root.subnodes("pokemon"))
 				species.add( new Species(n) );
-				
+			Collections.reverse(species);
 			System.out.println(species.size()+" species!");
 		}catch(Exception e){e.printStackTrace();}
 	}
