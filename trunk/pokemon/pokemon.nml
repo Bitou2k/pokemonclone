@@ -298,7 +298,10 @@
 <pokemon>
 	<number>145</number>
 	<name>Zapdos</name>
-	<image32>icon145.gif</image32>
+	<image32>./pokemon/icons32/icon145.gif</image32>
+	<image80>./pokemon/icons80/zapdos.png</image80>
+	<imageFront>./pokemon/iconsFront/145.png</imageFront>
+	<imageBack>./pokemon/iconsBack/145.png</imageBack>
 	<description>A legendary bird POKEMON that is said to appear from clouds while dropping enormous lightning bolts.</description>
 	<type>Electric</type>
 	<type2>Flying</type2>
@@ -337,7 +340,10 @@
 <pokemon>
 	<number>144</number>
 	<name>Articuno</name>
-	<image32>icon144.gif</image32>
+	<image32>./pokemon/icons32/icon144.gif</image32>
+	<image80>./pokemon/icons80/articuno.png</image80>
+	<imageFront>./pokemon/iconsFront/144.png</imageFront>
+	<imageBack>./pokemon/iconsBack/144.png</imageBack>
 	<description>A legendary bird POKEMON that is said to appear to doomed people who are lost in icy mountains.</description>
 	<type>Ice</type>
 	<type2>Flying</type2>
@@ -376,7 +382,10 @@
 <pokemon>
 	<number>143</number>
 	<name>Snorlax</name>
-	<image32>icon143.gif</image32>
+	<image32>./pokemon/icons32/icon143.gif</image32>
+	<image80>./pokemon/icons80/snorlaz.png</image80>
+	<imageFront>./pokemon/iconsFront/143.png</imageFront>
+	<imageBack>./pokemon/iconsBack/143.png</imageBack>
 	<description>Very lazy. Just eats and sleeps. As its rotund bulk builds, it becomes steadily more slothful.</description>
 	<type>Normal</type>
 	<type2></type2>
