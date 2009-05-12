@@ -342,7 +342,7 @@ class Main extends JFrame implements ActionListener  {
 				{
 				for (int x = 0; x < lvlWidth; x++)
 					for (int y = 0; y < lvlHeight; y++)
-						if(tiles[x][y].getImage() == currentTile.getImage())
+						if(tiles[x][y].getImage().compareToIgnoreCase(currentTile.getImage()) == 0)
 						{
 							tiles[x][y].setType((String)value);
 						}
