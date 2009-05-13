@@ -1,3 +1,3 @@
-javac browser/Browser.java
+javac browser/TMBrowser.java
 pause
-java browser.Browser
+java browser.TMBrowser
