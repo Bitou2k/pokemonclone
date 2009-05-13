@@ -1,0 +1,105 @@
+package game;
+
+import java.awt.*;
+import java.io.*;
+import javax.swing.*;
+
+/**one square on a map
+ *
+ */
+class Tile {
+
+	int x,y;
+	String type;
+	String target;
+	Image img;
+	Entity entity;
+	Area a;
+	Tile(int x, int y, Area a)
+	{
+		this.x=x; this.y=y; this.a=a;
+	}
+	
+	static Tile fromNode(Node tileNode, Area a)
+	{
+		int x = new Integer( tileNode.contentOf("x"));
+		int y = new Integer( tileNode.contentOf("y"));
+		Tile t = new Tile(x,y,a);
+		t.imageFrom(tileNode.contentOf("image"));
+		t.type = (tileNode.contentOf("type"));
+		t.target = (tileNode.contentOf("target"));
+		return t;
+	}
+	
+	boolean isObstacle(){ return type.equals("obstacle") || type.equals("water");}
+	boolean isDoor(){ return type.equals("door")&& !target.equals("");}
+	boolean isGrass(){ return type.equals("pokegrassOrCave"); }
+	
+	Pokemon genPokemon(){
+		try
+		{
+			return WildPokemonGenerator.named(target).generatePokemon();
+		}
+		catch(Exception ex){}
+		return null;
+	}
+	
+	String targetMap()
+	{
+		return target.substring(0,target.indexOf(":"));
+	}
+	int targetX()
+	{
+		return new Integer(target.substring(target.indexOf(":")+1,target.indexOf(",")));
+	}
+	int targetY()
+	{
+		return new Integer(target.substring(target.indexOf(",")+1));
+	}
+	
+	void imageFrom(String s)
+	{
+		img = new ImageIcon("./tileImages/" + s).getImage();
+	}
+	
+	void entity(Entity e) {
+		entity=e; 
+		if(e!=null)
+		{
+			e.tile(this);
+		}
+	}
+	Entity entity() {return entity;}
+	
+	int width(){return 16;}
+	int height(){return 16;}
+	
+	/**
+	 *Draw my background image.
+	 */
+	public void drawSelfOn(Graphics2D g)
+	{	
+		g.setColor(Color.BLACK);
+		g.translate(width()*x,height()*y);
+			g.fillRect(0,0,16,16);
+			g.drawImage(img,0,0,null);
+			if(entity!=null) entity.drawOn(g);
+		g.translate(-width()*x,-height()*y);
+	}
+	
+	public void drawEntityOn(Graphics2D g)
+	{	
+		g.setColor(Color.BLACK);
+		g.translate(width()*x,height()*y);
+			if(entity!=null) entity.drawOn(g);
+		g.translate(-width()*x,-height()*y);
+	}
+	
+	/**
+	 *Step my entity
+	 */
+	public void step(int ms)
+	{
+		if(entity!=null) entity.step(ms);
+	}
+}

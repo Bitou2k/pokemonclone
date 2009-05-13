@@ -1,0 +1,33 @@
+<note>
+
+chances are in decimals, not percentages
+0.5 means fifty-fifty, not a half percent
+
+overallchance is if you get anything
+
+each pokemon chance is chance when you do get something
+available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
+
+</note>
+
+<generator>
+	<name>palletGen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Pidgey</name>
+		<level>3</level>
+		<chance>0.49</chance>
+	</pokemon>
+	<pokemon>
+		<name>Rattata</name>
+		<level>3</level>
+		<chance>0.49</chance>
+	</pokemon>
+	<pokemon>
+		<name>Mewtwo</name>
+		<level>70</level>
+		<chance>0.02</chance>
+	</pokemon>
+</generator>
+
+
