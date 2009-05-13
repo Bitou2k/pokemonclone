@@ -1,26 +1,26 @@
 To sort out the confusion, everyone should put +'s before maps that are finished and put their names next to the cities/building/etc. that they are working on/going to work on.
 
-+  1. Pallet Town
++  1. Pallet Town done
 
-+  2. Route 1
++  2. Route 1 done
 
-+  3. Viridian City
++  3. Viridian City (done)
 
-+  4. Routes 2 & 22 (Route 2 is complete)
++  4. Routes 2 & 22 (Route 2 is complete) (macnate)
 
-   5. Viridian Forest (working on/tim)
+   5. Viridian Forest (working on/tim/twitch?)
 
-+  6. Pewter City
++  6. Pewter City done
 
    7. Route 3(garrett)
 
-   8. Mt. Moon
+   8. Mt. Moon (done?)
 
    9. Route 4
 
-  10. Cerulean City
+  10. Cerulean City (done)
 
-  11. Routes 24 & 25 (niquest)
+  11. Routes 24 & 25 (niquest) 
 
   12. Routes 5 & 6(steve)
 
@@ -32,7 +32,7 @@ To sort out the confusion, everyone should put +'s before maps that are finished
 
   16. Diglett's Cave
 
-+ 17. Routes 9 & 10  (Route 9 is complete)
++ 17. Routes 9 & 10  (Route 9 is complete) (Brad)
 
   18. Rock Tunnel
 
@@ -52,7 +52,7 @@ To sort out the confusion, everyone should put +'s before maps that are finished
 
   26. Routes 16, 17, & 18
 
-+ 27. Fuchsia City
++ 27. Fuchsia City (done)
 
   28. Safari Zone (Joe)
 
@@ -62,7 +62,7 @@ To sort out the confusion, everyone should put +'s before maps that are finished
 
   31. Route 21
 
-+ 32. Cinnabar Island
++ 32. Cinnabar Island (done)
 
   33. Pokémon Mansion (Michal Broniek)
 
