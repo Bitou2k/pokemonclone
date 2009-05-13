@@ -58,7 +58,7 @@ class Main extends JFrame implements ActionListener, ItemListener  {
 	JButton save = new JButton("Save");
 	JButton load = new JButton("Load");
 	JLabel location = new JLabel("<hoveroveratile>");
-	JCheckBox gridView = new JCheckBox();
+	JCheckBox gridView = new JCheckBox("Grid On/Off", true);
 
 	static int lvlWidth = 10;
 	static int lvlHeight = 10;
@@ -84,7 +84,6 @@ class Main extends JFrame implements ActionListener, ItemListener  {
 		top.add(location);
 		
 		JPanel bottom = new JPanel();
-		bottom.add(new JLabel("Grid: On/Off"));
 		bottom.add(gridView);
 		bottom.add(new JLabel("Image:"));
 		bottom.add(tile);
@@ -105,7 +104,7 @@ class Main extends JFrame implements ActionListener, ItemListener  {
 		add(bottom, BorderLayout.SOUTH);
 
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
-		setSize(500,500);
+		setSize(700,500);
 		setVisible(true);
 		
 		resizeMap(20,20,-1);
@@ -121,7 +120,6 @@ class Main extends JFrame implements ActionListener, ItemListener  {
 		+"cliff==>N,S,E,orW (the direction you travel when jumping down it)\n"
 		+"spinner==>N,S,E,orW (the direction it pushes you)";
 		JOptionPane.showMessageDialog(this,  x, "Info", JOptionPane.PLAIN_MESSAGE);
-		boolean drawLines;
 	}
 
 	void resizeMap(int newW, int newH, int location)
@@ -173,9 +171,11 @@ class Main extends JFrame implements ActionListener, ItemListener  {
 	}
 	public void itemStateChanged(ItemEvent e) 
 	{
-		if (e.getSource == gridView)
+		if (e.getItemSelectable() == gridView)
 		{
-			if gridView.isSelected()
+			repaint();
+		}
+	}
 	
 	public void actionPerformed(ActionEvent e)
 	{
@@ -251,15 +251,7 @@ class Main extends JFrame implements ActionListener, ItemListener  {
 			
 		return "";
 	}
-/*
-	public void setTileValues()
-	{
-		tiles = new Tile[lvlWidth][lvlHeight];
-		for(int x = 0; x < lvlWidth; x++)
-			for(int y = 0; y < lvlHeight; y++)
-				tiles[x][y] = new Tile(x, y);
-	}
-*/
+
 
 	void pushTile(Tile t)
 	{
@@ -303,11 +295,14 @@ class Main extends JFrame implements ActionListener, ItemListener  {
 					if(tiles[x][y]!=null) 
 						tiles[x][y].drawImage(this, g);
 
-			g.setColor(Color.RED);
-			for (int x = 0; x <= lvlWidth * SQUARESIDE; x += SQUARESIDE)
-				g.drawLine(x, 0, x, lvlHeight * SQUARESIDE);
-			for (int y = 0; y <= lvlHeight * SQUARESIDE; y += SQUARESIDE)
-				g.drawLine(0, y, lvlWidth * SQUARESIDE, y);
+			if(gridView.isSelected())
+			{
+				g.setColor(Color.RED);
+					for (int x = 0; x <= lvlWidth * SQUARESIDE; x += SQUARESIDE)
+						g.drawLine(x, 0, x, lvlHeight * SQUARESIDE);
+					for (int y = 0; y <= lvlHeight * SQUARESIDE; y += SQUARESIDE)
+						g.drawLine(0, y, lvlWidth * SQUARESIDE, y);
+			}
 
 		}
 		public Dimension getPreferredSize()
