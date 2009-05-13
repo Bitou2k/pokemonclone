@@ -1482,10 +1482,6 @@
 	<sp atk>73</sp atk>
 	<sp def>155</sp def>
 	<speed>67</speed>
-	<evolution>
-		<level></level>
-		<target></target>
-	</evolution>
 	<moves>
 		<move>
 			<level>1</level>
@@ -1579,7 +1575,7 @@
 		</move>
 		<move>
 			<level>37</level>
-			<name>Meditate</level>
+			<name>Meditate</name>
 		</move>
 	</moves>
 	<HMs>
