@@ -9,14 +9,19 @@ import java.util.*;
 public class TMBrowser extends JFrame implements ActionListener
 {
 	// window elements
-	private JFrame window = new JFrame();
+	
+	private JPanel tabArea = new JPanel();
+	private JPanel lowArea  = new JPanel();
+	
+	private JTabbedPane tabContent = new JTabbedPane();
 	private JPanel tmTab  = new JPanel();
 	private JPanel hmTab  = new JPanel();
-	private JPanel loBox  = new JPanel();
-	private JTabbedPane content = new JTabbedPane();
-	private JButton openButton  = new JButton("Open");
-	private JButton saveButton = new JButton("Save");
-	private JLabel currentIndex = new JLabel(" 5 ");
+	private JPanel controlPanel = new JPanel();
+
+	private JLabel tmLabel = new JLabel(" 5 ");
+	private JLabel hmLabel = new JLabel(" 6" );
+	private JTextField tmTextBox = new JTextField();
+	private JTextField hmTextBox = new JTextField();
 	
 	private ImageIcon leftIcon = new ImageIcon("./browser/left.png");
 	private ImageIcon rightIcon = new ImageIcon("./browser/right.png");
@@ -28,42 +33,53 @@ public class TMBrowser extends JFrame implements ActionListener
 	private JButton downButton = new JButton(downIcon);
 	private JButton xButton = new JButton(xIcon);
 	
+	private JButton openButton  = new JButton("Open");
+	private JButton saveButton = new JButton("Save");
+	
 	public TMBrowser()
 	{
+		// Add action listeners
 		leftButton.addActionListener(this);
 		rightButton.addActionListener(this);
 		downButton.addActionListener(this);
 		xButton.addActionListener(this);
 		saveButton.addActionListener(this);
 		openButton.addActionListener(this);
+		tmTextBox.addActionListener(this);
+		hmTextBox.addActionListener(this);
 	
-		// Connect elements
+		// Add unique elements to tabs
 		tmTab.setLayout(new BorderLayout());
-		currentIndex.setFont(new Font("Courier New",Font.BOLD,20));	
-		tmTab.add(currentIndex, BorderLayout.WEST);
-		tmTab.add(new JTextField(), BorderLayout.CENTER);
+		hmTab.setLayout(new BorderLayout());
+		tmLabel.setFont(new Font("Courier New", Font.BOLD, 20));
+		hmLabel.setFont(new Font("Courier New", Font.BOLD, 20));
+		tmTab.add(tmLabel, BorderLayout.WEST);
+		hmTab.add(hmLabel, BorderLayout.WEST);
+		tmTab.add(tmTextBox, BorderLayout.CENTER);
+		hmTab.add(hmTextBox, BorderLayout.CENTER);
 		
-		JPanel bottomPane = new JPanel(new BorderLayout());
-		bottomPane.add(leftButton, BorderLayout.WEST);
-		bottomPane.add(rightButton, BorderLayout.EAST);
+		// Assemble control panel
+		controlPanel.setLayout(new BorderLayout());
+		controlPanel.add(leftButton, BorderLayout.WEST);
+		controlPanel.add(downButton, BorderLayout.CENTER);
+		controlPanel.add(xButton, BorderLayout.CENTER);
+		controlPanel.add(rightButton, BorderLayout.EAST);
 		
-		JPanel middleBottomPane = new JPanel();
-		middleBottomPane.add(downButton);
-		middleBottomPane.add(xButton);
+		// Assemble tab area
+		tabContent.add("     TM     ", tmTab);
+		tabContent.add("     HM     ", hmTab);
+		tabArea.setLayout(new BorderLayout());
+		tabArea.add(tabContent, BorderLayout.CENTER);
+		tabArea.add(controlPanel, BorderLayout.SOUTH);
 		
-		bottomPane.add(middleBottomPane, BorderLayout.CENTER);
-		tmTab.add(bottomPane, BorderLayout.SOUTH);
+		// Assemble low area
+		lowArea.setLayout(new BorderLayout());
+		lowArea.add(openButton, BorderLayout.WEST);
+		lowArea.add(saveButton, BorderLayout.EAST);
 		
-		loBox.setLayout(new BorderLayout());
-		loBox.add(openButton, BorderLayout.WEST);
-		loBox.add(saveButton, BorderLayout.EAST);
-		
-		// Put myself together
-		hmTab = new JPanel(tmTab);
-		content.add("     TM     ", tmTab);
-		content.add("     HM     ", hmTab);
-		add(content, BorderLayout.CENTER);
-		add(loBox, BorderLayout.SOUTH);
+		// Put window together
+		add(tabArea, BorderLayout.NORTH);
+		add(lowArea, BorderLayout.SOUTH);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setSize(225, 150);
 		setTitle("TM/HM Browser");
@@ -74,7 +90,7 @@ public class TMBrowser extends JFrame implements ActionListener
 	{
 		if(e.getSource() == leftButton)
 		{
-			currentIndex.setText("YO!");
+			tmLabel.setText("YO!");
 		}
 	}
 	
