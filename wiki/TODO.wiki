@@ -2,11 +2,14 @@ wildgenerators (jake)
 
 pokedex
 
-battle (seigle)
+battle (siegle)
 
 
-menu presenter (ryan)
+message/menu presenter (ryan)
 toString() debugging methods (ryan)
+batch type set
+global reduce
+
 
 champion chavez sprites
 
