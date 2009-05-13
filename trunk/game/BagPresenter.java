@@ -1,13 +1,14 @@
 package game;
 
 import java.awt.*;
+import java.util.*;
 
 /**
  * 
  */
 abstract class BagPresenter extends Presenter {
 	
-	public void drawOn(Graphics2Dg)
+	public void drawOn(Graphics2D g)
 	{
 		
 	}
