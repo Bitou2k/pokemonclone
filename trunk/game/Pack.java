@@ -3,11 +3,10 @@ package game;
 import java.util.*;
 
 /**
-*Please rename this class Pack, as that is what it is called in game and bag is a special type of collection. --rmacnak
-*Contains maps of all of the pockets which contins the Items and the quantity of each
+*Contains maps of all of the pockets which contains the Items and the quantity of each
 */
 
-public class Bag{
+public class Pack {
 	/**
 	* contains all of the Key Items
 	*/
@@ -29,78 +28,95 @@ public class Bag{
 	* updates the quantity of a key item
 	*@param Item: item to be added, Int: number to add
 	*/
-	public void addKeyItem(Item i, int qty){
-	
+	public void addKeyItem(Item i, int qty) {
+		int q = keyItemsPocket.get(i);
+		
+		return keyItemsPocket.put(i, q + qty);
 	}
+	
 	/**
 	* updates the quantity of a regular item
 	*@param Item: item to be added, Int: number to add
 	*/
-	public void addItem(Item i, int qty){
-	
+	public void addItem(Item i, int qty) {
+		int q = itemsPocket.get(i);
+		
+		return itemsPocket.put(i, q + qty);
 	}
+	
 	/**
 	* updates the quantity of a pokeball
 	*@param Item: item to be added, Int: number to add
 	*/
-	public void addPokeball(Item i, int qty){
-	
+	public void addPokeball(Item i, int qty) {
+		int q = pokeball.get(i);
+		
+		return pokeball.put(i, q + qty);
 	}
+	
 	/**
 	* updates the quantity of a TM or HM
 	*@param Item: item to be added, Int: number to add
 	*/
-	public void addTmHm(Item i, int qty){
-	
+	public void addTmHm(Item i, int qty) {
+		int q = TmHmPocket.get(i);
+		
+		return TmHmPocket.put(i, q + qty);
 	}
 	
 	/**
 	* @return returns all of the KeyItems
 	*/
-	public HashMap getAllKeyItems(){
-		return null;
+	public HashMap getAllKeyItems() {
+		return keyItemsPocket;
 	}
+	
 	/**
 	* @return returns all of the regular Items
 	*/
-	public HashMap getAllItems(){
-		return null;
+	public HashMap getAllItems() {
+		return itemsPocket;
 	}
+	
 	/**
 	* @return returns all of the pokeballs
 	*/
-	public HashMap getAllPokeballs(){
-		return null;
+	public HashMap getAllPokeballs() {
+		return pokeballs;
 	}
+	
 	/**
 	* @return returns all of theTMs and HMs
 	*/
-	public HashMap getAllTmHms(){
-		return null;
+	public HashMap getAllTmHms() {
+		return TmHmPocket;
 	}
 	
 	/**
 	* @return returns the quantity of a given key item
 	*/
-	public int getQtyOfKeyItem(Item i){
-		return 0;
+	public int getQtyOfKeyItem(Item i) {
+		return keyItemsPocket.get(i);
 	}
+	
 	/**
 	* @return returns the quantity of a given item
 	*/
-	public int getQtyOfItem(Item i){
-		return 0;
+	public int getQtyOfItem(Item i) {
+		return itemsPocket.get(i);
 	}
+	
 	/**
 	* @return returns the quantity of a given pokeball
 	*/
-	public int getQtyOfPokeball(Item i){
-		return 0;
+	public int getQtyOfPokeball(Item i) {
+		return pokeballs.get(i);
 	}
+	
 	/**
 	* @return returns the quantity of a given HM TM
 	*/
-	public int getQtyOfTmHm(Item i){
-		return 0;
+	public int getQtyOfTmHm(Item i) {
+		return TmHmPocket.get(i);
 	}
 }
