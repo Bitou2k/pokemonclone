@@ -3,6 +3,7 @@ package game;
 import java.util.*;
 
 /**
+*Please rename this class Pack, as that is what it is called in game and bag is a special type of collection. --rmacnak
 *Contains maps of all of the pockets which contins the Items and the quantity of each
 */
 
