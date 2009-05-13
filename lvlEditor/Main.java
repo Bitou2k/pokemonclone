@@ -5,11 +5,12 @@ import game.Node;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
+import javax.swing.event.*;
 import java.io.*;
 import java.util.*;
 
 //the shell for a Game
-class Main extends JFrame implements ActionListener  {
+class Main extends JFrame implements ActionListener, ItemListener  {
 
 	Map<String,TileLabel> tileDic = new HashMap<String,TileLabel>();
 	
@@ -57,6 +58,7 @@ class Main extends JFrame implements ActionListener  {
 	JButton save = new JButton("Save");
 	JButton load = new JButton("Load");
 	JLabel location = new JLabel("<hoveroveratile>");
+	JCheckBox gridView = new JCheckBox();
 
 	static int lvlWidth = 10;
 	static int lvlHeight = 10;
@@ -82,6 +84,8 @@ class Main extends JFrame implements ActionListener  {
 		top.add(location);
 		
 		JPanel bottom = new JPanel();
+		bottom.add(new JLabel("Grid: On/Off"));
+		bottom.add(gridView);
 		bottom.add(new JLabel("Image:"));
 		bottom.add(tile);
 		bottom.add(new JLabel("Type:"));
@@ -93,6 +97,8 @@ class Main extends JFrame implements ActionListener  {
 		width.addActionListener(this);
 		save.addActionListener(this);
 		load.addActionListener(this);
+		gridView.addItemListener(this);
+
 
 		add(new JScrollPane(new DisplayView()));
 		add(top, BorderLayout.NORTH);
@@ -115,6 +121,7 @@ class Main extends JFrame implements ActionListener  {
 		+"cliff==>N,S,E,orW (the direction you travel when jumping down it)\n"
 		+"spinner==>N,S,E,orW (the direction it pushes you)";
 		JOptionPane.showMessageDialog(this,  x, "Info", JOptionPane.PLAIN_MESSAGE);
+		boolean drawLines;
 	}
 
 	void resizeMap(int newW, int newH, int location)
@@ -164,6 +171,11 @@ class Main extends JFrame implements ActionListener  {
 		currentTile = tiles[0][0];
 		repaint();
 	}
+	public void itemStateChanged(ItemEvent e) 
+	{
+		if (e.getSource == gridView)
+		{
+			if gridView.isSelected()
 	
 	public void actionPerformed(ActionEvent e)
 	{
@@ -226,6 +238,7 @@ class Main extends JFrame implements ActionListener  {
 				repaint();
 				
 			}catch(Exception ex){}
+			
 		}
 	}
 	
