@@ -69,9 +69,9 @@ class Battle extends Presenter {
 			else if (b==Button.LEFT){if(menuIndexX == 1)menuIndexX = 0;}
 			else if (b==Button.RIGHT){if(menuIndexX == 0)menuIndexX = 1;}
 			
-			else if(b==Buton.START){
+			else if(b==Button.START){
 				
-			{
+			}
 			else enterPresenter(oldP);
 		}
 	}
