@@ -1735,7 +1735,10 @@
 <pokemon>
 	<number>3</number>
 	<name>Venusaur</name>
-	<image32>icon003.gif</image32>
+	<image32>./pokemon/icons32/icon003.gif</image32>
+	<image80>./pokemon/icons80/venusaur.png</image80>
+	<imageFront>./pokemon/iconsFront/3.png</imageFront>
+	<imageBack>./pokemon/iconsBack/3.png</imageBack>
 	<description>The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.</description>
 	<type>Grass</type>
 	<type2>Poison</type2>
@@ -1750,7 +1753,10 @@
 <pokemon>
 	<number>2</number>
 	<name>Ivysaur</name>
-	<image32>icon002.gif</image32>
+	<image32>./pokemon/icons32/icon002.gif</image32>
+	<image80>./pokemon/icons80/ivysaur.png</image80>
+	<imageFront>./pokemon/iconsFront/2.png</imageFront>
+	<imageBack>./pokemon/iconsBack/2.png</imageBack>
 	<description>When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.</description>
 	<type>Grass</type>
 	<type2>Poison</type2>
@@ -1806,7 +1812,10 @@
 <pokemon>
 	<number>1</number>
 	<name>Bulbasaur</name>
-	<image32>icon001.gif</image32>
+	<image32>./pokemon/icons32/icon001.gif</image32>
+	<image80>./pokemon/icons80/bulbasaur.png</image80>
+	<imageFront>./pokemon/iconsFront/1.png</imageFront>
+	<imageBack>./pokemon/iconsBack/1.png</imageBack>
 	<description>A strange seed was planted on its back at birth. The plant sprouts and grows with this POKÈMON.</description>
 	<type>Grass</type>
 	<type2>Poison</type2>
