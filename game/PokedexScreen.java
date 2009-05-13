@@ -119,7 +119,7 @@ public class PokedexScreen extends Presenter{
 				}
 			}
 			else{
-				if (menuCursorIndex != 5) menuCursorIndex++;
+				if (menuCursorIndex != 3) menuCursorIndex++;
 			}
 		}
 		else if (b==Button.UP){
