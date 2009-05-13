@@ -10,19 +10,19 @@ public class Bag{
 	/**
 	* contains all of the Key Items
 	*/
-	Hashmap<Item,int> keyItemsPocket
+	HashMap<Item,Integer> keyItemsPocket;
 	/**
 	* contains all of the regular items
 	*/
-	Hashmap<Item,int> itemsPocket
+	HashMap<Item,Integer> itemsPocket;
 	/**
 	* contains all of the TMs and HMs
 	*/
-	Hashmap<Item,int> TmHmPocket
+	HashMap<Item,Integer> TmHmPocket;
 	/**
 	* contains all of the pokeballs
 	*/
-	Hashmap<Item,int> pokeballPocket
+	HashMap<Item,Integer> pokeballPocket;
 	
 	/**
 	* updates the quantity of a key item
@@ -56,50 +56,50 @@ public class Bag{
 	/**
 	* @return returns all of the KeyItems
 	*/
-	public Hashmap getAllKeyItems(){
-		
+	public HashMap getAllKeyItems(){
+		return null;
 	}
 	/**
 	* @return returns all of the regular Items
 	*/
-	public Hashmap getAllItems(){
-		
+	public HashMap getAllItems(){
+		return null;
 	}
 	/**
 	* @return returns all of the pokeballs
 	*/
-	public Hashmap getAllPokeballs(){
-		
+	public HashMap getAllPokeballs(){
+		return null;
 	}
 	/**
 	* @return returns all of theTMs and HMs
 	*/
-	public Hashmap getAllTmHms(){
-		
+	public HashMap getAllTmHms(){
+		return null;
 	}
 	
 	/**
 	* @return returns the quantity of a given key item
 	*/
 	public int getQtyOfKeyItem(Item i){
-		
+		return 0;
 	}
 	/**
 	* @return returns the quantity of a given item
 	*/
 	public int getQtyOfItem(Item i){
-		
+		return 0;
 	}
 	/**
 	* @return returns the quantity of a given pokeball
 	*/
 	public int getQtyOfPokeball(Item i){
-		
+		return 0;
 	}
 	/**
 	* @return returns the quantity of a given HM TM
 	*/
 	public int getQtyOfTmHm(Item i){
-		
+		return 0;
 	}
 }
