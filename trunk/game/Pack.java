@@ -10,19 +10,19 @@ public class Pack {
 	/**
 	* contains all of the Key Items
 	*/
-	HashMap<Item,Integer> keyItemsPocket;
+	private HashMap<Item,Integer> keyItemsPocket;
 	/**
 	* contains all of the regular items
 	*/
-	HashMap<Item,Integer> itemsPocket;
+	private HashMap<Item,Integer> itemsPocket;
 	/**
 	* contains all of the TMs and HMs
 	*/
-	HashMap<Item,Integer> TmHmPocket;
+	private HashMap<Item,Integer> tmHmPocket;
 	/**
 	* contains all of the pokeballs
 	*/
-	HashMap<Item,Integer> pokeballPocket;
+	private HashMap<Item,Integer> pokeballPocket;
 	
 	/**
 	* updates the quantity of a key item
@@ -31,7 +31,7 @@ public class Pack {
 	public void addKeyItem(Item i, int qty) {
 		int q = keyItemsPocket.get(i);
 		
-		return keyItemsPocket.put(i, q + qty);
+		keyItemsPocket.put(i, q + qty);
 	}
 	
 	/**
@@ -41,7 +41,7 @@ public class Pack {
 	public void addItem(Item i, int qty) {
 		int q = itemsPocket.get(i);
 		
-		return itemsPocket.put(i, q + qty);
+		itemsPocket.put(i, q + qty);
 	}
 	
 	/**
@@ -49,9 +49,9 @@ public class Pack {
 	*@param Item: item to be added, Int: number to add
 	*/
 	public void addPokeball(Item i, int qty) {
-		int q = pokeball.get(i);
+		int q = pokeballPocket.get(i);
 		
-		return pokeball.put(i, q + qty);
+		pokeballPocket.put(i, q + qty);
 	}
 	
 	/**
@@ -59,37 +59,37 @@ public class Pack {
 	*@param Item: item to be added, Int: number to add
 	*/
 	public void addTmHm(Item i, int qty) {
-		int q = TmHmPocket.get(i);
+		int q = tmHmPocket.get(i);
 		
-		return TmHmPocket.put(i, q + qty);
+		tmHmPocket.put(i, q + qty);
 	}
 	
 	/**
 	* @return returns all of the KeyItems
 	*/
-	public HashMap getAllKeyItems() {
-		return keyItemsPocket;
+	public Set<Item> getAllKeyItems() {
+		return keyItemsPocket.keySet();
 	}
 	
 	/**
 	* @return returns all of the regular Items
 	*/
-	public HashMap getAllItems() {
-		return itemsPocket;
+	public Set<Item> getAllItems() {
+		return itemsPocket.keySet();
 	}
 	
 	/**
 	* @return returns all of the pokeballs
 	*/
-	public HashMap getAllPokeballs() {
-		return pokeballs;
+	public Set<Item> getAllPokeballs() {
+		return pokeballPocket.keySet();
 	}
 	
 	/**
 	* @return returns all of theTMs and HMs
 	*/
-	public HashMap getAllTmHms() {
-		return TmHmPocket;
+	public Set<Item> getAllTmHms() {
+		return tmHmPocket.keySet();
 	}
 	
 	/**
@@ -110,13 +110,13 @@ public class Pack {
 	* @return returns the quantity of a given pokeball
 	*/
 	public int getQtyOfPokeball(Item i) {
-		return pokeballs.get(i);
+		return pokeballPocket.get(i);
 	}
 	
 	/**
 	* @return returns the quantity of a given HM TM
 	*/
 	public int getQtyOfTmHm(Item i) {
-		return TmHmPocket.get(i);
+		return tmHmPocket.get(i);
 	}
 }
