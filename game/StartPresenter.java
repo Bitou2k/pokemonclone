@@ -31,6 +31,7 @@ class StartPresenter extends Presenter {
 		g.drawString("Adam Hendrickson", 0, 150);
 		g.drawString("Michal Broniek",0,160);
 		g.drawString("Andrew Siegle",0,170);
+		g.drawString("Joe Maguire",0,180);
 
 		if(loading) g.drawString("Loading maps...",0,200);
 	}
