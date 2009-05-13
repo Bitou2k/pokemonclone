@@ -65,7 +65,7 @@ public class PokedexScreen extends Presenter{
 		
 		ArrayList<Species> speciesList = new ArrayList<Species>();
 		for (int x = 0; x < Species.all().size(); x++){
-			speciesList.add(0,Species.all().get(x));
+			speciesList.add(Species.all().get(x));
 		}
 		for (int i = 0; i < 6; i++){	
 			
