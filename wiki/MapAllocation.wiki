@@ -1,8 +1,10 @@
 To sort out the confusion, everyone should put +'s before maps that are finished and put their names next to the cities/building/etc. that they are working on/going to work on.
 
-+  1. Pallet Town done
+   0. Johto (rmacnak)
 
-+  2. Route 1 done
+   1. Pallet Town -- prof oak's place still incomplete
+
++  2. Route 1 (done)
 
 +  3. Viridian City (done)
 
