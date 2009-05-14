@@ -69,7 +69,8 @@ class Main extends JFrame implements ActionListener, ItemListener  {
 	//static String tileType = supportedTiles[1];
 	Tile tiles[][] = new Tile[10][10];
 	Tile currentTile;
-	Tile[][] selectedTiles;
+	ArrayList<Tile> selectedTiles;
+	Tile start, end;
 
 	Main(){
 		super("LEVEL EDITOR!");
@@ -342,7 +343,9 @@ class Main extends JFrame implements ActionListener, ItemListener  {
 				currentTile = tiles[mouseX / SQUARESIDE][mouseY / SQUARESIDE];
 			if(!selectionEnabled)
 				pushTile(currentTile);
-			//else
+			else
+				end = currentTile;
+				
 		}
 
 		public void mouseClicked(MouseEvent e)
@@ -374,7 +377,16 @@ class Main extends JFrame implements ActionListener, ItemListener  {
 					}
 				}
 			}
-			//else
+			else
+			{
+				if (e.getButton() == 1)
+				{
+					selectedTiles = new ArrayList<Tile>();
+					start = currentTile;
+					end = start;
+					selectedTiles.add(currentTile);
+				}
+			}
 		}
 
 		public void mouseEntered(MouseEvent e) { }
@@ -391,7 +403,16 @@ class Main extends JFrame implements ActionListener, ItemListener  {
 				}
 				else pullTile(currentTile);
 			}
-			//else
+			else
+			{
+				if (e.getButton() == 1)
+				{
+					selectedTiles = new ArrayList<Tile>();
+					start = currentTile;
+					end = start;
+					selectedTiles.add(currentTile);
+				}
+			}
 		}
 		public void mouseReleased(MouseEvent e) { }
 		// Invoked when a mouse button has been released on a component.
