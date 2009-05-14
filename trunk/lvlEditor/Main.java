@@ -59,6 +59,9 @@ class Main extends JFrame implements ActionListener, ItemListener  {
 	JButton load = new JButton("Load");
 	JLabel location = new JLabel("<hoveroveratile>");
 	JCheckBox gridView = new JCheckBox("Grid On/Off", true);
+	JCheckBox theFinger = new JCheckBox("Select On/Off", false);
+	boolean selectionEnabled = false;
+	
 
 	static int lvlWidth = 10;
 	static int lvlHeight = 10;
@@ -66,6 +69,7 @@ class Main extends JFrame implements ActionListener, ItemListener  {
 	//static String tileType = supportedTiles[1];
 	Tile tiles[][] = new Tile[10][10];
 	Tile currentTile;
+	Tile[][] selectedTiles;
 
 	Main(){
 		super("LEVEL EDITOR!");
@@ -84,6 +88,7 @@ class Main extends JFrame implements ActionListener, ItemListener  {
 		top.add(location);
 		
 		JPanel bottom = new JPanel();
+		bottom.add(theFinger);
 		bottom.add(gridView);
 		bottom.add(new JLabel("Image:"));
 		bottom.add(tile);
@@ -97,6 +102,7 @@ class Main extends JFrame implements ActionListener, ItemListener  {
 		save.addActionListener(this);
 		load.addActionListener(this);
 		gridView.addItemListener(this);
+		theFinger.addItemListener(this);
 
 
 		add(new JScrollPane(new DisplayView()));
@@ -173,8 +179,15 @@ class Main extends JFrame implements ActionListener, ItemListener  {
 	{
 		if (e.getItemSelectable() == gridView)
 		{
+			System.out.println("paint");
 			repaint();
 		}
+		else if (e.getItemSelectable() == theFinger)
+		{
+			selectionEnabled = theFinger.isSelected();
+			System.out.println(selectionEnabled);
+		}
+
 	}
 	
 	public void actionPerformed(ActionEvent e)
@@ -312,51 +325,56 @@ class Main extends JFrame implements ActionListener, ItemListener  {
 
 		public void mouseMoved(MouseEvent e)
 		{
-			int mouseX = e.getX();// - 10; //Translated for width
-			int mouseY = e.getY();// - 30; //Translated for height
+			int mouseX = e.getX();
+			int mouseY = e.getY();
 			if(mouseX > 0 && mouseY > 0 && mouseX <= lvlWidth * SQUARESIDE - 1 && mouseY < lvlHeight * SQUARESIDE - 1)
 				currentTile = tiles[mouseX / SQUARESIDE][mouseY / SQUARESIDE];
-				
-			location.setText(currentTile.toString());
+				location.setText(currentTile.toString());
+			//else
 			System.out.println(currentTile);
 
 		}
 		public void mouseDragged(MouseEvent e)
 		{
-			int mouseX = e.getX();// - 10; //Translated for width
-			int mouseY = e.getY();// - 30; //Translated for height
+			int mouseX = e.getX();
+			int mouseY = e.getY();
 			if (mouseX > 0 && mouseY > 0 && mouseX <= lvlWidth * SQUARESIDE - 1 && mouseY < lvlHeight * SQUARESIDE - 1)
 				currentTile = tiles[mouseX / SQUARESIDE][mouseY / SQUARESIDE];
+			if(!selectionEnabled)
 				pushTile(currentTile);
+			//else
 		}
 
 		public void mouseClicked(MouseEvent e)
 		{
-			if (e.getButton() == 1)
+			if (!selectionEnabled)
 			{
-				pushTile(currentTile);
-			}
-			else if (e.getButton() == 3)
-			{
-				pullTile(currentTile);
-			}
-			else
-			{
-				JOptionPane j = new JOptionPane();
-				Object value = j.showInputDialog(this, new JLabel("Type"),
-				"Make all " +currentTile.getImage() + " this type!", 
-				JOptionPane.WARNING_MESSAGE, new ImageIcon(currentTile.getImage()), types, types[0]);
-				if(value != null)
+				if (e.getButton() == 1)
 				{
-				for (int x = 0; x < lvlWidth; x++)
-					for (int y = 0; y < lvlHeight; y++)
-						if(tiles[x][y].getImage().compareToIgnoreCase(currentTile.getImage()) == 0)
-						{
-							tiles[x][y].setType((String)value);
-						}
+					pushTile(currentTile);
+				}
+				else if (e.getButton() == 3)
+				{
+					pullTile(currentTile);
+				}
+				else
+				{
+					JOptionPane j = new JOptionPane();
+					Object value = j.showInputDialog(this, new JLabel("Type"),
+					"Make all " + currentTile.getImage() + " this type!",
+					JOptionPane.WARNING_MESSAGE, new ImageIcon(currentTile.getImage()), types, types[0]);
+					if (value != null)
+					{
+						for (int x = 0; x < lvlWidth; x++)
+							for (int y = 0; y < lvlHeight; y++)
+								if (tiles[x][y].getImage().compareToIgnoreCase(currentTile.getImage()) == 0)
+								{
+									tiles[x][y].setType((String)value);
+								}
+					}
 				}
 			}
-				
+			//else
 		}
 
 		public void mouseEntered(MouseEvent e) { }
@@ -365,11 +383,15 @@ class Main extends JFrame implements ActionListener, ItemListener  {
 		// Invoked when the mouse exits a component.
 		public void mousePressed(MouseEvent e)
 		{
-			if (e.getButton() == 1)
+			if (!selectionEnabled)	
 			{
-				pushTile(currentTile);
+					if (e.getButton() == 1)
+				{
+					pushTile(currentTile);
+				}
+				else pullTile(currentTile);
 			}
-			else pullTile(currentTile);
+			//else
 		}
 		public void mouseReleased(MouseEvent e) { }
 		// Invoked when a mouse button has been released on a component.
