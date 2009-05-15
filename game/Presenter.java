@@ -55,21 +55,51 @@ abstract class Presenter {
 	{
 		MessagePresenter mp = new MessagePresenter(message,this,this);
 		
-		Object duct = mp.duct;
-		
 		enterPresenter(mp);
 		
-		synchronized(duct) {
-			try
-			{
-				duct.wait();
-			}
-			catch(Exception ex){}
+		synchronized(mp) {
+			try{
+				mp.wait();
+			}catch(Exception ex){}
 		}
 	}
 	
 	/**
-	 *Draw this presenter to the screen,  DO NOTHING ELSE.
+	*Display the choices in a standard way, blocking return until the user makes a selection.
+	*/
+	public String showMenu(String[] choices)
+	{
+		MenuPresenter mp = new MenuPresenter(choices,this,this);
+		
+		enterPresenter(mp);
+		synchronized(mp){
+			try{
+				mp.wait();
+			}catch(Exception ex){}
+		}
+		return mp.choice();
+	}
+	
+	/**
+	*Display the choices and message/question in a standard way, blocking return until the user makes a selection.
+	*/
+	public String showMenu(String message, String[] choices)
+	{
+		MessagePresenter mep = new MessagePresenter(message,this,this);
+		MenuPresenter mup = new MenuPresenter(choices,mep,this);
+		
+		enterPresenter(mep);
+		enterPresenter(mup);
+		synchronized(mup){
+			try{
+				mup.wait();
+			}catch(Exception ex){}
+		}
+		return mup.choice();
+	}
+	
+	/**
+	 *Draw this presenter to the screen,  IMPLEMENTIONS OF THIS METHOD SHOULD NOT CHANGE THE PRESENTERS STATE.
 	 */
 	public abstract void drawOn(Graphics2D g);
 	

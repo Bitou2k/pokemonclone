@@ -108,6 +108,11 @@ class Area extends Presenter {
 			if (next.isObstacle() && !next.target.isEmpty())
 				showMessage(next.target);
 		}
+		if(b==Button.B)
+		{
+			String answer = showMenu("PICK ONE:",new String[]{"first","second","third"});
+			showMessage(answer);
+		}
 	}
 	
 	/**
