@@ -8,17 +8,19 @@ import java.awt.Font;
 import java.util.*;
 import javax.swing.*;
 
-class MessagePresenter extends Presenter {
+/**
+*Do not use this class directly, use the showMessage method inherited on Presenters.
+*/
+public class MessagePresenter extends Presenter {
 
-	String message="";
-	Presenter behide;
-	Presenter next;
-	List<String> lines = new ArrayList<String>();
-	int top=0;
-	int nlines;
-	Object duct = new Object();
+	private String message="";
+	private Presenter behide;
+	private Presenter next;
+	private List<String> lines = new ArrayList<String>();
+	private int top=0;
+	private int nlines;
 	
-	MessagePresenter(String m, Presenter b, Presenter n)
+	public MessagePresenter(String m, Presenter b, Presenter n)
 	{
 		message = m;
 		behide = b;
@@ -64,8 +66,8 @@ class MessagePresenter extends Presenter {
 		else
 		{
 			if(next!=null) enterPresenter(next);
-			synchronized(duct) {
-				duct.notify();
+			synchronized(this) {
+				notify();
 			}
 		}
 	}
