@@ -432,7 +432,10 @@
 <pokemon>
 	<number>142</number>
 	<name>Aerodactyl</name>
-	<image32>icon142.gif</image32>
+	<image32>./pokemon/icons32/icon142.gif</image32>
+	<image80>./pokemon/icons80/aerodactyl.png</image80>
+	<imageFront>./pokemon/iconsFront/142.png</imageFront>
+	<imageBack>./pokemon/iconsBack/142.png</imageBack>
 	<description>A ferocious, prehistoric POKEMON that goes for the enemy's throat with its serrated saw-like fangs.</description>
 	<type>Rock</type>
 	<type2>Flying</type2>
@@ -475,7 +478,10 @@
 <pokemon>
 	<number>141</number>
 	<name>Kabutops</name>
-	<image32>icon141.gif</image32>
+	<image32>./pokemon/icons32/icon141.gif</image32>
+	<image80>./pokemon/icons80/kabutops.png</image80>
+	<imageFront>./pokemon/iconsFront/141.png</imageFront>
+	<imageBack>./pokemon/iconsBack/141.png</imageBack>
 	<description>Its sleek shape is perfect for swimming. It slashes prey with its claws and drains the body fluids.</description>
 	<type>Rock</type>
 	<type2>Water</type2>
@@ -518,7 +524,10 @@
 <pokemon>
 	<number>140</number>
 	<name>Kabuto</name>
-	<image32>icon140.gif</image32>
+	<image32>./pokemon/icons32/icon140.gif</image32>
+	<image80>./pokemon/icons80/kabuto.png</image80>
+	<imageFront>./pokemon/iconsFront/140.png</imageFront>
+	<imageBack>./pokemon/iconsBack/140.png</imageBack>
 	<description>A POKEMON that was resurrected from a fossil found in what was once the ocean floor eons ago.</description>
 	<type>Rock</type>
 	<type2>Water</type2>
@@ -565,7 +574,10 @@
 <pokemon>
 	<number>139</number>
 	<name>Omastar</name>
-	<image32>icon139.gif</image32>
+	<image32>./pokemon/icons32/icon139.gif</image32>
+	<image80>./pokemon/icons80/omastar.png</image80>
+	<imageFront>./pokemon/iconsFront/139.png</imageFront>
+	<imageBack>./pokemon/iconsBack/139.png</imageBack>
 	<description>A prehistoric POKEMON that died out when its heavy shell made it impossible to catch prey.</description>
 	<type>Rock</type>
 	<type2>Water</type2>
@@ -608,7 +620,10 @@
 <pokemon>
 	<number>138</number>
 	<name>Omanyte</name>
-	<image32>icon138.gif</image32>
+	<image32>./pokemon/icons32/icon138.gif</image32>
+	<image80>./pokemon/icons80/omanyte.png</image80>
+	<imageFront>./pokemon/iconsFront/138.png</imageFront>
+	<imageBack>./pokemon/iconsBack/138.png</imageBack>
 	<description>Although long extinct, in rare cases, it can be genetically resurrected from fossils.</description>
 	<type>Rock</type>
 	<type2>Water</type2>
@@ -655,7 +670,10 @@
 <pokemon>
 	<number>137</number>
 	<name>Porygon</name>
-	<image32>icon137.gif</image32>
+	<image32>./pokemon/icons32/icon137.gif</image32>
+	<image80>./pokemon/icons80/porygon.png</image80>
+	<imageFront>./pokemon/iconsFront/137.png</imageFront>
+	<imageBack>./pokemon/iconsBack/137.png</imageBack>
 	<description>A POKEMON that consists entirely of programming code. Capable of moving freely in cyberspace.</description>
 	<type>Normal</type>
 	<type2></type2>
@@ -702,7 +720,10 @@
 <pokemon>
 	<number>136</number>
 	<name>Flareon</name>
-	<image32>icon136.gif</image32>
+	<image32>./pokemon/icons32/icon136.gif</image32>
+	<image80>./pokemon/icons80/flareon.png</image80>
+	<imageFront>./pokemon/iconsFront/136.png</imageFront>
+	<imageBack>./pokemon/iconsBack/136.png</imageBack>
 	<description>When storing thermal energy in its body, its temperature could soar to over 1600 degrees.</description>
 	<type>Fire</type>
 	<type2></type2>
@@ -761,7 +782,10 @@
 <pokemon>
 	<number>135</number>
 	<name>Jolteon</name>
-	<image32>icon135.gif</image32>
+	<image32>./pokemon/icons32/icon135.gif</image32>
+	<image80>./pokemon/icons80/jolteon.png</image80>
+	<imageFront>./pokemon/iconsFront/135.png</imageFront>
+	<imageBack>./pokemon/iconsBack/135.png</imageBack>
 	<description>It accumulates negative ions in the atmosphere to blast out 10000-volt lightning bolts.</description>
 	<type>Electric</type>
 	<type2></type2>
@@ -824,7 +848,10 @@
 <pokemon>
 	<number>134</number>
 	<name>Vaporeon</name>
-	<image32>icon134.gif</image32>
+	<image32>./pokemon/icons32/icon134.gif</image32>
+	<image80>./pokemon/icons80/vaporeon.png</image80>
+	<imageFront>./pokemon/iconsFront/134.png</imageFront>
+	<imageBack>./pokemon/iconsBack/134.png</imageBack>
 	<description>Lives close to water. Its long tail is ridged with a fin which is often mistaken for a mermaid's.</description>
 	<type>Water</type>
 	<type2></type2>
@@ -883,7 +910,10 @@
 <pokemon>
 	<number>133</number>
 	<name>Eevee</name>
-	<image32>icon133.gif</image32>
+	<image32>./pokemon/icons32/icon133.gif</image32>
+	<image80>./pokemon/icons80/eevee.png</image80>
+	<imageFront>./pokemon/iconsFront/133.png</imageFront>
+	<imageBack>./pokemon/iconsBack/133.png</imageBack>
 	<description>Its genetic code is irregular. It may mutate if it is exposed to radiation from element STONEs.</description>
 	<type>Normal</type>
 	<type2></type2>
@@ -938,7 +968,10 @@
 <pokemon>
 	<number>132</number>
 	<name>Ditto</name>
-	<image32>icon132.gif</image32>
+	<image32>./pokemon/icons32/icon132.gif</image32>
+	<image80>./pokemon/icons80/ditto.png</image80>
+	<imageFront>./pokemon/iconsFront/132.png</imageFront>
+	<imageBack>./pokemon/iconsBack/132.png</imageBack>
 	<description>Capable of copying an enemy's genetic code to instantly transform itself into a duplicate of the enemy.</description>
 	<type>Normal</type>
 	<type2></type2>
