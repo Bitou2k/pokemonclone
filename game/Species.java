@@ -45,6 +45,8 @@ class Species {
 	public List<TM> learnableTMs(){return tms;}
 	public List<HM> learnableHMs(){return hms;}
 	
+	public Species firstForm(){return null;}
+	
 	/**
 	*Returns a dictionary of MOVELEARN==>LEVELLEARNED.
 	*/

@@ -49,6 +49,26 @@ abstract class Presenter {
 	}
 	
 	/**
+	*Display the message in a standard way, up to two lines at a time, blocking return until the user goes through it.
+	*/
+	public void showMessage(String message)
+	{
+		MessagePresenter mp = new MessagePresenter(message,this,this);
+		
+		Object duct = mp.duct;
+		
+		enterPresenter(mp);
+		
+		synchronized(duct) {
+			try
+			{
+				duct.wait();
+			}
+			catch(Exception ex){}
+		}
+	}
+	
+	/**
 	 *Draw this presenter to the screen,  DO NOTHING ELSE.
 	 */
 	public abstract void drawOn(Graphics2D g);

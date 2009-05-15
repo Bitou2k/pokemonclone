@@ -60,10 +60,14 @@ class Game extends JComponent implements KeyListener {
 	}
 	
 	public void keyPressed(KeyEvent e){
-		Button b = buttonForEvent(e);
+		final Button b = buttonForEvent(e);
 		bs.put(b,true);
-		currentPresenter.buttonPressed(b);
-		repaint();
+		new Thread(){
+			public void run(){
+				currentPresenter.buttonPressed(b);
+				repaint();
+			}
+		}.start();
 	}
 	public void keyReleased(KeyEvent e){
 		Button b = buttonForEvent(e);
