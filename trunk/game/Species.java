@@ -16,7 +16,8 @@ class Species {
 	private Type type1, type2;
 	private int hp, attack, defense, spAttack, spDefense, speed; 
 	private Map<Move,Integer> moves;
-	private Map<String,Species> evolutions;//A dictionary of condition(level,trade,stone)->pokedexpokemon
+	//condition(level,trade,stone)-->pokedexpokemon
+	private Map<String,Species> evolutions = new HashMap<String,Species>();
 	private List<TM> tms = new LinkedList<TM>();
 	private List<HM> hms = new LinkedList<HM>();
 	
@@ -87,12 +88,28 @@ class Species {
 		spDefense = new Integer(n.contentOf("sp def"));
 		speed = new Integer(n.contentOf("speed"));
 		
+		for(Node en: n.subnodes("evolution")){
+			String condition = en.contentOf("level");
+			String evolvedForm = en.contentOf("target");
+			if(evolvedForm.equals("")) continue;
+			evolutions.put( condition, Species.named(evolvedForm) );
+		}
 		
 		//p.futureMoves = movesFromNode(n.subnode("moves"));
 		
-		//load tms
+		String[] tmsStr = n.contentOf("TMs").trim().split(",");
+		for(String tmStr: tmsStr)
+		{
+			if(tmStr.equals("")) continue;
+			tms.add( TM.numbered(new Integer(tmStr)) );
+		}
 		
-		//load hms
+		String[] hmsStr = n.contentOf("HMs").trim().split(",");
+		for(String hmStr: hmsStr)
+		{
+			if(hmStr.equals("")) continue;
+			hms.add( HM.numbered(new Integer(hmStr)) );
+		}
 	}
 	
 	public Pokemon makeWildAtLevel(int level)
