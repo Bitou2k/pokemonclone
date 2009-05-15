@@ -16,6 +16,7 @@ class MessagePresenter extends Presenter {
 	List<String> lines = new ArrayList<String>();
 	int top=0;
 	int nlines;
+	Object duct = new Object();
 	
 	MessagePresenter(String m, Presenter b, Presenter n)
 	{
@@ -60,7 +61,13 @@ class MessagePresenter extends Presenter {
 		if(b!=Button.A)return;
 		
 		if(top+2 < nlines) top++;
-		else enterPresenter(next);
+		else
+		{
+			if(next!=null) enterPresenter(next);
+			synchronized(duct) {
+				duct.notify();
+			}
+		}
 	}
 	public void step(int ms){}
 }

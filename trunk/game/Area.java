@@ -92,9 +92,9 @@ class Area extends Presenter {
 		if(b==Button.START){enterPresenter(new PokedexScreen(this));}
 		if(b==Button.A)
 		{
-		System.out.println("x");
-			Presenter m = new MessagePresenter("This is a test of the generic message presenter.  Any key will advance the message and at end force control to the next presenter.",this,this);
-			enterPresenter(m);
+			System.out.println("x");
+			showMessage("This is a test of the generic message presenter.  Any key will advance the message and at end force control to the next presenter.");
+			System.out.println("y");
 		}
 	}
 	
