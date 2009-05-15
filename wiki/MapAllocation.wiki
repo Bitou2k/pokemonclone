@@ -70,7 +70,7 @@ To sort out the confusion, everyone should put +'s before maps that are finished
 
 - 34. Power Plant (Almost done) (Ryan Macnak)
 
-- 35. Routes 19 & 20 (20 is done) (Brad)
++ 35. Routes 19 & 20 (Brad)
 
   36. Seafoam Island
 
