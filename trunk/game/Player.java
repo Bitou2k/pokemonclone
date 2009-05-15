@@ -6,8 +6,10 @@ import java.awt.Font;
 import java.awt.Image;
 import javax.swing.ImageIcon;
 
-//you
-class Player extends Battler {
+/**
+*You.
+*/
+public class Player extends Battler {
 
 	String name = "Ash";
 	List<Pokemon> party;
@@ -30,7 +32,7 @@ class Player extends Battler {
 	final ImageIcon imgUpStrideTwo = new ImageIcon("./entityImages/Player Up StrideTwo.png");
 	final ImageIcon imgUpStrideOne = new ImageIcon("./entityImages/Player Up StrideOne.png");
 
-	void step(int ms)
+	public void step(int ms)
 	{
 		if(ms%100!=0)return;
 		
@@ -38,13 +40,13 @@ class Player extends Battler {
 		if(stride<0)stride=0;
 	}
 	
-	boolean inStride()
+	public boolean inStride()
 	{
 		return stride > 0;
 	}
 
-	void drawOn(Graphics2D g){
-			g.drawImage(getImage(), d.dx()*-4*stride, d.dy()*-4*stride, null);
+	public void drawOn(Graphics2D g){
+		g.drawImage(getImage(), d.dx()*-4*stride, d.dy()*-4*stride, null);
 	}
 	
 	private Image getImage()
@@ -68,11 +70,6 @@ class Player extends Battler {
 		return null;//error!
 	}
 	
-	public void direction(Direction d){
-		this.d = d;
-	}
-	
-	public Direction direction(){
-		return d;
-	}
+	public void direction(Direction d){	this.d = d;	}
+	public Direction direction(){ return d; }
 }

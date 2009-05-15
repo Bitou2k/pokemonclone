@@ -188,5 +188,7 @@ public enum Type {
 		}
 	};
 	
-	//double ceofOn(Type defender){return 4.0;}
+	public double ceofOn(Type defender){
+		return 1.0;
+	}
 }
