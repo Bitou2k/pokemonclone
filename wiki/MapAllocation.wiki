@@ -14,7 +14,7 @@ To sort out the confusion, everyone should put +'s before maps that are finished
 
 +  6. Pewter City done
 
-   7. Route 3(garrett)
++  7. Route 3(garrett)
 
    8. Mt. Moon (done?)
 
