@@ -45,11 +45,8 @@ class Area extends Presenter {
 		Tile now = player.tile();
 		Tile next = tileAt(now.x+dx,now.y+dy);
 		
-		if(next.isObstacle() && !next.target.isEmpty())
-		{	
-			System.out.println("|" + next.target + "|");
+		if(next.isObstacle() && !next.target.isEmpty()) 
 			showMessage(next.target);
-		}
 		else
 			{
 			if(next.isCliff())
