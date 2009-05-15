@@ -42,45 +42,52 @@ class Area extends Presenter {
 	private void move(int dx, int dy)
 	{
 		Player player = player();
-		
 		Tile now = player.tile();
 		Tile next = tileAt(now.x+dx,now.y+dy);
 		
-		if(next.isObstacle()) return;
-		if(next.isCliff())
-		{
-			return;
-
+		if(next.isObstacle() && !next.target.isEmpty())
+		{	
+			System.out.println("|" + next.target + "|");
+			showMessage(next.target);
 		}
-		if(next.isDoor())
-		{
-			System.out.println(next.target);
-			System.out.println(next.targetX());
-			System.out.println(next.targetY());
-		
-			Area a = Area.named(next.targetMap());
-			a.tileAt(next.targetX(),next.targetY()).entity(player);
-			
-			enterPresenter(a);
-			a.showMessage(a.name);
-			
-			
-			return;
-
-		}
-		if(next.isGrass())
-		{
-			Pokemon p = now.genPokemon();
-			if(p!=null)
+		else
 			{
-				//open battle
-				enterPresenter(new Battle(p,this));
+			if(next.isCliff())
+			{
+				return;
+			}
+			if(next.isDoor())
+			{
+				System.out.println(next.target);
+				System.out.println(next.targetX());
+				System.out.println(next.targetY());
+			
+				Area a = Area.named(next.targetMap());
+				a.tileAt(next.targetX(),next.targetY()).entity(player);
+				
+				enterPresenter(a);
+				a.showMessage(a.name);
+				
+				
+				return;
+
+			}
+			if(next.isGrass())
+			{
+				Pokemon p = now.genPokemon();
+				if(p!=null)
+				{
+					//open battle
+					enterPresenter(new Battle(p,this));
+				}
+			}
+			if (!next.isObstacle())
+			{
+				player.stride=2;
+				now.entity(null);
+				next.entity(player);
 			}
 		}
-		
-		player.stride=2;
-		now.entity(null);
-		next.entity(player);
 	}
 	
 	/**
