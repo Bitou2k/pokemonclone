@@ -38,18 +38,19 @@ public class Move {
 		//accuracy = new Double(n.contentOf("accuracy"));
 		
 		compareName = name.toLowerCase();
-		
-		System.out.println("Loaded Move: "+name);
 	}
 	
 	private static ArrayList<Move> moves = new ArrayList<Move>();
 	static { 
 		try{
 			Node root = Node.documentRootFrom("./moves.nml");
-			for(Node n : root.subnodes("move"))
-				moves.add( new Move(n) );
-				
-			System.out.println(moves.size()+" moves!");
+			
+			for(Node n : root.subnodes("move")){
+				Move m = new Move(n);
+				moves.add(m);
+				System.out.print(m.name+" ");
+			}
+			System.out.println("\n"+moves.size()+" moves!");
 		}catch(Exception e){e.printStackTrace();}
 	}
 	

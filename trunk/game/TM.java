@@ -15,7 +15,6 @@ public class TM {
 		number = new Integer(n.contentOf("number"));
 		move = Move.named(n.contentOf("move"));
 		
-		System.out.println("Loaded TM: "+number);
 	}
 	
 	private static ArrayList<TM> tms = new ArrayList<TM>();
@@ -23,9 +22,13 @@ public class TM {
 		try{
 			Node root = Node.documentRootFrom("./tmsAndHms.nml");
 			for(Node n : root.subnodes("tm"))
-				tms.add( new TM(n) );
+			{
+				TM t = new TM(n);
+				tms.add(t);
+				System.out.print(t.number+" ");
+			}
 				
-			System.out.println(tms.size()+" TMs!");
+			System.out.println("\n"+tms.size()+" TMs!");
 		}catch(Exception e){e.printStackTrace();}
 	}
 	

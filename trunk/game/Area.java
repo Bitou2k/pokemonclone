@@ -63,7 +63,7 @@ class Area extends Presenter {
 				a.tileAt(next.targetX(),next.targetY()).entity(player);
 				
 				enterPresenter(a);
-				a.showMessage(a.name);
+				//a.showMessage(a.name);
 				
 				
 				return;
@@ -150,23 +150,22 @@ class Area extends Presenter {
 	
 	
 	/**
-	 *Returns a loaded map with the given name, only maps in the root directory will be loaded.
+	 *Returns a loaded map with the given name, only maps in the areas directory will be loaded.
 	 */
-	public static Area named(String name){
+	public static synchronized Area named(String name){
 		for(Area a: areas)
 			if(a.name.equalsIgnoreCase(name))
 				return a;
+				
+		try{
+			Area a = new Area(new File("./areas/"+name+".nml"));
+			areas.add(a);
+			return a;
+		}catch(Exception exx){}
+				
 		System.out.println("There is no area named "+name);
 		return null;
 	}
 	private static LinkedList<Area> areas = new LinkedList<Area>();
-	static{
-		try	{
-			for(File f: new File("./").listFiles() ){
-				try{
-					areas.add(new Area(f));
-				}catch(Exception exx){}
-			}
-		}catch(Exception ex){}	
-	}
+
 }
