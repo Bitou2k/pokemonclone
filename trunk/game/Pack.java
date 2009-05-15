@@ -25,6 +25,93 @@ public class Pack {
 	private HashMap<Item,Integer> pokeballPocket;
 	
 	/**
+	 *constructor to create empty Pack object
+	 */
+	public Pack() {
+		keyItemsPocket = null;
+		itemsPocket = null;
+		tmHmPocket = null;
+		pokeballPocket = null;
+	}
+	
+	/**
+	 *@param a constructor for loading the pack from disk
+	 *@param Node: node to be opened
+	 */
+	public Pack(Node n) {
+		for(Node x : n.subnodes("key_item")) {
+			keyItemsPocket.put(Item.fromNode(x.contentOf("item")), x.icontentOf("qty"));
+		}
+		
+		for(Node x : n.subnodes("normal_item")) {
+			itemsPocket.put(Item.fromNode(x.contentOf("item")), x.icontentOf("qty"));
+		}
+		
+		for (Node x : n.subnodes("tmhm")) {
+			tmHmPocket.put(Item.fromNode(x.contentOf("item")), x.icontentOf("qty"));
+		}
+		
+		for (Node x : n.subnodes("pokeball")) {
+			pokeballPocket.put(Item.fromNode(x.contentOf("item")), x.icontentOf("qty"));
+		}
+	}
+	
+	/**
+	 *a method to return node for saving
+	 *@return	returns a Node representing the pack that can be saved to disk
+	 */
+	public Node getPack() {
+		//create parent node
+		Node packNode = new Node("pack");
+		
+		//create 1st child nodes
+		Node keyItem = new Node("key_item");
+		Node item = new Node("normal_item");
+		Node tmhm = new Node("tmhm");
+		Node pokeball = new Node("pokeball");
+		
+		Iterator keyItr = keyItemsPocket.entrySet().iterator();
+		Iterator itemItr = itemsPocket.entrySet().iterator();
+		Iterator tmHmItr = tmHmPocket.entrySet().iterator();
+		Iterator pokeballItr = pokeballPocket.entrySet().iterator();
+		
+		while (keyItr.hasNext()) {
+			Map.Entry kItem = (Map.Entry)keyItr.next();
+			keyItem.addSubnode("item", ""+kItem.getValue());
+			kItem = (Map.Entry)keyItr.next();
+			keyItem.addSubnode("qty",""+kItem.getValue());
+		}
+		
+		while (itemItr.hasNext()) {
+			Map.Entry i = (Map.Entry)itemItr.next();
+			item.addSubnode("item", ""+i.getValue());
+			i = (Map.Entry)itemItr.next();
+			item.addSubnode("qty",""+i.getValue());
+		}
+		
+		while (tmHmItr.hasNext()) {
+			Map.Entry th = (Map.Entry)tmHmItr.next();
+			tmhm.addSubnode("item",""+th.getValue());
+			th = (Map.Entry)tmHmItr.next();
+			tmhm.addSubnode("qty", ""+th.getValue());
+		}
+		
+		while (pokeballItr.hasNext()) {
+			Map.Entry pBall = (Map.Entry)pokeballItr.next();
+			pokeball.addSubno`de("item", ""+pBall.getValue());
+			pBall = (Map.Entry)pokeballItr.next();
+			pokeball.addSubnode(pBall.getKey(),""+pBall.getValue());
+		}
+		
+		packNode.addSubnode(keyItem);
+		packNode.addSubnode(item);
+		packNode.addSubnode(tmhm);
+		packNode.addSubnode(pokeball);
+		
+		return packNode;
+	}
+	
+	/**
 	* updates the quantity of a key item
 	*@param Item: item to be added, Int: number to add
 	*/
