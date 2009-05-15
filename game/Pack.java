@@ -98,7 +98,7 @@ public class Pack {
 		
 		while (pokeballItr.hasNext()) {
 			Map.Entry pBall = (Map.Entry)pokeballItr.next();
-			pokeball.addSubno`de("item", ""+pBall.getValue());
+			pokeball.addSubnode("item", ""+pBall.getValue());
 			pBall = (Map.Entry)pokeballItr.next();
 			pokeball.addSubnode(pBall.getKey(),""+pBall.getValue());
 		}
