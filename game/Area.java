@@ -55,7 +55,11 @@ class Area extends Presenter {
 		
 			Area a = Area.named(next.targetMap());
 			a.tileAt(next.targetX(),next.targetY()).entity(player);
+			
 			enterPresenter(a);
+			enterPresenter(new MessagePresenter(a.name,a,a));
+			
+			
 			return;
 
 		}
@@ -86,6 +90,12 @@ class Area extends Presenter {
 		if(b==Button.RIGHT){move(1,0); player.setDirection(Direction.EAST);}
 		if(b==Button.UP){move(0,-1); player.setDirection(Direction.NORTH);}
 		if(b==Button.START){enterPresenter(new PokedexScreen(this));}
+		if(b==Button.A)
+		{
+		System.out.println("x");
+			Presenter m = new MessagePresenter("This is a test of the generic message presenter.  Any key will advance the message and at end force control to the next presenter.",this,this);
+			enterPresenter(m);
+		}
 	}
 	
 	/**
@@ -109,6 +119,8 @@ class Area extends Presenter {
 		//draw each tile
 		for(Tile t:tiles) t.drawSelfOn(g);
 		for(Tile t:tiles) t.drawEntityOn(g);
+		
+		g.translate( -((player.tile().x-10)*-16-xf), -((player.tile().y-10)*-16-yf));
 	}
 	
 	/**
