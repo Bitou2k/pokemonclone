@@ -92,18 +92,21 @@ class Area extends Presenter {
 	 */
 	public void buttonPressed(Button b){
 		Player player = player();
+		int dirx = 0;
+		int diry = 0;
 		if(player.inStride())return;
 		
-		if(b==Button.LEFT){move(-1,0);player.setDirection(Direction.WEST);}
-		if(b==Button.DOWN){move(0,1); player.setDirection(Direction.SOUTH);}
-		if(b==Button.RIGHT){move(1,0); player.setDirection(Direction.EAST);}
-		if(b==Button.UP){move(0,-1); player.setDirection(Direction.NORTH);}
+		if(b==Button.LEFT){dirx = -1; diry = 0; move(dirx,diry);player.setDirection(Direction.WEST);}
+		if(b==Button.DOWN){dirx = 0; diry = 1; move(dirx,diry); player.setDirection(Direction.SOUTH);}
+		if(b==Button.RIGHT){dirx = 1; diry = 0; move(dirx,diry); player.setDirection(Direction.EAST);}
+		if(b==Button.UP){dirx = 0; diry = -1; move(dirx,diry); player.setDirection(Direction.NORTH);}
 		if(b==Button.START){enterPresenter(new PokedexScreen(this));}
 		if(b==Button.A)
 		{
-			System.out.println("x");
-			showMessage("This is a test of the generic message presenter.  Any key will advance the message and at end force control to the next presenter.");
-			System.out.println("y");
+			Tile now = player.tile();
+			Tile next = tileAt(now.x+dirx,now.y+diry-1);
+			if (next.isObstacle() && !next.target.isEmpty())
+				showMessage(next.target);
 		}
 	}
 	
