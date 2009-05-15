@@ -2311,7 +2311,7 @@
 	<number>83</number>
 	<name>Farfetch'd</name>
 	<image32>./pokemon/icons32/icon083.gif</image32>
-	<image80>./pokemon/icons80/farfetch'd.png</image80>
+	<image80>./pokemon/icons80/farfetchd.png</image80>
 	<imageFront>./pokemon/iconsFront/83.png</imageFront>
 	<imageBack>./pokemon/iconsBack/83.png</imageBack>
 	<description>The sprig of green onions it holds is its weapon. It is used much like a metal sword.</description>
