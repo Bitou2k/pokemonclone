@@ -107,7 +107,7 @@ class Game extends JComponent implements KeyListener {
 		f.setResizable(false);
 		f.setVisible(true);
 		
-		Area.named("");
+		Area.named("route01");
 		StartPresenter.loading=false;
 	}
 }

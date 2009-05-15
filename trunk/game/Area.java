@@ -14,19 +14,13 @@ class Area extends Presenter {
 
 	private List<Tile> tiles = new ArrayList<Tile>(); 
 	private String name;
-	
-	private Area(File f) throws Exception
-	{
-		Node mapNode = Node.parseFrom(new FileInputStream(f));
-		name = mapNode.contentOf("name");
-		
-		for(Node tileNode: mapNode.subnodes("tile"))
-		{
-			tiles.add(Tile.fromNode(tileNode, this));
-		}
-		if(tiles.size()==0) throw new Exception();
 
-		System.out.println("Loaded Area: "+name);
+	public Tile tilePlayerFacing()
+	{
+		Direction d = player().direction();
+		Tile now = player().tile();
+		Tile next = tileAt(now.x+d.dx(),now.y+d.dy());
+		return next;
 	}
 	
 	/**
@@ -39,11 +33,10 @@ class Area extends Presenter {
 		return null;
 	}
 	
-	private void move(int dx, int dy)
+	private void walk()
 	{
-		Player player = player();
-		Tile now = player.tile();
-		Tile next = tileAt(now.x+dx,now.y+dy);
+		Tile now = player().tile();
+		Tile next = tilePlayerFacing();
 		
 		if(next.isObstacle() && !next.target.isEmpty()) 
 			showMessage(next.target);
@@ -55,34 +48,22 @@ class Area extends Presenter {
 			}
 			if(next.isDoor())
 			{
-				System.out.println(next.target);
-				System.out.println(next.targetX());
-				System.out.println(next.targetY());
-			
+				System.out.println("Jump to "+next.target);
 				Area a = Area.named(next.targetMap());
-				a.tileAt(next.targetX(),next.targetY()).entity(player);
-				
+				a.tileAt(next.targetX(),next.targetY()).entity(player());
 				enterPresenter(a);
-				//a.showMessage(a.name);
-				
-				
 				return;
-
 			}
 			if(next.isGrass())
 			{
 				Pokemon p = now.genPokemon();
 				if(p!=null)
-				{
-					//open battle
-					enterPresenter(new Battle(p,this));
-				}
+					enterPresenter(new Battle(p,this)); //open battle
 			}
 			if (!next.isObstacle())
 			{
-				player.stride=2;
-				now.entity(null);
-				next.entity(player);
+				player().stride=2;
+				next.entity(player());
 			}
 		}
 	}
@@ -91,20 +72,22 @@ class Area extends Presenter {
 	 *Move player on arrow keys, enter pokedex on Q.
 	 */
 	public void buttonPressed(Button b){
-		Player player = player();
-		int dirx = 0;
-		int diry = 0;
-		if(player.inStride())return;
-		
-		if(b==Button.LEFT){dirx = -1; diry = 0; move(dirx,diry);player.setDirection(Direction.WEST);}
-		if(b==Button.DOWN){dirx = 0; diry = 1; move(dirx,diry); player.setDirection(Direction.SOUTH);}
-		if(b==Button.RIGHT){dirx = 1; diry = 0; move(dirx,diry); player.setDirection(Direction.EAST);}
-		if(b==Button.UP){dirx = 0; diry = -1; move(dirx,diry); player.setDirection(Direction.NORTH);}
-		if(b==Button.START){enterPresenter(new PokedexScreen(this));}
+		if(player().inStride())
+			return;
+		if(b==Button.LEFT)
+			{ player().direction(Direction.WEST); walk(); }
+		if(b==Button.DOWN)
+			{ player().direction(Direction.SOUTH); walk(); }
+		if(b==Button.RIGHT)
+			{ player().direction(Direction.EAST); walk(); }
+		if(b==Button.UP)
+			{ player().direction(Direction.NORTH); walk(); }
+		if(b==Button.START)
+			{enterPresenter(new PokedexScreen(this));}
 		if(b==Button.A)
 		{
-			Tile now = player.tile();
-			Tile next = tileAt(now.x+dirx,now.y+diry-1);
+			Tile next = tilePlayerFacing();
+			
 			if (next.isObstacle() && !next.target.isEmpty())
 				showMessage(next.target);
 		}
@@ -144,10 +127,35 @@ class Area extends Presenter {
 	 *Step each tile
 	 */
 	public void step(int ms){
-		for(Tile t:tiles)
-			t.step(ms);
+		for(Tile t:tiles) t.step(ms);
 	}
 	
+	
+	////////////////////////////////////////////////////////////////////////////////////
+	
+	private Area(File f) throws Exception
+	{
+		Node mapNode = Node.parseFrom(new FileInputStream(f));
+		name = mapNode.contentOf("name");
+		
+		for(Node tileNode: mapNode.subnodes("tile"))
+		{
+			tiles.add(Tile.fromNode(tileNode, this));
+		}
+		if(tiles.size()==0) throw new Exception();
+
+		System.out.println("Loaded Area: "+name);
+		
+		new Thread(){
+			public void run()
+			{
+				for(Tile t:tiles)
+				{
+					if(t.isDoor()) Area.named(t.targetMap());
+				}
+			}
+		}.start();
+	}
 	
 	/**
 	 *Returns a loaded map with the given name, only maps in the areas directory will be loaded.
