@@ -16,11 +16,9 @@ class Player extends Battler {
 
 	Direction d  = Direction.NORTH;
 
-	int stride=0;
-	//2,1,0
+	int stride=0; //2, 1, or 0
 	
 	ImageIcon ii = new ImageIcon("./entityImages/Player Front.png");
-	
 	final ImageIcon imgDown = new ImageIcon("./entityImages/Player Front.png");
 	final ImageIcon imgDownStrideTwo = new ImageIcon("./entityImages/Player Front StrideTwo.png");
 	final ImageIcon imgDownStrideOne = new ImageIcon("./entityImages/Player Front StrideOne.png");
@@ -31,7 +29,6 @@ class Player extends Battler {
 	final ImageIcon imgUp = new ImageIcon("./entityImages/Player Up.png");
 	final ImageIcon imgUpStrideTwo = new ImageIcon("./entityImages/Player Up StrideTwo.png");
 	final ImageIcon imgUpStrideOne = new ImageIcon("./entityImages/Player Up StrideOne.png");
-
 
 	void step(int ms)
 	{
@@ -71,7 +68,11 @@ class Player extends Battler {
 		return null;//error!
 	}
 	
-	public void setDirection(Direction d){
+	public void direction(Direction d){
 		this.d = d;
+	}
+	
+	public Direction direction(){
+		return d;
 	}
 }
