@@ -1,10 +1,11 @@
 package game;
 
-enum Status {
+public enum Status {
 	NORMAL,
-	POSIONED, // way to spell poisioned wrong!
+	POISONED,
 	BURNED,
 	SLEEPING,
-	PARLYZED,
-	CONFUSED
+	PARLYZED
+	
+	//CONFUSED, actually independent of status
 }

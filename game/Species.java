@@ -10,6 +10,7 @@ import javax.swing.*;
 class Species {
 	
 	private String name;
+	private int generation; //1=RBY,2=GSC,3,4
 	private String description;
 	private Image image32, image80, imageFront, imageBack;
 	private int number;

@@ -48,7 +48,7 @@ public class MenuPresenter extends Presenter {
 		int height = choices.length * 30;
 			
 		g.setColor(Color.WHITE);
-			g.fillRect(bottomx-width-1,bottomy-height-1,width+5,height+5);
+			g.fillRect(bottomx-width-1,bottomy-height-1,width+3,height+3);
 			
 		g.setColor(Color.BLACK);
 			g.fillRoundRect(bottomx-width,bottomy-height,width,height,4,4); 

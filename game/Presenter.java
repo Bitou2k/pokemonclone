@@ -27,7 +27,7 @@ abstract class Presenter {
 	 */
 	public Player player()
 	{
-		return game().player();
+		return game.player();
 	}
 	
 	/**
@@ -44,9 +44,9 @@ abstract class Presenter {
 	public void initGame(Game g){
 		game=g;
 	}
-	public Game game(){
-		return game;
-	}
+//	public Game game(){
+//		return game;
+//	}
 	
 	/**
 	*Display the message in a standard way, up to two lines at a time, blocking return until the user goes through it.
