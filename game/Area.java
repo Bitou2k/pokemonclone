@@ -57,7 +57,7 @@ class Area extends Presenter {
 			a.tileAt(next.targetX(),next.targetY()).entity(player);
 			
 			enterPresenter(a);
-			enterPresenter(new MessagePresenter(a.name,a,a));
+			a.showMessage(a.name);
 			
 			
 			return;
