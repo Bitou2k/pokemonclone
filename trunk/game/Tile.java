@@ -34,6 +34,7 @@ class Tile {
 	boolean isObstacle(){ return type.equals("obstacle") || type.equals("water");}
 	boolean isDoor(){ return type.equals("door")&& !target.equals("");}
 	boolean isGrass(){ return type.equals("pokegrassOrCave"); }
+	boolean isCliff() { return type.equals("cliff"); }
 	
 	Pokemon genPokemon(){
 		try
