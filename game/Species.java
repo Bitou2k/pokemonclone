@@ -93,8 +93,6 @@ class Species {
 		//load tms
 		
 		//load hms
-		
-		System.out.println("Loaded Species: "+name);
 	}
 	
 	public Pokemon makeWildAtLevel(int level)
@@ -106,10 +104,13 @@ class Species {
 	static { 
 		try{
 			Node root = Node.documentRootFrom("./pokemon/pokemon.nml");
-			for(Node n : root.subnodes("pokemon"))
-				species.add( new Species(n) );
+			for(Node n : root.subnodes("pokemon")){
+				Species s = new Species(n);
+				species.add( s );
+				System.out.print(s.name+" ");
+			}
 			Collections.reverse(species);
-			System.out.println(species.size()+" species!");
+			System.out.println("\n"+species.size()+" species!");
 		}catch(Exception e){e.printStackTrace();}
 	}
 	

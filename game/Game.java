@@ -73,14 +73,16 @@ class Game extends JComponent implements KeyListener {
 		Button b = buttonForEvent(e);
 		bs.put(b,false);
 	}
-	public void keyTyped(KeyEvent e){}//pressed and released
+	public void keyTyped(KeyEvent e){}
 
 	private Button buttonForEvent(KeyEvent e)
 	{
 		if(e.getKeyCode()==KeyEvent.VK_ENTER) return Button.A;
 		if(e.getKeyCode()==KeyEvent.VK_A) return Button.A;
+		if(e.getKeyCode()==KeyEvent.VK_Z) return Button.A;
 		if(e.getKeyCode()==KeyEvent.VK_BACK_SPACE) return Button.B;
 		if(e.getKeyCode()==KeyEvent.VK_B) return Button.B;
+		if(e.getKeyCode()==KeyEvent.VK_X) return Button.B;
 		if(e.getKeyCode()==KeyEvent.VK_UP) return Button.UP;
 		if(e.getKeyCode()==KeyEvent.VK_DOWN) return Button.DOWN;
 		if(e.getKeyCode()==KeyEvent.VK_LEFT) return Button.LEFT;

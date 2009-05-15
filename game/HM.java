@@ -14,18 +14,19 @@ public class HM {
 	{
 		number = new Integer(n.contentOf("number"));
 		move = Move.named(n.contentOf("move"));
-		
-		System.out.println("Loaded HM: "+number);
 	}
 	
 	private static ArrayList<HM> hms = new ArrayList<HM>();
 	static { 
 		try{
 			Node root = Node.documentRootFrom("./tmsAndHms.nml");
-			for(Node n : root.subnodes("hm"))
-				hms.add( new HM(n) );
+			for(Node n : root.subnodes("hm")){
+				HM h = new HM(n);
+				hms.add( h );
+				System.out.print(h.number+" ");
+			}
 				
-			System.out.println(hms.size()+" HMs!");
+			System.out.println("\n"+hms.size()+" HMs!");
 		}catch(Exception e){e.printStackTrace();}
 	}
 	
