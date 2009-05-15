@@ -100,7 +100,7 @@ public class Pack {
 			Map.Entry pBall = (Map.Entry)pokeballItr.next();
 			pokeball.addSubnode("item", ""+pBall.getValue());
 			pBall = (Map.Entry)pokeballItr.next();
-			pokeball.addSubnode(pBall.getKey(),""+pBall.getValue());
+			pokeball.addSubnode("qty", ""+pBall.getValue());
 		}
 		
 		packNode.addSubnode(keyItem);
