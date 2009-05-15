@@ -47,6 +47,11 @@ class Area extends Presenter {
 		Tile next = tileAt(now.x+dx,now.y+dy);
 		
 		if(next.isObstacle()) return;
+		if(next.isCliff())
+		{
+			return;
+
+		}
 		if(next.isDoor())
 		{
 			System.out.println(next.target);
