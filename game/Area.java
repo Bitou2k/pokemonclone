@@ -38,6 +38,8 @@ class Area extends Presenter {
 		Tile now = player().tile();
 		Tile next = tilePlayerFacing();
 		
+		if(next==null)return;
+		
 		if(next.isObstacle() && !next.target.isEmpty()) 
 			showMessage(next.target);
 		else
@@ -83,7 +85,15 @@ class Area extends Presenter {
 		if(b==Button.UP)
 			{ player().direction(Direction.NORTH); walk(); }
 		if(b==Button.START)
-			{enterPresenter(new PokedexScreen(this));}
+		{
+			
+			
+			String choice = showMenu(new String[]{"Pokedex","Pokemon","Pack","Ash","Save","Option","Exit"});
+			
+			if(choice.equals("Pokedex")) enterPresenter(new PokedexScreen(this));
+			if(choice.equals("Exit")) enterPresenter(new StartPresenter());
+		
+		}
 		if(b==Button.A)
 		{
 			Tile next = tilePlayerFacing();
@@ -93,8 +103,7 @@ class Area extends Presenter {
 		}
 		if(b==Button.B)
 		{
-			String answer = showMenu("PICK ONE:",new String[]{"first","second","third"});
-			showMessage(answer);
+			
 		}
 	}
 	
@@ -133,6 +142,19 @@ class Area extends Presenter {
 	
 	////////////////////////////////////////////////////////////////////////////////////
 	
+	public void gotFocus()
+	{
+		new Thread(){
+			public void run()
+			{
+				for(Tile t:tiles)
+				{
+					if(t.isDoor()) Area.named(t.targetMap());
+				}
+			}
+		}.start();
+	}
+	
 	private Area(File f) throws Exception
 	{
 		Node mapNode = Node.parseFrom(new FileInputStream(f));
@@ -145,16 +167,6 @@ class Area extends Presenter {
 		if(tiles.size()==0) throw new Exception();
 
 		System.out.println("Loaded Area: "+name);
-		
-		new Thread(){
-			public void run()
-			{
-				for(Tile t:tiles)
-				{
-					if(t.isDoor()) Area.named(t.targetMap());
-				}
-			}
-		}.start();
 	}
 	
 	/**

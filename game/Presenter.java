@@ -17,6 +17,9 @@ abstract class Presenter {
 		game.enterPresenter(newPresenter);
 	}
 	
+	public void gotFocus(){}
+	public void lostFocus(){}
+	
 	public boolean isDown(Button b)
 	{
 		return game.isDown(b);

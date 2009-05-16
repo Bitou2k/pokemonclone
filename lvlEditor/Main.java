@@ -258,7 +258,7 @@ class Main extends JFrame implements ActionListener, ItemListener  {
 	
 	String getFile(String prompt)
 	{
-		JFileChooser chooser = new JFileChooser("./");
+		JFileChooser chooser = new JFileChooser("./areas/");
 
 		if(chooser.showDialog(this, prompt ) == JFileChooser.APPROVE_OPTION)
 			return chooser.getSelectedFile().toString();
