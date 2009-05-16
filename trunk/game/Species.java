@@ -47,7 +47,11 @@ class Species {
 	public List<TM> learnableTMs(){return tms;}
 	public List<HM> learnableHMs(){return hms;}
 	
+	public boolean canLearnTM(TM t){return tms.contains(t);}
+	public boolean canLearnHM(HM h){return hms.contains(h);}
+	
 	public Species firstForm(){return null;}
+	public Species finalForm(){return null;}
 	
 	/**
 	*Returns a dictionary of MOVELEARN==>LEVELLEARNED.
