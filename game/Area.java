@@ -41,7 +41,7 @@ class Area extends Presenter {
 		if(next.isObstacle() && !next.target.isEmpty()) 
 			showMessage(next.target);
 		else
-			{
+		{
 			if(next.isCliff())
 			{
 				return;
