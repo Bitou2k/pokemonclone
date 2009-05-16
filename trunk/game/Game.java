@@ -38,8 +38,10 @@ class Game extends JComponent implements KeyListener {
 	}
 	
 	public void enterPresenter(Presenter p){
+		if(currentPresenter!=null) currentPresenter.lostFocus();
 		currentPresenter = p;
 		p.initGame(this);
+		p.gotFocus();
 		repaint();
 	}
 	
@@ -88,6 +90,8 @@ class Game extends JComponent implements KeyListener {
 		if(e.getKeyCode()==KeyEvent.VK_LEFT) return Button.LEFT;
 		if(e.getKeyCode()==KeyEvent.VK_RIGHT) return Button.RIGHT;
 		if(e.getKeyCode()==KeyEvent.VK_Q) return Button.START;
+		if(e.getKeyCode()==KeyEvent.VK_SHIFT) return Button.START;
+		if(e.getKeyCode()==KeyEvent.VK_S) return Button.START;
 		
 		return null;
 	}
@@ -108,6 +112,6 @@ class Game extends JComponent implements KeyListener {
 		f.setVisible(true);
 		
 		Area.named("route01");
-		StartPresenter.loading=false;
+		Area.named("saffron");
 	}
 }

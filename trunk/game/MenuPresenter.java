@@ -38,13 +38,16 @@ public class MenuPresenter extends Presenter {
 				longest = x;
 				
 		choice = choices[selected];
+		
+		int height = choices.length * 30;
+		if(bottomy-height<0) bottomy = height;
 	}
 	
 	
 	public void drawOn(Graphics2D g){
 		behide.drawOn(g);
 		
-		int width = longest.length() * 20 + 20;
+		int width = longest.length() * 18 + 20;
 		int height = choices.length * 30;
 			
 		g.setColor(Color.WHITE);

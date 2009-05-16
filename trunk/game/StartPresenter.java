@@ -10,8 +10,6 @@ class StartPresenter extends Presenter {
 	private List<Species> ss = Species.all();
 	private Species s = ss.get(0);
 	
-	static boolean loading=true;
-	
 	public void drawOn(Graphics2D g){	
 		g.setColor(Color.WHITE);
 		g.fillRect(0,0,16*20,16*18);
@@ -33,16 +31,17 @@ class StartPresenter extends Presenter {
 		g.drawString("Andrew Siegle",0,170);
 		g.drawString("Joe Maguire",0,180);
 
-		if(loading) g.drawString("Loading maps...",0,200);
+		
 	}
 	
-	public void buttonPressed(Button b){
-	
-		if(loading) return;
+	public void buttonPressed(Button b)
+	{
 		
-		Area a = Area.named("route01");
+		String agoto = showMenu("Start where?",new String[]{"pallet","saffron"});
+		
+		Area a = Area.named(agoto);
 		Player p = player();
-		a.tileAt(5,5).entity(p);
+		a.tileAt(7,7).entity(p);
 		enterPresenter(a);
 	}
 	
