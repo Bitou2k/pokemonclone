@@ -37,11 +37,13 @@ class StartPresenter extends Presenter {
 	public void buttonPressed(Button b)
 	{
 		
-		String agoto = showMenu("Start where?",new String[]{"pallet","saffron"});
+		String agoto = showMenu(new String[]{"pallet","saffron","fuchsia"});
 		
 		Area a = Area.named(agoto);
-		Player p = player();
-		a.tileAt(7,7).entity(p);
+		
+		if(agoto.equals("pallet")) a.tileAt(7,7).entity(player());
+		if(agoto.equals("saffron")) a.tileAt(7,7).entity(player());
+		if(agoto.equals("fuchsia")) a.tileAt(19,30).entity(player());
 		enterPresenter(a);
 	}
 	
