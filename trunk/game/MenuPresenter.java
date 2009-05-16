@@ -72,13 +72,13 @@ public class MenuPresenter extends Presenter {
 		if(b==Button.UP)
 		{
 			selected--;
-			if(selected<0) selected=0;
+			if(selected<0) selected=choices.length-1;
 			choice = choices[selected];
 		}
 		else if(b==Button.DOWN)
 		{
 			selected++;
-			if(selected>=choices.length) selected=choices.length-1;
+			if(selected>=choices.length) selected=0;
 			choice = choices[selected];
 		}
 		else if(b==Button.A)
