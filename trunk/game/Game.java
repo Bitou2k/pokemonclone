@@ -66,8 +66,11 @@ class Game extends JComponent implements KeyListener {
 		bs.put(b,true);
 		new Thread(){
 			public void run(){
-				currentPresenter.buttonPressed(b);
-				repaint();
+				synchronized(currentPresenter)
+				{
+					currentPresenter.buttonPressed(b);
+					repaint();
+				}
 			}
 		}.start();
 	}

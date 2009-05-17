@@ -37,7 +37,7 @@ class StartPresenter extends Presenter {
 	public void buttonPressed(Button b)
 	{
 		
-		String agoto = showMenu(new String[]{"pallet","saffron","fuchsia"});
+		String agoto = showMenu("Start where?",new String[]{"pallet","saffron","fuchsia"});
 		
 		Area a = Area.named(agoto);
 		
