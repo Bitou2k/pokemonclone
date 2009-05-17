@@ -1,6 +1,6 @@
 <note>pokemon should be added in reverse order so the forward references of evolution don't point to as-yet-unloaded pokemon</note>
 <pokemon>
-	<number>151</number>
+	<number>151</number><generation>1</generation>
 	<name>Mew</name>
 	<image32>./pokemon/icons32/icon151.gif</image32>
 	<image80>./pokemon/icons80/mew.png</image80>
@@ -42,7 +42,7 @@
 </pokemon>
 
 <pokemon>
-	<number>150</number>
+	<number>150</number><generation>1</generation>
 	<name>Mewtwo</name>
 	<image32>./pokemon/icons32/icon150.gif</image32>
 	<image80>./pokemon/icons80/mewtwo.png</image80>
@@ -96,7 +96,7 @@
 </pokemon>
 
 <pokemon>
-	<number>149</number>
+	<number>149</number><generation>1</generation>
 	<name>Dragonite</name>
 	<image32>./pokemon/icons32/icon149.gif</image32>
 	<image80>./pokemon/icons80/dragonite.png</image80>
@@ -146,7 +146,7 @@
 </pokemon>
 
 <pokemon>
-	<number>148</number>
+	<number>148</number><generation>1</generation>
 	<name>Dragonair</name>
 	<image32>./pokemon/icons32/icon148.gif</image32>
 	<image80>./pokemon/icons80/dragonair.png</image80>
@@ -200,7 +200,7 @@
 </pokemon>
 
 <pokemon>
-	<number>147</number>
+	<number>147</number><generation>1</generation>
 	<name>Dratini</name>
 	<image32>./pokemon/icons32/icon147.gif</image32>
 	<image80>./pokemon/icons80/dratini.png</image80>
@@ -254,7 +254,7 @@
 </pokemon>
 
 <pokemon>
-	<number>146</number>
+	<number>146</number><generation>1</generation>
 	<name>Moltres</name>
 	<image32>./pokemon/icons32/icon146.gif</image32>
 	<image80>./pokemon/icons80/moltres.png</image80>
@@ -296,7 +296,7 @@
 </pokemon>
 
 <pokemon>
-	<number>145</number>
+	<number>145</number><generation>1</generation>
 	<name>Zapdos</name>
 	<image32>./pokemon/icons32/icon145.gif</image32>
 	<image80>./pokemon/icons80/zapdos.png</image80>
@@ -338,7 +338,7 @@
 </pokemon>
 
 <pokemon>
-	<number>144</number>
+	<number>144</number><generation>1</generation>
 	<name>Articuno</name>
 	<image32>./pokemon/icons32/icon144.gif</image32>
 	<image80>./pokemon/icons80/articuno.png</image80>
@@ -380,7 +380,7 @@
 </pokemon>
 
 <pokemon>
-	<number>143</number>
+	<number>143</number><generation>1</generation>
 	<name>Snorlax</name>
 	<image32>./pokemon/icons32/icon143.gif</image32>
 	<image80>./pokemon/icons80/snorlax.png</image80>
@@ -430,7 +430,7 @@
 </pokemon>
 
 <pokemon>
-	<number>142</number>
+	<number>142</number><generation>1</generation>
 	<name>Aerodactyl</name>
 	<image32>./pokemon/icons32/icon142.gif</image32>
 	<image80>./pokemon/icons80/aerodactyl.png</image80>
@@ -476,7 +476,7 @@
 </pokemon>
 
 <pokemon>
-	<number>141</number>
+	<number>141</number><generation>1</generation>
 	<name>Kabutops</name>
 	<image32>./pokemon/icons32/icon141.gif</image32>
 	<image80>./pokemon/icons80/kabutops.png</image80>
@@ -522,7 +522,7 @@
 </pokemon>
 
 <pokemon>
-	<number>140</number>
+	<number>140</number><generation>1</generation>
 	<name>Kabuto</name>
 	<image32>./pokemon/icons32/icon140.gif</image32>
 	<image80>./pokemon/icons80/kabuto.png</image80>
@@ -572,7 +572,7 @@
 </pokemon>
 
 <pokemon>
-	<number>139</number>
+	<number>139</number><generation>1</generation>
 	<name>Omastar</name>
 	<image32>./pokemon/icons32/icon139.gif</image32>
 	<image80>./pokemon/icons80/omastar.png</image80>
@@ -618,7 +618,7 @@
 </pokemon>
 
 <pokemon>
-	<number>138</number>
+	<number>138</number><generation>1</generation>
 	<name>Omanyte</name>
 	<image32>./pokemon/icons32/icon138.gif</image32>
 	<image80>./pokemon/icons80/omanyte.png</image80>
@@ -668,7 +668,7 @@
 </pokemon>
 
 <pokemon>
-	<number>137</number>
+	<number>137</number><generation>1</generation>
 	<name>Porygon</name>
 	<image32>./pokemon/icons32/icon137.gif</image32>
 	<image80>./pokemon/icons80/porygon.png</image80>
@@ -718,7 +718,7 @@
 </pokemon>
 
 <pokemon>
-	<number>136</number>
+	<number>136</number><generation>1</generation>
 	<name>Flareon</name>
 	<image32>./pokemon/icons32/icon136.gif</image32>
 	<image80>./pokemon/icons80/flareon.png</image80>
@@ -780,7 +780,7 @@
 </pokemon>
 
 <pokemon>
-	<number>135</number>
+	<number>135</number><generation>1</generation>
 	<name>Jolteon</name>
 	<image32>./pokemon/icons32/icon135.gif</image32>
 	<image80>./pokemon/icons80/jolteon.png</image80>
@@ -846,7 +846,7 @@
 </pokemon>
 
 <pokemon>
-	<number>134</number>
+	<number>134</number><generation>1</generation>
 	<name>Vaporeon</name>
 	<image32>./pokemon/icons32/icon134.gif</image32>
 	<image80>./pokemon/icons80/vaporeon.png</image80>
@@ -908,7 +908,7 @@
 </pokemon>
 
 <pokemon>
-	<number>133</number>
+	<number>133</number><generation>1</generation>
 	<name>Eevee</name>
 	<image32>./pokemon/icons32/icon133.gif</image32>
 	<image80>./pokemon/icons80/eevee.png</image80>
@@ -966,7 +966,7 @@
 </pokemon>
 
 <pokemon>
-	<number>132</number>
+	<number>132</number><generation>1</generation>
 	<name>Ditto</name>
 	<image32>./pokemon/icons32/icon132.gif</image32>
 	<image80>./pokemon/icons80/ditto.png</image80>
@@ -992,7 +992,7 @@
 </pokemon>
 
 <pokemon>
-	<number>131</number>
+	<number>131</number><generation>1</generation>
 	<name>Lapras</name>
 	<image32>./pokemon/icons32/icon131.gif</image32>
 	<image80>./pokemon/icons80/lapras.png</image80>
@@ -1046,7 +1046,7 @@
 </pokemon>
 
 <pokemon>
-	<number>130</number>
+	<number>130</number><generation>1</generation>
 	<name>Gyarados</name>
 	<image32>./pokemon/icons32/icon130.gif</image32>
 	<image80>./pokemon/icons80/gyarados.png</image80>
@@ -1096,7 +1096,7 @@
 </pokemon>
 
 <pokemon>
-	<number>129</number>
+	<number>129</number><generation>1</generation>
 	<name>Magikarp</name>
 	<image32>./pokemon/icons32/icon129.gif</image32>
 	<image80>./pokemon/icons80/magikarp.png</image80>
@@ -1130,7 +1130,7 @@
 </pokemon>
 
 <pokemon>
-	<number>128</number>
+	<number>128</number><generation>1</generation>
 	<name>Tauros</name>
 	<image32>./pokemon/icons32/icon128.gif</image32>
 	<image80>./pokemon/icons80/tauros.png</image80>
@@ -1176,7 +1176,7 @@
 </pokemon>
 
 <pokemon>
-	<number>127</number>
+	<number>127</number><generation>1</generation>
 	<name>Pinsir</name>
 	<image32>./pokemon/icons32/icon127.gif</image32>
 	<image80>./pokemon/icons80/pinsir.png</image80>
@@ -1226,7 +1226,7 @@
 </pokemon>
 
 <pokemon>
-	<number>126</number>
+	<number>126</number><generation>1</generation>
 	<name>Magmar</name>
 	<image32>./pokemon/icons32/icon126.gif</image32>
 	<image80>./pokemon/icons80/magmar.png</image80>
@@ -1276,7 +1276,7 @@
 </pokemon>
 
 <pokemon>
-	<number>125</number>
+	<number>125</number><generation>1</generation>
 	<name>Electabuzz</name>
 	<image32>./pokemon/icons32/icon125.gif</image32>
 	<image80>./pokemon/icons80/electabuzz.png</image80>
@@ -1326,7 +1326,7 @@
 </pokemon>
 
 <pokemon>
-	<number>100</number>
+	<number>100</number><generation>1</generation>
 	<name>Voltorb</name>
 	<image32>./pokemon/icons32/icon100.gif</image32>
 	<image80>./pokemon/icons80/voltorb.png</image80>
@@ -1384,7 +1384,7 @@
 </pokemon>
 
 <pokemon>
-	<number>99</number>
+	<number>99</number><generation>1</generation>
 	<name>Kingler</name>
 	<image32>./pokemon/icons32/icon099.gif</image32>
 	<image80>./pokemon/icons80/kingler.png</image80>
@@ -1442,7 +1442,7 @@
 </pokemon>
 
 <pokemon>
-	<number>98</number>
+	<number>98</number><generation>1</generation>
 	<name>Krabby</name>
 	<image32>./pokemon/icons32/icon098.gif</image32>
 	<image80>./pokemon/icons80/krabby.png</image80>
@@ -1500,7 +1500,7 @@
 </pokemon>
 
 <pokemon>
-	<number>97</number>
+	<number>97</number><generation>1</generation>
 	<name>Hypno</name>
 	<image32>./pokemon/icons32/icon097.gif</image32>
 	<image80>./pokemon/icons80/hypno.png</image80>
@@ -1558,7 +1558,7 @@
 </pokemon>
 
 <pokemon>
-	<number>96</number>
+	<number>96</number><generation>1</generation>
 	<name>Drowzee</name>
 	<image32>./pokemon/icons32/icon096.gif</image32>
 	<image80>./pokemon/icons80/drowzee.png</image80>
@@ -1620,7 +1620,7 @@
 </pokemon>
 
 <pokemon>
-	<number>95</number>
+	<number>95</number><generation>1</generation>
 	<name>Onix</name>
 	<image32>./pokemon/icons32/icon095.gif</image32>
 	<image80>./pokemon/icons80/onix.png</image80>
@@ -1679,7 +1679,7 @@
 </pokemon>
 
 <pokemon>
-	<number>94</number>
+	<number>94</number><generation>1</generation>
 	<name>Gengar</name>
 	<image32>./pokemon/icons32/icon094.gif</image32>
 	<image80>./pokemon/icons80/gengar.png</image80>
@@ -1730,7 +1730,7 @@
 </pokemon>
 
 <pokemon>
-	<number>93</number>
+	<number>93</number><generation>1</generation>
 	<name>Haunter</name>
 	<image32>./pokemon/icons32/icon093.gif</image32>
 	<image80>./pokemon/icons80/haunter.png</image80>
@@ -1781,7 +1781,7 @@
 </pokemon>
 
 <pokemon>
-	<number>92</number>
+	<number>92</number><generation>1</generation>
 	<name>Gastly</name>
 	<image32>./pokemon/icons32/icon092.gif</image32>
 	<image80>./pokemon/icons80/gastly.png</image80>
@@ -1832,7 +1832,7 @@
 </pokemon>
 
 <pokemon>
-	<number>91</number>
+	<number>91</number><generation>1</generation>
 	<name>Cloyster</name>
 	<image32>./pokemon/icons32/icon091.gif</image32>
 	<image80>./pokemon/icons80/cloyster.png</image80>
@@ -1895,7 +1895,7 @@
 </pokemon>
 
 <pokemon>
-	<number>90</number>
+	<number>90</number><generation>1</generation>
 	<name>Shellder</name>
 	<image32>./pokemon/icons32/icon090.gif</image32>
 	<image80>./pokemon/icons80/shellder.png</image80>
@@ -1954,7 +1954,7 @@
 </pokemon>
 
 <pokemon>
-	<number>89</number>
+	<number>89</number><generation>1</generation>
 	<name>Muk</name>
 	<image32>./pokemon/icons32/icon089.gif</image32>
 	<image80>./pokemon/icons80/muk.png</image80>
@@ -2017,7 +2017,7 @@
 </pokemon>
 
 <pokemon>
-	<number>88</number>
+	<number>88</number><generation>1</generation>
 	<name>Grimer</name>
 	<image32>./pokemon/icons32/icon088.gif</image32>
 	<image80>./pokemon/icons80/grimer.png</image80>
@@ -2080,7 +2080,7 @@
 </pokemon>
 
 <pokemon>
-	<number>87</number>
+	<number>87</number><generation>1</generation>
 	<name>Dewgong</name>
 	<image32>./pokemon/icons32/icon087.gif</image32>
 	<image80>./pokemon/icons80/dewgong.png</image80>
@@ -2135,7 +2135,7 @@
 </pokemon>
 
 <pokemon>
-	<number>86</number>
+	<number>86</number><generation>1</generation>
 	<name>Seel</name>
 	<image32>./pokemon/icons32/icon086.gif</image32>
 	<image80>./pokemon/icons80/seel.png</image80>
@@ -2190,7 +2190,7 @@
 </pokemon>
 
 <pokemon>
-	<number>85</number>
+	<number>85</number><generation>1</generation>
 	<name>Dodrio</name>
 	<image32>./pokemon/icons32/icon085.gif</image32>
 	<image80>./pokemon/icons80/dodrio.png</image80>
@@ -2249,7 +2249,7 @@
 </pokemon>
 
 <pokemon>
-	<number>84</number>
+	<number>84</number><generation>1</generation>
 	<name>Doduo</name>
 	<image32>./pokemon/icons32/icon084.gif</image32>
 	<image80>./pokemon/icons80/doduo.png</image80>
@@ -2308,7 +2308,7 @@
 </pokemon>
 
 <pokemon>
-	<number>83</number>
+	<number>83</number><generation>1</generation>
 	<name>Farfetch'd</name>
 	<image32>./pokemon/icons32/icon083.gif</image32>
 	<image80>./pokemon/icons80/farfetchd.png</image80>
@@ -2367,7 +2367,7 @@
 </pokemon>
 
 <pokemon>
-	<number>82</number>
+	<number>82</number><generation>1</generation>
 	<name>Magneton</name>
 	<image32>./pokemon/icons32/icon082.gif</image32>
 	<image80>./pokemon/icons80/magneton.png</image80>
@@ -2426,7 +2426,7 @@
 </pokemon>
 
 <pokemon>
-	<number>81</number>
+	<number>81</number><generation>1</generation>
 	<name>Magnemite</name>
 	<image32>./pokemon/icons32/icon081.gif</image32>
 	<image80>./pokemon/icons80/magnemite.png</image80>
@@ -2485,7 +2485,7 @@
 </pokemon>
 
 <pokemon>
-	<number>80</number>
+	<number>80</number><generation>1</generation>
 	<name>Slowbro</name>
 	<image32>./pokemon/icons32/icon080.gif</image32>
 	<image80>./pokemon/icons80/slowbro.png</image80>
@@ -2548,7 +2548,7 @@
 </pokemon>
 
 <pokemon>
-	<number>79</number>
+	<number>79</number><generation>1</generation>
 	<name>Slowpoke</name>
 	<image32>./pokemon/icons32/icon079.gif</image32>
 	<image80>./pokemon/icons80/slowpoke.png</image80>
@@ -2607,7 +2607,7 @@
 </pokemon>
 
 <pokemon>
-	<number>78</number>
+	<number>78</number><generation>1</generation>
 	<name>Rapidash</name>
 	<image32>./pokemon/icons32/icon078.gif</image32>
 	<image80>./pokemon/icons80/rapidash.png</image80>
@@ -2666,7 +2666,7 @@
 </pokemon>
 
 <pokemon>
-	<number>77</number>
+	<number>77</number><generation>1</generation>
 	<name>Ponyta</name>
 	<image32>./pokemon/icons32/icon077.gif</image32>
 	<image80>./pokemon/icons80/ponyta.png</image80>
@@ -2722,7 +2722,7 @@
 </pokemon>
 
 <pokemon>
-	<number>76</number>
+	<number>76</number><generation>1</generation>
 	<name>Golem</name>
 	<image32>./pokemon/icons32/icon076.gif</image32>
 	<image80>./pokemon/icons80/golem.png</image80>
@@ -2782,7 +2782,7 @@
 </pokemon>
 
 <pokemon>
-	<number>28</number>
+	<number>28</number><generation>1</generation>
 	<name>Sandslash</name>
 	<description>Curls up into a spiny ball when threatened. It can roll while curled up to attack or escape.</description>
 	<image32>./pokemon/icons32/icon028.gif</image32>
@@ -2801,7 +2801,7 @@
 </pokemon>
 
 <pokemon>
-	<number>27</number>
+	<number>27</number><generation>1</generation>
 	<name>Sandshrew</name>
 	<description>Burrows deep underground in arid locations far from water. It only emerges to hunt for food.</description>
 	<image32>./pokemon/icons32/icon027.gif</image32>
@@ -2824,7 +2824,7 @@
 </pokemon>
 
 <pokemon>
-	<number>26</number>
+	<number>26</number><generation>1</generation>
 	<name>Raichu</name>
 	<description>Its long tail serves as a ground to protect itself from its own high voltage power.</description>
 	<image32>./pokemon/icons32/icon026.gif</image32>
@@ -2843,7 +2843,7 @@
 </pokemon>
 
 <pokemon>
-	<number>25</number>
+	<number>25</number><generation>1</generation>
 	<name>Pikachu</name>
 	<description>When several of these POKÈMON gather, their electricity could build and cause lightning storms.</description>
 	<image32>./pokemon/icons32/icon025.gif</image32>
@@ -2866,7 +2866,7 @@
 </pokemon>
 
 <pokemon>
-	<number>24</number>
+	<number>24</number><generation>1</generation>
 	<name>Arbok</name>
 	<description>It is rumored that the ferocious warning markings on its belly differ from area to area.</description>
 	<image32>./pokemon/icons32/icon024.gif</image32>
@@ -2885,7 +2885,7 @@
 </pokemon>
 
 <pokemon>
-	<number>23</number>
+	<number>23</number><generation>1</generation>
 	<name>Ekans</name>
 	<description>Moves silently and stealthily. Eats the eggs of birds, such as PIDGEY and SPEAROW, whole.</description>
 	<image32>./pokemon/icons32/icon023.gif</image32>
@@ -2909,7 +2909,7 @@
 
 
 <pokemon>
-	<number>22</number>
+	<number>22</number><generation>1</generation>
 	<name>Fearow</name>
 	<description>With its huge and magnificent wings, it can keep aloft without ever having to land for rest.</description>
 	<image32>./pokemon/icons32/icon022.gif</image32>
@@ -2928,7 +2928,7 @@
 </pokemon>
 
 <pokemon>
-	<number>21</number>
+	<number>21</number><generation>1</generation>
 	<name>Spearow</name>
 	<description>Eats bugs in grassy areas. It has to flap its short wings at high speed to stay airborne.</description>
 	<image32>./pokemon/icons32/icon021.gif</image32>
@@ -2951,7 +2951,7 @@
 </pokemon>
 
 <pokemon>
-	<number>20</number>
+	<number>20</number><generation>1</generation>
 	<name>Raticate</name>
 	<description>It uses its whiskers to maintain its balance. It apparently slows down if they are cut off.</description>
 	<image32>./pokemon/icons32/icon020.gif</image32>
@@ -2969,7 +2969,7 @@
 	<speed>97</speed>
 </pokemon>
 <pokemon>
-	<number>19</number>
+	<number>19</number><generation>1</generation>
 	<name>Rattata</name>
 	<description>Bites anything when it attacks. Small and very quick, it is a common sight in many places.</description>
 	<image32>./pokemon/icons32/icon019.gif</image32>
@@ -2992,7 +2992,7 @@
 	</evolution>
 </pokemon>
 <pokemon>
-	<number>18</number>
+	<number>18</number><generation>1</generation>
 	<name>Pidgeot</name>
 	<description>When hunting, it skims the surface of water at high speed to pick off unwary prey such as MAGIKARP.</description>
 	<image32>./pokemon/icons32/icon018.gif</image32>
@@ -3011,7 +3011,7 @@
 </pokemon>
 
 <pokemon>
-	<number>17</number>
+	<number>17</number><generation>1</generation>
 	<name>Pidgeotto</name>
 	<description>Very protective of its sprawling territorial area, this POKÈMON will fiercely peck at any intruder.</description>
 	<image32>./pokemon/icons32/icon017.gif</image32>
@@ -3034,7 +3034,7 @@
 </pokemon>
 
 <pokemon>
-	<number>16</number>
+	<number>16</number><generation>1</generation>
 	<name>Pidgey</name>
 	<description>A common sight in forests and woods. It flaps its wings at ground level to kick up blinding sand.</description>
 	<image32>./pokemon/icons32/icon016.gif</image32>
@@ -3057,7 +3057,7 @@
 	</evolution>
 </pokemon>
 <pokemon>
-	<number>15</number>
+	<number>15</number><generation>1</generation>
 	<name>Beedrill</name>
 	<description>Flies at high speed and attacks using its large venomous stingers on its forelegs and tail.</description>
 	<image32>./pokemon/icons32/icon015.gif</image32>
@@ -3076,7 +3076,7 @@
 </pokemon>
 
 <pokemon>
-	<number>14</number>
+	<number>14</number><generation>1</generation>
 	<name>Kakuna</name>
 	<description>Almost incapable of moving, this POKÈMON can only harden its shell to protect itself from predators.</description>
 	<image32>./pokemon/icons32/icon014.gif</image32>
@@ -3099,7 +3099,7 @@
 </pokemon>
 
 <pokemon>
-	<number>13</number>
+	<number>13</number><generation>1</generation>
 	<name>Weedle</name>
 	<description>Often found in forests, eating leaves. It has a sharp venomous stinger on its head.</description>
 	<image32>./pokemon/icons32/icon013.gif</image32>
@@ -3122,7 +3122,7 @@
 </pokemon>
 
 <pokemon>
-	<number>12</number>
+	<number>12</number><generation>1</generation>
 	<name>Butterfree</name>
 	<description>In battle, it flaps its wings at high speed to release highly toxic dust into the air.</description>
 	<image32>./pokemon/icons32/icon012.gif</image32>
@@ -3141,7 +3141,7 @@
 </pokemon>
 
 <pokemon>
-	<number>11</number>
+	<number>11</number><generation>1</generation>
 	<name>Metapod</name>
 	<description>This POKÈMON is vulnerable to attack while its shell is soft, exposing its weak and tender body.</description>
 	<image32>./pokemon/icons32/icon011.gif</image32>
@@ -3164,7 +3164,7 @@
 </pokemon>
 
 <pokemon>
-	<number>10</number>
+	<number>10</number><generation>1</generation>
 	<name>Caterpie</name>
 	<description>Its short feet are tipped with suction pads that enable it to tirelessly climb slopes and walls.</description>
 	<image32>./pokemon/icons32/icon010.gif</image32>
@@ -3187,7 +3187,7 @@
 </pokemon>
 
 <pokemon>
-	<number>9</number>
+	<number>9</number><generation>1</generation>
 	<name>Blastoise</name>
 	<description>A brutal POKÈMON with pressurized water jets on its shell. They are used for high speed tackles.</description>
 	<image32>./pokemon/icons32/icon009.gif</image32>
@@ -3205,7 +3205,7 @@
 </pokemon>
 
 <pokemon>
-	<number>8</number>
+	<number>8</number><generation>1</generation>
 	<name>Wartortle</name>
 	<description>Often hides in water to stalk unwary prey. For swimming fast, it moves its ears to maintain balance.</description>
 	<image32>./pokemon/icons32/icon008.gif</image32>
@@ -3227,7 +3227,7 @@
 </pokemon>
 
 <pokemon>
-	<number>7</number>
+	<number>7</number><generation>1</generation>
 	<name>Squirtle</name>
 	<description>After birth, its back swells and hardens into a shell. Powerfully sprays foam from its mouth.</description>
 	<image32>./pokemon/icons32/icon007.gif</image32>
@@ -3249,7 +3249,7 @@
 </pokemon>
 
 <pokemon>
-	<number>6</number>
+	<number>6</number><generation>1</generation>
 	<name>Charizard</name>
 	<description>Spits fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.</description>
 	<image32>./pokemon/icons32/icon006.gif</image32>
@@ -3267,7 +3267,7 @@
 </pokemon>
 
 <pokemon>
-	<number>5</number>
+	<number>5</number><generation>1</generation>
 	<name>Charmeleon</name>
 	<description>When it swings its burning tail, it elevates the temperature to unbearably high levels</description>
 	<image32>./pokemon/icons32/icon005.gif</image32>
@@ -3296,7 +3296,7 @@
 </pokemon>
 
 <pokemon>
-	<number>4</number>
+	<number>4</number><generation>1</generation>
 	<name>Charmander</name>
 	<description>Obviously prefers hot places. When it rains, steam is said to spout from the tip of its tail.</description>
 	<image32>./pokemon/icons32/icon004.gif</image32>
@@ -3318,7 +3318,7 @@
 </pokemon>
 
 <pokemon>
-	<number>3</number>
+	<number>3</number><generation>1</generation>
 	<name>Venusaur</name>
 	<image32>./pokemon/icons32/icon003.gif</image32>
 	<image80>./pokemon/icons80/venusaur.png</image80>
@@ -3336,7 +3336,7 @@
 </pokemon>
 
 <pokemon>
-	<number>2</number>
+	<number>2</number><generation>1</generation>
 	<name>Ivysaur</name>
 	<image32>./pokemon/icons32/icon002.gif</image32>
 	<image80>./pokemon/icons80/ivysaur.png</image80>
@@ -3395,7 +3395,7 @@
 	</moves>
 </pokemon>
 <pokemon>
-	<number>1</number>
+	<number>1</number><generation>1</generation>
 	<name>Bulbasaur</name>
 	<image32>./pokemon/icons32/icon001.gif</image32>
 	<image80>./pokemon/icons80/bulbasaur.png</image80>
