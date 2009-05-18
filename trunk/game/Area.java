@@ -158,8 +158,8 @@ class Area extends Presenter {
 		
 		
 		//make the player the center
-		int yf = (player.d==Direction.NORTH || player.d==Direction.SOUTH && player.inStride() ? -8 : 0);
-		int xf = (player.d==Direction.EAST || player.d==Direction.WEST && player.inStride() ? 8 : 0);
+		int yf = (player.direction()==Direction.NORTH || player.direction()==Direction.SOUTH && player.inStride() ? -8 : 0);
+		int xf = (player.direction()==Direction.EAST || player.direction()==Direction.WEST && player.inStride() ? 8 : 0);
 		
 		g.translate( (player.tile().x-10)*-16-xf, (player.tile().y-10)*-16-yf);
 

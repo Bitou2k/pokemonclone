@@ -13,11 +13,13 @@ public class Player extends Battler {
 
 	String name = "Ash";
 	List<Pokemon> party;
-	List<Item> pack;
+	Pack pack = new Pack();
 	Pokedex pokedex = new Pokedex();
 
-	Direction d  = Direction.NORTH;
-
+	private Direction d  = Direction.NORTH;
+	public void direction(Direction d){	this.d = d;	}
+	public Direction direction(){ return d; }
+	
 	int stride=0; //2, 1, or 0
 	
 	ImageIcon ii = new ImageIcon("./entityImages/Player Front.png");
@@ -70,6 +72,4 @@ public class Player extends Battler {
 		return null;//error!
 	}
 	
-	public void direction(Direction d){	this.d = d;	}
-	public Direction direction(){ return d; }
 }
