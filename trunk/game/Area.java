@@ -113,7 +113,7 @@ class Area extends Presenter {
 	
 	void doDebugMenu()
 	{
-		String x = showMenu(new String[]{"CliffsOn ("+cliffsOn+")","GrassOn ("+grassOn+")","Teleport","Trigger Wild","Cancel"});
+		String x = showMenu(new String[]{"CliffsOn ("+cliffsOn+")","GrassOn ("+grassOn+")","Zoom ("+zoom+")","Teleport","Trigger Wild","Cancel"});
 		
 		if(x.startsWith("Cliffs")){
 			cliffsOn = !cliffsOn;
@@ -122,6 +122,10 @@ class Area extends Presenter {
 		else if(x.startsWith("Grass")){
 			grassOn = !grassOn;
 			showMessage("Now "+grassOn);
+		}
+		else if(x.startsWith("Zoom")){
+			zoom = !zoom;
+			showMessage("Now "+zoom);
 		}
 		else if(x.equals("Teleport")) {
 		
@@ -145,11 +149,14 @@ class Area extends Presenter {
 		
 	}
 	
+	static boolean zoom=false;
+	
 	/**
 	 *Draw black background, center the player, then draw each tile.
 	 */
 	public void drawOn(Graphics2D g)
 	{
+		if(zoom)g.scale(2.0,2.0);
 		Player player = player();
 		
 		//fill background with black
@@ -158,16 +165,22 @@ class Area extends Presenter {
 		
 		
 		//make the player the center
-		int yf = (player.direction()==Direction.NORTH || player.direction()==Direction.SOUTH && player.inStride() ? -8 : 0);
-		int xf = (player.direction()==Direction.EAST || player.direction()==Direction.WEST && player.inStride() ? 8 : 0);
+		int yf = ((player.direction()==Direction.NORTH || player.direction()==Direction.SOUTH && player.inStride()) ? -8 : 0);
+		int xf = ((player.direction()==Direction.EAST || player.direction()==Direction.WEST && player.inStride()) ? 8 : 0);
+		yf=xf=0;
 		
-		g.translate( (player.tile().x-10)*-16-xf, (player.tile().y-10)*-16-yf);
+		int cx = (zoom ? 4 : 10 );
+		int cy = (zoom ? 4 : 10 );
+		
+		g.translate( (player.tile().x-cx)*-16-xf, (player.tile().y-cy)*-16-yf);
 
 		//draw each tile
 		for(Tile t:tiles) t.drawSelfOn(g);
 		for(Tile t:tiles) t.drawEntityOn(g);
 		
-		g.translate( -((player.tile().x-10)*-16-xf), -((player.tile().y-10)*-16-yf));
+		g.translate( -((player.tile().x-cx)*-16-xf), -((player.tile().y-cy)*-16-yf));
+		
+		if(zoom)g.scale(0.5,0.5);
 	}
 	
 	/**
