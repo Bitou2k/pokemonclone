@@ -61,10 +61,21 @@ public class MenuPresenter extends Presenter {
 
 		g.setColor(Color.BLACK);
 		g.setFont(new java.awt.Font("Courier New",java.awt.Font.BOLD,25));
-		for(int i=0; i<choices.length; i++){
-			g.drawString( choices[i],bottomx-width+20,bottomy-height+22+30*i);
+		
+		int off = 0;
+		if(choices.length>9){
+			off = selected-4;
 		}
-			g.drawString( ">",bottomx-width+4,bottomy-height+22+30*selected);	
+		
+		
+		for(int i=0; i<choices.length && i<10; i++){
+			int pull = i+off;
+			if(pull<0) pull = pull + choices.length;
+			if(pull>=choices.length) pull = pull - choices.length;
+			
+			g.drawString( choices[pull],bottomx-width+20,bottomy-height+22+30*i);
+		}
+		g.drawString( ">",bottomx-width+4,bottomy-height+22+30*(selected-off));	
 	}
 	
 	public void buttonPressed(Button b){

@@ -45,6 +45,15 @@ class Tile {
 		return null;
 	}
 	
+	Direction cliffDirection()
+	{
+		String x = target.toUpperCase();
+		if(x.equals("N")||x.equals("NORTH"))return Direction.NORTH;
+		if(x.equals("S")||x.equals("SOUTH"))return Direction.SOUTH;
+		if(x.equals("E")||x.equals("EAST"))return Direction.EAST;
+		if(x.equals("W")||x.equals("WEST"))return Direction.WEST;
+		return null;
+	}
 	String targetMap()
 	{
 		return target.substring(0,target.indexOf(":"));
