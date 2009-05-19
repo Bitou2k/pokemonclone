@@ -22,7 +22,7 @@ To sort out the confusion, everyone should put +'s before maps that are finished
 
 + 10. Cerulean City (Keegan)
 
-- 11. Routes 24 & 25 (24 is done) (Nickwest)
++ 11. Routes 24 & 25 (Nickwest)
 
   12. Routes 5 & 6(Steve)
 
