@@ -91,3 +91,10 @@ step()
 buttonPressed(Button b)
 	B button backs out
 </code>
+
+_
+<code>
+*Jon Borgetti*
+Item Class
+</code>
+_
