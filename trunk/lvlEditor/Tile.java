@@ -5,7 +5,7 @@ import game.Node;
 import java.util.*;
 import java.awt.*;
 import javax.swing.*;
-//asdoifjaosidjf
+
 public class Tile{
 	private ImageIcon image;
 	private String imageName="";
@@ -47,6 +47,10 @@ public class Tile{
 		type = "obstacle";// and they should be obstacles
 	}
 	
+
+//HAY GUYS
+
+
 	public Node asNode()
 	{
 		Node tileNode = new Node("tile");
