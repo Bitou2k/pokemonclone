@@ -47,6 +47,37 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 </generator>
 
 <generator>
+	<name>route22Gen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Mankey</name>
+		<level>6</level>
+		<chance>0.20</chance>
+	</pokemon>
+	<pokemon>
+		<name>Rattata</name>
+		<level>6</level>
+		<chance>0.10</chance>
+	</pokemon>
+	<pokemon>
+		<name>NidoranF</name>
+		<level>6</level>
+		<chance>0.30</chance>
+	</pokemon>
+	<pokemon>
+		<name>NidoranM</name>
+		<level>5</level>
+		<chance>0.30</chance>
+	</pokemon>
+	<pokemon>
+		<name>Spearow</name>
+		<level>6</level>
+		<chance>0.10</chance>
+	</pokemon>
+
+</generator>
+
+<generator>
 	<name>route02Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -272,4 +303,277 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 	</pokemon>
 
 </generator>
+<generator>
+	<name>route25Gen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Pidgey</name>
+		<level>12</level>
+		<chance>0.30</chance>
+	</pokemon>
+	<pokemon>
+		<name>Pidgeotto</name>
+		<level>14</level>
+		<chance>0.02</chance>
+	</pokemon>
+	<pokemon>
+		<name>Oddish</name>
+		<level>11</level>
+		<chance>0.30</chance>
+	</pokemon>
+	<pokemon>
+		<name>Bellsprout</name>
+		<level>12</level>
+		<chance>0.30</chance>
+	</pokemon>
+	<pokemon>
+		<name>Venonat</name>
+		<level>11</level>
+		<chance>0.08</chance>
+	</pokemon>
 
+</generator>
+<generator>
+	<name>route05Gen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Pidgey</name>
+		<level>12</level>
+		<chance>0.30</chance>
+	</pokemon>
+	<pokemon>
+		<name>Pidgeotto</name>
+		<level>15</level>
+		<chance>0.02</chance>
+	</pokemon>
+	<pokemon>
+		<name>Oddish</name>
+		<level>12</level>
+		<chance>0.30</chance>
+	</pokemon>
+	<pokemon>
+		<name>Bellsprout</name>
+		<level>12</level>
+		<chance>0.30</chance>
+	</pokemon>
+	<pokemon>
+		<name>Venonat</name>
+		<level>12</level>
+		<chance>0.08</chance>
+	</pokemon>
+
+</generator>
+<generator>
+	<name>route06Gen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Pidgey</name>
+		<level>12</level>
+		<chance>0.30</chance>
+	</pokemon>
+	<pokemon>
+		<name>Pidgeotto</name>
+		<level>14</level>
+		<chance>0.02</chance>
+	</pokemon>
+	<pokemon>
+		<name>Oddish</name>
+		<level>11</level>
+		<chance>0.30</chance>
+	</pokemon>
+	<pokemon>
+		<name>Bellsprout</name>
+		<level>12</level>
+		<chance>0.30</chance>
+	</pokemon>
+	<pokemon>
+		<name>Venonat</name>
+		<level>11</level>
+		<chance>0.08</chance>
+	</pokemon>
+
+</generator>
+<generator>
+	<name>route11Gen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Drowzee</name>
+		<level>14</level>
+		<chance>0.25</chance>
+	</pokemon>
+	<pokemon>
+		<name>Pidgey</name>
+		<level>13</level>
+		<chance>0.35</chance>
+	</pokemon>
+	<pokemon>
+		<name>Pidgeotto</name>
+		<level>16</level>
+		<chance>0.05</chance>
+	</pokemon>
+	<pokemon>
+		<name>Rattata</name>
+		<level>13</level>
+		<chance>0.30</chance>
+	</pokemon>
+	<pokemon>
+		<name>Raticate</name>
+		<level>15</level>
+		<chance>0.05</chance>
+	</pokemon>
+
+</generator>
+<generator>
+	<name>route11Gen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Diglett</name>
+		<level>17</level>
+		<chance>0.95</chance>
+	</pokemon>
+	<pokemon>
+		<name>Dugtrio</name>
+		<level>19</level>
+		<chance>0.05</chance>
+	</pokemon>
+
+</generator>
+<generator>
+	<name>route09Gen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Spearow</name>
+		<level>16</level>
+		<chance>0.20</chance>
+	</pokemon>
+	<pokemon>
+		<name>Fearow</name>
+		<level>18</level>
+		<chance>0.04</chance>
+	</pokemon>
+	<pokemon>
+		<name>Rattata</name>
+		<level>14</level>
+		<chance>0.20</chance>
+	</pokemon>
+	<pokemon>
+		<name>Raticate</name>
+		<level>17</level>
+		<chance>0.08</chance>
+	</pokemon>
+	<pokemon>
+		<name>NidoranM</name>
+		<level>15</level>
+		<chance>0.16</chance>
+	</pokemon>
+	<pokemon>
+		<name>Nidorano</name>
+		<level>17</level>
+		<chance>0.08</chance>
+	</pokemon>
+	<pokemon>
+		<name>NidoranF</name>
+		<level>15</level>
+		<chance>0.16</chance>
+	</pokemon>
+	<pokemon>
+		<name>Nidorana</name>
+		<level>17</level>
+		<chance>0.08</chance>
+	</pokemon>
+
+</generator>
+<generator>
+	<name>route10Gen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Rattata</name>
+		<level>14</level>
+		<chance>0.20</chance>
+	</pokemon>
+	<pokemon>
+		<name>Raticate</name>
+		<level>17</level>
+		<chance>0.10</chance>
+	</pokemon>
+	<pokemon>
+		<name>NidoranM</name>
+		<level>15</level>
+		<chance>0.12</chance>
+	</pokemon>
+	<pokemon>
+		<name>NidoranF</name>
+		<level>15</level>
+		<chance>0.12</chance>
+	</pokemon>
+	<pokemon>
+		<name>Machop</name>
+		<level>18</level>
+		<chance>0.18</chance>
+	</pokemon>
+	<pokemon>
+		<name>Magnemite</name>
+		<level>17</level>
+		<chance>0.28</chance>
+	</pokemon>
+
+</generator>
+
+<generator>
+	<name>rocktunnelGen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Zubat</name>
+		<level>16</level>
+		<chance>0.50</chance>
+	</pokemon>
+	<pokemon>
+		<name>Geodude</name>
+		<level>17</level>
+		<chance>0.26</chance>
+	</pokemon>
+	<pokemon>
+		<name>Machop</name>
+		<level>18</level>
+		<chance>0.16</chance>
+	</pokemon>
+	<pokemon>
+		<name>Onix</name>
+		<level>17</level>
+		<chance>0.12</chance>
+	</pokemon>
+</generator>
+<generator>
+	<name>route08Gen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>pidgey</name>
+		<level>16</level>
+		<chance>0.30</chance>
+	</pokemon>
+	<pokemon>
+		<name>Pidgeotto</name>
+		<level>19</level>
+		<chance>0.26</chance>
+	</pokemon>
+	<pokemon>
+		<name>Rattata</name>
+		<level>16</level>
+		<chance>0.15</chance>
+	</pokemon>
+	<pokemon>
+		<name>Jigglypuff</name>
+		<level>20</level>
+		<chance>0.10</chance>
+	</pokemon>
+	<pokemon>
+		<name>Abra</name>
+		<level>18</level>
+		<chance>0.30</chance>
+	</pokemon>
+	<pokemon>
+		<name>Kadabra</name>
+		<level>20</level>
+		<chance>0.05</chance>
+	</pokemon>
+</generator>
