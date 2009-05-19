@@ -1,6 +1,8 @@
 <note>
 data from
 http://bulbapedia.bulbagarden.net/wiki/List_of_moves
+
+commenet!!!!
 </note>
 
 <move><number>1</number><name>Pound</name><type>Normal</type><category>Physical</category><contest>Tough</contest><pp>35</pp><power>40</power><accuracy>100%</accuracy></move>
