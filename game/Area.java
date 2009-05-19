@@ -108,10 +108,11 @@ class Area extends Presenter {
 		}
 	}
 	
-	static boolean cliffsOn = false;
-	static boolean grassOn = true;
-	
-	void doDebugMenu()
+	private static boolean cliffsOn = false;
+	private static boolean grassOn = true;
+	private static boolean zoom = false;
+
+	private void doDebugMenu()
 	{
 		String x = showMenu(new String[]{"CliffsOn ("+cliffsOn+")","GrassOn ("+grassOn+")","Zoom ("+zoom+")","Teleport","Trigger Wild","Cancel"});
 		
@@ -149,7 +150,7 @@ class Area extends Presenter {
 		
 	}
 	
-	static boolean zoom=false;
+	
 	
 	/**
 	 *Draw black background, center the player, then draw each tile.
