@@ -18,7 +18,7 @@ To sort out the confusion, everyone should put +'s before maps that are finished
 
    8. Mt. Moon (PJ)
 
-   9. Route 4 (Ryan Craine)
++  9. Route 4 (Ryan Craine) **Done, but we didn't have some of the tiles; I made do**
 
 + 10. Cerulean City (Keegan)
 
