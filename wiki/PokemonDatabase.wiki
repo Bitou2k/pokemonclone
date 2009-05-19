@@ -50,7 +50,7 @@ finished through: ?
 Committed to database, and working.
 
 100-125: Richard
-finished through: 118
+finished through: 112
 
 125-151: Broniek 
 Committed to database, and working.
