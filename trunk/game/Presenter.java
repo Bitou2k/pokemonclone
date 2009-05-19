@@ -9,6 +9,12 @@ abstract class Presenter {
 	
 	private Game game;
 	
+
+	/**
+	 *In constructors of presenters, you should not reference player(): when the construct runs it has not been connected yet.
+	 */
+	protected Presenter(){}
+
 	/**
 	 *Hand over focus to another presenter.
 	 */
@@ -17,7 +23,13 @@ abstract class Presenter {
 		game.enterPresenter(newPresenter);
 	}
 	
+	/**
+	 *Called after this presenter has been given control of the screen.
+	 */
 	public void gotFocus(){}
+	/**
+	 *Called after this presenter has just lost control of the screen.
+	 */
 	public void lostFocus(){}
 	
 	public boolean isDown(Button b)

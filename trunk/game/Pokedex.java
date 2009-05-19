@@ -6,7 +6,9 @@ import java.awt.Font;
 import java.awt.Image;
 import javax.swing.ImageIcon;
 
-
+/**
+ *Keeps track of which pokemon have been caught and seen.
+ */
 public class Pokedex {
 	
 	private Set<Species> seen = new HashSet<Species>();
