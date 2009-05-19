@@ -30,4 +30,246 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 	</pokemon>
 </generator>
 
+<generator>
+	<name>route01Gen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Pidgey</name>
+		<level>3</level>
+		<chance>0.60</chance>
+	</pokemon>
+	<pokemon>
+		<name>Rattata</name>
+		<level>3</level>
+		<chance>0.40</chance>
+	</pokemon>
+
+</generator>
+
+<generator>
+	<name>route02Gen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Pidgey</name>
+		<level>7</level>
+		<chance>0.40</chance>
+	</pokemon>
+	<pokemon>
+		<name>Rattata</name>
+		<level>6</level>
+		<chance>0.45</chance>
+	</pokemon>
+	<pokemon>
+		<name>NidoranF</name>
+		<level>6</level>
+		<chance>0.15</chance>
+	</pokemon>
+	<pokemon>
+		<name>NidoranM</name>
+		<level>5</level>
+		<chance>0.15</chance>
+	</pokemon>
+
+</generator>
+<generator>
+	<name>viridianforestGen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Pidgey</name>
+		<level>6</level>
+		<chance>0.45</chance>
+	</pokemon>
+	<pokemon>
+		<name>Caterpie</name>
+		<level>5</level>
+		<chance>0.45</chance>
+	</pokemon>
+	<pokemon>
+		<name>Metapod</name>
+		<level>6</level>
+		<chance>0.25</chance>
+	</pokemon>
+	<pokemon>
+		<name>Pidgeotto</name>
+		<level>10</level>
+		<chance>0.02</chance>
+	</pokemon>
+
+</generator>
+<generator>
+	<name>route03Gen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Spearow</name>
+		<level>7</level>
+		<chance>0.45</chance>
+	</pokemon>
+	<pokemon>
+		<name>Rattata</name>
+		<level>6</level>
+		<chance>0.20</chance>
+	</pokemon>
+	<pokemon>
+		<name>Sandshrew</name>
+		<level>7</level>
+		<chance>0.20</chance>
+	</pokemon>
+	<pokemon>
+		<name>Mankey</name>
+		<level>7</level>
+		<chance>0.20</chance>
+	</pokemon>
+
+</generator>
+<generator>
+	<name>mt.moon1fGen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Zubat</name>
+		<level>7</level>
+		<chance>0.80</chance>
+	</pokemon>
+	<pokemon>
+		<name>Geodude</name>
+		<level>8</level>
+		<chance>0.12</chance>
+	</pokemon>
+	<pokemon>
+		<name>Clefairy</name>
+		<level>8</level>
+		<chance>0.04</chance>
+	</pokemon>
+	<pokemon>
+		<name>Sandshrew</name>
+		<level>8</level>
+		<chance>0.04</chance>
+	</pokemon>
+
+</generator>
+<generator>
+	<name>mt.moonb1Gen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Zubat</name>
+		<level>7</level>
+		<chance>0.70</chance>
+	</pokemon>
+	<pokemon>
+		<name>Geodude</name>
+		<level>8</level>
+		<chance>0.16</chance>
+	</pokemon>
+	<pokemon>
+		<name>Clefairy</name>
+		<level>8</level>
+		<chance>0.04</chance>
+	</pokemon>
+	<pokemon>
+		<name>Paras</name>
+		<level>7</level>
+		<chance>0.10</chance>
+	</pokemon>
+
+</generator>
+
+<generator>
+	<name>mt.moonb1Gen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Zubat</name>
+		<level>7</level>
+		<chance>0.70</chance>
+	</pokemon>
+	<pokemon>
+		<name>Geodude</name>
+		<level>8</level>
+		<chance>0.16</chance>
+	</pokemon>
+	<pokemon>
+		<name>Clefairy</name>
+		<level>8</level>
+		<chance>0.04</chance>
+	</pokemon>
+	<pokemon>
+		<name>Paras</name>
+		<level>7</level>
+		<chance>0.10</chance>
+	</pokemon>
+
+</generator>
+<generator>
+	<name>mt.moonb2Gen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Zubat</name>
+		<level>9</level>
+		<chance>0.50</chance>
+	</pokemon>
+	<pokemon>
+		<name>Geodude</name>
+		<level>9</level>
+		<chance>0.26</chance>
+	</pokemon>
+	<pokemon>
+		<name>Clefairy</name>
+		<level>10</level>
+		<chance>0.10</chance>
+	</pokemon>
+	<pokemon>
+		<name>Paras</name>
+		<level>9</level>
+		<chance>0.14</chance>
+	</pokemon>
+
+</generator>
+<generator>
+	<name>mt.route04Gen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Rattata</name>
+		<level>10</level>
+		<chance>0.40</chance>
+	</pokemon>
+	<pokemon>
+		<name>Spearow</name>
+		<level>9</level>
+		<chance>0.20</chance>
+	</pokemon>
+	<pokemon>
+		<name>Sandshrew</name>
+		<level>11</level>
+		<chance>0.20</chance>
+	</pokemon>
+	<pokemon>
+		<name>Mankey</name>
+		<level>11</level>
+		<chance>0.20</chance>
+	</pokemon>
+
+</generator>
+<generator>
+	<name>route24Gen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Pidgey</name>
+		<level>11</level>
+		<chance>0.30</chance>
+	</pokemon>
+	<pokemon>
+		<name>Geodude</name>
+		<level>8</level>
+		<chance>0.26</chance>
+	</pokemon>
+	<pokemon>
+		<name>Clefairy</name>
+		<level>8</level>
+		<chance>0.10</chance>
+	</pokemon>
+	<pokemon>
+		<name>Paras</name>
+		<level>8</level>
+		<chance>0.14</chance>
+	</pokemon>
+
+</generator>
 
