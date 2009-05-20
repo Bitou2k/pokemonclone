@@ -13,7 +13,7 @@ public class TM {
 	private TM(Node n)
 	{
 		number = new Integer(n.contentOf("number"));
-		move = Move.named(n.contentOf("move"));
+		move = Move.named(n.contentOf("name"));
 		
 	}
 	

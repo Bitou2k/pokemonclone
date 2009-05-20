@@ -37,7 +37,7 @@ public class Move {
 		//power = new Integer(n.contentOf("power"));
 		//accuracy = new Double(n.contentOf("accuracy"));
 		
-		compareName = name.toLowerCase();
+		compareName = normalize(name);
 	}
 	
 	private static ArrayList<Move> moves = new ArrayList<Move>();
@@ -58,11 +58,21 @@ public class Move {
 		return moves;
 	}
 	public static Move named(String name){
-		name = name.toLowerCase();
+		name = normalize(name);
 		for(Move m:moves)
 			if(m.compareName.equals(name))
 				return m;
+				
+		System.out.println("No moved called "+name);
 		return null;
+	}
+	
+	private static String normalize(String x)
+	{
+		x = x.toUpperCase();
+		x = x.replaceAll("-","");
+		x = x.replaceAll(" ","");
+		return x;
 	}
 	
 	private static Type getTypeNamed(String n)
