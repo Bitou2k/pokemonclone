@@ -7,7 +7,7 @@ import javax.swing.*;
 /**
  *A prototype for generating a wild pokemon, evolving a pokemon, or viewing pokedex data.
  */
-class Species {
+public class Species {
 	
 	private String name;
 	private int generation; //1=RBY,2=GSC,3,4
@@ -54,7 +54,7 @@ class Species {
 	public Species finalForm(){return null;}
 	
 	/**
-	*Returns a dictionary of MOVELEARN==>LEVELLEARNED.
+	*MOVELEARNED==>LEVELLEARNED.
 	*/
 	public Map<Move,Integer> movesLearned(){return moves;}
 	public List<Move> movesLearnedAtLevel(int level)

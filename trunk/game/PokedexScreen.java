@@ -73,14 +73,14 @@ public class PokedexScreen extends Presenter{
 			
 			
 			
-			g.drawString( player().pokedex.hasSeen(s) ? s.name() : "----------" , X,Y );
-			if ( player().pokedex.hasCaught(s) )
+			g.drawString( player().pokedex().hasSeen(s) ? s.name() : "----------" , X,Y );
+			if ( player().pokedex().hasCaught(s) )
 				g.drawImage(pokeball.getImage(),X-20, Y - 15, null);
 			Y += inc;
 		}
 		
-		g.drawString( ""+player().pokedex.allSeen().size() , 270, 75 );
-		g.drawString( ""+player().pokedex.allCaught().size() , 270, 75+50 );
+		g.drawString( ""+player().pokedex().allSeen().size() , 270, 75 );
+		g.drawString( ""+player().pokedex().allCaught().size() , 270, 75+50 );
 		
 		ImageIcon pkmnArrow,menuArrow;
 		if (pkmn){

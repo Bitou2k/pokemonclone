@@ -11,28 +11,34 @@ import javax.swing.ImageIcon;
 */
 public class Player extends Battler {
 
-	String name = "Ash";
-	List<Pokemon> party;
-	Pack pack = new Pack();
-	Pokedex pokedex = new Pokedex();
-
+	private String name = "Ash"; //will be moved up to superclass Citizen
+	private List<Pokemon> party; //will be moved up to superclass Battler
+	private Pack pack = new Pack();
+	private Pokedex pokedex = new Pokedex();
 	private Direction d  = Direction.NORTH;
-	public void direction(Direction d){	this.d = d;	}
+	
+	public String name(){ return name; }
+	public void name(String n){ name=n; }
+	
 	public Direction direction(){ return d; }
+	public void direction(Direction d){	this.d = d;	}
+	
+	public Pack pack(){ return pack; }
+	public Pokedex pokedex(){ return pokedex; }
 	
 	int stride=0; //2, 1, or 0
 	
-	ImageIcon ii = new ImageIcon("./entityImages/Player Front.png");
-	final ImageIcon imgDown = new ImageIcon("./entityImages/Player Front.png");
-	final ImageIcon imgDownStrideTwo = new ImageIcon("./entityImages/Player Front StrideTwo.png");
-	final ImageIcon imgDownStrideOne = new ImageIcon("./entityImages/Player Front StrideOne.png");
-	final ImageIcon imgRight = new ImageIcon("./entityImages/Player Right.png");
-	final ImageIcon imgRightStride = new ImageIcon("./entityImages/Player Right Stride.png");
-	final ImageIcon imgLeft = new ImageIcon("./entityImages/Player Left.png");
-	final ImageIcon imgLeftStride = new ImageIcon("./entityImages/Player Left Stride.png");
-	final ImageIcon imgUp = new ImageIcon("./entityImages/Player Up.png");
-	final ImageIcon imgUpStrideTwo = new ImageIcon("./entityImages/Player Up StrideTwo.png");
-	final ImageIcon imgUpStrideOne = new ImageIcon("./entityImages/Player Up StrideOne.png");
+	private ImageIcon ii = new ImageIcon("./entityImages/Player Front.png");
+	private final ImageIcon imgDown = new ImageIcon("./entityImages/Player Front.png");
+	private final ImageIcon imgDownStrideTwo = new ImageIcon("./entityImages/Player Front StrideTwo.png");
+	private final ImageIcon imgDownStrideOne = new ImageIcon("./entityImages/Player Front StrideOne.png");
+	private final ImageIcon imgRight = new ImageIcon("./entityImages/Player Right.png");
+	private final ImageIcon imgRightStride = new ImageIcon("./entityImages/Player Right Stride.png");
+	private final ImageIcon imgLeft = new ImageIcon("./entityImages/Player Left.png");
+	private final ImageIcon imgLeftStride = new ImageIcon("./entityImages/Player Left Stride.png");
+	private final ImageIcon imgUp = new ImageIcon("./entityImages/Player Up.png");
+	private final ImageIcon imgUpStrideTwo = new ImageIcon("./entityImages/Player Up StrideTwo.png");
+	private final ImageIcon imgUpStrideOne = new ImageIcon("./entityImages/Player Up StrideOne.png");
 
 	public void step(int ms)
 	{
@@ -42,6 +48,9 @@ public class Player extends Battler {
 		if(stride<0)stride=0;
 	}
 	
+	/**
+	*Am I in the middle of walking?  If so, don't try to walk again yet.
+	*/
 	public boolean inStride()
 	{
 		return stride > 0;
