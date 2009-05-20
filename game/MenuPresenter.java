@@ -43,7 +43,9 @@ public class MenuPresenter extends Presenter {
 		if(bottomy-height<0) bottomy = height;
 	}
 	
-	
+	/**
+	*
+	*/
 	public void drawOn(Graphics2D g){
 		behide.drawOn(g);
 		
@@ -78,6 +80,9 @@ public class MenuPresenter extends Presenter {
 		g.drawString( ">",bottomx-width+4,bottomy-height+22+30*(selected-off));	
 	}
 	
+	/**
+	*
+	*/
 	public void buttonPressed(Button b){
 		
 		if(b==Button.UP)
@@ -100,5 +105,9 @@ public class MenuPresenter extends Presenter {
 			}
 		}
 	}
+	
+	/**
+	*
+	*/
 	public void step(int ms){}
 }

@@ -42,6 +42,9 @@ public class MessagePresenter extends Presenter {
 	
 	private Image bottomFrame = new ImageIcon("./resources/battle/bottomframe.png").getImage();
 	
+	/**
+	*
+	*/
 	public void drawOn(Graphics2D g){
 		behide.drawOn(g);
 		
@@ -59,6 +62,9 @@ public class MessagePresenter extends Presenter {
 			g.drawString("...",16*16+8,272);
 	}
 	
+	/**
+	*
+	*/
 	public void buttonPressed(Button b){
 		if(b!=Button.A)return;
 		
@@ -71,5 +77,9 @@ public class MessagePresenter extends Presenter {
 			}
 		}
 	}
+	
+	/**
+	*
+	*/
 	public void step(int ms){}
 }

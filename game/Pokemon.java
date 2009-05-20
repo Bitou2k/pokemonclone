@@ -7,7 +7,8 @@ import javax.swing.*;
 /**
  *A particular pokemon owned by the player or a rival trainer.
  */
-class Pokemon {
+public class Pokemon 
+{
 	private Species species;
 	private String nickname;
 	private int level, xp;
@@ -38,5 +39,7 @@ class Pokemon {
 		
 	public String nickname(){return nickname;}		
 	public Species species(){return species;}
+	public int level(){return level;}
+	public int xp(){return xp;}
 }
 

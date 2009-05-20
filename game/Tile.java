@@ -4,17 +4,18 @@ import java.awt.*;
 import java.io.*;
 import javax.swing.*;
 
-/**one square on a map
- *
+/**
+ *I am one square in an Area; I have a image, type and target; I might contain an Entity.
  */
 class Tile {
 
 	int x,y;
-	String type;
+	private String type;
 	String target;
-	Image img;
-	Entity entity;
-	Area a;
+	private Image img;
+	private Entity entity;
+	private Area a;
+	
 	Tile(int x, int y, Area a)
 	{
 		this.x=x; this.y=y; this.a=a;
@@ -31,12 +32,12 @@ class Tile {
 		return t;
 	}
 	
-	boolean isObstacle(){ return type.equals("obstacle") || type.equals("water");}
-	boolean isDoor(){ return type.equals("door")&& !target.equals("");}
-	boolean isGrass(){ return type.equals("pokegrassOrCave"); }
-	boolean isCliff() { return type.equals("cliff"); }
+	public boolean isObstacle(){ return type.equals("obstacle") || type.equals("water");}
+	public boolean isDoor(){ return type.equals("door")&& !target.equals("");}
+	public boolean isGrass(){ return type.equals("pokegrassOrCave"); }
+	public boolean isCliff() { return type.equals("cliff"); }
 	
-	Pokemon genPokemon(){
+	public Pokemon genPokemon(){
 		try
 		{
 			return WildPokemonGenerator.named(target).generatePokemon();
@@ -45,7 +46,7 @@ class Tile {
 		return null;
 	}
 	
-	Direction cliffDirection()
+	public Direction cliffDirection()
 	{
 		String x = target.toUpperCase();
 		if(x.equals("N")||x.equals("NORTH"))return Direction.NORTH;
@@ -54,15 +55,15 @@ class Tile {
 		if(x.equals("W")||x.equals("WEST"))return Direction.WEST;
 		return null;
 	}
-	String targetMap()
+	public String targetMap()
 	{
 		return target.substring(0,target.indexOf(":"));
 	}
-	int targetX()
+	public int targetX()
 	{
 		return new Integer(target.substring(target.indexOf(":")+1,target.indexOf(",")));
 	}
-	int targetY()
+	public int targetY()
 	{
 		return new Integer(target.substring(target.indexOf(",")+1));
 	}
@@ -81,8 +82,14 @@ class Tile {
 	}
 	Entity entity() {return entity;}
 	
-	int width(){return 16;}
-	int height(){return 16;}
+	/**
+	*16
+	*/
+	public int width(){return 16;}
+	/**
+	*16
+	*/
+	public int height(){return 16;}
 	
 	/**
 	 *Draw my background image.
@@ -91,7 +98,7 @@ class Tile {
 	{	
 		g.setColor(Color.BLACK);
 		g.translate(width()*x,height()*y);
-			g.fillRect(0,0,16,16);
+			g.fillRect(0,0,width(),height());
 			g.drawImage(img,0,0,null);
 			if(entity!=null) entity.drawOn(g);
 		g.translate(-width()*x,-height()*y);
@@ -106,7 +113,7 @@ class Tile {
 	}
 	
 	/**
-	 *Step my entity
+	 *Step my entity, if any.
 	 */
 	public void step(int ms)
 	{
