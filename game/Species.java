@@ -16,7 +16,7 @@ public class Species {
 	private int number;
 	private Type type1, type2;
 	private int hp, attack, defense, spAttack, spDefense, speed; 
-	private Map<Move,Integer> moves;
+	private Map<Move,Integer> moves = new HashMap<Move,Integer>();
 	//condition(level,trade,stone)-->pokedexpokemon
 	private Map<String,Species> evolutions = new HashMap<String,Species>();
 	private List<TM> tms = new LinkedList<TM>();
@@ -50,8 +50,7 @@ public class Species {
 	public boolean canLearnTM(TM t){return tms.contains(t);}
 	public boolean canLearnHM(HM h){return hms.contains(h);}
 	
-	public Species firstForm(){return null;}
-	public Species finalForm(){return null;}
+	//public Species firstForm(){return null;}
 	
 	/**
 	*MOVELEARNED==>LEVELLEARNED.
@@ -69,7 +68,7 @@ public class Species {
 	}
 	
 	/**
-	*Returns a dictionary of EVOLVECONDITION(level,trade,stone)==>POKEMONEVOLVEDINTO.
+	*EVOLVECONDITION(level,trade,stone)==>POKEMONEVOLVEDINTO.
 	*/
 	public Map<String,Species> evolutions(){return evolutions;}
 		
@@ -100,7 +99,14 @@ public class Species {
 			evolutions.put( condition, Species.named(evolvedForm) );
 		}
 		
-		//p.futureMoves = movesFromNode(n.subnode("moves"));
+		if(n.subnode("moves")!=null)
+		for(Node mn: n.subnode("moves").subnodes("move"))
+		{
+			moves.put(
+				Move.named(mn.contentOf("name")) , mn.icontentOf("level")
+			);
+		}
+		else System.out.println("missing move data");
 		
 		String[] tmsStr = n.contentOf("TMs").trim().split(",");
 		for(String tmStr: tmsStr)

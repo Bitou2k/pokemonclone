@@ -13,7 +13,7 @@ public class HM {
 	private HM(Node n)
 	{
 		number = new Integer(n.contentOf("number"));
-		move = Move.named(n.contentOf("move"));
+		move = Move.named(n.contentOf("name"));
 	}
 	
 	private static ArrayList<HM> hms = new ArrayList<HM>();
