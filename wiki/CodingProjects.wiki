@@ -1,3 +1,5 @@
+
+
 #This page contains coding projects
 
 = Introduction =
@@ -98,3 +100,11 @@ _
 Item Class
 </code>
 _
+
+
+
+
+<code>
+(unclaimed)
+a small program that will check for and delete unused gif files in ./tileImages/ (that is, images with no references from any of the area files)
+</code>
