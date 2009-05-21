@@ -4063,6 +4063,476 @@
 	</TMs>
 </pokemon>
 
+
+
+
+
+
+
+
+<note>CAWHRIN DOES UP TO 50!</note>
+
+<pokemon>
+	<number>36</number>
+	<name>Clefable</name>
+	<image32>./pokemon/icons32/icon036.gif</image32>
+	<image80>./pokemon/icons80/clefable.png</image80>
+	<imageFront>./pokemon/iconsFront/36.png</imageFront>
+	<imageBack>./pokemon/iconsBack/36.png</imageBack>
+	<description>A timid fairy POKEMON that is rarely seen. It will run and hide the moment it senses people.</description>
+	<type>Fairy</type>
+	<type2></type2>
+	<hp>95</hp>
+	<attack>70</attack>
+	<defense>73</defense>
+	<sp atk>85</sp atk>
+	<sp def>90</sp def>
+	<speed>60</speed>
+	<evolution>
+		<level></level>
+		<target></target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Pound</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Growl</name>
+		</move>
+		<move>
+			<level>13</level>
+			<name>Sing</name>
+		</move>
+		<move>
+			<level>18</level>
+			<name>Doubleslap</name>
+		</move>
+		<move>
+			<level>24</level>
+			<name>Minimize</name>
+		</move>
+		<move>
+			<level>39</level>
+			<name>Defense Curl</name>
+		</move>
+		<move>
+			<level>31</level>
+			<name>Horn Drill</name>
+		</move>
+		<move>
+			<level>48</level>
+			<name>Light Screen</name>
+		</move>
+	</moves>
+	<HMs>04,05</HMs>
+	<TMs>01,05,06,08,09,10,11,12,13,14,17,18,19,20,22,24,29,30,31,32,33,34,35,38,40,44,45,46,49,50</TMs>
+</pokemon>
+
+<pokemon>
+	<number>35</number>
+	<name>Clefairy</name>
+	<image32>./pokemon/icons32/icon035.gif</image32>
+	<image80>./pokemon/icons80/clefairy.png</image80>
+	<imageFront>./pokemon/iconsFront/35.png</imageFront>
+	<imageBack>./pokemon/iconsBack/35.png</imageBack>
+	<description>Its magical and cute appeal has many admirers. It is rare and found only in certain areas.</description>
+	<type>Fairy</type>
+	<type2></type2>
+	<hp>81</hp>
+	<attack>92</attack>
+	<defense>70</defense>
+	<sp atk>85</sp atk>
+	<sp def>75</sp def>
+	<speed>85</speed>
+	<evolution>
+		<level>36</level>
+		<target>Clefable</target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Pound</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Growl</name>
+		</move>
+		<move>
+			<level>13</level>
+			<name>Sing</name>
+		</move>
+		<move>
+			<level>18</level>
+			<name>Doubleslap</name>
+		</move>
+		<move>
+			<level>24</level>
+			<name>Minimize</name>
+		</move>
+		<move>
+			<level>39</level>
+			<name>Defense Curl</name>
+		</move>
+		<move>
+			<level>31</level>
+			<name>Horn Drill</name>
+		</move>
+		<move>
+			<level>48</level>
+			<name>Light Screen</name>
+		</move>
+	</moves>
+	<HMs>04,05</HMs>
+	<TMs>01,05,06,08,09,10,11,12,13,14,17,18,19,20,22,24,29,30,31,32,33,34,35,38,40,44,45,46,49,50</TMs>
+</pokemon>
+
+<pokemon>
+	<number>34</number>
+	<name>Nidoking</name>
+	<image32>./pokemon/icons32/icon034.gif</image32>
+	<image80>./pokemon/icons80/nidoking-m.png</image80>
+	<imageFront>./pokemon/iconsFront/34.png</imageFront>
+	<imageBack>./pokemon/iconsBack/34.png</imageBack>
+	<description>It uses its powerful tail in battle to smash, constrict, then break the prey's bones.</description>
+	<type>Drill</type>
+	<type2></type2>
+	<hp>81</hp>
+	<attack>92</attack>
+	<defense>70</defense>
+	<sp atk>85</sp atk>
+	<sp def>75</sp def>
+	<speed>85</speed>
+	<evolution>
+		<level></level>
+		<target></target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Leer</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Tackle</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Horn Attack</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Poison Sting</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Focus Energy</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Fury Attack</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Horn Drill</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Double Kick</name>
+		</move>
+		<move>
+			<level>23</level>
+			<name>Thrash</name>
+		</move>
+	</moves>
+	<HMs>03,04</HMs>
+	<TMs>01,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,24,25,26,27,31,32,33,34,38,40,44,48,50</TMs>
+</pokemon>
+
+<pokemon>
+	<number>33</number>
+	<name>Nidorino</name>
+	<image32>./pokemon/icons32/icon033.gif</image32>
+	<image80>./pokemon/icons80/nidorino-m.png</image80>
+	<imageFront>./pokemon/iconsFront/33.png</imageFront>
+	<imageBack>./pokemon/iconsBack/33.png</imageBack>
+	<description>An aggressive POKEMON that is quick to attack. The horn on its head secretes a powerful venom.</description>
+	<type>Poison</type>
+	<type2></type2>
+	<hp>61</hp>
+	<attack>72</attack>
+	<defense>40</defense>
+	<sp atk>40</sp atk>
+	<sp def>40</sp def>
+	<speed>50</speed>
+	<evolution>
+		<level>34</level>
+		<target>Nidoking</target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Leer</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Tackle</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Horn Attack</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Poison Sting</name>
+		</move>
+		<move>
+			<level>23</level>
+			<name>Focus Energy</name>
+		</move>
+		<move>
+			<level>32</level>
+			<name>Fury Attack</name>
+		</move>
+		<move>
+			<level>41</level>
+			<name>Horn Drill</name>
+		</move>
+		<move>
+			<level>50</level>
+			<name>Double Kick</name>
+		</move>
+	</moves>
+	<HMs></HMs>
+	<TMs>06,07,08,09,10,11,12,13,14,20,24,25,31,32,33,34,40,44,50</TMs>
+</pokemon>
+
+<pokemon>
+	<number>32</number>
+	<name>Nidoran (M)</name>
+	<image32>./pokemon/icons32/icon032.gif</image32>
+	<image80>./pokemon/icons80/nidoran-m.png</image80>
+	<imageFront>./pokemon/iconsFront/32.png</imageFront>
+	<imageBack>./pokemon/iconsBack/32.png</imageBack>
+	<description>Stiffens its ears to sense danger. The larger its horns, the more powerful it secreted venom.</description>
+	<type>Poison</type>
+	<type2></type2>
+	<hp>46</hp>
+	<attack>57</attack>
+	<defense>40</defense>
+	<sp atk>40</sp atk>
+	<sp def>40</sp def>
+	<speed>50</speed>
+	<evolution>
+		<level>33</level>
+		<target>Nidorino</target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Leer</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Tackle</name>
+		</move>
+		<move>
+			<level>8</level>
+			<name>Horn Attack</name>
+		</move>
+		<move>
+			<level>14</level>
+			<name>Poison Sting</name>
+		</move>
+		<move>
+			<level>21</level>
+			<name>Focus Energy</name>
+		</move>
+		<move>
+			<level>29</level>
+			<name>Fury Attack</name>
+		</move>
+		<move>
+			<level>36</level>
+			<name>Horn Drill</name>
+		</move>
+		<move>
+			<level>43</level>
+			<name>Double Kick</name>
+		</move>
+	</moves>
+	<HMs></HMs>
+	<TMs>06,07,08,09,10,14,20,24,25,31,32,33,34,40,44,50</TMs>
+</pokemon>
+
+<pokemon>
+	<number>31</number>
+	<name>Nidoqueen</name>
+	<image32>./pokemon/icons32/icon031.gif</image32>
+	<image80>./pokemon/icons80/nidoqueen-f.png</image80>
+	<imageFront>./pokemon/iconsFront/31.png</imageFront>
+	<imageBack>./pokemon/iconsBack/31.png</imageBack>
+	<description>Its hard scales provide strong protection. It uses its hefty bulk to execute powerful moves.</description>
+	<type>Drill</type>
+	<type2></type2>
+	<hp>90</hp>
+	<attack>82</attack>
+	<defense>87</defense>
+	<sp atk>75</sp atk>
+	<sp def>85</sp def>
+	<speed>76</speed>
+	<evolution>
+		<level></level>
+		<target></target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Growl</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Tackle</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Scratch</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Poison Sting</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Tail Whip</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Double Kick</name>
+		</move>
+		<move>
+			<level>23</level>
+			<name>Body Slam</name>
+		</move>
+	</moves>
+	<HMs>03,04</HMs>
+	<TMs>01,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,24,25,26,27,31,32,33,34,38,40,44,48,50</TMs>
+</pokemon>
+
+<pokemon>
+	<number>30</number>
+	<name>Nidorana</name>
+	<image32>./pokemon/icons32/icon030.gif</image32>
+	<image80>./pokemon/icons80/nidorina-f.png</image80>
+	<imageFront>./pokemon/iconsFront/30.png</imageFront>
+	<imageBack>./pokemon/iconsBack/30.png</imageBack>
+	<description>The female's horn develops slowly. Prefers physical attacks such as clawing and biting.</description>
+	<type>Poison</type>
+	<type2></type2>
+	<hp>70</hp>
+	<attack>62</attack>
+	<defense>67</defense>
+	<sp atk>55</sp atk>
+	<sp def>55</sp def>
+	<speed>56</speed>
+	<evolution>
+		<level>31</level>
+		<target>Nidoqueen</target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Growl</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Tackle</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Scratch</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Poison Sting</name>
+		</move>
+		<move>
+			<level>23</level>
+			<name>Tail Whip</name>
+		</move>
+		<move>
+			<level>32</level>
+			<name>Bite</name>
+		</move>
+		<move>
+			<level>41</level>
+			<name>Fury Swipes</name>
+		</move>
+		<move>
+			<level>50</level>
+			<name>Double Kick</name>
+		</move>
+	</moves>
+	<HMs></HMs>
+	<TMs>06,07,08,09,10,11,12,13,14,20,24,25,31,32,33,34,40,44,50</TMs>
+</pokemon>
+
+<pokemon>
+	<number>29</number>
+	<name>Nidoran (F)</name>
+	<image32>icon029.gif</image32>
+	<description>Although small, its venomous barbs render this POKEMON dangerous. The female has smaller horns.</description>
+	<type>Poison</type>
+	<type2></type2>
+	<hp>55</hp>
+	<attack>47</attack>
+	<defense>52</defense>
+	<sp atk>40</sp atk>
+	<sp def>40</sp def>
+	<speed>41</speed>
+	<evolution>
+		<level>30</level>
+		<target>Nidorina</target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Growl</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Tackle</name>
+		</move>
+		<move>
+			<level>8</level>
+			<name>Scratch</name>
+		</move>
+		<move>
+			<level>14</level>
+			<name>Poison Sting</name>
+		</move>
+		<move>
+			<level>21</level>
+			<name>Tail Whip</name>
+		</move>
+		<move>
+			<level>29</level>
+			<name>Bite</name>
+		</move>
+		<move>
+			<level>36</level>
+			<name>Fury Swipes</name>
+		</move>
+		<move>
+			<level>43</level>
+			<name>Double Kick</name>
+		</move>
+	</moves>
+	<HMs></HMs>
+	<TMs>02,03,06,10,11,13,14,17,18,20,21,23,25,27,31,32,34,35,39,40,43,44,45,46</TMs>
+</pokemon>
+
 <pokemon>
 	<number>28</number><generation>1</generation>
 	<name>Sandslash</name>
