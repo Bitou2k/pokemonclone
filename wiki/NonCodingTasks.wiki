@@ -1,3 +1,5 @@
+#summary Available tasks that don't require getting one's hands dirty.
+
 adding the sign texts to the areas (Shloka)
        Finished:
           PalletTown (pallet.nml)
