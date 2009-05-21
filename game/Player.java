@@ -19,6 +19,7 @@ public class Player extends Battler {
 	
 	public String name(){ return name; }
 	public void name(String n){ name=n; }
+	public List<Pokemon> party() { return party; }
 	
 	public Direction direction(){ return d; }
 	public void direction(Direction d){	this.d = d;	}

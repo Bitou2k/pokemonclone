@@ -34,10 +34,10 @@ public class PokemonBox extends Presenter {
 		g.setFont(new Font("Courier New",Font.BOLD,16));
 		
 		int inc=16;
-		for (int lp=0; lp<player().party.size(); lp++)
+		for (int lp=0; lp<player().party().size(); lp++)
 		{
 			Pokemon pokemon;
-			pokemon = player().party.get(lp);
+			pokemon = player().party().get(lp);
 		
 			g.drawString( pokemon.nickname(), 48, lp*inc);
 			g.drawString( ":L"+pokemon.getLevel(),208,lp*inc);
@@ -55,7 +55,7 @@ public class PokemonBox extends Presenter {
 		if (b==Button.START)	enterPresenter(oldPresenter);
 		else if (b==Button.DOWN){
 			
-			if (pkmnCursorIndex <= player().party.size()) { pkmnCursorIndex++; }
+			if (pkmnCursorIndex <= player().party().size()) { pkmnCursorIndex++; }
 		
 		}
 		else if (b==Button.UP){
