@@ -19,9 +19,6 @@ _
 Example project 2
  this project would be one that is available
 </code>
-
-<code>
-
 _
 <code>
 *Josh Fiorio*<br>
