@@ -39,7 +39,22 @@ public class Pokemon
 		
 	public String nickname(){return nickname;}		
 	public Species species(){return species;}
-	public int level(){return level;}
-	public int xp(){return xp;}
+	public int getCurrentHP(){return currentHp;}
+	public int getCurrentAttack(){return currentAttack;}
+	public int getCurrentDefense(){return currentDefense;}
+	public int getCurrentSpeed(){return currentSpeed;}
+	public int getCurrentSpecial(){return currentSpecial;}
+	
+	public int getBaseHP(){return hp;}
+	public int getBaseAttack(){return attack;}
+	public int getBaseDefense(){return defense;}
+	public int getBaseSpeed(){return speed;}
+	public int getBaseSpecial(){return special;}
+	
+	public int getLevel(){return level;}
+	public int getXP(){return xp;}
+	
+	public Status getStatus(){return status;}
 }
+
 
