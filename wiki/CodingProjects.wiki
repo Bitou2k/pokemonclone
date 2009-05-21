@@ -107,8 +107,25 @@ _
 
 
 
+<code>
+(unclaimed, easy)
+a small separate program that will check for and delete unused gif files in ./tileImages/ 
+(that is, images with no references in any of the area files)
+
+you can iterate over all the files in the directory using
+File dir = new File("./tileImages");
+for(File each: dir.listFiles())
+{
+  //do something with each
+}
+</code>
 
 <code>
-(unclaimed)
-a small program that will check for and delete unused gif files in ./tileImages/ (that is, images with no references from any of the area files)
+(unclaimed, medium)
+a small separate program that will check for duplicates gif files in ./tileImages/
+(it is a duplicate if both file has the same sequence of bytes)
+this program will delete one or the other, and replace references in the area files
+with the image that is retained.
+
+you will probably want to do this by filling a Map<File,File> with assoications of file replaced to file replacement
 </code>
