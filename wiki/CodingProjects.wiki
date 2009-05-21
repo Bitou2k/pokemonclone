@@ -1,4 +1,3 @@
-
 #This page contains coding projects
 
 = Introduction =
@@ -22,13 +21,19 @@ Example project 2
 </code>
 
 <code>
+
+_
+*Josh Fiorio*<br>
 PokemonBox()
+_
+
 //this contains x number of pokemon
 
 make your own background or take one from online and stretch it to fit the window
 display pokemon images and cursors and numbers appropriately
 the box needs a nickname (Box x by default where x is an integer)
 the box needs a collection(arraylist, list, collection) of Pokemon
+
 
 ==================
 YOU GET THIS ONE TOO
