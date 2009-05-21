@@ -54,10 +54,8 @@ To sort out the confusion, everyone should put +'s before maps that are finished
 
   25. Silph Company (Joe)
 
-+ 26. Routes 16/18(Tim)
+  26. Route 16/17(+), 18 in progress.  (Tim)
  
-  27. Route 17
-
 + 27. Fuchsia City (Jason)
 
 + -  28. Safari Zone
