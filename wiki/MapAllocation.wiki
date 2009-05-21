@@ -26,9 +26,9 @@ To sort out the confusion, everyone should put +'s before maps that are finished
 
   12. Routes 5 & 6(Steve)
 
-  13. Vermilion City (Frick)
++ 13. Vermilion City (Frick)
 
-  14. S.S. Anne (Frick)
++ 14. S.S. Anne (Frick)
 
 + 15. Route 11 (Cawhrin)
 
@@ -48,7 +48,7 @@ To sort out the confusion, everyone should put +'s before maps that are finished
 
 + 23. Pokémon Tower (Joe)
 
-  24. Saffron City (Frick)
++ 24. Saffron City (Frick)
 
   25. Silph Company (Joe)
 
