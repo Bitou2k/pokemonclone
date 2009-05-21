@@ -2,6 +2,7 @@ adding the sign texts to the areas (Shloka)
        Finished:
           PalletTown (pallet.nml)
           Celadon Gym (celadon_gym.nml)
+          Cerulean City (ceruleancity.nml)
 
 
 connecting pokegrass to the wild generators (unclaimed)
