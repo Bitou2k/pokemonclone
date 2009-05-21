@@ -19,7 +19,7 @@ public abstract class Item
 	}
 
 	//item use
-	public abstract void use()
+	public abstract void use();
 	
 	
 	static Item fromNode(String n)
