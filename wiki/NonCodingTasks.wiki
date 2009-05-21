@@ -1,4 +1,7 @@
 adding the sign texts to the areas (Shloka)
+       Finished:
+          PalletTown (pallet.nml)
+
 
 connecting pokegrass to the wild generators (unclaimed)
 
