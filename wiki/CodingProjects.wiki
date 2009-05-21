@@ -1,4 +1,4 @@
-#This page contains coding projects
+#summary This page contains coding projects
 
 = Introduction =
 
