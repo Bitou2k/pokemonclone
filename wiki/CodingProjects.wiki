@@ -1,5 +1,4 @@
 
-
 #This page contains coding projects
 
 = Introduction =
@@ -97,7 +96,7 @@ buttonPressed(Button b)
 _
 <code>
 *Jon Borgetti*
-Item Class
+Item Class DONE
 </code>
 _
 
