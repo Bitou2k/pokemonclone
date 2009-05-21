@@ -5,7 +5,7 @@ adding the sign texts to the areas (Shloka)
           Cerulean City (ceruleancity.nml)
 
 
-connecting pokegrass to the wild generators (unclaimed)
+connecting pokegrass to the wild generators (Dana)
 
 correctly setting the target field for all area cliffs (Rich and Twitch, complete)
 
