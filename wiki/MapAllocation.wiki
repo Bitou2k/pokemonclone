@@ -1,3 +1,5 @@
+#summary List of who is creating each map and the various states of completion.
+
 To sort out the confusion, everyone should put +'s before maps that are finished and put their names next to the cities/building/etc. that they are working on/going to work on.
 
    0. Johto (rmacnak)
