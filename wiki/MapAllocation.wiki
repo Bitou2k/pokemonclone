@@ -32,7 +32,7 @@ To sort out the confusion, everyone should put +'s before maps that are finished
 
 + 15. Route 11 (Cawhrin)
 
-  16. Diglett's Cave (Jon)
++ 16. Diglett's Cave (Jon)
 
 + 17. Routes 9 & 10 (Brad)
 
@@ -40,7 +40,7 @@ To sort out the confusion, everyone should put +'s before maps that are finished
 
   19. Lavender Town (Jon)
 
-- 20. Routes 7 & 8 (Route 7 done) (Jon and Cawhrin)
++ 20. Routes 7 & 8 (Route 7 done) (Jon and Cawhrin)
 
   21. Celadon City (Frick)
 
