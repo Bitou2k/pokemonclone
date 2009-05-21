@@ -19,10 +19,13 @@ _
 Example project 2
  this project would be one that is available
 </code>
+
+<code>
 _
 *Josh Fiorio*<br>
 PokemonBox()
 _
+
 
 //this contains x number of pokemon
 
