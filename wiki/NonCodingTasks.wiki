@@ -18,3 +18,5 @@ rival smith sprites (unclaimed)
 unbeatablepokemon skorupa sprites (unclaimed)
 
 wild generators (jake)
+
+properly setting up the doors between (not johto) areas (unclaimed)
