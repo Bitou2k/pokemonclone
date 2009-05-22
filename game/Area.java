@@ -67,9 +67,8 @@ class Area extends Presenter {
 				enterPresenter(new Battle(p,this)); //open battle
 		}
 
-		player().stride=2;
-		next.entity(player());
-		
+		player().startStride();
+		next.entity(player());		
 	}
 	
 	/**
