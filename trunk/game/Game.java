@@ -95,16 +95,12 @@ class Game extends JComponent implements KeyListener {
 		if(e.getKeyCode()==KeyEvent.VK_Q) return Button.START;
 		if(e.getKeyCode()==KeyEvent.VK_SHIFT) return Button.START;
 		if(e.getKeyCode()==KeyEvent.VK_S) return Button.START;
-		
 		return null;
 	}
 	
 	//in the Beginning, there was Main and it was Good
-	public static void main(String[] args){
-		
-		TM.numbered(5);
-		HM.numbered(5);
-		
+	public static void main(String[] args)
+	{	
 		JFrame f = new JFrame("PokemonClone!");
 		Game g = new Game();
 		f.addKeyListener(g);
@@ -114,7 +110,6 @@ class Game extends JComponent implements KeyListener {
 		f.setResizable(false);
 		f.setVisible(true);
 		
-		Area.named("route01");
-		Area.named("saffron");
+		Area.named("pallet");
 	}
 }

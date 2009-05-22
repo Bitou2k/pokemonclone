@@ -15,7 +15,7 @@ public class Player extends Battler {
 	private List<Pokemon> party; //will be moved up to superclass Battler
 	private Pack pack = new Pack();
 	private Pokedex pokedex = new Pokedex();
-	private Direction d  = Direction.NORTH;
+	private Direction d  = Direction.NORTH; //to be moved to superclass Citizen or Entity
 	
 	public String name(){ return name; }
 	public void name(String n){ name=n; }
@@ -27,7 +27,7 @@ public class Player extends Battler {
 	public Pack pack(){ return pack; }
 	public Pokedex pokedex(){ return pokedex; }
 	
-	int stride=0; //2, 1, or 0
+
 	
 	private ImageIcon ii = new ImageIcon("./entityImages/Player Front.png");
 	private final ImageIcon imgDown = new ImageIcon("./entityImages/Player Front.png");
@@ -49,6 +49,9 @@ public class Player extends Battler {
 		if(stride<0)stride=0;
 	}
 	
+	
+	private int stride=0; //2, 1, or 0
+	public void startStride(){stride=2;}
 	/**
 	*Am I in the middle of walking?  If so, don't try to walk again yet.
 	*/
