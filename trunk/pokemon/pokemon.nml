@@ -1341,7 +1341,7 @@
 	<defense>35</defense>
 	<sp atk>115</sp atk>
 	<sp def>95</sp def>
-	<speed>95<speed>
+	<speed>95</speed>
 	<moves>
 		<move>
 			<level>1</level>
@@ -2039,7 +2039,7 @@
 			<name>Tail Whip</name>
 		</move>
 		<move>
-			<level40</level>
+			<level>40</level>
 			<name>Fury Attack</name>
 		</move>
 		<move>
@@ -2055,7 +2055,7 @@
 			<name>Take Down</name>
 		</move>
 	</moves>
-	<TMs>06,07,08,09,10,20,24,25,26,27,28,31,32,34,38,40,44,48,50<TMs>
+	<TMs>06,07,08,09,10,20,24,25,26,27,28,31,32,34,38,40,44,48,50</TMs>
 	<HMs>04</HMs>
 </pokemon>
 
