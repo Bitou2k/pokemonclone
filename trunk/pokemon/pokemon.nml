@@ -4422,7 +4422,7 @@
 
 <pokemon>
 	<number>30</number>
-	<name>Nidorana</name>
+	<name>Nidorina</name>
 	<image32>./pokemon/icons32/icon030.gif</image32>
 	<image80>./pokemon/icons80/nidorina-f.png</image80>
 	<imageFront>./pokemon/iconsFront/30.png</imageFront>
