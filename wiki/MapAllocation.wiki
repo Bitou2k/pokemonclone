@@ -58,9 +58,8 @@ To sort out the confusion, everyone should put +'s before maps that are finished
  
 + 27. Fuchsia City (Jason)
 
-+ -  28. Safari Zone (Joe)
-      + Safari Zone 1 (Corey)
-      + Safari Zone 2,3,4 (Joe)
+-  28. Safari Zone (Joe)
+
 - 29. Routes 12 & 13 (13 is done)
 
 + 30. Routes 14 & 15
