@@ -11,36 +11,33 @@ import javax.swing.ImageIcon;
 */
 public class Player extends Battler {
 
-	private String name = "Ash"; //will be moved up to superclass Citizen
-	private List<Pokemon> party; //will be moved up to superclass Battler
 	private Pack pack = new Pack();
 	private Pokedex pokedex = new Pokedex();
-	private Direction d  = Direction.NORTH; //to be moved to superclass Citizen or Entity
 	
-	public String name(){ return name; }
-	public void name(String n){ name=n; }
-	public List<Pokemon> party() { return party; }
-	
-	public Direction direction(){ return d; }
-	public void direction(Direction d){	this.d = d;	}
+	public Player()
+	{
+		name("Ash");
+	}	
 	
 	public Pack pack(){ return pack; }
 	public Pokedex pokedex(){ return pokedex; }
 	
 
 	
-	private ImageIcon ii = new ImageIcon("./entityImages/Player Front.png");
-	private final ImageIcon imgDown = new ImageIcon("./entityImages/Player Front.png");
-	private final ImageIcon imgDownStrideTwo = new ImageIcon("./entityImages/Player Front StrideTwo.png");
-	private final ImageIcon imgDownStrideOne = new ImageIcon("./entityImages/Player Front StrideOne.png");
-	private final ImageIcon imgRight = new ImageIcon("./entityImages/Player Right.png");
-	private final ImageIcon imgRightStride = new ImageIcon("./entityImages/Player Right Stride.png");
-	private final ImageIcon imgLeft = new ImageIcon("./entityImages/Player Left.png");
-	private final ImageIcon imgLeftStride = new ImageIcon("./entityImages/Player Left Stride.png");
 	private final ImageIcon imgUp = new ImageIcon("./entityImages/Player Up.png");
-	private final ImageIcon imgUpStrideTwo = new ImageIcon("./entityImages/Player Up StrideTwo.png");
-	private final ImageIcon imgUpStrideOne = new ImageIcon("./entityImages/Player Up StrideOne.png");
+	private final ImageIcon imgUpStrideTwo = new ImageIcon("./entityImages/Player UpStrideTwo.png");
+	private final ImageIcon imgUpStrideOne = new ImageIcon("./entityImages/Player UpStrideOne.png");
 
+	private final ImageIcon imgDown = new ImageIcon("./entityImages/Player Down.png");
+	private final ImageIcon imgDownStrideTwo = new ImageIcon("./entityImages/Player DownStrideTwo.png");
+	private final ImageIcon imgDownStrideOne = new ImageIcon("./entityImages/Player DownStrideOne.png");	
+	
+	private final ImageIcon imgLeft = new ImageIcon("./entityImages/Player Left.png");
+	private final ImageIcon imgLeftStride = new ImageIcon("./entityImages/Player LeftStride.png");
+	
+	private final ImageIcon imgRight = new ImageIcon("./entityImages/Player Right.png");
+	private final ImageIcon imgRightStride = new ImageIcon("./entityImages/Player RightStride.png");
+	
 	public void step(int ms)
 	{
 		if(ms%100!=0)return;
@@ -61,26 +58,26 @@ public class Player extends Battler {
 	}
 
 	public void drawOn(Graphics2D g){
-		g.drawImage(getImage(), d.dx()*-4*stride, d.dy()*-4*stride, null);
+		g.drawImage(getImage(), direction().dx()*-4*stride, direction().dy()*-4*stride, null);
 	}
 	
 	private Image getImage()
 	{
-		if(d==Direction.NORTH && stride==0) return imgUp.getImage();
-		if(d==Direction.NORTH && stride==1) return imgUpStrideOne.getImage();
-		if(d==Direction.NORTH && stride==2) return imgUpStrideTwo.getImage();
+		if(direction()==Direction.NORTH && stride==0) return imgUp.getImage();
+		if(direction()==Direction.NORTH && stride==1) return imgUpStrideOne.getImage();
+		if(direction()==Direction.NORTH && stride==2) return imgUpStrideTwo.getImage();
 		
-		if(d==Direction.SOUTH && stride==0) return imgDown.getImage();
-		if(d==Direction.SOUTH && stride==1) return imgDownStrideOne.getImage();
-		if(d==Direction.SOUTH && stride==2) return imgDownStrideTwo.getImage();
+		if(direction()==Direction.SOUTH && stride==0) return imgDown.getImage();
+		if(direction()==Direction.SOUTH && stride==1) return imgDownStrideOne.getImage();
+		if(direction()==Direction.SOUTH && stride==2) return imgDownStrideTwo.getImage();
 		
-		if(d==Direction.EAST && stride==0) return imgRight.getImage();
-		if(d==Direction.EAST && stride==1) return imgRight.getImage();
-		if(d==Direction.EAST && stride==2) return imgRightStride.getImage();
+		if(direction()==Direction.EAST && stride==0) return imgRight.getImage();
+		if(direction()==Direction.EAST && stride==1) return imgRight.getImage();
+		if(direction()==Direction.EAST && stride==2) return imgRightStride.getImage();
 		
-		if(d==Direction.WEST && stride==0) return imgLeft.getImage();
-		if(d==Direction.WEST && stride==1) return imgLeft.getImage();
-		if(d==Direction.WEST && stride==2) return imgLeftStride.getImage();
+		if(direction()==Direction.WEST && stride==0) return imgLeft.getImage();
+		if(direction()==Direction.WEST && stride==1) return imgLeft.getImage();
+		if(direction()==Direction.WEST && stride==2) return imgLeftStride.getImage();
 		
 		return null;//error!
 	}

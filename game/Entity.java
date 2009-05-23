@@ -7,6 +7,7 @@ import java.awt.*;
 */
 public class Entity {
 
+	protected String id;
 	private Tile tile;
 	
 	public void tile(Tile t)
@@ -21,6 +22,7 @@ public class Entity {
 		g.setColor(Color.RED);
 		g.fillOval(tile.width()/2-2,tile.height()/2-2,4,4);
 	}
-	
 	public void step(int ms){}
+	
+	public String id(){ return id; }
 }
