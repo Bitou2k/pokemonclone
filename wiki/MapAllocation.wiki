@@ -46,21 +46,21 @@ To sort out the confusion, everyone should put +'s before maps that are finished
 
 + 21. Celadon City (Frick)
 
-  22. Rocket Hideout (Joe)
+  22. Rocket Hideout
 
 + 23. Pokémon Tower (Joe)
 
 + 24. Saffron City (Frick)
 
-  25. Silph Company (Joe)
+  25. Silph Company
 
   26. Route 16/17(+), 18 in progress.  (Tim)
  
 + 27. Fuchsia City (Jason)
 
-+ -  28. Safari Zone
++ -  28. Safari Zone (Joe)
       + Safari Zone 1 (Corey)
-      + Safari Zone 2
+      + Safari Zone 2,3,4 (Joe)
 - 29. Routes 12 & 13 (13 is done)
 
 + 30. Routes 14 & 15
