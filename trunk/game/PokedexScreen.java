@@ -60,27 +60,27 @@ public class PokedexScreen extends Presenter{
 		int inc = 40; //increment for y
 		int X = 50;
 		g.setColor(Color.BLACK);
-		g.setFont(new Font("Courier New",Font.BOLD,20));
+		g.setFont(new Font("Courier New",Font.BOLD,25));
 		//drawString (str, x, y)
 		
 		ArrayList<Species> speciesList = new ArrayList<Species>();
 		for (int x = 0; x < Species.all().size(); x++){
 			speciesList.add(Species.all().get(x));
 		}
-		for (int i = 0; i < 7; i++){	
+		for (int i = 0; i < 6; i++){	
 			
 			Species s = speciesList.get((i + topIndex) % (speciesList.size()));
 			
 			
 			
-			g.drawString( player().pokedex.hasSeen(s) ? padLeft(Integer.toString(s.number()),"0") + " " + s.name() : "----------" , X,Y );
-			if ( player().pokedex.hasCaught(s) )
+			g.drawString( player().pokedex().hasSeen(s) ? s.name() : "----------" , X,Y );
+			if ( player().pokedex().hasCaught(s) )
 				g.drawImage(pokeball.getImage(),X-20, Y - 15, null);
 			Y += inc;
 		}
 		
-		g.drawString( padLeft(""+player().pokedex.allSeen().size(),"0") , 270, 75 );
-		g.drawString( padLeft(""+player().pokedex.allCaught().size(),"0") , 270, 75+50 );
+		g.drawString( ""+player().pokedex().allSeen().size() , 270, 75 );
+		g.drawString( ""+player().pokedex().allCaught().size() , 270, 75+50 );
 		
 		ImageIcon pkmnArrow,menuArrow;
 		if (pkmn){
@@ -112,7 +112,7 @@ public class PokedexScreen extends Presenter{
 		if (b==Button.START)	enterPresenter(oldPresenter);
 		else if (b==Button.DOWN){
 			if(pkmn){
-				if (pkmnCursorIndex !=5){ pkmnCursorIndex++;}
+				if (pkmnCursorIndex != 5){ pkmnCursorIndex++;}
 				else {
 					topIndex++;
 					if (topIndex == Species.all().size()) topIndex = 0;
