@@ -22,8 +22,6 @@ public class Player extends Battler {
 	public Pack pack(){ return pack; }
 	public Pokedex pokedex(){ return pokedex; }
 	
-
-	
 	private final ImageIcon imgUp = new ImageIcon("./entityImages/Player Up.png");
 	private final ImageIcon imgUpStrideTwo = new ImageIcon("./entityImages/Player UpStrideTwo.png");
 	private final ImageIcon imgUpStrideOne = new ImageIcon("./entityImages/Player UpStrideOne.png");
@@ -58,7 +56,7 @@ public class Player extends Battler {
 	}
 
 	public void drawOn(Graphics2D g){
-		g.drawImage(getImage(), direction().dx()*-4*stride, direction().dy()*-4*stride, null);
+		g.drawImage(getImage(), direction().dx()*-4*stride, direction().dy()*-4*stride-4, null);
 	}
 	
 	private Image getImage()
