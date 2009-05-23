@@ -107,9 +107,9 @@ class Area extends Presenter {
 		}
 	}
 	
-	private static boolean cliffsOn = false;
+	private static boolean cliffsOn = true;
 	private static boolean grassOn = true;
-	private static boolean zoom = false;
+	private static boolean zoom = true;
 
 	private void doDebugMenu()
 	{
