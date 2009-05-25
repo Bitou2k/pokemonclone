@@ -19,12 +19,12 @@ class Battle extends Presenter {
 	private boolean locked = true;
 	
 	//images
-	private ImageIcon enemyBar = new ImageIcon("./resources/battle/enemybar.png");
-	private ImageIcon ashImage = new ImageIcon("./resources/battle/ash.png");
-	private ImageIcon bottomFrame = new ImageIcon("./resources/battle/bottomframe.png");
-	private ImageIcon battleMenu = new ImageIcon("./resources/battle/battlemenu.png");
-	private ImageIcon playerBar = new ImageIcon("./resources/battle/playerbar.png");
-	private ImageIcon cursor = new ImageIcon("./resources/arrow.png");
+	private Image enemyBar = new ImageIcon("./resources/battle/enemybar.png").getImage();
+	private Image ashImage = new ImageIcon("./resources/battle/ash.png").getImage();
+	private Image bottomFrame = new ImageIcon("./resources/battle/bottomframe.png").getImage();
+	private Image battleMenu = new ImageIcon("./resources/battle/battlemenu.png").getImage();
+	private Image playerBar = new ImageIcon("./resources/battle/playerbar.png").getImage();
+	private Image cursor = new ImageIcon("./resources/arrow.png").getImage();
 	
 	private Pokemon p; 
 	private Presenter oldP;
@@ -36,53 +36,61 @@ class Battle extends Presenter {
 		enemyPokemon = p;
 		//remove this
 		yourParty = new ArrayList<Pokemon>();
-		yourParty.add(Species.named("Venusaur").makeWildAtLevel(100));
+		yourParty.add(Species.named("Bulbasaur").makeWildAtLevel(100));
+	}
+	public void gotFocus()
+	{
+		
 	}
 	
 	public void drawOn(Graphics2D g){
-		g.setColor(Color.WHITE);
-		g.fillRect(0,0,16*20,16*18);
+		
+		g.setColor(Color.WHITE); //blank background
+		g.fillRect(0,0,320,288);
+		
 		g.setColor(Color.BLACK);
 		g.setFont(new Font("Courier New",Font.BOLD,20));
 		final int TEXTX = 15;
 		final int FULLHEALTH = 97;
 		
-		//health bars
-		double enemyHealthRatio = enemyPokemon.getCurrentHP() /enemyPokemon.getBaseHP();
-		double playerHealthRatio = 0;
+		g.drawImage(bottomFrame,0,195,null);		
 		
-		//images
-		g.drawImage(enemyBar.getImage(),10,20,null);
-		g.drawImage(playerBar.getImage(),155,145,null);
-		g.drawImage(bottomFrame.getImage(),0,195,null);		
-		g.drawImage(p.species().imageFront(),170,0,128,128,null);
-		g.drawString(enemyPokemon.nickname(),10,15);
-		if (ashsPokemon != null){
-			g.drawImage(ashsPokemon.species().imageBack(),10,65,128,128,null);
-			playerHealthRatio = ashsPokemon.getCurrentHP() / ashsPokemon.getBaseHP();
+		if(enemyPokemon!=null){
+			//that background arrow thingy
+			g.drawImage(enemyBar,10,20,null);
+			//name
+			g.setColor(Color.BLACK);
+			g.drawString(enemyPokemon.nickname(),10,15);
+			//image
+			g.drawImage(p.species().imageFront(),170,0,128,128,null);
+			//health bar
+			g.setColor( colorForHealth( enemyPokemon.percentHp() ) );
+			g.fillRect(56,23,(int)(FULLHEALTH * enemyPokemon.percentHp()),7);
+		}
+		if(ashsPokemon!=null){
+			//that background arrow thingy
+			g.drawImage(playerBar,155,145,null);
+			//name
+			g.setColor(Color.BLACK);
 			g.drawString(ashsPokemon.nickname(),170,140);
-			g.drawString(ashsPokemon.getCurrentHP() + "   "  + ashsPokemon.getBaseHP(),200,180);
+			//image
+			g.drawImage(ashsPokemon.species().imageBack(),10,65,128,128,null);
+			//health bar
+			g.setColor( colorForHealth( ashsPokemon.percentHp() ) );
+			g.fillRect(203,146,(int)(FULLHEALTH * ashsPokemon.percentHp()),7);
+			//health numbers
+			g.setColor(Color.BLACK);
+			g.drawString(ashsPokemon.currentHp() + "   "  + ashsPokemon.baseHp(),200,180);
 		}
 		
 		
 		
-		if ( enemyHealthRatio > .5)g.setColor(Color.GREEN);
-		else if (enemyHealthRatio > .25)g.setColor(Color.YELLOW);
-		else g.setColor(Color.RED);
-		g.fillRect(56,23,(int)(FULLHEALTH * enemyHealthRatio),7);
-		
-		if ( playerHealthRatio > .5)g.setColor(Color.GREEN);
-		else if (playerHealthRatio > .25)g.setColor(Color.YELLOW);
-		else g.setColor(Color.RED);
-		g.fillRect(203,146,(int)(FULLHEALTH * playerHealthRatio),7);
-		
 		g.setColor(Color.BLACK);
-		
 		if (stage < 30) //3 seconds, intro to battle
 		{			
 			g.drawString("A WILD "+p.nickname(),TEXTX,225);
 			g.drawString("HAS APPEARED!!",TEXTX,250);
-			g.drawImage(ashImage.getImage(),10,100, null);			
+			g.drawImage(ashImage,10,100, null);			
 		}
 		else if (stage < 45){ //sending out players pokemon			
 			ashsPokemon = yourParty.get(0); 
@@ -90,11 +98,19 @@ class Battle extends Presenter {
 		}
 		else{
 			locked = false;
-			g.drawImage(battleMenu.getImage(),125,195,null);
-			g.drawImage(cursor.getImage(),140 + menuIndexX * 100,220 + menuIndexY * 35,null);
+			g.drawImage(battleMenu,125,195,null);
+			g.drawImage(cursor,140 + menuIndexX * 100,220 + menuIndexY * 35,null);
 		}
 		
 	}
+	
+	private Color colorForHealth(double percentage)
+	{
+		if(percentage > 0.5) return Color.GREEN;
+		if(percentage > 0.25) return Color.YELLOW;
+		return Color.RED;
+	}
+	
 	public void buttonPressed(Button b){
 		if(stage > 3 /*&& stage < someothernum*/){
 			if(b==Button.UP){if(menuIndexY ==1) menuIndexY = 0;}
@@ -138,7 +154,11 @@ class Battle extends Presenter {
 	
 	private void fight(){
 		locked = true;
-		String moveSelection = showMenu("Select a move:",new String[]{ashsPokemon.getMoveAt(0).name(),ashsPokemon.getMoveAt(1).name(),ashsPokemon.getMoveAt(2).name(),ashsPokemon.getMoveAt(3).name()});
+		String moveSelection = showMenu("Select a move:",new String[]{
+			ashsPokemon.moves().get(0).name(),
+			ashsPokemon.moves().get(1).name(),
+			ashsPokemon.moves().get(2).name(),
+			ashsPokemon.moves().get(3).name()});
 	}
 
 }

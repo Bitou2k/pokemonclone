@@ -36,7 +36,6 @@ public class Species {
 	*/
 	public Type type2(){return type2;}
 	
-	
 	public int hp(){return hp;}
 	public int attack(){return attack;}
 	public int defense(){return defense;}
@@ -142,7 +141,7 @@ public class Species {
 		}catch(Exception e){e.printStackTrace();}
 	}
 	
-	public static java.util.List<Species> all(){
+	public static List<Species> all(){
 		return species;
 	}
 	

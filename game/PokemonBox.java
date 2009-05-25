@@ -53,8 +53,8 @@ public class PokemonBox extends Presenter {
 			pokemon = player().party().get(lp);
 		
 			g.drawString( pokemon.nickname(), 48, 16+lp*inc);
-			g.drawString( ":L"+pokemon.getLevel(),208,16+lp*inc);
-			g.drawString( pokemon.getCurrentHP() + "/" + pokemon.getBaseHP(), 208, 32+(lp*inc));
+			g.drawString( ":L"+pokemon.level(),208,16+lp*inc);
+			g.drawString( pokemon.currentHp() + "/" + pokemon.baseHp(), 208, 32+(lp*inc));
 			
 		}
 		
