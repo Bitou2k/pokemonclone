@@ -9,7 +9,6 @@ import javax.swing.event.*;
 import java.io.*;
 import java.util.*;
 
-//the shell for a Game
 class Main extends JFrame implements ActionListener, ItemListener  {
 
 	Map<String,TileLabel> tileDic = new HashMap<String,TileLabel>();
@@ -58,7 +57,7 @@ class Main extends JFrame implements ActionListener, ItemListener  {
 	JButton save = new JButton("Save");
 	JButton load = new JButton("Load");
 	JLabel location = new JLabel("<hoveroveratile>");
-	JCheckBox gridView = new JCheckBox("Grid On/Off", true);
+	JCheckBox gridView = new JCheckBox("Grid", true);
 	JCheckBox theFinger = new JCheckBox("Select On/Off", false);
 	boolean selectionEnabled = false;
 	
@@ -78,24 +77,24 @@ class Main extends JFrame implements ActionListener, ItemListener  {
 		tile.setRenderer(new JLabelCellRenderer());
 
 		JPanel top = new JPanel();
-		top.add(new JLabel("Name:"));
+		top.add(new JLabel("Name"));
 		top.add(name);
-		top.add(new JLabel("Width:"));
+		top.add(new JLabel("Width"));
 		top.add(width);
-		top.add(new JLabel("Height:"));
+		top.add(new JLabel("Height"));
 		top.add(height);
 		top.add(save);
 		top.add(load);
 		top.add(location);
 		
 		JPanel bottom = new JPanel();
-		bottom.add(theFinger);
+		//bottom.add(theFinger);
 		bottom.add(gridView);
-		bottom.add(new JLabel("Image:"));
+		bottom.add(new JLabel("Img"));
 		bottom.add(tile);
-		bottom.add(new JLabel("Type:"));
+		bottom.add(new JLabel("Type"));
 		bottom.add(type);
-		bottom.add(new JLabel("Target:"));
+		bottom.add(new JLabel("Target"));
 		bottom.add(target);
 
 		height.addActionListener(this);
@@ -111,7 +110,7 @@ class Main extends JFrame implements ActionListener, ItemListener  {
 		add(bottom, BorderLayout.SOUTH);
 
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
-		setSize(700,500);
+		setSize(800,600);
 		setVisible(true);
 		
 		resizeMap(20,20,-1);

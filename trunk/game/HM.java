@@ -19,7 +19,7 @@ public class HM {
 	private static ArrayList<HM> hms = new ArrayList<HM>();
 	static { 
 		try{
-			Node root = Node.documentRootFrom("./tmsAndHms.nml");
+			Node root = Node.documentRootFrom("./pokemon/tmsAndHms.nml");
 			for(Node n : root.subnodes("hm")){
 				HM h = new HM(n);
 				hms.add( h );

@@ -43,7 +43,7 @@ public class Move {
 	private static ArrayList<Move> moves = new ArrayList<Move>();
 	static { 
 		try{
-			Node root = Node.documentRootFrom("./moves.nml");
+			Node root = Node.documentRootFrom("./pokemon/moves.nml");
 			
 			for(Node n : root.subnodes("move")){
 				Move m = new Move(n);
