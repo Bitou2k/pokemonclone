@@ -54,6 +54,9 @@ public class Pokemon
 	public int getLevel(){return level;}
 	public int getXP(){return xp;}
 	
+	public java.util.List<Move> getMoves(){return moves;}
+	public Move getMoveAt(int i){return moves.get(i);}
+	
 	public Status getStatus(){return status;}
 }
 
