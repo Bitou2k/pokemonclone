@@ -23,12 +23,12 @@ public class Player extends Battler {
 	public Pokedex pokedex(){ return pokedex; }
 	
 	private final ImageIcon imgUp = new ImageIcon("./entityImages/Player Up.png");
-	private final ImageIcon imgUpStrideTwo = new ImageIcon("./entityImages/Player UpStrideTwo.png");
 	private final ImageIcon imgUpStrideOne = new ImageIcon("./entityImages/Player UpStrideOne.png");
+	private final ImageIcon imgUpStrideTwo = new ImageIcon("./entityImages/Player UpStrideTwo.png");
 
 	private final ImageIcon imgDown = new ImageIcon("./entityImages/Player Down.png");
-	private final ImageIcon imgDownStrideTwo = new ImageIcon("./entityImages/Player DownStrideTwo.png");
-	private final ImageIcon imgDownStrideOne = new ImageIcon("./entityImages/Player DownStrideOne.png");	
+	private final ImageIcon imgDownStrideOne = new ImageIcon("./entityImages/Player DownStrideOne.png");
+	private final ImageIcon imgDownStrideTwo = new ImageIcon("./entityImages/Player DownStrideTwo.png");	
 	
 	private final ImageIcon imgLeft = new ImageIcon("./entityImages/Player Left.png");
 	private final ImageIcon imgLeftStride = new ImageIcon("./entityImages/Player LeftStride.png");
@@ -44,9 +44,10 @@ public class Player extends Battler {
 		if(stride<0)stride=0;
 	}
 	
+										int stepCount=0;
 	
 	private int stride=0; //2, 1, or 0
-	public void startStride(){stride=2;}
+	public void startStride(){stride=2;stepCount++;}
 	/**
 	*Am I in the middle of walking?  If so, don't try to walk again yet.
 	*/
@@ -62,12 +63,14 @@ public class Player extends Battler {
 	private Image getImage()
 	{
 		if(direction()==Direction.NORTH && stride==0) return imgUp.getImage();
-		if(direction()==Direction.NORTH && stride==1) return imgUpStrideOne.getImage();
-		if(direction()==Direction.NORTH && stride==2) return imgUpStrideTwo.getImage();
+		if(direction()==Direction.NORTH && stride>0) 
+			if(stepCount%2==0) return imgUpStrideOne.getImage();
+			else return imgUpStrideTwo.getImage();
 		
 		if(direction()==Direction.SOUTH && stride==0) return imgDown.getImage();
-		if(direction()==Direction.SOUTH && stride==1) return imgDownStrideOne.getImage();
-		if(direction()==Direction.SOUTH && stride==2) return imgDownStrideTwo.getImage();
+		if(direction()==Direction.SOUTH && stride>0) 
+			if(stepCount%2==0) return imgDownStrideOne.getImage();
+			else return imgDownStrideTwo.getImage();
 		
 		if(direction()==Direction.EAST && stride==0) return imgRight.getImage();
 		if(direction()==Direction.EAST && stride==1) return imgRight.getImage();
