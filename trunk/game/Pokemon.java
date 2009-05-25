@@ -1,7 +1,7 @@
 package game;
 
 import java.util.*;
-import java.awt.*;
+import java.awt.Graphics2D;
 import javax.swing.*;
 
 /**
@@ -13,8 +13,8 @@ public class Pokemon
 	private String nickname;
 	private int level, xp;
 	private Status status = Status.NORMAL;
-	private int currentHp, currentAttack, currentDefense, currentSpeed, currentSpecial; //the ones that may be lowered in battle
-	private int hp, attack, defense, speed, special; //the base stat
+	private int currentHp, currentAttack, currentDefense, currentSpeed, currentSpAttack, currentSpDefense; //the ones that may be lowered in battle
+	private int hp, attack, defense, speed, spAttack, spDefense; //the base stat
 	private ArrayList<Move> moves = new ArrayList<Move>(); //up to 4
 	
 	Pokemon(Species s, int level)
@@ -23,13 +23,31 @@ public class Pokemon
 		nickname = s.name();
 		this.level = level;
 		
+		for(int l=level; l>0; l--)
+		{
+			moves.addAll( species.movesLearnedAtLevel(l) );
+			if(moves.size()>=4) break;
+		}
+		
 		hp = s.hp();
 		currentHp=hp;
 		attack = s.attack();
 		defense = s.defense();
+		//etc
+		
 		restoreStats();
 	}
 	
+	/**
+	*For loading
+	*/
+	Pokemon(Node n)
+	{
+	}
+	
+	/**
+	*Set current Atk/Def/etc to the base stat; Pokemon has stats restorated after a battle ends.
+	*/
 	public void restoreStats()
 	{
 		currentAttack = attack;
@@ -39,25 +57,30 @@ public class Pokemon
 		
 	public String nickname(){return nickname;}		
 	public Species species(){return species;}
-	public int getCurrentHP(){return currentHp;}
-	public int getCurrentAttack(){return currentAttack;}
-	public int getCurrentDefense(){return currentDefense;}
-	public int getCurrentSpeed(){return currentSpeed;}
-	public int getCurrentSpecial(){return currentSpecial;}
 	
-	public int getBaseHP(){return hp;}
-	public int getBaseAttack(){return attack;}
-	public int getBaseDefense(){return defense;}
-	public int getBaseSpeed(){return speed;}
-	public int getBaseSpecial(){return special;}
+	public int currentHp(){return currentHp;}
+	public int currentAttack(){return currentAttack;}
+	public int currentDefense(){return currentDefense;}
+	public int currentSpeed(){return currentSpeed;}
+	public int currentSpAttack(){return currentSpAttack;}
+	public int currentSpDefense(){return currentSpDefense;}
 	
-	public int getLevel(){return level;}
-	public int getXP(){return xp;}
+	public int baseHp(){return hp;}
+	public int baseAttack(){return attack;}
+	public int baseDefense(){return defense;}
+	public int baseSpeed(){return speed;}
+	public int baseSpAttack(){return spAttack;}
+	public int baseSpDefense(){return spDefense;}
 	
-	public java.util.List<Move> getMoves(){return moves;}
-	public Move getMoveAt(int i){return moves.get(i);}
+	public double percentHp(){return currentHp/(double)hp;}
 	
-	public Status getStatus(){return status;}
+	public int level(){return level;}
+	public int xp(){return xp;}
+	
+	public List<Move> moves(){return moves;}
+	
+	public Status status(){return status;}
+	public void status(Status newStatus){status=newStatus;}
 }
 
 
