@@ -16,6 +16,7 @@ class Battle extends Presenter {
 	
 	private int[][] menuPoints = {{140,155},{220,240}};//{X's},{Y's}
 	private int menuIndexX,menuIndexY;
+	private boolean locked = true;
 	
 	//images
 	private ImageIcon enemyBar = new ImageIcon("./resources/battle/enemybar.png");
@@ -60,6 +61,7 @@ class Battle extends Presenter {
 			g.drawImage(ashsPokemon.species().imageBack(),10,65,128,128,null);
 			playerHealthRatio = ashsPokemon.getCurrentHP() / ashsPokemon.getBaseHP();
 			g.drawString(ashsPokemon.nickname(),170,140);
+			g.drawString(ashsPokemon.getCurrentHP() + "   "  + ashsPokemon.getBaseHP(),200,180);
 		}
 		
 		
@@ -82,15 +84,15 @@ class Battle extends Presenter {
 			g.drawString("HAS APPEARED!!",TEXTX,250);
 			g.drawImage(ashImage.getImage(),10,100, null);			
 		}
-		else if (stage < 45){ //sending out players pokemon
-			ashsPokemon = yourParty.get(0);
-			g.drawString("GO..." + ashsPokemon.species().name(),TEXTX,225);
+		else if (stage < 45){ //sending out players pokemon			
+			ashsPokemon = yourParty.get(0); 
+			g.drawString("GO..." + ashsPokemon.nickname(),TEXTX,225);
 		}
 		else{
+			locked = false;
 			g.drawImage(battleMenu.getImage(),125,195,null);
 			g.drawImage(cursor.getImage(),140 + menuIndexX * 100,220 + menuIndexY * 35,null);
 		}
-		
 		
 	}
 	public void buttonPressed(Button b){
@@ -103,11 +105,40 @@ class Battle extends Presenter {
 			else if(b==Button.START){
 				
 			}
-			else enterPresenter(oldP);
+			
+			else if (b == Button.A && !locked){
+				if (menuIndexX == 0) //FIGHT / BAG
+				{
+					if (menuIndexY == 0)//FIGHT
+					{
+						fight();
+					}
+					else //BAG
+					{
+					
+					}				
+				}
+				else //PkMn / RUN
+				{
+					if (menuIndexY == 0){ //PKMN
+					
+					}
+					else //RUN
+					{
+						enterPresenter(oldP);
+					}
+				
+				}
+			}
 		}
 	}
 	public void step(int ms){
 		stage++;
+	}
+	
+	private void fight(){
+		locked = true;
+		String moveSelection = showMenu("Select a move:",new String[]{ashsPokemon.getMoveAt(0).name(),ashsPokemon.getMoveAt(1).name(),ashsPokemon.getMoveAt(2).name(),ashsPokemon.getMoveAt(3).name()});
 	}
 
 }
