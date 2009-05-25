@@ -20,7 +20,7 @@ public class TM {
 	private static ArrayList<TM> tms = new ArrayList<TM>();
 	static { 
 		try{
-			Node root = Node.documentRootFrom("./tmsAndHms.nml");
+			Node root = Node.documentRootFrom("./pokemon/tmsAndHms.nml");
 			for(Node n : root.subnodes("tm"))
 			{
 				TM t = new TM(n);
