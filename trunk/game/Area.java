@@ -68,7 +68,8 @@ class Area extends Presenter {
 		}
 
 		player().startStride();
-		next.entity(player());		
+		next.entity(player());
+		repaint();
 	}
 	
 	/**
