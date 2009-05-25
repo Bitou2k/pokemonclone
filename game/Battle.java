@@ -9,13 +9,13 @@ class Battle extends Presenter {
 	private Battler ash;
 	private Battler enemy;
 	
-	private ArrayList<Pokemon> yourParty;
 	private Pokemon ashsPokemon;
 	private Pokemon enemyPokemon;
+	
 	private int stage = 0;
 	
 	private int[][] menuPoints = {{140,155},{220,240}};//{X's},{Y's}
-	private int menuIndexX,menuIndexY;
+	private int menuIndexX=0,menuIndexY=0;
 	private boolean locked = true;
 	
 	//images
@@ -26,21 +26,29 @@ class Battle extends Presenter {
 	private Image playerBar = new ImageIcon("./resources/battle/playerbar.png").getImage();
 	private Image cursor = new ImageIcon("./resources/arrow.png").getImage();
 	
-	private Pokemon p; 
-	private Presenter oldP;
-	public Battle(Pokemon p, Presenter oldP)
+	 
+	private Presenter returnPresenter;
+	
+	/**
+	*A wild battle.
+	*/
+	public Battle(Pokemon p, Presenter returnPresenter)
 	{	
-		menuIndexX = 0;
-		menuIndexY = 0;
-		this.p=p; this.oldP=oldP;
+		this.returnPresenter=returnPresenter;
 		enemyPokemon = p;
-		//remove this
-		yourParty = new ArrayList<Pokemon>();
-		yourParty.add(Species.named("Bulbasaur").makeWildAtLevel(100));
 	}
+	/**
+	*A trainer battle.
+	*/
+	public Battle(Battler b, Presenter returnPresenter)
+	{
+		this.returnPresenter=returnPresenter;
+		enemy = b;
+	}
+
 	public void gotFocus()
 	{
-		
+		ash = player();
 	}
 	
 	public void drawOn(Graphics2D g){
@@ -62,7 +70,7 @@ class Battle extends Presenter {
 			g.setColor(Color.BLACK);
 			g.drawString(enemyPokemon.nickname(),10,15);
 			//image
-			g.drawImage(p.species().imageFront(),170,0,128,128,null);
+			g.drawImage(enemyPokemon.species().imageFront(),170,0,128,128,null);
 			//health bar
 			g.setColor( colorForHealth( enemyPokemon.percentHp() ) );
 			g.fillRect(56,23,(int)(FULLHEALTH * enemyPokemon.percentHp()),7);
@@ -88,12 +96,12 @@ class Battle extends Presenter {
 		g.setColor(Color.BLACK);
 		if (stage < 30) //3 seconds, intro to battle
 		{			
-			g.drawString("A WILD "+p.nickname(),TEXTX,225);
+			g.drawString("A WILD "+enemyPokemon.nickname(),TEXTX,225);
 			g.drawString("HAS APPEARED!!",TEXTX,250);
 			g.drawImage(ashImage,10,100, null);			
 		}
 		else if (stage < 45){ //sending out players pokemon			
-			ashsPokemon = yourParty.get(0); 
+			ashsPokemon = ash.party().get(0); 
 			g.drawString("GO..." + ashsPokemon.nickname(),TEXTX,225);
 		}
 		else{
@@ -141,7 +149,7 @@ class Battle extends Presenter {
 					}
 					else //RUN
 					{
-						enterPresenter(oldP);
+						enterPresenter(returnPresenter);
 					}
 				
 				}

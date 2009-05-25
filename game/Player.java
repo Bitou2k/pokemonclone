@@ -17,6 +17,8 @@ public class Player extends Battler {
 	public Player()
 	{
 		name("Ash");
+		
+		party().add(Species.named("Bulbasaur").makeWildAtLevel(100));
 	}	
 	
 	public Pack pack(){ return pack; }
