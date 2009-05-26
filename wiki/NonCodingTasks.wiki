@@ -7,6 +7,7 @@ adding the sign texts to the areas (Shloka)
           Cerulean City (ceruleancity.nml)
           Cinnibar Island (cinnibarisland.nml)
           Fuchsia city (fuchsia.nml)
+          Holding off on Lavender Town
 
 
 connecting pokegrass to the wild generators (Dana)
