@@ -38,7 +38,7 @@ To sort out the confusion, everyone should put +'s before maps that are finished
 
 + 17. Routes 9 & 10 (Brad)
 
-  18. Rock Tunnel (Craine)
++ 18. Rock Tunnel (Craine)
 
 + 19. Lavender Town (Jon)
 
@@ -46,7 +46,7 @@ To sort out the confusion, everyone should put +'s before maps that are finished
 
 + 21. Celadon City (Frick)
 
-  22. Rocket Hideout
+  22. Rocket Hideout (Craine)
 
 + 23. Pokémon Tower (Joe)
 
