@@ -34,8 +34,12 @@ public class Move {
 		contest = n.contentOf("contest");
 		
 		pp = new Integer(n.contentOf("pp"));
-		//power = new Integer(n.contentOf("power"));
-		//accuracy = new Double(n.contentOf("accuracy"));
+		try{
+			power = new Integer(n.contentOf("power"));
+		}catch(Exception e){}
+
+
+		//accuracy = new Double(new String(n.contentOf("accuracy")).replace("%", "")) % 100;
 		
 		compareName = normalize(name);
 	}
