@@ -834,7 +834,7 @@
 		</move>
 		<move>
 			<level>48</level>
-			<name>Pin Missle</name>
+			<name>Pin Missile</name>
 		</move>
 		<move>
 			<level>54</level>
@@ -1980,10 +1980,6 @@
 			<name>Fury Attack</name>
 		</move>
 		<move>
-			<level>1</level>
-			<name>Scary Face</name>
-		</move>
-		<move>
 			<level>48</level>
 			<name>Horn Drill</name>
 		</move>
@@ -2366,7 +2362,7 @@
 		</move>
 		<move>
 			<level>48</level>
-			<name>Boomerang</name>
+			<name>Bonemerang</name>
 		</move>
 		<move>
 			<level>55</level>
@@ -2429,7 +2425,7 @@
 		</move>
 		<move>
 			<level>43</level>
-			<name>Boomerang</name>
+			<name>Bonemerang</name>
 		</move>
 		<move>
 			<level>46</level>
@@ -3624,7 +3620,7 @@
 		</move>
 		<move>
 			<level>15</level>
-			<name>Fury Atttack</name>
+			<name>Fury Attack</name>
 		</move>
 		<move>
 			<level>23</level>
@@ -3809,7 +3805,7 @@
 		</move>
 		<move>
 			<level>37</level>
-			<name>Withdrawl</name>
+			<name>Withdraw</name>
 		</move>
 		<move>
 			<level>44</level>
