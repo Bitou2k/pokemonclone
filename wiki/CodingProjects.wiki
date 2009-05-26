@@ -108,7 +108,7 @@ _
 
 
 <code>
-(unclaimed, easy)
+*Joe*(unclaimed, easy)
 a small separate program that will check for and delete unused gif files in ./tileImages/ 
 (that is, images with no references in any of the area files)
 
@@ -121,7 +121,7 @@ for(File each: dir.listFiles())
 </code>
 
 <code>
-(unclaimed, medium)
+*Joe*(unclaimed, medium)
 a small separate program that will check for duplicates gif files in ./tileImages/
 (it is a duplicate if both file has the same sequence of bytes)
 this program will delete one or the other, and replace references in the area files
