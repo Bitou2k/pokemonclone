@@ -1,5 +1,34 @@
 <note>pokemon should be added in reverse order so the forward references of evolution don't point to as-yet-unloaded pokemon</note>
 
+<note>
+<pokemon>
+	<number></number>
+	<generation>2</generation>
+	<name></name>
+	<image32>./pokemon/icons32/icon152.gif</image32>
+	<image80>./pokemon/icons80/chikorita.png</image80>
+	<imageFront>./pokemon/iconsFront/152.png</imageFront>
+	<imageBack>./pokemon/iconsBack/152.png</imageBack>
+	<description></description>
+	<type></type>
+	<type2></type2>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<sp atk></sp atk>
+	<sp def></sp def>
+	<speed></speed>
+	<moves>
+		<move>
+			<level></level>
+			<name></name>
+		</move>
+	</moves>
+	<HMs></HMs>
+	<TMs></TMs>
+</pokemon>
+</note>
+
 <pokemon>
 	<number>152</number><generation>2</generation>
 	<name>Chikorita</name>
