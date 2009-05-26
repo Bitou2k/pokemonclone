@@ -48,6 +48,7 @@ public class PokemonBox extends Presenter {
 	
 	public void drawOn(Graphics2D g){
 		
+		
 		g.setColor(Color.WHITE);
 		g.fillRect(0,0,320,288);
 		
@@ -70,6 +71,9 @@ public class PokemonBox extends Presenter {
 			g.drawString( ":L"+pokemon.level(),208-(16*6),16+12+16+lp*inc);
 			g.drawString( pokemon.currentHp() + "/" + pokemon.baseHp(), 208+(16*2)+12, 16+12+(lp*inc));
 			g.drawImage( hpBar.getImage(), 208-(16*2)-4, 32+lp*inc,null);
+			g.setColor(new Color(0,184,0));
+			g.fillRect(208-3, 38+lp*inc-1, 97*(pokemon.currentHp()/pokemon.baseHp()), 4);
+			g.setColor(Color.BLACK);
 		}
 		g.drawString("Cancel", 12, 16+12+lp*inc);
 
@@ -106,8 +110,7 @@ public class PokemonBox extends Presenter {
 				player().party().set(pkmnCursorIndex, switched);
 				player().party().set(switchCursorIndex, switcher);
 				switchFlag=false;
-			}
-				
+			}		
 		}
 		else
 		{
@@ -119,11 +122,10 @@ public class PokemonBox extends Presenter {
 				if (pkmnCursorIndex == player().party().size() ) { enterPresenter(oldPresenter); }
 				else
 				{
-					String choice = showMenu( new String[]{ "Stats", "Switch", "Move", "Item", "Cancel" } );
+					String choice = showMenu( new String[]{ "Stats", "Switch", "Cancel" } );
 				
 					if ("Stats".equals(choice)) { /*enter stats presenter*/ }
 					if ("Switch".equals(choice)) { switchFlag = true; }
-					if ("Item".equals(choice)) { /*give/take menu and item presenter*/ }
 					if ("Cancel".equals(choice)) { /*do nothing*/ }
 				}
 			}
