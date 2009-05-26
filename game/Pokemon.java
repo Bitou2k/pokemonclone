@@ -81,6 +81,8 @@ public class Pokemon
 	
 	public Status status(){return status;}
 	public void status(Status newStatus){status=newStatus;}
+	
+	public void doDamage(int damage){currentHp -= damage;}
 }
 
 

@@ -26,6 +26,9 @@ class Battle extends Presenter {
 	private Image playerBar = new ImageIcon("./resources/battle/playerbar.png").getImage();
 	private Image cursor = new ImageIcon("./resources/arrow.png").getImage();
 	
+	private String textLine1 = "";
+	private String textLine2 = "";
+	
 	 
 	private Presenter returnPresenter;
 	
@@ -91,18 +94,20 @@ class Battle extends Presenter {
 			g.drawString(ashsPokemon.currentHp() + "   "  + ashsPokemon.baseHp(),200,180);
 		}
 		
-		
+		g.drawString(textLine1,TEXTX,225);
+		g.drawString(textLine2,TEXTX,250);
 		
 		g.setColor(Color.BLACK);
 		if (stage < 30) //3 seconds, intro to battle
 		{			
-			g.drawString("A WILD "+enemyPokemon.nickname(),TEXTX,225);
-			g.drawString("HAS APPEARED!!",TEXTX,250);
+			textLine1 = "A WILD "+enemyPokemon.nickname();
+			textLine2 = "HAS APPEARED!!";
 			g.drawImage(ashImage,10,100, null);			
 		}
 		else if (stage < 45){ //sending out players pokemon			
 			ashsPokemon = ash.party().get(0); 
-			g.drawString("GO..." + ashsPokemon.nickname(),TEXTX,225);
+			textLine1 = "GO..." + ashsPokemon.nickname();
+			textLine2 = "";
 		}
 		else{
 			locked = false;
@@ -162,11 +167,85 @@ class Battle extends Presenter {
 	
 	private void fight(){
 		locked = true;
+		String[] moveSet = new String[4];
+		for (int i = 0; i < 4; i++){
+			moveSet[i] = ashsPokemon.moves().get(i).name();
+		}
 		String moveSelection = showMenu("Select a move:",new String[]{
-			ashsPokemon.moves().get(0).name(),
-			ashsPokemon.moves().get(1).name(),
-			ashsPokemon.moves().get(2).name(),
-			ashsPokemon.moves().get(3).name()});
+			moveSet[0],
+			moveSet[1],
+			moveSet[2],
+			moveSet[3]});
+			
+		Move move;			
+		if (moveSelection.equals(moveSet[0]))
+			move = ashsPokemon.moves().get(0);
+		else if (moveSelection.equals(moveSet[1]))
+			move = ashsPokemon.moves().get(1);
+		else if (moveSelection.equals(moveSet[2]))
+			move = ashsPokemon.moves().get(2);
+		else
+			move = ashsPokemon.moves().get(3);
+		
+		Attack(move,getAIMove());
+	}
+	
+	private Move getAIMove(){
+		//return a random move
+		Move selection = enemyPokemon.moves().get((int)(Math.random() * 100) % enemyPokemon.moves().size());
+		
+		return selection;
+	}
+	
+	private void Attack(Move ashsMove, Move enemyMove){
+		stage = 45; //timing
+		Pokemon pkmnAttack, pkmnDefend;
+		Move firstAttack, secondAttack;
+		//determine who will attack first
+		if (ashsPokemon.currentSpeed() > enemyPokemon.currentSpeed()){
+			pkmnAttack = ashsPokemon;
+			pkmnDefend = enemyPokemon;
+			firstAttack = ashsMove;
+			secondAttack = enemyMove;
+		}
+		else{
+			pkmnAttack = enemyPokemon;
+			pkmnDefend = ashsPokemon;
+			firstAttack = enemyMove;
+			secondAttack = ashsMove;
+		}
+		//attack
+		pkmnDefend.doDamage(calcDamage(firstAttack,pkmnAttack,pkmnDefend));
+		textLine1 = pkmnAttack.nickname() + " uses " + firstAttack.name();
+		sleep(2000);
+		pkmnAttack.doDamage(calcDamage(secondAttack,pkmnDefend,pkmnAttack));
+		textLine1 = pkmnDefend.nickname() + " uses " + secondAttack.name();
+		sleep(2000);
+		textLine1 = "";
+		
+		
+		
+	}
+	private int calcDamage(Move move, Pokemon att, Pokemon def){
+	//Damage = ((((2 * Level / 5 + 2) * AttackStat * AttackPower / DefenseStat) / 50) + 2) * STAB * Weakness/Resistance * RandomNumber / 100
+		double level = (double)att.level();
+		double attackStat = (double)att.currentAttack();
+		double attackPower = 100.0;//(double)move.power();
+		double defenseStat = (double)def.currentDefense();
+		double STAB = (move.type() == att.species().type() || move.type() == att.species().type2() ? 1.5 : 1.0);
+		double weakResist = 1.0;//type comparison CHANGE
+		Random r = new Random();
+		double randomNum = (double)r.nextInt(16) + 85.0;
+		System.out.println("level:"+level +", attStat:" + attackStat + ", attPower:"+ move.power() + 
+			", defStat:" + defenseStat+", STAB:" + STAB+", random:"+ randomNum);
+		return (int)(((((2 * level / 5 + 2) * attackStat * attackPower / defenseStat)/50)+2) * STAB * weakResist * randomNum / 100);
 	}
 
+	private void sleep(long ms)
+	{
+		try
+		{
+			Thread.sleep(ms);
+		}catch(Exception e){}
+	}
 }
