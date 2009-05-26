@@ -46,13 +46,13 @@ To sort out the confusion, everyone should put +'s before maps that are finished
 
 + 21. Celadon City (Frick)
 
-  22. Rocket Hideout (Craine)
+  22. Rocket Hideout
 
 + 23. Pokémon Tower (Joe)
 
 + 24. Saffron City (Frick)
 
-  25. Silph Company
+  25. Silph Company (Craine)
 
   26. Route 16/17(+), 18 in progress.  (Tim)
  
