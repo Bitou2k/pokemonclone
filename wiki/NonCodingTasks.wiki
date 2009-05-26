@@ -6,6 +6,7 @@ adding the sign texts to the areas (Shloka)
           Celadon Gym (celadon_gym.nml)
           Cerulean City (ceruleancity.nml)
           Cinnibar Island (cinnibarisland.nml)
+          Fuchsia city (fuchsia.nml)
 
 
 connecting pokegrass to the wild generators (Dana)
