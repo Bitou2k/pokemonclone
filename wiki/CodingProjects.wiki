@@ -26,6 +26,11 @@ _
 PokemonBox()
 _
 
+*Adam Hendricksono*<br>
+BattleBox() done
+_
+
+
 
 //this contains x number of pokemon
 
