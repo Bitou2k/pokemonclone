@@ -17,6 +17,7 @@ class Battle extends Presenter {
 	private int[][] menuPoints = {{140,155},{220,240}};//{X's},{Y's}
 	private int menuIndexX=0,menuIndexY=0;
 	private boolean locked = true;
+	private boolean Switched = false;
 	
 	//images
 	private Image enemyBar = new ImageIcon("./resources/battle/enemybar.png").getImage();
@@ -40,6 +41,9 @@ class Battle extends Presenter {
 	{
 		enemyPokemon = p;
 	}
+
+	public void Switched() { Switched = true;}
+
 	
 	/**
 	*A wild battle.
@@ -211,29 +215,45 @@ class Battle extends Presenter {
 		Pokemon pkmnAttack, pkmnDefend;
 		Move firstAttack, secondAttack;
 		//determine who will attack first
-		if (ashsPokemon.currentSpeed() > enemyPokemon.currentSpeed()){
-			pkmnAttack = ashsPokemon;
-			pkmnDefend = enemyPokemon;
-			firstAttack = ashsMove;
-			secondAttack = enemyMove;
-		}
-		else{
-			pkmnAttack = enemyPokemon;
-			pkmnDefend = ashsPokemon;
-			firstAttack = enemyMove;
-			secondAttack = ashsMove;
-		}
-		//attack
-		pkmnDefend.doDamage(calcDamage(firstAttack,pkmnAttack,pkmnDefend));
-		textLine1 = pkmnAttack.nickname() + " uses " + firstAttack.name();
-		sleep(2000);
-		pkmnAttack.doDamage(calcDamage(secondAttack,pkmnDefend,pkmnAttack));
-		textLine1 = pkmnDefend.nickname() + " uses " + secondAttack.name();
-		sleep(2000);
-		textLine1 = "";
+		//if(Switched = false)
+		//{
+			if (ashsPokemon.currentSpeed() > enemyPokemon.currentSpeed()){
+				pkmnAttack = ashsPokemon;
+				pkmnDefend = enemyPokemon;
+				firstAttack = ashsMove;
+				secondAttack = enemyMove;
+			}
+			else{
+				pkmnAttack = enemyPokemon;
+				pkmnDefend = ashsPokemon;
+				firstAttack = enemyMove;
+				secondAttack = ashsMove;
+			}
+			//attack
+			pkmnDefend.doDamage(calcDamage(firstAttack,pkmnAttack,pkmnDefend));
+			textLine1 = pkmnAttack.nickname() + " uses " + firstAttack.name();
+			sleep(2000);
+			pkmnAttack.doDamage(calcDamage(secondAttack,pkmnDefend,pkmnAttack));
+			textLine1 = pkmnDefend.nickname() + " uses " + secondAttack.name();
+			sleep(2000);
+			textLine1 = "";
+		//}
+		//else
+		//{
+		//    pkmnAttack = enemyPokemon;
+		//    pkmnDefend = ashsPokemon;
+		//    firstAttack = enemyMove;
+		//    textLine1 = "GO..." + pkmnDefend.nickname();
+		//    sleep(2000);
+		//    pkmnDefend.doDamage(calcDamage(firstAttack, pkmnAttack, pkmnDefend));
+		//    textLine1 = pkmnAttack.nickname() + " uses " + firstAttack.name();
+		//    sleep(2000);
+		//    Switched = false;
+		//}
 		if(ashsPokemon.currentHp() <= 0)
 		{
 			enterPresenter(new BattleBox(this));
+			Switched = false;
 		}
 		
 	}
