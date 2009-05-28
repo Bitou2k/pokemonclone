@@ -43,8 +43,8 @@ finished through: 25
 26-50: Cawhrin
 finished through: 31?  Still working on them...
 
-51-75: ?
-finished through?
+51-75: Garrett
+finished through just starting
 
 76-100: Craine:  
 Committed to database, and working.
