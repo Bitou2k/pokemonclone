@@ -52,6 +52,7 @@ class Battle extends Presenter {
 	{	
 		this.returnPresenter=returnPresenter;
 		enemyPokemon = p;
+		new Thread(){public void run(){battleLoop();}}.start();
 	}
 	/**
 	*A trainer battle.
@@ -60,6 +61,7 @@ class Battle extends Presenter {
 	{
 		this.returnPresenter=returnPresenter;
 		enemy = b;
+		new Thread(){public void run(){battleLoop();}}.start();
 	}
 
 	public void gotFocus()
@@ -67,7 +69,7 @@ class Battle extends Presenter {
 		ash = player();
 	}
 	
-	public void drawOn(Graphics2D g){
+	/*public void drawOn(Graphics2D g){
 		
 		g.setColor(Color.WHITE); //blank background
 		g.fillRect(0,0,320,288);
@@ -133,7 +135,7 @@ class Battle extends Presenter {
 			locked = true;
 		}
 		
-	}
+	}*/
 	
 	private Color colorForHealth(double percentage)
 	{
@@ -180,7 +182,6 @@ class Battle extends Presenter {
 		}
 	}
 	public void step(int ms){
-		if (stage < 46) stage++;
 	}
 	
 	private void fight(){
@@ -283,5 +284,86 @@ class Battle extends Presenter {
 		{
 			Thread.sleep(ms);
 		}catch(Exception e){}
+	}
+	
+	public void drawOn(Graphics2D g){
+		g.setColor(Color.WHITE); //blank background
+		g.fillRect(0,0,320,288);
+		
+		//setup
+		g.setColor(Color.BLACK);
+		g.setFont(new Font("Courier New",Font.BOLD,20));
+		final int TEXTX = 15;
+		final int FULLHEALTH = 97;
+		
+		//draw little box at the bottom
+		g.drawImage(bottomFrame,0,195,null);	
+
+		
+		if(enemyPokemon!=null){
+			//that background arrow thingy
+			g.drawImage(enemyBar,10,20,null);
+			//name
+			g.setColor(Color.BLACK);
+			g.drawString(enemyPokemon.nickname(),10,15);
+			//image
+			g.drawImage(enemyPokemon.species().imageFront(),170,0,128,128,null);
+			//health bar
+			g.setColor( colorForHealth( enemyPokemon.percentHp() ) );
+			g.fillRect(56,23,(int)(FULLHEALTH * enemyPokemon.percentHp()),7);
+		}
+		if(ashsPokemon!=null){
+			//that background arrow thingy
+			g.drawImage(playerBar,155,145,null);
+			//name
+			g.setColor(Color.BLACK);
+			g.drawString(ashsPokemon.nickname(),170,140);
+			//image
+			g.drawImage(ashsPokemon.species().imageBack(),10,65,128,128,null);
+			//health bar
+			g.setColor( colorForHealth( ashsPokemon.percentHp() ) );
+			g.fillRect(203,146,(int)(FULLHEALTH * ashsPokemon.percentHp()),7);
+			//health numbers
+			g.setColor(Color.BLACK);
+			g.drawString(ashsPokemon.currentHp() + "   "  + ashsPokemon.baseHp(),200,180);
+		}		
+		g.setColor(Color.BLACK);
+		
+		if (stage == 0){
+			g.drawImage(ashImage,10,100,null);
+		}
+		
+		g.drawString(textLine1,TEXTX,225);
+		g.drawString(textLine2,TEXTX,250);
+		
+	}
+	
+	private void battleLoop(){
+		textLine1 = "A WILD " + enemyPokemon.species().name();//announce wild pokemon
+		textLine2 = "APPEARED!!";
+		sleep(2000);
+		stage++;
+		//send out your pokemon
+		for (int i = 0; i < ash.party().size(); i ++){
+			if (ash.party().get(i).currentHp() != 0){
+				ashsPokemon = ash.party().get(i);
+				i = ash.party().size();
+			}
+		}
+		textLine1 = "GO..." + ashsPokemon.nickname();
+		textLine2 = "";
+		sleep(1500);
+		//loop starts here
+		while(!battleEnd()){
+			textLine1 = "";
+			String selection = showGridMenu(new String[] {"FIGHT","PACK","PKMN","RUN"});
+			sleep(1000);
+			stage =3;
+		}
+		enterPresenter(returnPresenter);
+	}
+	private boolean battleEnd(){		
+		if (stage == 3){return true;}
+		return false;
 	}
 }
