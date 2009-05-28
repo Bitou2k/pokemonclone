@@ -9,12 +9,12 @@ import javax.swing.*;
 
 import java.util.*;
 
-public class PokemonBox extends Presenter {
+public class BattleBox extends Presenter {
 	
 	/**
 	* the presenter to go back to
 	*/
-	Presenter oldPresenter;
+	Battle oldPresenter;
 	/**
 	*  cursor index next to the pokemon
 	*/
@@ -28,22 +28,18 @@ public class PokemonBox extends Presenter {
 	/**
 	 *  flag for switch pokemon
 	 */
-	boolean switchFlag;
+	 
+	 Pokemon selectedPokemon;
 	
 	final ImageIcon bottomBox = new ImageIcon("./resources/bottomBox.png");
 	final ImageIcon arrow = new ImageIcon("./resources/arrow.png");
-	final ImageIcon idleArrow = new ImageIcon("./resources/idlearrow.png");
+	//final ImageIcon idleArrow = new ImageIcon("./resources/idlearrow.png");
 	final ImageIcon hpBar = new ImageIcon("./resources/hpbar.png");
 	
-	public PokemonBox(Presenter oldP){
+	public BattleBox(Battle oldP){
 		oldPresenter = oldP;		
 		pkmnCursorIndex = 0;
 		switchCursorIndex = 0;
-		switchFlag=false;
-		//if (player().party()==null)
-		//{
-		//	player().party().add(new Pokemon(Species.named("Ditto"), 5));
-		//}
 	}
 	
 	public void drawOn(Graphics2D g){
@@ -77,13 +73,8 @@ public class PokemonBox extends Presenter {
 		}
 		g.drawString("Cancel", 12, 16+12+lp*inc);
 
-		if (switchFlag)
-		{
-			g.drawImage(idleArrow.getImage(), 0, 16+ pkmnCursorIndex* 32, null);
-			g.drawImage(arrow.getImage(), 0, 16+ switchCursorIndex* 32, null);
-		}
-		else
-			g.drawImage(arrow.getImage(), 0, 16+ pkmnCursorIndex* 32, null);
+
+		g.drawImage(arrow.getImage(), 0, 16+ pkmnCursorIndex* 32, null);
 		
 	}
 	
@@ -94,26 +85,9 @@ public class PokemonBox extends Presenter {
 		if (b==Button.A)
 		{
 			if (pkmnCursorIndex == player().party().size() ) { enterPresenter(oldPresenter); }
-			if (switchCursorIndex == player().party().size() ) { enterPresenter(oldPresenter); }
 		}
 		
-		if (switchFlag)
-		{
-			if (b==Button.DOWN)
-				if (switchCursorIndex < player().party().size()) { switchCursorIndex++; }
-			if (b==Button.UP)
-				if (switchCursorIndex > 0) { switchCursorIndex--; }
-			if (b==Button.A) 
-			{
-				Pokemon switcher=player().party().get(pkmnCursorIndex);
-				Pokemon switched=player().party().get(switchCursorIndex);
-				player().party().set(pkmnCursorIndex, switched);
-				player().party().set(switchCursorIndex, switcher);
-				switchFlag=false;
-			}		
-		}
-		else
-		{
+
 			if (b==Button.DOWN)
 				if (pkmnCursorIndex < player().party().size()) { pkmnCursorIndex++; }
 			if (b==Button.UP)
@@ -125,9 +99,17 @@ public class PokemonBox extends Presenter {
 					String choice = showMenu( new String[]{ "Stats", "Switch", "Cancel" } );
 				
 					if ("Stats".equals(choice)) { /*enter stats presenter*/ }
-					if ("Switch".equals(choice)) { switchFlag = true; }
+					////////////////////////////////////////////////////////////////////////
+					if ("Switch".equals(choice)) 
+					{
+						Pokemon pokemon;
+						pokemon = player().party().get(pkmnCursorIndex);
+						oldPresenter.ashsPokemon(pokemon);
+						enterPresenter(oldPresenter);
+					}
+					////////////////////////////////////////////////////////////////////////
 					if ("Cancel".equals(choice)) { /*do nothing*/ }
-				}
+
 			}
 		}
 	}

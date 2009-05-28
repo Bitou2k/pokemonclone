@@ -32,6 +32,15 @@ class Battle extends Presenter {
 	 
 	private Presenter returnPresenter;
 	
+	public void ashsPokemon(Pokemon p)
+	{
+		ashsPokemon = p;
+	}
+	public void enemyPokemon(Pokemon p)
+	{
+		enemyPokemon = p;
+	}
+	
 	/**
 	*A wild battle.
 	*/
@@ -150,7 +159,7 @@ class Battle extends Presenter {
 				else //PkMn / RUN
 				{
 					if (menuIndexY == 0){ //PKMN
-					enterPresenter(new PokemonBox(this));
+					enterPresenter(new BattleBox(this));
 					}
 					else //RUN
 					{
