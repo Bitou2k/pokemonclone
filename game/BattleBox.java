@@ -96,7 +96,7 @@ public class BattleBox extends Presenter {
 				if (pkmnCursorIndex == player().party().size() ) { enterPresenter(oldPresenter); }
 				else
 				{
-					String choice = showMenu( new String[]{ "Stats", "Switch", "Cancel" } );
+					String choice = showMenu( new String[]{ "Switch", "Stats", "Cancel" } );
 				
 					if ("Stats".equals(choice)) { /*enter stats presenter*/ }
 					////////////////////////////////////////////////////////////////////////
