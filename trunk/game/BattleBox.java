@@ -104,8 +104,13 @@ public class BattleBox extends Presenter {
 					{
 						Pokemon pokemon;
 						pokemon = player().party().get(pkmnCursorIndex);
-						oldPresenter.ashsPokemon(pokemon);
-						enterPresenter(oldPresenter);
+						if(pokemon.currentHp() > 0)
+						{
+							oldPresenter.ashsPokemon(pokemon);
+							enterPresenter(oldPresenter);
+						}
+						else
+							showMessage("Please Select a Pokemon With Health"); 
 					}
 					////////////////////////////////////////////////////////////////////////
 					if ("Cancel".equals(choice)) { /*do nothing*/ }
