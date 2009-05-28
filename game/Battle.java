@@ -220,7 +220,7 @@ class Battle extends Presenter {
 		Pokemon pkmnAttack, pkmnDefend;
 		Move firstAttack, secondAttack;
 		//determine who will attack first
-		if(Switched = false)
+		if(Switched == false)
 		{
 			if (ashsPokemon.currentSpeed() > enemyPokemon.currentSpeed()){
 				pkmnAttack = ashsPokemon;
