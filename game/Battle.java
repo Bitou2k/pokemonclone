@@ -231,8 +231,10 @@ class Battle extends Presenter {
 		textLine1 = pkmnDefend.nickname() + " uses " + secondAttack.name();
 		sleep(2000);
 		textLine1 = "";
-		
-		
+		if(ashsPokemon.currentHp() <= 0)
+		{
+			enterPresenter(new BattleBox(this));
+		}
 		
 	}
 	private int calcDamage(Move move, Pokemon att, Pokemon def){
