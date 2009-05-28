@@ -1,0 +1,32 @@
+#summary Our own personal PasteBin for random Projects
+
+= Current CopyPasta =
+
+<note>
+	battle = items used in battle
+	stats = items that permanently boost stats
+	ball = pokeballs
+	misc = escape rope, nugget, stone, etc.
+	resto = restorative
+</note>
+
+<note>
+<item>
+	<name></name>
+	<type></type>
+	<desc></desc>
+	<price></price>
+	<stat></stat>
+	<effect></effect>
+</item>
+</note>
+
+
+<item>
+	<name>Antidote</name>
+	<type>resto</type>
+	<desc>Cures Poison</desc>
+	<price>100</price>
+	<stat>poison</stat>
+	<effect>cure</effect>
+</item>
