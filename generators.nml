@@ -685,10 +685,19 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 	<pokemon>
 		<name>Horsea</name>
 		<level>15</level>
-		<chance>0.18</chance>
+		<chance>0.30</chance>
+	</pokemon>
+	<pokemon>
+		<name>Krabby</name>
+		<level>15</level>
+		<chance>0.28</chance>
+	</pokemon>
+	<pokemon>
+		<name>Kingler</name>
+		<level>28</level>
+		<chance>0.02</chance>
 	</pokemon>
 </generator>
-
 <generator>
 	<name>rocktunnelGen</name>
 	<overallchance>0.11</overallchance>
@@ -745,6 +754,20 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<name>Kadabra</name>
 		<level>20</level>
 		<chance>0.05</chance>
+	</pokemon>
+</generator>
+<generator>
+	<name>celadoncitywatGen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Magikarp</name>
+		<level>14</level>
+		<chance>0.50</chance>
+	</pokemon>
+	<pokemon>
+		<name>Goldeen</name>
+		<level>15</level>
+		<chance>0.50</chance>
 	</pokemon>
 </generator>
 <generator>
@@ -818,6 +841,25 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 
 </generator>
 <generator>
+	<name>route17watGen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Magikarp</name>
+		<level>19</level>
+		<chance>0.50</chance>
+	</pokemon>
+	<pokemon>
+		<name>Shelder</name>
+		<level>18</level>
+		<chance>0.25</chance>
+	</pokemon>
+	<pokemon>
+		<name>Tentacool</name>
+		<level>19</level>
+		<chance>0.25</chance>
+	</pokemon>
+</generator>
+<generator>
 	<name>route18Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -841,6 +883,39 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<chance>0.30</chance>
 	</pokemon>
 
+</generator>
+<generator>
+	<name>route18watGen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Magikarp</name>
+		<level>19</level>
+		<chance>0.50</chance>
+	</pokemon>
+	<pokemon>
+		<name>Shelder</name>
+		<level>18</level>
+		<chance>0.25</chance>
+	</pokemon>
+	<pokemon>
+		<name>Tentacool</name>
+		<level>19</level>
+		<chance>0.25</chance>
+	</pokemon>
+</generator>
+<generator>
+	<name>fuchsiacitywatGen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Magikarp</name>
+		<level>21</level>
+		<chance>0.80</chance>
+	</pokemon>
+	<pokemon>
+		<name>Gyarados</name>
+		<level>22</level>
+		<chance>0.20</chance>
+	</pokemon>
 </generator>
 <generator>
 	<name>safarizonemainGen</name>
@@ -1036,6 +1111,25 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 	</pokemon>
 </generator>
 <generator>
+	<name>safarizonewatGen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Magikarp</name>
+		<level>19</level>
+		<chance>0.50</chance>
+	</pokemon>
+	<pokemon>
+		<name>Dratini</name>
+		<level>29</level>
+		<chance>0.40</chance>
+	</pokemon>
+	<pokemon>
+		<name>Dragonair</name>
+		<level>31</level>
+		<chance>0.10</chance>
+	</pokemon>
+</generator>
+<generator>
 	<name>route12Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -1075,6 +1169,30 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 	</pokemon>
 </generator>
 <generator>
+	<name>route12watGen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Magikarp</name>
+		<level>19</level>
+		<chance>0.40</chance>
+	</pokemon>
+	<pokemon>
+		<name>Horsea</name>
+		<level>29</level>
+		<chance>0.25</chance>
+	</pokemon>
+	<pokemon>
+		<name>Seadra</name>
+		<level>32</level>
+		<chance>0.10</chance>
+	</pokemon>
+	<pokemon>
+		<name>Tentacool</name>
+		<level>29</level>
+		<chance>0.25</chance>
+	</pokemon>
+</generator>
+<generator>
 	<name>route13Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -1111,6 +1229,30 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<name>Gloom</name>
 		<level>32</level>
 		<chance>0.05</chance>
+	</pokemon>
+</generator>
+<generator>
+	<name>route13watGen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Magikarp</name>
+		<level>19</level>
+		<chance>0.40</chance>
+	</pokemon>
+	<pokemon>
+		<name>Horsea</name>
+		<level>29</level>
+		<chance>0.25</chance>
+	</pokemon>
+	<pokemon>
+		<name>Seadra</name>
+		<level>32</level>
+		<chance>0.10</chance>
+	</pokemon>
+	<pokemon>
+		<name>Tentacool</name>
+		<level>29</level>
+		<chance>0.25</chance>
 	</pokemon>
 </generator>
 <generator>
@@ -1213,6 +1355,49 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<name>Pidgeotto</name>
 		<level>30</level>
 		<chance>0.10</chance>
+	</pokemon>
+</generator>
+<generator>
+	<name>route21watGen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Magikarp</name>
+		<level>19</level>
+		<chance>0.40</chance>
+	</pokemon>
+	<pokemon>
+		<name>Tentacool</name>
+		<level>29</level>
+		<chance>0.25</chance>
+	</pokemon>
+	<pokemon>
+		<name>Tentacruel</name>
+		<level>30</level>
+		<chance>0.10</chance>
+	</pokemon>
+	<pokemon>
+		<name>Staryu</name>
+		<level>27</level>
+		<chance>0.25</chance>
+	</pokemon>
+</generator>
+<generator>
+	<name>cinnabarislandwatGen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Magikarp</name>
+		<level>19</level>
+		<chance>0.50</chance>
+	</pokemon>
+	<pokemon>
+		<name>Tentacool</name>
+		<level>29</level>
+		<chance>0.25</chance>
+	</pokemon>
+	<pokemon>
+		<name>Staryu</name>
+		<level>32</level>
+		<chance>0.25</chance>
 	</pokemon>
 </generator>
 <generator>
@@ -1362,6 +1547,63 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<name>Voltorb</name>
 		<level>32</level>
 		<chance>0.10</chance>
+	</pokemon>
+</generator>
+<generator>
+	<name>powerplantwatGen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Magikarp</name>
+		<level>19</level>
+		<chance>0.50</chance>
+	</pokemon>
+	<pokemon>
+		<name>Tentacool</name>
+		<level>29</level>
+		<chance>0.25</chance>
+	</pokemon>
+	<pokemon>
+		<name>Staryu</name>
+		<level>32</level>
+		<chance>0.25</chance>
+	</pokemon>
+</generator>
+<generator>
+	<name>route19watGen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Magikarp</name>
+		<level>19</level>
+		<chance>0.50</chance>
+	</pokemon>
+	<pokemon>
+		<name>Tentacool</name>
+		<level>29</level>
+		<chance>0.25</chance>
+	</pokemon>
+	<pokemon>
+		<name>Staryu</name>
+		<level>32</level>
+		<chance>0.25</chance>
+	</pokemon>
+</generator>
+<generator>
+	<name>route20watGen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Magikarp</name>
+		<level>19</level>
+		<chance>0.50</chance>
+	</pokemon>
+	<pokemon>
+		<name>Tentacool</name>
+		<level>29</level>
+		<chance>0.25</chance>
+	</pokemon>
+	<pokemon>
+		<name>Staryu</name>
+		<level>32</level>
+		<chance>0.25</chance>
 	</pokemon>
 </generator>
 <generator>
@@ -1530,6 +1772,43 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 	</pokemon>
 </generator>
 <generator>
+	<name>seafoamislandwatGen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Magikarp</name>
+		<level>19</level>
+		<chance>0.50</chance>
+	</pokemon>
+	<pokemon>
+		<name>Gyrados</name>
+		<level>32</level>
+		<chance>0.10</chance>
+	<pokemon>
+		<name>Tentacool</name>
+		<level>34</level>
+		<chance>0.40</chance>
+	</pokemon>
+</generator>
+<generator>
+	<name>route23watGen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Magikarp</name>
+		<level>19</level>
+		<chance>0.50</chance>
+	</pokemon>
+	<pokemon>
+		<name>Tentacool</name>
+		<level>29</level>
+		<chance>0.40</chance>
+	</pokemon>
+	<pokemon>
+		<name>Tentacruel</name>
+		<level>33</level>
+		<chance>0.10</chance>
+	</pokemon>
+</generator>
+<generator>
 	<name>victoryroadf1Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -1613,6 +1892,30 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 	<pokemon>
 		<name>Onix</name>
 		<level>42</level>
+		<chance>0.10</chance>
+	</pokemon>
+</generator>
+<generator>
+	<name>indigoplateauwatGen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Magikarp</name>
+		<level>19</level>
+		<chance>0.50</chance>
+	</pokemon>
+	<pokemon>
+		<name>Gyrados</name>
+		<level>40</level>
+		<chance>0.10</chance>
+	</pokemon>
+	<pokemon>
+		<name>Tentacruel</name>
+		<level>38</level>
+		<chance>0.20</chance>
+	</pokemon>
+	<pokemon>
+		<name>Seadra</name>
+		<level>37</level>
 		<chance>0.10</chance>
 	</pokemon>
 </generator>
