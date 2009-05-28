@@ -107,10 +107,12 @@ class Battle extends Presenter {
 			g.drawString(ashsPokemon.currentHp() + "   "  + ashsPokemon.baseHp(),200,180);
 		}
 		
+		g.setColor(Color.BLACK);
+		
 		g.drawString(textLine1,TEXTX,225);
 		g.drawString(textLine2,TEXTX,250);
 		
-		g.setColor(Color.BLACK);
+		
 		if (stage < 30) //3 seconds, intro to battle
 		{			
 			textLine1 = "A WILD "+enemyPokemon.nickname();
@@ -122,10 +124,13 @@ class Battle extends Presenter {
 			textLine1 = "GO..." + ashsPokemon.nickname();
 			textLine2 = "";
 		}
-		else{
+		else if (stage == 46){ //show battle menu
 			locked = false;
 			g.drawImage(battleMenu,125,195,null);
 			g.drawImage(cursor,140 + menuIndexX * 100,220 + menuIndexY * 35,null);
+		}
+		else if (stage == 51){//dont show battle menu
+			locked = true;
 		}
 		
 	}
@@ -175,11 +180,12 @@ class Battle extends Presenter {
 		}
 	}
 	public void step(int ms){
-		stage++;
+		if (stage < 46) stage++;
 	}
 	
 	private void fight(){
 		locked = true;
+		stage = 51;
 		String[] moveSet = new String[4];
 		for (int i = 0; i < 4; i++){
 			moveSet[i] = ashsPokemon.moves().get(i).name();
@@ -211,12 +217,11 @@ class Battle extends Presenter {
 	}
 	
 	private void Attack(Move ashsMove, Move enemyMove){
-		stage = 45; //timing
 		Pokemon pkmnAttack, pkmnDefend;
 		Move firstAttack, secondAttack;
 		//determine who will attack first
-		//if(Switched = false)
-		//{
+		if(Switched = false)
+		{
 			if (ashsPokemon.currentSpeed() > enemyPokemon.currentSpeed()){
 				pkmnAttack = ashsPokemon;
 				pkmnDefend = enemyPokemon;
@@ -237,25 +242,25 @@ class Battle extends Presenter {
 			textLine1 = pkmnDefend.nickname() + " uses " + secondAttack.name();
 			sleep(2000);
 			textLine1 = "";
-		//}
-		//else
-		//{
-		//    pkmnAttack = enemyPokemon;
-		//    pkmnDefend = ashsPokemon;
-		//    firstAttack = enemyMove;
-		//    textLine1 = "GO..." + pkmnDefend.nickname();
-		//    sleep(2000);
-		//    pkmnDefend.doDamage(calcDamage(firstAttack, pkmnAttack, pkmnDefend));
-		//    textLine1 = pkmnAttack.nickname() + " uses " + firstAttack.name();
-		//    sleep(2000);
-		//    Switched = false;
-		//}
+		}
+		else
+		{
+		    pkmnAttack = enemyPokemon;
+		    pkmnDefend = ashsPokemon;
+		    firstAttack = enemyMove;
+		    textLine1 = "GO..." + pkmnDefend.nickname();
+		    sleep(2000);
+		    pkmnDefend.doDamage(calcDamage(firstAttack, pkmnAttack, pkmnDefend));
+		    textLine1 = pkmnAttack.nickname() + " uses " + firstAttack.name();
+		    sleep(2000);
+		    Switched = false;
+		}
 		if(ashsPokemon.currentHp() <= 0)
 		{
 			enterPresenter(new BattleBox(this));
 			Switched = false;
 		}
-		
+		stage = 46;
 	}
 	private int calcDamage(Move move, Pokemon att, Pokemon def){
 	//Damage = ((((2 * Level / 5 + 2) * AttackStat * AttackPower / DefenseStat) / 50) + 2) * STAB * Weakness/Resistance * RandomNumber / 100
