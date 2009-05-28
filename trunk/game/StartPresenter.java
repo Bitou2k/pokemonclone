@@ -33,6 +33,7 @@ class StartPresenter extends Presenter {
 		g.drawString("Colin Hoernig",0,190);
 		g.drawString("Brett Guiden",0,200);
 		g.drawString("Nick West", 0, 210);
+		g.drawString("Jay Lannin", 0, 220);
 	}
 	
 	public void buttonPressed(Button b)
