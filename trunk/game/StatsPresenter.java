@@ -9,6 +9,9 @@ import javax.swing.*;
 
 import java.util.*;
 
+/**
+*What you see select stats from a party menu.
+*/
 public class StatsPresenter extends Presenter {
 	
 	/**
@@ -37,7 +40,7 @@ public class StatsPresenter extends Presenter {
 
 	}
 	
-		public void buttonPressed(Button b)
+	public void buttonPressed(Button b)
 	{	
 	}
 	

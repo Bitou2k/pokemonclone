@@ -38,7 +38,7 @@ abstract class Presenter {
 	}
 	
 	/**
-	 *Convience on game().player()
+	 *Access the sole instance of Player; returns null until gotFocus is invoked.
 	 */
 	public Player player()
 	{
