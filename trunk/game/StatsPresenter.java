@@ -33,4 +33,12 @@ public class StatsPresenter extends Presenter {
 		
 	}
 	
+	public void step(int ms){
+
+	}
+	
+		public void buttonPressed(Button b)
+	{	
+	}
+	
 }
