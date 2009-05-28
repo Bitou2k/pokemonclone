@@ -89,8 +89,17 @@ buttonPressed
 </code>
 
 <code>
-pokemonPokedexScreen(Species p)
-//this displays pokemon info in the pokedex
+PokedexPresenter (unclaimed)
+
+open PokedexSpeciesPresenters, etc as appropriate
+</code>
+
+<code>
+PokedexSpeciesPresenter (unclaimed)
+
+constructor should take one argument of type Species and a second argument of type Presenter
+
+this displays species info in the pokedex, the details that show in game if you press A on a pokemon in the pokedex
 
 drawOn(Graphics2D g)
 	this needs to draw a background sprite from one of the sites (or design your own)
@@ -100,7 +109,8 @@ step()
 	nothing
 
 buttonPressed(Button b)
-	B button backs out
+	B button backs out, i.e. enterPresenter(oldPresenter)
+
 </code>
 
 _
