@@ -111,7 +111,7 @@ public class BattleBox extends Presenter {
 							enterPresenter(oldPresenter);
 						}
 						else
-							showMessage("Please Select a Pokemon With Health"); 
+							showMessage("There's no will     to fight!"); 
 					}
 					////////////////////////////////////////////////////////////////////////
 					if ("Cancel".equals(choice)) { /*do nothing*/ }
