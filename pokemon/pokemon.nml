@@ -4059,14 +4059,769 @@
 	</TMs>
 </pokemon>
 
+<pokemon>
+	<number>50</number>
+	<name>Diglett</name>
+	<image32>./pokemon/icons32/icon050.gif</image32>
+	<image80>./pokemon/icons80/diglett.png</image80>
+	<imageFront>./pokemon/iconsFront/50.png</imageFront>
+	<imageBack>./pokemon/iconsBack/50.png</imageBack>
+	<description>Lives about one yard underground where it feeds on plant roots. It sometimes appears above ground.</description>
+	<type>Ground</type>
+	<type2>Mole</type2>
+	<hp>10</hp>
+	<attack>55</attack>
+	<defense>25</defense>
+	<sp atk>35</sp atk>
+	<sp def>45</sp def>
+	<speed>95</speed>
+	<evolution>
+		<level>51</level>
+		<target>Dugtrio</target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Scratch</name>
+		</move>
+		<move>
+			<level>15</level>
+			<name>Growl</name>
+		</move>
+		<move>
+			<level>19</level>
+			<name>Dig</name>
+		</move>
+		<move>
+			<level>24</level>
+			<name>Sand-Attack</name>
+		</move>
+		<move>
+			<level>31</level>
+			<name>Slash</name>
+		</move>
+		<move>
+			<level>40</level>
+			<name>Earthquake</name>
+		</move>
+	</moves>
+	<HMs>01</HMs>
+	<TMs>06,08,09,10,15,20,26,27,28,31,32,34,44,48,50</TMs>
+</pokemon>
 
+<pokemon>
+	<number>49</number>
+	<name>Venomoth</name>
+	<image32>./pokemon/icons32/icon049.gif</image32>
+	<image80>./pokemon/icons80/venomoth.png</image80>
+	<imageFront>./pokemon/iconsFront/49.png</imageFront>
+	<imageBack>./pokemon/iconsBack/49.png</imageBack>
+	<description>The dust-like scales covering its wings are color coded to indicate the kinds of poison it has.</description>
+	<type>Bug</type>
+	<type2></type2>
+	<hp>80</hp>
+	<attack>65</attack>
+	<defense>60</defense>
+	<sp atk>90</sp atk>
+	<sp def>75</sp def>
+	<speed>90</speed>
+	<evolution>
+		<level></level>
+		<target></target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Tackle</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Disable</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Poison Powder</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Leech Life</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Stun Spore</name>
+		</move>
+		<move>
+			<level>38</level>
+			<name>Psybeam</name>
+		</move>
+		<move>
+			<level>43</level>
+			<name>Sleep Powder</name>
+		</move>
+		<move>
+			<level>50</level>
+			<name>Psychic</name>
+		</move>
+	</moves>
+	<HMs>04</HMs>
+	<TMs>02,04,06,09,10,15,20,21,22,29,30,31,32,33,34,39,44,46,50</TMs>
+</pokemon>
 
+<pokemon>
+	<number>48</number>
+	<name>Venonat</name>
+	<image32>./pokemon/icons32/icon048.gif</image32>
+	<image80>./pokemon/icons80/venonat.png</image80>
+	<imageFront>./pokemon/iconsFront/48.png</imageFront>
+	<imageBack>./pokemon/iconsBack/48.png</imageBack>
+	<description>Lives in the shadows of tall trees where it eats insects. It is attracted by light at night.</description>
+	<type>Bug</type>
+	<type2></type2>
+	<hp>60</hp>
+	<attack>55</attack>
+	<defense>50</defense>
+	<sp atk>45</sp atk>
+	<sp def>55</sp def>
+	<speed>45</speed>
+	<evolution>
+		<level>49</level>
+		<target>Venomoth</target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Tackle</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Disable</name>
+		</move>
+		<move>
+			<level>24</level>
+			<name>Poison Powder</name>
+		</move>
+		<move>
+			<level>27</level>
+			<name>Leech Life</name>
+		</move>
+		<move>
+			<level>30</level>
+			<name>Stun Spore</name>
+		</move>
+		<move>
+			<level>35</level>
+			<name>Psybeam</name>
+		</move>
+		<move>
+			<level>38</level>
+			<name>Sleep Powder</name>
+		</move>
+		<move>
+			<level>43</level>
+			<name>Psychic</name>
+		</move>
+	</moves>
+	<HMs>04</HMs>
+	<TMs>02,04,06,09,10,15,20,21,22,29,30,31,32,33,34,39,44,46,50</TMs>
+</pokemon>
 
+<pokemon>
+	<number>47</number>
+	<name>Parasect</name>
+	<image32>./pokemon/icons32/icon047.gif</image32>
+	<image80>./pokemon/icons80/parasect.png</image80>
+	<imageFront>./pokemon/iconsFront/47.png</imageFront>
+	<imageBack>./pokemon/iconsBack/47.png</imageBack>
+	<description>A host-parasite pair in which the parasite mushroom has taken over the host bug. Prefers damp places.</description>
+	<type>Bug</type>
+	<type2>Grass</type2>
+	<hp>60</hp>
+	<attack>95</attack>
+	<defense>80</defense>
+	<sp atk>60</sp atk>
+	<sp def>80</sp def>
+	<speed>30</speed>
+	<evolution>
+		<level></level>
+		<target></target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Scratch</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Stun Spore</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Leech Life</name>
+		</move>
+		<move>
+			<level>30</level>
+			<name>Spore</name>
+		</move>
+		<move>
+			<level>39</level>
+			<name>Slash</name>
+		</move>
+		<move>
+			<level>48</level>
+			<name>Growth</name>
+		</move>
+	</moves>
+	<HMs>01</HMs>
+	<TMs>03,06,08,09,10,15,20,21,22,28,31,32,33,34,40,44,50</TMs>
+</pokemon>
 
+<pokemon>
+	<number>46</number>
+	<name>Paras</name>
+	<image32>./pokemon/icons32/icon046.gif</image32>
+	<image80>./pokemon/icons80/paras.png</image80>
+	<imageFront>./pokemon/iconsFront/46.png</imageFront>
+	<imageBack>./pokemon/iconsBack/46.png</imageBack>
+	<description>Burrows to suck tree roots. The mushrooms on its back grow by drawing nutrients from the bug host.</description>
+	<type>Bug</type>
+	<type2>Grass</type2>
+	<hp>35</hp>
+	<attack>70</attack>
+	<defense>55</defense>
+	<sp atk>45</sp atk>
+	<sp def>55</sp def>
+	<speed>25</speed>
+	<evolution>
+		<level>47</level>
+		<target>Parasect</target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Scratch</name>
+		</move>
+		<move>
+			<level>13</level>
+			<name>Stun Spore</name>
+		</move>
+		<move>
+			<level>20</level>
+			<name>Leech Life</name>
+		</move>
+		<move>
+			<level>27</level>
+			<name>Spore</name>
+		</move>
+		<move>
+			<level>34</level>
+			<name>Slash</name>
+		</move>
+		<move>
+			<level>41</level>
+			<name>Growth</name>
+		</move>
+	</moves>
+	<HMs>01</HMs>
+	<TMs>03,06,08,09,10,20,21,22,28,31,32,33,34,40,44,50</TMs>
+</pokemon>
 
+<pokemon>
+	<number>45</number>
+	<name>Vileplume</name>
+	<image32>./pokemon/icons32/icon045.gif</image32>
+	<image80>./pokemon/icons80/vileplume.png</image80>
+	<imageFront>./pokemon/iconsFront/45.png</imageFront>
+	<imageBack>./pokemon/iconsBack/45.png</imageBack>
+	<description>The larger its petals, the more toxic pollen it contains. Its big head is heavy and hard to hold up.</description>
+	<type>Grass</type>
+	<type2>Poison</type2>
+	<hp>75</hp>
+	<attack>80</attack>
+	<defense>85</defense>
+	<sp atk>100</sp atk>
+	<sp def>90</sp def>
+	<speed>50</speed>
+	<evolution>
+		<level></level>
+		<target></target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Absorb</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Poison Powder</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Stun Spore</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Sleep Powder</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Acid</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Petal Dance</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Solar Beam</name>
+		</move>
+	</moves>
+	<HMs>01</HMs>
+	<TMs>03,06,08,09,10,15,20,21,22,31,32,33,34,44,50</TMs>
+</pokemon>
 
+<pokemon>
+	<number>44</number>
+	<name>Gloom</name>
+	<image32>./pokemon/icons32/icon044.gif</image32>
+	<image80>./pokemon/icons80/gloom.png</image80>
+	<imageFront>./pokemon/iconsFront/44.png</imageFront>
+	<imageBack>./pokemon/iconsBack/44.png</imageBack>
+	<description>The fluid that oozes from its mouth isn't drool. It is a nectar that is used to attract prey.</description>
+	<type>Grass</type>
+	<type2>Poison</type2>
+	<hp>60</hp>
+	<attack>65</attack>
+	<defense>70</defense>
+	<sp atk>85</sp atk>
+	<sp def>75</sp def>
+	<speed>40</speed>
+	<evolution>
+		<level>45</level>
+		<target>Vileplume</target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Absorb</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Poison Powder</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Stun Spore</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Sleep Powder</name>
+		</move>
+		<move>
+			<level>28</level>
+			<name>Acid</name>
+		</move>
+		<move>
+			<level>38</level>
+			<name>Petal Dance</name>
+		</move>
+		<move>
+			<level>52</level>
+			<name>Solar Beam</name>
+		</move>
+	</moves>
+	<HMs>01</HMs>
+	<TMs>03,06,09,10,20,21,22,31,32,33,34,44,50</TMs>
+</pokemon>
 
-<note>CAWHRIN DOES UP TO 50!</note>
+<pokemon>
+	<number>43</number>
+	<name>Oddish</name>
+	<image32>./pokemon/icons32/icon043.gif</image32>
+	<image80>./pokemon/icons80/oddish.png</image80>
+	<imageFront>./pokemon/iconsFront/43.png</imageFront>
+	<imageBack>./pokemon/iconsBack/43.png</imageBack>
+	<description>During the day, it keeps its face buried in the ground. At night, it wanders around sowing its seeds.</description>
+	<type>Grass</type>
+	<type2>Poison</type2>
+	<hp>45</hp>
+	<attack>50</attack>
+	<defense>55</defense>
+	<sp atk>75</sp atk>
+	<sp def>65</sp def>
+	<speed>30</speed>
+	<evolution>
+		<level>44</level>
+		<target>Gloom</target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Screech</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Leech Life</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Supersonic</name>
+		</move>
+		<move>
+			<level>15</level>
+			<name>Bite</name>
+		</move>
+		<move>
+			<level>21</level>
+			<name>Confuse Ray</name>
+		</move>
+		<move>
+			<level>32</level>
+			<name>Wing Attack</name>
+		</move>
+		<move>
+			<level>43</level>
+			<name>Haze</name>
+		</move>
+	</moves>
+	<HMs>01</HMs>
+	<TMs>03,06,09,10,20,21,22,31,32,33,34,44,50</TMs>
+</pokemon>
+
+<pokemon>
+	<number>42</number>
+	<name>Golbat</name>
+	<image32>./pokemon/icons32/icon042.gif</image32>
+	<image80>./pokemon/icons80/golbat.png</image80>
+	<imageFront>./pokemon/iconsFront/42.png</imageFront>
+	<imageBack>./pokemon/iconsBack/42.png</imageBack>
+	<description>Once it strikes, it will not stop draining energy from the victim even if it gets too heavy to fly.</description>
+	<type>Poison</type>
+	<type2>Flying</type2>
+	<hp>75</hp>
+	<attack>80</attack>
+	<defense>70</defense>
+	<sp atk>65</sp atk>
+	<sp def>75</sp def>
+	<speed>90</speed>
+	<evolution>
+		<level></level>
+		<target></target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Screech</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Leech Life</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Supersonic</name>
+		</move>
+		<move>
+			<level>15</level>
+			<name>Bite</name>
+		</move>
+		<move>
+			<level>21</level>
+			<name>Confuse Ray</name>
+		</move>
+		<move>
+			<level>32</level>
+			<name>Wing Attack</name>
+		</move>
+		<move>
+			<level>43</level>
+			<name>Haze</name>
+		</move>
+	</moves>
+	<HMs></HMs>
+	<TMs>02,04,06,09,10,15,20,21,31,32,33,34,39,44,50</TMs>
+</pokemon>
+
+<pokemon>
+	<number>41</number>
+	<name>Zubat</name>
+	<image32>./pokemon/icons32/icon041.gif</image32>
+	<image80>./pokemon/icons80/zubat.png</image80>
+	<imageFront>./pokemon/iconsFront/41.png</imageFront>
+	<imageBack>./pokemon/iconsBack/41.png</imageBack>
+	<description>Forms colonies in perpetually dark places. Uses ultrasonic waves to identify and approach targets.</description>
+	<type>Poison</type>
+	<type2>Flying</type2>
+	<hp>40</hp>
+	<attack>45</attack>
+	<defense>35</defense>
+	<sp atk>30</sp atk>
+	<sp def>40</sp def>
+	<speed>55</speed>
+	<evolution>
+		<level>42</level>
+		<target>Golbat</target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Leech Life</name>
+		</move>
+		<move>
+			<level>10</level>
+			<name>Supersonic</name>
+		</move>
+		<move>
+			<level>15</level>
+			<name>Bite</name>
+		</move>
+		<move>
+			<level>21</level>
+			<name>Confuse Ray</name>
+		</move>
+		<move>
+			<level>28</level>
+			<name>Wing Attack</name>
+		</move>
+		<move>
+			<level>36</level>
+			<name>Haze</name>
+		</move>
+	</moves>
+	<HMs></HMs>
+	<TMs>02,04,06,09,10,20,21,31,32,33,34,39,44,50</TMs>
+</pokemon>
+
+<pokemon>
+	<number>40</number>
+	<name>Wigglytuff</name>
+	<image32>./pokemon/icons32/icon040.gif</image32>
+	<image80>./pokemon/icons80/wigglytuff.png</image80>
+	<imageFront>./pokemon/iconsFront/40.png</imageFront>
+	<imageBack>./pokemon/iconsBack/40.png</imageBack>
+	<description>The body is soft and rubbery. When angered, it will suck in air and inflate itself to an enormous size.</description>
+	<type>Normal</type>
+	<type2></type2>
+	<hp>140</hp>
+	<attack>70</attack>
+	<defense>45</defense>
+	<sp atk>75</sp atk>
+	<sp def>50</sp def>
+	<speed>45</speed>
+	<evolution>
+		<level></level>
+		<target></target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Sing</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Pound</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Disable</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Defense Curl</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Doubleslap</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Rest</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Bodyslam</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Double-Edge</name>
+		</move>
+	</moves>
+	<HMs>04,05</HMs>
+	<TMs>01,05,06,08,09,10,11,12,13,14,15,17,18,19,22,24,25,29,30,31,32,33,34,38,40,44,45,46,49,50</TMs>
+</pokemon>
+
+<pokemon>
+	<number>39</number>
+	<name>Jigglypuff</name>
+	<image32>./pokemon/icons32/icon039.gif</image32>
+	<image80>./pokemon/icons80/jigglypuff.png</image80>
+	<imageFront>./pokemon/iconsFront/39.png</imageFront>
+	<imageBack>./pokemon/iconsBack/39.png</imageBack>
+	<description>When its huge eyes light up, it sings a mysteriously soothing melody that lulls its enemies to sleep.</description>
+	<type>Normal</type>
+	<type2></type2>
+	<hp>115</hp>
+	<attack>45</attack>
+	<defense>20</defense>
+	<sp atk>45</sp atk>
+	<sp def>25</sp def>
+	<speed>20</speed>
+	<evolution>
+		<level>40</level>
+		<target>Wigglytuff</target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Sing</name>
+		</move>
+		<move>
+			<level>9</level>
+			<name>Pound</name>
+		</move>
+		<move>
+			<level>14</level>
+			<name>Disable</name>
+		</move>
+		<move>
+			<level>19</level>
+			<name>Defense Curl</name>
+		</move>
+		<move>
+			<level>24</level>
+			<name>Doubleslap</name>
+		</move>
+		<move>
+			<level>29</level>
+			<name>Rest</name>
+		</move>
+		<move>
+			<level>34</level>
+			<name>Bodyslam</name>
+		</move>
+		<move>
+			<level>39</level>
+			<name>Double-Edge</name>
+		</move>
+	</moves>
+	<HMs>04,05</HMs>
+	<TMs>01,05,06,08,09,10,11,12,13,14,17,18,19,22,24,25,29,30,31,32,33,34,38,40,44,45,46,49,50</TMs>
+</pokemon>
+
+<pokemon>
+	<number>38</number>
+	<name>Ninetales</name>
+	<image32>./pokemon/icons32/icon038.gif</image32>
+	<image80>./pokemon/icons80/ninetales.png</image80>
+	<imageFront>./pokemon/iconsFront/38.png</imageFront>
+	<imageBack>./pokemon/iconsBack/38.png</imageBack>
+	<description>Very smart and very vengeful. Grabbing one of its many tails could result in a 1000-year curse.</description>
+	<type>Fire</type>
+	<type2></type2>
+	<hp>73</hp>
+	<attack>76</attack>
+	<defense>75</defense>
+	<sp atk>81</sp atk>
+	<sp def>100</sp def>
+	<speed>100</speed>
+	<evolution>
+		<level></level>
+		<target></target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Ember</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Tail Whip</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Roar</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Quick Attack</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Confuse Ray</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Safeguard</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Flamethrower</name>
+		</move>
+		<move>
+			<level>43</level>
+			<name>Fire Spin</name>
+		</move>
+	</moves>
+	<HMs></HMs>
+	<TMs>06,08,09,10,15,20,28,31,32,33,34,38,39,40,44,50</TMs>
+</pokemon>
+
+<pokemon>
+	<number>37</number>
+	<name>Vulpix</name>
+	<image32>./pokemon/icons32/icon037.gif</image32>
+	<image80>./pokemon/icons80/vulpix.png</image80>
+	<imageFront>./pokemon/iconsFront/37.png</imageFront>
+	<imageBack>./pokemon/iconsBack/37.png</imageBack>
+	<description>At the time of birth, it has just one tail. The tail splits from its tip as it grows older.</description>
+	<type>Fire</type>
+	<type2></type2>
+	<hp>95</hp>
+	<attack>38</attack>
+	<defense>40</defense>
+	<sp atk>50</sp atk>
+	<sp def>65</sp def>
+	<speed>65</speed>
+	<evolution>
+		<level>38</level>
+		<target>Ninetales</target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Ember</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Tail Whip</name>
+		</move>
+		<move>
+			<level>13</level>
+			<name>Roar</name>
+		</move>
+		<move>
+			<level>16</level>
+			<name>Quick Attack</name>
+		</move>
+		<move>
+			<level>19</level>
+			<name>Confuse Ray</name>
+		</move>
+		<move>
+			<level>25</level>
+			<name>Safeguard</name>
+		</move>
+		<move>
+			<level>31</level>
+			<name>Flamethrower</name>
+		</move>
+		<move>
+			<level>37</level>
+			<name>Fire Spin</name>
+		</move>
+	</moves>
+	<HMs></HMs>
+	<TMs>06,08,09,10,20,28,30,31,32,33,34,38,39,40,44,50</TMs>
+</pokemon>
 
 <pokemon>
 	<number>36</number>
@@ -4076,7 +4831,7 @@
 	<imageFront>./pokemon/iconsFront/36.png</imageFront>
 	<imageBack>./pokemon/iconsBack/36.png</imageBack>
 	<description>A timid fairy POKEMON that is rarely seen. It will run and hide the moment it senses people.</description>
-	<type>Fairy</type>
+	<type>Normal</type>
 	<type2></type2>
 	<hp>95</hp>
 	<attack>70</attack>
@@ -4123,7 +4878,7 @@
 		</move>
 	</moves>
 	<HMs>04,05</HMs>
-	<TMs>01,05,06,08,09,10,11,12,13,14,17,18,19,20,22,24,29,30,31,32,33,34,35,38,40,44,45,46,49,50</TMs>
+	<TMs>01,05,06,08,09,10,11,12,13,14,15,17,18,19,20,22,24,25,29,30,31,32,33,34,35,38,40,44,45,46,49,50</TMs>
 </pokemon>
 
 <pokemon>
@@ -4134,7 +4889,7 @@
 	<imageFront>./pokemon/iconsFront/35.png</imageFront>
 	<imageBack>./pokemon/iconsBack/35.png</imageBack>
 	<description>Its magical and cute appeal has many admirers. It is rare and found only in certain areas.</description>
-	<type>Fairy</type>
+	<type>Normal</type>
 	<type2></type2>
 	<hp>81</hp>
 	<attack>92</attack>
@@ -4192,8 +4947,8 @@
 	<imageFront>./pokemon/iconsFront/34.png</imageFront>
 	<imageBack>./pokemon/iconsBack/34.png</imageBack>
 	<description>It uses its powerful tail in battle to smash, constrict, then break the prey's bones.</description>
-	<type>Drill</type>
-	<type2></type2>
+	<type>Poison</type>
+	<type2>Ground</type2>
 	<hp>81</hp>
 	<attack>92</attack>
 	<defense>70</defense>
@@ -4370,8 +5125,8 @@
 	<imageFront>./pokemon/iconsFront/31.png</imageFront>
 	<imageBack>./pokemon/iconsBack/31.png</imageBack>
 	<description>Its hard scales provide strong protection. It uses its hefty bulk to execute powerful moves.</description>
-	<type>Drill</type>
-	<type2></type2>
+	<type>Poison</type>
+	<type2>Ground</type2>
 	<hp>90</hp>
 	<attack>82</attack>
 	<defense>87</defense>
