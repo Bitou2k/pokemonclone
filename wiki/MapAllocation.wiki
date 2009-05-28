@@ -56,7 +56,7 @@ To sort out the confusion, everyone should put +'s before maps that are finished
 
   25. Silph Company
 
-  26. Route 16/17(+), 18 in progress.  (Tim)
++ 26. Route 16, 17,18 in progress.  
  
 + 27. Fuchsia City (Jason)
 
