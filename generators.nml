@@ -29,7 +29,25 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<chance>0.02</chance>
 	</pokemon>
 </generator>
-
+<generator>
+	<name>palletwatGen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Magikarp</name>
+		<level>3</level>
+		<chance>0.33</chance>
+	</pokemon>
+	<pokemon>
+		<name>Tentacool</name>
+		<level>3</level>
+		<chance>0.33</chance>
+	</pokemon>
+	<pokemon>
+		<name>Staryu</name>
+		<level>3</level>
+		<chance>0.33</chance>
+	</pokemon>
+</generator>
 <generator>
 	<name>route01Gen</name>
 	<overallchance>0.11</overallchance>
@@ -43,9 +61,21 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>3</level>
 		<chance>0.40</chance>
 	</pokemon>
-
 </generator>
-
+<generator>
+	<name>viridiancitywatGen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Magikarp</name>
+		<level>4</level>
+		<chance>0.50</chance>
+	</pokemon>
+	<pokemon>
+		<name>Poliwag</name>
+		<level>4</level>
+		<chance>0.50</chance>
+	</pokemon>
+</generator>
 <generator>
 	<name>route22Gen</name>
 	<overallchance>0.11</overallchance>
@@ -76,7 +106,6 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 	</pokemon>
 
 </generator>
-
 <generator>
 	<name>route02Gen</name>
 	<overallchance>0.11</overallchance>
@@ -101,6 +130,20 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<chance>0.15</chance>
 	</pokemon>
 
+</generator>
+<generator>
+	<name>route02watGen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Magikarp</name>
+		<level>4</level>
+		<chance>0.50</chance>
+	</pokemon>
+	<pokemon>
+		<name>Poliwag</name>
+		<level>5</level>
+		<chance>0.50</chance>
+	</pokemon>
 </generator>
 <generator>
 	<name>viridianforestGen</name>
@@ -254,7 +297,7 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 
 </generator>
 <generator>
-	<name>mt.route04Gen</name>
+	<name>route04Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
 		<name>Rattata</name>
@@ -277,6 +320,34 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<chance>0.20</chance>
 	</pokemon>
 
+</generator>
+<generator>
+	<name>route04watGen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Magikarp</name>
+		<level>8</level>
+		<chance>1.00</chance>
+	</pokemon>
+</generator>
+<generator>
+	<name>ceruleancitywatGen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Magikarp</name>
+		<level>8</level>
+		<chance>0.50</chance>
+	</pokemon>
+	<pokemon>
+		<name>Krabby</name>
+		<level>9</level>
+		<chance>0.25</chance>
+	</pokemon>
+	<pokemon>
+		<name>Goldeen</name>
+		<level>9</level>
+		<chance>0.25</chance>
+	</pokemon>
 </generator>
 <generator>
 	<name>route24Gen</name>
@@ -302,6 +373,25 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<chance>0.14</chance>
 	</pokemon>
 
+</generator>
+<generator>
+	<name>route24watGen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Magikarp</name>
+		<level>9</level>
+		<chance>0.50</chance>
+	</pokemon>
+	<pokemon>
+		<name>Goldeen</name>
+		<level>9</level>
+		<chance>0.34</chance>
+	</pokemon>
+	<pokemon>
+		<name>Seaking</name>
+		<level>10</level>
+		<chance>0.16</chance>
+	</pokemon>
 </generator>
 <generator>
 	<name>route25Gen</name>
@@ -332,6 +422,25 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<chance>0.08</chance>
 	</pokemon>
 
+</generator>
+<generator>
+	<name>route25watGen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Magikarp</name>
+		<level>9</level>
+		<chance>0.50</chance>
+	</pokemon>
+	<pokemon>
+		<name>Krabby</name>
+		<level>10</level>
+		<chance>0.48</chance>
+	</pokemon>
+	<pokemon>
+		<name>Kingler</name>
+		<level>28</level>
+		<chance>0.02</chance>
+	</pokemon>
 </generator>
 <generator>
 	<name>route05Gen</name>
@@ -394,6 +503,39 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 
 </generator>
 <generator>
+	<name>route06watGen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Magikarp</name>
+		<level>14</level>
+		<chance>0.50</chance>
+	</pokemon>
+	<pokemon>
+		<name>Goldeen</name>
+		<level>14</level>
+		<chance>0.50</chance>
+	</pokemon>
+</generator>
+<generator>
+	<name>VermillionwatGen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Magikarp</name>
+		<level>14</level>
+		<chance>0.50</chance>
+	</pokemon>
+	<pokemon>
+		<name>Goldeen</name>
+		<level>14</level>
+		<chance>0.25</chance>
+	</pokemon>
+	<pokemon>
+		<name>Tentacool</name>
+		<level>14</level>
+		<chance>0.25</chance>
+	</pokemon>
+</generator
+<generator>
 	<name>route11Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -422,6 +564,20 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<chance>0.05</chance>
 	</pokemon>
 
+</generator>
+<generator>
+	<name>route11watGen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Magikarp</name>
+		<level>14</level>
+		<chance>0.50</chance>
+	</pokemon>
+	<pokemon>
+		<name>Goldeen</name>
+		<level>14</level>
+		<chance>0.50</chance>
+	</pokemon>
 </generator>
 <generator>
 	<name>route11Gen</name>
@@ -517,6 +673,20 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<chance>0.28</chance>
 	</pokemon>
 
+</generator>
+<generator>
+	<name>route10watGen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Magikarp</name>
+		<level>14</level>
+		<chance>0.40</chance>
+	</pokemon>
+	<pokemon>
+		<name>Horsea</name>
+		<level>15</level>
+		<chance>0.18</chance>
+	</pokemon>
 </generator>
 
 <generator>
@@ -1163,5 +1333,413 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<name>Ditto</name>
 		<level>35</level>
 		<chance>0.10</chance>
+	</pokemon>
+</generator>
+<generator>
+	<name>powerplantGen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Magnemite</name>
+		<level>29</level>
+		<chance>0.30</chance>
+	</pokemon>
+	<pokemon>
+		<name>Magneton</name>
+		<level>40</level>
+		<chance>0.20</chance>
+	</pokemon>
+	<pokemon>
+		<name>Grimer</name>
+		<level>34</level>
+		<chance>0.40</chance>
+	</pokemon>
+	<pokemon>
+		<name>Muk</name>
+		<level>40</level>
+		<chance>0.10</chance>
+	</pokemon>
+	<pokemon>
+		<name>Voltorb</name>
+		<level>32</level>
+		<chance>0.10</chance>
+	</pokemon>
+</generator>
+<generator>
+	<name>seafoamislandf1Gen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Zubat</name>
+		<level>21</level>
+		<chance>0.45</chance>
+	</pokemon>
+	<pokemon>
+		<name>Golbat</name>
+		<level>36</level>
+		<chance>0.5</chance>
+	</pokemon>
+	<pokemon>
+		<name>Slowpoke</name>
+		<level>36</level>
+		<chance>0.15</chance>
+	</pokemon>
+	<pokemon>
+		<name>Krabby</name>
+		<level>27</level>
+		<chance>0.35</chance>
+	</pokemon>
+</generator>
+<generator>
+	<name>seafoamislandb1Gen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Zubat</name>
+		<level>21</level>
+		<chance>0.40</chance>
+	</pokemon>
+	<pokemon>
+		<name>Golbat</name>
+		<level>36</level>
+		<chance>0.12</chance>
+	</pokemon>
+	<pokemon>
+		<name>Slowpoke</name>
+		<level>36</level>
+		<chance>0.10</chance>
+	</pokemon>
+	<pokemon>
+		<name>Seal</name>
+		<level>36</level>
+		<chance>0.04</chance>
+	</pokemon>
+	<pokemon>
+		<name>Krabby</name>
+		<level>27</level>
+		<chance>0.30</chance>
+	</pokemon>
+	<pokemon>
+		<name>Kingler</name>
+		<level>40</level>
+		<chance>0.04</chance>
+	</pokemon>
+</generator>
+<generator>
+	<name>seafoamislandb2Gen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Zubat</name>
+		<level>21</level>
+		<chance>0.34</chance>
+	</pokemon>
+	<pokemon>
+		<name>Golbat</name>
+		<level>36</level>
+		<chance>0.16</chance>
+	</pokemon>
+	<pokemon>
+		<name>Slowpoke</name>
+		<level>36</level>
+		<chance>0.08</chance>
+	</pokemon>
+	<pokemon>
+		<name>Slowbro</name>
+		<level>41</level>
+		<chance>0.02</chance>
+	</pokemon>
+	<pokemon>
+		<name>Seal</name>
+		<level>36</level>
+		<chance>0.10</chance>
+	</pokemon>
+	<pokemon>
+		<name>Krabby</name>
+		<level>27</level>
+		<chance>0.20</chance>
+	</pokemon>
+	<pokemon>
+		<name>Kingler</name>
+		<level>40</level>
+		<chance>0.10</chance>
+	</pokemon>
+</generator>
+<generator>
+	<name>seafoamislandb3Gen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Zubat</name>
+		<level>21</level>
+		<chance>0.30</chance>
+	</pokemon>
+	<pokemon>
+		<name>Golbat</name>
+		<level>36</level>
+		<chance>0.20</chance>
+	</pokemon>
+	<pokemon>
+		<name>Seal</name>
+		<level>36</level>
+		<chance>0.16</chance>
+	</pokemon>
+	<pokemon>
+		<name>Dewgong</name>
+		<level>42</level>
+		<chance>0.04</chance>
+	</pokemon>
+	<pokemon>
+		<name>Krabby</name>
+		<level>27</level>
+		<chance>0.20</chance>
+	</pokemon>
+	<pokemon>
+		<name>Kingler</name>
+		<level>40</level>
+		<chance>0.10</chance>
+	</pokemon>
+</generator>
+<generator>
+	<name>seafoamislandb4Gen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Zubat</name>
+		<level>21</level>
+		<chance>0.25</chance>
+	</pokemon>
+	<pokemon>
+		<name>Golbat</name>
+		<level>36</level>
+		<chance>0.25</chance>
+	</pokemon>
+	<pokemon>
+		<name>Seal</name>
+		<level>36</level>
+		<chance>0.16</chance>
+	</pokemon>
+	<pokemon>
+		<name>Dewgong</name>
+		<level>42</level>
+		<chance>0.04</chance>
+	</pokemon>
+	<pokemon>
+		<name>Krabby</name>
+		<level>27</level>
+		<chance>0.20</chance>
+	</pokemon>
+	<pokemon>
+		<name>Kingler</name>
+		<level>40</level>
+		<chance>0.10</chance>
+	</pokemon>
+</generator>
+<generator>
+	<name>victoryroadf1Gen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Zubat</name>
+		<level>21</level>
+		<chance>0.20</chance>
+	</pokemon>
+	<pokemon>
+		<name>Geodude</name>
+		<level>24</level>
+		<chance>0.60</chance>
+	</pokemon>
+	<pokemon>
+		<name>Graveler</name>
+		<level>43</level>
+		<chance>0.10</chance>
+	</pokemon>
+	<pokemon>
+		<name>Onix</name>
+		<level>42</level>
+		<chance>0.20</chance>
+	</pokemon>
+</generator>
+<generator>
+	<name>victoryroadf2Gen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Zubat</name>
+		<level>21</level>
+		<chance>0.13</chance>
+	</pokemon>
+	<pokemon>
+		<name>Golbat</name>
+		<level>41</level>
+		<chance>0.13</chance>
+	</pokemon>
+	<pokemon>
+		<name>Geodude</name>
+		<level>24</level>
+		<chance>0.43</chance>
+	</pokemon>
+	<pokemon>
+		<name>Graveler</name>
+		<level>45</level>
+		<chance>0.13</chance>
+	</pokemon>
+	<pokemon>
+		<name>Machoke</name>
+		<level>45</level>
+		<chance>0.05</chance>
+	</pokemon>
+	<pokemon>
+		<name>Onix</name>
+		<level>42</level>
+		<chance>0.13</chance>
+	</pokemon>
+</generator>
+<generator>
+	<name>victoryroadf3Gen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Golbat</name>
+		<level>42</level>
+		<chance>0.20</chance>
+	</pokemon>
+	<pokemon>
+		<name>Geodude</name>
+		<level>24</level>
+		<chance>0.45</chance>
+	</pokemon>
+	<pokemon>
+		<name>Graveler</name>
+		<level>45</level>
+		<chance>0.15</chance>
+	</pokemon>
+	<pokemon>
+		<name>Machoke</name>
+		<level>45</level>
+		<chance>0.10</chance>
+	</pokemon>
+	<pokemon>
+		<name>Onix</name>
+		<level>42</level>
+		<chance>0.10</chance>
+	</pokemon>
+</generator>
+<generator>
+	<name>unknowndungeonf2Gen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Sandslash</name>
+		<level>48</level>
+		<chance>0.10</chance>
+	</pokemon>
+	<pokemon>
+		<name>Golbat</name>
+		<level>47</level>
+		<chance>0.45</chance>
+	</pokemon>
+	<pokemon>
+		<name>Gloom</name>
+		<level>45</level>
+		<chance>0.10</chance>
+	</pokemon>
+	<pokemon>
+		<name>Weepinbell</name>
+		<level>45</level>
+		<chance>0.10</chance>
+	</pokemon>
+	<pokemon>
+		<name>Graveler</name>
+		<level>49</level>
+		<chance>0.10</chance>
+	</pokemon>
+	<pokemon>
+		<name>Rhyhorn</name>
+		<level>41</level>
+		<chance>0.08</chance>
+	</pokemon>
+	<pokemon>
+		<name>Rhydon</name>
+		<level>49</level>
+		<chance>0.08</chance>
+	</pokemon>
+	<pokemon>
+		<name>Ditto</name>
+		<level>45</level>
+		<chance>0.08</chance>
+	</pokemon>
+</generator>
+<generator>
+	<name>unknowndungeonf1Gen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Sandslash</name>
+		<level>50</level>
+		<chance>0.06</chance>
+	</pokemon>
+	<pokemon>
+		<name>Golbat</name>
+		<level>48</level>
+		<chance>0.40</chance>
+	</pokemon>
+	<pokemon>
+		<name>Gloom</name>
+		<level>46</level>
+		<chance>0.14</chance>
+	</pokemon>
+	<pokemon>
+		<name>Weepinbell</name>
+		<level>46</level>
+		<chance>0.12</chance>
+	</pokemon>
+	<pokemon>
+		<name>Graveler</name>
+		<level>51</level>
+		<chance>0.14</chance>
+	</pokemon>
+	<pokemon>
+		<name>Parasect</name>
+		<level>46</level>
+		<chance>0.08</chance>
+	</pokemon>
+	<pokemon>
+		<name>Venemoth</name>
+		<level>47</level>
+		<chance>0.08</chance>
+	</pokemon>
+	<pokemon>
+		<name>Ditto</name>
+		<level>47</level>
+		<chance>0.08</chance>
+	</pokemon>
+</generator>
+<generator>
+	<name>unknowndungeonb1Gen</name>
+	<overallchance>0.11</overallchance>
+	<pokemon>
+		<name>Golbat</name>
+		<level>49</level>
+		<chance>0.36</chance>
+	</pokemon>
+	<pokemon>
+		<name>Graveler</name>
+		<level>52</level>
+		<chance>0.16</chance>
+	</pokemon>
+	<pokemon>
+		<name>Rhyhorn</name>
+		<level>41</level>
+		<chance>0.10</chance>
+	</pokemon>
+	<pokemon>
+		<name>Rhydon</name>
+		<level>53</level>
+		<chance>0.10</chance>
+	</pokemon>
+	<pokemon>
+		<name>Ditto</name>
+		<level>48</level>
+		<chance>0.12</chance>
+	</pokemon>
+	<pokemon>
+		<name>Chansey</name>
+		<level>52</level>
+		<chance>0.08</chance>
+	</pokemon>
+	<pokemon>
+		<name>Lickitung</name>
+		<level>53</level>
+		<chance>0.08</chance>
 	</pokemon>
 </generator>
