@@ -95,6 +95,20 @@ abstract class Presenter {
 		return mp.choice();
 	}
 	
+	
+	public String showGridMenu(String[] choices)
+	{
+		GridMenuPresenter mp = new GridMenuPresenter(choices,this,this);
+		
+		enterPresenter(mp);
+		synchronized(mp){
+			try{
+				mp.wait();
+			}catch(Exception ex){}
+		}
+		return mp.choice();
+	}
+	
 	/**
 	*Display the choices and message/question in a standard way, blocking return until the user makes a selection.
 	*/
