@@ -1,5 +1,4 @@
-
-stat = 2 * level * basestat + 5 (+ 10 for hp)
+stat = 2 x level x basestat + 5 (+ 10 for hp)
 
 
 
