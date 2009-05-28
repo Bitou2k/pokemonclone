@@ -9,7 +9,7 @@ adding the sign texts to the areas (Shloka)
           Fuchsia city (fuchsia.nml)
           Holding off on Lavender Town
           Pewter City (pewter.nml)
-          Routes 1-4
+          Routes 1-6
 
 connecting pokegrass to the wild generators (Dana)
 
