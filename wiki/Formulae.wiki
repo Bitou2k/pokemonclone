@@ -1,0 +1,7 @@
+
+stat = 2 * level * basestat + 5 (+ 10 for hp)
+
+
+
+battle turn process
+http://www.upokecenter.com/games/rby/guides/explanations.php
