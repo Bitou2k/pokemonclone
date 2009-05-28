@@ -28,10 +28,10 @@ public class Pack {
 	 *constructor to create empty Pack object
 	 */
 	public Pack() {
-		keyItemsPocket = null;
-		itemsPocket = null;
-		tmHmPocket = null;
-		pokeballPocket = null;
+		keyItemsPocket = new HashMap<Item,Integer>();
+		itemsPocket = new HashMap<Item,Integer>();
+		tmHmPocket = new HashMap<Item,Integer>();
+		pokeballPocket = new HashMap<Item,Integer>();
 	}
 	
 	/**
@@ -126,7 +126,9 @@ public class Pack {
 	*@param Item: item to be added, Int: number to add
 	*/
 	public void addItem(Item i, int qty) {
-		int q = itemsPocket.get(i);
+		int q = 0;
+		if (itemsPocket.get(i)==null){}else
+			q=itemsPocket.get(i);
 		
 		itemsPocket.put(i, q + qty);
 	}
