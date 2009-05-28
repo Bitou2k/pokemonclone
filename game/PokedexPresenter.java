@@ -8,7 +8,11 @@ import java.awt.event.*;
 import javax.swing.*;
 import java.util.*;
 
-public class PokedexScreen extends Presenter{
+/**
+*Displays the in game Pokedex.
+*/
+public class PokedexPresenter extends Presenter
+{
 	/*
 	*TODO
 	*
@@ -37,19 +41,18 @@ public class PokedexScreen extends Presenter{
 	*/
 	//ArrayList<String> pokedexString = new ArrayList<String>();
 	
-	
 	final ImageIcon ii = new ImageIcon("./resources/pokedex.png");
 	final ImageIcon pokeball = new ImageIcon("./resources/battle/battlepokeball.png");
 	final ImageIcon arrow = new ImageIcon("./resources/arrow.png");
 	final ImageIcon idleArrow = new ImageIcon("./resources/idlearrow.png");
 	
-	public PokedexScreen(Presenter oldP){
+	public PokedexPresenter(Presenter oldP)
+	{
 		oldPresenter = oldP;		
 		pkmnCursorIndex = 0;
 		menuCursorIndex = 0;
 		pkmn = true;
 		topIndex = 0;
-		
 	}
 	
 	

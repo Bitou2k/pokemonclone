@@ -4,10 +4,13 @@ import java.awt.*;
 import javax.swing.*;
 import java.util.*;
 
+/**
+*A Presenter for a battle between the player and a rival trainer or a wild pokemon
+*/
 class Battle extends Presenter {
 
 	private Battler ash;
-	private Battler enemy;
+	private Battler enemy; //if enemy is null, this is a wild battle
 	
 	private Pokemon ashsPokemon;
 	private Pokemon enemyPokemon;

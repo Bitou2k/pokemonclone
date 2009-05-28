@@ -1,6 +1,9 @@
 package game;
 
-class Citizen extends Entity {
+/**
+*You can talk to them, but not battle.
+*/
+public class Citizen extends Entity {
 
 	private String name = "UNSETNAME";
 	//private String talk = "HELLO WORLD";

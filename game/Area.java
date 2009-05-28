@@ -7,10 +7,13 @@ import javax.swing.*;
 import java.io.*;
 import java.util.*;
 
+import static game.Button.*;
+
 /**
  *A grid of Tiles in the game, also known as a map.
  */
-class Area extends Presenter {
+class Area extends Presenter
+{
 
 	private List<Tile> tiles = new ArrayList<Tile>(); 
 	private String name;
@@ -78,31 +81,31 @@ class Area extends Presenter {
 	public void buttonPressed(Button b){
 		if(player().inStride())
 			return;
-		if(b==Button.LEFT)
+		if(b==LEFT)
 			{ player().direction(Direction.WEST); walk(); }
-		if(b==Button.DOWN)
+		if(b==DOWN)
 			{ player().direction(Direction.SOUTH); walk(); }
-		if(b==Button.RIGHT)
+		if(b==RIGHT)
 			{ player().direction(Direction.EAST); walk(); }
-		if(b==Button.UP)
+		if(b==UP)
 			{ player().direction(Direction.NORTH); walk(); }
-		if(b==Button.START)
+		if(b==START)
 		{
 			
 			
 			String choice = showMenu(new String[]{"Pokedex","Pokemon","Pack","Ash","Save","Option","Debug","Exit"});
 			
-			if(choice.equals("Pokedex")) enterPresenter(new PokedexScreen(this));
+			if(choice.equals("Pokedex")) enterPresenter(new PokedexPresenter(this));
 			if(choice.equals("Debug")) doDebugMenu();
 		}
-		if(b==Button.A)
+		if(b==A)
 		{
 			Tile next = tilePlayerFacing(1);
 			
 			if (next.isObstacle() && !next.target.isEmpty())
 				showMessage(next.target);
 		}
-		if(b==Button.B)
+		if(b==B)
 		{
 			
 		}
