@@ -41,7 +41,7 @@ Remember to work backwards!
 finished through: 25
 
 26-50: Cawhrin
-finished 25 - 50!
+finished 25 - 50!  Committed!
 
 51-75: Garrett
 finished through just starting
