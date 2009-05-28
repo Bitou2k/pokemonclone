@@ -4591,7 +4591,7 @@
 </pokemon>
 
 <pokemon>
-	<number>25</number><generation>1</generation>
+	<number>25</number>
 	<name>Pikachu</name>
 	<description>When several of these POKÈMON gather, their electricity could build and cause lightning storms.</description>
 	<image32>./pokemon/icons32/icon025.gif</image32>
@@ -4611,10 +4611,42 @@
 		<level>Tunderstone</level>
 		<target>Raichu</target>
 	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Thundershock</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Growl</name>
+		</move>
+		<move>
+			<level>9</level>
+			<name>Thunderwave</name>
+		</move>
+		<move>
+			<level>16</level>
+			<name>Quick Attack</name>
+		</move>
+		<move>
+			<level>26</level>
+			<name>Swift</name>
+		</move>
+		<move>
+			<level>33</level>
+			<name>Agility</name>
+		</move>
+		<move>
+			<level>43</level>
+			<name>Thunder</name>
+		</move>
+	</moves>
+	<HMs>05</HMs>
+	<TMs>01,05,06,08,09,10,16,17,19,20,24,25,31,32,33,34,39,40,44,45,50</TMs>
 </pokemon>
 
 <pokemon>
-	<number>24</number><generation>1</generation>
+	<number>24</number>
 	<name>Arbok</name>
 	<description>It is rumored that the ferocious warning markings on its belly differ from area to area.</description>
 	<image32>./pokemon/icons32/icon024.gif</image32>
@@ -4630,10 +4662,46 @@
 	<sp atk>65</sp atk>
 	<sp def>79</sp def>
 	<speed>80</speed>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Wrap</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Leer</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Poison Sting</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Bite</name>
+		</move>
+		<move>
+			<level>27</level>
+			<name>Glare</name>
+		</move>
+		<move>
+			<level>36</level>
+			<name>Screech</name>
+		</move>
+		<move>
+			<level>26</level>
+			<name>Swift</name>
+		</move>
+		<move>
+			<level>47</level>
+			<name>Acid</name>
+		</move>
+	</moves>
+	<HMs>04</HMs>
+	<TMs>06,08,09,10,15,20,21,26,27,28,31,32,34,40,44,48,50</TMs>
 </pokemon>
 
 <pokemon>
-	<number>23</number><generation>1</generation>
+	<number>23</number>
 	<name>Ekans</name>
 	<description>Moves silently and stealthily. Eats the eggs of birds, such as PIDGEY and SPEAROW, whole.</description>
 	<image32>./pokemon/icons32/icon023.gif</image32>
@@ -4653,11 +4721,42 @@
 		<level>22</level>
 		<target>Arbok</target>
 	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Wrap</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Leer</name>
+		</move>
+		<move>
+			<level>10</level>
+			<name>Poison Sting</name>
+		</move>
+		<move>
+			<level>17</level>
+			<name>Bite</name>
+		</move>
+		<move>
+			<level>24</level>
+			<name>Glare</name>
+		</move>
+		<move>
+			<level>31</level>
+			<name>Screech</name>
+		</move>
+		<move>
+			<level>38</level>
+			<name>Acid</name>
+		</move>
+	</moves>
+	<HMs>04</HMs>
+	<TMs>06,08,09,10,20,21,26,27,28,31,32,34,40,44,48,50</TMs>
 </pokemon>
 
-
 <pokemon>
-	<number>22</number><generation>1</generation>
+	<number>22</number>
 	<name>Fearow</name>
 	<description>With its huge and magnificent wings, it can keep aloft without ever having to land for rest.</description>
 	<image32>./pokemon/icons32/icon022.gif</image32>
@@ -4673,10 +4772,42 @@
 	<sp atk>61</sp atk>
 	<sp def>61</sp def>
 	<speed>100</speed>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Peck</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Growl</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Leer</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Fury Attack</name>
+		</move>
+		<move>
+			<level>25</level>
+			<name>Mirror Move</name>
+		</move>
+		<move>
+			<level>34</level>
+			<name>Drill Peck</name>
+		</move>
+		<move>
+			<level>43</level>
+			<name>Agility</name>
+		</move>
+	</moves>
+	<HMs>02</HMs>
+	<TMs>02,04,06,09,10,15,20,31,32,34,39,43,44,50</TMs>
 </pokemon>
 
 <pokemon>
-	<number>21</number><generation>1</generation>
+	<number>21</number>
 	<name>Spearow</name>
 	<description>Eats bugs in grassy areas. It has to flap its short wings at high speed to stay airborne.</description>
 	<image32>./pokemon/icons32/icon021.gif</image32>
@@ -4696,10 +4827,42 @@
 		<level>20</level>
 		<target>Fearow</target>
 	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Peck</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Growl</name>
+		</move>
+		<move>
+			<level>9</level>
+			<name>Leer</name>
+		</move>
+		<move>
+			<level>15</level>
+			<name>Fury Attack</name>
+		</move>
+		<move>
+			<level>22</level>
+			<name>Mirror Move</name>
+		</move>
+		<move>
+			<level>29</level>
+			<name>Drill Peck</name>
+		</move>
+		<move>
+			<level>36</level>
+			<name>Agility</name>
+		</move>
+	</moves>
+	<HMs>02</HMs>
+	<TMs>02,04,06,09,10,20,31,32,34,39,43,44,50</TMs>
 </pokemon>
 
 <pokemon>
-	<number>20</number><generation>1</generation>
+	<number>20</number>
 	<name>Raticate</name>
 	<description>It uses its whiskers to maintain its balance. It apparently slows down if they are cut off.</description>
 	<image32>./pokemon/icons32/icon020.gif</image32>
@@ -4715,9 +4878,38 @@
 	<sp atk>60</sp atk>
 	<sp def>70</sp def>
 	<speed>97</speed>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Tackle</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Tail Whip</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Quick Attack</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Hyper Fang</name>
+		</move>
+		<move>
+			<level>27</level>
+			<name>Focus Energy</name>
+		</move>
+		<move>
+			<level>41</level>
+			<name>Super Fang</name>
+		</move>
+	</moves>
+	<HMs></HMs>
+	<TMs>06,08,09,10,11,12,13,14,15,20,24,25,28,31,32,34,39,40,44,50</TMs>
 </pokemon>
+
 <pokemon>
-	<number>19</number><generation>1</generation>
+	<number>19</number>
 	<name>Rattata</name>
 	<description>Bites anything when it attacks. Small and very quick, it is a common sight in many places.</description>
 	<image32>./pokemon/icons32/icon019.gif</image32>
@@ -4738,9 +4930,38 @@
 		<level>20</level>
 		<target>Raticate</target>
 	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Tackle</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Tail Whip</name>
+		</move>
+		<move>
+			<level>7</level>
+			<name>Quick Attack</name>
+		</move>
+		<move>
+			<level>14</level>
+			<name>Hyper Fang</name>
+		</move>
+		<move>
+			<level>23</level>
+			<name>Focus Energy</name>
+		</move>
+		<move>
+			<level>34</level>
+			<name>Super Fang</name>
+		</move>
+	</moves>
+	<HMs></HMs>
+	<TMs>06,08,09,10,11,12,14,20,24,25,28,31,32,34,39,40,44,50</TMs>
 </pokemon>
+
 <pokemon>
-	<number>18</number><generation>1</generation>
+	<number>18</number>
 	<name>Pidgeot</name>
 	<description>When hunting, it skims the surface of water at high speed to pick off unwary prey such as MAGIKARP.</description>
 	<image32>./pokemon/icons32/icon018.gif</image32>
@@ -4756,6 +4977,38 @@
 	<sp atk>70</sp atk>
 	<sp def>70</sp def>
 	<speed>91</speed>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Gust</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Sand-Attack</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Quick Attack</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Whirlwind</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Wing Attack</name>
+		</move>
+		<move>
+			<level>44</level>
+			<name>Agility</name>
+		</move>
+		<move>
+			<level>54</level>
+			<name>Mirror Move</name>
+		</move>
+	</moves>
+	<HMs>02</HMs>
+	<TMs>02,04,06,09,10,15,20,31,32,33,34,39,43,44,50</TMs>
 </pokemon>
 
 <pokemon>
@@ -4779,6 +5032,38 @@
 		<level>36</level>
 		<target>Pidgeot</target>
 	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Gust</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Sand-Attack</name>
+		</move>
+		<move>
+			<level>12</level>
+			<name>Quick Attack</name>
+		</move>
+		<move>
+			<level>21</level>
+			<name>Whirlwind</name>
+		</move>
+		<move>
+			<level>31</level>
+			<name>Wing Attack</name>
+		</move>
+		<move>
+			<level>40</level>
+			<name>Agility</name>
+		</move>
+		<move>
+			<level>49</level>
+			<name>Mirror Move</name>
+		</move>
+	</moves>
+	<HMs>02</HMs>
+	<TMs>02,04,06,09,10,20,31,32,33,34,39,43,44,50</TMs>
 </pokemon>
 
 <pokemon>
@@ -4803,7 +5088,40 @@
 		<level>18</level>
 		<target>Pidgeotto</target>
 	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Gust</name>
+		</move>
+		<move>
+			<level>5</level>
+			<name>Sand-Attack</name>
+		</move>
+		<move>
+			<level>12</level>
+			<name>Quick Attack</name>
+		</move>
+		<move>
+			<level>19</level>
+			<name>Whirlwind</name>
+		</move>
+		<move>
+			<level>28</level>
+			<name>Wing Attack</name>
+		</move>
+		<move>
+			<level>36</level>
+			<name>Agility</name>
+		</move>
+		<move>
+			<level>44</level>
+			<name>Mirror Move</name>
+		</move>
+	</moves>
+	<HMs>02</HMs>
+	<TMs>02,04,06,09,10,20,31,32,33,34,39,43,44,50</TMs>
 </pokemon>
+
 <pokemon>
 	<number>15</number><generation>1</generation>
 	<name>Beedrill</name>
@@ -4821,6 +5139,46 @@
 	<sp atk>45</sp atk>
 	<sp def>80</sp def>
 	<speed>75</speed>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Poison Sting</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>String Shot</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Harden</name>
+		</move>
+		<move>
+			<level>12</level>
+			<name>Fury Attack</name>
+		</move>
+		<move>
+			<level>16</level>
+			<name>Focus Energy</name>
+		</move>
+		<move>
+			<level>20</level>
+			<name>Twineedle</name>
+		</move>
+		<move>
+			<level>25</level>
+			<name>Rage</name>
+		</move>
+		<move>
+			<level>30</level>
+			<name>Pin Missile</name>
+		</move>
+		<move>
+			<level>35</level>
+			<name>Agility</name>
+		</move>
+	</moves>
+	<HMs>01</HMs>
+	<TMs>03,06,09,10,15,20,21,31,32,33,44,39,40,44,50</TMs>
 </pokemon>
 
 <pokemon>
@@ -4844,6 +5202,22 @@
 		<level>10</level>
 		<target>Beedrill</target>
 	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Poison Sting</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>String Shot</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Harden</name>
+		</move>
+	</moves>
+	<HMs></HMs>
+	<TMs></TMs>
 </pokemon>
 
 <pokemon>
@@ -4867,6 +5241,18 @@
 		<level>7</level>
 		<target>Kakuna</target>
 	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Poison Sting</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>String Shot</name>
+		</move>
+	</moves>
+	<HMs></HMs>
+	<TMs></TMs>
 </pokemon>
 
 <pokemon>
@@ -4886,6 +5272,50 @@
 	<sp atk>80</sp atk>
 	<sp def>80</sp def>
 	<speed>70</speed>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Tackle</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>String Shot</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Harden</name>
+		</move>
+		<move>
+			<level>12</level>
+			<name>Confusion</name>
+		</move>
+		<move>
+			<level>15</level>
+			<name>Poisonpowder</name>
+		</move>
+		<move>
+			<level>16</level>
+			<name>Stun Spore</name>
+		</move>
+		<move>
+			<level>17</level>
+			<name>Sleep Powder</name>
+		</move>
+		<move>
+			<level>21</level>
+			<name>Supersonic</name>
+		</move>
+		<move>
+			<level>26</level>
+			<name>Whirlwind</name>
+		</move>
+		<move>
+			<level>32</level>
+			<name>Psybeam</name>
+		</move>
+	</moves>
+	<HMs>04</HMs>
+	<TMs>02,04,06,09,10,15,20,21,22,29,30,31,32,33,34,39,44,46,50</TMs>
 </pokemon>
 
 <pokemon>
@@ -4909,6 +5339,22 @@
 		<level>10</level>
 		<target>Butterfree</target>
 	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Tackle</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>String Shot</name>
+		</move>
+		<move>
+			<level>7</level>
+			<name>Harden</name>
+		</move>
+	</moves>
+	<HMs></HMs>
+	<TMs></TMs>
 </pokemon>
 
 <pokemon>
@@ -4932,6 +5378,18 @@
 		<level>7</level>
 		<target>Metapod</target>
 	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Tackle</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>String Shot</name>
+		</move>
+	</moves>
+	<HMs></HMs>
+	<TMs></TMs>
 </pokemon>
 
 <pokemon>
@@ -4950,6 +5408,42 @@
 	<sp atk>85</sp atk>
 	<sp def>105</sp def>
 	<speed>78</speed>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Tackle</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Tail Whip</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Bubble</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Withdraw</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Water Gun</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Bite</name>
+		</move>
+		<move>
+			<level>42</level>
+			<name>Skull Bash</name>
+		</move>
+		<move>
+			<level>52</level>
+			<name>Hydro Pump</name>
+		</move>
+	</moves>
+	<HMs>03,04</HMs>
+	<TMs>01,05,06,08,09,10,11,12,13,14,15,17,18,19,20,26,27,28,31,32,33,34,40,44,50</TMs>
 </pokemon>
 
 <pokemon>
@@ -4972,6 +5466,42 @@
 		<level>36</level>
 		<target>Blastoise</target>
 	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Tackle</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Tail Whip</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Bubble</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Water Gun</name>
+		</move>
+		<move>
+			<level>24</level>
+			<name>Bite</name>
+		</move>
+		<move>
+			<level>31</level>
+			<name>Withdraw</name>
+		</move>
+		<move>
+			<level>39</level>
+			<name>Skull Bash</name>
+		</move>
+		<move>
+			<level>47</level>
+			<name>Hydro Pump</name>
+		</move>
+	</moves>
+	<HMs>03,04</HMs>
+	<TMs>01,05,06,08,09,10,11,12,13,14,17,18,19,20,28,31,32,33,34,40,44,50</TMs>
 </pokemon>
 
 <pokemon>
@@ -4994,6 +5524,42 @@
 		<level>16</level>
 		<target>Wartortle</target>
 	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Tackle</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Tail Whip</name>
+		</move>
+		<move>
+			<level>8</level>
+			<name>Bubble</name>
+		</move>
+		<move>
+			<level>15</level>
+			<name>Water Gun</name>
+		</move>
+		<move>
+			<level>22</level>
+			<name>Bite</name>
+		</move>
+		<move>
+			<level>28</level>
+			<name>Withdraw</name>
+		</move>
+		<move>
+			<level>35</level>
+			<name>Skull Bash</name>
+		</move>
+		<move>
+			<level>42</level>
+			<name>Hydro Pump</name>
+		</move>
+	</moves>
+	<HMs>03,04</HMs>
+	<TMs>01,05,06,08,09,10,11,12,13,14,17,18,19,20,28,31,32,33,34,40,44,50</TMs>
 </pokemon>
 
 <pokemon>
@@ -5012,6 +5578,42 @@
 	<sp atk>109</sp atk>
 	<sp def>85</sp def>
 	<speed>100</speed>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Scratch</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Growl</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Ember</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Leer</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Rage</name>
+		</move>
+		<move>
+			<level>36</level>
+			<name>Slash</name>
+		</move>
+		<move>
+			<level>46</level>
+			<name>Flamethrower</name>
+		</move>
+		<move>
+			<level>55</level>
+			<name>Fire Spin</name>
+		</move>
+	</moves>
+	<HMs>01,02,04</HMs>
+	<TMs>01,03,05,06,08,09,10,15,17,18,19,20,31,32,33,34,38,39,40,44</TMs>
 </pokemon>
 
 <pokemon>
@@ -5037,10 +5639,39 @@
 	<moves>
 		<move>
 			<level>1</level>
-			<name></name>
+			<name>Scratch</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Growl</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Ember</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Leer</name>
+		</move>
+		<move>
+			<level>24</level>
+			<name>Rage</name>
+		</move>
+		<move>
+			<level>33</level>
+			<name>Slash</name>
+		</move>
+		<move>
+			<level>42</level>
+			<name>Flamethrower</name>
+		</move>
+		<move>
+			<level>56</level>
+			<name>Fire Spin</name>
 		</move>
 	</moves>
-
+	<HMs>01,04</HMs>
+	<TMs>01,03,05,06,08,09,10,17,18,19,20,23,28,31,32,33,34,38,39,40,44,50</TMs>
 </pokemon>
 
 <pokemon>
@@ -5063,6 +5694,42 @@
 		<level>16</level>
 		<target>Charmeleon</target>
 	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Scratch</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Growl</name>
+		</move>
+		<move>
+			<level>9</level>
+			<name>Ember</name>
+		</move>
+		<move>
+			<level>15</level>
+			<name>Leer</name>
+		</move>
+		<move>
+			<level>22</level>
+			<name>Rage</name>
+		</move>
+		<move>
+			<level>30</level>
+			<name>Slash</name>
+		</move>
+		<move>
+			<level>38</level>
+			<name>Flamethrower</name>
+		</move>
+		<move>
+			<level>46</level>
+			<name>Fire Spin</name>
+		</move>
+	</moves>
+	<HMs>01,04</HMs>
+	<TMs>01,03,05,06,08,09,10,17,18,19,20,23,28,31,32,33,34,38,39,40,44,50</TMs>
 </pokemon>
 
 <pokemon>
@@ -5081,6 +5748,46 @@
 	<sp atk>100</sp atk>
 	<sp def>100</sp def>
 	<speed>80</speed>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Tackle</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Growl</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Leech Seed</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Vine Whip</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Poison Powder</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Razor Leaf</name>
+		</move>
+		<move>
+			<level>43</level>
+			<name>Growth</name>
+		</move>
+		<move>
+			<level>55</level>
+			<name>Sleep Powder</name>
+		</move>
+		<move>
+			<level>65</level>
+			<name>Solar Beam</name>
+		</move>
+	</moves>
+	<HMs>01</HMs>
+	<TMs>03,06,08,09,10,15,20,21,22,31,32,33,34,44,50</TMs>
 </pokemon>
 
 <pokemon>
@@ -5117,30 +5824,32 @@
 			<name>Leech Seed</name>
 		</move>
 		<move>
-			<level>3</level>
-			<name>Growl</name>
-		</move>
-		<move>
-			<level>7</level>
-			<name>Leech Seed</name>
-		</move>
-		<move>
-			<level>9</level>
+			<level>1</level>
 			<name>Vine Whip</name>
 		</move>
 		<move>
-			<level>13</level>
-			<name>Poisonpowder</name>
+			<level>22</level>
+			<name>Poison Powder</name>
 		</move>
 		<move>
-			<level>20</level>
+			<level>30</level>
 			<name>Razor Leaf</name>
 		</move>
 		<move>
-			<level>44</level>
-			<name>Solarbeam</name>
+			<level>38</level>
+			<name>Growth</name>
+		</move>
+		<move>
+			<level>46</level>
+			<name>Sleep Powder</name>
+		</move>
+		<move>
+			<level>54</level>
+			<name>Solar Beam</name>
 		</move>
 	</moves>
+	<HMs>01</HMs>
+	<TMs>03,06,08,09,10,20,21,22,31,32,33,34,44,50</TMs>
 </pokemon>
 <pokemon>
 	<number>1</number><generation>1</generation>
