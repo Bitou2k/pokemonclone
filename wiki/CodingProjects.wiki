@@ -71,9 +71,7 @@ step()
 	nothing
 </code>
 
-_
 <code>
-*Mihow*
 townMap(MapLocation, Image)
 //this shows the town map sprite with a flashing icon
 
