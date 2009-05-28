@@ -29,7 +29,7 @@ public class StatsPresenter extends Presenter {
 	public void drawOn(Graphics2D g){
 
 		g.drawImage( pokemon.species().image80(), 16, 16, null);
-		g.drawString(String.valueOf(pokemon.species().number()), 41, 116)
+		g.drawString(String.valueOf(pokemon.species().number()), 41, 116);
 		
 	}
 	
