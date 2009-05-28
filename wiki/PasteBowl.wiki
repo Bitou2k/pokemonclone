@@ -2,6 +2,16 @@
 
 = Current CopyPasta =
 
+<note>random conflictions:
+	
+	crit = critical hit
+	stat = stat reduction (guard spec)
+	PPA = PP All
+	maxHP = fills HP
+	maxPP = fills PP
+	max+ail = fills HP and takes care of all ailments
+</note>
+
 <note>
 	battle = items used in battle
 	stats = items that permanently boost stats
