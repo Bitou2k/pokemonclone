@@ -150,7 +150,7 @@ class Battle extends Presenter {
 				else //PkMn / RUN
 				{
 					if (menuIndexY == 0){ //PKMN
-					
+					enterPresenter(new PokemonBox(this));
 					}
 					else //RUN
 					{
