@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.*;
 
 /**
-*  This class should be renamed XmlElement after it is compliant;
+*  This class should be renamed XmlElement after it is compliant (element names will be case senstive);
 *  parser/generator of a simplified version of xml;
 *  node names are case-insenstive;
 *  a stanza is a top level node of a document (not used in pokemon)

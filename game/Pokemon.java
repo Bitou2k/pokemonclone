@@ -13,7 +13,7 @@ public class Pokemon
 	private String nickname;
 	private int level, xp;
 	private Status status = Status.NORMAL;
-	private int currentHp, currentAttack, currentDefense, currentSpeed, currentSpAttack, currentSpDefense; //the ones that may be lowered in battle
+	private int currentHp, currentAttack, currentDefense, currentSpeed, currentSpAttack, currentSpDefense; //the ones that may be lowered in battle by TailWhip/Screech/StringShot et al
 	private int hp, attack, defense, speed, spAttack, spDefense; //the base stat
 	private ArrayList<Move> moves = new ArrayList<Move>(); //up to 4
 	
@@ -23,23 +23,25 @@ public class Pokemon
 		nickname = s.name();
 		this.level = level;
 		
-		for(int l=level; l>0; l--)
+		for(int l=level; l>0; l--) //pull first four moves in reverse order
 		{
 			moves.addAll( species.movesLearnedAtLevel(l) );
 			if(moves.size()>=4) break;
 		}
 		
-		hp = s.hp();
-		currentHp=hp;
-		attack = s.attack();
-		defense = s.defense();
-		//etc
+		hp = (int)(s.baseHp() * 2.0 * level / 100.0 + 10.0);
+		attack = (int)(s.baseAttack() * 2.0 * level / 100.0 + 5.0);
+		defense = (int)(s.baseDefense() * 2.0 * level / 100.0 + 5.0);
+		spAttack = (int)(s.baseSpAttack() * 2.0 * level / 100.0 + 5.0);
+		spDefense = (int)(s.baseSpDefense() * 2.0 * level / 100.0 + 5.0);
+		speed = (int)(s.baseSpeed() * 2.0 * level / 100.0 + 5.0);
 		
+		currentHp=hp;
 		restoreStats();
 	}
 	
 	/**
-	*For loading
+	*For loading, not implemented
 	*/
 	Pokemon(Node n)
 	{
@@ -52,7 +54,9 @@ public class Pokemon
 	{
 		currentAttack = attack;
 		currentDefense = defense;
-		//etc
+		currentSpAttack = spAttack;
+		currentSpDefense = spDefense;
+		currentSpeed = speed;
 	}
 		
 	public String nickname(){return nickname;}		
