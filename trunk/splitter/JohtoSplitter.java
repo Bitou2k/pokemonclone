@@ -18,9 +18,9 @@ public class JohtoSplitter
 	
 	public static void main(String[] a) throws Exception
 	{
-		for(File f: new File("../JohtoTileImages").listFiles())
+		for(File f: new File("./tileImages/").listFiles())
 		{
-			if(f.toString().startsWith("johto") && f.toString().endsWith(".gif")) files.add(f);
+			if(f.getName().startsWith("johto") && f.toString().endsWith(".gif")) files.add(f);
 		}
 	
 		ImageIcon ii = new ImageIcon(a[0]);
@@ -115,8 +115,8 @@ public class JohtoSplitter
 	static File nextFreeFile()
 	{
 		int no=1;
-		while( new File("../JohtoTileImages/johto"+no+".gif").exists() ) no++;
-		return new File("../JohtoTileImages/johto"+no+".gif");
+		while( new File("./tileImages/johto"+no+".gif").exists() ) no++;
+		return new File("./tileImages/johto"+no+".gif");
 	}
 	
 	static File write(BufferedImage bi, File file) throws Exception
