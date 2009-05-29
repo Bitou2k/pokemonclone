@@ -36,12 +36,12 @@ public class Species {
 	*/
 	public Type type2(){return type2;}
 	
-	public int hp(){return hp;}
-	public int attack(){return attack;}
-	public int defense(){return defense;}
-	public int spAttack(){return spAttack;}
-	public int spDefense(){return spDefense;}
-	public int speed(){return speed;}
+	public int baseHp(){return hp;}
+	public int baseAttack(){return attack;}
+	public int baseDefense(){return defense;}
+	public int baseSpAttack(){return spAttack;}
+	public int baseSpDefense(){return spDefense;}
+	public int baseSpeed(){return speed;}
 	
 	public List<TM> learnableTMs(){return tms;}
 	public List<HM> learnableHMs(){return hms;}

@@ -18,12 +18,12 @@ public class Player extends Battler {
 	{
 		name("Ash");
 		
-		party().add(Species.named("Bulbasaur").makeWildAtLevel(100));
-		party().add(Species.named("Mew").makeWildAtLevel(100));
-		party().add(Species.named("Ditto").makeWildAtLevel(100));
-		party().add(Species.named("Charmander").makeWildAtLevel(100));
-		party().add(Species.named("Squirtle").makeWildAtLevel(100));
-		party().add(Species.named("Bulbasaur").makeWildAtLevel(100));
+		party().add(Species.named("Bulbasaur").makeWildAtLevel(10));
+		party().add(Species.named("Mew").makeWildAtLevel(10));
+		party().add(Species.named("Ditto").makeWildAtLevel(10));
+		party().add(Species.named("Charmander").makeWildAtLevel(10));
+		party().add(Species.named("Squirtle").makeWildAtLevel(10));
+		party().add(Species.named("Bulbasaur").makeWildAtLevel(10));
 	}	
 	
 	public Pack pack(){ return pack; }

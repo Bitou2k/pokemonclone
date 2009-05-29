@@ -5,7 +5,9 @@ public enum Status {
 	POISONED,
 	BURNED,
 	SLEEPING,
-	PARLYZED
+	PARLYZED,
+	
+	FAINTED
 	
 	//CONFUSED, actually independent of status
 }
