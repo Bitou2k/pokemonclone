@@ -10,20 +10,19 @@ public class TM extends LearnItem {
 	public int number(){return number;}
 	public Move move(){return move;}
 	
-	private TM(Node n)
+	private TM(XmlElement e)
 	{
-		number = new Integer(n.contentOf("number"));
-		move = Move.named(n.contentOf("name"));
-		
+		number = e.icontentOf("number");
+		move = Move.named(e.contentOf("name"));
 	}
 	
 	private static ArrayList<TM> tms = new ArrayList<TM>();
 	static { 
 		try{
-			Node root = Node.documentRootFrom("./pokemon/tmsAndHms.nml");
-			for(Node n : root.subnodes("tm"))
+			XmlElement root = XmlElement.documentRootFrom("./pokemon/tmsAndHms.xml");
+			for(XmlElement e : root.children("tm"))
 			{
-				TM t = new TM(n);
+				TM t = new TM(e);
 				tms.add(t);
 				//System.out.print(t.number+" ");
 			}

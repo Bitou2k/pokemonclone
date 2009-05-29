@@ -2,6 +2,9 @@ package game;
 
 import java.util.*;
 
+/**
+*Rename EncounterSet?
+*/
 class WildPokemonGenerator {
 
 	private String name;

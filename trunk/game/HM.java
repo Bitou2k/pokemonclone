@@ -10,18 +10,18 @@ public class HM extends LearnItem {
 	public int number(){return number;}
 	public Move move(){return move;}
 	
-	private HM(Node n)
+	private HM(XmlElement e)
 	{
-		number = new Integer(n.contentOf("number"));
-		move = Move.named(n.contentOf("name"));
+		number = e.icontentOf("number");
+		move = Move.named(e.contentOf("name"));
 	}
 	
 	private static ArrayList<HM> hms = new ArrayList<HM>();
 	static { 
 		try{
-			Node root = Node.documentRootFrom("./pokemon/tmsAndHms.nml");
-			for(Node n : root.subnodes("hm")){
-				HM h = new HM(n);
+			XmlElement root = XmlElement.documentRootFrom("./pokemon/tmsAndHms.xml");
+			for(XmlElement e : root.children("hm")){
+				HM h = new HM(e);
 				hms.add( h );
 				//System.out.print(h.number+" ");
 			}
