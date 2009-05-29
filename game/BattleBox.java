@@ -9,6 +9,9 @@ import javax.swing.*;
 
 import java.util.*;
 
+/**
+*Displays the player's party (the up to six pokemon with him) in the context of a battle. 
+*/
 public class BattleBox extends Presenter {
 	
 	/**

@@ -39,7 +39,7 @@ public class JohtoTile{
 	
 	public Node asNode()
 	{
-		Node JohtoTileNode = new Node("JohtoTile");
+		Node JohtoTileNode = new Node("tile");
 		JohtoTileNode.addSubnode("image", image.getName() );
 		JohtoTileNode.addSubnode("target", target );
 		JohtoTileNode.addSubnode("type", type );
