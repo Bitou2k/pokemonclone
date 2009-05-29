@@ -4,7 +4,22 @@ import java.io.*;
 import java.util.*;
 
 /**
-*  BETA, DONT TOUCH
+*Functional successor to Node, uses correct XML terminology; element names are case senstive and may not contains spaces.
+*
+*
+*XmlElement a = new XmlElement("species")
+*a.addChild("name","Bulbasaur");
+*a.addChild("type","grass");
+*XmlElement b = new XmlElement("species")
+*b.addChild("name","Mew");
+*b.addChild("type","pyschic")
+*OutputStream out = new FileOutputStream("example.xml");
+*a.writeOn(out);
+*b.writeOn(out):
+*
+*produces:
+*<species><name>Bulbasaur</name><type>grass</type></species><species><name>Mew</name><type>pyschic</type></species>
+*
 */
 public class XmlElement
 {
@@ -44,27 +59,27 @@ public class XmlElement
 	public List<XmlElement> children() {return children;}
 	
 	/**
-	*Adds a subnode with the given name and content.
+	*Adds a child with the given name and content.
 	 */
-	public XmlElement addSubnode(String name,String contents){
-		return addSubnode(new XmlElement(name,contents));
+	public XmlElement addChild(String name,String contents){
+		return addChild(new XmlElement(name,contents));
 	}
 	
 	/**
-	*Adds a subnode
+	*Adds a child
 	 */
-	public XmlElement addSubnode(XmlElement n){
+	public XmlElement addChild(XmlElement n){
 		children.add(n);
 		n.parent = this;
 		return n;
 	}
 	
 	/**
-	*Returns the first found subnode with the given name
+	*Returns the first found child with the given name
 	 */
-	public XmlElement subnode(String subnodeName){
+	public XmlElement child(String childName){
 		for(XmlElement n:children){
-			if(n.name.equals(subnodeName)) return n;
+			if(n.name.equals(childName)) return n;
 		}
 		return null;
 	}
@@ -72,27 +87,27 @@ public class XmlElement
 	/**
 	*Returns an enumeration of all children with the given name
 	 */
-	public List<XmlElement> children(String subnodeName){
+	public List<XmlElement> children(String childName){
 		List<XmlElement> matches = new ArrayList<XmlElement>();
 		for(XmlElement n:children){
-			if(n.name.equals(subnodeName)) matches.add(n);
+			if(n.name.equals(childName)) matches.add(n);
 		}
 		return matches;
 	}
 	
 	/**
-	*Returns the content of the first subnode with the given name
+	*Returns the content of the first child with the given name
 	 */
-	public String contentOf(String subnodeName){
-		XmlElement n = subnode(subnodeName);
+	public String contentOf(String childName){
+		XmlElement n = child(childName);
 		if(n!=null) return n.content();
 		return "";
 	}
-	public int icontentOf(String subnodeName){
-		return new Integer(contentOf(subnodeName));
+	public int icontentOf(String childName){
+		return new Integer(contentOf(childName));
 	}
-	public double dcontentOf(String subnodeName){
-		return new Double(contentOf(subnodeName));
+	public double dcontentOf(String childName){
+		return new Double(contentOf(childName));
 	}
 	
 	
@@ -130,7 +145,7 @@ public class XmlElement
 	{
 		InputStream is = new FileInputStream(filename);
 		XmlElement root = new XmlElement(filename);
-		for(XmlElement n: parseAllFrom(is)) root.addSubnode(n);
+		for(XmlElement n: parseAllFrom(is)) root.addChild(n);
 		return root;
 	}
 	
@@ -139,13 +154,13 @@ public class XmlElement
 	 */
 	public static List<XmlElement> parseAllFrom(InputStream is)
 	{
-		ArrayList<XmlElement> nodes = new ArrayList<XmlElement>();
+		ArrayList<XmlElement> elements = new ArrayList<XmlElement>();
 		
 		try{
-			while(true)	nodes.add( parseFrom(is) );
+			while(true)	elements.add( parseFrom(is) );
 		}catch(IOException e){}
 		
-		return nodes;
+		return elements;
 	}
 	
 	/**
@@ -157,7 +172,7 @@ public class XmlElement
 		
 		upTo(is,'<');
 		
-		top.name( decode(upTo(is,'>')) );
+		top.name( decode(upTo(is,'>')).split(" ")[0] );
 		
 		while(true)
 		{
@@ -165,6 +180,8 @@ public class XmlElement
 			top.appendContent(con);
 		
 			String name = decode(upTo(is,'>'));
+			name = name.split(" ")[0];
+			
 			if(name.equals(""))
 			{
 				throw new IOException("Format error: empty tag");
@@ -187,10 +204,16 @@ public class XmlElement
 					throw new IOException("Format error: Premature close of "+name);
 				}
 			}
+			else if(name.endsWith("/"))
+			{
+				//an openclose tag
+				name = name.substring(0,name.length()-1);
+				top.addChild(name,"");
+			}
 			else
 			{
 				//an open tag
-				top = top.addSubnode(name,"");
+				top = top.addChild(name,"");
 			}
 		}
 	}
