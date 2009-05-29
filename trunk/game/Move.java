@@ -52,7 +52,7 @@ public class Move {
 			for(Node n : root.subnodes("move")){
 				Move m = new Move(n);
 				moves.add(m);
-				System.out.print(m.name+" ");
+				//System.out.print(m.name+" ");
 			}
 			System.out.println("\n"+moves.size()+" moves!");
 		}catch(Exception e){e.printStackTrace();}
