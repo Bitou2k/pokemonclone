@@ -23,6 +23,10 @@ abstract class Presenter {
 		game.enterPresenter(newPresenter);
 	}
 	
+	public boolean isRoot()
+	{
+		return game.currentPresenter==this;
+	}
 	/**
 	 *Called after this presenter has been given control of the screen.
 	 */

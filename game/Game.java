@@ -11,7 +11,7 @@ import java.util.*;
 class Game extends JComponent implements KeyListener {
 
 	//the current area, battle, or menu that is the root to be displayed and receive key events
-	private Presenter currentPresenter;
+	protected Presenter currentPresenter;
 	private Player player = new Player();
 	private Map<Button,Boolean> bs = new HashMap<Button,Boolean>();
 		
