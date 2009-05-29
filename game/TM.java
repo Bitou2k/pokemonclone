@@ -2,7 +2,7 @@ package game;
 
 import java.util.*;
 
-public class TM {
+public class TM extends LearnItem {
 
 	private int number;
 	private Move move;
@@ -25,14 +25,14 @@ public class TM {
 			{
 				TM t = new TM(n);
 				tms.add(t);
-				System.out.print(t.number+" ");
+				//System.out.print(t.number+" ");
 			}
 				
 			System.out.println("\n"+tms.size()+" TMs!");
 		}catch(Exception e){e.printStackTrace();}
 	}
 	
-	public static java.util.List<TM> all(){
+	public static java.util.List<TM> allTMs(){
 		return tms;
 	}
 	public static TM numbered(int no){

@@ -11,7 +11,4 @@ ryan
 
 
 
-TM and HM to subclass MoveItem???
-
-
 field in area files for associated music

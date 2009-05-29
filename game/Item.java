@@ -16,10 +16,10 @@ public abstract class Item
 	//constructor
 	public Item(Node n)
 	{
-		name = n.contentOf("name");
-		price = Double.parseDouble(n.contentOf("price"));
-		type = n.contentOf("type");
-		description = n.contentOf("desc");
+		//name = n.contentOf("name");
+		//price = Double.parseDouble(n.contentOf("price"));
+		//type = n.contentOf("type");
+		//description = n.contentOf("desc");
 	}
 
 	//return name

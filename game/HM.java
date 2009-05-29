@@ -2,7 +2,7 @@ package game;
 
 import java.util.*;
 
-public class HM {
+public class HM extends LearnItem {
 
 	private int number;
 	private Move move;
@@ -23,14 +23,14 @@ public class HM {
 			for(Node n : root.subnodes("hm")){
 				HM h = new HM(n);
 				hms.add( h );
-				System.out.print(h.number+" ");
+				//System.out.print(h.number+" ");
 			}
 				
 			System.out.println("\n"+hms.size()+" HMs!");
 		}catch(Exception e){e.printStackTrace();}
 	}
 	
-	public static java.util.List<HM> all(){
+	public static java.util.List<HM> allHMs(){
 		return hms;
 	}
 	public static HM numbered(int no){
