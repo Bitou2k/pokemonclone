@@ -4,9 +4,6 @@ rename pokemon box to BattlePartyPresenter or just PartyPresenter if it will han
 
 
 ryan
--rename johto1,2,3... to route30,newbarktown,....
--Node->XmlElement (case senstive, no space in element name, ignore attributes, accept the <this/> shortcut)
--nml->xml
 -rename stuff in ./pokemon to species for consistency
 
 
