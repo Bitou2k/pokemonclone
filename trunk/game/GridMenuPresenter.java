@@ -18,9 +18,7 @@ public class GridMenuPresenter extends Presenter {
 	private int selectedx=0, selectedy=0;
 	private String choice;
 	private int s;
-	
 	private int bottomx=16*20,bottomy=16*18;
-	
 	private Presenter behide,next;
 	
 	public String choice()
@@ -36,8 +34,6 @@ public class GridMenuPresenter extends Presenter {
 		for(String x: choicesArg)
 			if(x.length()>longest.length())
 				longest = x;
-				
-		choice = choicesArg[0];
 		
 		s = (int)Math.ceil(Math.sqrt(choicesArg.length));
 		choices = new String[s][s];
@@ -48,12 +44,16 @@ public class GridMenuPresenter extends Presenter {
 				choices[s-x-1][y] = (count<choicesArg.length ? choicesArg[count] : "");
 				count++;
 			}
+		
+		selectedx=s-1;
+		choice = choices[selectedx][selectedy];
 	}
 	
 	/**
 	*
 	*/
-	public void drawOn(Graphics2D g){
+	public void drawOn(Graphics2D g)
+	{
 		behide.drawOn(g);
 		
 		int unitWidth = (longest.length() * 18 + 20);
@@ -79,14 +79,14 @@ public class GridMenuPresenter extends Presenter {
 			
 			}
 			
-		g.drawString( ">",bottomx-unitWidth*(selectedx+1)+4,bottomy-height+22+30*(selectedy));	
+		g.drawString(">",bottomx-unitWidth*(selectedx+1)+4,bottomy-height+22+30*(selectedy));	
 	}
 	
 	/**
 	*
 	*/
-	public void buttonPressed(Button b){
-		
+	public void buttonPressed(Button b)
+	{	
 		if(b==Button.UP)
 		{
 			selectedy--;
@@ -118,6 +118,7 @@ public class GridMenuPresenter extends Presenter {
 				notify();
 			}
 		}
+		System.out.println(choice+" now selected");
 	}
 	
 	/**
