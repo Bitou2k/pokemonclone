@@ -4,7 +4,7 @@
 
 To sort out the confusion, everyone should put +'s before maps that are finished and put their names next to the cities/building/etc. that they are working on/going to work on.
 
-   0. Johto (rmacnak)
+   0. Johto (rmacnak, done through GoldenRod)
 
 +  1. Pallet Town (Brett Guiden)
 
@@ -12,7 +12,7 @@ To sort out the confusion, everyone should put +'s before maps that are finished
 
 +  3. Viridian City (PJ)
 
--  4. Routes 2 & 22 (Route 2 is complete) (Macnate)
++  4. Routes 2 & 22
 
 +  5. Viridian Forest (Tim)
 
@@ -28,7 +28,7 @@ To sort out the confusion, everyone should put +'s before maps that are finished
 
 + 11. Routes 24 & 25 (Nickwest)
 
-  12. Routes 5 & 6(Steve)
++ 12. Routes 5 & 6(Steve)
 
 + 13. Vermilion City (Frick & Brett)
 
@@ -60,13 +60,13 @@ To sort out the confusion, everyone should put +'s before maps that are finished
  
 + 27. Fuchsia City (Jason)
 
--  28. Safari Zone (Joe)
+- 28. Safari Zone (Joe)
 
 - 29. Routes 12 & 13 (13 is done)
 
 + 30. Routes 14 & 15
 
-  31. Route 21(Garrett)
++ 31. Route 21(Garrett)
 
 + 32. Cinnabar Island (done)
 
@@ -80,7 +80,7 @@ To sort out the confusion, everyone should put +'s before maps that are finished
 
   38. Route 23 (NickWest)
 
-  39. Victory Road (Nava)
++ 39. Victory Road (Nava)
 
   40. Indigo Plateau (Nava)
 
