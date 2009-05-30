@@ -27,7 +27,7 @@ class Area extends Presenter
 	}
 	
 	/**
-	 *Find the tile with the given coordinated
+	 *Find the tile with the given coordinates
 	 */
 	public Tile tileAt(int x, int y)
 	{
@@ -79,20 +79,13 @@ class Area extends Presenter
 	 *Move player on arrow keys, enter pokedex on Q.
 	 */
 	public void buttonPressed(Button b){
-		if(player().inStride())
-			return;
-		if(b==LEFT)
-			{ player().direction(Direction.WEST); walk(); }
-		if(b==DOWN)
-			{ player().direction(Direction.SOUTH); walk(); }
-		if(b==RIGHT)
-			{ player().direction(Direction.EAST); walk(); }
-		if(b==UP)
-			{ player().direction(Direction.NORTH); walk(); }
+		if(player().inStride())	return;
+		if(b==LEFT){ player().direction(Direction.WEST); walk(); }
+		if(b==DOWN){ player().direction(Direction.SOUTH); walk(); }
+		if(b==RIGHT){ player().direction(Direction.EAST); walk(); }
+		if(b==UP){ player().direction(Direction.NORTH); walk(); }
 		if(b==START)
 		{
-			
-			
 			String choice = showMenu(new String[]{"Pokedex","Pokemon","Pack","Ash","Save","Option","Debug","Exit"});
 			
 			if(choice.equals("Pokedex")) enterPresenter(new PokedexPresenter(this));
@@ -102,8 +95,7 @@ class Area extends Presenter
 		{
 			Tile next = tilePlayerFacing(1);
 			
-			if (next.isObstacle() && !next.target.isEmpty())
-				showMessage(next.target);
+			if (next.isObstacle() && !next.target.isEmpty()) showMessage(next.target);
 		}
 		if(b==B)
 		{

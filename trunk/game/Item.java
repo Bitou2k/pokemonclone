@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-//a thing in your pack
+/**
+*a thing in your pack
+*/
 public abstract class Item
 {
 
