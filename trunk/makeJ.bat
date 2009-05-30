@@ -1,5 +1,5 @@
 javac splitter/*.java
 pause
-java -Xmx512M splitter.JohtoSplitter ./splitter/11.png
+java -Xmx512M splitter.JohtoSplitter ./splitter/d.png
 pause
 pause
