@@ -3,9 +3,4 @@
 rename pokemon box to BattlePartyPresenter or just PartyPresenter if it will handle the open from the start menu as well
 
 
-ryan
--rename stuff in ./pokemon to species for consistency
-
-
-
 field in area files for associated music
