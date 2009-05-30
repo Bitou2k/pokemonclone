@@ -54,7 +54,7 @@ both classes need a way to obtain all of the collection elements and one at a sp
 </code>
 
 <code>
-ComputerPresenter
+*Shloka*ComputerPresenter
 //this shows the current box and the contents of each
 
 the game will contain 15 boxes, look at the javadoc and communicate with the Box person
