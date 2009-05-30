@@ -359,14 +359,74 @@ class Battle extends Presenter {
 		//loop starts here
 		while(!battleEnd()){
 			textLine1 = "";
-			String selection = showGridMenu(new String[] {"FIGHT","PACK","PKMN","RUN"});
-			sleep(1000);
-			stage =3;
+			textLine2 = "";
+			boolean battleCommand = getBattleCommand();
+			//if it returns false, do it again
+			while (!battleCommand){battleCommand = getBattleCommand();}
 		}
 		enterPresenter(returnPresenter);
 	}
 	private boolean battleEnd(){		
 		if (stage == 3){return true;}
 		return false;
+	}
+	private void tryToRun(){
+		stage = 3;
+	}
+	private void enemyMove(){
+	
+	}
+	private boolean getBattleCommand(){
+			String selection = showGridMenu(new String[] {"FIGHT","PACK","PKMN","RUN"});
+			System.out.println(selection);
+			if (selection.equals("FIGHT")){
+				String[] moveNameList = new String[]{"","","","","Cancel"};
+				for (int i = 0; i < ashsPokemon.moves().size(); i++){
+					moveNameList[i] = ashsPokemon.moves().get(i).name() + " " + ashsPokemon.moves().get(i).currentPp() + "/" + ashsPokemon.moves().get(i).pp();
+				}
+				Move moveToUse;
+				boolean canUse = false;
+				while (!canUse){
+					String moveSel = showMenu(moveNameList);
+					if (!moveSel.equals("")){
+						if (moveSel.equals("Cancel")){
+							return false;
+						}
+						else if (moveSel.equals(moveNameList[0])){
+							moveToUse = ashsPokemon.moves().get(0);
+						}
+						else if (moveSel.equals(moveNameList[1])){
+							moveToUse = ashsPokemon.moves().get(1);
+						}
+						else if (moveSel.equals(moveNameList[2])){
+							moveToUse = ashsPokemon.moves().get(2);
+						}
+						else{ //index = 3
+							moveToUse = ashsPokemon.moves().get(3);
+						}
+						if (moveToUse.currentPp() == 0){
+							textLine1 = "No PP left";
+							textLine2 = "";
+							sleep(250);
+						}
+						else
+							canUse = true;
+					}
+				}
+			}
+			else if (selection.equals("PACK")){
+				//use an item
+				enemyMove();
+			}
+			else if (selection.equals("PKMN")){
+				enterPresenter(new BattleBox(this));
+				textLine1 = "GO..." + ashsPokemon.nickname();
+				textLine2 = "";
+				enemyMove();
+			}
+			else{ //run
+				tryToRun();
+			}
+		return true;
 	}
 }
