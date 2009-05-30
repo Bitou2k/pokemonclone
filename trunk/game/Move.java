@@ -10,6 +10,7 @@ public class Move {
 	private String category;
 	private String contest;
 	private int pp;
+	private int currentPp;
 	private int power;
 	private double accuracy;
 	
@@ -17,6 +18,8 @@ public class Move {
 	
 	public int number(){return number;}
 	public String name(){return name;}
+	public int currentPp(){return currentPp;}
+	public void setPp(int i){currentPp = i;}
 	public Type type(){return type;}
 	/**
 	*Physical, special, etc
@@ -34,6 +37,7 @@ public class Move {
 		contest = n.contentOf("contest");
 		
 		pp = new Integer(n.contentOf("pp"));
+		currentPp = pp;
 		try{
 			power = new Integer(n.contentOf("power"));
 		}catch(Exception e){}
