@@ -4,8 +4,8 @@ import java.io.*;
 import java.util.*;
 
 /**
-*Functional successor to Node, uses correct XML terminology; element names are case senstive and may not contains spaces.
-*
+*Functional successor to Node which uses correct XML terminology; element names are case senstive and may not contains spaces.  
+*This class does NOT represent a fully spec compliant DOM XML parser.
 *
 *XmlElement a = new XmlElement("species")
 *a.addChild("name","Bulbasaur");

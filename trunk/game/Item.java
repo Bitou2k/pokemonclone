@@ -21,6 +21,8 @@ public abstract class Item
 		//type = n.contentOf("type");
 		//description = n.contentOf("desc");
 	}
+	
+	public Item(){}
 
 	//return name
 	public String getName()
@@ -33,8 +35,8 @@ public abstract class Item
 		return description;
 	}
 
-	//item use
-	public abstract void use();
+	/**item use: subclasses should override*/
+	public void use(){}
 	
 	private static ArrayList<Item> items = new ArrayList<Item>();
 	static { 

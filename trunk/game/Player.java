@@ -29,19 +29,19 @@ public class Player extends Battler {
 	public Pack pack(){ return pack; }
 	public Pokedex pokedex(){ return pokedex; }
 	
-	private final ImageIcon imgUp = new ImageIcon("./entityImages/Player Up.png");
-	private final ImageIcon imgUpStrideOne = new ImageIcon("./entityImages/Player UpStrideOne.png");
-	private final ImageIcon imgUpStrideTwo = new ImageIcon("./entityImages/Player UpStrideTwo.png");
+	private final Image imgUp = new ImageIcon("./entityImages/Player Up.png").getImage();
+	private final Image imgUpStrideOne = new ImageIcon("./entityImages/Player UpStrideOne.png").getImage();
+	private final Image imgUpStrideTwo = new ImageIcon("./entityImages/Player UpStrideTwo.png").getImage();
 
-	private final ImageIcon imgDown = new ImageIcon("./entityImages/Player Down.png");
-	private final ImageIcon imgDownStrideOne = new ImageIcon("./entityImages/Player DownStrideOne.png");
-	private final ImageIcon imgDownStrideTwo = new ImageIcon("./entityImages/Player DownStrideTwo.png");	
+	private final Image imgDown = new ImageIcon("./entityImages/Player Down.png").getImage();
+	private final Image imgDownStrideOne = new ImageIcon("./entityImages/Player DownStrideOne.png").getImage();
+	private final Image imgDownStrideTwo = new ImageIcon("./entityImages/Player DownStrideTwo.png").getImage();	
 	
-	private final ImageIcon imgLeft = new ImageIcon("./entityImages/Player Left.png");
-	private final ImageIcon imgLeftStride = new ImageIcon("./entityImages/Player LeftStride.png");
+	private final Image imgLeft = new ImageIcon("./entityImages/Player Left.png").getImage();
+	private final Image imgLeftStride = new ImageIcon("./entityImages/Player LeftStride.png").getImage();
 	
-	private final ImageIcon imgRight = new ImageIcon("./entityImages/Player Right.png");
-	private final ImageIcon imgRightStride = new ImageIcon("./entityImages/Player RightStride.png");
+	private final Image imgRight = new ImageIcon("./entityImages/Player Right.png").getImage();
+	private final Image imgRightStride = new ImageIcon("./entityImages/Player RightStride.png").getImage();
 	
 	public void step(int ms)
 	{
@@ -69,23 +69,23 @@ public class Player extends Battler {
 	
 	private Image getImage()
 	{
-		if(direction()==Direction.NORTH && stride==0) return imgUp.getImage();
+		if(direction()==Direction.NORTH && stride==0) return imgUp;
 		if(direction()==Direction.NORTH && stride>0) 
-			if(stepCount%2==0) return imgUpStrideOne.getImage();
-			else return imgUpStrideTwo.getImage();
+			if(stepCount%2==0) return imgUpStrideOne;
+			else return imgUpStrideTwo;
 		
-		if(direction()==Direction.SOUTH && stride==0) return imgDown.getImage();
+		if(direction()==Direction.SOUTH && stride==0) return imgDown;
 		if(direction()==Direction.SOUTH && stride>0) 
-			if(stepCount%2==0) return imgDownStrideOne.getImage();
-			else return imgDownStrideTwo.getImage();
+			if(stepCount%2==0) return imgDownStrideOne;
+			else return imgDownStrideTwo;
 		
-		if(direction()==Direction.EAST && stride==0) return imgRight.getImage();
-		if(direction()==Direction.EAST && stride==1) return imgRight.getImage();
-		if(direction()==Direction.EAST && stride==2) return imgRightStride.getImage();
+		if(direction()==Direction.EAST && stride==0) return imgRight;
+		if(direction()==Direction.EAST && stride==1) return imgRight;
+		if(direction()==Direction.EAST && stride==2) return imgRightStride;
 		
-		if(direction()==Direction.WEST && stride==0) return imgLeft.getImage();
-		if(direction()==Direction.WEST && stride==1) return imgLeft.getImage();
-		if(direction()==Direction.WEST && stride==2) return imgLeftStride.getImage();
+		if(direction()==Direction.WEST && stride==0) return imgLeft;
+		if(direction()==Direction.WEST && stride==1) return imgLeft;
+		if(direction()==Direction.WEST && stride==2) return imgLeftStride;
 		
 		return null;//error!
 	}

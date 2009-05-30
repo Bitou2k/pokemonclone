@@ -9,7 +9,8 @@ import javax.swing.ImageIcon;
 /**
  *Keeps track of which pokemon have been caught and seen.
  */
-public class Pokedex {
+public class Pokedex
+{
 	
 	private Set<Species> seen = new HashSet<Species>();
 	private Set<Species> caught = new HashSet<Species>();
