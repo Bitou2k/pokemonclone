@@ -9,8 +9,10 @@ import javax.swing.*;
  */
 class Tile {
 
+	//private 
 	int x,y;
 	private String type;
+	//private
 	String target;
 	private Image img;
 	private Entity entity;

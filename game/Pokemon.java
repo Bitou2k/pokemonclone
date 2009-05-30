@@ -17,6 +17,9 @@ public class Pokemon
 	private int hp, attack, defense, speed, spAttack, spDefense; //the base stat
 	private ArrayList<Move> moves = new ArrayList<Move>(); //up to 4
 	
+	/**
+	*Called by makeWildAtLevl
+	*/
 	Pokemon(Species s, int level)
 	{
 		species = s;

@@ -3,9 +3,10 @@ package game;
 import java.awt.*;
 
 /**
- *An area, battle, or menu that is the root to be displayed and receiver of key events
+ *An area, battle, or menu that is the root to be displayed and receiver of key events; this is perhaps the most important class.
  */
-abstract class Presenter {
+abstract class Presenter
+{
 	
 	private Game game;
 	
