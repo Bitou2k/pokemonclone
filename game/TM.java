@@ -19,7 +19,7 @@ public class TM extends LearnItem {
 	private static ArrayList<TM> tms = new ArrayList<TM>();
 	static { 
 		try{
-			XmlElement root = XmlElement.documentRootFrom("./pokemon/tmsAndHms.xml");
+			XmlElement root = XmlElement.documentRootFrom("./species/tmsAndHms.xml");
 			for(XmlElement e : root.children("tm"))
 			{
 				TM t = new TM(e);

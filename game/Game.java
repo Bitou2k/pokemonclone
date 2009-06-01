@@ -110,6 +110,6 @@ class Game extends JComponent implements KeyListener {
 		f.setResizable(false);
 		f.setVisible(true);
 		
-		Area.named("pallet");
+		Area.named("PalletTown");
 	}
 }

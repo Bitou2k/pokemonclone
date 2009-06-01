@@ -225,12 +225,12 @@ class Area extends Presenter
 				return a;
 				
 		try{
-			Area a = new Area(new File("./areas/"+name+".nml"));
+			Area a = new Area(new File("./areas/"+name+".xml"));
 			areas.add(a);
 			return a;
 		}catch(Exception exx){}
 		try{
-			Area a = new Area(new File("./areas/"+name+".xml"));
+			Area a = new Area(new File("./areas/"+name+".nml"));
 			areas.add(a);
 			return a;
 		}catch(Exception exx){}

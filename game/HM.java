@@ -19,7 +19,7 @@ public class HM extends LearnItem {
 	private static ArrayList<HM> hms = new ArrayList<HM>();
 	static { 
 		try{
-			XmlElement root = XmlElement.documentRootFrom("./pokemon/tmsAndHms.xml");
+			XmlElement root = XmlElement.documentRootFrom("./species/tmsAndHms.xml");
 			for(XmlElement e : root.children("hm")){
 				HM h = new HM(e);
 				hms.add( h );

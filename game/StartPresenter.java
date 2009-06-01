@@ -39,7 +39,7 @@ class StartPresenter extends Presenter {
 	
 	public void buttonPressed(Button b)
 	{	
-		Area a = Area.named("pallet");
+		Area a = Area.named("PalletTown");
 		a.tileAt(5,7).entity(player());
 		enterPresenter(a);
 	}
