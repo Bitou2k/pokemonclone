@@ -1,0 +1,1219 @@
+
+<pokemon>
+	<number>75</number>
+	<name>Graveler</name>
+	<image>icon075.gif</image>
+	<description>Rolls down slopes to move. It rolls over any obstacle without slowing or changing its direction.</description>
+	<type>Rock</type>
+	<type2>Ground</type2>
+	<species>Rock Pokemon</species>
+	<hp>55</hp>
+	<attack>95</attack>
+	<defense>115</defense>
+	<sp atk>45</sp atk>
+	<sp def>45</sp def>
+	<speed>35</speed>
+	<evolution>
+		<level>link</level>
+		<target>Golem</target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Tackle</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Defense Curl</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Rock Throw</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Self Destruct</name>
+		</move>
+		<move>
+			<level>29</level>
+			<name>Harden</name>
+		</move>
+		<move>
+			<level>36</level>
+			<name>Earthquake</name>
+		</move>
+		<move>
+			<level>43</level>
+			<name>Explosion</name>
+		</move>
+	</moves>
+	<HMs>04</HMs>
+	<TMs>01,06,08,09,10,17,18,19,20,26,27,28,31,32,34,35,36,38,44,47,48,50</TMs>
+</pokemon>
+<pokemon>
+	<number>74</number>
+	<name>Geodude</name>
+	<image>icon074.gif</image>
+	<description>Found in fields and mountains. Mistaking them for boulders, people often step or trip on them.</description>
+	<type>Rock</type>
+	<type2>Ground</type2>
+	<species>Rock Pokemon</species>
+	<hp>40</hp>
+	<attack>80</attack>
+	<defense>100</defense>
+	<sp atk>30</sp atk>
+	<sp def>30</sp def>
+	<speed>20</speed>
+	<evolution>
+		<level>25</level>
+		<target>Graveler</target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Tackle</name>
+		</move>
+		<move>
+			<level>11</level>
+			<name>Defense Curl</name>
+		</move>
+		<move>
+			<level>16</level>
+			<name>Rock Throw</name>
+		</move>
+		<move>
+			<level>21</level>
+			<name>Self Destruct</name>
+		</move>
+		<move>
+			<level>26</level>
+			<name>Harden</name>
+		</move>
+		<move>
+			<level>31</level>
+			<name>Earthquake</name>
+		</move>
+		<move>
+			<level>36</level>
+			<name>Explosion</name>
+		</move>
+	</moves>
+	<HMs>04</HMs>
+	<TMs>01,06,08,09,10,17,18,19,20,26,27,28,31,32,34,35,36,38,44,47,48,50</TMs>
+</pokemon>
+<pokemon>
+	<number>73</number>
+	<name>Tentacruel</name>
+	<image>icon073.gif</image>
+	<description>The tentacles are normally kept short. On hunts, they are extended to ensnare and immobilize prey.</description>
+	<type>Water</type>
+	<type2>Poison</type2>
+	<species>Jellyfish Pokemon</species>
+	<hp>80</hp>
+	<attack>70</attack>
+	<defense>65</defense>
+	<sp atk>80</sp atk>
+	<sp def>120</sp def>
+	<speed>100</speed>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Acid</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Supersonic</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Wrap</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Poison Sting</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Watergun</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Constrict</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Bubblebeam</name>
+		</move>
+		<move>
+			<level>35</level>
+			<name>Barrier</name>
+		</move>
+		<move>
+			<level>43</level>
+			<name>Screech</name>
+		</move>
+		<move>
+			<level>50</level>
+			<name>Hydro Pump</name>
+		</move>
+	</moves>
+	<HMs>01,03</HMs>
+	<TMs>03,06,09,10,11,12,13,14,15,20,31,32,33,34,40,44,50</TMs>
+</pokemon>
+<pokemon>
+	<number>72</number>
+	<name>Tentacool</name>
+	<image>icon072.gif</image>
+	<description>Drifts in shallow seas. Anglers who hook them by accident are often punished by its stinging acid.</description>
+	<type>Water</type>
+	<type2>Poison</type2>
+	<species>Jellyfish Pokemon</species>
+	<hp>40</hp>
+	<attack>40</attack>
+	<defense>35</defense>
+	<sp atk>50</sp atk>
+	<sp def>100</sp def>
+	<speed>70</speed>
+	<evolution>
+		<level>30</level>
+		<target>Tentacruel</target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Acid</name>
+		</move>
+		<move>
+			<level>7</level>
+			<name>Supersonic</name>
+		</move>
+		<move>
+			<level>13</level>
+			<name>Wrap</name>
+		</move>
+		<move>
+			<level>18</level>
+			<name>Poison Sting</name>
+		</move>
+		<move>
+			<level>22</level>
+			<name>Watergun</name>
+		</move>
+		<move>
+			<level>27</level>
+			<name>Constrict</name>
+		</move>
+		<move>
+			<level>29</level>
+			<name>Bubblebeam</name>
+		</move>
+		<move>
+			<level>33</level>
+			<name>Barrier</name>
+		</move>
+		<move>
+			<level>40</level>
+			<name>Screech</name>
+		</move>
+		<move>
+			<level>48</level>
+			<name>Hydro Pump</name>
+		</move>
+	</moves>
+	<HMs>01,03</HMs>
+	<TMs>03,06,09,10,11,12,13,14,20,31,32,33,34,40,44,50</TMs>
+</pokemon>
+<pokemon>
+	<number>71</number>
+	<name>Victreebel</name>
+	<image>icon071.gif</image>
+	<description>Said to live in huge colonies deep in jungles, although no one has ever returned from there.</description>
+	<type>Grass</type>
+	<type2>Poison</type2>
+	<species>Flycatcher Pokemon</species>
+	<hp>80</hp>
+	<attack>105</attack>
+	<defense>65</defense>
+	<sp atk>100</sp atk>
+	<sp def>60</sp def>
+	<speed>70</speed>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Vine Whip</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Growth</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Wrap</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Poison Powder</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Sleep Powder</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Stun Spore</name>
+		</move>
+	</moves>
+	<HMs>01</HMs>
+	<TMs>03,06,08,09,10,15,20,21,22,31,32,33,34,44,50</TMs>
+</pokemon>
+<pokemon>
+	<number>70</number>
+	<name>Weepinbell</name>
+	<image>icon070.gif</image>
+	<description>It spits out POISONPOWDER to immobilize the enemy and then finishes it with a spray of ACID.</description>
+	<type>Grass</type>
+	<type2>Poison</type2>
+	<species>Flycatcher Pokemon</species>
+	<hp>80</hp>
+	<attack>105</attack>
+	<defense>65</defense>
+	<sp atk>100</sp atk>
+	<sp def>60</sp def>
+	<speed>70</speed>
+	<evolution>
+		<level>leaf stone</level>
+		<target>Victreebel</target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Vine Whip</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Growth</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Wrap</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Poison Powder</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Sleep Powder</name>
+		</move>
+		<move>
+			<level>23</level>
+			<name>Stun Spore</name>
+		</move>
+		<move>
+			<level>29</level>
+			<name>Acid</name>
+		</move>
+		<move>
+			<level>38</level>
+			<name>Razor Leaf</name>
+		</move>
+		<move>
+			<level>49</level>
+			<name>Slam</name>
+		</move>
+	</moves>
+	<HMs>01</HMs>
+	<TMs>03,06,09,10,20,21,22,31,32,33,34,44,50</TMs>
+</pokemon>
+<pokemon>
+	<number>69</number>
+	<name>Bellsprout</name>
+	<image>icon069.gif</image>
+	<description>A carnivorous Pokemon that traps and eats bugs. It uses its root feet to soak up needed moisture.</description>
+	<type>Grass</type>
+	<type2>Poison</type2>
+	<species>Flower Pokemon</species>
+	<hp>50</hp>
+	<attack>75</attack>
+	<defense>35</defense>
+	<sp atk>70</sp atk>
+	<sp def>30</sp def>
+	<speed>40</speed>
+	<evolution>
+		<level>21</level>
+		<target>Weepinbell</target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Vine Whip</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Growth</name>
+		</move>
+		<move>
+			<level>13</level>
+			<name>Wrap</name>
+		</move>
+		<move>
+			<level>15</level>
+			<name>Poison Powder</name>
+		</move>
+		<move>
+			<level>18</level>
+			<name>Sleep Powder</name>
+		</move>
+		<move>
+			<level>21</level>
+			<name>Stun Spore</name>
+		</move>
+		<move>
+			<level>26</level>
+			<name>Acid</name>
+		</move>
+		<move>
+			<level>33</level>
+			<name>Razor Leaf</name>
+		</move>
+		<move>
+			<level>42</level>
+			<name>Slam</name>
+		</move>
+	</moves>
+	<HMs>01</HMs>
+	<TMs>03,06,09,10,20,21,22,31,32,33,34,44,50</TMs>
+</pokemon>
+<pokemon>
+	<number>68</number>
+	<name>Machamp</name>
+	<image>icon068.gif</image>
+	<description>Using its heavy muscles, it throws powerful punches that can send the victim clear over the horizon.</description>
+	<type>Fighting</type>
+	<species>Superpower Pokemon</species>
+	<hp>90</hp>
+	<attack>130</attack>
+	<defense>80</defense>
+	<sp atk>65</sp atk>
+	<sp def>85</sp def>
+	<speed>55</speed>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Karate Chop</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Low Kick</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Leer</name>
+		</move>
+		<move>
+			<level>36</level>
+			<name>Focus Energy</name>
+		</move>
+		<move>
+			<level>44</level>
+			<name>Seismic Toss</name>
+		</move>
+		<move>
+			<level>52</level>
+			<name>Submission</name>
+		</move>
+	</moves>
+	<HMs>04</HMs>
+	<TMs>01,05,06,08,09,10,15,17,18,19,20,26,27,28,31,32,34,35,38,40,44,48,50</TMs>
+</pokemon>
+<pokemon>
+	<number>67</number>
+	<name>Machoke</name>
+	<image>icon067.gif</image>
+	<description>Its muscular body is so powerful, it must wear a power save belt to be able to regulate its motions.</description>
+	<type>Fighting</type>
+	<species>Superpower Pokemon</species>
+	<hp>80</hp>
+	<attack>100</attack>
+	<defense>70</defense>
+	<sp atk>50</sp atk>
+	<sp def>60</sp def>
+	<speed>45</speed>
+	<evolution>
+		<level>link</level>
+		<target>Machamp</target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Karate Chop</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Low Kick</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Leer</name>
+		</move>
+		<move>
+			<level>36</level>
+			<name>Focus Energy</name>
+		</move>
+		<move>
+			<level>44</level>
+			<name>Seismic Toss</name>
+		</move>
+		<move>
+			<level>52</level>
+			<name>Submission</name>
+		</move>
+	</moves>
+	<HMs>04</HMs>
+	<TMs>01,05,06,08,09,10,15,17,18,19,20,26,27,28,31,32,34,35,38,40,44,48,50</TMs>
+</pokemon>
+<pokemon>
+	<number>66</number>
+	<name>Machop</name>
+	<image>icon066.gif</image>
+	<description>Loves to build its muscles. It trains in all styles of martial arts to become even stronger.</description>
+	<type>Fighting</type>
+	<species>Superpower Pokemon</species>
+	<hp>70</hp>
+	<attack>80</attack>
+	<defense>50</defense>
+	<sp atk>35</sp atk>
+	<sp def>35</sp def>
+	<speed>35</speed>
+	<evolution>
+		<level>28</level>
+		<target>Machoke</target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Karate Chop</name>
+		</move>
+		<move>
+			<level>20</level>
+			<name>Low Kick</name>
+		</move>
+		<move>
+			<level>25</level>
+			<name>Leer</name>
+		</move>
+		<move>
+			<level>32</level>
+			<name>Focus Energy</name>
+		</move>
+		<move>
+			<level>39</level>
+			<name>Seismic Toss</name>
+		</move>
+		<move>
+			<level>46</level>
+			<name>Submission</name>
+		</move>
+	</moves>
+	<HMs>04</HMs>
+	<TMs>01,05,06,08,09,10,17,18,19,20,26,27,28,31,32,34,35,38,40,44,48,50</TMs>
+</pokemon>
+<pokemon>
+	<number>65</number>
+	<name>Alakazam</name>
+	<image>icon065.gif</image>
+	<description>Its brain can outperform a super-computer. Its intelligence quotient is said to be 5,000.</description>
+	<type>Psychic</type>
+	<species>PSI Pokemon</species>
+	<hp>55</hp>
+	<attack>50</attack>
+	<defense>45</defense>
+	<sp atk>135</sp atk>
+	<sp def>85</sp def>
+	<speed>120</speed>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Teleport</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Kinesis</name>
+		</move>
+		<move>
+			<level>16</level>
+			<name>Confusion</name>
+		</move>
+		<move>
+			<level>20</level>
+			<name>Disable</name>
+		</move>
+		<move>
+			<level>27</level>
+			<name>Psybeam</name>
+		</move>
+		<move>
+			<level>31</level>
+			<name>Recover</name>
+		</move>
+		<move>
+			<level>38</level>
+			<name>Psychic</name>
+		</move>
+		<move>
+			<level>42</level>
+			<name>Reflect</name>
+		</move>
+	</moves>
+	<HMs>05</HMs>
+	<TMs>01,05,06,08,09,10,15,17,18,19,20,28,29,30,31,32,33,34,35,40,44,45,46,49,50</TMs>
+</pokemon>
+<pokemon>
+	<number>64</number>
+	<name>Kadabra</name>
+	<image>icon064.gif</image>
+	<description>It emits special alpha waves from its body that induce headaches just by being close by.</description>
+	<type>Psychic</type>
+	<species>PSI Pokemon</species>
+	<hp>40</hp>
+	<attack>35</attack>
+	<defense>30</defense>
+	<sp atk>120</sp atk>
+	<sp def>70</sp def>
+	<speed>105</speed>
+	<evolution>
+		<level>link</level>
+		<target>Alakazam</target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Teleport</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Kinesis</name>
+		</move>
+		<move>
+			<level>16</level>
+			<name>Confusion</name>
+		</move>
+		<move>
+			<level>20</level>
+			<name>Disable</name>
+		</move>
+		<move>
+			<level>27</level>
+			<name>Psybeam</name>
+		</move>
+		<move>
+			<level>31</level>
+			<name>Recover</name>
+		</move>
+		<move>
+			<level>38</level>
+			<name>Psychic</name>
+		</move>
+		<move>
+			<level>42</level>
+			<name>Reflect</name>
+		</move>
+	</moves>
+	<HMs>05</HMs>
+	<TMs>01,05,06,08,09,10,17,18,19,20,28,29,30,31,32,33,34,35,40,44,45,46,49,50</TMs>
+</pokemon>
+<pokemon>
+	<number>63</number>
+	<name>Abra</name>
+	<image>icon063.gif</image>
+	<description>Using its ability to read minds, it will identify impending danger and TELEPORT to safety.</description>
+	<type>Psychic</type>
+	<species>PSI Pokemon</species>
+	<hp>25</hp>
+	<attack>20</attack>
+	<defense>15</defense>
+	<sp atk>105</sp atk>
+	<sp def>55</sp def>
+	<speed>90</speed>
+	<evolution>
+		<level>16</level>
+		<target>Kadabra</target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Teleport</name>
+		</move>
+	</moves>
+	<HMs>05</HMs>
+	<TMs>01,05,06,08,09,10,17,18,19,20,29,30,31,32,33,34,35,40,44,45,46,49,50</TMs>
+</pokemon>
+<pokemon>
+	<number>62</number>
+	<name>Poliwrath</name>
+	<image>icon062.gif</image>
+	<description>An adept swimmer at both the front crawl and breast stroke. Easily overtakes the best human swimmers.</description>
+	<type>Water</type>
+	<type2>Fighting</type2>
+	<species>Tadpole Pokemon</species>
+	<hp>90</hp>
+	<attack>85</attack>
+	<defense>95</defense>
+	<sp atk>70</sp atk>
+	<sp def>90</sp def>
+	<speed>70</speed>
+	<evolution>
+		<level>16</level>
+		<target>Kadabra</target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Bubble</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Hypnosis</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Water Gun</name>
+		</move>
+	</moves>
+	<HMs>03,04</HMs>
+	<TMs>01,05,06,08,09,10,11,12,13,14,15,17,18,19,20,26,27,29,31,32,34,35,40,44,46,50</TMs>
+</pokemon>
+<pokemon>
+	<number>61</number>
+	<name>Poliwhirl</name>
+	<image>icon061.gif</image>
+	<description>Capable of living in or out of water. When out of water, it sweats to keep its body slimy.</description>
+	<type>Water</type>
+	<species>Tadpole Pokemon</species>
+	<hp>65</hp>
+	<attack>65</attack>
+	<defense>65</defense>
+	<sp atk>50</sp atk>
+	<sp def>50</sp def>
+	<speed>90</speed>
+	<evolution>
+		<level>water stone</level>
+		<target>Poliwrath</target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Bubble</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Hypnosis</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Water Gun</name>
+		</move>
+		<move>
+			<level>26</level>
+			<name>Double Slap</name>
+		</move>
+		<move>
+			<level>33</level>
+			<name>Body Slam</name>
+		</move>
+		<move>
+			<level>41</level>
+			<name>Amnesia</name>
+		</move>
+		<move>
+			<level>49</level>
+			<name>Hydro Pump</name>
+		</move>
+	</moves>
+	<HMs>03,04</HMs>
+	<TMs>01,05,06,08,09,10,11,12,13,14,17,18,19,20,26,27,29,31,32,34,35,40,44,46,50</TMs>
+</pokemon>
+<pokemon>
+	<number>60</number>
+	<name>Poliwag</name>
+	<image>icon060.gif</image>
+	<description>Its newly grown legs prevent it from running. It appears to prefer swimming than trying to stand.</description>
+	<type>Water</type>
+	<species>Tadpole Pokemon</species>
+	<hp>40</hp>
+	<attack>50</attack>
+	<defense>40</defense>
+	<sp atk>40</sp atk>
+	<sp def>40</sp def>
+	<speed>90</speed>
+	<evolution>
+		<level>25</level>
+		<target>Poliwhirl</target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Bubble</name>
+		</move>
+		<move>
+			<level>16</level>
+			<name>Hypnosis</name>
+		</move>
+		<move>
+			<level>19</level>
+			<name>Water Gun</name>
+		</move>
+		<move>
+			<level>25</level>
+			<name>Double Slap</name>
+		</move>
+		<move>
+			<level>31</level>
+			<name>Body Slam</name>
+		</move>
+		<move>
+			<level>28</level>
+			<name>Amnesia</name>
+		</move>
+		<move>
+			<level>45</level>
+			<name>Hydro Pump</name>
+		</move>
+	</moves>
+	<HMs>03</HMs>
+	<TMs>06,08,09,10,11,12,13,14,20,29,31,32,34,40,44,46,50</TMs>
+</pokemon>
+<pokemon>
+	<number>59</number>
+	<name>Arcanine</name>
+	<image>icon059.gif</image>
+	<description>A POKEMON that has been admired since the past for its beauty. It runs agilely as if on wings.</description>
+	<type>Fire</type>
+	<species>Legendary Pokemon</species>
+	<hp>90</hp>
+	<attack>110</attack>
+	<defense>80</defense>
+	<sp atk>100</sp atk>
+	<sp def>80</sp def>
+	<speed>95</speed>
+	<evolution>
+		<level></level>
+		<target></target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Bite</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Roar</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Ember</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Leer</name>
+		</move>
+	</moves>
+	<HMs></HMs>
+	<TMs>06,08,09,10,15,20,23,28,30,31,32,33,34,38,39,40,44,50</TMs>
+</pokemon>
+<pokemon>
+	<number>58</number>
+	<name>Growlithe</name>
+	<image>icon058.gif</image>
+	<description>Very protective of its territory. It will bark and bite to repel intruders from its space.</description>
+	<type>Fire</type>
+	<species>Puppy Pokemon</species>
+	<hp>55</hp>
+	<attack>70</attack>
+	<defense>45</defense>
+	<sp atk>70</sp atk>
+	<sp def>50</sp def>
+	<speed>60</speed>
+	<evolution>
+		<level>fire stone</level>
+		<target>Arcanine</target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Bite</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Roar</name>
+		</move>
+		<move>
+			<level>18</level>
+			<name>Ember</name>
+		</move>
+		<move>
+			<level>23</level>
+			<name>Leer</name>
+		</move>
+		<move>
+			<level>30</level>
+			<name>Take Down</name>
+		</move>
+		<move>
+			<level>39</level>
+			<name>Agility</name>
+		</move>
+		<move>
+			<level>50</level>
+			<name>Flamethrower</name>
+		</move>
+	</moves>
+	<HMs></HMs>
+	<TMs>06,08,09,10,20,23,28,31,32,33,34,38,39,40,44,50</TMs>
+</pokemon>
+<pokemon>
+	<number>57</number>
+	<name>Primeape</name>
+	<image>icon057.gif</image>
+	<description>Always furious and tenacious to boot. It will not abandon chasing its quarry until it is caught.</description>
+	<type>Fighting</type>
+	<species>Pig Monkey Pokemon</species>
+	<hp>65</hp>
+	<attack>105</attack>
+	<defense>60</defense>
+	<sp atk>60</sp atk>
+	<sp def>70</sp def>
+	<speed>95</speed>
+	<evolution>
+		<level></level>
+		<target></target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Scratch</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Leer</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Low Kick</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Karate Chop</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Fury Swipes</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Focus Energy</name>
+		</move>
+		<move>
+			<level>37</level>
+			<name>Seismic Toss</name>
+		</move>
+		<move>
+			<level>46</level>
+			<name>Thrash</name>
+		</move>
+	</moves>
+	<HMs>04</HMs>
+	<TMs>01,05,06,08,09,10,15,16,17,18,19,20,24,25,28,31,32,33,34,35,39,40,44,48,50</TMs>
+</pokemon>
+<pokemon>
+	<number>56</number>
+	<name>Mankey</name>
+	<image>icon056.gif</image>
+	<description>Extremely quick to anger. It could be docile one moment then thrashing away the next instant.</description>
+	<type>Fighting</type>
+	<species>Pig Monkey Pokemon</species>
+	<hp>40</hp>
+	<attack>80</attack>
+	<defense>35</defense>
+	<sp atk>35</sp atk>
+	<sp def>45</sp def>
+	<speed>70</speed>
+	<evolution>
+		<level>28</level>
+		<target>Primeape</target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Scratch</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Leer</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Low Kick</name>
+		</move>
+		<move>
+			<level>15</level>
+			<name>Karate Chop</name>
+		</move>
+		<move>
+			<level>21</level>
+			<name>Fury Swipes</name>
+		</move>
+		<move>
+			<level>27</level>
+			<name>Focus Energy</name>
+		</move>
+		<move>
+			<level>33</level>
+			<name>Seismic Toss</name>
+		</move>
+		<move>
+			<level>39</level>
+			<name>Thrash</name>
+		</move>
+	</moves>
+	<HMs>04</HMs>
+	<TMs>01,05,06,08,09,10,16,17,18,19,20,24,25,28,31,32,34,35,39,40,44,48,50</TMs>
+</pokemon>
+<pokemon>
+	<number>55</number>
+	<name>Golduck</name>
+	<image>icon055.gif</image>
+	<description>Often seen swimming elegantly by lake shores. It is often mistaken for the Japanese monster, Kappa.</description>
+	<type>Water</type>
+	<species>Duck Pokemon</species>
+	<hp>80</hp>
+	<attack>82</attack>
+	<defense>78</defense>
+	<sp atk>95</sp atk>
+	<sp def>80</sp def>
+	<speed>85</speed>
+	<evolution>
+		<level></level>
+		<target></target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Scratch</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Tail Whip</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Disable</name>
+		</move>
+		<move>
+			<level>39</level>
+			<name>Confusion</name>
+		</move>
+		<move>
+			<level>48</level>
+			<name>Fury Swipes</name>
+		</move>
+		<move>
+			<level>59</level>
+			<name>Hydro Pump</name>
+		</move>
+	</moves>
+	<HMs>03,04</HMs>
+	<TMs>01,05,06,08,09,10,11,12,13,14,15,16,17,18,19,20,28,31,32,34,39,40,44,50</TMs>
+</pokemon>
+<pokemon>
+	<number>54</number>
+	<name>Psyduck</name>
+	<image>icon054.gif</image>
+	<description>While lulling its enemies with its vacant look, this wily POKEMON will use psychokinetic powers.</description>
+	<type>Water</type>
+	<species>Duck Pokemon</species>
+	<hp>50</hp>
+	<attack>52</attack>
+	<defense>48</defense>
+	<sp atk>65</sp atk>
+	<sp def>50</sp def>
+	<speed>55</speed>
+	<evolution>
+		<level>28</level>
+		<target>Golduck</target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Scratch</name>
+		</move>
+		<move>
+			<level>28</level>
+			<name>Tail Whip</name>
+		</move>
+		<move>
+			<level>31</level>
+			<name>Disable</name>
+		</move>
+		<move>
+			<level>36</level>
+			<name>Confusion</name>
+		</move>
+		<move>
+			<level>43</level>
+			<name>Fury Swipes</name>
+		</move>
+		<move>
+			<level>52</level>
+			<name>Hydro Pump</name>
+		</move>
+	</moves>
+	<HMs>03,04</HMs>
+	<TMs>01,05,06,08,09,10,11,12,13,14,16,17,18,19,20,28,31,32,34,39,40,44,50</TMs>
+</pokemon>
+<pokemon>
+	<number>53</number>
+	<name>Persian</name>
+	<image>icon053.gif</image>
+	<description>Although its fur has many admirers, it is tough to raise as a pet because of its fickle meanness.</description>
+	<type>Normal</type>
+	<species>Classy Cat Pokemon</species>
+	<hp>65</hp>
+	<attack>70</attack>
+	<defense>60</defense>
+	<sp atk>65</sp atk>
+	<sp def>65</sp def>
+	<speed>115</speed>
+	<evolution>
+		<level></level>
+		<target></target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Scratch</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Growl</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Bite</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Pay Day</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Screech</name>
+		</move>
+		<move>
+			<level>37</level>
+			<name>Fury Swipes</name>
+		</move>
+		<move>
+			<level>51</level>
+			<name>Slash</name>
+		</move>
+	</moves>
+	<HMs></HMs>
+	<TMs>06,08,09,10,11,12,15,16,20,24,25,31,32,34,39,40,44,50</TMs>
+</pokemon>
+<pokemon>
+	<number>52</number>
+	<name>Meowth</name>
+	<image>icon052.gif</image>
+	<description>Adores circular objects. Wanders the streets on a nightly basis to look for dropped loose change.</description>
+	<type>Normal</type>
+	<species>ScratchCat Pokemon</species>
+	<hp>40</hp>
+	<attack>45</attack>
+	<defense>35</defense>
+	<sp atk>40</sp atk>
+	<sp def>40</sp def>
+	<speed>90</speed>
+	<evolution>
+		<level>28</level>
+		<target>Persian</target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Scratch</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Growl</name>
+		</move>
+		<move>
+			<level>12</level>
+			<name>Bite</name>
+		</move>
+		<move>
+			<level>17</level>
+			<name>Pay Day</name>
+		</move>
+		<move>
+			<level>24</level>
+			<name>Screech</name>
+		</move>
+		<move>
+			<level>33</level>
+			<name>Fury Swipes</name>
+		</move>
+		<move>
+			<level>44</level>
+			<name>Slash</name>
+		</move>
+	</moves>
+	<HMs></HMs>
+	<TMs>06,08,09,10,11,12,16,20,24,25,31,32,34,39,40,44,50</TMs>
+</pokemon>
+<pokemon>
+	<number>51</number>
+	<name>Dugtrio</name>
+	<image>icon051.gif</image>
+	<description>A team of DIGLETT triplets. It triggers huge earthquakes by burrowing 60 miles underground.</description>
+	<type>Ground</type>
+	<species>Mole Pokemon</species>
+	<hp>35</hp>
+	<attack>80</attack>
+	<defense>50</defense>
+	<sp atk>50</sp atk>
+	<sp def>70</sp def>
+	<speed>120</speed>
+	<evolution>
+		<level></level>
+		<target></target>
+	</evolution>
+	<moves>
+		<move>
+			<level>1</level>
+			<name>Scratch</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Growl</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Dig</name>
+		</move>
+		<move>
+			<level>1</level>
+			<name>Sand-Attack</name>
+		</move>
+		<move>
+			<level>35</level>
+			<name>Slash</name>
+		</move>
+		<move>
+			<level>47</level>
+			<name>Earthquake</name>
+		</move>
+	</moves>
+	<HMs>01</HMs>
+	<TMs>06,08,09,10,15,20,26,27,28,31,32,34,44,48,50</TMs>
+</pokemon>
