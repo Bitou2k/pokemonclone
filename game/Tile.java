@@ -35,6 +35,8 @@ class Tile {
 	}
 	
 	public boolean isObstacle(){ return type.equals("obstacle") || type.equals("water");}
+	public boolean isWater(){ return type.equals("water");}
+	
 	public boolean isDoor(){ return type.equals("door")&& !target.equals("");}
 	public boolean isGrass(){ return type.equals("pokegrassOrCave"); }
 	public boolean isCliff() { return type.equals("cliff"); }

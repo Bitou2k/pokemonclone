@@ -95,7 +95,7 @@ class Area extends Presenter
 		{
 			Tile next = tilePlayerFacing(1);
 			
-			if (next.isObstacle() && !next.target.isEmpty()) showMessage(next.target);
+			if (next.isObstacle() && !next.isWater() && !next.target.isEmpty()) showMessage(next.target);
 		}
 		if(b==B)
 		{
