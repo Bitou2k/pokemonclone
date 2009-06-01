@@ -5,7 +5,7 @@ import java.util.*;
 /**
 *Rename EncounterSet?
 */
-class WildPokemonGenerator {
+class EncounterSet {
 
 	private String name;
 	private double chanceOfAnything;
@@ -24,7 +24,7 @@ class WildPokemonGenerator {
 		private Pokemon make(){return pokemon.makeWildAtLevel(level);}
 	}
 	
-	private WildPokemonGenerator(Node n)
+	private EncounterSet(Node n)
 	{
 		name = n.contentOf("name");
 		chanceOfAnything = new Double(n.contentOf("overallchance"));
@@ -34,10 +34,10 @@ class WildPokemonGenerator {
 		System.out.println("Loaded WildPokemonGenerator: "+name);
 	}
 	
-	public static WildPokemonGenerator named(String name)
+	public static EncounterSet named(String name)
 	{
 		if(name.equals(""))return null;
-		for(WildPokemonGenerator g: gens)
+		for(EncounterSet g: gens)
 			if(g.name.equalsIgnoreCase(name)) return g;
 		System.out.println("There is no wild generator named "+name);
 		return null;
@@ -63,12 +63,12 @@ class WildPokemonGenerator {
 		return null;		
 	}
 	
-	private static ArrayList<WildPokemonGenerator> gens = new ArrayList<WildPokemonGenerator>();
+	private static ArrayList<EncounterSet> gens = new ArrayList<EncounterSet>();
 	static { 
 		try{
 			Node root = Node.documentRootFrom("./generators.nml");
 			for(Node n : root.subnodes("generator"))
-				gens.add( new WildPokemonGenerator(n) );
+				gens.add( new EncounterSet(n) );
 				
 			System.out.println(gens.size()+" generators!");
 		}catch(Exception e){e.printStackTrace();}
