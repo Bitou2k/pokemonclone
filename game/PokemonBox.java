@@ -16,6 +16,8 @@ public class PokemonBox extends Presenter {
 	* the presenter to go back to
 	*/
 	Presenter oldPresenter;
+	boolean selectMode=false;
+	
 	/**
 	*  cursor index next to the pokemon
 	*/
@@ -36,19 +38,26 @@ public class PokemonBox extends Presenter {
 	final ImageIcon idleArrow = new ImageIcon("./resources/idlearrow.png");
 	final ImageIcon hpBar = new ImageIcon("./resources/hpbar.png");
 	
+	private Pokemon selectedPokemon;
+	public Pokemon selectedPokemon(){return selectedPokemon;}
+	
 	public PokemonBox(Presenter oldP){
 		oldPresenter = oldP;		
 		pkmnCursorIndex = 0;
 		switchCursorIndex = 0;
 		switchFlag=false;
-		//if (player().party()==null)
-		//{
-		//	player().party().add(new Pokemon(Species.named("Ditto"), 5));
-		//}
 	}
 	
+	public PokemonBox(Presenter oldP, boolean mode)
+	{
+		oldPresenter = oldP;		
+		pkmnCursorIndex = 0;
+		switchCursorIndex = 0;
+		switchFlag=false;
+		selectMode=mode;
+	}
+
 	public void drawOn(Graphics2D g){
-		
 		
 		g.setColor(Color.WHITE);
 		g.fillRect(0,0,320,288);
@@ -91,46 +100,58 @@ public class PokemonBox extends Presenter {
 	public void step(int ms){}
 	
 	public void buttonPressed(Button b){
-		if (b==Button.START) { enterPresenter(oldPresenter); }
-		if (b==Button.A)
-		{
-			if (pkmnCursorIndex == player().party().size() ) { enterPresenter(oldPresenter); }
-			if (switchCursorIndex == player().party().size() ) { enterPresenter(oldPresenter); }
-		}
 		
-		if (switchFlag)
-		{
-			if (b==Button.DOWN)
-				if (switchCursorIndex < player().party().size()) { switchCursorIndex++; }
-			if (b==Button.UP)
-				if (switchCursorIndex > 0) { switchCursorIndex--; }
-			if (b==Button.A) 
-			{
-				Pokemon switcher=player().party().get(pkmnCursorIndex);
-				Pokemon switched=player().party().get(switchCursorIndex);
-				player().party().set(pkmnCursorIndex, switched);
-				player().party().set(switchCursorIndex, switcher);
-				switchFlag=false;
-			}		
+		
+		if (b==Button.START) { enterPresenter(oldPresenter); }
+		
+		if (selectMode==true) {
+			if (b==Button.A) {
+				selectedPokemon=player().party().get(pkmnCursorIndex); 
+				enterPresenter(oldPresenter);
+			}
 		}
 		else
 		{
-			if (b==Button.DOWN)
-				if (pkmnCursorIndex < player().party().size()) { pkmnCursorIndex++; }
-			if (b==Button.UP)
-				if (pkmnCursorIndex > 0) { pkmnCursorIndex--; }
-			if (b==Button.A) {
+			if (b==Button.A)
+			{
 				if (pkmnCursorIndex == player().party().size() ) { enterPresenter(oldPresenter); }
-				else
+				if (switchCursorIndex == player().party().size() ) { enterPresenter(oldPresenter); }
+			}
+			
+			if (switchFlag)
+			{
+				if (b==Button.DOWN)
+					if (switchCursorIndex < player().party().size()) { switchCursorIndex++; }
+				if (b==Button.UP)
+					if (switchCursorIndex > 0) { switchCursorIndex--; }
+				if (b==Button.A) 
 				{
-					String choice = showMenu( new String[]{ "Stats", "Switch", "Cancel" } );
-				
-					if ("Stats".equals(choice)) 
+					Pokemon switcher=player().party().get(pkmnCursorIndex);
+					Pokemon switched=player().party().get(switchCursorIndex);
+					player().party().set(pkmnCursorIndex, switched);
+					player().party().set(switchCursorIndex, switcher);
+					switchFlag=false;
+				}		
+			}
+			else
+			{
+				if (b==Button.DOWN)
+					if (pkmnCursorIndex < player().party().size()) { pkmnCursorIndex++; }
+				if (b==Button.UP)
+					if (pkmnCursorIndex > 0) { pkmnCursorIndex--; }
+				if (b==Button.A) {
+					if (pkmnCursorIndex == player().party().size() ) { enterPresenter(oldPresenter); }
+					else
 					{
-						
+						String choice = showMenu( new String[]{ "Stats", "Switch", "Cancel" } );
+					
+						if ("Stats".equals(choice)) 
+						{
+							
+						}
+						if ("Switch".equals(choice)) { switchFlag = true; }
+						if ("Cancel".equals(choice)) { /*do nothing*/ }
 					}
-					if ("Switch".equals(choice)) { switchFlag = true; }
-					if ("Cancel".equals(choice)) { /*do nothing*/ }
 				}
 			}
 		}
