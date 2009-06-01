@@ -37,7 +37,7 @@ Remember to work backwards!
 
 
 = Details =
-1-25: Dana(?): In database, but needs revising
+1-25: Dana: committed
 finished through: 25
 
 26-50: Cawhrin
