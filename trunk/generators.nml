@@ -35,7 +35,7 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 	<pokemon>
 		<name>Magikarp</name>
 		<level>3</level>
-		<chance>0.33</chance>
+		<chance>0.34</chance>
 	</pokemon>
 	<pokemon>
 		<name>Tentacool</name>
@@ -112,12 +112,12 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 	<pokemon>
 		<name>Pidgey</name>
 		<level>7</level>
-		<chance>0.40</chance>
+		<chance>0.35</chance>
 	</pokemon>
 	<pokemon>
 		<name>Rattata</name>
 		<level>6</level>
-		<chance>0.45</chance>
+		<chance>0.35</chance>
 	</pokemon>
 	<pokemon>
 		<name>NidoranF</name>
@@ -151,16 +151,16 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 	<pokemon>
 		<name>Pidgey</name>
 		<level>12</level>
-		<chance>0.45</chance>
+		<chance>0.28</chance>
 	</pokemon>
 	<pokemon>
 		<name>Caterpie</name>
-		<level>5</level>
+		<level>7</level>
 		<chance>0.45</chance>
 	</pokemon>
 	<pokemon>
 		<name>Metapod</name>
-		<level>6</level>
+		<level>7</level>
 		<chance>0.25</chance>
 	</pokemon>
 	<pokemon>
@@ -176,11 +176,11 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 	<pokemon>
 		<name>Spearow</name>
 		<level>7</level>
-		<chance>0.45</chance>
+		<chance>0.40</chance>
 	</pokemon>
 	<pokemon>
 		<name>Rattata</name>
-		<level>6</level>
+		<level>8</level>
 		<chance>0.20</chance>
 	</pokemon>
 	<pokemon>
@@ -251,7 +251,7 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 	<overallchance>0.11</overallchance>
 	<pokemon>
 		<name>Zubat</name>
-		<level>7</level>
+		<level>8</level>
 		<chance>0.70</chance>
 	</pokemon>
 	<pokemon>
@@ -327,7 +327,12 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 	<pokemon>
 		<name>Magikarp</name>
 		<level>8</level>
-		<chance>1.00</chance>
+		<chance>0.50</chance>
+	</pokemon>
+	<pokemon>
+		<name>Goldeen</name>
+		<level>9</level>
+		<chance>0.50</chance>
 	</pokemon>
 </generator>
 <generator>
@@ -358,19 +363,24 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<chance>0.30</chance>
 	</pokemon>
 	<pokemon>
-		<name>Geodude</name>
-		<level>12</level>
-		<chance>0.26</chance>
+		<name>Pidgeotto</name>
+		<level>18</level>
+		<chance>0.02</chance>
 	</pokemon>
 	<pokemon>
-		<name>Clefairy</name>
+		<name>Oddish</name>
 		<level>10</level>
-		<chance>0.10</chance>
+		<chance>0.30</chance>
 	</pokemon>
 	<pokemon>
-		<name>Paras</name>
+		<name>Bellsprout</name>
 		<level>11</level>
-		<chance>0.14</chance>
+		<chance>0.30</chance>
+	</pokemon>
+	<pokemon>
+		<name>Venonat</name>
+		<level>11</level>
+		<chance>0.08</chance>
 	</pokemon>
 
 </generator>
@@ -385,12 +395,12 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 	<pokemon>
 		<name>Goldeen</name>
 		<level>9</level>
-		<chance>0.34</chance>
+		<chance>0.48</chance>
 	</pokemon>
 	<pokemon>
 		<name>Seaking</name>
-		<level>10</level>
-		<chance>0.16</chance>
+		<level>33</level>
+		<chance>0.02</chance>
 	</pokemon>
 </generator>
 <generator>
@@ -576,7 +586,12 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 	<pokemon>
 		<name>Goldeen</name>
 		<level>14</level>
-		<chance>0.50</chance>
+		<chance>0.48</chance>
+	</pokemon>
+	<pokemon>
+		<name>Poliwhirl</name>
+		<level>25</level>
+		<chance>0.02</chance>
 	</pokemon>
 </generator>
 <generator>
@@ -719,7 +734,7 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 	<pokemon>
 		<name>Onix</name>
 		<level>17</level>
-		<chance>0.12</chance>
+		<chance>0.08</chance>
 	</pokemon>
 </generator>
 <generator>
@@ -733,7 +748,7 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 	<pokemon>
 		<name>Pidgeotto</name>
 		<level>19</level>
-		<chance>0.26</chance>
+		<chance>0.10</chance>
 	</pokemon>
 	<pokemon>
 		<name>Rattata</name>
@@ -796,7 +811,7 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 	<pokemon>
 		<name>Rattata</name>
 		<level>17</level>
-		<chance>0.15</chance>
+		<chance>0.35</chance>
 	</pokemon>
 	<pokemon>
 		<name>Raticate</name>
@@ -806,12 +821,12 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 	<pokemon>
 		<name>Spearow</name>
 		<level>18</level>
-		<chance>0.30</chance>
+		<chance>0.35</chance>
 	</pokemon>
 	<pokemon>
 		<name>Doduo</name>
 		<level>24</level>
-		<chance>0.20</chance>
+		<chance>0.25</chance>
 	</pokemon>
 
 </generator>
@@ -821,7 +836,7 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 	<pokemon>
 		<name>Spearow</name>
 		<level>19</level>
-		<chance>0.15</chance>
+		<chance>0.20</chance>
 	</pokemon>
 	<pokemon>
 		<name>Ponyta</name>
@@ -831,12 +846,12 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 	<pokemon>
 		<name>Doduo</name>
 		<level>27</level>
-		<chance>0.30</chance>
+		<chance>0.50</chance>
 	</pokemon>
 	<pokemon>
 		<name>Dodrio</name>
 		<level>31</level>
-		<chance>0.20</chance>
+		<chance>0.05</chance>
 	</pokemon>
 
 </generator>
@@ -878,6 +893,11 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<chance>0.25</chance>
 	</pokemon>
 	<pokemon>
+		<name>Fearow</name>
+		<level>20</level>
+		<chance>0.10</chance>
+	</pokemon>
+	<pokemon>
 		<name>Doduo</name>
 		<level>26</level>
 		<chance>0.30</chance>
@@ -900,7 +920,12 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 	<pokemon>
 		<name>Tentacool</name>
 		<level>19</level>
-		<chance>0.25</chance>
+		<chance>0.23</chance>
+	</pokemon>
+	<pokemon>
+		<name>Poliwhirl</name>
+		<level>25</level>
+		<chance>0.02</chance>
 	</pokemon>
 </generator>
 <generator>
@@ -986,6 +1011,11 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<chance>0.20</chance>
 	</pokemon>
 	<pokemon>
+		<name>Nidorano</name>
+		<level>24</level>
+		<chance>0.10</chance>
+	</pokemon>
+	<pokemon>
 		<name>Exeggcute</name>
 		<level>26</level>
 		<chance>0.20</chance>
@@ -1006,9 +1036,9 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<chance>0.08</chance>
 	</pokemon>
 	<pokemon>
-		<name>Tangela</name>
+		<name>Marowak</name>
 		<level>30</level>
-		<chance>0.02</chance>
+		<chance>0.04</chance>
 	</pokemon>
 
 </generator>
@@ -1036,11 +1066,6 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<chance>0.15</chance>
 	</pokemon>
 	<pokemon>
-		<name>Rhyhorn</name>
-		<level>32</level>
-		<chance>0.10</chance>
-	</pokemon>
-	<pokemon>
 		<name>Scyther</name>
 		<level>29</level>
 		<chance>0.04</chance>
@@ -1053,7 +1078,7 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 	<pokemon>
 		<name>Kangaskhan</name>
 		<level>34</level>
-		<chance>0.15</chance>
+		<chance>0.08</chance>
 	</pokemon>
 	<pokemon>
 		<name>Tauros</name>
@@ -1063,7 +1088,7 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 	<pokemon>
 		<name>Cubone</name>
 		<level>27</level>
-		<chance>0.04</chance>
+		<chance>0.06</chance>
 	</pokemon>
 </generator>
 <generator>
@@ -1073,6 +1098,11 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<name>NidoranF</name>
 		<level>15</level>
 		<chance>0.20</chance>
+	</pokemon>
+	<pokemon>
+		<name>Nidorana</name>
+		<level>28</level>
+		<chance>0.10</chance>
 	</pokemon>
 	<pokemon>
 		<name>NidoranM</name>
@@ -1140,7 +1170,7 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 	<pokemon>
 		<name>Pidgeotto</name>
 		<level>33</level>
-		<chance>0.20</chance>
+		<chance>0.10</chance>
 	</pokemon>
 	<pokemon>
 		<name>Bellsprout</name>
@@ -1291,7 +1321,7 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 	<pokemon>
 		<name>Gloom</name>
 		<level>32</level>
-		<chance>0.05</chance>
+		<chance>0.04</chance>
 	</pokemon>
 </generator>
 <generator>
@@ -1330,7 +1360,7 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 	<pokemon>
 		<name>Gloom</name>
 		<level>32</level>
-		<chance>0.05</chance>
+		<chance>0.04</chance>
 	</pokemon>
 </generator>
 <generator>
@@ -1519,6 +1549,11 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>35</level>
 		<chance>0.10</chance>
 	</pokemon>
+	<pokemon>
+		<name>Growlithe</name>
+		<level>34</level>
+		<chance>0.20</chance>
+	</pokemon>
 </generator>
 <generator>
 	<name>powerplantGen</name>
@@ -1536,7 +1571,7 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 	<pokemon>
 		<name>Grimer</name>
 		<level>34</level>
-		<chance>0.40</chance>
+		<chance>0.20</chance>
 	</pokemon>
 	<pokemon>
 		<name>Muk</name>
@@ -1546,7 +1581,7 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 	<pokemon>
 		<name>Voltorb</name>
 		<level>32</level>
-		<chance>0.10</chance>
+		<chance>0.20</chance>
 	</pokemon>
 </generator>
 <generator>
@@ -1617,7 +1652,7 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 	<pokemon>
 		<name>Golbat</name>
 		<level>36</level>
-		<chance>0.5</chance>
+		<chance>0.05</chance>
 	</pokemon>
 	<pokemon>
 		<name>Slowpoke</name>
@@ -1829,7 +1864,7 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 	<pokemon>
 		<name>Onix</name>
 		<level>42</level>
-		<chance>0.20</chance>
+		<chance>0.10</chance>
 	</pokemon>
 </generator>
 <generator>
@@ -1930,7 +1965,7 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 	<pokemon>
 		<name>Golbat</name>
 		<level>47</level>
-		<chance>0.45</chance>
+		<chance>0.36</chance>
 	</pokemon>
 	<pokemon>
 		<name>Gloom</name>
@@ -1974,7 +2009,7 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 	<pokemon>
 		<name>Golbat</name>
 		<level>48</level>
-		<chance>0.40</chance>
+		<chance>0.30</chance>
 	</pokemon>
 	<pokemon>
 		<name>Gloom</name>
