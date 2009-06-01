@@ -30,6 +30,27 @@ public class Species {
 	public Image imageBack(){return imageBack;}
 	public int number(){return number;}
 	
+	public String paddedNumber(){
+		String x = number+"";
+		while(x.length()<3) x="0"+x;
+		return x;
+	}
+	public void cry()
+	{
+		try
+		{
+			java.io.File f = new java.io.File("./species/cries/"+paddedNumber()+"Cry.mp3");
+		
+			javazoom.jl.player.advanced.AdvancedPlayer p = new javazoom.jl.player.advanced.AdvancedPlayer( new java.io.FileInputStream(f) );
+			p.play();
+		}
+		catch(Exception ex)
+		{
+			System.err.println(name());
+			ex.printStackTrace();
+		}
+	}
+	
 	public Type type(){return type1;}
 	/**
 	*Null for pokemon with only one type.
@@ -134,7 +155,7 @@ public class Species {
 			for(Node n : root.subnodes("pokemon")){
 				Species s = new Species(n);
 				species.add( s );
-				System.out.print(s.name+" ");
+				//System.out.print(s.name+" ");
 			}
 			Collections.reverse(species);
 			System.out.println("\n"+species.size()+" species!");

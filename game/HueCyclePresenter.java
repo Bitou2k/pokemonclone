@@ -28,8 +28,6 @@ class HueCyclePresenter extends Presenter
 	
 	public void step(int ms)
 	{
-		behide.step(ms);
-		
 		time++;
 		if(time>15){
 			enterPresenter(behide);
