@@ -146,4 +146,9 @@ abstract class Presenter
 	 *Called at 10Hz, do things like having citizens walk around.
 	 */
 	public abstract void step(int ms);
+	
+	public void backgroundMusic(String filename)
+	{
+		game.backgroundMusic(filename);
+	}
 }
