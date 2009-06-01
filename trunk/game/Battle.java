@@ -419,7 +419,20 @@ class Battle extends Presenter {
 				enemyMove();
 			}
 			else if (selection.equals("PKMN")){
-				enterPresenter(new BattleBox(this));
+				//final BattleBox b = new BattleBox(this);
+				//new Thread(){
+				//    public void run()
+				//    {
+				//        enterPresenter(b);
+				//        try
+				//        {
+				//            join();
+				//        }
+				//        catch (Exception ex)
+				//        { }
+				//    }
+				//}.start();
+			    enterPresenter(new BattleBox(this));
 				textLine1 = "GO..." + ashsPokemon.nickname();
 				textLine2 = "";
 				enemyMove();
