@@ -137,7 +137,7 @@ for(File each: dir.listFiles())
 </code>
 
 <code>
-*Joe*
+*Frick*
 a small separate program that will check for duplicates gif files in ./tileImages/
 (it is a duplicate if both file has the same sequence of bytes)
 this program will delete one or the other, and replace references in the area files
