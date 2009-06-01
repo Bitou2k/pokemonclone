@@ -96,7 +96,7 @@ open PokedexSpeciesPresenters, etc as appropriate
 </code>
 
 <code>
-PokedexSpeciesPresenter (unclaimed)
+PokedexSpeciesPresenter _FINISHED BY SOMEONE TOO STUPID TO LOOK AT THE WIKI_
 
 constructor should take one argument of type Species and a second argument of type Presenter
 
