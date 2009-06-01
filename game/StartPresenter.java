@@ -37,10 +37,18 @@ class StartPresenter extends Presenter {
 		g.drawString("Ryan Craine", 0, 230);
 	}
 	
+	private boolean first=true;
+	public void gotFocus()
+	{
+		if(first)backgroundMusic("./music/PALLET.mid");
+		first=false;
+	}
+	
 	public void buttonPressed(Button b)
 	{	
 		Area a = Area.named("PalletTown");
 		a.tileAt(5,7).entity(player());
+		backgroundMusic("");
 		enterPresenter(a);
 	}
 	
