@@ -43,10 +43,11 @@ public class BattleBox extends Presenter {
 		oldPresenter = oldP;		
 		pkmnCursorIndex = 0;
 		switchCursorIndex = 0;
+
 	}
 	
 	public void drawOn(Graphics2D g){
-		
+
 		
 		g.setColor(Color.WHITE);
 		g.fillRect(0,0,320,288);
