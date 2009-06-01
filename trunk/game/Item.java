@@ -29,6 +29,9 @@ public abstract class Item
 	
 	public void image(Image i){image = i;}
 
+	//Don't ever call this; its just here so i can compile other things
+	public Item(){};
+
 	public Item(String n, String t, String d, double p){
 		image = new ImageIcon("./entityImages/Item.png").getImage();
 		name = n;
