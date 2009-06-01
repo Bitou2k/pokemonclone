@@ -9,9 +9,10 @@ import javax.swing.*;
 import java.util.*;
 
 /**
- * 
+ *I display the player's backpack, one of the the four pockets at a time.
  */
-class BagPresenter extends Presenter {
+public class BagPresenter extends Presenter
+{
 	
 	
 	/**
