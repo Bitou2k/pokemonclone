@@ -110,9 +110,9 @@ public class BattleBox extends Presenter {
 						pokemon = player().party().get(pkmnCursorIndex);
 						if(pokemon.currentHp() > 0)
 						{
-							oldPresenter.Switched();
-							oldPresenter.ashsPokemon(pokemon);
+							
 							enterPresenter(oldPresenter);
+							notify();
 						}
 						else
 							showMessage("There's no will     to fight!"); 
