@@ -110,7 +110,7 @@ public class BattleBox extends Presenter {
 						pokemon = player().party().get(pkmnCursorIndex);
 						if(pokemon.currentHp() > 0)
 						{
-							
+							selectedPokemon = pokemon;
 							enterPresenter(oldPresenter);
 							notify();
 						}
