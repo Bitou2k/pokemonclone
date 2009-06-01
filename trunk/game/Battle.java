@@ -148,7 +148,7 @@ class Battle extends Presenter {
 	}
 	
 	public void buttonPressed(Button b){
-		if(stage > 3 /*&& stage < someothernum*/){
+		/*if(stage > 3 /*&& stage < someothernum){
 			if(b==Button.UP){if(menuIndexY ==1) menuIndexY = 0;}
 			else if (b==Button.DOWN){if(menuIndexY == 0)menuIndexY = 1;}
 			else if (b==Button.LEFT){if(menuIndexX == 1)menuIndexX = 0;}
@@ -182,12 +182,12 @@ class Battle extends Presenter {
 				
 				}
 			}
-		}
+		}*/
 	}
 	public void step(int ms){
 	}
 	
-	private void fight(){
+	/*private void fight(){
 		locked = true;
 		stage = 51;
 		String[] moveSet = new String[4];
@@ -211,7 +211,7 @@ class Battle extends Presenter {
 			move = ashsPokemon.moves().get(3);
 		
 		Attack(move,getAIMove());
-	}
+	}*/
 	
 	private Move getAIMove(){
 		//return a random move
@@ -219,34 +219,59 @@ class Battle extends Presenter {
 		
 		return selection;
 	}
-	
-	private void Attack(Move ashsMove, Move enemyMove){
+	/**
+	*	@return 0 if successful, 1 if your pokemon KO, 2 if enemy Pokemon KO
+	*/
+	private int Attack(Move ashsMove, Move enemyMove){
 		Pokemon pkmnAttack, pkmnDefend;
 		Move firstAttack, secondAttack;
 		//determine who will attack first
-		if(Switched == false)
-		{
+		/*if(Switched == false)
+		{*/
+		boolean youAttackFirst;
 			if (ashsPokemon.currentSpeed() > enemyPokemon.currentSpeed()){
 				pkmnAttack = ashsPokemon;
 				pkmnDefend = enemyPokemon;
 				firstAttack = ashsMove;
 				secondAttack = enemyMove;
+				youAttackFirst = true;
 			}
 			else{
 				pkmnAttack = enemyPokemon;
 				pkmnDefend = ashsPokemon;
 				firstAttack = enemyMove;
 				secondAttack = ashsMove;
+				youAttackFirst = false;
 			}
 			//attack
-			pkmnDefend.doDamage(calcDamage(firstAttack,pkmnAttack,pkmnDefend));
-			textLine1 = pkmnAttack.nickname() + " uses " + firstAttack.name();
-			sleep(2000);
-			pkmnAttack.doDamage(calcDamage(secondAttack,pkmnDefend,pkmnAttack));
-			textLine1 = pkmnDefend.nickname() + " uses " + secondAttack.name();
-			sleep(2000);
+			if (firstAttack != null){
+				textLine1 = pkmnAttack.nickname() + " uses " + firstAttack.name();
+				if (firstAttack.category().equals("Physical") || firstAttack.category().equals("Special")){
+				pkmnDefend.doDamage(calcDamage(firstAttack,pkmnAttack,pkmnDefend));		
+				}
+				sleep(2000);
+				if (pkmnDefend.currentHp() == 0){
+					textLine1 = pkmnDefend.nickname() + " fainted";
+					pkmnDefend.species().cry();
+					return (youAttackFirst ? 2 : 1);
+				}
+			}
+			
+			if (secondAttack != null){
+				textLine1 = pkmnDefend.nickname() + " uses " + secondAttack.name();
+				if (secondAttack.category().equals("Physical")|| secondAttack.category().equals("Special")){
+				pkmnAttack.doDamage(calcDamage(secondAttack,pkmnDefend,pkmnAttack));	
+				}
+				sleep(2000);
+				if (pkmnAttack.currentHp() == 0){
+					textLine1 = pkmnAttack.nickname() + " fainted";
+					pkmnAttack.species().cry();
+					return (youAttackFirst ?  1 :  2);
+				}
+			}
 			textLine1 = "";
-		}
+			return 0;
+		/*}
 		else
 		{
 		    pkmnAttack = enemyPokemon;
@@ -264,21 +289,22 @@ class Battle extends Presenter {
 			enterPresenter(new BattleBox(this));
 			Switched = false;
 		}
-		stage = 46;
+		stage = 46;*/
 	}
 	private int calcDamage(Move move, Pokemon att, Pokemon def){
 	//Damage = ((((2 * Level / 5 + 2) * AttackStat * AttackPower / DefenseStat) / 50) + 2) * STAB * Weakness/Resistance * RandomNumber / 100
 		double level = (double)att.level();
 		double attackStat = (double)att.currentAttack();
-		double attackPower = 100.0;//(double)move.power();
+		double attackPower = (double)move.power();
 		double defenseStat = (double)def.currentDefense();
 		double STAB = (move.type() == att.species().type() || move.type() == att.species().type2() ? 1.5 : 1.0);
 		double weakResist = 1.0;//type comparison CHANGE
 		Random r = new Random();
 		double randomNum = (double)r.nextInt(16) + 85.0;
-		System.out.println("level:"+level +", attStat:" + attackStat + ", attPower:"+ move.power() + 
-			", defStat:" + defenseStat+", STAB:" + STAB+", random:"+ randomNum);
-		return (int)(((((2 * level / 5 + 2) * attackStat * attackPower / defenseStat)/50)+2) * STAB * weakResist * randomNum / 100);
+		int damage = (int)(((((2 * level / 5 + 2) * attackStat * attackPower / defenseStat)/50)+2) * STAB * weakResist * randomNum / 100);
+		System.out.println(att.nickname() + " attacks" + '\n' + "level:"+level +", attStat:" + attackStat + ", attPower:"+ move.power() + 
+			", defStat:" + defenseStat+", STAB:" + STAB+", random:"+ randomNum + '\n' +"damage: " + damage);
+		return damage;
 	}
 
 	private void sleep(long ms)
@@ -355,6 +381,8 @@ class Battle extends Presenter {
 		}
 		textLine1 = "GO..." + ashsPokemon.nickname();
 		textLine2 = "";
+		repaint();
+		ashsPokemon.species().cry();
 		sleep(1500);
 		//loop starts here
 		while(!battleEnd()){
@@ -374,7 +402,7 @@ class Battle extends Presenter {
 		stage = 3;
 	}
 	private void enemyMove(){
-	
+		Attack(null, getAIMove());
 	}
 	private boolean getBattleCommand(){
 			String selection = showGridMenu(new String[] {"FIGHT","PACK","PKMN","RUN"});
@@ -384,7 +412,7 @@ class Battle extends Presenter {
 				for (int i = 0; i < ashsPokemon.moves().size(); i++){
 					moveNameList[i] = ashsPokemon.moves().get(i).name() + " " + ashsPokemon.moves().get(i).currentPp() + "/" + ashsPokemon.moves().get(i).pp();
 				}
-				Move moveToUse;
+				Move moveToUse = null;
 				boolean canUse = false;
 				while (!canUse){
 					String moveSel = showMenu(moveNameList);
@@ -404,6 +432,7 @@ class Battle extends Presenter {
 						else{ //index = 3
 							moveToUse = ashsPokemon.moves().get(3);
 						}
+						
 						if (moveToUse.currentPp() == 0){
 							textLine1 = "No PP left";
 							textLine2 = "";
@@ -413,6 +442,29 @@ class Battle extends Presenter {
 							canUse = true;
 					}
 				}
+				//attack
+				switch(Attack(moveToUse,getAIMove())){
+				case 0: //normal--nothing
+					break;
+				case 1: //you KO
+					BattleBox bb = new BattleBox(this);
+					enterPresenter(bb);
+					try{
+					synchronized(bb){ bb.wait(); }
+					}catch(Exception ex){}
+					Pokemon newPokemon = bb.selectedPokemon;
+					ashsPokemon(newPokemon);
+					
+					textLine1 = "GO..." + ashsPokemon.nickname();
+					textLine2 = "";
+					repaint();
+					ashsPokemon.species().cry();
+					break;
+				case 2: //enemy KO--XP and stuff
+					stage = 3;
+					break;
+				}
+				
 			}
 			else if (selection.equals("PACK")){
 				//use an item
@@ -430,6 +482,8 @@ class Battle extends Presenter {
 				
 				textLine1 = "GO..." + ashsPokemon.nickname();
 				textLine2 = "";
+				repaint();
+				ashsPokemon.species().cry();
 				enemyMove();
 			}
 			else{ //run
