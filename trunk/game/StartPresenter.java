@@ -49,7 +49,9 @@ class StartPresenter extends Presenter {
 		int next = ss.indexOf(s) + 1;
 		if(next>=ss.size()) next=0;
 		s = ss.get(next);
+		repaint();
+		s.cry();
 		
-		if(Math.random()<0.30 && isRoot()) enterPresenter(new HueCyclePresenter(this));
+		if(Math.random()<0.10 && isRoot()) enterPresenter(new HueCyclePresenter(this));
 	}
 }
