@@ -1,15 +1,18 @@
 package game;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
+import java.awt.Color;
+import java.awt.Graphics2D;
+import java.awt.Font;
+import java.awt.Image;
+import javax.swing.ImageIcon;
 
 /**
 *a thing in your pack
 */
 public abstract class Item
 {
-
+	private Image image;
 	private String name;
 	private String type;
 	private String description;
@@ -24,7 +27,20 @@ public abstract class Item
 		//description = n.contentOf("desc");
 	}
 	
-	public Item(){}
+	public void image(Image i){image = i;}
+
+	public Item(String n, String t, String d, double p){
+		image = new ImageIcon("./entityImages/Item.png").getImage();
+		name = n;
+		type = t;
+		description = d;
+		price = p;
+	}
+
+	public void drawOn(Graphics2D g)
+	{
+		g.drawImage(image, 0, 0, null);
+	}
 
 	//return name
 	public String getName()
