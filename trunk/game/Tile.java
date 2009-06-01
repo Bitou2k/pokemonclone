@@ -23,14 +23,14 @@ class Tile {
 		this.x=x; this.y=y; this.a=a;
 	}
 	
-	static Tile fromNode(Node tileNode, Area a)
+	static Tile fromXml(XmlElement tileE, Area a)
 	{
-		int x = new Integer( tileNode.contentOf("x"));
-		int y = new Integer( tileNode.contentOf("y"));
+		int x = new Integer( tileE.contentOf("x"));
+		int y = new Integer( tileE.contentOf("y"));
 		Tile t = new Tile(x,y,a);
-		t.imageFrom(tileNode.contentOf("image"));
-		t.type = (tileNode.contentOf("type"));
-		t.target = (tileNode.contentOf("target"));
+		t.imageFrom(tileE.contentOf("image"));
+		t.type = (tileE.contentOf("type"));
+		t.target = (tileE.contentOf("target"));
 		return t;
 	}
 	

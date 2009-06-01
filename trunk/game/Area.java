@@ -204,12 +204,12 @@ class Area extends Presenter
 	
 	private Area(File f) throws Exception
 	{
-		Node mapNode = Node.parseFrom(new FileInputStream(f));
-		name = mapNode.contentOf("name");
+		XmlElement mapE = XmlElement.parseFrom(new FileInputStream(f));
+		name = mapE.contentOf("name");
 		
-		for(Node tileNode: mapNode.subnodes("tile"))
+		for(XmlElement tileE: mapE.children("tile"))
 		{
-			tiles.add(Tile.fromNode(tileNode, this));
+			tiles.add(Tile.fromXml(tileE, this));
 		}
 		if(tiles.size()==0) throw new Exception();
 
