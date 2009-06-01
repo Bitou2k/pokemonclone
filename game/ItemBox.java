@@ -53,6 +53,7 @@ public class ItemBox extends Presenter {
 		g.setColor(Color.BLACK);
 		g.setFont(new Font("Courier New",Font.BOLD,20));
 		
+		
 		int inc=32;
 		
 		g.drawImage(bottomBox.getImage(), 0, 192, null);
@@ -61,9 +62,9 @@ public class ItemBox extends Presenter {
 		int lp=0;
 		for (lp = 0; lp < player().pack().getAllItems().size(); lp++)
 		{
-			Item item;
+			Item item=null;
 		
-			item = player().pack().getAllItems().toArray();
+//			item = player().pack().getAllItems().toArray();
 			//currentItem = item[lp];
 		
 			g.drawString( item.getName(), 48+8, 16+12+lp*inc);
