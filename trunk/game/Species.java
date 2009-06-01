@@ -92,50 +92,50 @@ public class Species {
 	*/
 	public Map<String,Species> evolutions(){return evolutions;}
 		
-	private Species(Node n)
+	private Species(XmlElement e)
 	{	
-		number = new Integer(n.contentOf("number"));
-		name = n.contentOf("name");
-		image32 = new ImageIcon(n.contentOf("image32")).getImage();
-		image80 = new ImageIcon(n.contentOf("image80")).getImage();
-		imageFront = new ImageIcon(n.contentOf("imageFront")).getImage();
-		imageBack = new ImageIcon(n.contentOf("imageBack")).getImage();
+		number = e.icontentOf("number");
+		generation = e.icontentOf("generation");
+		name = e.contentOf("name");
+		image32 = new ImageIcon(e.contentOf("image32")).getImage();
+		image80 = new ImageIcon(e.contentOf("image80")).getImage();
+		imageFront = new ImageIcon(e.contentOf("imageFront")).getImage();
+		imageBack = new ImageIcon(e.contentOf("imageBack")).getImage();
 		
-		description = n.contentOf("description");
-		type1 = getTypeNamed(n.contentOf("type"));
-		type2 = getTypeNamed(n.contentOf("type2"));
+		description = e.contentOf("description");
+		type1 = getTypeNamed(e.contentOf("type"));
+		type2 = getTypeNamed(e.contentOf("type2"));
 		
-		hp = new Integer(n.contentOf("hp"));
-		attack = new Integer(n.contentOf("attack"));
-		defense = new Integer(n.contentOf("defense"));
-		spAttack = new Integer(n.contentOf("sp atk"));
-		spDefense = new Integer(n.contentOf("sp def"));
-		speed = new Integer(n.contentOf("speed"));
+		hp = e.icontentOf("baseHp");
+		attack = e.icontentOf("baseAttack");
+		defense = e.icontentOf("baseDefense");
+		spAttack = e.icontentOf("baseSpAttack");
+		spDefense = e.icontentOf("baseSpDefense");
+		speed = e.icontentOf("baseSpeed");
 		
-		for(Node en: n.subnodes("evolution")){
+		for(XmlElement en: e.children("evolution")){
 			String condition = en.contentOf("level");
 			String evolvedForm = en.contentOf("target");
 			if(evolvedForm.equals("")) continue;
 			evolutions.put( condition, Species.named(evolvedForm) );
 		}
 		
-		if(n.subnode("moves")!=null)
-		for(Node mn: n.subnode("moves").subnodes("move"))
+		
+		for(XmlElement mn: e.children("move"))
 		{
 			moves.put(
 				Move.named(mn.contentOf("name")) , mn.icontentOf("level")
 			);
 		}
-		else System.out.println("missing move data");
 		
-		String[] tmsStr = n.contentOf("TMs").trim().split(",");
+		String[] tmsStr = e.contentOf("TMs").trim().split(",");
 		for(String tmStr: tmsStr)
 		{
 			if(tmStr.equals("")) continue;
 			tms.add( TM.numbered(new Integer(tmStr)) );
 		}
 		
-		String[] hmsStr = n.contentOf("HMs").trim().split(",");
+		String[] hmsStr = e.contentOf("HMs").trim().split(",");
 		for(String hmStr: hmsStr)
 		{
 			if(hmStr.equals("")) continue;
@@ -151,9 +151,9 @@ public class Species {
 	private static ArrayList<Species> species = new ArrayList<Species>();
 	static { 
 		try{
-			Node root = Node.documentRootFrom("./pokemon/pokemon.nml");
-			for(Node n : root.subnodes("pokemon")){
-				Species s = new Species(n);
+			XmlElement root = XmlElement.documentRootFrom("./species/redSpecies.xml");
+			for(XmlElement e : root.children("species")){
+				Species s = new Species(e);
 				species.add( s );
 				//System.out.print(s.name+" ");
 			}
@@ -173,23 +173,18 @@ public class Species {
 		}catch(Exception ex){}
 		return null;
 	}
-	private static Map<Integer,String> movesFromNode(Node n){
-		Map<Integer,String> moves = new TreeMap<Integer,String>();
-		if(n!=null) for(Node m : n.subnodes("move"))
-			moves.put(new Integer(m.contentOf("level")),m.contentOf("name"));
-		return moves;
-	}
+
 	
 	public static Species named(String name){
 		for(Species s: species)
 			if(s.name.equalsIgnoreCase(name))return s;
-		System.out.println("There is no species named "+name);
+		System.out.println("No species named "+name);
 		return null;
 	}
 	public static Species withNumber(int no){
 		for(Species s: species)
 			if(s.number==no)return s;
-		System.out.println("There is no species numbered "+no);
+		System.out.println("No species numbered "+no);
 		return null;
 	}
 
