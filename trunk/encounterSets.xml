@@ -10,7 +10,7 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 
 </note>
 
-<generator>
+<encounterSet>
 	<name>palletGen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -28,8 +28,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>70</level>
 		<chance>0.02</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>palletwatGen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -47,8 +47,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>3</level>
 		<chance>0.33</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>route01Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -61,8 +61,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>3</level>
 		<chance>0.40</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>viridiancitywatGen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -75,8 +75,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>4</level>
 		<chance>0.50</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>route22Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -105,8 +105,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<chance>0.10</chance>
 	</pokemon>
 
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>route02Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -130,8 +130,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<chance>0.15</chance>
 	</pokemon>
 
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>route02watGen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -144,8 +144,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>5</level>
 		<chance>0.50</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>viridianforestGen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -169,8 +169,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<chance>0.02</chance>
 	</pokemon>
 
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>route03Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -194,8 +194,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<chance>0.20</chance>
 	</pokemon>
 
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>mt.moon1fGen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -219,8 +219,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<chance>0.04</chance>
 	</pokemon>
 
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>mt.moonb1Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -244,9 +244,9 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<chance>0.10</chance>
 	</pokemon>
 
-</generator>
+</encounterSet>
 
-<generator>
+<encounterSet>
 	<name>mt.moonb1Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -270,8 +270,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<chance>0.10</chance>
 	</pokemon>
 
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>mt.moonb2Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -295,8 +295,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<chance>0.14</chance>
 	</pokemon>
 
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>route04Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -320,8 +320,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<chance>0.20</chance>
 	</pokemon>
 
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>route04watGen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -334,8 +334,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>9</level>
 		<chance>0.50</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>ceruleancitywatGen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -353,8 +353,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>9</level>
 		<chance>0.25</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>route24Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -383,8 +383,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<chance>0.08</chance>
 	</pokemon>
 
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>route24watGen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -402,8 +402,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>33</level>
 		<chance>0.02</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>route25Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -432,8 +432,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<chance>0.08</chance>
 	</pokemon>
 
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>route25watGen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -451,8 +451,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>28</level>
 		<chance>0.02</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>route05Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -481,8 +481,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<chance>0.08</chance>
 	</pokemon>
 
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>route06Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -511,8 +511,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<chance>0.08</chance>
 	</pokemon>
 
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>route06watGen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -525,8 +525,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>14</level>
 		<chance>0.50</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>VermillionwatGen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -545,7 +545,7 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<chance>0.25</chance>
 	</pokemon>
 </generator
-<generator>
+<encounterSet>
 	<name>route11Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -574,8 +574,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<chance>0.05</chance>
 	</pokemon>
 
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>route11watGen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -593,8 +593,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>25</level>
 		<chance>0.02</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>route11Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -608,8 +608,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<chance>0.05</chance>
 	</pokemon>
 
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>route09Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -653,8 +653,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<chance>0.08</chance>
 	</pokemon>
 
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>route10Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -688,8 +688,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<chance>0.28</chance>
 	</pokemon>
 
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>route10watGen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -712,8 +712,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>28</level>
 		<chance>0.02</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>rocktunnelGen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -736,8 +736,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>17</level>
 		<chance>0.08</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>route08Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -770,8 +770,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>20</level>
 		<chance>0.05</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>celadoncitywatGen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -784,8 +784,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>15</level>
 		<chance>0.50</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>pokemontowerGen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -804,8 +804,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<chance>0.08</chance>
 	</pokemon>
 
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>route16Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -829,8 +829,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<chance>0.25</chance>
 	</pokemon>
 
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>route17Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -854,8 +854,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<chance>0.05</chance>
 	</pokemon>
 
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>route17watGen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -873,8 +873,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>19</level>
 		<chance>0.25</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>route18Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -903,8 +903,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<chance>0.30</chance>
 	</pokemon>
 
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>route18watGen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -927,8 +927,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>25</level>
 		<chance>0.02</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>fuchsiacitywatGen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -941,8 +941,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>22</level>
 		<chance>0.20</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>safarizonemainGen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -991,8 +991,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<chance>0.02</chance>
 	</pokemon>
 
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>safarizone1Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -1041,8 +1041,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<chance>0.04</chance>
 	</pokemon>
 
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>safarizone2Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -1090,8 +1090,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>27</level>
 		<chance>0.06</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>safarizone3Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -1139,8 +1139,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>31</level>
 		<chance>0.02</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>safarizonewatGen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -1158,8 +1158,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>31</level>
 		<chance>0.10</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>route12Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -1197,8 +1197,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>32</level>
 		<chance>0.05</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>route12watGen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -1221,8 +1221,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>29</level>
 		<chance>0.25</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>route13Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -1260,8 +1260,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>32</level>
 		<chance>0.05</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>route13watGen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -1284,8 +1284,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>29</level>
 		<chance>0.25</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>route14Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -1323,8 +1323,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>32</level>
 		<chance>0.04</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>route15Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -1362,8 +1362,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>32</level>
 		<chance>0.04</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>route21Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -1386,8 +1386,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>30</level>
 		<chance>0.10</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>route21watGen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -1410,8 +1410,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>27</level>
 		<chance>0.25</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>cinnabarislandwatGen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -1429,8 +1429,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>32</level>
 		<chance>0.25</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>pokemonmansionfloorGen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -1453,8 +1453,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>34</level>
 		<chance>0.20</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>pokemonmansion1Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -1477,8 +1477,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>34</level>
 		<chance>0.20</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>pokemonmansion2Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -1501,8 +1501,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>26</level>
 		<chance>0.30</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>pokemonmansion3Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -1525,8 +1525,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>26</level>
 		<chance>0.30</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>pokemonmansionb1Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -1554,8 +1554,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>34</level>
 		<chance>0.20</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>powerplantGen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -1583,8 +1583,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>32</level>
 		<chance>0.20</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>powerplantwatGen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -1602,8 +1602,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>32</level>
 		<chance>0.25</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>route19watGen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -1621,8 +1621,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>32</level>
 		<chance>0.25</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>route20watGen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -1640,8 +1640,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>32</level>
 		<chance>0.25</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>seafoamislandf1Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -1664,8 +1664,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>27</level>
 		<chance>0.35</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>seafoamislandb1Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -1698,8 +1698,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>40</level>
 		<chance>0.04</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>seafoamislandb2Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -1737,8 +1737,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>40</level>
 		<chance>0.10</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>seafoamislandb3Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -1771,8 +1771,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>40</level>
 		<chance>0.10</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>seafoamislandb4Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -1805,8 +1805,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>40</level>
 		<chance>0.10</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>seafoamislandwatGen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -1823,8 +1823,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>34</level>
 		<chance>0.40</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>route23watGen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -1842,8 +1842,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>33</level>
 		<chance>0.10</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>victoryroadf1Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -1866,8 +1866,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>42</level>
 		<chance>0.10</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>victoryroadf2Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -1900,8 +1900,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>42</level>
 		<chance>0.13</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>victoryroadf3Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -1929,8 +1929,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>42</level>
 		<chance>0.10</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>indigoplateauwatGen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -1953,8 +1953,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>37</level>
 		<chance>0.10</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>unknowndungeonf2Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -1997,8 +1997,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>45</level>
 		<chance>0.08</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>unknowndungeonf1Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -2041,8 +2041,8 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>47</level>
 		<chance>0.08</chance>
 	</pokemon>
-</generator>
-<generator>
+</encounterSet>
+<encounterSet>
 	<name>unknowndungeonb1Gen</name>
 	<overallchance>0.11</overallchance>
 	<pokemon>
@@ -2080,4 +2080,4 @@ available at http://strategywiki.org/wiki/Pokémon_Red_and_Blue/Walkthrough
 		<level>53</level>
 		<chance>0.08</chance>
 	</pokemon>
-</generator>
+</encounterSet>
