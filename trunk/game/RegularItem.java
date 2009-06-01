@@ -19,8 +19,9 @@ public class RegularItem extends Item {
 	}
 	public void use()
 	{
-		//* does different things to player/etc. */
-		//*  depending on effect and statEffect  */
+		//pokemonSelector
+        //enterPresenter()
+			
 		
 	}
 
