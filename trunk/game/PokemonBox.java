@@ -125,7 +125,10 @@ public class PokemonBox extends Presenter {
 				{
 					String choice = showMenu( new String[]{ "Stats", "Switch", "Cancel" } );
 				
-					if ("Stats".equals(choice)) { /*enter stats presenter*/ }
+					if ("Stats".equals(choice)) 
+					{
+						
+					}
 					if ("Switch".equals(choice)) { switchFlag = true; }
 					if ("Cancel".equals(choice)) { /*do nothing*/ }
 				}

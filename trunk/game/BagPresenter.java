@@ -28,6 +28,8 @@ class BagPresenter extends Presenter {
 	* cursor index next to the menu
 	*/
 	int menuCursorIndex;
+	int curNumItems;
+	int itemCategory;
 	int topIndex;
 	
 	/**
@@ -35,18 +37,31 @@ class BagPresenter extends Presenter {
 	*/
 	boolean itmf; 
 	
-	private ImageIcon BagScreen = new ImageIcon("./resources/bag.png");
+	private ImageIcon BagScreen = new ImageIcon("./resources/bag/bag.png");
+	
+	private ImageIcon ItemsText = new ImageIcon("./resources/bag/itemstext.png");
+	private ImageIcon BallsText = new ImageIcon("./resources/bag/ballstext.png");
+	private ImageIcon KeyItemsText = new ImageIcon("./resources/bag/keyitemstext.png");
+	private ImageIcon TmHmText = new ImageIcon("./resources/bag/tmhmtext.png");
+
+	private ImageIcon ItemsImage = new ImageIcon("./resources/bag/itemsimage.png");
+	private ImageIcon BallsImage = new ImageIcon("./resources/bag/ballsimage.png");
+	private ImageIcon KeyItemsImage = new ImageIcon("./resources/bag/keyitemsimage.png");
+	private ImageIcon TmHmImage = new ImageIcon("./resources/bag/tmhmimage.png");
+
 	private ImageIcon arrow = new ImageIcon("./resources/arrow.png");
 	private ImageIcon idleArrow = new ImageIcon("./resources/idlearrow.png");
-
+	
+	
 	public BagPresenter(Presenter oldP){
 		oldPresenter = oldP;		
 		itemCursorIndex = 0;
 		menuCursorIndex = 0;
 		itmf = true;
 		topIndex = 0;
+		itemCategory=1;
 	}
-	//57,15
+
 	public void drawOn(Graphics2D g){
 		
 		int inc = 30;
@@ -66,27 +81,60 @@ class BagPresenter extends Presenter {
 		g.drawImage(BagScreen.getImage(),0,0,null);
 		g.drawImage(itemArrow.getImage(), X - 25, 30 + itemCursorIndex * inc, null);
 
+		Set<Item> Items;
+		
+		if (itemCategory == 1){ 
+			g.drawImage(ItemsImage.getImage(),0,48,null); 
+			g.drawImage(ItemsText.getImage(),0,112,null); 
+			Items = player().pack().getAllItems();
+			curNumItems = player().pack().getAllItems().size();
+		}
+		else if (itemCategory == 2){ 
+			g.drawImage(BallsImage.getImage(),0,48,null); 
+			g.drawImage(BallsText.getImage(),0,112,null); 
+			Items = player().pack().getAllPokeballs();
+			curNumItems = player().pack().getAllPokeballs().size();
+		}
+		else if (itemCategory == 3){ 
+			g.drawImage(KeyItemsImage.getImage(),0,48,null); 
+			g.drawImage(KeyItemsText.getImage(),0,112,null); 
+			Items = player().pack().getAllKeyItems();
+			curNumItems = player().pack().getAllKeyItems().size();
+		}
+		else if (itemCategory == 4){ 
+			g.drawImage(TmHmImage.getImage(),0,48,null); 
+			g.drawImage(TmHmText.getImage(),0,112,null); 
+			Items = player().pack().getAllTmHms();
+			curNumItems = player().pack().getAllTmHms().size();
+		}
+		else
+		{
+			return;
+		}
+		
 		g.setColor(Color.BLACK);
 		g.setFont(new Font("Courier New",Font.BOLD,20));
 		
-		Set<Item> keyItems = player().pack().getAllItems();
-		Iterator<Item> kI = keyItems.iterator();
-		ArrayList<Item> keyItemsList = new ArrayList<Item>();
+		Iterator<Item> kI = Items.iterator();
+		ArrayList<Item> ItemsList = new ArrayList<Item>();
 		for (int x = 0; kI.hasNext(); x++){
-			keyItemsList.add(kI.next());
+			ItemsList.add(kI.next());
 		}
 		
 		int lp=0;
-		if (keyItemsList.size()>5) { lp=5; }
-		else { lp=keyItemsList.size(); }
+		if (ItemsList.size() > 5) { lp=5; }
+		else { lp=ItemsList.size(); }
 		for (int i=0; i < lp; i++){
-			Item item = keyItemsList.get((i + topIndex) % (keyItems.size()));
+			Item item = ItemsList.get((topIndex+i) % (Items.size()));
 			g.drawString( item.getName(), X, Y );
-			g.drawString( "X " + String.valueOf(player().pack().getQtyOfItem(item)), X+160, Y+15);
+			if (itemCategory==1) { g.drawString( "X " + String.valueOf(player().pack().getQtyOfItem(item)), X+160, Y+15); }
+			if (itemCategory==2) { g.drawString( "X " + String.valueOf(player().pack().getQtyOfPokeball(item)), X+160, Y+15); }
+			if (itemCategory==3) { g.drawString( "X " + String.valueOf(player().pack().getQtyOfKeyItem(item)), X+160, Y+15); }
+			if (itemCategory==4) { g.drawString( "X " + String.valueOf(player().pack().getQtyOfTmHm(item)), X+160, Y+15); }
 			Y+=inc;
 		}
 
-		Item selItem = keyItemsList.get((topIndex) % keyItems.size());
+		Item selItem = ItemsList.get((itemCursorIndex+topIndex) % Items.size());
 		g.drawString( selItem.description(), 20, 232);
 	
 	}
@@ -96,15 +144,14 @@ class BagPresenter extends Presenter {
 		if (b==Button.START)	enterPresenter(oldPresenter);
 		else if (b==Button.DOWN){
 			if(itmf){
-	
-				if (player().pack().getAllKeyItems().size()>5) { bounds = 4; } 
-				else { bounds = player().pack().getAllKeyItems().size(); }
-				if (itemCursorIndex != bounds){ itemCursorIndex++;}
-				else {
-					topIndex++;
-					if (topIndex == player().pack().getAllKeyItems().size()) topIndex = 0;
+				if (itemCursorIndex==4){
+					if (topIndex+4<curNumItems)
+						topIndex++;
 				}
-
+				else{
+					if (itemCursorIndex<curNumItems-1)
+						itemCursorIndex++;
+				}
 			}
 			else{
 				if (menuCursorIndex != 3) menuCursorIndex++;
@@ -112,18 +159,23 @@ class BagPresenter extends Presenter {
 		}
 		else if (b==Button.UP){
 			if(itmf){
-				if (itemCursorIndex != 0){ itemCursorIndex--;}
-				else 
-				{
-					topIndex--;
-					if (topIndex == -1) topIndex = player().pack().getAllKeyItems().size() - 1;
-				}
+
+				if (itemCursorIndex>0)
+					itemCursorIndex--;
+				else
+					if (topIndex>0) { topIndex--; }
+				
 			}
 			else{
 				if (menuCursorIndex != 0) menuCursorIndex--;
 			}
 		}
-		//else if (b==Button.LEFT || b==Button.RIGHT) pkmn = !pkmn;
+		else if (b==Button.LEFT){
+			if (itemCategory != 1) itemCategory--;
+		}
+		else if (b==Button.RIGHT){
+			if (itemCategory != 4 ) itemCategory++;
+		}
 
 	}
 	

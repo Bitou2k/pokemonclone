@@ -21,10 +21,10 @@ public abstract class Item
 	//constructor
 	public Item(Node n)
 	{
-		//name = n.contentOf("name");
-		//price = Double.parseDouble(n.contentOf("price"));
-		//type = n.contentOf("type");
-		//description = n.contentOf("desc");
+		name = n.contentOf("name");
+		price = Double.parseDouble(n.contentOf("price"));
+		type = n.contentOf("type");
+		description = n.contentOf("desc");
 	}
 	
 	public void image(Image i){image = i;}
@@ -63,24 +63,24 @@ public abstract class Item
 	static { 
 		try{
 			
-			Node root = Node.documentRootFrom("itemtest.nml");
+			Node root = Node.documentRootFrom("Items/items.nml");
 			for(Node n : root.subnodes("item")){
 				Item i = new RegularItem(n);
 				items.add( i );
 				System.out.print(i.name+" ");
 			}
-			/*root = Node.documentRootFrom("---REPLACE WITH KEY ITEM DATABASE PATH---");
+			root = Node.documentRootFrom("Items/KeyItems.nml");
 			for(Node n : root.subnodes("item")){
 				Item i = new KeyItem(n);
 				items.add( i );
 				System.out.print(i.name+" ");
 			}			
-			root = Node.documentRootFrom("---REPLACE WITH POKEBALL DATABASE PATH---");
+			root = Node.documentRootFrom("Items/pokeball.nml");
 			for(Node n : root.subnodes("item")){
 				Item i = new Pokeball(n);
 				items.add( i );
 				System.out.print(i.name+" ");
-			}*/
+			}
 			
 			Collections.reverse(items);
 			System.out.println("\n"+items.size()+" items!");
