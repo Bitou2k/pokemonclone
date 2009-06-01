@@ -125,12 +125,12 @@ class Area extends Presenter
 		}
 		else if(x.equals("Teleport")) {
 		
-			String agoto = showMenu("Teleport where?",new String[]{"pallet","ceruleancity","saffron","fuchsia","NewBarkTown"});
+			String agoto = showMenu("Teleport where?",new String[]{"pallet","PewterCity","SaffronCity","FuchsiaCity","NewBarkTown"});
 			Area a = Area.named(agoto);
 			if(agoto.equals("pallet")) a.tileAt(5,7).entity(player());
-			if(agoto.equals("ceruleancity")) a.tileAt(18,16).entity(player());
-			if(agoto.equals("saffron")) a.tileAt(10,31).entity(player());
-			if(agoto.equals("fuchsia")) a.tileAt(19,30).entity(player());
+			if(agoto.equals("PewterCity")) a.tileAt(13,28).entity(player());
+			if(agoto.equals("SaffronCity")) a.tileAt(10,31).entity(player());
+			if(agoto.equals("FuchsiaCity")) a.tileAt(20,30).entity(player());
 			if(agoto.equals("NewBarkTown")) a.tileAt(25,15).entity(player());
 			enterPresenter(a);
 		} else if(x.equals("Trigger Wild")) {
