@@ -43,7 +43,7 @@ the box needs a collection(arraylist, list, collection) of Pokemon
 ==================
 YOU GET THIS ONE TOO
 
-*Shloka*<br>ItemBox()
+*Shloka*<br>ItemBox() (*DONE But has issue with Item Set*)
 same thing but the collction will be of Items, keyItems, pokeballs, or TMs
 
 ==================
@@ -54,7 +54,7 @@ both classes need a way to obtain all of the collection elements and one at a sp
 </code>
 
 <code>
-*Shloka*<br>
+
 ComputerPresenter
 //this shows the current box and the contents of each
 
