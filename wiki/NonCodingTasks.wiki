@@ -13,14 +13,11 @@ adding the sign texts to the areas (Shloka)
 
 connecting pokegrass to the wild generators (Dana)
 
-correctly setting the target field for all area cliffs (Rich and Twitch, complete)
+No one may claim more then one of the following:
+*setting up doors between Kanto areas. For those that don't know, Kanto is all the areas we have except for the Johto ones (which have real colors). (unclaimed)
 
-elitefourchampion chavez sprites (Frick)done :P
+*double-checking and correcting cliffs have their target field set correction.  note that corner cliff should probably just be obstacles. (unclaimed)
 
-rival smith sprites (unclaimed)
+*finding 32x32 icons that match ./species/icons32/ for the pokemon beyond 151
 
-unbeatablepokemon skorupa sprites (unclaimed)
-
-wild generators (jake)
-
-properly setting up the doors between (not johto) areas (unclaimed, no one do this yet)
+*watching the StartPresenter run to see if any species is missing an image or the cry. correct the redSpecies.xml entry for any messups. (unclaimed)
