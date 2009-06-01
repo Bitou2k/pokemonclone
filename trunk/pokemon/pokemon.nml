@@ -4750,10 +4750,6 @@
 		</move>
 		<move>
 			<level>1</level>
-			<name>Safeguard</name>
-		</move>
-		<move>
-			<level>1</level>
 			<name>Flamethrower</name>
 		</move>
 		<move>
@@ -4805,10 +4801,6 @@
 		<move>
 			<level>19</level>
 			<name>Confuse Ray</name>
-		</move>
-		<move>
-			<level>25</level>
-			<name>Safeguard</name>
 		</move>
 		<move>
 			<level>31</level>
