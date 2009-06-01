@@ -60,7 +60,7 @@ To sort out the confusion, everyone should put +'s before maps that are finished
  
 + 27. Fuchsia City (Jason)
 
-- 28. Safari Zone (Joe)
++ 28. Safari Zone (Joe)
 
 - 29. Routes 12 & 13 (13 is done)
 
@@ -78,7 +78,7 @@ To sort out the confusion, everyone should put +'s before maps that are finished
 
 + 36. Seafoam Island(Brad, Done)
 
-  38. Route 23 (NickWest)
++ 38. Route 23 (NickWest)
 
 + 39. Victory Road (Nava)
 
