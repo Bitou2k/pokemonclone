@@ -42,7 +42,7 @@ class Tile {
 	public Pokemon genPokemon(){
 		try
 		{
-			return WildPokemonGenerator.named(target).generatePokemon();
+			return EncounterSet.named(target).generatePokemon();
 		}
 		catch(Exception ex){}
 		return null;
