@@ -281,4 +281,17 @@ class Game extends JComponent implements KeyListener {
 		
 		Area.named("PalletTown");
 	}
+	
+	public static Image jarImage(String path)
+	{
+		try{
+		return new ImageIcon(Game.class.getClassLoader().getResource(path)).getImage();
+		}catch(Exception ex){
+			System.out.println(path);
+		}return null;
+	}
+	public static InputStream jarStream(String path)
+	{
+		return Game.class.getClassLoader().getResourceAsStream(path);
+	}
 }
