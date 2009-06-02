@@ -1327,10 +1327,10 @@
 
 <species>
 	<number>124</number><generation>1</generation>>
-	<name>Jinx</name>
+	<name>Jynx</name>
 	<description>It seductively wiggles its hips as it walks. It can cause people to dance in unison with it.</description>
 	<image32>species/icons32/icon124.gif</image32>
-	<image80>species/icons80/jinx.png</image80>
+	<image80>species/icons80/jynx.png</image80>
 	<imageFront>species/iconsFront/124.png</imageFront>
 	<imageBack>species/iconsBack/124.png</imageBack>
 	<type>Ice</type>
@@ -2007,7 +2007,7 @@
 	<image32>species/icons32/icon111.gif</image32>
 	<image80>species/icons80/rhyhorn.png</image80>
 	<imageFront>species/iconsFront/111.png</imageFront>
-	<imageBack>species/iconsBack/1121.png</imageBack>
+	<imageBack>species/iconsBack/111.png</imageBack>
 	<type>Ground</type>
 	<type2>Rock</type2>
 	<species>Spikes</species>
