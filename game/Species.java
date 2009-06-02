@@ -97,10 +97,10 @@ public class Species {
 		number = e.icontentOf("number");
 		generation = e.icontentOf("generation");
 		name = e.contentOf("name");
-		image32 = new ImageIcon(e.contentOf("image32")).getImage();
-		image80 = new ImageIcon(e.contentOf("image80")).getImage();
-		imageFront = new ImageIcon(e.contentOf("imageFront")).getImage();
-		imageBack = new ImageIcon(e.contentOf("imageBack")).getImage();
+		image32 = Game.jarImage(e.contentOf("image32"));
+		image80 = Game.jarImage(e.contentOf("image80"));
+		imageFront = Game.jarImage(e.contentOf("imageFront"));
+		imageBack = Game.jarImage(e.contentOf("imageBack"));
 		
 		description = e.contentOf("description");
 		type1 = getTypeNamed(e.contentOf("type"));
@@ -151,7 +151,7 @@ public class Species {
 	private static ArrayList<Species> species = new ArrayList<Species>();
 	static { 
 		try{
-			XmlElement root = XmlElement.documentRootFrom("./species/redSpecies.xml");
+			XmlElement root = XmlElement.documentRootFrom(Game.jarStream("./species/redSpecies.xml"));
 			for(XmlElement e : root.children("species")){
 				Species s = new Species(e);
 				species.add( s );

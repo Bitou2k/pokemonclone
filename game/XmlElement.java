@@ -138,13 +138,18 @@ public class XmlElement
 		}
 	}
 	
+
+	//public static XmlElement documentRootFrom(String filename) throws IOException
+	//{
+	//	return documentRootFrom(new FileInputStream(filename));
+	//}
+	
 	/**
-	*Returns a node containing all stanzas in the given file as children
+	*Returns an element containing all stanzas as children
 	 */
-	public static XmlElement documentRootFrom(String filename) throws IOException
+	public static XmlElement documentRootFrom(InputStream is) throws IOException
 	{
-		InputStream is = new FileInputStream(filename);
-		XmlElement root = new XmlElement(filename);
+		XmlElement root = new XmlElement("root");
 		for(XmlElement n: parseAllFrom(is)) root.addChild(n);
 		return root;
 	}

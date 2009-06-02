@@ -71,7 +71,7 @@ public class EncounterSet
 	static 
 	{ 
 		try{
-			XmlElement root = XmlElement.documentRootFrom("./encounterSets.xml");
+			XmlElement root = XmlElement.documentRootFrom(Game.jarStream("./encounterSets.xml"));
 			for(XmlElement e : root.children("encounterSet"))
 				gens.add( new EncounterSet(e) );
 				

@@ -2,10 +2,10 @@
 <species>
 	<number>151</number><generation>1</generation>>
 	<name>Mew</name>
-	<image32>./species/icons32/icon151.gif</image32>
-	<image80>./species/icons80/mew.png</image80>
-	<imageFront>./species/iconsFront/151.png</imageFront>
-	<imageBack>./species/iconsBack/151.png</imageBack>
+	<image32>species/icons32/icon151.gif</image32>
+	<image80>species/icons80/mew.png</image80>
+	<imageFront>species/iconsFront/151.png</imageFront>
+	<imageBack>species/iconsBack/151.png</imageBack>
 	<description>So rare that it is still said to be a mirage by many experts. Only a few people have seen it worldwide.</description>
 	<type>Psychic</type>
 	<type2></type2>
@@ -44,10 +44,10 @@
 <species>
 	<number>150</number><generation>1</generation>>
 	<name>Mewtwo</name>
-	<image32>./species/icons32/icon150.gif</image32>
-	<image80>./species/icons80/mewtwo.png</image80>
-	<imageFront>./species/iconsFront/150.png</imageFront>
-	<imageBack>./species/iconsBack/150.png</imageBack>
+	<image32>species/icons32/icon150.gif</image32>
+	<image80>species/icons80/mewtwo.png</image80>
+	<imageFront>species/iconsFront/150.png</imageFront>
+	<imageBack>species/iconsBack/150.png</imageBack>
 	<description>It was created by a scientist after years of horrific gene splicing and DNA engineering experiments.</description>
 	<type>Psychic</type>
 	<type2></type2>
@@ -98,10 +98,10 @@
 <species>
 	<number>149</number><generation>1</generation>>
 	<name>Dragonite</name>
-	<image32>./species/icons32/icon149.gif</image32>
-	<image80>./species/icons80/dragonite.png</image80>
-	<imageFront>./species/iconsFront/149.png</imageFront>
-	<imageBack>./species/iconsBack/149.png</imageBack>
+	<image32>species/icons32/icon149.gif</image32>
+	<image80>species/icons80/dragonite.png</image80>
+	<imageFront>species/iconsFront/149.png</imageFront>
+	<imageBack>species/iconsBack/149.png</imageBack>
 	<description>An extremely rarely seen marine POKEMON. Its intelligence is said to match that of humans.</description>
 	<type>Dragon</type>
 	<type2>Flying</type2>
@@ -148,10 +148,10 @@
 <species>
 	<number>148</number><generation>1</generation>>
 	<name>Dragonair</name>
-	<image32>./species/icons32/icon148.gif</image32>
-	<image80>./species/icons80/dragonair.png</image80>
-	<imageFront>./species/iconsFront/148.png</imageFront>
-	<imageBack>./species/iconsBack/148.png</imageBack>
+	<image32>species/icons32/icon148.gif</image32>
+	<image80>species/icons80/dragonair.png</image80>
+	<imageFront>species/iconsFront/148.png</imageFront>
+	<imageBack>species/iconsBack/148.png</imageBack>
 	<description>A mystical POKEMON that exudes a gentle aura. Has the ability to change climate conditions.</description>
 	<type>Dragon</type>
 	<type2></type2>
@@ -202,10 +202,10 @@
 <species>
 	<number>147</number><generation>1</generation>>
 	<name>Dratini</name>
-	<image32>./species/icons32/icon147.gif</image32>
-	<image80>./species/icons80/dratini.png</image80>
-	<imageFront>./species/iconsFront/147.png</imageFront>
-	<imageBack>./species/iconsBack/147.png</imageBack>
+	<image32>species/icons32/icon147.gif</image32>
+	<image80>species/icons80/dratini.png</image80>
+	<imageFront>species/iconsFront/147.png</imageFront>
+	<imageBack>species/iconsBack/147.png</imageBack>
 	<description>Long considered a mythical POKEMON until recently when a small colony was found living underwater.</description>
 	<type>Dragon</type>
 	<type2></type2>
@@ -256,10 +256,10 @@
 <species>
 	<number>146</number><generation>1</generation>>
 	<name>Moltres</name>
-	<image32>./species/icons32/icon146.gif</image32>
-	<image80>./species/icons80/moltres.png</image80>
-	<imageFront>./species/iconsFront/146.png</imageFront>
-	<imageBack>./species/iconsBack/146.png</imageBack>
+	<image32>species/icons32/icon146.gif</image32>
+	<image80>species/icons80/moltres.png</image80>
+	<imageFront>species/iconsFront/146.png</imageFront>
+	<imageBack>species/iconsBack/146.png</imageBack>
 	<description>Known as the legendary bird of fire. Every flap of its wings creates a dazzling flash of flames.</description>
 	<type>Fire</type>
 	<type2>Flying</type2>
@@ -298,10 +298,10 @@
 <species>
 	<number>145</number><generation>1</generation>>
 	<name>Zapdos</name>
-	<image32>./species/icons32/icon145.gif</image32>
-	<image80>./species/icons80/zapdos.png</image80>
-	<imageFront>./species/iconsFront/145.png</imageFront>
-	<imageBack>./species/iconsBack/145.png</imageBack>
+	<image32>species/icons32/icon145.gif</image32>
+	<image80>species/icons80/zapdos.png</image80>
+	<imageFront>species/iconsFront/145.png</imageFront>
+	<imageBack>species/iconsBack/145.png</imageBack>
 	<description>A legendary bird POKEMON that is said to appear from clouds while dropping enormous lightning bolts.</description>
 	<type>Electric</type>
 	<type2>Flying</type2>
@@ -340,10 +340,10 @@
 <species>
 	<number>144</number><generation>1</generation>>
 	<name>Articuno</name>
-	<image32>./species/icons32/icon144.gif</image32>
-	<image80>./species/icons80/articuno.png</image80>
-	<imageFront>./species/iconsFront/144.png</imageFront>
-	<imageBack>./species/iconsBack/144.png</imageBack>
+	<image32>species/icons32/icon144.gif</image32>
+	<image80>species/icons80/articuno.png</image80>
+	<imageFront>species/iconsFront/144.png</imageFront>
+	<imageBack>species/iconsBack/144.png</imageBack>
 	<description>A legendary bird POKEMON that is said to appear to doomed people who are lost in icy mountains.</description>
 	<type>Ice</type>
 	<type2>Flying</type2>
@@ -382,10 +382,10 @@
 <species>
 	<number>143</number><generation>1</generation>>
 	<name>Snorlax</name>
-	<image32>./species/icons32/icon143.gif</image32>
-	<image80>./species/icons80/snorlax.png</image80>
-	<imageFront>./species/iconsFront/143.png</imageFront>
-	<imageBack>./species/iconsBack/143.png</imageBack>
+	<image32>species/icons32/icon143.gif</image32>
+	<image80>species/icons80/snorlax.png</image80>
+	<imageFront>species/iconsFront/143.png</imageFront>
+	<imageBack>species/iconsBack/143.png</imageBack>
 	<description>Very lazy. Just eats and sleeps. As its rotund bulk builds, it becomes steadily more slothful.</description>
 	<type>Normal</type>
 	<type2></type2>
@@ -432,10 +432,10 @@
 <species>
 	<number>142</number><generation>1</generation>>
 	<name>Aerodactyl</name>
-	<image32>./species/icons32/icon142.gif</image32>
-	<image80>./species/icons80/aerodactyl.png</image80>
-	<imageFront>./species/iconsFront/142.png</imageFront>
-	<imageBack>./species/iconsBack/142.png</imageBack>
+	<image32>species/icons32/icon142.gif</image32>
+	<image80>species/icons80/aerodactyl.png</image80>
+	<imageFront>species/iconsFront/142.png</imageFront>
+	<imageBack>species/iconsBack/142.png</imageBack>
 	<description>A ferocious, prehistoric POKEMON that goes for the enemy's throat with its serrated saw-like fangs.</description>
 	<type>Rock</type>
 	<type2>Flying</type2>
@@ -478,10 +478,10 @@
 <species>
 	<number>141</number><generation>1</generation>>
 	<name>Kabutops</name>
-	<image32>./species/icons32/icon141.gif</image32>
-	<image80>./species/icons80/kabutops.png</image80>
-	<imageFront>./species/iconsFront/141.png</imageFront>
-	<imageBack>./species/iconsBack/141.png</imageBack>
+	<image32>species/icons32/icon141.gif</image32>
+	<image80>species/icons80/kabutops.png</image80>
+	<imageFront>species/iconsFront/141.png</imageFront>
+	<imageBack>species/iconsBack/141.png</imageBack>
 	<description>Its sleek shape is perfect for swimming. It slashes prey with its claws and drains the body fluids.</description>
 	<type>Rock</type>
 	<type2>Water</type2>
@@ -524,10 +524,10 @@
 <species>
 	<number>140</number><generation>1</generation>>
 	<name>Kabuto</name>
-	<image32>./species/icons32/icon140.gif</image32>
-	<image80>./species/icons80/kabuto.png</image80>
-	<imageFront>./species/iconsFront/140.png</imageFront>
-	<imageBack>./species/iconsBack/140.png</imageBack>
+	<image32>species/icons32/icon140.gif</image32>
+	<image80>species/icons80/kabuto.png</image80>
+	<imageFront>species/iconsFront/140.png</imageFront>
+	<imageBack>species/iconsBack/140.png</imageBack>
 	<description>A POKEMON that was resurrected from a fossil found in what was once the ocean floor eons ago.</description>
 	<type>Rock</type>
 	<type2>Water</type2>
@@ -574,10 +574,10 @@
 <species>
 	<number>139</number><generation>1</generation>>
 	<name>Omastar</name>
-	<image32>./species/icons32/icon139.gif</image32>
-	<image80>./species/icons80/omastar.png</image80>
-	<imageFront>./species/iconsFront/139.png</imageFront>
-	<imageBack>./species/iconsBack/139.png</imageBack>
+	<image32>species/icons32/icon139.gif</image32>
+	<image80>species/icons80/omastar.png</image80>
+	<imageFront>species/iconsFront/139.png</imageFront>
+	<imageBack>species/iconsBack/139.png</imageBack>
 	<description>A prehistoric POKEMON that died out when its heavy shell made it impossible to catch prey.</description>
 	<type>Rock</type>
 	<type2>Water</type2>
@@ -620,10 +620,10 @@
 <species>
 	<number>138</number><generation>1</generation>>
 	<name>Omanyte</name>
-	<image32>./species/icons32/icon138.gif</image32>
-	<image80>./species/icons80/omanyte.png</image80>
-	<imageFront>./species/iconsFront/138.png</imageFront>
-	<imageBack>./species/iconsBack/138.png</imageBack>
+	<image32>species/icons32/icon138.gif</image32>
+	<image80>species/icons80/omanyte.png</image80>
+	<imageFront>species/iconsFront/138.png</imageFront>
+	<imageBack>species/iconsBack/138.png</imageBack>
 	<description>Although long extinct, in rare cases, it can be genetically resurrected from fossils.</description>
 	<type>Rock</type>
 	<type2>Water</type2>
@@ -670,10 +670,10 @@
 <species>
 	<number>137</number><generation>1</generation>>
 	<name>Porygon</name>
-	<image32>./species/icons32/icon137.gif</image32>
-	<image80>./species/icons80/porygon.png</image80>
-	<imageFront>./species/iconsFront/137.png</imageFront>
-	<imageBack>./species/iconsBack/137.png</imageBack>
+	<image32>species/icons32/icon137.gif</image32>
+	<image80>species/icons80/porygon.png</image80>
+	<imageFront>species/iconsFront/137.png</imageFront>
+	<imageBack>species/iconsBack/137.png</imageBack>
 	<description>A POKEMON that consists entirely of programming code. Capable of moving freely in cyberspace.</description>
 	<type>Normal</type>
 	<type2></type2>
@@ -720,10 +720,10 @@
 <species>
 	<number>136</number><generation>1</generation>>
 	<name>Flareon</name>
-	<image32>./species/icons32/icon136.gif</image32>
-	<image80>./species/icons80/flareon.png</image80>
-	<imageFront>./species/iconsFront/136.png</imageFront>
-	<imageBack>./species/iconsBack/136.png</imageBack>
+	<image32>species/icons32/icon136.gif</image32>
+	<image80>species/icons80/flareon.png</image80>
+	<imageFront>species/iconsFront/136.png</imageFront>
+	<imageBack>species/iconsBack/136.png</imageBack>
 	<description>When storing thermal energy in its body, its temperature could soar to over 1600 degrees.</description>
 	<type>Fire</type>
 	<type2></type2>
@@ -782,10 +782,10 @@
 <species>
 	<number>135</number><generation>1</generation>>
 	<name>Jolteon</name>
-	<image32>./species/icons32/icon135.gif</image32>
-	<image80>./species/icons80/jolteon.png</image80>
-	<imageFront>./species/iconsFront/135.png</imageFront>
-	<imageBack>./species/iconsBack/135.png</imageBack>
+	<image32>species/icons32/icon135.gif</image32>
+	<image80>species/icons80/jolteon.png</image80>
+	<imageFront>species/iconsFront/135.png</imageFront>
+	<imageBack>species/iconsBack/135.png</imageBack>
 	<description>It accumulates negative ions in the atmosphere to blast out 10000-volt lightning bolts.</description>
 	<type>Electric</type>
 	<type2></type2>
@@ -848,10 +848,10 @@
 <species>
 	<number>134</number><generation>1</generation>>
 	<name>Vaporeon</name>
-	<image32>./species/icons32/icon134.gif</image32>
-	<image80>./species/icons80/vaporeon.png</image80>
-	<imageFront>./species/iconsFront/134.png</imageFront>
-	<imageBack>./species/iconsBack/134.png</imageBack>
+	<image32>species/icons32/icon134.gif</image32>
+	<image80>species/icons80/vaporeon.png</image80>
+	<imageFront>species/iconsFront/134.png</imageFront>
+	<imageBack>species/iconsBack/134.png</imageBack>
 	<description>Lives close to water. Its long tail is ridged with a fin which is often mistaken for a mermaid's.</description>
 	<type>Water</type>
 	<type2></type2>
@@ -910,10 +910,10 @@
 <species>
 	<number>133</number><generation>1</generation>>
 	<name>Eevee</name>
-	<image32>./species/icons32/icon133.gif</image32>
-	<image80>./species/icons80/eevee.png</image80>
-	<imageFront>./species/iconsFront/133.png</imageFront>
-	<imageBack>./species/iconsBack/133.png</imageBack>
+	<image32>species/icons32/icon133.gif</image32>
+	<image80>species/icons80/eevee.png</image80>
+	<imageFront>species/iconsFront/133.png</imageFront>
+	<imageBack>species/iconsBack/133.png</imageBack>
 	<description>Its genetic code is irregular. It may mutate if it is exposed to radiation from element STONEs.</description>
 	<type>Normal</type>
 	<type2></type2>
@@ -968,10 +968,10 @@
 <species>
 	<number>132</number><generation>1</generation>>
 	<name>Ditto</name>
-	<image32>./species/icons32/icon132.gif</image32>
-	<image80>./species/icons80/ditto.png</image80>
-	<imageFront>./species/iconsFront/132.png</imageFront>
-	<imageBack>./species/iconsBack/132.png</imageBack>
+	<image32>species/icons32/icon132.gif</image32>
+	<image80>species/icons80/ditto.png</image80>
+	<imageFront>species/iconsFront/132.png</imageFront>
+	<imageBack>species/iconsBack/132.png</imageBack>
 	<description>Capable of copying an enemy's genetic code to instantly transform itself into a duplicate of the enemy.</description>
 	<type>Normal</type>
 	<type2></type2>
@@ -994,10 +994,10 @@
 <species>
 	<number>131</number><generation>1</generation>>
 	<name>Lapras</name>
-	<image32>./species/icons32/icon131.gif</image32>
-	<image80>./species/icons80/lapras.png</image80>
-	<imageFront>./species/iconsFront/131.png</imageFront>
-	<imageBack>./species/iconsBack/131.png</imageBack>
+	<image32>species/icons32/icon131.gif</image32>
+	<image80>species/icons80/lapras.png</image80>
+	<imageFront>species/iconsFront/131.png</imageFront>
+	<imageBack>species/iconsBack/131.png</imageBack>
 	<description>A POKEMON that has been over hunted almost to extinction. It can ferry people across the water.</description>
 	<type>Water</type>
 	<type2>Ice</type2>
@@ -1048,10 +1048,10 @@
 <species>
 	<number>130</number><generation>1</generation>>
 	<name>Gyarados</name>
-	<image32>./species/icons32/icon130.gif</image32>
-	<image80>./species/icons80/gyarados.png</image80>
-	<imageFront>./species/iconsFront/130.png</imageFront>
-	<imageBack>./species/iconsBack/130.png</imageBack>
+	<image32>species/icons32/icon130.gif</image32>
+	<image80>species/icons80/gyarados.png</image80>
+	<imageFront>species/iconsFront/130.png</imageFront>
+	<imageBack>species/iconsBack/130.png</imageBack>
 	<description>Rarely seen in the wild. Huge and vicious, it is capable of destroying entire cities in a rage.</description>
 	<type>Water</type>
 	<type2>Flying</type2>
@@ -1098,10 +1098,10 @@
 <species>
 	<number>129</number><generation>1</generation>>
 	<name>Magikarp</name>
-	<image32>./species/icons32/icon129.gif</image32>
-	<image80>./species/icons80/magikarp.png</image80>
-	<imageFront>./species/iconsFront/129.png</imageFront>
-	<imageBack>./species/iconsBack/129.png</imageBack>
+	<image32>species/icons32/icon129.gif</image32>
+	<image80>species/icons80/magikarp.png</image80>
+	<imageFront>species/iconsFront/129.png</imageFront>
+	<imageBack>species/iconsBack/129.png</imageBack>
 	<description>In the distant past, it was somewhat stronger than the horribly weak descendants that exist today.</description>
 	<type>Water</type>
 	<type2></type2>
@@ -1132,10 +1132,10 @@
 <species>
 	<number>128</number><generation>1</generation>>
 	<name>Tauros</name>
-	<image32>./species/icons32/icon128.gif</image32>
-	<image80>./species/icons80/tauros.png</image80>
-	<imageFront>./species/iconsFront/128.png</imageFront>
-	<imageBack>./species/iconsBack/128.png</imageBack>
+	<image32>species/icons32/icon128.gif</image32>
+	<image80>species/icons80/tauros.png</image80>
+	<imageFront>species/iconsFront/128.png</imageFront>
+	<imageBack>species/iconsBack/128.png</imageBack>
 	<description>When it targets an enemy, it charges furiously while whipping its body with its long tails.</description>
 	<type>Normal</type>
 	<type2></type2>
@@ -1178,10 +1178,10 @@
 <species>
 	<number>127</number><generation>1</generation>>
 	<name>Pinsir</name>
-	<image32>./species/icons32/icon127.gif</image32>
-	<image80>./species/icons80/pinsir.png</image80>
-	<imageFront>./species/iconsFront/127.png</imageFront>
-	<imageBack>./species/iconsBack/127.png</imageBack>
+	<image32>species/icons32/icon127.gif</image32>
+	<image80>species/icons80/pinsir.png</image80>
+	<imageFront>species/iconsFront/127.png</imageFront>
+	<imageBack>species/iconsBack/127.png</imageBack>
 	<description>If it fails to crush the victim in its pincers, it will swing it around and toss it hard.</description>
 	<type>Bug</type>
 	<type2></type2>
@@ -1228,10 +1228,10 @@
 <species>
 	<number>126</number><generation>1</generation>>
 	<name>Magmar</name>
-	<image32>./species/icons32/icon126.gif</image32>
-	<image80>./species/icons80/magmar.png</image80>
-	<imageFront>./species/iconsFront/126.png</imageFront>
-	<imageBack>./species/iconsBack/126.png</imageBack>
+	<image32>species/icons32/icon126.gif</image32>
+	<image80>species/icons80/magmar.png</image80>
+	<imageFront>species/iconsFront/126.png</imageFront>
+	<imageBack>species/iconsBack/126.png</imageBack>
 	<description>Its body always burns with an orange glow that enables it to hide perfectly among flames.</description>
 	<type>Fire</type>
 	<type2></type2>
@@ -1278,10 +1278,10 @@
 	<number>125</number><generation>1</generation>>
 	<name>Electabuzz</name>
 	<description>Normally found near power plants, they can wander away and cause major blackouts in cities.</description>
-	<image32>./species/icons32/icon125.gif</image32>
-	<image80>./species/icons80/electabuzz.png</image80>
-	<imageFront>./species/iconsFront/125.png</imageFront>
-	<imageBack>./species/iconsBack/125.png</imageBack>
+	<image32>species/icons32/icon125.gif</image32>
+	<image80>species/icons80/electabuzz.png</image80>
+	<imageFront>species/iconsFront/125.png</imageFront>
+	<imageBack>species/iconsBack/125.png</imageBack>
 	<type>Electric</type>
 	<type2></type2>
 	<species>Electric</species>
@@ -1329,10 +1329,10 @@
 	<number>124</number><generation>1</generation>>
 	<name>Jinx</name>
 	<description>It seductively wiggles its hips as it walks. It can cause people to dance in unison with it.</description>
-	<image32>./species/icons32/icon124.gif</image32>
-	<image80>./species/icons80/jinx.png</image80>
-	<imageFront>./species/iconsFront/124.png</imageFront>
-	<imageBack>./species/iconsBack/124.png</imageBack>
+	<image32>species/icons32/icon124.gif</image32>
+	<image80>species/icons80/jinx.png</image80>
+	<imageFront>species/iconsFront/124.png</imageFront>
+	<imageBack>species/iconsBack/124.png</imageBack>
 	<type>Ice</type>
 	<type2>Psychic</type2>
 	<species>Humanshape</species>
@@ -1383,10 +1383,10 @@
 <species>
 	<number>123</number><generation>1</generation>>
 	<name>Scyther</name>
-	<image32>./species/icons32/icon123.gif</image32>
-	<image80>./species/icons80/scyther.png</image80>
-	<imageFront>./species/iconsFront/123.png</imageFront>
-	<imageBack>./species/iconsBack/123.png</imageBack>
+	<image32>species/icons32/icon123.gif</image32>
+	<image80>species/icons80/scyther.png</image80>
+	<imageFront>species/iconsFront/123.png</imageFront>
+	<imageBack>species/iconsBack/123.png</imageBack>
 	<description>With ninja-like agility and speed, it can created the illusion that there is more than one.</description>
 	<type>Bug</type>
 	<type2>Flying</type2>
@@ -1434,10 +1434,10 @@
 <species>
 	<number>122</number><generation>1</generation>>
 	<name>Mr. Mime</name>
-	<image32>./species/icons32/icon122.gif</image32>
-	<image80>./species/icons80/mr-mime.png</image80>
-	<imageFront>./species/iconsFront/122.png</imageFront>
-	<imageBack>./species/iconsBack/122.png</imageBack>
+	<image32>species/icons32/icon122.gif</image32>
+	<image80>species/icons80/mr-mime.png</image80>
+	<imageFront>species/iconsFront/122.png</imageFront>
+	<imageBack>species/iconsBack/122.png</imageBack>
 	<description>If interrupted while it is miming, it will slap around the offender with its broad hands.</description>
 	<type>Psychic</type>
 	<type2></type2>
@@ -1481,10 +1481,10 @@
 <species>
 	<number>121</number><generation>1</generation>>
 	<name>Starmie</name>
-	<image32>./species/icons32/icon121.gif</image32>
-	<image80>./species/icons80/starmie.png</image80>
-	<imageFront>./species/iconsFront/121.png</imageFront>
-	<imageBack>./species/iconsBack/121.png</imageBack>
+	<image32>species/icons32/icon121.gif</image32>
+	<image80>species/icons80/starmie.png</image80>
+	<imageFront>species/iconsFront/121.png</imageFront>
+	<imageBack>species/iconsBack/121.png</imageBack>
 	<description>Its central core glows with the seven colors of the rainbow. Some people value the core as a gem.</description>
 	<type>Water</type>
 	<type2>Psychic</type2>
@@ -1520,10 +1520,10 @@
 <species>
 	<number>120</number><generation>1</generation>>
 	<name>Staryu</name>
-	<image32>./species/icons32/icon120.gif</image32>
-	<image80>./species/icons80/staryu.png</image80>
-	<imageFront>./species/iconsFront/120.png</imageFront>
-	<imageBack>./species/iconsBack/120.png</imageBack>
+	<image32>species/icons32/icon120.gif</image32>
+	<image80>species/icons80/staryu.png</image80>
+	<imageFront>species/iconsFront/120.png</imageFront>
+	<imageBack>species/iconsBack/120.png</imageBack>
 	<description>An enigmatic POKEMON that can effortlessly regenerate any appendage it loses in battle.</description>
 	<type>Water</type>
 	<type2></type2>
@@ -1579,10 +1579,10 @@
 <species>
 	<number>119</number><generation>1</generation>>
 	<name>Seaking</name>
-	<image32>./species/icons32/icon119.gif</image32>
-	<image80>./species/icons80/seaking.png</image80>
-	<imageFront>./species/iconsFront/119.png</imageFront>
-	<imageBack>./species/iconsBack/119.png</imageBack>
+	<image32>species/icons32/icon119.gif</image32>
+	<image80>species/icons80/seaking.png</image80>
+	<imageFront>species/iconsFront/119.png</imageFront>
+	<imageBack>species/iconsBack/119.png</imageBack>
 	<description>In the autumn spawning season, they can be seen swimming powerfully up rivers and creeks.</description>
 	<type>Water</type>
 	<type2></type2>
@@ -1634,10 +1634,10 @@
 <species>
 	<number>118</number><generation>1</generation>>
 	<name>Goldeen</name>
-	<image32>./species/icons32/icon118.gif</image32>
-	<image80>./species/icons80/goldeen.png</image80>
-	<imageFront>./species/iconsFront/118.png</imageFront>
-	<imageBack>./species/iconsBack/118.png</imageBack>
+	<image32>species/icons32/icon118.gif</image32>
+	<image80>species/icons80/goldeen.png</image80>
+	<imageFront>species/iconsFront/118.png</imageFront>
+	<imageBack>species/iconsBack/118.png</imageBack>
 	<description>Its tail fin billows like an elegant ballroom dress, giving it the nickname of the Water Queen.</description>
 	<type>Water</type>
 	<type2></type2>
@@ -1693,10 +1693,10 @@
 <species>
 	<number>117</number><generation>1</generation>>
 	<name>Seadra</name>
-	<image32>./species/icons32/icon117.gif</image32>
-	<image80>./species/icons80/seadra.png</image80>
-	<imageFront>./species/iconsFront/117.png</imageFront>
-	<imageBack>./species/iconsBack/117.png</imageBack>
+	<image32>species/icons32/icon117.gif</image32>
+	<image80>species/icons80/seadra.png</image80>
+	<imageFront>species/iconsFront/117.png</imageFront>
+	<imageBack>species/iconsBack/117.png</imageBack>
 	<description>Capable of swimming backwards by rapidly flapping its wing-like pectoral fins and stout tail.</description>
 	<type>Water</type>
 	<type2></type2>
@@ -1740,10 +1740,10 @@
 <species>
 	<number>116</number><generation>1</generation>>
 	<name>Horsea</name>
-	<image32>./species/icons32/icon116.gif</image32>
-	<image80>./species/icons80/horsea.png</image80>
-	<imageFront>./species/iconsFront/116.png</imageFront>
-	<imageBack>./species/iconsBack/116.png</imageBack>
+	<image32>species/icons32/icon116.gif</image32>
+	<image80>species/icons80/horsea.png</image80>
+	<imageFront>species/iconsFront/116.png</imageFront>
+	<imageBack>species/iconsBack/116.png</imageBack>
 	<description>Known to shoot down flying bugs with precision blasts of ink from the surface of the water.</description>
 	<type>Water</type>
 	<type2></type2>
@@ -1787,10 +1787,10 @@
 <species>
 	<number>115</number><generation>1</generation>>
 	<name>Kangaskhan</name>
-	<image32>./species/icons32/icon115.gif</image32>
-	<image80>./species/icons80/Kangaskhan.png</image80>
-	<imageFront>./species/iconsFront/115.png</imageFront>
-	<imageBack>./species/iconsBack/115.png</imageBack>
+	<image32>species/icons32/icon115.gif</image32>
+	<image80>species/icons80/Kangaskhan.png</image80>
+	<imageFront>species/iconsFront/115.png</imageFront>
+	<imageBack>species/iconsBack/115.png</imageBack>
 	<description>The infant rarely ventures out of its mother's protective punch until it is 3 years old.</description>
 	<type>Normal</type>
 	<type2></type2>
@@ -1838,10 +1838,10 @@
 <species>
 	<number>114</number><generation>1</generation>>
 	<name>Tangela</name>
-	<image32>./species/icons32/icon114.gif</image32>
-	<image80>./species/icons80/tangela.png</image80>
-	<imageFront>./species/iconsFront/114.png</imageFront>
-	<imageBack>./species/iconsBack/114.png</imageBack>
+	<image32>species/icons32/icon114.gif</image32>
+	<image80>species/icons80/tangela.png</image80>
+	<imageFront>species/iconsFront/114.png</imageFront>
+	<imageBack>species/iconsBack/114.png</imageBack>
 	<description>The whole body is swathed with wide vines that are similar to seaweed. Its vines shake as it walks.</description>
 	<type>Grass</type>
 	<type2></type2>
@@ -1893,10 +1893,10 @@
 <species>
 	<number>113</number><generation>1</generation>>
 	<name>Chansey</name>
-	<image32>./species/icons32/icon113.gif</image32>
-	<image80>./species/icons80/chansey.png</image80>
-	<imageFront>./species/iconsFront/113.png</imageFront>
-	<imageBack>./species/iconsBack/113.png</imageBack>
+	<image32>species/icons32/icon113.gif</image32>
+	<image80>species/icons80/chansey.png</image80>
+	<imageFront>species/iconsFront/113.png</imageFront>
+	<imageBack>species/iconsBack/113.png</imageBack>
 	<description>A rare and elusive POKEMON that is said to bring happiness to those who manage to get it.</description>
 	<type>Normal</type>
 	<type2></type2>
@@ -1948,10 +1948,10 @@
 <species>
 	<number>112</number><generation>1</generation>>
 	<name>Rhydon</name>
-	<image32>./species/icons32/icon112.gif</image32>
-	<image80>./species/icons80/rhydon.png</image80>
-	<imageFront>./species/iconsFront/112.png</imageFront>
-	<imageBack>./species/iconsBack/112.png</imageBack>
+	<image32>species/icons32/icon112.gif</image32>
+	<image80>species/icons80/rhydon.png</image80>
+	<imageFront>species/iconsFront/112.png</imageFront>
+	<imageBack>species/iconsBack/112.png</imageBack>
 	<description>Protected by an armor-like hide, it is capable of living in molten lava of 3,600 degrees.</description>
 	<type>Ground</type>
 	<type2>Rock</type2>
@@ -2004,10 +2004,10 @@
 	<number>111</number><generation>1</generation>>
 	<name>Rhyhorn</name>
 	<description>Protected by an armor-like hide, it is capable of living in molten lava of 3,600 degrees.</description>
-	<image32>./species/icons32/icon111.gif</image32>
-	<image80>./species/icons80/rhyhorn.png</image80>
-	<imageFront>./species/iconsFront/111.png</imageFront>
-	<imageBack>./species/iconsBack/1121.png</imageBack>
+	<image32>species/icons32/icon111.gif</image32>
+	<image80>species/icons80/rhyhorn.png</image80>
+	<imageFront>species/iconsFront/111.png</imageFront>
+	<imageBack>species/iconsBack/1121.png</imageBack>
 	<type>Ground</type>
 	<type2>Rock</type2>
 	<species>Spikes</species>
@@ -2058,10 +2058,10 @@
 <species>
 	<number>110</number><generation>1</generation>>
 	<name>Weezing</name>
-	<image32>./species/icons32/icon110.gif</image32>
-	<image80>./species/icons80/weezing.png</image80>
-	<imageFront>./species/iconsFront/110.png</imageFront>
-	<imageBack>./species/iconsBack/110.png</imageBack>
+	<image32>species/icons32/icon110.gif</image32>
+	<image80>species/icons80/weezing.png</image80>
+	<imageFront>species/iconsFront/110.png</imageFront>
+	<imageBack>species/iconsBack/110.png</imageBack>
 	<description>Where two kinds of poison gases meet, 2 KOFFINGs can fuse into a WEEZING over many years.</description>
 	<type>Poison</type>
 	<type2></type2>
@@ -2109,10 +2109,10 @@
 <species>
 	<number>109</number><generation>1</generation>>
 	<name>Koffing</name>
-	<image32>./species/icons32/icon109.gif</image32>
-	<image80>./species/icons80/koffing.png</image80>
-	<imageFront>./species/iconsFront/109.png</imageFront>
-	<imageBack>./species/iconsBack/109.png</imageBack>
+	<image32>species/icons32/icon109.gif</image32>
+	<image80>species/icons80/koffing.png</image80>
+	<imageFront>species/iconsFront/109.png</imageFront>
+	<imageBack>species/iconsBack/109.png</imageBack>
 	<description>Because it stores several kinds of toxic gases in its body, it is prone to exploding without warning.</description>
 	<type>Poison</type>
 	<type2></type2>
@@ -2164,10 +2164,10 @@
 <species>
 	<number>108</number><generation>1</generation>>
 	<name>Lickitung</name>
-	<image32>./species/icons32/icon108.gif</image32>
-	<image80>./species/icons80/lickitung.png</image80>
-	<imageFront>./species/iconsFront/108.png</imageFront>
-	<imageBack>./species/iconsBack/108.png</imageBack>
+	<image32>species/icons32/icon108.gif</image32>
+	<image80>species/icons80/lickitung.png</image80>
+	<imageFront>species/iconsFront/108.png</imageFront>
+	<imageBack>species/iconsBack/108.png</imageBack>
 	<description>Its tongue can be extended like a chameleon's. It leaves a tingling sensation when it licks enemies.</description>
 	<type>Normal</type>
 	<type2></type2>
@@ -2215,10 +2215,10 @@
 <species>
 	<number>107</number><generation>1</generation>>
 	<name>Hitmonchan</name>
-	<image32>./species/icons32/icon107.gif</image32>
-	<image80>./species/icons80/hitmonchan.png</image80>
-	<imageFront>./species/iconsFront/107.png</imageFront>
-	<imageBack>./species/iconsBack/107.png</imageBack>
+	<image32>species/icons32/icon107.gif</image32>
+	<image80>species/icons80/hitmonchan.png</image80>
+	<imageFront>species/iconsFront/107.png</imageFront>
+	<imageBack>species/iconsBack/107.png</imageBack>
 	<description>While apparently doing nothing, it fires punches in lightning fast volleys that are impossible to see.</description>
 	<type>Fighting</type>
 	<type2></type2>
@@ -2266,10 +2266,10 @@
 <species>
 	<number>106</number><generation>1</generation>>
 	<name>Hitmonlee</name>
-	<image32>./species/icons32/icon106.gif</image32>
-	<image80>./species/icons80/hitmonlee.png</image80>
-	<imageFront>./species/iconsFront/106.png</imageFront>
-	<imageBack>./species/iconsBack/106.png</imageBack>
+	<image32>species/icons32/icon106.gif</image32>
+	<image80>species/icons80/hitmonlee.png</image80>
+	<imageFront>species/iconsFront/106.png</imageFront>
+	<imageBack>species/iconsBack/106.png</imageBack>
 	<description>When in a hurry, its legs lengthen progressively. It runs smoothly with extra long, loping strides.</description>
 	<type>Fighting</type>
 	<type2></type2>
@@ -2317,10 +2317,10 @@
 <species>
 	<number>105</number><generation>1</generation>>
 	<name>Marowak</name>
-	<image32>./species/icons32/icon105.gif</image32>
-	<image80>./species/icons80/marowak.png</image80>
-	<imageFront>./species/iconsFront/105.png</imageFront>
-	<imageBack>./species/iconsBack/105.png</imageBack>
+	<image32>species/icons32/icon105.gif</image32>
+	<image80>species/icons80/marowak.png</image80>
+	<imageFront>species/iconsFront/105.png</imageFront>
+	<imageBack>species/iconsBack/105.png</imageBack>
 	<description>The bone it holds is its key weapon. It throws the bone skillfully like a boomerang to KO targets.</description>
 	<type>Ground</type>
 	<type2></type2>
@@ -2376,10 +2376,10 @@
 <species>
 	<number>104</number><generation>1</generation>>
 	<name>Cubone</name>
-	<image32>./species/icons32/icon104.gif</image32>
-	<image80>./species/icons80/cubone.png</image80>
-	<imageFront>./species/iconsFront/104.png</imageFront>
-	<imageBack>./species/iconsBack/104.png</imageBack>
+	<image32>species/icons32/icon104.gif</image32>
+	<image80>species/icons80/cubone.png</image80>
+	<imageFront>species/iconsFront/104.png</imageFront>
+	<imageBack>species/iconsBack/104.png</imageBack>
 	<description>Because it never removes its skull helmet, no one has ever seen this POKEMON's real face.</description>
 	<type>Ground</type>
 	<type2></type2>
@@ -2440,10 +2440,10 @@
 <species>
 	<number>103</number><generation>1</generation>>
 	<name>Exeggutor</name>
-	<image32>./species/icons32/icon103.gif</image32>
-	<image80>./species/icons80/exeggutor.png</image80>
-	<imageFront>./species/iconsFront/103.png</imageFront>
-	<imageBack>./species/iconsBack/103.png</imageBack>
+	<image32>species/icons32/icon103.gif</image32>
+	<image80>species/icons80/exeggutor.png</image80>
+	<imageFront>species/iconsFront/103.png</imageFront>
+	<imageBack>species/iconsBack/103.png</imageBack>
 	<description>Legend has it that on rare occasions, one of its heads will drop off and continue on as an EXEGGCUTE.</description>
 	<type>Grass</type>
 	<type2>Psychic</type2>
@@ -2499,10 +2499,10 @@
 <species>
 	<number>102</number><generation>1</generation>>
 	<name>Exeggcute</name>
-	<image32>./species/icons32/icon102.gif</image32>
-	<image80>./species/icons80/exeggcute.png</image80>
-	<imageFront>./species/iconsFront/102.png</imageFront>
-	<imageBack>./species/iconsBack/102.png</imageBack>
+	<image32>species/icons32/icon102.gif</image32>
+	<image80>species/icons80/exeggcute.png</image80>
+	<imageFront>species/iconsFront/102.png</imageFront>
+	<imageBack>species/iconsBack/102.png</imageBack>
 	<description>Often mistaken for eggs. When disturbed, they quickly gather and attack in swarms.</description>
 	<type>Grass</type>
 	<type2>Psychic</type2>
@@ -2558,10 +2558,10 @@
 <species>
 	<number>101</number><generation>1</generation>>
 	<name>Electrode</name>
-	<image32>./species/icons32/icon101.gif</image32>
-	<image80>./species/icons80/electrode.png</image80>
-	<imageFront>./species/iconsFront/101.png</imageFront>
-	<imageBack>./species/iconsBack/101.png</imageBack>
+	<image32>species/icons32/icon101.gif</image32>
+	<image80>species/icons80/electrode.png</image80>
+	<imageFront>species/iconsFront/101.png</imageFront>
+	<imageBack>species/iconsBack/101.png</imageBack>
 	<description>It stores electric energy under very high pressure. It often explodes with little or no provocation.</description>
 	<type>Electric</type>
 	<type2></type2>
@@ -2609,10 +2609,10 @@
 <species>
 	<number>100</number><generation>1</generation>>
 	<name>Voltorb</name>
-	<image32>./species/icons32/icon100.gif</image32>
-	<image80>./species/icons80/voltorb.png</image80>
-	<imageFront>./species/iconsFront/100.png</imageFront>
-	<imageBack>./species/iconsBack/100.png</imageBack>
+	<image32>species/icons32/icon100.gif</image32>
+	<image80>species/icons80/voltorb.png</image80>
+	<imageFront>species/iconsFront/100.png</imageFront>
+	<imageBack>species/iconsBack/100.png</imageBack>
 	<description>Usually found in power plants. Easily mistaken for a Pokeball, they have zapped many people.</description>
 	<type>Electric</type>
 	<type2></type2>
@@ -2664,10 +2664,10 @@
 <species>
 	<number>99</number><generation>1</generation>>
 	<name>Kingler</name>
-	<image32>./species/icons32/icon099.gif</image32>
-	<image80>./species/icons80/kingler.png</image80>
-	<imageFront>./species/iconsFront/99.png</imageFront>
-	<imageBack>./species/iconsBack/99.png</imageBack>
+	<image32>species/icons32/icon099.gif</image32>
+	<image80>species/icons80/kingler.png</image80>
+	<imageFront>species/iconsFront/99.png</imageFront>
+	<imageBack>species/iconsBack/99.png</imageBack>
 	<description>The large pincer has 10000 hp of crushing power. However, its huge size makes it unwieldy to use.</description>
 	<type>Water</type>
 	<type2></type2>
@@ -2722,10 +2722,10 @@
 <species>
 	<number>98</number><generation>1</generation>>
 	<name>Krabby</name>
-	<image32>./species/icons32/icon098.gif</image32>
-	<image80>./species/icons80/krabby.png</image80>
-	<imageFront>./species/iconsFront/98.png</imageFront>
-	<imageBack>./species/iconsBack/98.png</imageBack>
+	<image32>species/icons32/icon098.gif</image32>
+	<image80>species/icons80/krabby.png</image80>
+	<imageFront>species/iconsFront/98.png</imageFront>
+	<imageBack>species/iconsBack/98.png</imageBack>
 	<description>Its pincers are not only powerful weapons, they are used for balance when walking sideways.</description>
 	<type>Water</type>
 	<type2></type2>
@@ -2780,10 +2780,10 @@
 <species>
 	<number>97</number><generation>1</generation>>
 	<name>Hypno</name>
-	<image32>./species/icons32/icon097.gif</image32>
-	<image80>./species/icons80/hypno.png</image80>
-	<imageFront>./species/iconsFront/97.png</imageFront>
-	<imageBack>./species/iconsBack/97.png</imageBack>
+	<image32>species/icons32/icon097.gif</image32>
+	<image80>species/icons80/hypno.png</image80>
+	<imageFront>species/iconsFront/97.png</imageFront>
+	<imageBack>species/iconsBack/97.png</imageBack>
 	<description>When it locks eyes with and enemy, it will use a mix of PSI moves such as HYPNOSIS and CONFUSION.</description>
 	<type>Psychic</type>
 	<type2></type2>
@@ -2838,10 +2838,10 @@
 <species>
 	<number>96</number><generation>1</generation>>
 	<name>Drowzee</name>
-	<image32>./species/icons32/icon096.gif</image32>
-	<image80>./species/icons80/drowzee.png</image80>
-	<imageFront>./species/iconsFront/96.png</imageFront>
-	<imageBack>./species/iconsBack/96.png</imageBack>
+	<image32>species/icons32/icon096.gif</image32>
+	<image80>species/icons80/drowzee.png</image80>
+	<imageFront>species/iconsFront/96.png</imageFront>
+	<imageBack>species/iconsBack/96.png</imageBack>
 	<description>Puts enemies to sleep then eats their dreams. Occasionally gets sick from eating bad dreams.</description>
 	<type>Psychic</type>
 	<type2></type2>
@@ -2900,10 +2900,10 @@
 <species>
 	<number>95</number><generation>1</generation>>
 	<name>Onix</name>
-	<image32>./species/icons32/icon095.gif</image32>
-	<image80>./species/icons80/onix.png</image80>
-	<imageFront>./species/iconsFront/95.png</imageFront>
-	<imageBack>./species/iconsBack/95.png</imageBack>
+	<image32>species/icons32/icon095.gif</image32>
+	<image80>species/icons80/onix.png</image80>
+	<imageFront>species/iconsFront/95.png</imageFront>
+	<imageBack>species/iconsBack/95.png</imageBack>
 	<description>As it grows, the stone portions of its body harden to become similar to diamond, but colored black.</description>
 	<type>Rock</type>
 	<type2>Ground</type2>
@@ -2959,10 +2959,10 @@
 <species>
 	<number>94</number><generation>1</generation>>
 	<name>Gengar</name>
-	<image32>./species/icons32/icon094.gif</image32>
-	<image80>./species/icons80/gengar.png</image80>
-	<imageFront>./species/iconsFront/94.png</imageFront>
-	<imageBack>./species/iconsBack/94.png</imageBack>
+	<image32>species/icons32/icon094.gif</image32>
+	<image80>species/icons80/gengar.png</image80>
+	<imageFront>species/iconsFront/94.png</imageFront>
+	<imageBack>species/iconsBack/94.png</imageBack>
 	<description>Under a full moon, this POKEMON likes to mimic the shadows of people and laugh at their fright.</description>
 	<type>Ghost</type>
 	<type2>Poison</type2>
@@ -3010,10 +3010,10 @@
 <species>
 	<number>93</number><generation>1</generation>>
 	<name>Haunter</name>
-	<image32>./species/icons32/icon093.gif</image32>
-	<image80>./species/icons80/haunter.png</image80>
-	<imageFront>./species/iconsFront/93.png</imageFront>
-	<imageBack>./species/iconsBack/93.png</imageBack>
+	<image32>species/icons32/icon093.gif</image32>
+	<image80>species/icons80/haunter.png</image80>
+	<imageFront>species/iconsFront/93.png</imageFront>
+	<imageBack>species/iconsBack/93.png</imageBack>
 	<description>Because of its ability to slip through Detect walls, it is said to be from another dimension.</description>
 	<type>Ghost</type>
 	<type2>Poison</type2>
@@ -3061,10 +3061,10 @@
 <species>
 	<number>92</number><generation>1</generation>>
 	<name>Gastly</name>
-	<image32>./species/icons32/icon092.gif</image32>
-	<image80>./species/icons80/gastly.png</image80>
-	<imageFront>./species/iconsFront/92.png</imageFront>
-	<imageBack>./species/iconsBack/92.png</imageBack>
+	<image32>species/icons32/icon092.gif</image32>
+	<image80>species/icons80/gastly.png</image80>
+	<imageFront>species/iconsFront/92.png</imageFront>
+	<imageBack>species/iconsBack/92.png</imageBack>
 	<description>Almost invisible, this gaseous POKEMON cloaks the target and puts it to sleep without notice.</description>
 	<type>Ghost</type>
 	<type2>Poison</type2>
@@ -3112,10 +3112,10 @@
 <species>
 	<number>91</number><generation>1</generation>>
 	<name>Cloyster</name>
-	<image32>./species/icons32/icon091.gif</image32>
-	<image80>./species/icons80/cloyster.png</image80>
-	<imageFront>./species/iconsFront/91.png</imageFront>
-	<imageBack>./species/iconsBack/91.png</imageBack>
+	<image32>species/icons32/icon091.gif</image32>
+	<image80>species/icons80/cloyster.png</image80>
+	<imageFront>species/iconsFront/91.png</imageFront>
+	<imageBack>species/iconsBack/91.png</imageBack>
 	<description>When attacked, it launches its horns in quick volleys. Its innards have never been seen.</description>
 	<type>Water</type>
 	<type2>Ice</type2>
@@ -3175,10 +3175,10 @@
 <species>
 	<number>90</number><generation>1</generation>>
 	<name>Shellder</name>
-	<image32>./species/icons32/icon090.gif</image32>
-	<image80>./species/icons80/shellder.png</image80>
-	<imageFront>./species/iconsFront/90.png</imageFront>
-	<imageBack>./species/iconsBack/90.png</imageBack>
+	<image32>species/icons32/icon090.gif</image32>
+	<image80>species/icons80/shellder.png</image80>
+	<imageFront>species/iconsFront/90.png</imageFront>
+	<imageBack>species/iconsBack/90.png</imageBack>
 	<description>Its hard shell repels any kind of attack. It is vulnerable only when its shell is open.</description>
 	<type>Water</type>
 	<type2></type2>
@@ -3234,10 +3234,10 @@
 <species>
 	<number>89</number><generation>1</generation>>
 	<name>Muk</name>
-	<image32>./species/icons32/icon089.gif</image32>
-	<image80>./species/icons80/muk.png</image80>
-	<imageFront>./species/iconsFront/89.png</imageFront>
-	<imageBack>./species/iconsBack/89.png</imageBack>
+	<image32>species/icons32/icon089.gif</image32>
+	<image80>species/icons80/muk.png</image80>
+	<imageFront>species/iconsFront/89.png</imageFront>
+	<imageBack>species/iconsBack/89.png</imageBack>
 	<description>Thickly covered with a filthy, vile sludge. It is so toxic, even its footprints contain poison.</description>
 	<type>Poison</type>
 	<type2></type2>
@@ -3297,10 +3297,10 @@
 <species>
 	<number>88</number><generation>1</generation>>
 	<name>Grimer</name>
-	<image32>./species/icons32/icon088.gif</image32>
-	<image80>./species/icons80/grimer.png</image80>
-	<imageFront>./species/iconsFront/88.png</imageFront>
-	<imageBack>./species/iconsBack/88.png</imageBack>
+	<image32>species/icons32/icon088.gif</image32>
+	<image80>species/icons80/grimer.png</image80>
+	<imageFront>species/iconsFront/88.png</imageFront>
+	<imageBack>species/iconsBack/88.png</imageBack>
 	<description>Appears in filthy areas. Thrives by sucking up polluted sludge that is pumped out of factories.</description>
 	<type>Poison</type>
 	<type2></type2>
@@ -3360,10 +3360,10 @@
 <species>
 	<number>87</number><generation>1</generation>>
 	<name>Dewgong</name>
-	<image32>./species/icons32/icon087.gif</image32>
-	<image80>./species/icons80/dewgong.png</image80>
-	<imageFront>./species/iconsFront/87.png</imageFront>
-	<imageBack>./species/iconsBack/87.png</imageBack>
+	<image32>species/icons32/icon087.gif</image32>
+	<image80>species/icons80/dewgong.png</image80>
+	<imageFront>species/iconsFront/87.png</imageFront>
+	<imageBack>species/iconsBack/87.png</imageBack>
 	<description>Stores thermal energy in its body. Swims at a steady 8 knots even in intensely cold waters.</description>
 	<type>Water</type>
 	<type2>Ice</type2>
@@ -3415,10 +3415,10 @@
 <species>
 	<number>86</number><generation>1</generation>>
 	<name>Seel</name>
-	<image32>./species/icons32/icon086.gif</image32>
-	<image80>./species/icons80/seel.png</image80>
-	<imageFront>./species/iconsFront/86.png</imageFront>
-	<imageBack>./species/iconsBack/86.png</imageBack>
+	<image32>species/icons32/icon086.gif</image32>
+	<image80>species/icons80/seel.png</image80>
+	<imageFront>species/iconsFront/86.png</imageFront>
+	<imageBack>species/iconsBack/86.png</imageBack>
 	<description>The protruding horn on its head is very hard. It is used for bashing through thick ice.</description>
 	<type>Water</type>
 	<type2></type2>
@@ -3470,10 +3470,10 @@
 <species>
 	<number>85</number><generation>1</generation>>
 	<name>Dodrio</name>
-	<image32>./species/icons32/icon085.gif</image32>
-	<image80>./species/icons80/dodrio.png</image80>
-	<imageFront>./species/iconsFront/85.png</imageFront>
-	<imageBack>./species/iconsBack/85.png</imageBack>
+	<image32>species/icons32/icon085.gif</image32>
+	<image80>species/icons80/dodrio.png</image80>
+	<imageFront>species/iconsFront/85.png</imageFront>
+	<imageBack>species/iconsBack/85.png</imageBack>
 	<description>Using its three brains to execute complex plans. While two heads sleep, one head stays awake.</description>
 	<type>Normal</type>
 	<type2>Flying</type2>
@@ -3529,10 +3529,10 @@
 <species>
 	<number>84</number><generation>1</generation>>
 	<name>Doduo</name>
-	<image32>./species/icons32/icon084.gif</image32>
-	<image80>./species/icons80/doduo.png</image80>
-	<imageFront>./species/iconsFront/84.png</imageFront>
-	<imageBack>./species/iconsBack/84.png</imageBack>
+	<image32>species/icons32/icon084.gif</image32>
+	<image80>species/icons80/doduo.png</image80>
+	<imageFront>species/iconsFront/84.png</imageFront>
+	<imageBack>species/iconsBack/84.png</imageBack>
 	<description>A bird that makes up for its poor flying with its fast foot speed. Leaves giant footprints.</description>
 	<type>Normal</type>
 	<type2>Flying</type2>
@@ -3588,10 +3588,10 @@
 <species>
 	<number>83</number><generation>1</generation>>
 	<name>Farfetch'd</name>
-	<image32>./species/icons32/icon083.gif</image32>
-	<image80>./species/icons80/farfetchd.png</image80>
-	<imageFront>./species/iconsFront/83.png</imageFront>
-	<imageBack>./species/iconsBack/83.png</imageBack>
+	<image32>species/icons32/icon083.gif</image32>
+	<image80>species/icons80/farfetchd.png</image80>
+	<imageFront>species/iconsFront/83.png</imageFront>
+	<imageBack>species/iconsBack/83.png</imageBack>
 	<description>The sprig of green onions it holds is its weapon. It is used much like a metal sword.</description>
 	<type>Normal</type>
 	<type2>Flying</type2>
@@ -3647,10 +3647,10 @@
 <species>
 	<number>82</number><generation>1</generation>>
 	<name>Magneton</name>
-	<image32>./species/icons32/icon082.gif</image32>
-	<image80>./species/icons80/magneton.png</image80>
-	<imageFront>./species/iconsFront/82.png</imageFront>
-	<imageBack>./species/iconsBack/82.png</imageBack>
+	<image32>species/icons32/icon082.gif</image32>
+	<image80>species/icons80/magneton.png</image80>
+	<imageFront>species/iconsFront/82.png</imageFront>
+	<imageBack>species/iconsBack/82.png</imageBack>
 	<description>Formed by several MAGNEMITEs linked together. They frequently appear when sunspots flare up.</description>
 	<type>Electric</type>
 	<type2></type2>
@@ -3706,10 +3706,10 @@
 <species>
 	<number>81</number><generation>1</generation>>
 	<name>Magnemite</name>
-	<image32>./species/icons32/icon081.gif</image32>
-	<image80>./species/icons80/magnemite.png</image80>
-	<imageFront>./species/iconsFront/81.png</imageFront>
-	<imageBack>./species/iconsBack/81.png</imageBack>
+	<image32>species/icons32/icon081.gif</image32>
+	<image80>species/icons80/magnemite.png</image80>
+	<imageFront>species/iconsFront/81.png</imageFront>
+	<imageBack>species/iconsBack/81.png</imageBack>
 	<description>Uses anti-gravity to stay suspended. Appears without warning and uses THUNDER WAVE and similar moves.</description>
 	<type>Electric</type>
 	<type2></type2>
@@ -3765,10 +3765,10 @@
 <species>
 	<number>80</number><generation>1</generation>>
 	<name>Slowbro</name>
-	<image32>./species/icons32/icon080.gif</image32>
-	<image80>./species/icons80/slowbro.png</image80>
-	<imageFront>./species/iconsFront/80.png</imageFront>
-	<imageBack>./species/iconsBack/80.png</imageBack>
+	<image32>species/icons32/icon080.gif</image32>
+	<image80>species/icons80/slowbro.png</image80>
+	<imageFront>species/iconsFront/80.png</imageFront>
+	<imageBack>species/iconsBack/80.png</imageBack>
 	<description>The SHELLDER that is latched onto SLOWPOKE's tail is said to feed on the host's left over scraps.</description>
 	<type>Water</type>
 	<type2>Psychic</type2>
@@ -3828,10 +3828,10 @@
 <species>
 	<number>79</number><generation>1</generation>>
 	<name>Slowpoke</name>
-	<image32>./species/icons32/icon079.gif</image32>
-	<image80>./species/icons80/slowpoke.png</image80>
-	<imageFront>./species/iconsFront/79.png</imageFront>
-	<imageBack>./species/iconsBack/79.png</imageBack>
+	<image32>species/icons32/icon079.gif</image32>
+	<image80>species/icons80/slowpoke.png</image80>
+	<imageFront>species/iconsFront/79.png</imageFront>
+	<imageBack>species/iconsBack/79.png</imageBack>
 	<description>Incredibly slow and dopey. It takes 5 seconds for it to feel pain when under attack.</description>
 	<type>Water</type>
 	<type2>Psychic</type2>
@@ -3887,10 +3887,10 @@
 <species>
 	<number>78</number><generation>1</generation>>
 	<name>Rapidash</name>
-	<image32>./species/icons32/icon078.gif</image32>
-	<image80>./species/icons80/rapidash.png</image80>
-	<imageFront>./species/iconsFront/78.png</imageFront>
-	<imageBack>./species/iconsBack/78.png</imageBack>
+	<image32>species/icons32/icon078.gif</image32>
+	<image80>species/icons80/rapidash.png</image80>
+	<imageFront>species/iconsFront/78.png</imageFront>
+	<imageBack>species/iconsBack/78.png</imageBack>
 	<description>Very competitive, this POKEMON will chase anything that moves fast in the hopes of racing it.</description>
 	<type>Fire</type>
 	<type2></type2>
@@ -3946,10 +3946,10 @@
 <species>
 	<number>77</number><generation>1</generation>>
 	<name>Ponyta</name>
-	<image32>./species/icons32/icon077.gif</image32>
-	<image80>./species/icons80/ponyta.png</image80>
-	<imageFront>./species/iconsFront/77.png</imageFront>
-	<imageBack>./species/iconsBack/77.png</imageBack>
+	<image32>species/icons32/icon077.gif</image32>
+	<image80>species/icons80/ponyta.png</image80>
+	<imageFront>species/iconsFront/77.png</imageFront>
+	<imageBack>species/iconsBack/77.png</imageBack>
 	<description>Its hooves are 10 times harder than diamonds. It can trample anything completely flat in little time</description>
 	<type>Fire</type>
 	<type2></type2>
@@ -4002,10 +4002,10 @@
 <species>
 	<number>76</number><generation>1</generation>>
 	<name>Golem</name>
-	<image32>./species/icons32/icon076.gif</image32>
-	<image80>./species/icons80/golem.png</image80>
-	<imageFront>./species/iconsFront/76.png</imageFront>
-	<imageBack>./species/iconsBack/76.png</imageBack>
+	<image32>species/icons32/icon076.gif</image32>
+	<image80>species/icons80/golem.png</image80>
+	<imageFront>species/iconsFront/76.png</imageFront>
+	<imageBack>species/iconsBack/76.png</imageBack>
 	<description>Its boulder-like body is extremely hard. It can easily withstand dynamite blasts without damage.</description>
 	<type>Rock</type>
 	<type2>Ground</type2>
@@ -5280,10 +5280,10 @@
 <species>
 	<number>50</number><generation>1</generation>>
 	<name>Diglett</name>
-	<image32>./species/icons32/icon050.gif</image32>
-	<image80>./species/icons80/diglett.png</image80>
-	<imageFront>./species/iconsFront/50.png</imageFront>
-	<imageBack>./species/iconsBack/50.png</imageBack>
+	<image32>species/icons32/icon050.gif</image32>
+	<image80>species/icons80/diglett.png</image80>
+	<imageFront>species/iconsFront/50.png</imageFront>
+	<imageBack>species/iconsBack/50.png</imageBack>
 	<description>Lives about one yard underground where it feeds on plant roots. It sometimes appears above ground.</description>
 	<type>Ground</type>
 	<type2>Mole</type2>
@@ -5330,10 +5330,10 @@
 <species>
 	<number>49</number><generation>1</generation>>
 	<name>Venomoth</name>
-	<image32>./species/icons32/icon049.gif</image32>
-	<image80>./species/icons80/venomoth.png</image80>
-	<imageFront>./species/iconsFront/49.png</imageFront>
-	<imageBack>./species/iconsBack/49.png</imageBack>
+	<image32>species/icons32/icon049.gif</image32>
+	<image80>species/icons80/venomoth.png</image80>
+	<imageFront>species/iconsFront/49.png</imageFront>
+	<imageBack>species/iconsBack/49.png</imageBack>
 	<description>The dust-like scales covering its wings are color coded to indicate the kinds of poison it has.</description>
 	<type>Bug</type>
 	<type2></type2>
@@ -5388,10 +5388,10 @@
 <species>
 	<number>48</number><generation>1</generation>>
 	<name>Venonat</name>
-	<image32>./species/icons32/icon048.gif</image32>
-	<image80>./species/icons80/venonat.png</image80>
-	<imageFront>./species/iconsFront/48.png</imageFront>
-	<imageBack>./species/iconsBack/48.png</imageBack>
+	<image32>species/icons32/icon048.gif</image32>
+	<image80>species/icons80/venonat.png</image80>
+	<imageFront>species/iconsFront/48.png</imageFront>
+	<imageBack>species/iconsBack/48.png</imageBack>
 	<description>Lives in the shadows of tall trees where it eats insects. It is attracted by light at night.</description>
 	<type>Bug</type>
 	<type2></type2>
@@ -5446,10 +5446,10 @@
 <species>
 	<number>47</number><generation>1</generation>>
 	<name>Parasect</name>
-	<image32>./species/icons32/icon047.gif</image32>
-	<image80>./species/icons80/parasect.png</image80>
-	<imageFront>./species/iconsFront/47.png</imageFront>
-	<imageBack>./species/iconsBack/47.png</imageBack>
+	<image32>species/icons32/icon047.gif</image32>
+	<image80>species/icons80/parasect.png</image80>
+	<imageFront>species/iconsFront/47.png</imageFront>
+	<imageBack>species/iconsBack/47.png</imageBack>
 	<description>A host-parasite pair in which the parasite mushroom has taken over the host bug. Prefers damp places.</description>
 	<type>Bug</type>
 	<type2>Grass</type2>
@@ -5496,10 +5496,10 @@
 <species>
 	<number>46</number><generation>1</generation>>
 	<name>Paras</name>
-	<image32>./species/icons32/icon046.gif</image32>
-	<image80>./species/icons80/paras.png</image80>
-	<imageFront>./species/iconsFront/46.png</imageFront>
-	<imageBack>./species/iconsBack/46.png</imageBack>
+	<image32>species/icons32/icon046.gif</image32>
+	<image80>species/icons80/paras.png</image80>
+	<imageFront>species/iconsFront/46.png</imageFront>
+	<imageBack>species/iconsBack/46.png</imageBack>
 	<description>Burrows to suck tree roots. The mushrooms on its back grow by drawing nutrients from the bug host.</description>
 	<type>Bug</type>
 	<type2>Grass</type2>
@@ -5546,10 +5546,10 @@
 <species>
 	<number>45</number><generation>1</generation>>
 	<name>Vileplume</name>
-	<image32>./species/icons32/icon045.gif</image32>
-	<image80>./species/icons80/vileplume.png</image80>
-	<imageFront>./species/iconsFront/45.png</imageFront>
-	<imageBack>./species/iconsBack/45.png</imageBack>
+	<image32>species/icons32/icon045.gif</image32>
+	<image80>species/icons80/vileplume.png</image80>
+	<imageFront>species/iconsFront/45.png</imageFront>
+	<imageBack>species/iconsBack/45.png</imageBack>
 	<description>The larger its petals, the more toxic pollen it contains. Its big head is heavy and hard to hold up.</description>
 	<type>Grass</type>
 	<type2>Poison</type2>
@@ -5600,10 +5600,10 @@
 <species>
 	<number>44</number><generation>1</generation>>
 	<name>Gloom</name>
-	<image32>./species/icons32/icon044.gif</image32>
-	<image80>./species/icons80/gloom.png</image80>
-	<imageFront>./species/iconsFront/44.png</imageFront>
-	<imageBack>./species/iconsBack/44.png</imageBack>
+	<image32>species/icons32/icon044.gif</image32>
+	<image80>species/icons80/gloom.png</image80>
+	<imageFront>species/iconsFront/44.png</imageFront>
+	<imageBack>species/iconsBack/44.png</imageBack>
 	<description>The fluid that oozes from its mouth isn't drool. It is a nectar that is used to attract prey.</description>
 	<type>Grass</type>
 	<type2>Poison</type2>
@@ -5654,10 +5654,10 @@
 <species>
 	<number>43</number><generation>1</generation>>
 	<name>Oddish</name>
-	<image32>./species/icons32/icon043.gif</image32>
-	<image80>./species/icons80/oddish.png</image80>
-	<imageFront>./species/iconsFront/43.png</imageFront>
-	<imageBack>./species/iconsBack/43.png</imageBack>
+	<image32>species/icons32/icon043.gif</image32>
+	<image80>species/icons80/oddish.png</image80>
+	<imageFront>species/iconsFront/43.png</imageFront>
+	<imageBack>species/iconsBack/43.png</imageBack>
 	<description>During the day, it keeps its face buried in the ground. At night, it wanders around sowing its seeds.</description>
 	<type>Grass</type>
 	<type2>Poison</type2>
@@ -5708,10 +5708,10 @@
 <species>
 	<number>42</number><generation>1</generation>>
 	<name>Golbat</name>
-	<image32>./species/icons32/icon042.gif</image32>
-	<image80>./species/icons80/golbat.png</image80>
-	<imageFront>./species/iconsFront/42.png</imageFront>
-	<imageBack>./species/iconsBack/42.png</imageBack>
+	<image32>species/icons32/icon042.gif</image32>
+	<image80>species/icons80/golbat.png</image80>
+	<imageFront>species/iconsFront/42.png</imageFront>
+	<imageBack>species/iconsBack/42.png</imageBack>
 	<description>Once it strikes, it will not stop draining energy from the victim even if it gets too heavy to fly.</description>
 	<type>Poison</type>
 	<type2>Flying</type2>
@@ -5762,10 +5762,10 @@
 <species>
 	<number>41</number><generation>1</generation>>
 	<name>Zubat</name>
-	<image32>./species/icons32/icon041.gif</image32>
-	<image80>./species/icons80/zubat.png</image80>
-	<imageFront>./species/iconsFront/41.png</imageFront>
-	<imageBack>./species/iconsBack/41.png</imageBack>
+	<image32>species/icons32/icon041.gif</image32>
+	<image80>species/icons80/zubat.png</image80>
+	<imageFront>species/iconsFront/41.png</imageFront>
+	<imageBack>species/iconsBack/41.png</imageBack>
 	<description>Forms colonies in perpetually dark places. Uses ultrasonic waves to identify and approach targets.</description>
 	<type>Poison</type>
 	<type2>Flying</type2>
@@ -5812,10 +5812,10 @@
 <species>
 	<number>40</number><generation>1</generation>>
 	<name>Wigglytuff</name>
-	<image32>./species/icons32/icon040.gif</image32>
-	<image80>./species/icons80/wigglytuff.png</image80>
-	<imageFront>./species/iconsFront/40.png</imageFront>
-	<imageBack>./species/iconsBack/40.png</imageBack>
+	<image32>species/icons32/icon040.gif</image32>
+	<image80>species/icons80/wigglytuff.png</image80>
+	<imageFront>species/iconsFront/40.png</imageFront>
+	<imageBack>species/iconsBack/40.png</imageBack>
 	<description>The body is soft and rubbery. When angered, it will suck in air and inflate itself to an enormous size.</description>
 	<type>Normal</type>
 	<type2></type2>
@@ -5870,10 +5870,10 @@
 <species>
 	<number>39</number><generation>1</generation>>
 	<name>Jigglypuff</name>
-	<image32>./species/icons32/icon039.gif</image32>
-	<image80>./species/icons80/jigglypuff.png</image80>
-	<imageFront>./species/iconsFront/39.png</imageFront>
-	<imageBack>./species/iconsBack/39.png</imageBack>
+	<image32>species/icons32/icon039.gif</image32>
+	<image80>species/icons80/jigglypuff.png</image80>
+	<imageFront>species/iconsFront/39.png</imageFront>
+	<imageBack>species/iconsBack/39.png</imageBack>
 	<description>When its huge eyes light up, it sings a mysteriously soothing melody that lulls its enemies to sleep.</description>
 	<type>Normal</type>
 	<type2></type2>
@@ -5928,10 +5928,10 @@
 <species>
 	<number>38</number><generation>1</generation>>
 	<name>Ninetales</name>
-	<image32>./species/icons32/icon038.gif</image32>
-	<image80>./species/icons80/ninetales.png</image80>
-	<imageFront>./species/iconsFront/38.png</imageFront>
-	<imageBack>./species/iconsBack/38.png</imageBack>
+	<image32>species/icons32/icon038.gif</image32>
+	<image80>species/icons80/ninetales.png</image80>
+	<imageFront>species/iconsFront/38.png</imageFront>
+	<imageBack>species/iconsBack/38.png</imageBack>
 	<description>Very smart and very vengeful. Grabbing one of its many tails could result in a 1000-year curse.</description>
 	<type>Fire</type>
 	<type2></type2>
@@ -5982,10 +5982,10 @@
 <species>
 	<number>37</number><generation>1</generation>>
 	<name>Vulpix</name>
-	<image32>./species/icons32/icon037.gif</image32>
-	<image80>./species/icons80/vulpix.png</image80>
-	<imageFront>./species/iconsFront/37.png</imageFront>
-	<imageBack>./species/iconsBack/37.png</imageBack>
+	<image32>species/icons32/icon037.gif</image32>
+	<image80>species/icons80/vulpix.png</image80>
+	<imageFront>species/iconsFront/37.png</imageFront>
+	<imageBack>species/iconsBack/37.png</imageBack>
 	<description>At the time of birth, it has just one tail. The tail splits from its tip as it grows older.</description>
 	<type>Fire</type>
 	<type2></type2>
@@ -6036,10 +6036,10 @@
 <species>
 	<number>36</number><generation>1</generation>>
 	<name>Clefable</name>
-	<image32>./species/icons32/icon036.gif</image32>
-	<image80>./species/icons80/clefable.png</image80>
-	<imageFront>./species/iconsFront/36.png</imageFront>
-	<imageBack>./species/iconsBack/36.png</imageBack>
+	<image32>species/icons32/icon036.gif</image32>
+	<image80>species/icons80/clefable.png</image80>
+	<imageFront>species/iconsFront/36.png</imageFront>
+	<imageBack>species/iconsBack/36.png</imageBack>
 	<description>A timid fairy POKEMON that is rarely seen. It will run and hide the moment it senses people.</description>
 	<type>Normal</type>
 	<type2></type2>
@@ -6094,10 +6094,10 @@
 <species>
 	<number>35</number><generation>1</generation>>
 	<name>Clefairy</name>
-	<image32>./species/icons32/icon035.gif</image32>
-	<image80>./species/icons80/clefairy.png</image80>
-	<imageFront>./species/iconsFront/35.png</imageFront>
-	<imageBack>./species/iconsBack/35.png</imageBack>
+	<image32>species/icons32/icon035.gif</image32>
+	<image80>species/icons80/clefairy.png</image80>
+	<imageFront>species/iconsFront/35.png</imageFront>
+	<imageBack>species/iconsBack/35.png</imageBack>
 	<description>Its magical and cute appeal has many admirers. It is rare and found only in certain areas.</description>
 	<type>Normal</type>
 	<type2></type2>
@@ -6152,10 +6152,10 @@
 <species>
 	<number>34</number><generation>1</generation>>
 	<name>Nidoking</name>
-	<image32>./species/icons32/icon034.gif</image32>
-	<image80>./species/icons80/nidoking-m.png</image80>
-	<imageFront>./species/iconsFront/34.png</imageFront>
-	<imageBack>./species/iconsBack/34.png</imageBack>
+	<image32>species/icons32/icon034.gif</image32>
+	<image80>species/icons80/nidoking-m.png</image80>
+	<imageFront>species/iconsFront/34.png</imageFront>
+	<imageBack>species/iconsBack/34.png</imageBack>
 	<description>It uses its powerful tail in battle to smash, constrict, then break the prey's bones.</description>
 	<type>Poison</type>
 	<type2>Ground</type2>
@@ -6214,10 +6214,10 @@
 <species>
 	<number>33</number><generation>1</generation>>
 	<name>Nidorino</name>
-	<image32>./species/icons32/icon033.gif</image32>
-	<image80>./species/icons80/nidorino-m.png</image80>
-	<imageFront>./species/iconsFront/33.png</imageFront>
-	<imageBack>./species/iconsBack/33.png</imageBack>
+	<image32>species/icons32/icon033.gif</image32>
+	<image80>species/icons80/nidorino-m.png</image80>
+	<imageFront>species/iconsFront/33.png</imageFront>
+	<imageBack>species/iconsBack/33.png</imageBack>
 	<description>An aggressive POKEMON that is quick to attack. The horn on its head secretes a powerful venom.</description>
 	<type>Poison</type>
 	<type2></type2>
@@ -6272,10 +6272,10 @@
 <species>
 	<number>32</number><generation>1</generation>>
 	<name>Nidoran (M)</name>
-	<image32>./species/icons32/icon032.gif</image32>
-	<image80>./species/icons80/nidoran-m.png</image80>
-	<imageFront>./species/iconsFront/32.png</imageFront>
-	<imageBack>./species/iconsBack/32.png</imageBack>
+	<image32>species/icons32/icon032.gif</image32>
+	<image80>species/icons80/nidoran-m.png</image80>
+	<imageFront>species/iconsFront/32.png</imageFront>
+	<imageBack>species/iconsBack/32.png</imageBack>
 	<description>Stiffens its ears to sense danger. The larger its horns, the more powerful it secreted venom.</description>
 	<type>Poison</type>
 	<type2></type2>
@@ -6330,10 +6330,10 @@
 <species>
 	<number>31</number><generation>1</generation>>
 	<name>Nidoqueen</name>
-	<image32>./species/icons32/icon031.gif</image32>
-	<image80>./species/icons80/nidoqueen-f.png</image80>
-	<imageFront>./species/iconsFront/31.png</imageFront>
-	<imageBack>./species/iconsBack/31.png</imageBack>
+	<image32>species/icons32/icon031.gif</image32>
+	<image80>species/icons80/nidoqueen-f.png</image80>
+	<imageFront>species/iconsFront/31.png</imageFront>
+	<imageBack>species/iconsBack/31.png</imageBack>
 	<description>Its hard scales provide strong protection. It uses its hefty bulk to execute powerful moves.</description>
 	<type>Poison</type>
 	<type2>Ground</type2>
@@ -6384,10 +6384,10 @@
 <species>
 	<number>30</number><generation>1</generation>>
 	<name>Nidorina</name>
-	<image32>./species/icons32/icon030.gif</image32>
-	<image80>./species/icons80/nidorina-f.png</image80>
-	<imageFront>./species/iconsFront/30.png</imageFront>
-	<imageBack>./species/iconsBack/30.png</imageBack>
+	<image32>species/icons32/icon030.gif</image32>
+	<image80>species/icons80/nidorina-f.png</image80>
+	<imageFront>species/iconsFront/30.png</imageFront>
+	<imageBack>species/iconsBack/30.png</imageBack>
 	<description>The female's horn develops slowly. Prefers physical attacks such as clawing and biting.</description>
 	<type>Poison</type>
 	<type2></type2>
@@ -6442,7 +6442,10 @@
 <species>
 	<number>29</number><generation>1</generation>>
 	<name>Nidoran (F)</name>
-	<image32>icon029.gif</image32>
+	<image32>species/icons32/icon029.gif</image32>
+	<image80>species/icons80/nidoran-f.png</image80>
+	<imageFront>species/iconsFront/29.png</imageFront>
+	<imageBack>species/iconsBack/29.png</imageBack>
 	<description>Although small, its venomous barbs render this POKEMON dangerous. The female has smaller horns.</description>
 	<type>Poison</type>
 	<type2></type2>
@@ -6498,10 +6501,10 @@
 	<number>28</number><generation>1</generation>>
 	<name>Sandslash</name>
 	<description>Curls up into a spiny ball when threatened. It can roll while curled up to attack or escape.</description>
-	<image32>./species/icons32/icon028.gif</image32>
-	<image80>./species/icons80/sandslash.png</image80>
-	<imageFront>./species/iconsFront/28.png</imageFront>
-	<imageBack>./species/iconsBack/28.png</imageBack>
+	<image32>species/icons32/icon028.gif</image32>
+	<image80>species/icons80/sandslash.png</image80>
+	<imageFront>species/iconsFront/28.png</imageFront>
+	<imageBack>species/iconsBack/28.png</imageBack>
 	<type>Ground</type>
 	<type2></type2>
 	<species>Mouse</species>
@@ -6517,10 +6520,10 @@
 	<number>27</number><generation>1</generation>>
 	<name>Sandshrew</name>
 	<description>Burrows deep underground in arid locations far from water. It only emerges to hunt for food.</description>
-	<image32>./species/icons32/icon027.gif</image32>
-	<image80>./species/icons80/sandshrew.png</image80>
-	<imageFront>./species/iconsFront/27.png</imageFront>
-	<imageBack>./species/iconsBack/27.png</imageBack>
+	<image32>species/icons32/icon027.gif</image32>
+	<image80>species/icons80/sandshrew.png</image80>
+	<imageFront>species/iconsFront/27.png</imageFront>
+	<imageBack>species/iconsBack/27.png</imageBack>
 	<type>Ground</type>
 	<type2></type2>
 	<species>Mouse</species>
@@ -6540,10 +6543,10 @@
 	<number>26</number><generation>1</generation>>
 	<name>Raichu</name>
 	<description>Its long tail serves as a ground to protect itself from its own high voltage power.</description>
-	<image32>./species/icons32/icon026.gif</image32>
-	<image80>./species/icons80/raichu.png</image80>
-	<imageFront>./species/iconsFront/26.png</imageFront>
-	<imageBack>./species/iconsBack/26.png</imageBack>
+	<image32>species/icons32/icon026.gif</image32>
+	<image80>species/icons80/raichu.png</image80>
+	<imageFront>species/iconsFront/26.png</imageFront>
+	<imageBack>species/iconsBack/26.png</imageBack>
 	<type>Electric</type>
 	<type2></type2>
 	<species>Mouse</species>
@@ -6559,10 +6562,10 @@
 	<number>25</number><generation>1</generation>>
 	<name>Pikachu</name>
 	<description>When several of these POKÈMON gather, their electricity could build and cause lightning storms.</description>
-	<image32>./species/icons32/icon025.gif</image32>
-	<image80>./species/icons80/pikachu.png</image80>
-	<imageFront>./species/iconsFront/25.png</imageFront>
-	<imageBack>./species/iconsBack/25.png</imageBack>
+	<image32>species/icons32/icon025.gif</image32>
+	<image80>species/icons80/pikachu.png</image80>
+	<imageFront>species/iconsFront/25.png</imageFront>
+	<imageBack>species/iconsBack/25.png</imageBack>
 	<type>Electric</type>
 	<type2></type2>
 	<species>Mouse</species>
@@ -6614,10 +6617,10 @@
 	<number>24</number><generation>1</generation>>
 	<name>Arbok</name>
 	<description>It is rumored that the ferocious warning markings on its belly differ from area to area.</description>
-	<image32>./species/icons32/icon024.gif</image32>
-	<image80>./species/icons80/arbok.png</image80>
-	<imageFront>./species/iconsFront/24.png</imageFront>
-	<imageBack>./species/iconsBack/24.png</imageBack>
+	<image32>species/icons32/icon024.gif</image32>
+	<image80>species/icons80/arbok.png</image80>
+	<imageFront>species/iconsFront/24.png</imageFront>
+	<imageBack>species/iconsBack/24.png</imageBack>
 	<type>Poison</type>
 	<type2></type2>
 	<species>Cobra</species>
@@ -6669,10 +6672,10 @@
 	<number>23</number><generation>1</generation>>
 	<name>Ekans</name>
 	<description>Moves silently and stealthily. Eats the eggs of birds, such as PIDGEY and SPEAROW, whole.</description>
-	<image32>./species/icons32/icon023.gif</image32>
-	<image80>./species/icons80/ekans.png</image80>
-	<imageFront>./species/iconsFront/23.png</imageFront>
-	<imageBack>./species/iconsBack/23.png</imageBack>
+	<image32>species/icons32/icon023.gif</image32>
+	<image80>species/icons80/ekans.png</image80>
+	<imageFront>species/iconsFront/23.png</imageFront>
+	<imageBack>species/iconsBack/23.png</imageBack>
 	<type>Poison</type>
 	<type2></type2>
 	<species>Snake</species>
@@ -6724,10 +6727,10 @@
 	<number>22</number><generation>1</generation>>
 	<name>Fearow</name>
 	<description>With its huge and magnificent wings, it can keep aloft without ever having to land for rest.</description>
-	<image32>./species/icons32/icon022.gif</image32>
-	<image80>./species/icons80/fearow.png</image80>
-	<imageFront>./species/iconsFront/22.png</imageFront>
-	<imageBack>./species/iconsBack/22.png</imageBack>
+	<image32>species/icons32/icon022.gif</image32>
+	<image80>species/icons80/fearow.png</image80>
+	<imageFront>species/iconsFront/22.png</imageFront>
+	<imageBack>species/iconsBack/22.png</imageBack>
 	<type>Normal</type>
 	<type2>Flying</type2>
 	<species>Beak</species>
@@ -6775,10 +6778,10 @@
 	<number>21</number><generation>1</generation>>
 	<name>Spearow</name>
 	<description>Eats bugs in grassy areas. It has to flap its short wings at high speed to stay airborne.</description>
-	<image32>./species/icons32/icon021.gif</image32>
-	<image80>./species/icons80/spearow.png</image80>
-	<imageFront>./species/iconsFront/21.png</imageFront>
-	<imageBack>./species/iconsBack/21.png</imageBack>
+	<image32>species/icons32/icon021.gif</image32>
+	<image80>species/icons80/spearow.png</image80>
+	<imageFront>species/iconsFront/21.png</imageFront>
+	<imageBack>species/iconsBack/21.png</imageBack>
 	<type>Normal</type>
 	<type2>Flying</type2>
 	<species>Tiny Bird</species>
@@ -6830,10 +6833,10 @@
 	<number>20</number><generation>1</generation>>
 	<name>Raticate</name>
 	<description>It uses its whiskers to maintain its balance. It apparently slows down if they are cut off.</description>
-	<image32>./species/icons32/icon020.gif</image32>
-	<image80>./species/icons80/raticate.png</image80>
-	<imageFront>./species/iconsFront/20.png</imageFront>
-	<imageBack>./species/iconsBack/20.png</imageBack>
+	<image32>species/icons32/icon020.gif</image32>
+	<image80>species/icons80/raticate.png</image80>
+	<imageFront>species/iconsFront/20.png</imageFront>
+	<imageBack>species/iconsBack/20.png</imageBack>
 	<type>Normal</type>
 	<type2></type2>
 	<species>Mouse</species>
@@ -6877,10 +6880,10 @@
 	<number>19</number><generation>1</generation>>
 	<name>Rattata</name>
 	<description>Bites anything when it attacks. Small and very quick, it is a common sight in many places.</description>
-	<image32>./species/icons32/icon019.gif</image32>
-	<image80>./species/icons80/rattata.png</image80>
-	<imageFront>./species/iconsFront/19.png</imageFront>
-	<imageBack>./species/iconsBack/19.png</imageBack>
+	<image32>species/icons32/icon019.gif</image32>
+	<image80>species/icons80/rattata.png</image80>
+	<imageFront>species/iconsFront/19.png</imageFront>
+	<imageBack>species/iconsBack/19.png</imageBack>
 	<imageFront>./PokeFronts/19.png</imageFront>
 	<type>Normal</type>
 	<type2></type2>
@@ -6929,10 +6932,10 @@
 	<number>18</number><generation>1</generation>>
 	<name>Pidgeot</name>
 	<description>When hunting, it skims the surface of water at high speed to pick off unwary prey such as MAGIKARP.</description>
-	<image32>./species/icons32/icon018.gif</image32>
-	<image80>./species/icons80/pidgeot.png</image80>
-	<imageFront>./species/iconsFront/18.png</imageFront>
-	<imageBack>./species/iconsBack/18.png</imageBack>
+	<image32>species/icons32/icon018.gif</image32>
+	<image80>species/icons80/pidgeot.png</image80>
+	<imageFront>species/iconsFront/18.png</imageFront>
+	<imageBack>species/iconsBack/18.png</imageBack>
 	<type>Normal</type>
 	<type2>Flying</type2>
 	<species>Bird</species>
@@ -6980,10 +6983,10 @@
 	<number>17</number><generation>1</generation>>
 	<name>Pidgeotto</name>
 	<description>Very protective of its sprawling territorial area, this POKÈMON will fiercely peck at any intruder.</description>
-	<image32>./species/icons32/icon017.gif</image32>
-	<image80>./species/icons80/pidgeotto.png</image80>
-	<imageFront>./species/iconsFront/17.png</imageFront>
-	<imageBack>./species/iconsBack/17.png</imageBack>
+	<image32>species/icons32/icon017.gif</image32>
+	<image80>species/icons80/pidgeotto.png</image80>
+	<imageFront>species/iconsFront/17.png</imageFront>
+	<imageBack>species/iconsBack/17.png</imageBack>
 	<type>Normal</type>
 	<type2>Flying</type2>
 	<species>Bird</species>
@@ -7035,10 +7038,10 @@
 	<number>16</number><generation>1</generation>>
 	<name>Pidgey</name>
 	<description>A common sight in forests and woods. It flaps its wings at ground level to kick up blinding sand.</description>
-	<image32>./species/icons32/icon016.gif</image32>
-	<image80>./species/icons80/pidgey.png</image80>
-	<imageFront>./species/iconsFront/16.png</imageFront>
-	<imageBack>./species/iconsBack/16.png</imageBack>
+	<image32>species/icons32/icon016.gif</image32>
+	<image80>species/icons80/pidgey.png</image80>
+	<imageFront>species/iconsFront/16.png</imageFront>
+	<imageBack>species/iconsBack/16.png</imageBack>
 	<imageFront>./PokeFronts/16.png</imageFront>
 	<type>Normal</type>
 	<type2>Flying</type2>
@@ -7091,10 +7094,10 @@
 	<number>15</number><generation>1</generation>>
 	<name>Beedrill</name>
 	<description>Flies at high speed and attacks using its large venomous stingers on its forelegs and tail.</description>
-	<image32>./species/icons32/icon015.gif</image32>
-	<image80>./species/icons80/beedrill.png</image80>
-	<imageFront>./species/iconsFront/15.png</imageFront>
-	<imageBack>./species/iconsBack/15.png</imageBack>
+	<image32>species/icons32/icon015.gif</image32>
+	<image80>species/icons80/beedrill.png</image80>
+	<imageFront>species/iconsFront/15.png</imageFront>
+	<imageBack>species/iconsBack/15.png</imageBack>
 	<type>Bug</type>
 	<type2>Poison</type2>
 	<species>Poison Bee</species>
@@ -7150,10 +7153,10 @@
 	<number>14</number><generation>1</generation>>
 	<name>Kakuna</name>
 	<description>Almost incapable of moving, this POKÈMON can only harden its shell to protect itself from predators.</description>
-	<image32>./species/icons32/icon014.gif</image32>
-	<image80>./species/icons80/kakuna.png</image80>
-	<imageFront>./species/iconsFront/14.png</imageFront>
-	<imageBack>./species/iconsBack/14.png</imageBack>
+	<image32>species/icons32/icon014.gif</image32>
+	<image80>species/icons80/kakuna.png</image80>
+	<imageFront>species/iconsFront/14.png</imageFront>
+	<imageBack>species/iconsBack/14.png</imageBack>
 	<type>Bug</type>
 	<type2>Poison</type2>
 	<species>Cocoon</species>
@@ -7189,10 +7192,10 @@
 	<number>13</number><generation>1</generation>>
 	<name>Weedle</name>
 	<description>Often found in forests, eating leaves. It has a sharp venomous stinger on its head.</description>
-	<image32>./species/icons32/icon013.gif</image32>
-	<image80>./species/icons80/weedle.png</image80>
-	<imageFront>./species/iconsFront/13.png</imageFront>
-	<imageBack>./species/iconsBack/13.png</imageBack>
+	<image32>species/icons32/icon013.gif</image32>
+	<image80>species/icons80/weedle.png</image80>
+	<imageFront>species/iconsFront/13.png</imageFront>
+	<imageBack>species/iconsBack/13.png</imageBack>
 	<type>Bug</type>
 	<type2>Poison</type2>
 	<species>Hairy Bug</species>
@@ -7224,10 +7227,10 @@
 	<number>12</number><generation>1</generation>>
 	<name>Butterfree</name>
 	<description>In battle, it flaps its wings at high speed to release highly toxic dust into the air.</description>
-	<image32>./species/icons32/icon012.gif</image32>
-	<image80>./species/icons80/butterfree.png</image80>
-	<imageFront>./species/iconsFront/12.png</imageFront>
-	<imageBack>./species/iconsBack/12.png</imageBack>
+	<image32>species/icons32/icon012.gif</image32>
+	<image80>species/icons80/butterfree.png</image80>
+	<imageFront>species/iconsFront/12.png</imageFront>
+	<imageBack>species/iconsBack/12.png</imageBack>
 	<type>Bug</type>
 	<type2>Flying</type2>
 	<species>Butterfly</species>
@@ -7287,10 +7290,10 @@
 	<number>11</number><generation>1</generation>>
 	<name>Metapod</name>
 	<description>This POKÈMON is vulnerable to attack while its shell is soft, exposing its weak and tender body.</description>
-	<image32>./species/icons32/icon011.gif</image32>
-	<image80>./species/icons80/metapod.png</image80>
-	<imageFront>./species/iconsFront/11.png</imageFront>
-	<imageBack>./species/iconsBack/11.png</imageBack>
+	<image32>species/icons32/icon011.gif</image32>
+	<image80>species/icons80/metapod.png</image80>
+	<imageFront>species/iconsFront/11.png</imageFront>
+	<imageBack>species/iconsBack/11.png</imageBack>
 	<type>Bug</type>
 	<type2></type2>
 	<species>Cocoon</species>
@@ -7326,10 +7329,10 @@
 	<number>10</number><generation>1</generation>>
 	<name>Caterpie</name>
 	<description>Its short feet are tipped with suction pads that enable it to tirelessly climb slopes and walls.</description>
-	<image32>./species/icons32/icon010.gif</image32>
-	<image80>./species/icons80/caterpie.png</image80>
-	<imageFront>./species/iconsFront/10.png</imageFront>
-	<imageBack>./species/iconsBack/10.png</imageBack>
+	<image32>species/icons32/icon010.gif</image32>
+	<image80>species/icons80/caterpie.png</image80>
+	<imageFront>species/iconsFront/10.png</imageFront>
+	<imageBack>species/iconsBack/10.png</imageBack>
 	<type>Bug</type>
 	<type2></type2>
 	<species>Worm</species>
@@ -7361,10 +7364,10 @@
 	<number>9</number><generation>1</generation>>
 	<name>Blastoise</name>
 	<description>A brutal POKÈMON with pressurized water jets on its shell. They are used for high speed tackles.</description>
-	<image32>./species/icons32/icon009.gif</image32>
-	<image80>./species/icons80/blastoise.png</image80>
-	<imageFront>./species/iconsFront/9.png</imageFront>
-	<imageBack>./species/iconsBack/9.png</imageBack>
+	<image32>species/icons32/icon009.gif</image32>
+	<image80>species/icons80/blastoise.png</image80>
+	<imageFront>species/iconsFront/9.png</imageFront>
+	<imageBack>species/iconsBack/9.png</imageBack>
 	<type>Water</type>
 	<type2></type2>
 	<baseHp>79</baseHp>
@@ -7415,10 +7418,10 @@
 	<number>8</number><generation>1</generation>>
 	<name>Wartortle</name>
 	<description>Often hides in water to stalk unwary prey. For swimming fast, it moves its ears to maintain balance.</description>
-	<image32>./species/icons32/icon008.gif</image32>
-	<image80>./species/icons80/wartortle.png</image80>
-	<imageFront>./species/iconsFront/8.png</imageFront>
-	<imageBack>./species/iconsBack/8.png</imageBack>
+	<image32>species/icons32/icon008.gif</image32>
+	<image80>species/icons80/wartortle.png</image80>
+	<imageFront>species/iconsFront/8.png</imageFront>
+	<imageBack>species/iconsBack/8.png</imageBack>
 	<type>Water</type>
 	<type2></type2>
 	<baseHp>59</baseHp>
@@ -7473,10 +7476,10 @@
 	<number>7</number><generation>1</generation>>
 	<name>Squirtle</name>
 	<description>After birth, its back swells and hardens into a shell. Powerfully sprays foam from its mouth.</description>
-	<image32>./species/icons32/icon007.gif</image32>
-	<image80>./species/icons80/squirtle.png</image80>
-	<imageFront>./species/iconsFront/7.png</imageFront>
-	<imageBack>./species/iconsBack/7.png</imageBack>
+	<image32>species/icons32/icon007.gif</image32>
+	<image80>species/icons80/squirtle.png</image80>
+	<imageFront>species/iconsFront/7.png</imageFront>
+	<imageBack>species/iconsBack/7.png</imageBack>
 	<type>Water</type>
 	<type2></type2>
 	<baseHp>44</baseHp>
@@ -7531,10 +7534,10 @@
 	<number>6</number><generation>1</generation>>
 	<name>Charizard</name>
 	<description>Spits fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.</description>
-	<image32>./species/icons32/icon006.gif</image32>
-	<image80>./species/icons80/charizard.png</image80>
-	<imageFront>./species/iconsFront/6.png</imageFront>
-	<imageBack>./species/iconsBack/6.png</imageBack>
+	<image32>species/icons32/icon006.gif</image32>
+	<image80>species/icons80/charizard.png</image80>
+	<imageFront>species/iconsFront/6.png</imageFront>
+	<imageBack>species/iconsBack/6.png</imageBack>
 	<type>Fire</type>
 	<type2>Flying</type2>
 	<baseHp>78</baseHp>
@@ -7585,10 +7588,10 @@
 	<number>5</number><generation>1</generation>>
 	<name>Charmeleon</name>
 	<description>When it swings its burning tail, it elevates the temperature to unbearably high levels</description>
-	<image32>./species/icons32/icon005.gif</image32>
-	<image80>./species/icons80/charmeleon.png</image80>
-	<imageFront>./species/iconsFront/5.png</imageFront>
-	<imageBack>./species/iconsBack/5.png</imageBack>
+	<image32>species/icons32/icon005.gif</image32>
+	<image80>species/icons80/charmeleon.png</image80>
+	<imageFront>species/iconsFront/5.png</imageFront>
+	<imageBack>species/iconsBack/5.png</imageBack>
 	<type>Fire</type>
 	<type2></type2>
 	<baseHp>58</baseHp>
@@ -7643,10 +7646,10 @@
 	<number>4</number><generation>1</generation>>
 	<name>Charmander</name>
 	<description>Obviously prefers hot places. When it rains, steam is said to spout from the tip of its tail.</description>
-	<image32>./species/icons32/icon004.gif</image32>
-	<image80>./species/icons80/charmander.png</image80>
-	<imageFront>./species/iconsFront/4.png</imageFront>
-	<imageBack>./species/iconsBack/4.png</imageBack>
+	<image32>species/icons32/icon004.gif</image32>
+	<image80>species/icons80/charmander.png</image80>
+	<imageFront>species/iconsFront/4.png</imageFront>
+	<imageBack>species/iconsBack/4.png</imageBack>
 	<type>Fire</type>
 	<type2></type2>
 	<baseHp>39</baseHp>
@@ -7700,10 +7703,10 @@
 <species>
 	<number>3</number><generation>1</generation>>
 	<name>Venusaur</name>
-	<image32>./species/icons32/icon003.gif</image32>
-	<image80>./species/icons80/venusaur.png</image80>
-	<imageFront>./species/iconsFront/3.png</imageFront>
-	<imageBack>./species/iconsBack/3.png</imageBack>
+	<image32>species/icons32/icon003.gif</image32>
+	<image80>species/icons80/venusaur.png</image80>
+	<imageFront>species/iconsFront/3.png</imageFront>
+	<imageBack>species/iconsBack/3.png</imageBack>
 	<description>The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.</description>
 	<type>Grass</type>
 	<type2>Poison</type2>
@@ -7758,10 +7761,10 @@
 <species>
 	<number>2</number><generation>1</generation>>
 	<name>Ivysaur</name>
-	<image32>./species/icons32/icon002.gif</image32>
-	<image80>./species/icons80/ivysaur.png</image80>
-	<imageFront>./species/iconsFront/2.png</imageFront>
-	<imageBack>./species/iconsBack/2.png</imageBack>
+	<image32>species/icons32/icon002.gif</image32>
+	<image80>species/icons80/ivysaur.png</image80>
+	<imageFront>species/iconsFront/2.png</imageFront>
+	<imageBack>species/iconsBack/2.png</imageBack>
 	<description>When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.</description>
 	<type>Grass</type>
 	<type2>Poison</type2>
@@ -7819,10 +7822,10 @@
 <species>
 	<number>1</number><generation>1</generation>>
 	<name>Bulbasaur</name>
-	<image32>./species/icons32/icon001.gif</image32>
-	<image80>./species/icons80/bulbasaur.png</image80>
-	<imageFront>./species/iconsFront/1.png</imageFront>
-	<imageBack>./species/iconsBack/1.png</imageBack>
+	<image32>species/icons32/icon001.gif</image32>
+	<image80>species/icons80/bulbasaur.png</image80>
+	<imageFront>species/iconsFront/1.png</imageFront>
+	<imageBack>species/iconsBack/1.png</imageBack>
 	<description>A strange seed was planted on its back at birth. The plant sprouts and grows with this POKÈMON.</description>
 	<type>Grass</type>
 	<type2>Poison</type2>
