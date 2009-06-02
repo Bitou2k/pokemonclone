@@ -1,6 +1,6 @@
 #summary Available tasks that don't require getting one's hands dirty.
 
-adding the sign texts to the areas (Shloka)
+  * adding the sign texts to the areas (Shloka)
        Finished:
           PalletTown (pallet.nml)
           Celadon Gym (celadon_gym.nml)
@@ -11,13 +11,9 @@ adding the sign texts to the areas (Shloka)
           Pewter City (pewter.nml)
           Routes 1-13 (not 12)
 
-connecting pokegrass to the wild generators (Dana)
+  * connecting pokegrass to the wild generators (Dana)
 
-No one may claim more then one of the following:
-  * setting up doors between Kanto areas. For those that don't know, Kanto is all the areas we have except for the Johto ones (which have real colors). (unclaimed)
 
-  * double-checking and correcting cliffs have their target field set incorrectly.  note that corner cliffs should probably just be obstacles. (unclaimed)
+  * Setting up doors between Kanto areas. For those that don't know, Kanto is all the areas we have except for the Johto ones (which have real colors). Double-checking and correcting cliffs have their target field set incorrectly.  note that corner cliffs should probably just be obstacles. (unclaimed)
 
-  * finding 32x32 icons that match ./species/icons32/ for the pokemon beyond 151. (unclaimed)
-
-  * watching the StartPresenter run to see if any species is missing an image or the cry. correct the redSpecies.xml entry for any messups. (unclaimed)
+  * Finding 32x32 icons that match ./species/icons32/ for the pokemon beyond 151 and watching the StartPresenter run to see if any species is missing an image or the cry. correct the redSpecies.xml entry for any messups. (unclaimed)
