@@ -3,11 +3,10 @@ package game;
 import java.util.*;
 
 /**
-*A set of species and the probablities the player will encouter each for pokegrass/Cave/Water.
+*A set of species and the probablities the player will encouter each associated with pokegrass, cave, or water.
 */
 public class EncounterSet 
 {
-
 	private String name;
 	private double chanceOfAnything;
 	private List<Choice> choices = new LinkedList<Choice>(); 

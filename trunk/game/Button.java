@@ -2,9 +2,9 @@
 package game;
 
 /**
- *Buttons on a GB
+ *Buttons on a GameBoy
  */
-public enum Button {
-
+public enum Button 
+{
 	UP, DOWN, LEFT, RIGHT, A, B, SELECT, START;
 }	

@@ -2,7 +2,11 @@ package game;
 
 import java.util.*;
 
-public class HM extends LearnItem {
+/**
+*An item for teaching a pokemon a move, which can be used more than once.
+*/
+public class HM extends LearnItem
+{
 
 	private int number;
 	private Move move;
@@ -20,14 +24,11 @@ public class HM extends LearnItem {
 	static { 
 		try{
 			XmlElement root = XmlElement.documentRootFrom(Game.jarStream("./species/tmsAndHms.xml"));
-			for(XmlElement e : root.children("hm")){
-				HM h = new HM(e);
-				hms.add( h );
-				//System.out.print(h.number+" ");
-			}
+			for(XmlElement e : root.children("hm"))
+				hms.add( new HM(e) );
 				
-			System.out.println("\n"+hms.size()+" HMs!");
-		}catch(Exception e){e.printStackTrace();}
+			System.out.println(hms.size()+" HMs!");
+		}catch(Exception ex){ex.printStackTrace();}
 	}
 	
 	public static java.util.List<HM> allHMs(){
@@ -39,5 +40,4 @@ public class HM extends LearnItem {
 				return h;
 		return null;
 	}
-
 }

@@ -30,6 +30,9 @@ public class Species {
 	public Image imageBack(){return imageBack;}
 	public int number(){return number;}
 	
+	/**
+	*E.g., 004
+	*/
 	public String paddedNumber(){
 		String x = number+"";
 		while(x.length()<3) x="0"+x;
@@ -103,8 +106,8 @@ public class Species {
 		imageBack = Game.jarImage(e.contentOf("imageBack"));
 		
 		description = e.contentOf("description");
-		type1 = getTypeNamed(e.contentOf("type"));
-		type2 = getTypeNamed(e.contentOf("type2"));
+		type1 = Type.named(e.contentOf("type"));
+		type2 = Type.named(e.contentOf("type2"));
 		
 		hp = e.icontentOf("baseHp");
 		attack = e.icontentOf("baseAttack");
@@ -166,15 +169,9 @@ public class Species {
 		return species;
 	}
 	
-	private static Type getTypeNamed(String n)
-	{
-		try{
-			return Type.valueOf(n.toUpperCase());
-		}catch(Exception ex){}
-		return null;
-	}
-
-	
+	/**
+	*Case insensitive.
+	*/
 	public static Species named(String name){
 		for(Species s: species)
 			if(s.name.equalsIgnoreCase(name))return s;

@@ -11,7 +11,8 @@ import javax.swing.*;
 /**
 *Do not use this class directly, use the showMenu methods inherited on Presenters.
 */
-public class GridMenuPresenter extends Presenter {
+public class GridMenuPresenter extends Presenter
+{
 
 	private String[][] choices;
 	private String longest="";
@@ -50,7 +51,7 @@ public class GridMenuPresenter extends Presenter {
 	}
 	
 	/**
-	*
+	*Display the choices in a grid with an indicator of the current choice.
 	*/
 	public void drawOn(Graphics2D g)
 	{
@@ -83,7 +84,7 @@ public class GridMenuPresenter extends Presenter {
 	}
 	
 	/**
-	*
+	*Change the selected choices.
 	*/
 	public void buttonPressed(Button b)
 	{	
@@ -122,7 +123,7 @@ public class GridMenuPresenter extends Presenter {
 	}
 	
 	/**
-	*
+	*Do nothing.
 	*/
 	public void step(int ms){}
 }

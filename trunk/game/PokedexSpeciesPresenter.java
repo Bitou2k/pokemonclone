@@ -9,7 +9,7 @@ import javax.swing.*;
 import java.util.*;
 
 /**
-*Displays a species details for the pokedex.
+*Displays the details for one species as part of the pokedex.
 */
 public class PokedexSpeciesPresenter extends Presenter
 {

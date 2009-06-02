@@ -2,7 +2,9 @@ package game;
 
 import java.util.*;
 
-public class Move {
+
+public class Move
+{
 
 	private int number;
 	private String name;
@@ -13,62 +15,59 @@ public class Move {
 	private int currentPp;
 	private int power;
 	private double accuracy;
-	
-	private String compareName; //lowercased, removed spaces and hypens
-	
+
 	public int number(){return number;}
 	public String name(){return name;}
 	public int currentPp(){return currentPp;}
 	public void setPp(int i){currentPp = i;}
 	public Type type(){return type;}
 	/**
-	*Physical, special, etc
+	*Physical, Special, or Status
 	*/
 	public String category(){return category;}
 	public int pp(){return pp;}
 	public int power(){return power;}
 	
-	private Move(Node n)
+	private Move(XmlElement e)
 	{
-		number = new Integer(n.contentOf("number"));
-		name = n.contentOf("name");
-		type = getTypeNamed(n.contentOf("type"));
-		category = n.contentOf("category");
-		contest = n.contentOf("contest");
+		number = e.icontentOf("number");
+		name = e.contentOf("name");
+		type = Type.named(e.contentOf("type"));
+		category = e.contentOf("category");
+		contest = e.contentOf("contest");
 		
-		pp = new Integer(n.contentOf("pp"));
+		pp = e.icontentOf("pp");
 		currentPp = pp;
 		try{
-			power = new Integer(n.contentOf("power"));
-		}catch(Exception e){}
+			power = e.icontentOf("power");
+		}catch(Exception ex){}
 
 
 		//accuracy = new Double(new String(n.contentOf("accuracy")).replace("%", "")) % 100;
-		
-		compareName = normalize(name);
 	}
 	
 	private static ArrayList<Move> moves = new ArrayList<Move>();
 	static { 
 		try{
-			Node root = Node.documentRootFrom("./species/moves.xml");
+			XmlElement root = XmlElement.documentRootFrom(Game.jarStream("species/moves.xml"));
 			
-			for(Node n : root.subnodes("move")){
-				Move m = new Move(n);
-				moves.add(m);
-				//System.out.print(m.name+" ");
-			}
-			System.out.println("\n"+moves.size()+" moves!");
-		}catch(Exception e){e.printStackTrace();}
+			for(XmlElement e : root.children("move"))
+				moves.add(new Move(e));
+
+			System.out.println(moves.size()+" moves!");
+		}catch(Exception ex){ex.printStackTrace();}
 	}
 	
 	public static java.util.List<Move> all(){
 		return moves;
 	}
+	/**
+	*Ignores case, spaces or hypens.
+	*/
 	public static Move named(String name){
 		name = normalize(name);
 		for(Move m:moves)
-			if(m.compareName.equals(name))
+			if(normalize(m.name).equals(name))
 				return m;
 				
 		System.out.println("No moved called "+name);
@@ -81,13 +80,5 @@ public class Move {
 		x = x.replaceAll("-","");
 		x = x.replaceAll(" ","");
 		return x;
-	}
-	
-	private static Type getTypeNamed(String n)
-	{
-		try{
-			return Type.valueOf(n.toUpperCase());
-		}catch(Exception ex){}
-		return null;
 	}
 }
