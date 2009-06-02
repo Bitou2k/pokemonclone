@@ -23,6 +23,7 @@ public class Species {
 	private List<HM> hms = new LinkedList<HM>();
 	
 	public String name(){return name;}
+	public int generation(){return generation;}
 	public String description(){return description;}
 	public Image image32(){return image32;}
 	public Image image80(){return image80;}

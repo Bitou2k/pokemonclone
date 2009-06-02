@@ -19,9 +19,11 @@ class StartPresenter extends Presenter {
 		g.drawImage(s.imageFront(),32+80,0,null);
 		g.drawImage(s.imageBack(),32+80+64,0,null);
 		g.setColor(Color.BLACK);
-		g.drawString("No. "+s.number(),0,70);
-		g.drawString(s.name(),0,80);
-		g.drawString(s.description(),0,90);
+		g.drawString("No. "+s.paddedNumber()+" Gen"+s.generation(),0,50);
+		g.drawString(s.name(),0,60);
+		g.drawString(s.description(),0,70);
+		g.drawString(s.type().toString(),0,80);
+		if(s.type2()!=null)g.drawString(s.type2().toString(),0,90);
 		
 		g.drawString("Credits:",0,120);
 		g.drawString("(add yourself but no one else!)",0,130);
