@@ -7,7 +7,7 @@ import java.awt.Image;
 import javax.swing.ImageIcon;
 
 /**
-*You.
+*
 */
 public class Talker extends Citizen
 {

@@ -5,7 +5,8 @@ import java.awt.*;
 /**
 *Something interactive that may occupy a Tile, such as a citizen, rival trainer, the player, or a pickup item.
 */
-public class Entity {
+public class Entity
+{
 
 	protected String id;
 	private Tile tile;

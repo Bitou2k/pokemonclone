@@ -191,4 +191,12 @@ public enum Type {
 	public double ceofOn(Type defender){
 		return 1.0;
 	}
+	
+	public static Type named(String n)
+	{
+		try{
+			return Type.valueOf(n.toUpperCase());
+		}catch(Exception ex){}
+		return null;
+	}
 }

@@ -1,11 +1,10 @@
 
-
 rename pokemon box to BattlePartyPresenter or just PartyPresenter if it will handle the open from the start menu as well
 
-added field in area files/lvlEditor for associated background music
+add field in area files/lvlEditor for associated background music
+
+we may need to add a waterDoor type
 
 "hyperbeam" animationpresenter
-
-internal switch tm/hm/move to x
 
 COMMENTS!!!!!!!!

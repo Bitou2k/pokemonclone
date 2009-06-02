@@ -5,9 +5,11 @@ import java.io.*;
 import javax.swing.*;
 
 /**
- *I am one square in an Area; I have a image, type and target; I might contain an Entity.
+ *I am one square in an Area; I have a image, type and target; I might contain an Entity.  
+ *This might be moved to an inner class of Area.
  */
-class Tile {
+public class Tile
+{
 
 	//private 
 	int x,y;
@@ -41,12 +43,15 @@ class Tile {
 	public boolean isGrass(){ return type.equals("pokegrassOrCave"); }
 	public boolean isCliff() { return type.equals("cliff"); }
 	
-	public Pokemon genPokemon(){
+	public Pokemon genPokemon()
+	{
 		try
 		{
 			return EncounterSet.named(target).generatePokemon();
 		}
-		catch(Exception ex){}
+		catch(Exception ex)
+		{
+		}
 		return null;
 	}
 	

@@ -7,16 +7,10 @@ import java.util.List;
 /**
 *Generalization of a TM or HM.
 */
-public class LearnItem extends Item {
-
-	//just so it will compile
-	LearnItem()
-	{
-		super(null);
-	}
+public class LearnItem extends Item
+{
 	
 	public void use()
 	{
 	}
-
 }
