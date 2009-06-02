@@ -40,7 +40,7 @@ class StartPresenter extends Presenter {
 	private boolean first=true;
 	public void gotFocus()
 	{
-		if(first)backgroundMusic("./music/PALLET.mid");
+		if(first&& !new File("D:/Ryan").exists())backgroundMusic("./music/PALLET.mid");
 		first=false;
 	}
 	

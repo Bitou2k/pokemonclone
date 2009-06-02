@@ -154,15 +154,14 @@ public class Species {
 	private static ArrayList<Species> species = new ArrayList<Species>();
 	static { 
 		try{
-			XmlElement root = XmlElement.documentRootFrom(Game.jarStream("./species/redSpecies.xml"));
-			for(XmlElement e : root.children("species")){
-				Species s = new Species(e);
-				species.add( s );
-				//System.out.print(s.name+" ");
-			}
+			XmlElement root = XmlElement.documentRootFrom(Game.jarStream("species/diamondSpecies.xml"));
+			System.out.println(root.children().size());
+			for(XmlElement e : root.children("species"))
+				species.add(new Species(e));
+
 			Collections.reverse(species);
-			System.out.println("\n"+species.size()+" species!");
-		}catch(Exception e){e.printStackTrace();}
+			System.out.println(species.size()+" species!");
+		}catch(Exception ex){ex.printStackTrace();}
 	}
 	
 	public static List<Species> all(){
