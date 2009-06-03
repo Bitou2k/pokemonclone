@@ -4,22 +4,23 @@ import java.io.*;
 import java.util.*;
 
 /**
-*Functional successor to Node which uses correct XML terminology; element names are case senstive and may not contains spaces.  
-*This class does NOT represent a fully spec compliant DOM XML parser.
-*
-*XmlElement a = new XmlElement("species")
-*a.addChild("name","Bulbasaur");
-*a.addChild("type","grass");
-*XmlElement b = new XmlElement("species")
-*b.addChild("name","Mew");
-*b.addChild("type","pyschic")
-*OutputStream out = new FileOutputStream("example.xml");
-*a.writeOn(out);
-*b.writeOn(out):
-*
-*produces:
-*<species><name>Bulbasaur</name><type>grass</type></species><species><name>Mew</name><type>pyschic</type></species>
-*
+*Functional successor to Node which uses correct XML terminology; element names are case senstive and may not contains spaces.  <BR/>
+*This class does NOT represent a fully spec compliant DOM XML parser. <BR/>
+*<BR/>
+*XmlElement a = new XmlElement("species");<BR/>
+*a.addChild("name","Bulbasaur");<BR/>
+*a.addChild("type","grass");<BR/>
+*XmlElement b = new XmlElement("species");<BR/>
+*b.addChild("name","Mew");<BR/>
+*b.addChild("type","pyschic")<BR/>
+*OutputStream out = new FileOutputStream("example.xml");<BR/>
+*a.writeOn(out);<BR/>
+*b.writeOn(out):<BR/>
+*<BR/>
+*produces:<BR/>
+*&lt;species&gt;&lt;name&gt;Bulbasaur&lt;/name&gt;&lt;type&gt;grass&lt;/type&gt;&lt;/species&gt;&lt;species&gt;&lt;name&gt;Mew&lt;/name&gt;&lt;type&gt;pyschic&lt;/type&gt;&lt;/species&gt;<BR/>
+*<BR/>
+*@author rmacnak
 */
 public class XmlElement
 {
