@@ -264,7 +264,7 @@ class Battle extends Presenter {
 			String selection = showGridMenu(new String[] {"FIGHT","PACK","PKMN","RUN"});
 			System.out.println(selection);
 			if (selection.equals("FIGHT")){
-				String[] moveNameList = new String[]{"-","COREY","COREY","OMG GLITCH","Cancel"};
+				String[] moveNameList = new String[]{"-","COREY","STI","OMG GLITCH","Cancel"};
 				for (int i = 0; i < ashsPokemon.moves().size(); i++){
 					moveNameList[i] = ashsPokemon.moves().get(i).name() + " " + ashsPokemon.moves().get(i).currentPp() + "/" + ashsPokemon.moves().get(i).pp();
 				}
@@ -272,7 +272,7 @@ class Battle extends Presenter {
 				boolean canUse = false;
 				while (!canUse){
 					String moveSel = showMenu(moveNameList);
-					if (!moveSel.equals("-") && !moveSel.equals("OMG GLITCH")&& !moveSel.equals("COREY")){
+					if (!moveSel.equals("-") && !moveSel.equals("OMG GLITCH")&& !moveSel.equals("COREY")&& !moveSel.equals("STI")){
 						if (moveSel.equals("Cancel")){
 							return false;
 						}
