@@ -72,74 +72,6 @@ class Battle extends Presenter {
 		ash = player();
 	}
 	
-	/*public void drawOn(Graphics2D g){
-		
-		g.setColor(Color.WHITE); //blank background
-		g.fillRect(0,0,320,288);
-		
-		g.setColor(Color.BLACK);
-		g.setFont(new Font("Courier New",Font.BOLD,20));
-		final int TEXTX = 15;
-		final int FULLHEALTH = 97;
-		
-		g.drawImage(bottomFrame,0,195,null);		
-		
-		if(enemyPokemon!=null){
-			//that background arrow thingy
-			g.drawImage(enemyBar,10,20,null);
-			//name
-			g.setColor(Color.BLACK);
-			g.drawString(enemyPokemon.nickname(),10,15);
-			//image
-			g.drawImage(enemyPokemon.species().imageFront(),170,0,128,128,null);
-			//health bar
-			g.setColor( colorForHealth( enemyPokemon.percentHp() ) );
-			g.fillRect(56,23,(int)(FULLHEALTH * enemyPokemon.percentHp()),7);
-		}
-		if(ashsPokemon!=null){
-			//that background arrow thingy
-			g.drawImage(playerBar,155,145,null);
-			//name
-			g.setColor(Color.BLACK);
-			g.drawString(ashsPokemon.nickname(),170,140);
-			//image
-			g.drawImage(ashsPokemon.species().imageBack(),10,65,128,128,null);
-			//health bar
-			g.setColor( colorForHealth( ashsPokemon.percentHp() ) );
-			g.fillRect(203,146,(int)(FULLHEALTH * ashsPokemon.percentHp()),7);
-			//health numbers
-			g.setColor(Color.BLACK);
-			g.drawString(ashsPokemon.currentHp() + "   "  + ashsPokemon.baseHp(),200,180);
-		}
-		
-		g.setColor(Color.BLACK);
-		
-		g.drawString(textLine1,TEXTX,225);
-		g.drawString(textLine2,TEXTX,250);
-		
-		
-		if (stage < 30) //3 seconds, intro to battle
-		{			
-			textLine1 = "A WILD "+enemyPokemon.nickname();
-			textLine2 = "HAS APPEARED!!";
-			g.drawImage(ashImage,10,100, null);			
-		}
-		else if (stage < 45){ //sending out players pokemon			
-			ashsPokemon = ash.party().get(0); 
-			textLine1 = "GO..." + ashsPokemon.nickname();
-			textLine2 = "";
-		}
-		else if (stage == 46){ //show battle menu
-			locked = false;
-			g.drawImage(battleMenu,125,195,null);
-			g.drawImage(cursor,140 + menuIndexX * 100,220 + menuIndexY * 35,null);
-		}
-		else if (stage == 51){//dont show battle menu
-			locked = true;
-		}
-		
-	}*/
-	
 	private Color colorForHealth(double percentage)
 	{
 		if(percentage > 0.5) return Color.GREEN;
@@ -148,70 +80,11 @@ class Battle extends Presenter {
 	}
 	
 	public void buttonPressed(Button b){
-		/*if(stage > 3 /*&& stage < someothernum){
-			if(b==Button.UP){if(menuIndexY ==1) menuIndexY = 0;}
-			else if (b==Button.DOWN){if(menuIndexY == 0)menuIndexY = 1;}
-			else if (b==Button.LEFT){if(menuIndexX == 1)menuIndexX = 0;}
-			else if (b==Button.RIGHT){if(menuIndexX == 0)menuIndexX = 1;}
-			
-			else if(b==Button.START){
-				
-			}
-			
-			else if (b == Button.A && !locked){
-				if (menuIndexX == 0) //FIGHT / BAG
-				{
-					if (menuIndexY == 0)//FIGHT
-					{
-						fight();
-					}
-					else //BAG
-					{
-					
-					}				
-				}
-				else //PkMn / RUN
-				{
-					if (menuIndexY == 0){ //PKMN
-					enterPresenter(new BattleBox(this));
-					}
-					else //RUN
-					{
-						enterPresenter(returnPresenter);
-					}
-				
-				}
-			}
-		}*/
+	
 	}
 	public void step(int ms){
 	}
 	
-	/*private void fight(){
-		locked = true;
-		stage = 51;
-		String[] moveSet = new String[4];
-		for (int i = 0; i < 4; i++){
-			moveSet[i] = ashsPokemon.moves().get(i).name();
-		}
-		String moveSelection = showMenu("Select a move:",new String[]{
-			moveSet[0],
-			moveSet[1],
-			moveSet[2],
-			moveSet[3]});
-			
-		Move move;			
-		if (moveSelection.equals(moveSet[0]))
-			move = ashsPokemon.moves().get(0);
-		else if (moveSelection.equals(moveSet[1]))
-			move = ashsPokemon.moves().get(1);
-		else if (moveSelection.equals(moveSet[2]))
-			move = ashsPokemon.moves().get(2);
-		else
-			move = ashsPokemon.moves().get(3);
-		
-		Attack(move,getAIMove());
-	}*/
 	
 	private Move getAIMove(){
 		//return a random move
@@ -271,25 +144,6 @@ class Battle extends Presenter {
 			}
 			textLine1 = "";
 			return 0;
-		/*}
-		else
-		{
-		    pkmnAttack = enemyPokemon;
-		    pkmnDefend = ashsPokemon;
-		    firstAttack = enemyMove;
-		    textLine1 = "GO..." + pkmnDefend.nickname();
-		    sleep(2000);
-		    pkmnDefend.doDamage(calcDamage(firstAttack, pkmnAttack, pkmnDefend));
-		    textLine1 = pkmnAttack.nickname() + " uses " + firstAttack.name();
-		    sleep(2000);
-		    Switched = false;
-		}
-		if(ashsPokemon.currentHp() <= 0)
-		{
-			enterPresenter(new BattleBox(this));
-			Switched = false;
-		}
-		stage = 46;*/
 	}
 	private int calcDamage(Move move, Pokemon att, Pokemon def){
 	//Damage = ((((2 * Level / 5 + 2) * AttackStat * AttackPower / DefenseStat) / 50) + 2) * STAB * Weakness/Resistance * RandomNumber / 100
@@ -331,22 +185,24 @@ class Battle extends Presenter {
 		
 		if(enemyPokemon!=null){
 			//that background arrow thingy
-			g.drawImage(enemyBar,10,20,null);
+			g.drawImage(enemyBar,10,32,null);
 			//name
 			g.setColor(Color.BLACK);
 			g.drawString(enemyPokemon.nickname(),10,15);
+			g.drawString(":L" + enemyPokemon.level(),35,30);
 			//image
 			g.drawImage(enemyPokemon.species().imageFront(),170,0,128,128,null);
 			//health bar
 			g.setColor( colorForHealth( enemyPokemon.percentHp() ) );
-			g.fillRect(56,23,(int)(FULLHEALTH * enemyPokemon.percentHp()),7);
+			g.fillRect(56,35,(int)(FULLHEALTH * enemyPokemon.percentHp()),7);
 		}
 		if(ashsPokemon!=null){
 			//that background arrow thingy
 			g.drawImage(playerBar,155,145,null);
 			//name
 			g.setColor(Color.BLACK);
-			g.drawString(ashsPokemon.nickname(),170,140);
+			g.drawString(ashsPokemon.nickname(),170,128);
+			g.drawString(":L" + ashsPokemon.level(),195,143);
 			//image
 			g.drawImage(ashsPokemon.species().imageBack(),10,65,128,128,null);
 			//health bar
@@ -408,7 +264,7 @@ class Battle extends Presenter {
 			String selection = showGridMenu(new String[] {"FIGHT","PACK","PKMN","RUN"});
 			System.out.println(selection);
 			if (selection.equals("FIGHT")){
-				String[] moveNameList = new String[]{"","","","","Cancel"};
+				String[] moveNameList = new String[]{"-","-","-","OMG GLITCH","Cancel"};
 				for (int i = 0; i < ashsPokemon.moves().size(); i++){
 					moveNameList[i] = ashsPokemon.moves().get(i).name() + " " + ashsPokemon.moves().get(i).currentPp() + "/" + ashsPokemon.moves().get(i).pp();
 				}
@@ -416,7 +272,7 @@ class Battle extends Presenter {
 				boolean canUse = false;
 				while (!canUse){
 					String moveSel = showMenu(moveNameList);
-					if (!moveSel.equals("")){
+					if (!moveSel.equals("-") && !moveSel.equals("OMG GLITCH")){
 						if (moveSel.equals("Cancel")){
 							return false;
 						}
