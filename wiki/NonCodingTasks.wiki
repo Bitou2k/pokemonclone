@@ -14,7 +14,7 @@
   * connecting pokegrass to the wild generators (Dana)
 
 
-  * Setting up doors between Kanto areas. For those that don't know, Kanto is all the areas we have except for the Johto ones (which have real colors). (unclaimed)
+  * Setting up doors between Kanto areas. For those that don't know, Kanto is all the areas we have except for the Johto ones (which have real colors). (richard is working down;  someone want to work backwards and meet him in the middle?)
 
   * Double-checking and correcting cliffs have their target field set incorrectly.  note that corner cliffs should probably just be obstacles. (FINISHED ABOUT A WEEK AGO by Rich and Twitch)
 
