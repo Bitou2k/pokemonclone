@@ -354,11 +354,8 @@ class Battle extends Presenter {
 
 	void gainXp()
 	{
-		double xpGained;
-		if(enemy == null)
-			xpGained = 1 * enemyPokemon.species().BaseExp() * enemyPokemon.level() / 7;
-		else
-			xpGained = 1.5 * enemyPokemon.species().BaseExp() * enemyPokemon.level() / 7;
+		double xpGained = (enemy==null?1:1.5) * enemyPokemon.species().baseExp() * enemyPokemon.level() / 7.0;
+		
 		showMessage(ashsPokemon.nickname() + " gained " + (int)xpGained + " XP");
 		ashsPokemon.gainXp(xpGained);
 	}

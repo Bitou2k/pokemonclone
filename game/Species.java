@@ -6,6 +6,8 @@ import javax.swing.*;
 
 /**
  *A prototype for generating a wild pokemon, evolving a pokemon, or viewing pokedex data.
+ *
+ *@author rmacnak
  */
 public class Species {
 	
@@ -21,8 +23,8 @@ public class Species {
 	private Map<String,Species> evolutions = new HashMap<String,Species>();
 	private List<TM> tms = new LinkedList<TM>();
 	private List<HM> hms = new LinkedList<HM>();
-	private String GrowthRate;
-	private int BaseExp;
+	private String growthRate;
+	private int baseExp;
 	
 	public String name(){return name;}
 	public int generation(){return generation;}
@@ -32,8 +34,48 @@ public class Species {
 	public Image imageFront(){return imageFront;}
 	public Image imageBack(){return imageBack;}
 	public int number(){return number;}
-	public int BaseExp(){return BaseExp;};
-	public String GrowthRate(){return GrowthRate;}
+	/**
+	*A value used in determing the experience for defeating a pokemon of this species.
+	*/
+	public int baseExp(){return baseExp;}
+	
+	/**
+	*The total xp need to attain a given level.
+	*/
+	public int xpForLevel(int level)
+	{
+		double l=level;
+		if(growthRate.equals("Slow")) return (int)(5.0 * l * l * l / 4.0);
+		if(growthRate.equals("Medium")) return (int)(l * l * l);
+		if(growthRate.equals("Fast")) return (int)(4.0 * l * l * l / 5.0);
+		if(growthRate.equals("Parabolic")) return (int)(6.0 * l * l * l / 5.0 - 15.0 * l * l + 100.0 * l - 140.0);
+		if(growthRate.equals("Erratic"))
+		{
+			if (l <= 50)
+				return (int)(l*l*l * ((100.0 - l) / 50.0));
+			else if (l <= 68)
+				return (int)(l*l*l * ((150.0 - l) / 50.0));
+			else if (l <= 98)
+				return (int)(l*l*l * (1.274 - (1.0 / 50.0) * (l / 3.0)));
+			else
+				return (int)(l*l*l * ((160.0 - l) / 50.0));
+		}
+		else if(growthRate.equals("Fluctuating"))
+		{
+			if (l <= 15)
+				return (int)(l*l*l * ((24.0 + ((l + 1.0) / 3.0)) / 50.0));
+			else if (l <= 35)
+				return (int)(l*l*l * ((14.0 + l) / 50.0));
+			else
+				return (int)(l*l*l * ((32.0 + (l / 2.0)) / 50.0));
+		}
+		else
+		{
+			System.out.println(name+" has invalid growth rate "+growthRate);
+			return 0;
+		}
+	}
+	
 	
 	/**
 	*E.g., 004
@@ -120,8 +162,8 @@ public class Species {
 		description = e.contentOf("description");
 		type1 = Type.named(e.contentOf("type"));
 		type2 = Type.named(e.contentOf("type2"));
-		GrowthRate = e.contentOf("growthRate");
-		BaseExp = e.icontentOf("baseExperience");
+		growthRate = e.contentOf("growthRate");
+		baseExp = e.icontentOf("baseExperience");
 		
 		hp = e.icontentOf("baseHp");
 		attack = e.icontentOf("baseAttack");
