@@ -85,11 +85,11 @@ public class Pokemon
 	public int level(){return level;}
 	public int xp(){return xp;}
 	public void xp(int i) { xp = i; }
-	public void gainXp(double i) 
-	{ 
-		xp += (int)i;
-		checkLevelUp();
-	}
+	public void gainXp(double i) { xp += (int)i; checkLevelUp();}
+
+
+
+
 	
 	public List<Move> moves(){return moves;}
 	
@@ -103,6 +103,18 @@ public class Pokemon
 	}
 
 	void checkLevelUp()
+	{
+
+		if (xp >= nextLevelXp())
+		{
+			// level up
+			level += 1;
+			System.out.println(nickname() + " grew to level " + level);
+			//leveluppresenter
+		}
+	}
+	
+	public double nextLevelXp()
 	{
 		double levelXp = 0;
 		double tlevel = level + 1;
@@ -142,14 +154,8 @@ public class Pokemon
 			else
 				levelXp = tlevel * tlevel * tlevel * ((32 + (tlevel / 2)) / 50);
 		}
-		if (xp >= levelXp)
-		{
-			// level up
-			level += 1;
-			//leveluppresenter
-		}
+		return levelXp;
 	}
-
 
 }
 

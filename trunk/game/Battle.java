@@ -208,6 +208,9 @@ class Battle extends Presenter {
 			//health bar
 			g.setColor( colorForHealth( ashsPokemon.percentHp() ) );
 			g.fillRect(203,146,(int)(FULLHEALTH * ashsPokemon.percentHp()),7);
+			//XP
+			g.setColor(Color.BLUE);
+			g.fillRect(203,153,(int)(FULLHEALTH * ashsPokemon.xp() / ashsPokemon.nextLevelXp()),7);
 			//health numbers
 			g.setColor(Color.BLACK);
 			g.drawString(ashsPokemon.currentHp() + "   "  + ashsPokemon.baseHp(),200,180);
@@ -317,6 +320,7 @@ class Battle extends Presenter {
 					ashsPokemon.species().cry();
 					break;
 				case 2: //enemy KO--XP and stuff
+					gainXp();
 					stage = 3;
 					break;
 				}
@@ -350,10 +354,13 @@ class Battle extends Presenter {
 
 	void gainXp()
 	{
+		double xpGained;
 		if(enemy == null)
-			ashsPokemon.gainXp(1 * enemyPokemon.species().BaseExp() * enemyPokemon.level() / 7);
+			xpGained = 1 * enemyPokemon.species().BaseExp() * enemyPokemon.level() / 7;
 		else
-			ashsPokemon.gainXp(1.5 * enemyPokemon.species().BaseExp() * enemyPokemon.level() / 7);
+			xpGained = 1.5 * enemyPokemon.species().BaseExp() * enemyPokemon.level() / 7;
+		showMessage(ashsPokemon.nickname() + " gained " + (int)xpGained + " XP");
+		ashsPokemon.gainXp(xpGained);
 	}
 
 
