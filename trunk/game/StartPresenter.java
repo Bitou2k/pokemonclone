@@ -30,7 +30,7 @@ class StartPresenter extends Presenter {
 		if(s.type2()!=null)g.drawString(s.type2().toString(),38,150);
 		
 		g.drawString("Credits:",5,165);
-		g.drawString("(add yourself but no one else!)",5,175);
+		g.drawString("(add yourself but no one else.)",5,175);
 		g.drawString("Ryan Macnak",5,185);
 		g.drawString("Adam Hendrickson", 5, 195);
 		g.drawString("Michal Broniek",5,205);
