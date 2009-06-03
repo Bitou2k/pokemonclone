@@ -41,6 +41,7 @@ class StartPresenter extends Presenter {
 		g.drawString("Nick West", 5, 255);
 		g.drawString("Jay Lannin", 5, 265);
 		g.drawString("Ryan Craine", 5, 275);
+		g.drawString("Shloka Kini", 5, 285);
 	}
 	
 	private boolean first=true;
