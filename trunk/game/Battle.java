@@ -491,4 +491,14 @@ class Battle extends Presenter {
 			}
 		return true;
 	}
+
+	void gainXp()
+	{
+		if(enemy == null)
+			ashsPokemon.gainXp(1 * enemyPokemon.species().BaseExp() * enemyPokemon.level() / 7);
+		else
+			ashsPokemon.gainXp(1.5 * enemyPokemon.species().BaseExp() * enemyPokemon.level() / 7);
+	}
+
+
 }

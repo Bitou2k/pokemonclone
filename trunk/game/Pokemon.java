@@ -17,6 +17,7 @@ public class Pokemon
 	private int hp, attack, defense, speed, spAttack, spDefense; //the base stat
 	private ArrayList<Move> moves = new ArrayList<Move>(); //up to 4
 	
+	
 	/**
 	*Called by makeWildAtLevl
 	*/
@@ -83,6 +84,8 @@ public class Pokemon
 	
 	public int level(){return level;}
 	public int xp(){return xp;}
+	public void xp(int i) { xp = i; }
+	public void gainXp(double i) { xp += (int)i; }
 	
 	public List<Move> moves(){return moves;}
 	
