@@ -1,4 +1,3 @@
-
 rename pokemon box to BattlePartyPresenter or just PartyPresenter if it will handle the open from the start menu as well
 
 add field in area files/lvlEditor for associated background music
