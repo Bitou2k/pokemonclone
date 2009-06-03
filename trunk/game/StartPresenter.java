@@ -24,23 +24,23 @@ class StartPresenter extends Presenter {
 		int space = s.description().indexOf(" ", 45);
 		String desc1 = s.description().substring(0, space);
 		String desc2 = s.description().substring(space);
-		g.drawString(desc1,5,110);
-		g.drawString(desc2,1,120);
-		g.drawString(s.type().toString(),5,130);
-		if(s.type2()!=null)g.drawString(s.type2().toString(),5,140);
+		g.drawString(desc1,5,120);
+		g.drawString(desc2,2,130);
+		g.drawString("Type: "+s.type().toString(),5,140);
+		if(s.type2()!=null)g.drawString(s.type2().toString(),38,150);
 		
-		g.drawString("Credits:",5,155);
-		g.drawString("(add yourself but no one else!)",5,165);
-		g.drawString("Ryan Macnak",5,175);
-		g.drawString("Adam Hendrickson", 5, 185);
-		g.drawString("Michal Broniek",5,195);
-		g.drawString("Andrew Siegle",5,205);
-		g.drawString("Joe Maguire",5,215);
-		g.drawString("Colin Hoernig",5,225);
-		g.drawString("Brett Guiden",5,235);
-		g.drawString("Nick West", 5, 245);
-		g.drawString("Jay Lannin", 5, 255);
-		g.drawString("Ryan Craine", 5, 265);
+		g.drawString("Credits:",5,165);
+		g.drawString("(add yourself but no one else!)",5,175);
+		g.drawString("Ryan Macnak",5,185);
+		g.drawString("Adam Hendrickson", 5, 195);
+		g.drawString("Michal Broniek",5,205);
+		g.drawString("Andrew Siegle",5,215);
+		g.drawString("Joe Maguire",5,225);
+		g.drawString("Colin Hoernig",5,235);
+		g.drawString("Brett Guiden",5,245);
+		g.drawString("Nick West", 5, 255);
+		g.drawString("Jay Lannin", 5, 265);
+		g.drawString("Ryan Craine", 5, 275);
 	}
 	
 	private boolean first=true;
