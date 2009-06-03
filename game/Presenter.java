@@ -143,7 +143,7 @@ abstract class Presenter
 	public abstract void buttonPressed(Button b);
 	
 	/**
-	 *Called at 10Hz, do things like having citizens walk around.
+	 *Called at 10Hz, do things like having citizens walk around; this was a design mistake, each presenter should do its own timing.
 	 */
 	public abstract void step(int ms);
 	

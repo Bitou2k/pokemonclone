@@ -1,8 +1,17 @@
+<comment>
+
+Data parsed by Smalltalk program from 
+http://www.upokecenter.com/dex/?version=diamond&view=export
+
+Complete except for evolutions.  Image32s still need to be acquired for 152+
+</comment>
+
+
 <species>
 	<number>493</number>
 	<generation>4</generation>
 	<name>ARCEUS</name>
-	<image32>species/icons32/493.gif</image32>
+	<image32>species/icons32/493.png</image32>
 	<image80>species/icons80/arceus.png</image80>
 	<imageFront>species/iconsFront/493.png</imageFront>
 	<imageBack>species/iconsBack/493.png</imageBack>
@@ -47,7 +56,7 @@
 	<number>492</number>
 	<generation>4</generation>
 	<name>SHAYMIN</name>
-	<image32>species/icons32/492.gif</image32>
+	<image32>species/icons32/492.png</image32>
 	<image80>species/icons80/shaymin.png</image80>
 	<imageFront>species/iconsFront/492.png</imageFront>
 	<imageBack>species/iconsBack/492.png</imageBack>
@@ -90,7 +99,7 @@
 	<number>491</number>
 	<generation>4</generation>
 	<name>DARKRAI</name>
-	<image32>species/icons32/491.gif</image32>
+	<image32>species/icons32/491.png</image32>
 	<image80>species/icons80/darkrai.png</image80>
 	<imageFront>species/iconsFront/491.png</imageFront>
 	<imageBack>species/iconsBack/491.png</imageBack>
@@ -133,7 +142,7 @@
 	<number>490</number>
 	<generation>4</generation>
 	<name>MANAPHY</name>
-	<image32>species/icons32/490.gif</image32>
+	<image32>species/icons32/490.png</image32>
 	<image80>species/icons80/manaphy.png</image80>
 	<imageFront>species/iconsFront/490.png</imageFront>
 	<imageBack>species/iconsBack/490.png</imageBack>
@@ -177,7 +186,7 @@
 	<number>489</number>
 	<generation>4</generation>
 	<name>PHIONE</name>
-	<image32>species/icons32/489.gif</image32>
+	<image32>species/icons32/489.png</image32>
 	<image80>species/icons80/phione.png</image80>
 	<imageFront>species/iconsFront/489.png</imageFront>
 	<imageBack>species/iconsBack/489.png</imageBack>
@@ -219,7 +228,7 @@
 	<number>488</number>
 	<generation>4</generation>
 	<name>CRESSELIA</name>
-	<image32>species/icons32/488.gif</image32>
+	<image32>species/icons32/488.png</image32>
 	<image80>species/icons80/cresselia.png</image80>
 	<imageFront>species/iconsFront/488.png</imageFront>
 	<imageBack>species/iconsBack/488.png</imageBack>
@@ -262,7 +271,7 @@
 	<number>487</number>
 	<generation>4</generation>
 	<name>GIRATINA</name>
-	<image32>species/icons32/487.gif</image32>
+	<image32>species/icons32/487.png</image32>
 	<image80>species/icons80/giratina.png</image80>
 	<imageFront>species/iconsFront/487.png</imageFront>
 	<imageBack>species/iconsBack/487.png</imageBack>
@@ -304,7 +313,7 @@
 	<number>486</number>
 	<generation>4</generation>
 	<name>REGIGIGAS</name>
-	<image32>species/icons32/486.gif</image32>
+	<image32>species/icons32/486.png</image32>
 	<image80>species/icons80/regigigas.png</image80>
 	<imageFront>species/iconsFront/486.png</imageFront>
 	<imageBack>species/iconsBack/486.png</imageBack>
@@ -346,7 +355,7 @@
 	<number>485</number>
 	<generation>4</generation>
 	<name>HEATRAN</name>
-	<image32>species/icons32/485.gif</image32>
+	<image32>species/icons32/485.png</image32>
 	<image80>species/icons80/heatran.png</image80>
 	<imageFront>species/iconsFront/485.png</imageFront>
 	<imageBack>species/iconsBack/485.png</imageBack>
@@ -390,7 +399,7 @@
 	<number>484</number>
 	<generation>4</generation>
 	<name>PALKIA</name>
-	<image32>species/icons32/484.gif</image32>
+	<image32>species/icons32/484.png</image32>
 	<image80>species/icons80/palkia.png</image80>
 	<imageFront>species/iconsFront/484.png</imageFront>
 	<imageBack>species/iconsBack/484.png</imageBack>
@@ -432,7 +441,7 @@
 	<number>483</number>
 	<generation>4</generation>
 	<name>DIALGA</name>
-	<image32>species/icons32/483.gif</image32>
+	<image32>species/icons32/483.png</image32>
 	<image80>species/icons80/dialga.png</image80>
 	<imageFront>species/iconsFront/483.png</imageFront>
 	<imageBack>species/iconsBack/483.png</imageBack>
@@ -474,7 +483,7 @@
 	<number>482</number>
 	<generation>4</generation>
 	<name>AZELF</name>
-	<image32>species/icons32/482.gif</image32>
+	<image32>species/icons32/482.png</image32>
 	<image80>species/icons80/azelf.png</image80>
 	<imageFront>species/iconsFront/482.png</imageFront>
 	<imageBack>species/iconsBack/482.png</imageBack>
@@ -516,7 +525,7 @@
 	<number>481</number>
 	<generation>4</generation>
 	<name>MESPRIT</name>
-	<image32>species/icons32/481.gif</image32>
+	<image32>species/icons32/481.png</image32>
 	<image80>species/icons80/mesprit.png</image80>
 	<imageFront>species/iconsFront/481.png</imageFront>
 	<imageBack>species/iconsBack/481.png</imageBack>
@@ -558,7 +567,7 @@
 	<number>480</number>
 	<generation>4</generation>
 	<name>UXIE</name>
-	<image32>species/icons32/480.gif</image32>
+	<image32>species/icons32/480.png</image32>
 	<image80>species/icons80/uxie.png</image80>
 	<imageFront>species/iconsFront/480.png</imageFront>
 	<imageBack>species/iconsBack/480.png</imageBack>
@@ -600,7 +609,7 @@
 	<number>479</number>
 	<generation>4</generation>
 	<name>ROTOM</name>
-	<image32>species/icons32/479.gif</image32>
+	<image32>species/icons32/479.png</image32>
 	<image80>species/icons80/rotom.png</image80>
 	<imageFront>species/iconsFront/479.png</imageFront>
 	<imageBack>species/iconsBack/479.png</imageBack>
@@ -643,7 +652,7 @@
 	<number>478</number>
 	<generation>4</generation>
 	<name>FROSLASS</name>
-	<image32>species/icons32/478.gif</image32>
+	<image32>species/icons32/478.png</image32>
 	<image80>species/icons80/froslass.png</image80>
 	<imageFront>species/iconsFront/478.png</imageFront>
 	<imageBack>species/iconsBack/478.png</imageBack>
@@ -689,7 +698,7 @@
 	<number>477</number>
 	<generation>4</generation>
 	<name>DUSKNOIR</name>
-	<image32>species/icons32/477.gif</image32>
+	<image32>species/icons32/477.png</image32>
 	<image80>species/icons80/dusknoir.png</image80>
 	<imageFront>species/iconsFront/477.png</imageFront>
 	<imageBack>species/iconsBack/477.png</imageBack>
@@ -740,7 +749,7 @@
 	<number>476</number>
 	<generation>4</generation>
 	<name>PROBOPASS</name>
-	<image32>species/icons32/476.gif</image32>
+	<image32>species/icons32/476.png</image32>
 	<image80>species/icons80/probopass.png</image80>
 	<imageFront>species/iconsFront/476.png</imageFront>
 	<imageBack>species/iconsBack/476.png</imageBack>
@@ -789,7 +798,7 @@
 	<number>475</number>
 	<generation>4</generation>
 	<name>GALLADE</name>
-	<image32>species/icons32/475.gif</image32>
+	<image32>species/icons32/475.png</image32>
 	<image80>species/icons80/gallade.png</image80>
 	<imageFront>species/iconsFront/475.png</imageFront>
 	<imageBack>species/iconsBack/475.png</imageBack>
@@ -838,7 +847,7 @@
 	<number>474</number>
 	<generation>4</generation>
 	<name>PORYGON-Z</name>
-	<image32>species/icons32/474.gif</image32>
+	<image32>species/icons32/474.png</image32>
 	<image80>species/icons80/porygon-z.png</image80>
 	<imageFront>species/iconsFront/474.png</imageFront>
 	<imageBack>species/iconsBack/474.png</imageBack>
@@ -886,7 +895,7 @@
 	<number>473</number>
 	<generation>4</generation>
 	<name>MAMOSWINE</name>
-	<image32>species/icons32/473.gif</image32>
+	<image32>species/icons32/473.png</image32>
 	<image80>species/icons80/mamoswine.png</image80>
 	<imageFront>species/iconsFront/473.png</imageFront>
 	<imageBack>species/iconsBack/473.png</imageBack>
@@ -935,7 +944,7 @@
 	<number>472</number>
 	<generation>4</generation>
 	<name>GLISCOR</name>
-	<image32>species/icons32/472.gif</image32>
+	<image32>species/icons32/472.png</image32>
 	<image80>species/icons80/gliscor.png</image80>
 	<imageFront>species/iconsFront/472.png</imageFront>
 	<imageBack>species/iconsBack/472.png</imageBack>
@@ -985,7 +994,7 @@
 	<number>471</number>
 	<generation>4</generation>
 	<name>GLACEON</name>
-	<image32>species/icons32/471.gif</image32>
+	<image32>species/icons32/471.png</image32>
 	<image80>species/icons80/glaceon.png</image80>
 	<imageFront>species/iconsFront/471.png</imageFront>
 	<imageBack>species/iconsBack/471.png</imageBack>
@@ -1029,7 +1038,7 @@
 	<number>470</number>
 	<generation>4</generation>
 	<name>LEAFEON</name>
-	<image32>species/icons32/470.gif</image32>
+	<image32>species/icons32/470.png</image32>
 	<image80>species/icons80/leafeon.png</image80>
 	<imageFront>species/iconsFront/470.png</imageFront>
 	<imageBack>species/iconsBack/470.png</imageBack>
@@ -1073,7 +1082,7 @@
 	<number>469</number>
 	<generation>4</generation>
 	<name>YANMEGA</name>
-	<image32>species/icons32/469.gif</image32>
+	<image32>species/icons32/469.png</image32>
 	<image80>species/icons80/yanmega.png</image80>
 	<imageFront>species/iconsFront/469.png</imageFront>
 	<imageBack>species/iconsBack/469.png</imageBack>
@@ -1123,7 +1132,7 @@
 	<number>468</number>
 	<generation>4</generation>
 	<name>TOGEKISS</name>
-	<image32>species/icons32/468.gif</image32>
+	<image32>species/icons32/468.png</image32>
 	<image80>species/icons80/togekiss.png</image80>
 	<imageFront>species/iconsFront/468.png</imageFront>
 	<imageBack>species/iconsBack/468.png</imageBack>
@@ -1158,7 +1167,7 @@
 	<number>467</number>
 	<generation>4</generation>
 	<name>MAGMORTAR</name>
-	<image32>species/icons32/467.gif</image32>
+	<image32>species/icons32/467.png</image32>
 	<image80>species/icons80/magmortar.png</image80>
 	<imageFront>species/iconsFront/467.png</imageFront>
 	<imageBack>species/iconsBack/467.png</imageBack>
@@ -1205,7 +1214,7 @@
 	<number>466</number>
 	<generation>4</generation>
 	<name>ELECTIVIRE</name>
-	<image32>species/icons32/466.gif</image32>
+	<image32>species/icons32/466.png</image32>
 	<image80>species/icons80/electivire.png</image80>
 	<imageFront>species/iconsFront/466.png</imageFront>
 	<imageBack>species/iconsBack/466.png</imageBack>
@@ -1252,7 +1261,7 @@
 	<number>465</number>
 	<generation>4</generation>
 	<name>TANGROWTH</name>
-	<image32>species/icons32/465.gif</image32>
+	<image32>species/icons32/465.png</image32>
 	<image80>species/icons80/tangrowth.png</image80>
 	<imageFront>species/iconsFront/465.png</imageFront>
 	<imageBack>species/iconsBack/465.png</imageBack>
@@ -1301,7 +1310,7 @@
 	<number>464</number>
 	<generation>4</generation>
 	<name>RHYPERIOR</name>
-	<image32>species/icons32/464.gif</image32>
+	<image32>species/icons32/464.png</image32>
 	<image80>species/icons80/rhyperior.png</image80>
 	<imageFront>species/iconsFront/464.png</imageFront>
 	<imageBack>species/iconsBack/464.png</imageBack>
@@ -1348,7 +1357,7 @@
 	<number>463</number>
 	<generation>4</generation>
 	<name>LICKILICKY</name>
-	<image32>species/icons32/463.gif</image32>
+	<image32>species/icons32/463.png</image32>
 	<image80>species/icons80/lickilicky.png</image80>
 	<imageFront>species/iconsFront/463.png</imageFront>
 	<imageBack>species/iconsBack/463.png</imageBack>
@@ -1394,7 +1403,7 @@
 	<number>462</number>
 	<generation>4</generation>
 	<name>MAGNEZONE</name>
-	<image32>species/icons32/462.gif</image32>
+	<image32>species/icons32/462.png</image32>
 	<image80>species/icons80/magnezone.png</image80>
 	<imageFront>species/iconsFront/462.png</imageFront>
 	<imageBack>species/iconsBack/462.png</imageBack>
@@ -1444,7 +1453,7 @@
 	<number>461</number>
 	<generation>4</generation>
 	<name>WEAVILE</name>
-	<image32>species/icons32/461.gif</image32>
+	<image32>species/icons32/461.png</image32>
 	<image80>species/icons80/weavile.png</image80>
 	<imageFront>species/iconsFront/461.png</imageFront>
 	<imageBack>species/iconsBack/461.png</imageBack>
@@ -1492,7 +1501,7 @@
 	<number>460</number>
 	<generation>4</generation>
 	<name>ABOMASNOW</name>
-	<image32>species/icons32/460.gif</image32>
+	<image32>species/icons32/460.png</image32>
 	<image80>species/icons80/abomasnow.png</image80>
 	<imageFront>species/iconsFront/460.png</imageFront>
 	<imageBack>species/iconsBack/460.png</imageBack>
@@ -1538,7 +1547,7 @@
 	<number>459</number>
 	<generation>4</generation>
 	<name>SNOVER</name>
-	<image32>species/icons32/459.gif</image32>
+	<image32>species/icons32/459.png</image32>
 	<image80>species/icons80/snover.png</image80>
 	<imageFront>species/iconsFront/459.png</imageFront>
 	<imageBack>species/iconsBack/459.png</imageBack>
@@ -1588,7 +1597,7 @@
 	<number>458</number>
 	<generation>4</generation>
 	<name>MANTYKE</name>
-	<image32>species/icons32/458.gif</image32>
+	<image32>species/icons32/458.png</image32>
 	<image80>species/icons80/mantyke.png</image80>
 	<imageFront>species/iconsFront/458.png</imageFront>
 	<imageBack>species/iconsBack/458.png</imageBack>
@@ -1642,7 +1651,7 @@
 	<number>457</number>
 	<generation>4</generation>
 	<name>LUMINEON</name>
-	<image32>species/icons32/457.gif</image32>
+	<image32>species/icons32/457.png</image32>
 	<image80>species/icons80/lumineon.png</image80>
 	<imageFront>species/iconsFront/457.png</imageFront>
 	<imageBack>species/iconsBack/457.png</imageBack>
@@ -1688,7 +1697,7 @@
 	<number>456</number>
 	<generation>4</generation>
 	<name>FINNEON</name>
-	<image32>species/icons32/456.gif</image32>
+	<image32>species/icons32/456.png</image32>
 	<image80>species/icons80/finneon.png</image80>
 	<imageFront>species/iconsFront/456.png</imageFront>
 	<imageBack>species/iconsBack/456.png</imageBack>
@@ -1740,7 +1749,7 @@
 	<number>455</number>
 	<generation>4</generation>
 	<name>CARNIVINE</name>
-	<image32>species/icons32/455.gif</image32>
+	<image32>species/icons32/455.png</image32>
 	<image80>species/icons80/carnivine.png</image80>
 	<imageFront>species/iconsFront/455.png</imageFront>
 	<imageBack>species/iconsBack/455.png</imageBack>
@@ -1792,7 +1801,7 @@
 	<number>454</number>
 	<generation>4</generation>
 	<name>TOXICROAK</name>
-	<image32>species/icons32/454.gif</image32>
+	<image32>species/icons32/454.png</image32>
 	<image80>species/icons80/toxicroak.png</image80>
 	<imageFront>species/iconsFront/454.png</imageFront>
 	<imageBack>species/iconsBack/454.png</imageBack>
@@ -1839,7 +1848,7 @@
 	<number>453</number>
 	<generation>4</generation>
 	<name>CROAGUNK</name>
-	<image32>species/icons32/453.gif</image32>
+	<image32>species/icons32/453.png</image32>
 	<image80>species/icons80/croagunk.png</image80>
 	<imageFront>species/iconsFront/453.png</imageFront>
 	<imageBack>species/iconsBack/453.png</imageBack>
@@ -1895,7 +1904,7 @@
 	<number>452</number>
 	<generation>4</generation>
 	<name>DRAPION</name>
-	<image32>species/icons32/452.gif</image32>
+	<image32>species/icons32/452.png</image32>
 	<image80>species/icons80/drapion.png</image80>
 	<imageFront>species/iconsFront/452.png</imageFront>
 	<imageBack>species/iconsBack/452.png</imageBack>
@@ -1942,7 +1951,7 @@
 	<number>451</number>
 	<generation>4</generation>
 	<name>SKORUPI</name>
-	<image32>species/icons32/451.gif</image32>
+	<image32>species/icons32/451.png</image32>
 	<image80>species/icons80/skorupi.png</image80>
 	<imageFront>species/iconsFront/451.png</imageFront>
 	<imageBack>species/iconsBack/451.png</imageBack>
@@ -1993,7 +2002,7 @@
 	<number>450</number>
 	<generation>4</generation>
 	<name>HIPPOWDON</name>
-	<image32>species/icons32/450.gif</image32>
+	<image32>species/icons32/450.png</image32>
 	<image80>species/icons80/hippowdon.png</image80>
 	<imageFront>species/iconsFront/450.png</imageFront>
 	<imageBack>species/iconsBack/450.png</imageBack>
@@ -2039,7 +2048,7 @@
 	<number>449</number>
 	<generation>4</generation>
 	<name>HIPPOPOTAS</name>
-	<image32>species/icons32/449.gif</image32>
+	<image32>species/icons32/449.png</image32>
 	<image80>species/icons80/hippopotas.png</image80>
 	<imageFront>species/iconsFront/449.png</imageFront>
 	<imageBack>species/iconsBack/449.png</imageBack>
@@ -2087,7 +2096,7 @@
 	<number>448</number>
 	<generation>4</generation>
 	<name>LUCARIO</name>
-	<image32>species/icons32/448.gif</image32>
+	<image32>species/icons32/448.png</image32>
 	<image80>species/icons80/lucario.png</image80>
 	<imageFront>species/iconsFront/448.png</imageFront>
 	<imageBack>species/iconsBack/448.png</imageBack>
@@ -2134,7 +2143,7 @@
 	<number>447</number>
 	<generation>4</generation>
 	<name>RIOLU</name>
-	<image32>species/icons32/447.gif</image32>
+	<image32>species/icons32/447.png</image32>
 	<image80>species/icons80/riolu.png</image80>
 	<imageFront>species/iconsFront/447.png</imageFront>
 	<imageBack>species/iconsBack/447.png</imageBack>
@@ -2187,7 +2196,7 @@
 	<number>446</number>
 	<generation>4</generation>
 	<name>MUNCHLAX</name>
-	<image32>species/icons32/446.gif</image32>
+	<image32>species/icons32/446.png</image32>
 	<image80>species/icons80/munchlax.png</image80>
 	<imageFront>species/iconsFront/446.png</imageFront>
 	<imageBack>species/iconsBack/446.png</imageBack>
@@ -2241,7 +2250,7 @@
 	<number>445</number>
 	<generation>4</generation>
 	<name>GARCHOMP</name>
-	<image32>species/icons32/445.gif</image32>
+	<image32>species/icons32/445.png</image32>
 	<image80>species/icons80/garchomp.png</image80>
 	<imageFront>species/iconsFront/445.png</imageFront>
 	<imageBack>species/iconsBack/445.png</imageBack>
@@ -2287,7 +2296,7 @@
 	<number>444</number>
 	<generation>4</generation>
 	<name>GABITE</name>
-	<image32>species/icons32/444.gif</image32>
+	<image32>species/icons32/444.png</image32>
 	<image80>species/icons80/gabite.png</image80>
 	<imageFront>species/iconsFront/444.png</imageFront>
 	<imageBack>species/iconsBack/444.png</imageBack>
@@ -2329,7 +2338,7 @@
 	<number>443</number>
 	<generation>4</generation>
 	<name>GIBLE</name>
-	<image32>species/icons32/443.gif</image32>
+	<image32>species/icons32/443.png</image32>
 	<image80>species/icons80/gible.png</image80>
 	<imageFront>species/iconsFront/443.png</imageFront>
 	<imageBack>species/iconsBack/443.png</imageBack>
@@ -2380,7 +2389,7 @@
 	<number>442</number>
 	<generation>4</generation>
 	<name>SPIRITOMB</name>
-	<image32>species/icons32/442.gif</image32>
+	<image32>species/icons32/442.png</image32>
 	<image80>species/icons80/spiritomb.png</image80>
 	<imageFront>species/iconsFront/442.png</imageFront>
 	<imageBack>species/iconsBack/442.png</imageBack>
@@ -2430,7 +2439,7 @@
 	<number>441</number>
 	<generation>4</generation>
 	<name>CHATOT</name>
-	<image32>species/icons32/441.gif</image32>
+	<image32>species/icons32/441.png</image32>
 	<image80>species/icons80/chatot.png</image80>
 	<imageFront>species/iconsFront/441.png</imageFront>
 	<imageBack>species/iconsBack/441.png</imageBack>
@@ -2478,7 +2487,7 @@
 	<number>440</number>
 	<generation>4</generation>
 	<name>HAPPINY</name>
-	<image32>species/icons32/440.gif</image32>
+	<image32>species/icons32/440.png</image32>
 	<image80>species/icons80/happiny.png</image80>
 	<imageFront>species/iconsFront/440.png</imageFront>
 	<imageBack>species/iconsBack/440.png</imageBack>
@@ -2523,7 +2532,7 @@
 	<number>439</number>
 	<generation>4</generation>
 	<name>MIME JR.</name>
-	<image32>species/icons32/439.gif</image32>
+	<image32>species/icons32/439.png</image32>
 	<image80>species/icons80/mime jr..png</image80>
 	<imageFront>species/iconsFront/439.png</imageFront>
 	<imageBack>species/iconsBack/439.png</imageBack>
@@ -2583,7 +2592,7 @@
 	<number>438</number>
 	<generation>4</generation>
 	<name>BONSLY</name>
-	<image32>species/icons32/438.gif</image32>
+	<image32>species/icons32/438.png</image32>
 	<image80>species/icons80/bonsly.png</image80>
 	<imageFront>species/iconsFront/438.png</imageFront>
 	<imageBack>species/iconsBack/438.png</imageBack>
@@ -2633,7 +2642,7 @@
 	<number>437</number>
 	<generation>4</generation>
 	<name>BRONZONG</name>
-	<image32>species/icons32/437.gif</image32>
+	<image32>species/icons32/437.png</image32>
 	<image80>species/icons80/bronzong.png</image80>
 	<imageFront>species/iconsFront/437.png</imageFront>
 	<imageBack>species/iconsBack/437.png</imageBack>
@@ -2682,7 +2691,7 @@
 	<number>436</number>
 	<generation>4</generation>
 	<name>BRONZOR</name>
-	<image32>species/icons32/436.gif</image32>
+	<image32>species/icons32/436.png</image32>
 	<image80>species/icons80/bronzor.png</image80>
 	<imageFront>species/iconsFront/436.png</imageFront>
 	<imageBack>species/iconsBack/436.png</imageBack>
@@ -2726,7 +2735,7 @@
 	<number>435</number>
 	<generation>4</generation>
 	<name>SKUNTANK</name>
-	<image32>species/icons32/435.gif</image32>
+	<image32>species/icons32/435.png</image32>
 	<image80>species/icons80/skuntank.png</image80>
 	<imageFront>species/iconsFront/435.png</imageFront>
 	<imageBack>species/iconsBack/435.png</imageBack>
@@ -2770,7 +2779,7 @@
 	<number>434</number>
 	<generation>4</generation>
 	<name>STUNKY</name>
-	<image32>species/icons32/434.gif</image32>
+	<image32>species/icons32/434.png</image32>
 	<image80>species/icons80/stunky.png</image80>
 	<imageFront>species/iconsFront/434.png</imageFront>
 	<imageBack>species/iconsBack/434.png</imageBack>
@@ -2820,7 +2829,7 @@
 	<number>433</number>
 	<generation>4</generation>
 	<name>CHINGLING</name>
-	<image32>species/icons32/433.gif</image32>
+	<image32>species/icons32/433.png</image32>
 	<image80>species/icons80/chingling.png</image80>
 	<imageFront>species/iconsFront/433.png</imageFront>
 	<imageBack>species/iconsBack/433.png</imageBack>
@@ -2864,7 +2873,7 @@
 	<number>432</number>
 	<generation>4</generation>
 	<name>PURUGLY</name>
-	<image32>species/icons32/432.gif</image32>
+	<image32>species/icons32/432.png</image32>
 	<image80>species/icons80/purugly.png</image80>
 	<imageFront>species/iconsFront/432.png</imageFront>
 	<imageBack>species/iconsBack/432.png</imageBack>
@@ -2910,7 +2919,7 @@
 	<number>431</number>
 	<generation>4</generation>
 	<name>GLAMEOW</name>
-	<image32>species/icons32/431.gif</image32>
+	<image32>species/icons32/431.png</image32>
 	<image80>species/icons80/glameow.png</image80>
 	<imageFront>species/iconsFront/431.png</imageFront>
 	<imageBack>species/iconsBack/431.png</imageBack>
@@ -2959,7 +2968,7 @@
 	<number>430</number>
 	<generation>4</generation>
 	<name>HONCHKROW</name>
-	<image32>species/icons32/430.gif</image32>
+	<image32>species/icons32/430.png</image32>
 	<image80>species/icons80/honchkrow.png</image80>
 	<imageFront>species/iconsFront/430.png</imageFront>
 	<imageBack>species/iconsBack/430.png</imageBack>
@@ -2998,7 +3007,7 @@
 	<number>429</number>
 	<generation>4</generation>
 	<name>MISMAGIUS</name>
-	<image32>species/icons32/429.gif</image32>
+	<image32>species/icons32/429.png</image32>
 	<image80>species/icons80/mismagius.png</image80>
 	<imageFront>species/iconsFront/429.png</imageFront>
 	<imageBack>species/iconsBack/429.png</imageBack>
@@ -3035,7 +3044,7 @@
 	<number>428</number>
 	<generation>4</generation>
 	<name>LOPUNNY</name>
-	<image32>species/icons32/428.gif</image32>
+	<image32>species/icons32/428.png</image32>
 	<image80>species/icons80/lopunny.png</image80>
 	<imageFront>species/iconsFront/428.png</imageFront>
 	<imageBack>species/iconsBack/428.png</imageBack>
@@ -3082,7 +3091,7 @@
 	<number>427</number>
 	<generation>4</generation>
 	<name>BUNEARY</name>
-	<image32>species/icons32/427.gif</image32>
+	<image32>species/icons32/427.png</image32>
 	<image80>species/icons80/buneary.png</image80>
 	<imageFront>species/iconsFront/427.png</imageFront>
 	<imageBack>species/iconsBack/427.png</imageBack>
@@ -3139,7 +3148,7 @@
 	<number>426</number>
 	<generation>4</generation>
 	<name>DRIFBLIM</name>
-	<image32>species/icons32/426.gif</image32>
+	<image32>species/icons32/426.png</image32>
 	<image80>species/icons80/drifblim.png</image80>
 	<imageFront>species/iconsFront/426.png</imageFront>
 	<imageBack>species/iconsBack/426.png</imageBack>
@@ -3185,7 +3194,7 @@
 	<number>425</number>
 	<generation>4</generation>
 	<name>DRIFLOON</name>
-	<image32>species/icons32/425.gif</image32>
+	<image32>species/icons32/425.png</image32>
 	<image80>species/icons80/drifloon.png</image80>
 	<imageFront>species/iconsFront/425.png</imageFront>
 	<imageBack>species/iconsBack/425.png</imageBack>
@@ -3235,7 +3244,7 @@
 	<number>424</number>
 	<generation>4</generation>
 	<name>AMBIPOM</name>
-	<image32>species/icons32/424.gif</image32>
+	<image32>species/icons32/424.png</image32>
 	<image80>species/icons80/ambipom.png</image80>
 	<imageFront>species/iconsFront/424.png</imageFront>
 	<imageBack>species/iconsBack/424.png</imageBack>
@@ -3282,7 +3291,7 @@
 	<number>423</number>
 	<generation>4</generation>
 	<name>GASTRODON</name>
-	<image32>species/icons32/423.gif</image32>
+	<image32>species/icons32/423.png</image32>
 	<image80>species/icons80/gastrodon.png</image80>
 	<imageFront>species/iconsFront/423.png</imageFront>
 	<imageBack>species/iconsBack/423.png</imageBack>
@@ -3326,7 +3335,7 @@
 	<number>422</number>
 	<generation>4</generation>
 	<name>SHELLOS</name>
-	<image32>species/icons32/422.gif</image32>
+	<image32>species/icons32/422.png</image32>
 	<image80>species/icons80/shellos.png</image80>
 	<imageFront>species/iconsFront/422.png</imageFront>
 	<imageBack>species/iconsBack/422.png</imageBack>
@@ -3377,7 +3386,7 @@
 	<number>421</number>
 	<generation>4</generation>
 	<name>CHERRIM</name>
-	<image32>species/icons32/421.gif</image32>
+	<image32>species/icons32/421.png</image32>
 	<image80>species/icons80/cherrim.png</image80>
 	<imageFront>species/iconsFront/421.png</imageFront>
 	<imageBack>species/iconsBack/421.png</imageBack>
@@ -3420,7 +3429,7 @@
 	<number>420</number>
 	<generation>4</generation>
 	<name>CHERUBI</name>
-	<image32>species/icons32/420.gif</image32>
+	<image32>species/icons32/420.png</image32>
 	<image80>species/icons80/cherubi.png</image80>
 	<imageFront>species/iconsFront/420.png</imageFront>
 	<imageBack>species/iconsBack/420.png</imageBack>
@@ -3467,7 +3476,7 @@
 	<number>419</number>
 	<generation>4</generation>
 	<name>FLOATZEL</name>
-	<image32>species/icons32/419.gif</image32>
+	<image32>species/icons32/419.png</image32>
 	<image80>species/icons80/floatzel.png</image80>
 	<imageFront>species/iconsFront/419.png</imageFront>
 	<imageBack>species/iconsBack/419.png</imageBack>
@@ -3512,7 +3521,7 @@
 	<number>418</number>
 	<generation>4</generation>
 	<name>BUIZEL</name>
-	<image32>species/icons32/418.gif</image32>
+	<image32>species/icons32/418.png</image32>
 	<image80>species/icons80/buizel.png</image80>
 	<imageFront>species/iconsFront/418.png</imageFront>
 	<imageBack>species/iconsBack/418.png</imageBack>
@@ -3562,7 +3571,7 @@
 	<number>417</number>
 	<generation>4</generation>
 	<name>PACHIRISU</name>
-	<image32>species/icons32/417.gif</image32>
+	<image32>species/icons32/417.png</image32>
 	<image80>species/icons80/pachirisu.png</image80>
 	<imageFront>species/iconsFront/417.png</imageFront>
 	<imageBack>species/iconsBack/417.png</imageBack>
@@ -3611,7 +3620,7 @@
 	<number>416</number>
 	<generation>4</generation>
 	<name>VESPIQUEN</name>
-	<image32>species/icons32/416.gif</image32>
+	<image32>species/icons32/416.png</image32>
 	<image80>species/icons80/vespiquen.png</image80>
 	<imageFront>species/iconsFront/416.png</imageFront>
 	<imageBack>species/iconsBack/416.png</imageBack>
@@ -3658,7 +3667,7 @@
 	<number>415</number>
 	<generation>4</generation>
 	<name>COMBEE</name>
-	<image32>species/icons32/415.gif</image32>
+	<image32>species/icons32/415.png</image32>
 	<image80>species/icons80/combee.png</image80>
 	<imageFront>species/iconsFront/415.png</imageFront>
 	<imageBack>species/iconsBack/415.png</imageBack>
@@ -3691,7 +3700,7 @@
 	<number>414</number>
 	<generation>4</generation>
 	<name>MOTHIM</name>
-	<image32>species/icons32/414.gif</image32>
+	<image32>species/icons32/414.png</image32>
 	<image80>species/icons80/mothim.png</image80>
 	<imageFront>species/iconsFront/414.png</imageFront>
 	<imageBack>species/iconsBack/414.png</imageBack>
@@ -3734,7 +3743,7 @@
 	<number>413</number>
 	<generation>4</generation>
 	<name>WORMADAM</name>
-	<image32>species/icons32/413.gif</image32>
+	<image32>species/icons32/413.png</image32>
 	<image80>species/icons80/wormadam.png</image80>
 	<imageFront>species/iconsFront/413.png</imageFront>
 	<imageBack>species/iconsBack/413.png</imageBack>
@@ -3777,7 +3786,7 @@
 	<number>412</number>
 	<generation>4</generation>
 	<name>BURMY</name>
-	<image32>species/icons32/412.gif</image32>
+	<image32>species/icons32/412.png</image32>
 	<image80>species/icons80/burmy.png</image80>
 	<imageFront>species/iconsFront/412.png</imageFront>
 	<imageBack>species/iconsBack/412.png</imageBack>
@@ -3811,7 +3820,7 @@
 	<number>411</number>
 	<generation>4</generation>
 	<name>BASTIODON</name>
-	<image32>species/icons32/411.gif</image32>
+	<image32>species/icons32/411.png</image32>
 	<image80>species/icons80/bastiodon.png</image80>
 	<imageFront>species/iconsFront/411.png</imageFront>
 	<imageBack>species/iconsBack/411.png</imageBack>
@@ -3856,7 +3865,7 @@
 	<number>410</number>
 	<generation>4</generation>
 	<name>SHIELDON</name>
-	<image32>species/icons32/410.gif</image32>
+	<image32>species/icons32/410.png</image32>
 	<image80>species/icons80/shieldon.png</image80>
 	<imageFront>species/iconsFront/410.png</imageFront>
 	<imageBack>species/iconsBack/410.png</imageBack>
@@ -3907,7 +3916,7 @@
 	<number>409</number>
 	<generation>4</generation>
 	<name>RAMPARDOS</name>
-	<image32>species/icons32/409.gif</image32>
+	<image32>species/icons32/409.png</image32>
 	<image80>species/icons80/rampardos.png</image80>
 	<imageFront>species/iconsFront/409.png</imageFront>
 	<imageBack>species/iconsBack/409.png</imageBack>
@@ -3950,7 +3959,7 @@
 	<number>408</number>
 	<generation>4</generation>
 	<name>CRANIDOS</name>
-	<image32>species/icons32/408.gif</image32>
+	<image32>species/icons32/408.png</image32>
 	<image80>species/icons80/cranidos.png</image80>
 	<imageFront>species/iconsFront/408.png</imageFront>
 	<imageBack>species/iconsBack/408.png</imageBack>
@@ -4000,7 +4009,7 @@
 	<number>407</number>
 	<generation>4</generation>
 	<name>ROSERADE</name>
-	<image32>species/icons32/407.gif</image32>
+	<image32>species/icons32/407.png</image32>
 	<image80>species/icons80/roserade.png</image80>
 	<imageFront>species/iconsFront/407.png</imageFront>
 	<imageBack>species/iconsBack/407.png</imageBack>
@@ -4036,7 +4045,7 @@
 	<number>406</number>
 	<generation>4</generation>
 	<name>BUDEW</name>
-	<image32>species/icons32/406.gif</image32>
+	<image32>species/icons32/406.png</image32>
 	<image80>species/icons80/budew.png</image80>
 	<imageFront>species/iconsFront/406.png</imageFront>
 	<imageBack>species/iconsBack/406.png</imageBack>
@@ -4082,7 +4091,7 @@
 	<number>405</number>
 	<generation>4</generation>
 	<name>LUXRAY</name>
-	<image32>species/icons32/405.gif</image32>
+	<image32>species/icons32/405.png</image32>
 	<image80>species/icons80/luxray.png</image80>
 	<imageFront>species/iconsFront/405.png</imageFront>
 	<imageBack>species/iconsBack/405.png</imageBack>
@@ -4126,7 +4135,7 @@
 	<number>404</number>
 	<generation>4</generation>
 	<name>LUXIO</name>
-	<image32>species/icons32/404.gif</image32>
+	<image32>species/icons32/404.png</image32>
 	<image80>species/icons80/luxio.png</image80>
 	<imageFront>species/iconsFront/404.png</imageFront>
 	<imageBack>species/iconsBack/404.png</imageBack>
@@ -4169,7 +4178,7 @@
 	<number>403</number>
 	<generation>4</generation>
 	<name>SHINX</name>
-	<image32>species/icons32/403.gif</image32>
+	<image32>species/icons32/403.png</image32>
 	<image80>species/icons80/shinx.png</image80>
 	<imageFront>species/iconsFront/403.png</imageFront>
 	<imageBack>species/iconsBack/403.png</imageBack>
@@ -4217,7 +4226,7 @@
 	<number>402</number>
 	<generation>4</generation>
 	<name>KRICKETUNE</name>
-	<image32>species/icons32/402.gif</image32>
+	<image32>species/icons32/402.png</image32>
 	<image80>species/icons80/kricketune.png</image80>
 	<imageFront>species/iconsFront/402.png</imageFront>
 	<imageBack>species/iconsBack/402.png</imageBack>
@@ -4258,7 +4267,7 @@
 	<number>401</number>
 	<generation>4</generation>
 	<name>KRICKETOT</name>
-	<image32>species/icons32/401.gif</image32>
+	<image32>species/icons32/401.png</image32>
 	<image80>species/icons80/kricketot.png</image80>
 	<imageFront>species/iconsFront/401.png</imageFront>
 	<imageBack>species/iconsBack/401.png</imageBack>
@@ -4291,7 +4300,7 @@
 	<number>400</number>
 	<generation>4</generation>
 	<name>BIBAREL</name>
-	<image32>species/icons32/400.gif</image32>
+	<image32>species/icons32/400.png</image32>
 	<image80>species/icons80/bibarel.png</image80>
 	<imageFront>species/iconsFront/400.png</imageFront>
 	<imageBack>species/iconsBack/400.png</imageBack>
@@ -4335,7 +4344,7 @@
 	<number>399</number>
 	<generation>4</generation>
 	<name>BIDOOF</name>
-	<image32>species/icons32/399.gif</image32>
+	<image32>species/icons32/399.png</image32>
 	<image80>species/icons80/bidoof.png</image80>
 	<imageFront>species/iconsFront/399.png</imageFront>
 	<imageBack>species/iconsBack/399.png</imageBack>
@@ -4385,7 +4394,7 @@
 	<number>398</number>
 	<generation>4</generation>
 	<name>STARAPTOR</name>
-	<image32>species/icons32/398.gif</image32>
+	<image32>species/icons32/398.png</image32>
 	<image80>species/icons80/staraptor.png</image80>
 	<imageFront>species/iconsFront/398.png</imageFront>
 	<imageBack>species/iconsBack/398.png</imageBack>
@@ -4430,7 +4439,7 @@
 	<number>397</number>
 	<generation>4</generation>
 	<name>STARAVIA</name>
-	<image32>species/icons32/397.gif</image32>
+	<image32>species/icons32/397.png</image32>
 	<image80>species/icons80/staravia.png</image80>
 	<imageFront>species/iconsFront/397.png</imageFront>
 	<imageBack>species/iconsBack/397.png</imageBack>
@@ -4473,7 +4482,7 @@
 	<number>396</number>
 	<generation>4</generation>
 	<name>STARLY</name>
-	<image32>species/icons32/396.gif</image32>
+	<image32>species/icons32/396.png</image32>
 	<image80>species/icons80/starly.png</image80>
 	<imageFront>species/iconsFront/396.png</imageFront>
 	<imageBack>species/iconsBack/396.png</imageBack>
@@ -4522,7 +4531,7 @@
 	<number>395</number>
 	<generation>4</generation>
 	<name>EMPOLEON</name>
-	<image32>species/icons32/395.gif</image32>
+	<image32>species/icons32/395.png</image32>
 	<image80>species/icons80/empoleon.png</image80>
 	<imageFront>species/iconsFront/395.png</imageFront>
 	<imageBack>species/iconsBack/395.png</imageBack>
@@ -4570,7 +4579,7 @@
 	<number>394</number>
 	<generation>4</generation>
 	<name>PRINPLUP</name>
-	<image32>species/icons32/394.gif</image32>
+	<image32>species/icons32/394.png</image32>
 	<image80>species/icons80/prinplup.png</image80>
 	<imageFront>species/iconsFront/394.png</imageFront>
 	<imageBack>species/iconsBack/394.png</imageBack>
@@ -4616,7 +4625,7 @@
 	<number>393</number>
 	<generation>4</generation>
 	<name>PIPLUP</name>
-	<image32>species/icons32/393.gif</image32>
+	<image32>species/icons32/393.png</image32>
 	<image80>species/icons80/piplup.png</image80>
 	<imageFront>species/iconsFront/393.png</imageFront>
 	<imageBack>species/iconsBack/393.png</imageBack>
@@ -4670,7 +4679,7 @@
 	<number>392</number>
 	<generation>4</generation>
 	<name>INFERNAPE</name>
-	<image32>species/icons32/392.gif</image32>
+	<image32>species/icons32/392.png</image32>
 	<image80>species/icons80/infernape.png</image80>
 	<imageFront>species/iconsFront/392.png</imageFront>
 	<imageBack>species/iconsBack/392.png</imageBack>
@@ -4716,7 +4725,7 @@
 	<number>391</number>
 	<generation>4</generation>
 	<name>MONFERNO</name>
-	<image32>species/icons32/391.gif</image32>
+	<image32>species/icons32/391.png</image32>
 	<image80>species/icons80/monferno.png</image80>
 	<imageFront>species/iconsFront/391.png</imageFront>
 	<imageBack>species/iconsBack/391.png</imageBack>
@@ -4761,7 +4770,7 @@
 	<number>390</number>
 	<generation>4</generation>
 	<name>CHIMCHAR</name>
-	<image32>species/icons32/390.gif</image32>
+	<image32>species/icons32/390.png</image32>
 	<image80>species/icons80/chimchar.png</image80>
 	<imageFront>species/iconsFront/390.png</imageFront>
 	<imageBack>species/iconsBack/390.png</imageBack>
@@ -4814,7 +4823,7 @@
 	<number>389</number>
 	<generation>4</generation>
 	<name>TORTERRA</name>
-	<image32>species/icons32/389.gif</image32>
+	<image32>species/icons32/389.png</image32>
 	<image80>species/icons80/torterra.png</image80>
 	<imageFront>species/iconsFront/389.png</imageFront>
 	<imageBack>species/iconsBack/389.png</imageBack>
@@ -4862,7 +4871,7 @@
 	<number>388</number>
 	<generation>4</generation>
 	<name>GROTLE</name>
-	<image32>species/icons32/388.gif</image32>
+	<image32>species/icons32/388.png</image32>
 	<image80>species/icons80/grotle.png</image80>
 	<imageFront>species/iconsFront/388.png</imageFront>
 	<imageBack>species/iconsBack/388.png</imageBack>
@@ -4906,7 +4915,7 @@
 	<number>387</number>
 	<generation>4</generation>
 	<name>TURTWIG</name>
-	<image32>species/icons32/387.gif</image32>
+	<image32>species/icons32/387.png</image32>
 	<image80>species/icons80/turtwig.png</image80>
 	<imageFront>species/iconsFront/387.png</imageFront>
 	<imageBack>species/iconsBack/387.png</imageBack>
@@ -4959,7 +4968,7 @@
 	<number>386</number>
 	<generation>3</generation>
 	<name>DEOXYS</name>
-	<image32>species/icons32/386.gif</image32>
+	<image32>species/icons32/386.png</image32>
 	<image80>species/icons80/deoxys.png</image80>
 	<imageFront>species/iconsFront/386.png</imageFront>
 	<imageBack>species/iconsBack/386.png</imageBack>
@@ -5004,7 +5013,7 @@
 	<number>385</number>
 	<generation>3</generation>
 	<name>JIRACHI</name>
-	<image32>species/icons32/385.gif</image32>
+	<image32>species/icons32/385.png</image32>
 	<image80>species/icons80/jirachi.png</image80>
 	<imageFront>species/iconsFront/385.png</imageFront>
 	<imageBack>species/iconsBack/385.png</imageBack>
@@ -5051,7 +5060,7 @@
 	<number>384</number>
 	<generation>3</generation>
 	<name>RAYQUAZA</name>
-	<image32>species/icons32/384.gif</image32>
+	<image32>species/icons32/384.png</image32>
 	<image80>species/icons80/rayquaza.png</image80>
 	<imageFront>species/iconsFront/384.png</imageFront>
 	<imageBack>species/iconsBack/384.png</imageBack>
@@ -5094,7 +5103,7 @@
 	<number>383</number>
 	<generation>3</generation>
 	<name>GROUDON</name>
-	<image32>species/icons32/383.gif</image32>
+	<image32>species/icons32/383.png</image32>
 	<image80>species/icons80/groudon.png</image80>
 	<imageFront>species/iconsFront/383.png</imageFront>
 	<imageBack>species/iconsBack/383.png</imageBack>
@@ -5137,7 +5146,7 @@
 	<number>382</number>
 	<generation>3</generation>
 	<name>KYOGRE</name>
-	<image32>species/icons32/382.gif</image32>
+	<image32>species/icons32/382.png</image32>
 	<image80>species/icons80/kyogre.png</image80>
 	<imageFront>species/iconsFront/382.png</imageFront>
 	<imageBack>species/iconsBack/382.png</imageBack>
@@ -5180,7 +5189,7 @@
 	<number>381</number>
 	<generation>3</generation>
 	<name>LATIOS</name>
-	<image32>species/icons32/381.gif</image32>
+	<image32>species/icons32/381.png</image32>
 	<image80>species/icons80/latios.png</image80>
 	<imageFront>species/iconsFront/381.png</imageFront>
 	<imageBack>species/iconsBack/381.png</imageBack>
@@ -5226,7 +5235,7 @@
 	<number>380</number>
 	<generation>3</generation>
 	<name>LATIAS</name>
-	<image32>species/icons32/380.gif</image32>
+	<image32>species/icons32/380.png</image32>
 	<image80>species/icons80/latias.png</image80>
 	<imageFront>species/iconsFront/380.png</imageFront>
 	<imageBack>species/iconsBack/380.png</imageBack>
@@ -5272,7 +5281,7 @@
 	<number>379</number>
 	<generation>3</generation>
 	<name>REGISTEEL</name>
-	<image32>species/icons32/379.gif</image32>
+	<image32>species/icons32/379.png</image32>
 	<image80>species/icons80/registeel.png</image80>
 	<imageFront>species/iconsFront/379.png</imageFront>
 	<imageBack>species/iconsBack/379.png</imageBack>
@@ -5317,7 +5326,7 @@
 	<number>378</number>
 	<generation>3</generation>
 	<name>REGICE</name>
-	<image32>species/icons32/378.gif</image32>
+	<image32>species/icons32/378.png</image32>
 	<image80>species/icons80/regice.png</image80>
 	<imageFront>species/iconsFront/378.png</imageFront>
 	<imageBack>species/iconsBack/378.png</imageBack>
@@ -5360,7 +5369,7 @@
 	<number>377</number>
 	<generation>3</generation>
 	<name>REGIROCK</name>
-	<image32>species/icons32/377.gif</image32>
+	<image32>species/icons32/377.png</image32>
 	<image80>species/icons80/regirock.png</image80>
 	<imageFront>species/iconsFront/377.png</imageFront>
 	<imageBack>species/iconsBack/377.png</imageBack>
@@ -5403,7 +5412,7 @@
 	<number>376</number>
 	<generation>3</generation>
 	<name>METAGROSS</name>
-	<image32>species/icons32/376.gif</image32>
+	<image32>species/icons32/376.png</image32>
 	<image80>species/icons80/metagross.png</image80>
 	<imageFront>species/iconsFront/376.png</imageFront>
 	<imageBack>species/iconsBack/376.png</imageBack>
@@ -5450,7 +5459,7 @@
 	<number>375</number>
 	<generation>3</generation>
 	<name>METANG</name>
-	<image32>species/icons32/375.gif</image32>
+	<image32>species/icons32/375.png</image32>
 	<image80>species/icons80/metang.png</image80>
 	<imageFront>species/iconsFront/375.png</imageFront>
 	<imageBack>species/iconsBack/375.png</imageBack>
@@ -5496,7 +5505,7 @@
 	<number>374</number>
 	<generation>3</generation>
 	<name>BELDUM</name>
-	<image32>species/icons32/374.gif</image32>
+	<image32>species/icons32/374.png</image32>
 	<image80>species/icons80/beldum.png</image80>
 	<imageFront>species/iconsFront/374.png</imageFront>
 	<imageBack>species/iconsBack/374.png</imageBack>
@@ -5528,7 +5537,7 @@
 	<number>373</number>
 	<generation>3</generation>
 	<name>SALAMENCE</name>
-	<image32>species/icons32/373.gif</image32>
+	<image32>species/icons32/373.png</image32>
 	<image80>species/icons80/salamence.png</image80>
 	<imageFront>species/iconsFront/373.png</imageFront>
 	<imageBack>species/iconsBack/373.png</imageBack>
@@ -5578,7 +5587,7 @@
 	<number>372</number>
 	<generation>3</generation>
 	<name>SHELGON</name>
-	<image32>species/icons32/372.gif</image32>
+	<image32>species/icons32/372.png</image32>
 	<image80>species/icons80/shelgon.png</image80>
 	<imageFront>species/iconsFront/372.png</imageFront>
 	<imageBack>species/iconsBack/372.png</imageBack>
@@ -5625,7 +5634,7 @@
 	<number>371</number>
 	<generation>3</generation>
 	<name>BAGON</name>
-	<image32>species/icons32/371.gif</image32>
+	<image32>species/icons32/371.png</image32>
 	<image80>species/icons80/bagon.png</image80>
 	<imageFront>species/iconsFront/371.png</imageFront>
 	<imageBack>species/iconsBack/371.png</imageBack>
@@ -5676,7 +5685,7 @@
 	<number>370</number>
 	<generation>3</generation>
 	<name>LUVDISC</name>
-	<image32>species/icons32/370.gif</image32>
+	<image32>species/icons32/370.png</image32>
 	<image80>species/icons80/luvdisc.png</image80>
 	<imageFront>species/iconsFront/370.png</imageFront>
 	<imageBack>species/iconsBack/370.png</imageBack>
@@ -5726,7 +5735,7 @@
 	<number>369</number>
 	<generation>3</generation>
 	<name>RELICANTH</name>
-	<image32>species/icons32/369.gif</image32>
+	<image32>species/icons32/369.png</image32>
 	<image80>species/icons80/relicanth.png</image80>
 	<imageFront>species/iconsFront/369.png</imageFront>
 	<imageBack>species/iconsBack/369.png</imageBack>
@@ -5779,7 +5788,7 @@
 	<number>368</number>
 	<generation>3</generation>
 	<name>GOREBYSS</name>
-	<image32>species/icons32/368.gif</image32>
+	<image32>species/icons32/368.png</image32>
 	<image80>species/icons80/gorebyss.png</image80>
 	<imageFront>species/iconsFront/368.png</imageFront>
 	<imageBack>species/iconsBack/368.png</imageBack>
@@ -5822,7 +5831,7 @@
 	<number>367</number>
 	<generation>3</generation>
 	<name>HUNTAIL</name>
-	<image32>species/icons32/367.gif</image32>
+	<image32>species/icons32/367.png</image32>
 	<image80>species/icons80/huntail.png</image80>
 	<imageFront>species/iconsFront/367.png</imageFront>
 	<imageBack>species/iconsBack/367.png</imageBack>
@@ -5865,7 +5874,7 @@
 	<number>366</number>
 	<generation>3</generation>
 	<name>CLAMPERL</name>
-	<image32>species/icons32/366.gif</image32>
+	<image32>species/icons32/366.png</image32>
 	<image80>species/icons80/clamperl.png</image80>
 	<imageFront>species/iconsFront/366.png</imageFront>
 	<imageBack>species/iconsBack/366.png</imageBack>
@@ -5907,7 +5916,7 @@
 	<number>365</number>
 	<generation>3</generation>
 	<name>WALREIN</name>
-	<image32>species/icons32/365.gif</image32>
+	<image32>species/icons32/365.png</image32>
 	<image80>species/icons80/walrein.png</image80>
 	<imageFront>species/iconsFront/365.png</imageFront>
 	<imageBack>species/iconsBack/365.png</imageBack>
@@ -5954,7 +5963,7 @@
 	<number>364</number>
 	<generation>3</generation>
 	<name>SEALEO</name>
-	<image32>species/icons32/364.gif</image32>
+	<image32>species/icons32/364.png</image32>
 	<image80>species/icons80/sealeo.png</image80>
 	<imageFront>species/iconsFront/364.png</imageFront>
 	<imageBack>species/iconsBack/364.png</imageBack>
@@ -5999,7 +6008,7 @@
 	<number>363</number>
 	<generation>3</generation>
 	<name>SPHEAL</name>
-	<image32>species/icons32/363.gif</image32>
+	<image32>species/icons32/363.png</image32>
 	<image80>species/icons80/spheal.png</image80>
 	<imageFront>species/iconsFront/363.png</imageFront>
 	<imageBack>species/iconsBack/363.png</imageBack>
@@ -6052,7 +6061,7 @@
 	<number>362</number>
 	<generation>3</generation>
 	<name>GLALIE</name>
-	<image32>species/icons32/362.gif</image32>
+	<image32>species/icons32/362.png</image32>
 	<image80>species/icons80/glalie.png</image80>
 	<imageFront>species/iconsFront/362.png</imageFront>
 	<imageBack>species/iconsBack/362.png</imageBack>
@@ -6098,7 +6107,7 @@
 	<number>361</number>
 	<generation>3</generation>
 	<name>SNORUNT</name>
-	<image32>species/icons32/361.gif</image32>
+	<image32>species/icons32/361.png</image32>
 	<image80>species/icons80/snorunt.png</image80>
 	<imageFront>species/iconsFront/361.png</imageFront>
 	<imageBack>species/iconsBack/361.png</imageBack>
@@ -6146,7 +6155,7 @@
 	<number>360</number>
 	<generation>3</generation>
 	<name>WYNAUT</name>
-	<image32>species/icons32/360.gif</image32>
+	<image32>species/icons32/360.png</image32>
 	<image80>species/icons80/wynaut.png</image80>
 	<imageFront>species/iconsFront/360.png</imageFront>
 	<imageBack>species/iconsBack/360.png</imageBack>
@@ -6184,7 +6193,7 @@
 	<number>359</number>
 	<generation>3</generation>
 	<name>ABSOL</name>
-	<image32>species/icons32/359.gif</image32>
+	<image32>species/icons32/359.png</image32>
 	<image80>species/icons80/absol.png</image80>
 	<imageFront>species/iconsFront/359.png</imageFront>
 	<imageBack>species/iconsBack/359.png</imageBack>
@@ -6244,7 +6253,7 @@
 	<number>358</number>
 	<generation>3</generation>
 	<name>CHIMECHO</name>
-	<image32>species/icons32/358.gif</image32>
+	<image32>species/icons32/358.png</image32>
 	<image80>species/icons80/chimecho.png</image80>
 	<imageFront>species/iconsFront/358.png</imageFront>
 	<imageBack>species/iconsBack/358.png</imageBack>
@@ -6294,7 +6303,7 @@
 	<number>357</number>
 	<generation>3</generation>
 	<name>TROPIUS</name>
-	<image32>species/icons32/357.gif</image32>
+	<image32>species/icons32/357.png</image32>
 	<image80>species/icons80/tropius.png</image80>
 	<imageFront>species/iconsFront/357.png</imageFront>
 	<imageBack>species/iconsBack/357.png</imageBack>
@@ -6348,7 +6357,7 @@
 	<number>356</number>
 	<generation>3</generation>
 	<name>DUSCLOPS</name>
-	<image32>species/icons32/356.gif</image32>
+	<image32>species/icons32/356.png</image32>
 	<image80>species/icons80/dusclops.png</image80>
 	<imageFront>species/iconsFront/356.png</imageFront>
 	<imageBack>species/iconsBack/356.png</imageBack>
@@ -6399,7 +6408,7 @@
 	<number>355</number>
 	<generation>3</generation>
 	<name>DUSKULL</name>
-	<image32>species/icons32/355.gif</image32>
+	<image32>species/icons32/355.png</image32>
 	<image80>species/icons80/duskull.png</image80>
 	<imageFront>species/iconsFront/355.png</imageFront>
 	<imageBack>species/iconsBack/355.png</imageBack>
@@ -6450,7 +6459,7 @@
 	<number>354</number>
 	<generation>3</generation>
 	<name>BANETTE</name>
-	<image32>species/icons32/354.gif</image32>
+	<image32>species/icons32/354.png</image32>
 	<image80>species/icons80/banette.png</image80>
 	<imageFront>species/iconsFront/354.png</imageFront>
 	<imageBack>species/iconsBack/354.png</imageBack>
@@ -6498,7 +6507,7 @@
 	<number>353</number>
 	<generation>3</generation>
 	<name>SHUPPET</name>
-	<image32>species/icons32/353.gif</image32>
+	<image32>species/icons32/353.png</image32>
 	<image80>species/icons80/shuppet.png</image80>
 	<imageFront>species/iconsFront/353.png</imageFront>
 	<imageBack>species/iconsBack/353.png</imageBack>
@@ -6552,7 +6561,7 @@
 	<number>352</number>
 	<generation>3</generation>
 	<name>KECLEON</name>
-	<image32>species/icons32/352.gif</image32>
+	<image32>species/icons32/352.png</image32>
 	<image80>species/icons80/kecleon.png</image80>
 	<imageFront>species/iconsFront/352.png</imageFront>
 	<imageBack>species/iconsBack/352.png</imageBack>
@@ -6605,7 +6614,7 @@
 	<number>351</number>
 	<generation>3</generation>
 	<name>CASTFORM</name>
-	<image32>species/icons32/351.gif</image32>
+	<image32>species/icons32/351.png</image32>
 	<image80>species/icons80/castform.png</image80>
 	<imageFront>species/iconsFront/351.png</imageFront>
 	<imageBack>species/iconsBack/351.png</imageBack>
@@ -6650,7 +6659,7 @@
 	<number>350</number>
 	<generation>3</generation>
 	<name>MILOTIC</name>
-	<image32>species/icons32/350.gif</image32>
+	<image32>species/icons32/350.png</image32>
 	<image80>species/icons80/milotic.png</image80>
 	<imageFront>species/iconsFront/350.png</imageFront>
 	<imageBack>species/iconsBack/350.png</imageBack>
@@ -6695,7 +6704,7 @@
 	<number>349</number>
 	<generation>3</generation>
 	<name>FEEBAS</name>
-	<image32>species/icons32/349.gif</image32>
+	<image32>species/icons32/349.png</image32>
 	<image80>species/icons80/feebas.png</image80>
 	<imageFront>species/iconsFront/349.png</imageFront>
 	<imageBack>species/iconsBack/349.png</imageBack>
@@ -6738,7 +6747,7 @@
 	<number>348</number>
 	<generation>3</generation>
 	<name>ARMALDO</name>
-	<image32>species/icons32/348.gif</image32>
+	<image32>species/icons32/348.png</image32>
 	<image80>species/icons80/armaldo.png</image80>
 	<imageFront>species/iconsFront/348.png</imageFront>
 	<imageBack>species/iconsBack/348.png</imageBack>
@@ -6783,7 +6792,7 @@
 	<number>347</number>
 	<generation>3</generation>
 	<name>ANORITH</name>
-	<image32>species/icons32/347.gif</image32>
+	<image32>species/icons32/347.png</image32>
 	<image80>species/icons80/anorith.png</image80>
 	<imageFront>species/iconsFront/347.png</imageFront>
 	<imageBack>species/iconsBack/347.png</imageBack>
@@ -6833,7 +6842,7 @@
 	<number>346</number>
 	<generation>3</generation>
 	<name>CRADILY</name>
-	<image32>species/icons32/346.gif</image32>
+	<image32>species/icons32/346.png</image32>
 	<image80>species/icons80/cradily.png</image80>
 	<imageFront>species/iconsFront/346.png</imageFront>
 	<imageBack>species/iconsBack/346.png</imageBack>
@@ -6879,7 +6888,7 @@
 	<number>345</number>
 	<generation>3</generation>
 	<name>LILEEP</name>
-	<image32>species/icons32/345.gif</image32>
+	<image32>species/icons32/345.png</image32>
 	<image80>species/icons80/lileep.png</image80>
 	<imageFront>species/iconsFront/345.png</imageFront>
 	<imageBack>species/iconsBack/345.png</imageBack>
@@ -6929,7 +6938,7 @@
 	<number>344</number>
 	<generation>3</generation>
 	<name>CLAYDOL</name>
-	<image32>species/icons32/344.gif</image32>
+	<image32>species/icons32/344.png</image32>
 	<image80>species/icons80/claydol.png</image80>
 	<imageFront>species/iconsFront/344.png</imageFront>
 	<imageBack>species/iconsBack/344.png</imageBack>
@@ -6978,7 +6987,7 @@
 	<number>343</number>
 	<generation>3</generation>
 	<name>BALTOY</name>
-	<image32>species/icons32/343.gif</image32>
+	<image32>species/icons32/343.png</image32>
 	<image80>species/icons80/baltoy.png</image80>
 	<imageFront>species/iconsFront/343.png</imageFront>
 	<imageBack>species/iconsBack/343.png</imageBack>
@@ -7023,7 +7032,7 @@
 	<number>342</number>
 	<generation>3</generation>
 	<name>CRAWDAUNT</name>
-	<image32>species/icons32/342.gif</image32>
+	<image32>species/icons32/342.png</image32>
 	<image80>species/icons80/crawdaunt.png</image80>
 	<imageFront>species/iconsFront/342.png</imageFront>
 	<imageBack>species/iconsBack/342.png</imageBack>
@@ -7071,7 +7080,7 @@
 	<number>341</number>
 	<generation>3</generation>
 	<name>CORPHISH</name>
-	<image32>species/icons32/341.gif</image32>
+	<image32>species/icons32/341.png</image32>
 	<image80>species/icons80/corphish.png</image80>
 	<imageFront>species/iconsFront/341.png</imageFront>
 	<imageBack>species/iconsBack/341.png</imageBack>
@@ -7122,7 +7131,7 @@
 	<number>340</number>
 	<generation>3</generation>
 	<name>WHISCASH</name>
-	<image32>species/icons32/340.gif</image32>
+	<image32>species/icons32/340.png</image32>
 	<image80>species/icons80/whiscash.png</image80>
 	<imageFront>species/iconsFront/340.png</imageFront>
 	<imageBack>species/iconsBack/340.png</imageBack>
@@ -7171,7 +7180,7 @@
 	<number>339</number>
 	<generation>3</generation>
 	<name>BARBOACH</name>
-	<image32>species/icons32/339.gif</image32>
+	<image32>species/icons32/339.png</image32>
 	<image80>species/icons80/barboach.png</image80>
 	<imageFront>species/iconsFront/339.png</imageFront>
 	<imageBack>species/iconsBack/339.png</imageBack>
@@ -7222,7 +7231,7 @@
 	<number>338</number>
 	<generation>3</generation>
 	<name>SOLROCK</name>
-	<image32>species/icons32/338.gif</image32>
+	<image32>species/icons32/338.png</image32>
 	<image80>species/icons80/solrock.png</image80>
 	<imageFront>species/iconsFront/338.png</imageFront>
 	<imageBack>species/iconsBack/338.png</imageBack>
@@ -7266,7 +7275,7 @@
 	<number>337</number>
 	<generation>3</generation>
 	<name>LUNATONE</name>
-	<image32>species/icons32/337.gif</image32>
+	<image32>species/icons32/337.png</image32>
 	<image80>species/icons80/lunatone.png</image80>
 	<imageFront>species/iconsFront/337.png</imageFront>
 	<imageBack>species/iconsBack/337.png</imageBack>
@@ -7310,7 +7319,7 @@
 	<number>336</number>
 	<generation>3</generation>
 	<name>SEVIPER</name>
-	<image32>species/icons32/336.gif</image32>
+	<image32>species/icons32/336.png</image32>
 	<image80>species/icons80/seviper.png</image80>
 	<imageFront>species/iconsFront/336.png</imageFront>
 	<imageBack>species/iconsBack/336.png</imageBack>
@@ -7361,7 +7370,7 @@
 	<number>335</number>
 	<generation>3</generation>
 	<name>ZANGOOSE</name>
-	<image32>species/icons32/335.gif</image32>
+	<image32>species/icons32/335.png</image32>
 	<image80>species/icons80/zangoose.png</image80>
 	<imageFront>species/iconsFront/335.png</imageFront>
 	<imageBack>species/iconsBack/335.png</imageBack>
@@ -7416,7 +7425,7 @@
 	<number>334</number>
 	<generation>3</generation>
 	<name>ALTARIA</name>
-	<image32>species/icons32/334.gif</image32>
+	<image32>species/icons32/334.png</image32>
 	<image80>species/icons80/altaria.png</image80>
 	<imageFront>species/iconsFront/334.png</imageFront>
 	<imageBack>species/iconsBack/334.png</imageBack>
@@ -7465,7 +7474,7 @@
 	<number>333</number>
 	<generation>3</generation>
 	<name>SWABLU</name>
-	<image32>species/icons32/333.gif</image32>
+	<image32>species/icons32/333.png</image32>
 	<image80>species/icons80/swablu.png</image80>
 	<imageFront>species/iconsFront/333.png</imageFront>
 	<imageBack>species/iconsBack/333.png</imageBack>
@@ -7515,7 +7524,7 @@
 	<number>332</number>
 	<generation>3</generation>
 	<name>CACTURNE</name>
-	<image32>species/icons32/332.gif</image32>
+	<image32>species/icons32/332.png</image32>
 	<image80>species/icons80/cacturne.png</image80>
 	<imageFront>species/iconsFront/332.png</imageFront>
 	<imageBack>species/iconsBack/332.png</imageBack>
@@ -7565,7 +7574,7 @@
 	<number>331</number>
 	<generation>3</generation>
 	<name>CACNEA</name>
-	<image32>species/icons32/331.gif</image32>
+	<image32>species/icons32/331.png</image32>
 	<image80>species/icons80/cacnea.png</image80>
 	<imageFront>species/iconsFront/331.png</imageFront>
 	<imageBack>species/iconsBack/331.png</imageBack>
@@ -7621,7 +7630,7 @@
 	<number>330</number>
 	<generation>3</generation>
 	<name>FLYGON</name>
-	<image32>species/icons32/330.gif</image32>
+	<image32>species/icons32/330.png</image32>
 	<image80>species/icons80/flygon.png</image80>
 	<imageFront>species/iconsFront/330.png</imageFront>
 	<imageBack>species/iconsBack/330.png</imageBack>
@@ -7665,7 +7674,7 @@
 	<number>329</number>
 	<generation>3</generation>
 	<name>VIBRAVA</name>
-	<image32>species/icons32/329.gif</image32>
+	<image32>species/icons32/329.png</image32>
 	<image80>species/icons80/vibrava.png</image80>
 	<imageFront>species/iconsFront/329.png</imageFront>
 	<imageBack>species/iconsBack/329.png</imageBack>
@@ -7708,7 +7717,7 @@
 	<number>328</number>
 	<generation>3</generation>
 	<name>TRAPINCH</name>
-	<image32>species/icons32/328.gif</image32>
+	<image32>species/icons32/328.png</image32>
 	<image80>species/icons80/trapinch.png</image80>
 	<imageFront>species/iconsFront/328.png</imageFront>
 	<imageBack>species/iconsBack/328.png</imageBack>
@@ -7756,7 +7765,7 @@
 	<number>327</number>
 	<generation>3</generation>
 	<name>SPINDA</name>
-	<image32>species/icons32/327.gif</image32>
+	<image32>species/icons32/327.png</image32>
 	<image80>species/icons80/spinda.png</image80>
 	<imageFront>species/iconsFront/327.png</imageFront>
 	<imageBack>species/iconsBack/327.png</imageBack>
@@ -7811,7 +7820,7 @@
 	<number>326</number>
 	<generation>3</generation>
 	<name>GRUMPIG</name>
-	<image32>species/icons32/326.gif</image32>
+	<image32>species/icons32/326.png</image32>
 	<image80>species/icons80/grumpig.png</image80>
 	<imageFront>species/iconsFront/326.png</imageFront>
 	<imageBack>species/iconsBack/326.png</imageBack>
@@ -7859,7 +7868,7 @@
 	<number>325</number>
 	<generation>3</generation>
 	<name>SPOINK</name>
-	<image32>species/icons32/325.gif</image32>
+	<image32>species/icons32/325.png</image32>
 	<image80>species/icons80/spoink.png</image80>
 	<imageFront>species/iconsFront/325.png</imageFront>
 	<imageBack>species/iconsBack/325.png</imageBack>
@@ -7911,7 +7920,7 @@
 	<number>324</number>
 	<generation>3</generation>
 	<name>TORKOAL</name>
-	<image32>species/icons32/324.gif</image32>
+	<image32>species/icons32/324.png</image32>
 	<image80>species/icons80/torkoal.png</image80>
 	<imageFront>species/iconsFront/324.png</imageFront>
 	<imageBack>species/iconsBack/324.png</imageBack>
@@ -7963,7 +7972,7 @@
 	<number>323</number>
 	<generation>3</generation>
 	<name>CAMERUPT</name>
-	<image32>species/icons32/323.gif</image32>
+	<image32>species/icons32/323.png</image32>
 	<image80>species/icons80/camerupt.png</image80>
 	<imageFront>species/iconsFront/323.png</imageFront>
 	<imageBack>species/iconsBack/323.png</imageBack>
@@ -8009,7 +8018,7 @@
 	<number>322</number>
 	<generation>3</generation>
 	<name>NUMEL</name>
-	<image32>species/icons32/322.gif</image32>
+	<image32>species/icons32/322.png</image32>
 	<image80>species/icons80/numel.png</image80>
 	<imageFront>species/iconsFront/322.png</imageFront>
 	<imageBack>species/iconsBack/322.png</imageBack>
@@ -8062,7 +8071,7 @@
 	<number>321</number>
 	<generation>3</generation>
 	<name>WAILORD</name>
-	<image32>species/icons32/321.gif</image32>
+	<image32>species/icons32/321.png</image32>
 	<image80>species/icons80/wailord.png</image80>
 	<imageFront>species/iconsFront/321.png</imageFront>
 	<imageBack>species/iconsBack/321.png</imageBack>
@@ -8111,7 +8120,7 @@
 	<number>320</number>
 	<generation>3</generation>
 	<name>WAILMER</name>
-	<image32>species/icons32/320.gif</image32>
+	<image32>species/icons32/320.png</image32>
 	<image80>species/icons80/wailmer.png</image80>
 	<imageFront>species/iconsFront/320.png</imageFront>
 	<imageBack>species/iconsBack/320.png</imageBack>
@@ -8167,7 +8176,7 @@
 	<number>319</number>
 	<generation>3</generation>
 	<name>SHARPEDO</name>
-	<image32>species/icons32/319.gif</image32>
+	<image32>species/icons32/319.png</image32>
 	<image80>species/icons80/sharpedo.png</image80>
 	<imageFront>species/iconsFront/319.png</imageFront>
 	<imageBack>species/iconsBack/319.png</imageBack>
@@ -8216,7 +8225,7 @@
 	<number>318</number>
 	<generation>3</generation>
 	<name>CARVANHA</name>
-	<image32>species/icons32/318.gif</image32>
+	<image32>species/icons32/318.png</image32>
 	<image80>species/icons80/carvanha.png</image80>
 	<imageFront>species/iconsFront/318.png</imageFront>
 	<imageBack>species/iconsBack/318.png</imageBack>
@@ -8264,7 +8273,7 @@
 	<number>317</number>
 	<generation>3</generation>
 	<name>SWALOT</name>
-	<image32>species/icons32/317.gif</image32>
+	<image32>species/icons32/317.png</image32>
 	<image80>species/icons80/swalot.png</image80>
 	<imageFront>species/iconsFront/317.png</imageFront>
 	<imageBack>species/iconsBack/317.png</imageBack>
@@ -8313,7 +8322,7 @@
 	<number>316</number>
 	<generation>3</generation>
 	<name>GULPIN</name>
-	<image32>species/icons32/316.gif</image32>
+	<image32>species/icons32/316.png</image32>
 	<image80>species/icons80/gulpin.png</image80>
 	<imageFront>species/iconsFront/316.png</imageFront>
 	<imageBack>species/iconsBack/316.png</imageBack>
@@ -8364,7 +8373,7 @@
 	<number>315</number>
 	<generation>3</generation>
 	<name>ROSELIA</name>
-	<image32>species/icons32/315.gif</image32>
+	<image32>species/icons32/315.png</image32>
 	<image80>species/icons80/roselia.png</image80>
 	<imageFront>species/iconsFront/315.png</imageFront>
 	<imageBack>species/iconsBack/315.png</imageBack>
@@ -8419,7 +8428,7 @@
 	<number>314</number>
 	<generation>3</generation>
 	<name>ILLUMISE</name>
-	<image32>species/icons32/314.gif</image32>
+	<image32>species/icons32/314.png</image32>
 	<image80>species/icons80/illumise.png</image80>
 	<imageFront>species/iconsFront/314.png</imageFront>
 	<imageBack>species/iconsBack/314.png</imageBack>
@@ -8467,7 +8476,7 @@
 	<number>313</number>
 	<generation>3</generation>
 	<name>VOLBEAT</name>
-	<image32>species/icons32/313.gif</image32>
+	<image32>species/icons32/313.png</image32>
 	<image80>species/icons80/volbeat.png</image80>
 	<imageFront>species/iconsFront/313.png</imageFront>
 	<imageBack>species/iconsBack/313.png</imageBack>
@@ -8516,7 +8525,7 @@
 	<number>312</number>
 	<generation>3</generation>
 	<name>MINUN</name>
-	<image32>species/icons32/312.gif</image32>
+	<image32>species/icons32/312.png</image32>
 	<image80>species/icons80/minun.png</image80>
 	<imageFront>species/iconsFront/312.png</imageFront>
 	<imageBack>species/iconsBack/312.png</imageBack>
@@ -8567,7 +8576,7 @@
 	<number>311</number>
 	<generation>3</generation>
 	<name>PLUSLE</name>
-	<image32>species/icons32/311.gif</image32>
+	<image32>species/icons32/311.png</image32>
 	<image80>species/icons80/plusle.png</image80>
 	<imageFront>species/iconsFront/311.png</imageFront>
 	<imageBack>species/iconsBack/311.png</imageBack>
@@ -8618,7 +8627,7 @@
 	<number>310</number>
 	<generation>3</generation>
 	<name>MANECTRIC</name>
-	<image32>species/icons32/310.gif</image32>
+	<image32>species/icons32/310.png</image32>
 	<image80>species/icons80/manectric.png</image80>
 	<imageFront>species/iconsFront/310.png</imageFront>
 	<imageBack>species/iconsBack/310.png</imageBack>
@@ -8666,7 +8675,7 @@
 	<number>309</number>
 	<generation>3</generation>
 	<name>ELECTRIKE</name>
-	<image32>species/icons32/309.gif</image32>
+	<image32>species/icons32/309.png</image32>
 	<image80>species/icons80/electrike.png</image80>
 	<imageFront>species/iconsFront/309.png</imageFront>
 	<imageBack>species/iconsBack/309.png</imageBack>
@@ -8719,7 +8728,7 @@
 	<number>308</number>
 	<generation>3</generation>
 	<name>MEDICHAM</name>
-	<image32>species/icons32/308.gif</image32>
+	<image32>species/icons32/308.png</image32>
 	<image80>species/icons80/medicham.png</image80>
 	<imageFront>species/iconsFront/308.png</imageFront>
 	<imageBack>species/iconsBack/308.png</imageBack>
@@ -8770,7 +8779,7 @@
 	<number>307</number>
 	<generation>3</generation>
 	<name>MEDITITE</name>
-	<image32>species/icons32/307.gif</image32>
+	<image32>species/icons32/307.png</image32>
 	<image80>species/icons80/meditite.png</image80>
 	<imageFront>species/iconsFront/307.png</imageFront>
 	<imageBack>species/iconsBack/307.png</imageBack>
@@ -8826,7 +8835,7 @@
 	<number>306</number>
 	<generation>3</generation>
 	<name>AGGRON</name>
-	<image32>species/icons32/306.gif</image32>
+	<image32>species/icons32/306.png</image32>
 	<image80>species/icons80/aggron.png</image80>
 	<imageFront>species/iconsFront/306.png</imageFront>
 	<imageBack>species/iconsBack/306.png</imageBack>
@@ -8874,7 +8883,7 @@
 	<number>305</number>
 	<generation>3</generation>
 	<name>LAIRON</name>
-	<image32>species/icons32/305.gif</image32>
+	<image32>species/icons32/305.png</image32>
 	<image80>species/icons80/lairon.png</image80>
 	<imageFront>species/iconsFront/305.png</imageFront>
 	<imageBack>species/iconsBack/305.png</imageBack>
@@ -8922,7 +8931,7 @@
 	<number>304</number>
 	<generation>3</generation>
 	<name>ARON</name>
-	<image32>species/icons32/304.gif</image32>
+	<image32>species/icons32/304.png</image32>
 	<image80>species/icons80/aron.png</image80>
 	<imageFront>species/iconsFront/304.png</imageFront>
 	<imageBack>species/iconsBack/304.png</imageBack>
@@ -8975,7 +8984,7 @@
 	<number>303</number>
 	<generation>3</generation>
 	<name>MAWILE</name>
-	<image32>species/icons32/303.gif</image32>
+	<image32>species/icons32/303.png</image32>
 	<image80>species/icons80/mawile.png</image80>
 	<imageFront>species/iconsFront/303.png</imageFront>
 	<imageBack>species/iconsBack/303.png</imageBack>
@@ -9031,7 +9040,7 @@
 	<number>302</number>
 	<generation>3</generation>
 	<name>SABLEYE</name>
-	<image32>species/icons32/302.gif</image32>
+	<image32>species/icons32/302.png</image32>
 	<image80>species/icons80/sableye.png</image80>
 	<imageFront>species/iconsFront/302.png</imageFront>
 	<imageBack>species/iconsBack/302.png</imageBack>
@@ -9085,7 +9094,7 @@
 	<number>301</number>
 	<generation>3</generation>
 	<name>DELCATTY</name>
-	<image32>species/icons32/301.gif</image32>
+	<image32>species/icons32/301.png</image32>
 	<image80>species/icons80/delcatty.png</image80>
 	<imageFront>species/iconsFront/301.png</imageFront>
 	<imageBack>species/iconsBack/301.png</imageBack>
@@ -9120,7 +9129,7 @@
 	<number>300</number>
 	<generation>3</generation>
 	<name>SKITTY</name>
-	<image32>species/icons32/300.gif</image32>
+	<image32>species/icons32/300.png</image32>
 	<image80>species/icons80/skitty.png</image80>
 	<imageFront>species/iconsFront/300.png</imageFront>
 	<imageBack>species/iconsBack/300.png</imageBack>
@@ -9179,7 +9188,7 @@
 	<number>299</number>
 	<generation>3</generation>
 	<name>NOSEPASS</name>
-	<image32>species/icons32/299.gif</image32>
+	<image32>species/icons32/299.png</image32>
 	<image80>species/icons80/nosepass.png</image80>
 	<imageFront>species/iconsFront/299.png</imageFront>
 	<imageBack>species/iconsBack/299.png</imageBack>
@@ -9228,7 +9237,7 @@
 	<number>298</number>
 	<generation>3</generation>
 	<name>AZURILL</name>
-	<image32>species/icons32/298.gif</image32>
+	<image32>species/icons32/298.png</image32>
 	<image80>species/icons80/azurill.png</image80>
 	<imageFront>species/iconsFront/298.png</imageFront>
 	<imageBack>species/iconsBack/298.png</imageBack>
@@ -9271,7 +9280,7 @@
 	<number>297</number>
 	<generation>3</generation>
 	<name>HARIYAMA</name>
-	<image32>species/icons32/297.gif</image32>
+	<image32>species/icons32/297.png</image32>
 	<image80>species/icons80/hariyama.png</image80>
 	<imageFront>species/iconsFront/297.png</imageFront>
 	<imageBack>species/iconsBack/297.png</imageBack>
@@ -9321,7 +9330,7 @@
 	<number>296</number>
 	<generation>3</generation>
 	<name>MAKUHITA</name>
-	<image32>species/icons32/296.gif</image32>
+	<image32>species/icons32/296.png</image32>
 	<image80>species/icons80/makuhita.png</image80>
 	<imageFront>species/iconsFront/296.png</imageFront>
 	<imageBack>species/iconsBack/296.png</imageBack>
@@ -9378,7 +9387,7 @@
 	<number>295</number>
 	<generation>3</generation>
 	<name>EXPLOUD</name>
-	<image32>species/icons32/295.gif</image32>
+	<image32>species/icons32/295.png</image32>
 	<image80>species/icons80/exploud.png</image80>
 	<imageFront>species/iconsFront/295.png</imageFront>
 	<imageBack>species/iconsBack/295.png</imageBack>
@@ -9429,7 +9438,7 @@
 	<number>294</number>
 	<generation>3</generation>
 	<name>LOUDRED</name>
-	<image32>species/icons32/294.gif</image32>
+	<image32>species/icons32/294.png</image32>
 	<image80>species/icons80/loudred.png</image80>
 	<imageFront>species/iconsFront/294.png</imageFront>
 	<imageBack>species/iconsBack/294.png</imageBack>
@@ -9475,7 +9484,7 @@
 	<number>293</number>
 	<generation>3</generation>
 	<name>WHISMUR</name>
-	<image32>species/icons32/293.gif</image32>
+	<image32>species/icons32/293.png</image32>
 	<image80>species/icons80/whismur.png</image80>
 	<imageFront>species/iconsFront/293.png</imageFront>
 	<imageBack>species/iconsBack/293.png</imageBack>
@@ -9524,7 +9533,7 @@
 	<number>292</number>
 	<generation>3</generation>
 	<name>SHEDINJA</name>
-	<image32>species/icons32/292.gif</image32>
+	<image32>species/icons32/292.png</image32>
 	<image80>species/icons80/shedinja.png</image80>
 	<imageFront>species/iconsFront/292.png</imageFront>
 	<imageBack>species/iconsBack/292.png</imageBack>
@@ -9567,7 +9576,7 @@
 	<number>291</number>
 	<generation>3</generation>
 	<name>NINJASK</name>
-	<image32>species/icons32/291.gif</image32>
+	<image32>species/icons32/291.png</image32>
 	<image80>species/icons80/ninjask.png</image80>
 	<imageFront>species/iconsFront/291.png</imageFront>
 	<imageBack>species/iconsBack/291.png</imageBack>
@@ -9615,7 +9624,7 @@
 	<number>290</number>
 	<generation>3</generation>
 	<name>NINCADA</name>
-	<image32>species/icons32/290.gif</image32>
+	<image32>species/icons32/290.png</image32>
 	<image80>species/icons80/nincada.png</image80>
 	<imageFront>species/iconsFront/290.png</imageFront>
 	<imageBack>species/iconsBack/290.png</imageBack>
@@ -9663,7 +9672,7 @@
 	<number>289</number>
 	<generation>3</generation>
 	<name>SLAKING</name>
-	<image32>species/icons32/289.gif</image32>
+	<image32>species/icons32/289.png</image32>
 	<image80>species/icons80/slaking.png</image80>
 	<imageFront>species/iconsFront/289.png</imageFront>
 	<imageBack>species/iconsBack/289.png</imageBack>
@@ -9709,7 +9718,7 @@
 	<number>288</number>
 	<generation>3</generation>
 	<name>VIGOROTH</name>
-	<image32>species/icons32/288.gif</image32>
+	<image32>species/icons32/288.png</image32>
 	<image80>species/icons80/vigoroth.png</image80>
 	<imageFront>species/iconsFront/288.png</imageFront>
 	<imageBack>species/iconsBack/288.png</imageBack>
@@ -9752,7 +9761,7 @@
 	<number>287</number>
 	<generation>3</generation>
 	<name>SLAKOTH</name>
-	<image32>species/icons32/287.gif</image32>
+	<image32>species/icons32/287.png</image32>
 	<image80>species/icons80/slakoth.png</image80>
 	<imageFront>species/iconsFront/287.png</imageFront>
 	<imageBack>species/iconsBack/287.png</imageBack>
@@ -9801,7 +9810,7 @@
 	<number>286</number>
 	<generation>3</generation>
 	<name>BRELOOM</name>
-	<image32>species/icons32/286.gif</image32>
+	<image32>species/icons32/286.png</image32>
 	<image80>species/icons80/breloom.png</image80>
 	<imageFront>species/iconsFront/286.png</imageFront>
 	<imageBack>species/iconsBack/286.png</imageBack>
@@ -9848,7 +9857,7 @@
 	<number>285</number>
 	<generation>3</generation>
 	<name>SHROOMISH</name>
-	<image32>species/icons32/285.gif</image32>
+	<image32>species/icons32/285.png</image32>
 	<image80>species/icons80/shroomish.png</image80>
 	<imageFront>species/iconsFront/285.png</imageFront>
 	<imageBack>species/iconsBack/285.png</imageBack>
@@ -9899,7 +9908,7 @@
 	<number>284</number>
 	<generation>3</generation>
 	<name>MASQUERAIN</name>
-	<image32>species/icons32/284.gif</image32>
+	<image32>species/icons32/284.png</image32>
 	<image80>species/icons80/masquerain.png</image80>
 	<imageFront>species/iconsFront/284.png</imageFront>
 	<imageBack>species/iconsBack/284.png</imageBack>
@@ -9945,7 +9954,7 @@
 	<number>283</number>
 	<generation>3</generation>
 	<name>SURSKIT</name>
-	<image32>species/icons32/283.gif</image32>
+	<image32>species/icons32/283.png</image32>
 	<image80>species/icons80/surskit.png</image80>
 	<imageFront>species/iconsFront/283.png</imageFront>
 	<imageBack>species/iconsBack/283.png</imageBack>
@@ -9992,7 +10001,7 @@
 	<number>282</number>
 	<generation>3</generation>
 	<name>GARDEVOIR</name>
-	<image32>species/icons32/282.gif</image32>
+	<image32>species/icons32/282.png</image32>
 	<image80>species/icons80/gardevoir.png</image80>
 	<imageFront>species/iconsFront/282.png</imageFront>
 	<imageBack>species/iconsBack/282.png</imageBack>
@@ -10040,7 +10049,7 @@
 	<number>281</number>
 	<generation>3</generation>
 	<name>KIRLIA</name>
-	<image32>species/icons32/281.gif</image32>
+	<image32>species/icons32/281.png</image32>
 	<image80>species/icons80/kirlia.png</image80>
 	<imageFront>species/iconsFront/281.png</imageFront>
 	<imageBack>species/iconsBack/281.png</imageBack>
@@ -10087,7 +10096,7 @@
 	<number>280</number>
 	<generation>3</generation>
 	<name>RALTS</name>
-	<image32>species/icons32/280.gif</image32>
+	<image32>species/icons32/280.png</image32>
 	<image80>species/icons80/ralts.png</image80>
 	<imageFront>species/iconsFront/280.png</imageFront>
 	<imageBack>species/iconsBack/280.png</imageBack>
@@ -10139,7 +10148,7 @@
 	<number>279</number>
 	<generation>3</generation>
 	<name>PELIPPER</name>
-	<image32>species/icons32/279.gif</image32>
+	<image32>species/icons32/279.png</image32>
 	<image80>species/icons80/pelipper.png</image80>
 	<imageFront>species/iconsFront/279.png</imageFront>
 	<imageBack>species/iconsBack/279.png</imageBack>
@@ -10187,7 +10196,7 @@
 	<number>278</number>
 	<generation>3</generation>
 	<name>WINGULL</name>
-	<image32>species/icons32/278.gif</image32>
+	<image32>species/icons32/278.png</image32>
 	<image80>species/icons80/wingull.png</image80>
 	<imageFront>species/iconsFront/278.png</imageFront>
 	<imageBack>species/iconsBack/278.png</imageBack>
@@ -10237,7 +10246,7 @@
 	<number>277</number>
 	<generation>3</generation>
 	<name>SWELLOW</name>
-	<image32>species/icons32/277.gif</image32>
+	<image32>species/icons32/277.png</image32>
 	<image80>species/icons80/swellow.png</image80>
 	<imageFront>species/iconsFront/277.png</imageFront>
 	<imageBack>species/iconsBack/277.png</imageBack>
@@ -10281,7 +10290,7 @@
 	<number>276</number>
 	<generation>3</generation>
 	<name>TAILLOW</name>
-	<image32>species/icons32/276.gif</image32>
+	<image32>species/icons32/276.png</image32>
 	<image80>species/icons80/taillow.png</image80>
 	<imageFront>species/iconsFront/276.png</imageFront>
 	<imageBack>species/iconsBack/276.png</imageBack>
@@ -10330,7 +10339,7 @@
 	<number>275</number>
 	<generation>3</generation>
 	<name>SHIFTRY</name>
-	<image32>species/icons32/275.gif</image32>
+	<image32>species/icons32/275.png</image32>
 	<image80>species/icons80/shiftry.png</image80>
 	<imageFront>species/iconsFront/275.png</imageFront>
 	<imageBack>species/iconsBack/275.png</imageBack>
@@ -10366,7 +10375,7 @@
 	<number>274</number>
 	<generation>3</generation>
 	<name>NUZLEAF</name>
-	<image32>species/icons32/274.gif</image32>
+	<image32>species/icons32/274.png</image32>
 	<image80>species/icons80/nuzleaf.png</image80>
 	<imageFront>species/iconsFront/274.png</imageFront>
 	<imageBack>species/iconsBack/274.png</imageBack>
@@ -10408,7 +10417,7 @@
 	<number>273</number>
 	<generation>3</generation>
 	<name>SEEDOT</name>
-	<image32>species/icons32/273.gif</image32>
+	<image32>species/icons32/273.png</image32>
 	<image80>species/icons80/seedot.png</image80>
 	<imageFront>species/iconsFront/273.png</imageFront>
 	<imageBack>species/iconsBack/273.png</imageBack>
@@ -10454,7 +10463,7 @@
 	<number>272</number>
 	<generation>3</generation>
 	<name>LUDICOLO</name>
-	<image32>species/icons32/272.gif</image32>
+	<image32>species/icons32/272.png</image32>
 	<image80>species/icons80/ludicolo.png</image80>
 	<imageFront>species/iconsFront/272.png</imageFront>
 	<imageBack>species/iconsBack/272.png</imageBack>
@@ -10489,7 +10498,7 @@
 	<number>271</number>
 	<generation>3</generation>
 	<name>LOMBRE</name>
-	<image32>species/icons32/271.gif</image32>
+	<image32>species/icons32/271.png</image32>
 	<image80>species/icons80/lombre.png</image80>
 	<imageFront>species/iconsFront/271.png</imageFront>
 	<imageBack>species/iconsBack/271.png</imageBack>
@@ -10530,7 +10539,7 @@
 	<number>270</number>
 	<generation>3</generation>
 	<name>LOTAD</name>
-	<image32>species/icons32/270.gif</image32>
+	<image32>species/icons32/270.png</image32>
 	<image80>species/icons80/lotad.png</image80>
 	<imageFront>species/iconsFront/270.png</imageFront>
 	<imageBack>species/iconsBack/270.png</imageBack>
@@ -10578,7 +10587,7 @@
 	<number>269</number>
 	<generation>3</generation>
 	<name>DUSTOX</name>
-	<image32>species/icons32/269.gif</image32>
+	<image32>species/icons32/269.png</image32>
 	<image80>species/icons80/dustox.png</image80>
 	<imageFront>species/iconsFront/269.png</imageFront>
 	<imageBack>species/iconsBack/269.png</imageBack>
@@ -10620,7 +10629,7 @@
 	<number>268</number>
 	<generation>3</generation>
 	<name>CASCOON</name>
-	<image32>species/icons32/268.gif</image32>
+	<image32>species/icons32/268.png</image32>
 	<image80>species/icons80/cascoon.png</image80>
 	<imageFront>species/iconsFront/268.png</imageFront>
 	<imageBack>species/iconsBack/268.png</imageBack>
@@ -10653,7 +10662,7 @@
 	<number>267</number>
 	<generation>3</generation>
 	<name>BEAUTIFLY</name>
-	<image32>species/icons32/267.gif</image32>
+	<image32>species/icons32/267.png</image32>
 	<image80>species/icons80/beautifly.png</image80>
 	<imageFront>species/iconsFront/267.png</imageFront>
 	<imageBack>species/iconsBack/267.png</imageBack>
@@ -10695,7 +10704,7 @@
 	<number>266</number>
 	<generation>3</generation>
 	<name>SILCOON</name>
-	<image32>species/icons32/266.gif</image32>
+	<image32>species/icons32/266.png</image32>
 	<image80>species/icons80/silcoon.png</image80>
 	<imageFront>species/iconsFront/266.png</imageFront>
 	<imageBack>species/iconsBack/266.png</imageBack>
@@ -10728,7 +10737,7 @@
 	<number>265</number>
 	<generation>3</generation>
 	<name>WURMPLE</name>
-	<image32>species/icons32/265.gif</image32>
+	<image32>species/icons32/265.png</image32>
 	<image80>species/icons80/wurmple.png</image80>
 	<imageFront>species/iconsFront/265.png</imageFront>
 	<imageBack>species/iconsBack/265.png</imageBack>
@@ -10762,7 +10771,7 @@
 	<number>264</number>
 	<generation>3</generation>
 	<name>LINOONE</name>
-	<image32>species/icons32/264.gif</image32>
+	<image32>species/icons32/264.png</image32>
 	<image80>species/icons80/linoone.png</image80>
 	<imageFront>species/iconsFront/264.png</imageFront>
 	<imageBack>species/iconsBack/264.png</imageBack>
@@ -10809,7 +10818,7 @@
 	<number>263</number>
 	<generation>3</generation>
 	<name>ZIGZAGOON</name>
-	<image32>species/icons32/263.gif</image32>
+	<image32>species/icons32/263.png</image32>
 	<image80>species/icons80/zigzagoon.png</image80>
 	<imageFront>species/iconsFront/263.png</imageFront>
 	<imageBack>species/iconsBack/263.png</imageBack>
@@ -10860,7 +10869,7 @@
 	<number>262</number>
 	<generation>3</generation>
 	<name>MIGHTYENA</name>
-	<image32>species/icons32/262.gif</image32>
+	<image32>species/icons32/262.png</image32>
 	<image80>species/icons80/mightyena.png</image80>
 	<imageFront>species/iconsFront/262.png</imageFront>
 	<imageBack>species/iconsBack/262.png</imageBack>
@@ -10908,7 +10917,7 @@
 	<number>261</number>
 	<generation>3</generation>
 	<name>POOCHYENA</name>
-	<image32>species/icons32/261.gif</image32>
+	<image32>species/icons32/261.png</image32>
 	<image80>species/icons80/poochyena.png</image80>
 	<imageFront>species/iconsFront/261.png</imageFront>
 	<imageBack>species/iconsBack/261.png</imageBack>
@@ -10963,7 +10972,7 @@
 	<number>260</number>
 	<generation>3</generation>
 	<name>SWAMPERT</name>
-	<image32>species/icons32/260.gif</image32>
+	<image32>species/icons32/260.png</image32>
 	<image80>species/icons80/swampert.png</image80>
 	<imageFront>species/iconsFront/260.png</imageFront>
 	<imageBack>species/iconsBack/260.png</imageBack>
@@ -11010,7 +11019,7 @@
 	<number>259</number>
 	<generation>3</generation>
 	<name>MARSHTOMP</name>
-	<image32>species/icons32/259.gif</image32>
+	<image32>species/icons32/259.png</image32>
 	<image80>species/icons80/marshtomp.png</image80>
 	<imageFront>species/iconsFront/259.png</imageFront>
 	<imageBack>species/iconsBack/259.png</imageBack>
@@ -11056,7 +11065,7 @@
 	<number>258</number>
 	<generation>3</generation>
 	<name>MUDKIP</name>
-	<image32>species/icons32/258.gif</image32>
+	<image32>species/icons32/258.png</image32>
 	<image80>species/icons80/mudkip.png</image80>
 	<imageFront>species/iconsFront/258.png</imageFront>
 	<imageBack>species/iconsBack/258.png</imageBack>
@@ -11111,7 +11120,7 @@
 	<number>257</number>
 	<generation>3</generation>
 	<name>BLAZIKEN</name>
-	<image32>species/icons32/257.gif</image32>
+	<image32>species/icons32/257.png</image32>
 	<image80>species/icons80/blaziken.png</image80>
 	<imageFront>species/iconsFront/257.png</imageFront>
 	<imageBack>species/iconsBack/257.png</imageBack>
@@ -11159,7 +11168,7 @@
 	<number>256</number>
 	<generation>3</generation>
 	<name>COMBUSKEN</name>
-	<image32>species/icons32/256.gif</image32>
+	<image32>species/icons32/256.png</image32>
 	<image80>species/icons80/combusken.png</image80>
 	<imageFront>species/iconsFront/256.png</imageFront>
 	<imageBack>species/iconsBack/256.png</imageBack>
@@ -11205,7 +11214,7 @@
 	<number>255</number>
 	<generation>3</generation>
 	<name>TORCHIC</name>
-	<image32>species/icons32/255.gif</image32>
+	<image32>species/icons32/255.png</image32>
 	<image80>species/icons80/torchic.png</image80>
 	<imageFront>species/iconsFront/255.png</imageFront>
 	<imageBack>species/iconsBack/255.png</imageBack>
@@ -11259,7 +11268,7 @@
 	<number>254</number>
 	<generation>3</generation>
 	<name>SCEPTILE</name>
-	<image32>species/icons32/254.gif</image32>
+	<image32>species/icons32/254.png</image32>
 	<image80>species/icons80/sceptile.png</image80>
 	<imageFront>species/iconsFront/254.png</imageFront>
 	<imageBack>species/iconsBack/254.png</imageBack>
@@ -11306,7 +11315,7 @@
 	<number>253</number>
 	<generation>3</generation>
 	<name>GROVYLE</name>
-	<image32>species/icons32/253.gif</image32>
+	<image32>species/icons32/253.png</image32>
 	<image80>species/icons80/grovyle.png</image80>
 	<imageFront>species/iconsFront/253.png</imageFront>
 	<imageBack>species/iconsBack/253.png</imageBack>
@@ -11352,7 +11361,7 @@
 	<number>252</number>
 	<generation>3</generation>
 	<name>TREECKO</name>
-	<image32>species/icons32/252.gif</image32>
+	<image32>species/icons32/252.png</image32>
 	<image80>species/icons80/treecko.png</image80>
 	<imageFront>species/iconsFront/252.png</imageFront>
 	<imageBack>species/iconsBack/252.png</imageBack>
@@ -11407,7 +11416,7 @@
 	<number>251</number>
 	<generation>2</generation>
 	<name>CELEBI</name>
-	<image32>species/icons32/251.gif</image32>
+	<image32>species/icons32/251.png</image32>
 	<image80>species/icons80/celebi.png</image80>
 	<imageFront>species/iconsFront/251.png</imageFront>
 	<imageBack>species/iconsBack/251.png</imageBack>
@@ -11452,7 +11461,7 @@
 	<number>250</number>
 	<generation>2</generation>
 	<name>HO-OH</name>
-	<image32>species/icons32/250.gif</image32>
+	<image32>species/icons32/250.png</image32>
 	<image80>species/icons80/ho-oh.png</image80>
 	<imageFront>species/iconsFront/250.png</imageFront>
 	<imageBack>species/iconsBack/250.png</imageBack>
@@ -11498,7 +11507,7 @@
 	<number>249</number>
 	<generation>2</generation>
 	<name>LUGIA</name>
-	<image32>species/icons32/249.gif</image32>
+	<image32>species/icons32/249.png</image32>
 	<image80>species/icons80/lugia.png</image80>
 	<imageFront>species/iconsFront/249.png</imageFront>
 	<imageBack>species/iconsBack/249.png</imageBack>
@@ -11544,7 +11553,7 @@
 	<number>248</number>
 	<generation>2</generation>
 	<name>TYRANITAR</name>
-	<image32>species/icons32/248.gif</image32>
+	<image32>species/icons32/248.png</image32>
 	<image80>species/icons80/tyranitar.png</image80>
 	<imageFront>species/iconsFront/248.png</imageFront>
 	<imageBack>species/iconsBack/248.png</imageBack>
@@ -11593,7 +11602,7 @@
 	<number>247</number>
 	<generation>2</generation>
 	<name>PUPITAR</name>
-	<image32>species/icons32/247.gif</image32>
+	<image32>species/icons32/247.png</image32>
 	<image80>species/icons80/pupitar.png</image80>
 	<imageFront>species/iconsFront/247.png</imageFront>
 	<imageBack>species/iconsBack/247.png</imageBack>
@@ -11639,7 +11648,7 @@
 	<number>246</number>
 	<generation>2</generation>
 	<name>LARVITAR</name>
-	<image32>species/icons32/246.gif</image32>
+	<image32>species/icons32/246.png</image32>
 	<image80>species/icons80/larvitar.png</image80>
 	<imageFront>species/iconsFront/246.png</imageFront>
 	<imageBack>species/iconsBack/246.png</imageBack>
@@ -11693,7 +11702,7 @@
 	<number>245</number>
 	<generation>2</generation>
 	<name>SUICUNE</name>
-	<image32>species/icons32/245.gif</image32>
+	<image32>species/icons32/245.png</image32>
 	<image80>species/icons80/suicune.png</image80>
 	<imageFront>species/iconsFront/245.png</imageFront>
 	<imageBack>species/iconsBack/245.png</imageBack>
@@ -11737,7 +11746,7 @@
 	<number>244</number>
 	<generation>2</generation>
 	<name>ENTEI</name>
-	<image32>species/icons32/244.gif</image32>
+	<image32>species/icons32/244.png</image32>
 	<image80>species/icons80/entei.png</image80>
 	<imageFront>species/iconsFront/244.png</imageFront>
 	<imageBack>species/iconsBack/244.png</imageBack>
@@ -11781,7 +11790,7 @@
 	<number>243</number>
 	<generation>2</generation>
 	<name>RAIKOU</name>
-	<image32>species/icons32/243.gif</image32>
+	<image32>species/icons32/243.png</image32>
 	<image80>species/icons80/raikou.png</image80>
 	<imageFront>species/iconsFront/243.png</imageFront>
 	<imageBack>species/iconsBack/243.png</imageBack>
@@ -11825,7 +11834,7 @@
 	<number>242</number>
 	<generation>2</generation>
 	<name>BLISSEY</name>
-	<image32>species/icons32/242.gif</image32>
+	<image32>species/icons32/242.png</image32>
 	<image80>species/icons80/blissey.png</image80>
 	<imageFront>species/iconsFront/242.png</imageFront>
 	<imageBack>species/iconsBack/242.png</imageBack>
@@ -11870,7 +11879,7 @@
 	<number>241</number>
 	<generation>2</generation>
 	<name>MILTANK</name>
-	<image32>species/icons32/241.gif</image32>
+	<image32>species/icons32/241.png</image32>
 	<image80>species/icons80/miltank.png</image80>
 	<imageFront>species/iconsFront/241.png</imageFront>
 	<imageBack>species/iconsBack/241.png</imageBack>
@@ -11926,7 +11935,7 @@
 	<number>240</number>
 	<generation>2</generation>
 	<name>MAGBY</name>
-	<image32>species/icons32/240.gif</image32>
+	<image32>species/icons32/240.png</image32>
 	<image80>species/icons80/magby.png</image80>
 	<imageFront>species/iconsFront/240.png</imageFront>
 	<imageBack>species/iconsBack/240.png</imageBack>
@@ -11978,7 +11987,7 @@
 	<number>239</number>
 	<generation>2</generation>
 	<name>ELEKID</name>
-	<image32>species/icons32/239.gif</image32>
+	<image32>species/icons32/239.png</image32>
 	<image80>species/icons80/elekid.png</image80>
 	<imageFront>species/iconsFront/239.png</imageFront>
 	<imageBack>species/iconsBack/239.png</imageBack>
@@ -12029,7 +12038,7 @@
 	<number>238</number>
 	<generation>2</generation>
 	<name>SMOOCHUM</name>
-	<image32>species/icons32/238.gif</image32>
+	<image32>species/icons32/238.png</image32>
 	<image80>species/icons80/smoochum.png</image80>
 	<imageFront>species/iconsFront/238.png</imageFront>
 	<imageBack>species/iconsBack/238.png</imageBack>
@@ -12080,7 +12089,7 @@
 	<number>237</number>
 	<generation>2</generation>
 	<name>HITMONTOP</name>
-	<image32>species/icons32/237.gif</image32>
+	<image32>species/icons32/237.png</image32>
 	<image80>species/icons80/hitmontop.png</image80>
 	<imageFront>species/iconsFront/237.png</imageFront>
 	<imageBack>species/iconsBack/237.png</imageBack>
@@ -12125,7 +12134,7 @@
 	<number>236</number>
 	<generation>2</generation>
 	<name>TYROGUE</name>
-	<image32>species/icons32/236.gif</image32>
+	<image32>species/icons32/236.png</image32>
 	<image80>species/icons80/tyrogue.png</image80>
 	<imageFront>species/iconsFront/236.png</imageFront>
 	<imageBack>species/iconsBack/236.png</imageBack>
@@ -12167,7 +12176,7 @@
 	<number>235</number>
 	<generation>2</generation>
 	<name>SMEARGLE</name>
-	<image32>species/icons32/235.gif</image32>
+	<image32>species/icons32/235.png</image32>
 	<image80>species/icons80/smeargle.png</image80>
 	<imageFront>species/iconsFront/235.png</imageFront>
 	<imageBack>species/iconsBack/235.png</imageBack>
@@ -12208,7 +12217,7 @@
 	<number>234</number>
 	<generation>2</generation>
 	<name>STANTLER</name>
-	<image32>species/icons32/234.gif</image32>
+	<image32>species/icons32/234.png</image32>
 	<image80>species/icons80/stantler.png</image80>
 	<imageFront>species/iconsFront/234.png</imageFront>
 	<imageBack>species/iconsBack/234.png</imageBack>
@@ -12262,7 +12271,7 @@
 	<number>233</number>
 	<generation>2</generation>
 	<name>PORYGON2</name>
-	<image32>species/icons32/233.gif</image32>
+	<image32>species/icons32/233.png</image32>
 	<image80>species/icons80/porygon2.png</image80>
 	<imageFront>species/iconsFront/233.png</imageFront>
 	<imageBack>species/iconsBack/233.png</imageBack>
@@ -12309,7 +12318,7 @@
 	<number>232</number>
 	<generation>2</generation>
 	<name>DONPHAN</name>
-	<image32>species/icons32/232.gif</image32>
+	<image32>species/icons32/232.png</image32>
 	<image80>species/icons80/donphan.png</image80>
 	<imageFront>species/iconsFront/232.png</imageFront>
 	<imageBack>species/iconsBack/232.png</imageBack>
@@ -12356,7 +12365,7 @@
 	<number>231</number>
 	<generation>2</generation>
 	<name>PHANPY</name>
-	<image32>species/icons32/231.gif</image32>
+	<image32>species/icons32/231.png</image32>
 	<image80>species/icons80/phanpy.png</image80>
 	<imageFront>species/iconsFront/231.png</imageFront>
 	<imageBack>species/iconsBack/231.png</imageBack>
@@ -12408,7 +12417,7 @@
 	<number>230</number>
 	<generation>2</generation>
 	<name>KINGDRA</name>
-	<image32>species/icons32/230.gif</image32>
+	<image32>species/icons32/230.png</image32>
 	<image80>species/icons80/kingdra.png</image80>
 	<imageFront>species/iconsFront/230.png</imageFront>
 	<imageBack>species/iconsBack/230.png</imageBack>
@@ -12455,7 +12464,7 @@
 	<number>229</number>
 	<generation>2</generation>
 	<name>HOUNDOOM</name>
-	<image32>species/icons32/229.gif</image32>
+	<image32>species/icons32/229.png</image32>
 	<image80>species/icons80/houndoom.png</image80>
 	<imageFront>species/iconsFront/229.png</imageFront>
 	<imageBack>species/iconsBack/229.png</imageBack>
@@ -12503,7 +12512,7 @@
 	<number>228</number>
 	<generation>2</generation>
 	<name>HOUNDOUR</name>
-	<image32>species/icons32/228.gif</image32>
+	<image32>species/icons32/228.png</image32>
 	<image80>species/icons80/houndour.png</image80>
 	<imageFront>species/iconsFront/228.png</imageFront>
 	<imageBack>species/iconsBack/228.png</imageBack>
@@ -12560,7 +12569,7 @@
 	<number>227</number>
 	<generation>2</generation>
 	<name>SKARMORY</name>
-	<image32>species/icons32/227.gif</image32>
+	<image32>species/icons32/227.png</image32>
 	<image80>species/icons80/skarmory.png</image80>
 	<imageFront>species/iconsFront/227.png</imageFront>
 	<imageBack>species/iconsBack/227.png</imageBack>
@@ -12611,7 +12620,7 @@
 	<number>226</number>
 	<generation>2</generation>
 	<name>MANTINE</name>
-	<image32>species/icons32/226.gif</image32>
+	<image32>species/icons32/226.png</image32>
 	<image80>species/icons80/mantine.png</image80>
 	<imageFront>species/iconsFront/226.png</imageFront>
 	<imageBack>species/iconsBack/226.png</imageBack>
@@ -12669,7 +12678,7 @@
 	<number>225</number>
 	<generation>2</generation>
 	<name>DELIBIRD</name>
-	<image32>species/icons32/225.gif</image32>
+	<image32>species/icons32/225.png</image32>
 	<image80>species/icons80/delibird.png</image80>
 	<imageFront>species/iconsFront/225.png</imageFront>
 	<imageBack>species/iconsBack/225.png</imageBack>
@@ -12709,7 +12718,7 @@
 	<number>224</number>
 	<generation>2</generation>
 	<name>OCTILLERY</name>
-	<image32>species/icons32/224.gif</image32>
+	<image32>species/icons32/224.png</image32>
 	<image80>species/icons80/octillery.png</image80>
 	<imageFront>species/iconsFront/224.png</imageFront>
 	<imageBack>species/iconsBack/224.png</imageBack>
@@ -12757,7 +12766,7 @@
 	<number>223</number>
 	<generation>2</generation>
 	<name>REMORAID</name>
-	<image32>species/icons32/223.gif</image32>
+	<image32>species/icons32/223.png</image32>
 	<image80>species/icons80/remoraid.png</image80>
 	<imageFront>species/iconsFront/223.png</imageFront>
 	<imageBack>species/iconsBack/223.png</imageBack>
@@ -12808,7 +12817,7 @@
 	<number>222</number>
 	<generation>2</generation>
 	<name>CORSOLA</name>
-	<image32>species/icons32/222.gif</image32>
+	<image32>species/icons32/222.png</image32>
 	<image80>species/icons80/corsola.png</image80>
 	<imageFront>species/iconsFront/222.png</imageFront>
 	<imageBack>species/iconsBack/222.png</imageBack>
@@ -12863,7 +12872,7 @@
 	<number>221</number>
 	<generation>2</generation>
 	<name>PILOSWINE</name>
-	<image32>species/icons32/221.gif</image32>
+	<image32>species/icons32/221.png</image32>
 	<image80>species/icons80/piloswine.png</image80>
 	<imageFront>species/iconsFront/221.png</imageFront>
 	<imageBack>species/iconsBack/221.png</imageBack>
@@ -12912,7 +12921,7 @@
 	<number>220</number>
 	<generation>2</generation>
 	<name>SWINUB</name>
-	<image32>species/icons32/220.gif</image32>
+	<image32>species/icons32/220.png</image32>
 	<image80>species/icons80/swinub.png</image80>
 	<imageFront>species/iconsFront/220.png</imageFront>
 	<imageBack>species/iconsBack/220.png</imageBack>
@@ -12967,7 +12976,7 @@
 	<number>219</number>
 	<generation>2</generation>
 	<name>MAGCARGO</name>
-	<image32>species/icons32/219.gif</image32>
+	<image32>species/icons32/219.png</image32>
 	<image80>species/icons80/magcargo.png</image80>
 	<imageFront>species/iconsFront/219.png</imageFront>
 	<imageBack>species/iconsBack/219.png</imageBack>
@@ -13013,7 +13022,7 @@
 	<number>218</number>
 	<generation>2</generation>
 	<name>SLUGMA</name>
-	<image32>species/icons32/218.gif</image32>
+	<image32>species/icons32/218.png</image32>
 	<image80>species/icons80/slugma.png</image80>
 	<imageFront>species/iconsFront/218.png</imageFront>
 	<imageBack>species/iconsBack/218.png</imageBack>
@@ -13065,7 +13074,7 @@
 	<number>217</number>
 	<generation>2</generation>
 	<name>URSARING</name>
-	<image32>species/icons32/217.gif</image32>
+	<image32>species/icons32/217.png</image32>
 	<image80>species/icons80/ursaring.png</image80>
 	<imageFront>species/iconsFront/217.png</imageFront>
 	<imageBack>species/iconsBack/217.png</imageBack>
@@ -13110,7 +13119,7 @@
 	<number>216</number>
 	<generation>2</generation>
 	<name>TEDDIURSA</name>
-	<image32>species/icons32/216.gif</image32>
+	<image32>species/icons32/216.png</image32>
 	<image80>species/icons80/teddiursa.png</image80>
 	<imageFront>species/iconsFront/216.png</imageFront>
 	<imageBack>species/iconsBack/216.png</imageBack>
@@ -13167,7 +13176,7 @@
 	<number>215</number>
 	<generation>2</generation>
 	<name>SNEASEL</name>
-	<image32>species/icons32/215.gif</image32>
+	<image32>species/icons32/215.png</image32>
 	<image80>species/icons80/sneasel.png</image80>
 	<imageFront>species/iconsFront/215.png</imageFront>
 	<imageBack>species/iconsBack/215.png</imageBack>
@@ -13223,7 +13232,7 @@
 	<number>214</number>
 	<generation>2</generation>
 	<name>HERACROSS</name>
-	<image32>species/icons32/214.gif</image32>
+	<image32>species/icons32/214.png</image32>
 	<image80>species/icons80/heracross.png</image80>
 	<imageFront>species/iconsFront/214.png</imageFront>
 	<imageBack>species/iconsBack/214.png</imageBack>
@@ -13275,7 +13284,7 @@
 	<number>213</number>
 	<generation>2</generation>
 	<name>SHUCKLE</name>
-	<image32>species/icons32/213.gif</image32>
+	<image32>species/icons32/213.png</image32>
 	<image80>species/icons80/shuckle.png</image80>
 	<imageFront>species/iconsFront/213.png</imageFront>
 	<imageBack>species/iconsBack/213.png</imageBack>
@@ -13321,7 +13330,7 @@
 	<number>212</number>
 	<generation>2</generation>
 	<name>SCIZOR</name>
-	<image32>species/icons32/212.gif</image32>
+	<image32>species/icons32/212.png</image32>
 	<image80>species/icons80/scizor.png</image80>
 	<imageFront>species/iconsFront/212.png</imageFront>
 	<imageBack>species/iconsBack/212.png</imageBack>
@@ -13368,7 +13377,7 @@
 	<number>211</number>
 	<generation>2</generation>
 	<name>QWILFISH</name>
-	<image32>species/icons32/211.gif</image32>
+	<image32>species/icons32/211.png</image32>
 	<image80>species/icons80/qwilfish.png</image80>
 	<imageFront>species/iconsFront/211.png</imageFront>
 	<imageBack>species/iconsBack/211.png</imageBack>
@@ -13424,7 +13433,7 @@
 	<number>210</number>
 	<generation>2</generation>
 	<name>GRANBULL</name>
-	<image32>species/icons32/210.gif</image32>
+	<image32>species/icons32/210.png</image32>
 	<image80>species/icons80/granbull.png</image80>
 	<imageFront>species/iconsFront/210.png</imageFront>
 	<imageBack>species/iconsBack/210.png</imageBack>
@@ -13470,7 +13479,7 @@
 	<number>209</number>
 	<generation>2</generation>
 	<name>SNUBBULL</name>
-	<image32>species/icons32/209.gif</image32>
+	<image32>species/icons32/209.png</image32>
 	<image80>species/icons80/snubbull.png</image80>
 	<imageFront>species/iconsFront/209.png</imageFront>
 	<imageBack>species/iconsBack/209.png</imageBack>
@@ -13528,7 +13537,7 @@
 	<number>208</number>
 	<generation>2</generation>
 	<name>STEELIX</name>
-	<image32>species/icons32/208.gif</image32>
+	<image32>species/icons32/208.png</image32>
 	<image80>species/icons80/steelix.png</image80>
 	<imageFront>species/iconsFront/208.png</imageFront>
 	<imageBack>species/iconsBack/208.png</imageBack>
@@ -13578,7 +13587,7 @@
 	<number>207</number>
 	<generation>2</generation>
 	<name>GLIGAR</name>
-	<image32>species/icons32/207.gif</image32>
+	<image32>species/icons32/207.png</image32>
 	<image80>species/icons80/gligar.png</image80>
 	<imageFront>species/iconsFront/207.png</imageFront>
 	<imageBack>species/iconsBack/207.png</imageBack>
@@ -13633,7 +13642,7 @@
 	<number>206</number>
 	<generation>2</generation>
 	<name>DUNSPARCE</name>
-	<image32>species/icons32/206.gif</image32>
+	<image32>species/icons32/206.png</image32>
 	<image80>species/icons80/dunsparce.png</image80>
 	<imageFront>species/iconsFront/206.png</imageFront>
 	<imageBack>species/iconsBack/206.png</imageBack>
@@ -13688,7 +13697,7 @@
 	<number>205</number>
 	<generation>2</generation>
 	<name>FORRETRESS</name>
-	<image32>species/icons32/205.gif</image32>
+	<image32>species/icons32/205.png</image32>
 	<image80>species/icons80/forretress.png</image80>
 	<imageFront>species/iconsFront/205.png</imageFront>
 	<imageBack>species/iconsBack/205.png</imageBack>
@@ -13738,7 +13747,7 @@
 	<number>204</number>
 	<generation>2</generation>
 	<name>PINECO</name>
-	<image32>species/icons32/204.gif</image32>
+	<image32>species/icons32/204.png</image32>
 	<image80>species/icons80/pineco.png</image80>
 	<imageFront>species/iconsFront/204.png</imageFront>
 	<imageBack>species/iconsBack/204.png</imageBack>
@@ -13791,7 +13800,7 @@
 	<number>203</number>
 	<generation>2</generation>
 	<name>GIRAFARIG</name>
-	<image32>species/icons32/203.gif</image32>
+	<image32>species/icons32/203.png</image32>
 	<image80>species/icons80/girafarig.png</image80>
 	<imageFront>species/iconsFront/203.png</imageFront>
 	<imageBack>species/iconsBack/203.png</imageBack>
@@ -13848,7 +13857,7 @@
 	<number>202</number>
 	<generation>2</generation>
 	<name>WOBBUFFET</name>
-	<image32>species/icons32/202.gif</image32>
+	<image32>species/icons32/202.png</image32>
 	<image80>species/icons80/wobbuffet.png</image80>
 	<imageFront>species/iconsFront/202.png</imageFront>
 	<imageBack>species/iconsBack/202.png</imageBack>
@@ -13883,7 +13892,7 @@
 	<number>201</number>
 	<generation>2</generation>
 	<name>UNOWN</name>
-	<image32>species/icons32/201.gif</image32>
+	<image32>species/icons32/201.png</image32>
 	<image80>species/icons80/unown.png</image80>
 	<imageFront>species/iconsFront/201.png</imageFront>
 	<imageBack>species/iconsBack/201.png</imageBack>
@@ -13915,7 +13924,7 @@
 	<number>200</number>
 	<generation>2</generation>
 	<name>MISDREAVUS</name>
-	<image32>species/icons32/200.gif</image32>
+	<image32>species/icons32/200.png</image32>
 	<image80>species/icons80/misdreavus.png</image80>
 	<imageFront>species/iconsFront/200.png</imageFront>
 	<imageBack>species/iconsBack/200.png</imageBack>
@@ -13968,7 +13977,7 @@
 	<number>199</number>
 	<generation>2</generation>
 	<name>SLOWKING</name>
-	<image32>species/icons32/199.gif</image32>
+	<image32>species/icons32/199.png</image32>
 	<image80>species/icons80/slowking.png</image80>
 	<imageFront>species/iconsFront/199.png</imageFront>
 	<imageBack>species/iconsBack/199.png</imageBack>
@@ -14015,7 +14024,7 @@
 	<number>198</number>
 	<generation>2</generation>
 	<name>MURKROW</name>
-	<image32>species/icons32/198.gif</image32>
+	<image32>species/icons32/198.png</image32>
 	<image80>species/icons80/murkrow.png</image80>
 	<imageFront>species/iconsFront/198.png</imageFront>
 	<imageBack>species/iconsBack/198.png</imageBack>
@@ -14068,7 +14077,7 @@
 	<number>197</number>
 	<generation>2</generation>
 	<name>UMBREON</name>
-	<image32>species/icons32/197.gif</image32>
+	<image32>species/icons32/197.png</image32>
 	<image80>species/icons80/umbreon.png</image80>
 	<imageFront>species/iconsFront/197.png</imageFront>
 	<imageBack>species/iconsBack/197.png</imageBack>
@@ -14112,7 +14121,7 @@
 	<number>196</number>
 	<generation>2</generation>
 	<name>ESPEON</name>
-	<image32>species/icons32/196.gif</image32>
+	<image32>species/icons32/196.png</image32>
 	<image80>species/icons80/espeon.png</image80>
 	<imageFront>species/iconsFront/196.png</imageFront>
 	<imageBack>species/iconsBack/196.png</imageBack>
@@ -14156,7 +14165,7 @@
 	<number>195</number>
 	<generation>2</generation>
 	<name>QUAGSIRE</name>
-	<image32>species/icons32/195.gif</image32>
+	<image32>species/icons32/195.png</image32>
 	<image80>species/icons80/quagsire.png</image80>
 	<imageFront>species/iconsFront/195.png</imageFront>
 	<imageBack>species/iconsBack/195.png</imageBack>
@@ -14201,7 +14210,7 @@
 	<number>194</number>
 	<generation>2</generation>
 	<name>WOOPER</name>
-	<image32>species/icons32/194.gif</image32>
+	<image32>species/icons32/194.png</image32>
 	<image80>species/icons80/wooper.png</image80>
 	<imageFront>species/iconsFront/194.png</imageFront>
 	<imageBack>species/iconsBack/194.png</imageBack>
@@ -14256,7 +14265,7 @@
 	<number>193</number>
 	<generation>2</generation>
 	<name>YANMA</name>
-	<image32>species/icons32/193.gif</image32>
+	<image32>species/icons32/193.png</image32>
 	<image80>species/icons80/yanma.png</image80>
 	<imageFront>species/iconsFront/193.png</imageFront>
 	<imageBack>species/iconsBack/193.png</imageBack>
@@ -14311,7 +14320,7 @@
 	<number>192</number>
 	<generation>2</generation>
 	<name>SUNFLORA</name>
-	<image32>species/icons32/192.gif</image32>
+	<image32>species/icons32/192.png</image32>
 	<image80>species/icons80/sunflora.png</image80>
 	<imageFront>species/iconsFront/192.png</imageFront>
 	<imageBack>species/iconsBack/192.png</imageBack>
@@ -14356,7 +14365,7 @@
 	<number>191</number>
 	<generation>2</generation>
 	<name>SUNKERN</name>
-	<image32>species/icons32/191.gif</image32>
+	<image32>species/icons32/191.png</image32>
 	<image80>species/icons80/sunkern.png</image80>
 	<imageFront>species/iconsFront/191.png</imageFront>
 	<imageBack>species/iconsBack/191.png</imageBack>
@@ -14408,7 +14417,7 @@
 	<number>190</number>
 	<generation>2</generation>
 	<name>AIPOM</name>
-	<image32>species/icons32/190.gif</image32>
+	<image32>species/icons32/190.png</image32>
 	<image80>species/icons80/aipom.png</image80>
 	<imageFront>species/iconsFront/190.png</imageFront>
 	<imageBack>species/iconsBack/190.png</imageBack>
@@ -14464,7 +14473,7 @@
 	<number>189</number>
 	<generation>2</generation>
 	<name>JUMPLUFF</name>
-	<image32>species/icons32/189.gif</image32>
+	<image32>species/icons32/189.png</image32>
 	<image80>species/icons80/jumpluff.png</image80>
 	<imageFront>species/iconsFront/189.png</imageFront>
 	<imageBack>species/iconsBack/189.png</imageBack>
@@ -14514,7 +14523,7 @@
 	<number>188</number>
 	<generation>2</generation>
 	<name>SKIPLOOM</name>
-	<image32>species/icons32/188.gif</image32>
+	<image32>species/icons32/188.png</image32>
 	<image80>species/icons80/skiploom.png</image80>
 	<imageFront>species/iconsFront/188.png</imageFront>
 	<imageBack>species/iconsBack/188.png</imageBack>
@@ -14564,7 +14573,7 @@
 	<number>187</number>
 	<generation>2</generation>
 	<name>HOPPIP</name>
-	<image32>species/icons32/187.gif</image32>
+	<image32>species/icons32/187.png</image32>
 	<image80>species/icons80/hoppip.png</image80>
 	<imageFront>species/iconsFront/187.png</imageFront>
 	<imageBack>species/iconsBack/187.png</imageBack>
@@ -14620,7 +14629,7 @@
 	<number>186</number>
 	<generation>2</generation>
 	<name>POLITOED</name>
-	<image32>species/icons32/186.gif</image32>
+	<image32>species/icons32/186.png</image32>
 	<image80>species/icons80/politoed.png</image80>
 	<imageFront>species/iconsFront/186.png</imageFront>
 	<imageBack>species/iconsBack/186.png</imageBack>
@@ -14657,7 +14666,7 @@
 	<number>185</number>
 	<generation>2</generation>
 	<name>SUDOWOODO</name>
-	<image32>species/icons32/185.gif</image32>
+	<image32>species/icons32/185.png</image32>
 	<image80>species/icons80/sudowoodo.png</image80>
 	<imageFront>species/iconsFront/185.png</imageFront>
 	<imageBack>species/iconsBack/185.png</imageBack>
@@ -14711,7 +14720,7 @@
 	<number>184</number>
 	<generation>2</generation>
 	<name>AZUMARILL</name>
-	<image32>species/icons32/184.gif</image32>
+	<image32>species/icons32/184.png</image32>
 	<image80>species/icons80/azumarill.png</image80>
 	<imageFront>species/iconsFront/184.png</imageFront>
 	<imageBack>species/iconsBack/184.png</imageBack>
@@ -14756,7 +14765,7 @@
 	<number>183</number>
 	<generation>2</generation>
 	<name>MARILL</name>
-	<image32>species/icons32/183.gif</image32>
+	<image32>species/icons32/183.png</image32>
 	<image80>species/icons80/marill.png</image80>
 	<imageFront>species/iconsFront/183.png</imageFront>
 	<imageBack>species/iconsBack/183.png</imageBack>
@@ -14809,7 +14818,7 @@
 	<number>182</number>
 	<generation>2</generation>
 	<name>BELLOSSOM</name>
-	<image32>species/icons32/182.gif</image32>
+	<image32>species/icons32/182.png</image32>
 	<image80>species/icons80/bellossom.png</image80>
 	<imageFront>species/iconsFront/182.png</imageFront>
 	<imageBack>species/iconsBack/182.png</imageBack>
@@ -14846,7 +14855,7 @@
 	<number>181</number>
 	<generation>2</generation>
 	<name>AMPHAROS</name>
-	<image32>species/icons32/181.gif</image32>
+	<image32>species/icons32/181.png</image32>
 	<image80>species/icons80/ampharos.png</image80>
 	<imageFront>species/iconsFront/181.png</imageFront>
 	<imageBack>species/iconsBack/181.png</imageBack>
@@ -14893,7 +14902,7 @@
 	<number>180</number>
 	<generation>2</generation>
 	<name>FLAAFFY</name>
-	<image32>species/icons32/180.gif</image32>
+	<image32>species/icons32/180.png</image32>
 	<image80>species/icons80/flaaffy.png</image80>
 	<imageFront>species/iconsFront/180.png</imageFront>
 	<imageBack>species/iconsBack/180.png</imageBack>
@@ -14937,7 +14946,7 @@
 	<number>179</number>
 	<generation>2</generation>
 	<name>MAREEP</name>
-	<image32>species/icons32/179.gif</image32>
+	<image32>species/icons32/179.png</image32>
 	<image80>species/icons80/mareep.png</image80>
 	<imageFront>species/iconsFront/179.png</imageFront>
 	<imageBack>species/iconsBack/179.png</imageBack>
@@ -14988,7 +14997,7 @@
 	<number>178</number>
 	<generation>2</generation>
 	<name>XATU</name>
-	<image32>species/icons32/178.gif</image32>
+	<image32>species/icons32/178.png</image32>
 	<image80>species/icons80/xatu.png</image80>
 	<imageFront>species/iconsFront/178.png</imageFront>
 	<imageBack>species/iconsBack/178.png</imageBack>
@@ -15035,7 +15044,7 @@
 	<number>177</number>
 	<generation>2</generation>
 	<name>NATU</name>
-	<image32>species/icons32/177.gif</image32>
+	<image32>species/icons32/177.png</image32>
 	<image80>species/icons80/natu.png</image80>
 	<imageFront>species/iconsFront/177.png</imageFront>
 	<imageBack>species/iconsBack/177.png</imageBack>
@@ -15091,7 +15100,7 @@
 	<number>176</number>
 	<generation>2</generation>
 	<name>TOGETIC</name>
-	<image32>species/icons32/176.gif</image32>
+	<image32>species/icons32/176.png</image32>
 	<image80>species/icons80/togetic.png</image80>
 	<imageFront>species/iconsFront/176.png</imageFront>
 	<imageBack>species/iconsBack/176.png</imageBack>
@@ -15138,7 +15147,7 @@
 	<number>175</number>
 	<generation>2</generation>
 	<name>TOGEPI</name>
-	<image32>species/icons32/175.gif</image32>
+	<image32>species/icons32/175.png</image32>
 	<image80>species/icons80/togepi.png</image80>
 	<imageFront>species/iconsFront/175.png</imageFront>
 	<imageBack>species/iconsBack/175.png</imageBack>
@@ -15192,7 +15201,7 @@
 	<number>174</number>
 	<generation>2</generation>
 	<name>IGGLYBUFF</name>
-	<image32>species/icons32/174.gif</image32>
+	<image32>species/icons32/174.png</image32>
 	<image80>species/icons80/igglybuff.png</image80>
 	<imageFront>species/iconsFront/174.png</imageFront>
 	<imageBack>species/iconsBack/174.png</imageBack>
@@ -15237,7 +15246,7 @@
 	<number>173</number>
 	<generation>2</generation>
 	<name>CLEFFA</name>
-	<image32>species/icons32/173.gif</image32>
+	<image32>species/icons32/173.png</image32>
 	<image80>species/icons80/cleffa.png</image80>
 	<imageFront>species/iconsFront/173.png</imageFront>
 	<imageBack>species/iconsBack/173.png</imageBack>
@@ -15285,7 +15294,7 @@
 	<number>172</number>
 	<generation>2</generation>
 	<name>PICHU</name>
-	<image32>species/icons32/172.gif</image32>
+	<image32>species/icons32/172.png</image32>
 	<image80>species/icons80/pichu.png</image80>
 	<imageFront>species/iconsFront/172.png</imageFront>
 	<imageBack>species/iconsBack/172.png</imageBack>
@@ -15332,7 +15341,7 @@
 	<number>171</number>
 	<generation>2</generation>
 	<name>LANTURN</name>
-	<image32>species/icons32/171.gif</image32>
+	<image32>species/icons32/171.png</image32>
 	<image80>species/icons80/lanturn.png</image80>
 	<imageFront>species/iconsFront/171.png</imageFront>
 	<imageBack>species/iconsBack/171.png</imageBack>
@@ -15381,7 +15390,7 @@
 	<number>170</number>
 	<generation>2</generation>
 	<name>CHINCHOU</name>
-	<image32>species/icons32/170.gif</image32>
+	<image32>species/icons32/170.png</image32>
 	<image80>species/icons80/chinchou.png</image80>
 	<imageFront>species/iconsFront/170.png</imageFront>
 	<imageBack>species/iconsBack/170.png</imageBack>
@@ -15433,7 +15442,7 @@
 	<number>169</number>
 	<generation>2</generation>
 	<name>CROBAT</name>
-	<image32>species/icons32/169.gif</image32>
+	<image32>species/icons32/169.png</image32>
 	<image80>species/icons80/crobat.png</image80>
 	<imageFront>species/iconsFront/169.png</imageFront>
 	<imageBack>species/iconsBack/169.png</imageBack>
@@ -15479,7 +15488,7 @@
 	<number>168</number>
 	<generation>2</generation>
 	<name>ARIADOS</name>
-	<image32>species/icons32/168.gif</image32>
+	<image32>species/icons32/168.png</image32>
 	<image80>species/icons80/ariados.png</image80>
 	<imageFront>species/iconsFront/168.png</imageFront>
 	<imageBack>species/iconsBack/168.png</imageBack>
@@ -15527,7 +15536,7 @@
 	<number>167</number>
 	<generation>2</generation>
 	<name>SPINARAK</name>
-	<image32>species/icons32/167.gif</image32>
+	<image32>species/icons32/167.png</image32>
 	<image80>species/icons80/spinarak.png</image80>
 	<imageFront>species/iconsFront/167.png</imageFront>
 	<imageBack>species/iconsBack/167.png</imageBack>
@@ -15580,7 +15589,7 @@
 	<number>166</number>
 	<generation>2</generation>
 	<name>LEDIAN</name>
-	<image32>species/icons32/166.gif</image32>
+	<image32>species/icons32/166.png</image32>
 	<image80>species/icons80/ledian.png</image80>
 	<imageFront>species/iconsFront/166.png</imageFront>
 	<imageBack>species/iconsBack/166.png</imageBack>
@@ -15626,7 +15635,7 @@
 	<number>165</number>
 	<generation>2</generation>
 	<name>LEDYBA</name>
-	<image32>species/icons32/165.gif</image32>
+	<image32>species/icons32/165.png</image32>
 	<image80>species/icons80/ledyba.png</image80>
 	<imageFront>species/iconsFront/165.png</imageFront>
 	<imageBack>species/iconsBack/165.png</imageBack>
@@ -15678,7 +15687,7 @@
 	<number>164</number>
 	<generation>2</generation>
 	<name>NOCTOWL</name>
-	<image32>species/icons32/164.gif</image32>
+	<image32>species/icons32/164.png</image32>
 	<image80>species/icons80/noctowl.png</image80>
 	<imageFront>species/iconsFront/164.png</imageFront>
 	<imageBack>species/iconsBack/164.png</imageBack>
@@ -15726,7 +15735,7 @@
 	<number>163</number>
 	<generation>2</generation>
 	<name>HOOTHOOT</name>
-	<image32>species/icons32/163.gif</image32>
+	<image32>species/icons32/163.png</image32>
 	<image80>species/icons80/hoothoot.png</image80>
 	<imageFront>species/iconsFront/163.png</imageFront>
 	<imageBack>species/iconsBack/163.png</imageBack>
@@ -15780,7 +15789,7 @@
 	<number>162</number>
 	<generation>2</generation>
 	<name>FURRET</name>
-	<image32>species/icons32/162.gif</image32>
+	<image32>species/icons32/162.png</image32>
 	<image80>species/icons80/furret.png</image80>
 	<imageFront>species/iconsFront/162.png</imageFront>
 	<imageBack>species/iconsBack/162.png</imageBack>
@@ -15827,7 +15836,7 @@
 	<number>161</number>
 	<generation>2</generation>
 	<name>SENTRET</name>
-	<image32>species/icons32/161.gif</image32>
+	<image32>species/icons32/161.png</image32>
 	<image80>species/icons80/sentret.png</image80>
 	<imageFront>species/iconsFront/161.png</imageFront>
 	<imageBack>species/iconsBack/161.png</imageBack>
@@ -15883,7 +15892,7 @@
 	<number>160</number>
 	<generation>2</generation>
 	<name>FERALIGATR</name>
-	<image32>species/icons32/160.gif</image32>
+	<image32>species/icons32/160.png</image32>
 	<image80>species/icons80/feraligatr.png</image80>
 	<imageFront>species/iconsFront/160.png</imageFront>
 	<imageBack>species/iconsBack/160.png</imageBack>
@@ -15931,7 +15940,7 @@
 	<number>159</number>
 	<generation>2</generation>
 	<name>CROCONAW</name>
-	<image32>species/icons32/159.gif</image32>
+	<image32>species/icons32/159.png</image32>
 	<image80>species/icons80/croconaw.png</image80>
 	<imageFront>species/iconsFront/159.png</imageFront>
 	<imageBack>species/iconsBack/159.png</imageBack>
@@ -15977,7 +15986,7 @@
 	<number>158</number>
 	<generation>2</generation>
 	<name>TOTODILE</name>
-	<image32>species/icons32/158.gif</image32>
+	<image32>species/icons32/158.png</image32>
 	<image80>species/icons80/totodile.png</image80>
 	<imageFront>species/iconsFront/158.png</imageFront>
 	<imageBack>species/iconsBack/158.png</imageBack>
@@ -16033,7 +16042,7 @@
 	<number>157</number>
 	<generation>2</generation>
 	<name>TYPHLOSION</name>
-	<image32>species/icons32/157.gif</image32>
+	<image32>species/icons32/157.png</image32>
 	<image80>species/icons80/typhlosion.png</image80>
 	<imageFront>species/iconsFront/157.png</imageFront>
 	<imageBack>species/iconsBack/157.png</imageBack>
@@ -16080,7 +16089,7 @@
 	<number>156</number>
 	<generation>2</generation>
 	<name>QUILAVA</name>
-	<image32>species/icons32/156.gif</image32>
+	<image32>species/icons32/156.png</image32>
 	<image80>species/icons80/quilava.png</image80>
 	<imageFront>species/iconsFront/156.png</imageFront>
 	<imageBack>species/iconsBack/156.png</imageBack>
@@ -16125,7 +16134,7 @@
 	<number>155</number>
 	<generation>2</generation>
 	<name>CYNDAQUIL</name>
-	<image32>species/icons32/155.gif</image32>
+	<image32>species/icons32/155.png</image32>
 	<image80>species/icons80/cyndaquil.png</image80>
 	<imageFront>species/iconsFront/155.png</imageFront>
 	<imageBack>species/iconsBack/155.png</imageBack>
@@ -16180,7 +16189,7 @@
 	<number>154</number>
 	<generation>2</generation>
 	<name>MEGANIUM</name>
-	<image32>species/icons32/154.gif</image32>
+	<image32>species/icons32/154.png</image32>
 	<image80>species/icons80/meganium.png</image80>
 	<imageFront>species/iconsFront/154.png</imageFront>
 	<imageBack>species/iconsBack/154.png</imageBack>
@@ -16228,7 +16237,7 @@
 	<number>153</number>
 	<generation>2</generation>
 	<name>BAYLEEF</name>
-	<image32>species/icons32/153.gif</image32>
+	<image32>species/icons32/153.png</image32>
 	<image80>species/icons80/bayleef.png</image80>
 	<imageFront>species/iconsFront/153.png</imageFront>
 	<imageBack>species/iconsBack/153.png</imageBack>
@@ -16275,7 +16284,7 @@
 	<number>152</number>
 	<generation>2</generation>
 	<name>CHIKORITA</name>
-	<image32>species/icons32/152.gif</image32>
+	<image32>species/icons32/152.png</image32>
 	<image80>species/icons80/chikorita.png</image80>
 	<imageFront>species/iconsFront/152.png</imageFront>
 	<imageBack>species/iconsBack/152.png</imageBack>
@@ -16331,7 +16340,7 @@
 	<number>151</number>
 	<generation>1</generation>
 	<name>MEW</name>
-	<image32>species/icons32/151.gif</image32>
+	<image32>species/icons32/151.png</image32>
 	<image80>species/icons80/mew.png</image80>
 	<imageFront>species/iconsFront/151.png</imageFront>
 	<imageBack>species/iconsBack/151.png</imageBack>
@@ -16374,7 +16383,7 @@
 	<number>150</number>
 	<generation>1</generation>
 	<name>MEWTWO</name>
-	<image32>species/icons32/150.gif</image32>
+	<image32>species/icons32/150.png</image32>
 	<image80>species/icons80/mewtwo.png</image80>
 	<imageFront>species/iconsFront/150.png</imageFront>
 	<imageBack>species/iconsBack/150.png</imageBack>
@@ -16422,7 +16431,7 @@
 	<number>149</number>
 	<generation>1</generation>
 	<name>DRAGONITE</name>
-	<image32>species/icons32/149.gif</image32>
+	<image32>species/icons32/149.png</image32>
 	<image80>species/icons80/dragonite.png</image80>
 	<imageFront>species/iconsFront/149.png</imageFront>
 	<imageBack>species/iconsBack/149.png</imageBack>
@@ -16472,7 +16481,7 @@
 	<number>148</number>
 	<generation>1</generation>
 	<name>DRAGONAIR</name>
-	<image32>species/icons32/148.gif</image32>
+	<image32>species/icons32/148.png</image32>
 	<image80>species/icons80/dragonair.png</image80>
 	<imageFront>species/iconsFront/148.png</imageFront>
 	<imageBack>species/iconsBack/148.png</imageBack>
@@ -16518,7 +16527,7 @@
 	<number>147</number>
 	<generation>1</generation>
 	<name>DRATINI</name>
-	<image32>species/icons32/147.gif</image32>
+	<image32>species/icons32/147.png</image32>
 	<image80>species/icons80/dratini.png</image80>
 	<imageFront>species/iconsFront/147.png</imageFront>
 	<imageBack>species/iconsBack/147.png</imageBack>
@@ -16569,7 +16578,7 @@
 	<number>146</number>
 	<generation>1</generation>
 	<name>MOLTRES</name>
-	<image32>species/icons32/146.gif</image32>
+	<image32>species/icons32/146.png</image32>
 	<image80>species/icons80/moltres.png</image80>
 	<imageFront>species/iconsFront/146.png</imageFront>
 	<imageBack>species/iconsBack/146.png</imageBack>
@@ -16614,7 +16623,7 @@
 	<number>145</number>
 	<generation>1</generation>
 	<name>ZAPDOS</name>
-	<image32>species/icons32/145.gif</image32>
+	<image32>species/icons32/145.png</image32>
 	<image80>species/icons80/zapdos.png</image80>
 	<imageFront>species/iconsFront/145.png</imageFront>
 	<imageBack>species/iconsBack/145.png</imageBack>
@@ -16659,7 +16668,7 @@
 	<number>144</number>
 	<generation>1</generation>
 	<name>ARTICUNO</name>
-	<image32>species/icons32/144.gif</image32>
+	<image32>species/icons32/144.png</image32>
 	<image80>species/icons80/articuno.png</image80>
 	<imageFront>species/iconsFront/144.png</imageFront>
 	<imageBack>species/iconsBack/144.png</imageBack>
@@ -16704,7 +16713,7 @@
 	<number>143</number>
 	<generation>1</generation>
 	<name>SNORLAX</name>
-	<image32>species/icons32/143.gif</image32>
+	<image32>species/icons32/143.png</image32>
 	<image80>species/icons80/snorlax.png</image80>
 	<imageFront>species/iconsFront/143.png</imageFront>
 	<imageBack>species/iconsBack/143.png</imageBack>
@@ -16757,7 +16766,7 @@
 	<number>142</number>
 	<generation>1</generation>
 	<name>AERODACTYL</name>
-	<image32>species/icons32/142.gif</image32>
+	<image32>species/icons32/142.png</image32>
 	<image80>species/icons80/aerodactyl.png</image80>
 	<imageFront>species/iconsFront/142.png</imageFront>
 	<imageBack>species/iconsBack/142.png</imageBack>
@@ -16811,7 +16820,7 @@
 	<number>141</number>
 	<generation>1</generation>
 	<name>KABUTOPS</name>
-	<image32>species/icons32/141.gif</image32>
+	<image32>species/icons32/141.png</image32>
 	<image80>species/icons80/kabutops.png</image80>
 	<imageFront>species/iconsFront/141.png</imageFront>
 	<imageBack>species/iconsBack/141.png</imageBack>
@@ -16857,7 +16866,7 @@
 	<number>140</number>
 	<generation>1</generation>
 	<name>KABUTO</name>
-	<image32>species/icons32/140.gif</image32>
+	<image32>species/icons32/140.png</image32>
 	<image80>species/icons80/kabuto.png</image80>
 	<imageFront>species/iconsFront/140.png</imageFront>
 	<imageBack>species/iconsBack/140.png</imageBack>
@@ -16910,7 +16919,7 @@
 	<number>139</number>
 	<generation>1</generation>
 	<name>OMASTAR</name>
-	<image32>species/icons32/139.gif</image32>
+	<image32>species/icons32/139.png</image32>
 	<image80>species/icons80/omastar.png</image80>
 	<imageFront>species/iconsFront/139.png</imageFront>
 	<imageBack>species/iconsBack/139.png</imageBack>
@@ -16956,7 +16965,7 @@
 	<number>138</number>
 	<generation>1</generation>
 	<name>OMANYTE</name>
-	<image32>species/icons32/138.gif</image32>
+	<image32>species/icons32/138.png</image32>
 	<image80>species/icons80/omanyte.png</image80>
 	<imageFront>species/iconsFront/138.png</imageFront>
 	<imageBack>species/iconsBack/138.png</imageBack>
@@ -17010,7 +17019,7 @@
 	<number>137</number>
 	<generation>1</generation>
 	<name>PORYGON</name>
-	<image32>species/icons32/137.gif</image32>
+	<image32>species/icons32/137.png</image32>
 	<image80>species/icons80/porygon.png</image80>
 	<imageFront>species/iconsFront/137.png</imageFront>
 	<imageBack>species/iconsBack/137.png</imageBack>
@@ -17056,7 +17065,7 @@
 	<number>136</number>
 	<generation>1</generation>
 	<name>FLAREON</name>
-	<image32>species/icons32/136.gif</image32>
+	<image32>species/icons32/136.png</image32>
 	<image80>species/icons80/flareon.png</image80>
 	<imageFront>species/iconsFront/136.png</imageFront>
 	<imageBack>species/iconsBack/136.png</imageBack>
@@ -17100,7 +17109,7 @@
 	<number>135</number>
 	<generation>1</generation>
 	<name>JOLTEON</name>
-	<image32>species/icons32/135.gif</image32>
+	<image32>species/icons32/135.png</image32>
 	<image80>species/icons80/jolteon.png</image80>
 	<imageFront>species/iconsFront/135.png</imageFront>
 	<imageBack>species/iconsBack/135.png</imageBack>
@@ -17144,7 +17153,7 @@
 	<number>134</number>
 	<generation>1</generation>
 	<name>VAPOREON</name>
-	<image32>species/icons32/134.gif</image32>
+	<image32>species/icons32/134.png</image32>
 	<image80>species/icons80/vaporeon.png</image80>
 	<imageFront>species/iconsFront/134.png</imageFront>
 	<imageBack>species/iconsBack/134.png</imageBack>
@@ -17188,7 +17197,7 @@
 	<number>133</number>
 	<generation>1</generation>
 	<name>EEVEE</name>
-	<image32>species/icons32/133.gif</image32>
+	<image32>species/icons32/133.png</image32>
 	<image80>species/icons80/eevee.png</image80>
 	<imageFront>species/iconsFront/133.png</imageFront>
 	<imageBack>species/iconsBack/133.png</imageBack>
@@ -17239,7 +17248,7 @@
 	<number>132</number>
 	<generation>1</generation>
 	<name>DITTO</name>
-	<image32>species/icons32/132.gif</image32>
+	<image32>species/icons32/132.png</image32>
 	<image80>species/icons80/ditto.png</image80>
 	<imageFront>species/iconsFront/132.png</imageFront>
 	<imageBack>species/iconsBack/132.png</imageBack>
@@ -17271,7 +17280,7 @@
 	<number>131</number>
 	<generation>1</generation>
 	<name>LAPRAS</name>
-	<image32>species/icons32/131.gif</image32>
+	<image32>species/icons32/131.png</image32>
 	<image80>species/icons80/lapras.png</image80>
 	<imageFront>species/iconsFront/131.png</imageFront>
 	<imageBack>species/iconsBack/131.png</imageBack>
@@ -17328,7 +17337,7 @@
 	<number>130</number>
 	<generation>1</generation>
 	<name>GYARADOS</name>
-	<image32>species/icons32/130.gif</image32>
+	<image32>species/icons32/130.png</image32>
 	<image80>species/icons80/gyarados.png</image80>
 	<imageFront>species/iconsFront/130.png</imageFront>
 	<imageBack>species/iconsBack/130.png</imageBack>
@@ -17370,7 +17379,7 @@
 	<number>129</number>
 	<generation>1</generation>
 	<name>MAGIKARP</name>
-	<image32>species/icons32/129.gif</image32>
+	<image32>species/icons32/129.png</image32>
 	<image80>species/icons80/magikarp.png</image80>
 	<imageFront>species/iconsFront/129.png</imageFront>
 	<imageBack>species/iconsBack/129.png</imageBack>
@@ -17404,7 +17413,7 @@
 	<number>128</number>
 	<generation>1</generation>
 	<name>TAUROS</name>
-	<image32>species/icons32/128.gif</image32>
+	<image32>species/icons32/128.png</image32>
 	<image80>species/icons80/tauros.png</image80>
 	<imageFront>species/iconsFront/128.png</imageFront>
 	<imageBack>species/iconsBack/128.png</imageBack>
@@ -17448,7 +17457,7 @@
 	<number>127</number>
 	<generation>1</generation>
 	<name>PINSIR</name>
-	<image32>species/icons32/127.gif</image32>
+	<image32>species/icons32/127.png</image32>
 	<image80>species/icons80/pinsir.png</image80>
 	<imageFront>species/iconsFront/127.png</imageFront>
 	<imageBack>species/iconsBack/127.png</imageBack>
@@ -17500,7 +17509,7 @@
 	<number>126</number>
 	<generation>1</generation>
 	<name>MAGMAR</name>
-	<image32>species/icons32/126.gif</image32>
+	<image32>species/icons32/126.png</image32>
 	<image80>species/icons80/magmar.png</image80>
 	<imageFront>species/iconsFront/126.png</imageFront>
 	<imageBack>species/iconsBack/126.png</imageBack>
@@ -17544,7 +17553,7 @@
 	<number>125</number>
 	<generation>1</generation>
 	<name>ELECTABUZZ</name>
-	<image32>species/icons32/125.gif</image32>
+	<image32>species/icons32/125.png</image32>
 	<image80>species/icons80/electabuzz.png</image80>
 	<imageFront>species/iconsFront/125.png</imageFront>
 	<imageBack>species/iconsBack/125.png</imageBack>
@@ -17588,7 +17597,7 @@
 	<number>124</number>
 	<generation>1</generation>
 	<name>JYNX</name>
-	<image32>species/icons32/124.gif</image32>
+	<image32>species/icons32/124.png</image32>
 	<image80>species/icons80/jynx.png</image80>
 	<imageFront>species/iconsFront/124.png</imageFront>
 	<imageBack>species/iconsBack/124.png</imageBack>
@@ -17636,7 +17645,7 @@
 	<number>123</number>
 	<generation>1</generation>
 	<name>SCYTHER</name>
-	<image32>species/icons32/123.gif</image32>
+	<image32>species/icons32/123.png</image32>
 	<image80>species/icons80/scyther.png</image80>
 	<imageFront>species/iconsFront/123.png</imageFront>
 	<imageBack>species/iconsBack/123.png</imageBack>
@@ -17693,7 +17702,7 @@
 	<number>122</number>
 	<generation>1</generation>
 	<name>MR. MIME</name>
-	<image32>species/icons32/122.gif</image32>
+	<image32>species/icons32/122.png</image32>
 	<image80>species/icons80/mr. mime.png</image80>
 	<imageFront>species/iconsFront/122.png</imageFront>
 	<imageBack>species/iconsBack/122.png</imageBack>
@@ -17753,7 +17762,7 @@
 	<number>121</number>
 	<generation>1</generation>
 	<name>STARMIE</name>
-	<image32>species/icons32/121.gif</image32>
+	<image32>species/icons32/121.png</image32>
 	<image80>species/icons80/starmie.png</image80>
 	<imageFront>species/iconsFront/121.png</imageFront>
 	<imageBack>species/iconsBack/121.png</imageBack>
@@ -17789,7 +17798,7 @@
 	<number>120</number>
 	<generation>1</generation>
 	<name>STARYU</name>
-	<image32>species/icons32/120.gif</image32>
+	<image32>species/icons32/120.png</image32>
 	<image80>species/icons80/staryu.png</image80>
 	<imageFront>species/iconsFront/120.png</imageFront>
 	<imageBack>species/iconsBack/120.png</imageBack>
@@ -17834,7 +17843,7 @@
 	<number>119</number>
 	<generation>1</generation>
 	<name>SEAKING</name>
-	<image32>species/icons32/119.gif</image32>
+	<image32>species/icons32/119.png</image32>
 	<image80>species/icons80/seaking.png</image80>
 	<imageFront>species/iconsFront/119.png</imageFront>
 	<imageBack>species/iconsBack/119.png</imageBack>
@@ -17880,7 +17889,7 @@
 	<number>118</number>
 	<generation>1</generation>
 	<name>GOLDEEN</name>
-	<image32>species/icons32/118.gif</image32>
+	<image32>species/icons32/118.png</image32>
 	<image80>species/icons80/goldeen.png</image80>
 	<imageFront>species/iconsFront/118.png</imageFront>
 	<imageBack>species/iconsBack/118.png</imageBack>
@@ -17931,7 +17940,7 @@
 	<number>117</number>
 	<generation>1</generation>
 	<name>SEADRA</name>
-	<image32>species/icons32/117.gif</image32>
+	<image32>species/icons32/117.png</image32>
 	<image80>species/icons80/seadra.png</image80>
 	<imageFront>species/iconsFront/117.png</imageFront>
 	<imageBack>species/iconsBack/117.png</imageBack>
@@ -17977,7 +17986,7 @@
 	<number>116</number>
 	<generation>1</generation>
 	<name>HORSEA</name>
-	<image32>species/icons32/116.gif</image32>
+	<image32>species/icons32/116.png</image32>
 	<image80>species/icons80/horsea.png</image80>
 	<imageFront>species/iconsFront/116.png</imageFront>
 	<imageBack>species/iconsBack/116.png</imageBack>
@@ -18028,7 +18037,7 @@
 	<number>115</number>
 	<generation>1</generation>
 	<name>KANGASKHAN</name>
-	<image32>species/icons32/115.gif</image32>
+	<image32>species/icons32/115.png</image32>
 	<image80>species/icons80/kangaskhan.png</image80>
 	<imageFront>species/iconsFront/115.png</imageFront>
 	<imageBack>species/iconsBack/115.png</imageBack>
@@ -18084,7 +18093,7 @@
 	<number>114</number>
 	<generation>1</generation>
 	<name>TANGELA</name>
-	<image32>species/icons32/114.gif</image32>
+	<image32>species/icons32/114.png</image32>
 	<image80>species/icons80/tangela.png</image80>
 	<imageFront>species/iconsFront/114.png</imageFront>
 	<imageBack>species/iconsBack/114.png</imageBack>
@@ -18141,7 +18150,7 @@
 	<number>113</number>
 	<generation>1</generation>
 	<name>CHANSEY</name>
-	<image32>species/icons32/113.gif</image32>
+	<image32>species/icons32/113.png</image32>
 	<image80>species/icons80/chansey.png</image80>
 	<imageFront>species/iconsFront/113.png</imageFront>
 	<imageBack>species/iconsBack/113.png</imageBack>
@@ -18194,7 +18203,7 @@
 	<number>112</number>
 	<generation>1</generation>
 	<name>RHYDON</name>
-	<image32>species/icons32/112.gif</image32>
+	<image32>species/icons32/112.png</image32>
 	<image80>species/icons80/rhydon.png</image80>
 	<imageFront>species/iconsFront/112.png</imageFront>
 	<imageBack>species/iconsBack/112.png</imageBack>
@@ -18239,7 +18248,7 @@
 	<number>111</number>
 	<generation>1</generation>
 	<name>RHYHORN</name>
-	<image32>species/icons32/111.gif</image32>
+	<image32>species/icons32/111.png</image32>
 	<image80>species/icons80/rhyhorn.png</image80>
 	<imageFront>species/iconsFront/111.png</imageFront>
 	<imageBack>species/iconsBack/111.png</imageBack>
@@ -18293,7 +18302,7 @@
 	<number>110</number>
 	<generation>1</generation>
 	<name>WEEZING</name>
-	<image32>species/icons32/110.gif</image32>
+	<image32>species/icons32/110.png</image32>
 	<image80>species/icons80/weezing.png</image80>
 	<imageFront>species/iconsFront/110.png</imageFront>
 	<imageBack>species/iconsBack/110.png</imageBack>
@@ -18339,7 +18348,7 @@
 	<number>109</number>
 	<generation>1</generation>
 	<name>KOFFING</name>
-	<image32>species/icons32/109.gif</image32>
+	<image32>species/icons32/109.png</image32>
 	<image80>species/icons80/koffing.png</image80>
 	<imageFront>species/iconsFront/109.png</imageFront>
 	<imageBack>species/iconsBack/109.png</imageBack>
@@ -18392,7 +18401,7 @@
 	<number>108</number>
 	<generation>1</generation>
 	<name>LICKITUNG</name>
-	<image32>species/icons32/108.gif</image32>
+	<image32>species/icons32/108.png</image32>
 	<image80>species/icons80/lickitung.png</image80>
 	<imageFront>species/iconsFront/108.png</imageFront>
 	<imageBack>species/iconsBack/108.png</imageBack>
@@ -18447,7 +18456,7 @@
 	<number>107</number>
 	<generation>1</generation>
 	<name>HITMONCHAN</name>
-	<image32>species/icons32/107.gif</image32>
+	<image32>species/icons32/107.png</image32>
 	<image80>species/icons80/hitmonchan.png</image80>
 	<imageFront>species/iconsFront/107.png</imageFront>
 	<imageBack>species/iconsBack/107.png</imageBack>
@@ -18494,7 +18503,7 @@
 	<number>106</number>
 	<generation>1</generation>
 	<name>HITMONLEE</name>
-	<image32>species/icons32/106.gif</image32>
+	<image32>species/icons32/106.png</image32>
 	<image80>species/icons80/hitmonlee.png</image80>
 	<imageFront>species/iconsFront/106.png</imageFront>
 	<imageBack>species/iconsBack/106.png</imageBack>
@@ -18541,7 +18550,7 @@
 	<number>105</number>
 	<generation>1</generation>
 	<name>MAROWAK</name>
-	<image32>species/icons32/105.gif</image32>
+	<image32>species/icons32/105.png</image32>
 	<image80>species/icons80/marowak.png</image80>
 	<imageFront>species/iconsFront/105.png</imageFront>
 	<imageBack>species/iconsBack/105.png</imageBack>
@@ -18589,7 +18598,7 @@
 	<number>104</number>
 	<generation>1</generation>
 	<name>CUBONE</name>
-	<image32>species/icons32/104.gif</image32>
+	<image32>species/icons32/104.png</image32>
 	<image80>species/icons80/cubone.png</image80>
 	<imageFront>species/iconsFront/104.png</imageFront>
 	<imageBack>species/iconsBack/104.png</imageBack>
@@ -18643,7 +18652,7 @@
 	<number>103</number>
 	<generation>1</generation>
 	<name>EXEGGUTOR</name>
-	<image32>species/icons32/103.gif</image32>
+	<image32>species/icons32/103.png</image32>
 	<image80>species/icons80/exeggutor.png</image80>
 	<imageFront>species/iconsFront/103.png</imageFront>
 	<imageBack>species/iconsBack/103.png</imageBack>
@@ -18683,7 +18692,7 @@
 	<number>102</number>
 	<generation>1</generation>
 	<name>EXEGGCUTE</name>
-	<image32>species/icons32/102.gif</image32>
+	<image32>species/icons32/102.png</image32>
 	<image80>species/icons80/exeggcute.png</image80>
 	<imageFront>species/iconsFront/102.png</imageFront>
 	<imageBack>species/iconsBack/102.png</imageBack>
@@ -18738,7 +18747,7 @@
 	<number>101</number>
 	<generation>1</generation>
 	<name>ELECTRODE</name>
-	<image32>species/icons32/101.gif</image32>
+	<image32>species/icons32/101.png</image32>
 	<image80>species/icons80/electrode.png</image80>
 	<imageFront>species/iconsFront/101.png</imageFront>
 	<imageBack>species/iconsBack/101.png</imageBack>
@@ -18786,7 +18795,7 @@
 	<number>100</number>
 	<generation>1</generation>
 	<name>VOLTORB</name>
-	<image32>species/icons32/100.gif</image32>
+	<image32>species/icons32/100.png</image32>
 	<image80>species/icons80/voltorb.png</image80>
 	<imageFront>species/iconsFront/100.png</imageFront>
 	<imageBack>species/iconsBack/100.png</imageBack>
@@ -18831,7 +18840,7 @@
 	<number>99</number>
 	<generation>1</generation>
 	<name>KINGLER</name>
-	<image32>species/icons32/99.gif</image32>
+	<image32>species/icons32/99.png</image32>
 	<image80>species/icons80/kingler.png</image80>
 	<imageFront>species/iconsFront/99.png</imageFront>
 	<imageBack>species/iconsBack/99.png</imageBack>
@@ -18878,7 +18887,7 @@
 	<number>98</number>
 	<generation>1</generation>
 	<name>KRABBY</name>
-	<image32>species/icons32/98.gif</image32>
+	<image32>species/icons32/98.png</image32>
 	<image80>species/icons80/krabby.png</image80>
 	<imageFront>species/iconsFront/98.png</imageFront>
 	<imageBack>species/iconsBack/98.png</imageBack>
@@ -18933,7 +18942,7 @@
 	<number>97</number>
 	<generation>1</generation>
 	<name>HYPNO</name>
-	<image32>species/icons32/97.gif</image32>
+	<image32>species/icons32/97.png</image32>
 	<image80>species/icons80/hypno.png</image80>
 	<imageFront>species/iconsFront/97.png</imageFront>
 	<imageBack>species/iconsBack/97.png</imageBack>
@@ -18983,7 +18992,7 @@
 	<number>96</number>
 	<generation>1</generation>
 	<name>DROWZEE</name>
-	<image32>species/icons32/96.gif</image32>
+	<image32>species/icons32/96.png</image32>
 	<image80>species/icons80/drowzee.png</image80>
 	<imageFront>species/iconsFront/96.png</imageFront>
 	<imageBack>species/iconsBack/96.png</imageBack>
@@ -19038,7 +19047,7 @@
 	<number>95</number>
 	<generation>1</generation>
 	<name>ONIX</name>
-	<image32>species/icons32/95.gif</image32>
+	<image32>species/icons32/95.png</image32>
 	<image80>species/icons80/onix.png</image80>
 	<imageFront>species/iconsFront/95.png</imageFront>
 	<imageBack>species/iconsBack/95.png</imageBack>
@@ -19092,7 +19101,7 @@
 	<number>94</number>
 	<generation>1</generation>
 	<name>GENGAR</name>
-	<image32>species/icons32/94.gif</image32>
+	<image32>species/icons32/94.png</image32>
 	<image80>species/icons80/gengar.png</image80>
 	<imageFront>species/iconsFront/94.png</imageFront>
 	<imageBack>species/iconsBack/94.png</imageBack>
@@ -19139,7 +19148,7 @@
 	<number>93</number>
 	<generation>1</generation>
 	<name>HAUNTER</name>
-	<image32>species/icons32/93.gif</image32>
+	<image32>species/icons32/93.png</image32>
 	<image80>species/icons80/haunter.png</image80>
 	<imageFront>species/iconsFront/93.png</imageFront>
 	<imageBack>species/iconsBack/93.png</imageBack>
@@ -19186,7 +19195,7 @@
 	<number>92</number>
 	<generation>1</generation>
 	<name>GASTLY</name>
-	<image32>species/icons32/92.gif</image32>
+	<image32>species/icons32/92.png</image32>
 	<image80>species/icons80/gastly.png</image80>
 	<imageFront>species/iconsFront/92.png</imageFront>
 	<imageBack>species/iconsBack/92.png</imageBack>
@@ -19241,7 +19250,7 @@
 	<number>91</number>
 	<generation>1</generation>
 	<name>CLOYSTER</name>
-	<image32>species/icons32/91.gif</image32>
+	<image32>species/icons32/91.png</image32>
 	<image80>species/icons80/cloyster.png</image80>
 	<imageFront>species/iconsFront/91.png</imageFront>
 	<imageBack>species/iconsBack/91.png</imageBack>
@@ -19279,7 +19288,7 @@
 	<number>90</number>
 	<generation>1</generation>
 	<name>SHELLDER</name>
-	<image32>species/icons32/90.gif</image32>
+	<image32>species/icons32/90.png</image32>
 	<image80>species/icons80/shellder.png</image80>
 	<imageFront>species/iconsFront/90.png</imageFront>
 	<imageBack>species/iconsBack/90.png</imageBack>
@@ -19330,7 +19339,7 @@
 	<number>89</number>
 	<generation>1</generation>
 	<name>MUK</name>
-	<image32>species/icons32/89.gif</image32>
+	<image32>species/icons32/89.png</image32>
 	<image80>species/icons80/muk.png</image80>
 	<imageFront>species/iconsFront/89.png</imageFront>
 	<imageBack>species/iconsBack/89.png</imageBack>
@@ -19377,7 +19386,7 @@
 	<number>88</number>
 	<generation>1</generation>
 	<name>GRIMER</name>
-	<image32>species/icons32/88.gif</image32>
+	<image32>species/icons32/88.png</image32>
 	<image80>species/icons80/grimer.png</image80>
 	<imageFront>species/iconsFront/88.png</imageFront>
 	<imageBack>species/iconsBack/88.png</imageBack>
@@ -19433,7 +19442,7 @@
 	<number>87</number>
 	<generation>1</generation>
 	<name>DEWGONG</name>
-	<image32>species/icons32/87.gif</image32>
+	<image32>species/icons32/87.png</image32>
 	<image80>species/icons80/dewgong.png</image80>
 	<imageFront>species/iconsFront/87.png</imageFront>
 	<imageBack>species/iconsBack/87.png</imageBack>
@@ -19484,7 +19493,7 @@
 	<number>86</number>
 	<generation>1</generation>
 	<name>SEEL</name>
-	<image32>species/icons32/86.gif</image32>
+	<image32>species/icons32/86.png</image32>
 	<image80>species/icons80/seel.png</image80>
 	<imageFront>species/iconsFront/86.png</imageFront>
 	<imageBack>species/iconsBack/86.png</imageBack>
@@ -19540,7 +19549,7 @@
 	<number>85</number>
 	<generation>1</generation>
 	<name>DODRIO</name>
-	<image32>species/icons32/85.gif</image32>
+	<image32>species/icons32/85.png</image32>
 	<image80>species/icons80/dodrio.png</image80>
 	<imageFront>species/iconsFront/85.png</imageFront>
 	<imageBack>species/iconsBack/85.png</imageBack>
@@ -19586,7 +19595,7 @@
 	<number>84</number>
 	<generation>1</generation>
 	<name>DODUO</name>
-	<image32>species/icons32/84.gif</image32>
+	<image32>species/icons32/84.png</image32>
 	<image80>species/icons80/doduo.png</image80>
 	<imageFront>species/iconsFront/84.png</imageFront>
 	<imageBack>species/iconsBack/84.png</imageBack>
@@ -19637,7 +19646,7 @@
 	<number>83</number>
 	<generation>1</generation>
 	<name>FARFETCH'D</name>
-	<image32>species/icons32/83.gif</image32>
+	<image32>species/icons32/83.png</image32>
 	<image80>species/icons80/farfetch'd.png</image80>
 	<imageFront>species/iconsFront/83.png</imageFront>
 	<imageBack>species/iconsBack/83.png</imageBack>
@@ -19694,7 +19703,7 @@
 	<number>82</number>
 	<generation>1</generation>
 	<name>MAGNETON</name>
-	<image32>species/icons32/82.gif</image32>
+	<image32>species/icons32/82.png</image32>
 	<image80>species/icons80/magneton.png</image80>
 	<imageFront>species/iconsFront/82.png</imageFront>
 	<imageBack>species/iconsBack/82.png</imageBack>
@@ -19743,7 +19752,7 @@
 	<number>81</number>
 	<generation>1</generation>
 	<name>MAGNEMITE</name>
-	<image32>species/icons32/81.gif</image32>
+	<image32>species/icons32/81.png</image32>
 	<image80>species/icons80/magnemite.png</image80>
 	<imageFront>species/iconsFront/81.png</imageFront>
 	<imageBack>species/iconsBack/81.png</imageBack>
@@ -19789,7 +19798,7 @@
 	<number>80</number>
 	<generation>1</generation>
 	<name>SLOWBRO</name>
-	<image32>species/icons32/80.gif</image32>
+	<image32>species/icons32/80.png</image32>
 	<image80>species/icons80/slowbro.png</image80>
 	<imageFront>species/iconsFront/80.png</imageFront>
 	<imageBack>species/iconsBack/80.png</imageBack>
@@ -19837,7 +19846,7 @@
 	<number>79</number>
 	<generation>1</generation>
 	<name>SLOWPOKE</name>
-	<image32>species/icons32/79.gif</image32>
+	<image32>species/icons32/79.png</image32>
 	<image80>species/icons80/slowpoke.png</image80>
 	<imageFront>species/iconsFront/79.png</imageFront>
 	<imageBack>species/iconsBack/79.png</imageBack>
@@ -19893,7 +19902,7 @@
 	<number>78</number>
 	<generation>1</generation>
 	<name>RAPIDASH</name>
-	<image32>species/icons32/78.gif</image32>
+	<image32>species/icons32/78.png</image32>
 	<image80>species/icons80/rapidash.png</image80>
 	<imageFront>species/iconsFront/78.png</imageFront>
 	<imageBack>species/iconsBack/78.png</imageBack>
@@ -19941,7 +19950,7 @@
 	<number>77</number>
 	<generation>1</generation>
 	<name>PONYTA</name>
-	<image32>species/icons32/77.gif</image32>
+	<image32>species/icons32/77.png</image32>
 	<image80>species/icons80/ponyta.png</image80>
 	<imageFront>species/iconsFront/77.png</imageFront>
 	<imageBack>species/iconsBack/77.png</imageBack>
@@ -19990,7 +19999,7 @@
 	<number>76</number>
 	<generation>1</generation>
 	<name>GOLEM</name>
-	<image32>species/icons32/76.gif</image32>
+	<image32>species/icons32/76.png</image32>
 	<image80>species/icons80/golem.png</image80>
 	<imageFront>species/iconsFront/76.png</imageFront>
 	<imageBack>species/iconsBack/76.png</imageBack>
@@ -20036,7 +20045,7 @@
 	<number>75</number>
 	<generation>1</generation>
 	<name>GRAVELER</name>
-	<image32>species/icons32/75.gif</image32>
+	<image32>species/icons32/75.png</image32>
 	<image80>species/icons80/graveler.png</image80>
 	<imageFront>species/iconsFront/75.png</imageFront>
 	<imageBack>species/iconsBack/75.png</imageBack>
@@ -20082,7 +20091,7 @@
 	<number>74</number>
 	<generation>1</generation>
 	<name>GEODUDE</name>
-	<image32>species/icons32/74.gif</image32>
+	<image32>species/icons32/74.png</image32>
 	<image80>species/icons80/geodude.png</image80>
 	<imageFront>species/iconsFront/74.png</imageFront>
 	<imageBack>species/iconsBack/74.png</imageBack>
@@ -20131,7 +20140,7 @@
 	<number>73</number>
 	<generation>1</generation>
 	<name>TENTACRUEL</name>
-	<image32>species/icons32/73.gif</image32>
+	<image32>species/icons32/73.png</image32>
 	<image80>species/icons80/tentacruel.png</image80>
 	<imageFront>species/iconsFront/73.png</imageFront>
 	<imageBack>species/iconsBack/73.png</imageBack>
@@ -20177,7 +20186,7 @@
 	<number>72</number>
 	<generation>1</generation>
 	<name>TENTACOOL</name>
-	<image32>species/icons32/72.gif</image32>
+	<image32>species/icons32/72.png</image32>
 	<image80>species/icons80/tentacool.png</image80>
 	<imageFront>species/iconsFront/72.png</imageFront>
 	<imageBack>species/iconsBack/72.png</imageBack>
@@ -20229,7 +20238,7 @@
 	<number>71</number>
 	<generation>1</generation>
 	<name>VICTREEBEL</name>
-	<image32>species/icons32/71.gif</image32>
+	<image32>species/icons32/71.png</image32>
 	<image80>species/icons80/victreebel.png</image80>
 	<imageFront>species/iconsFront/71.png</imageFront>
 	<imageBack>species/iconsBack/71.png</imageBack>
@@ -20268,7 +20277,7 @@
 	<number>70</number>
 	<generation>1</generation>
 	<name>WEEPINBELL</name>
-	<image32>species/icons32/70.gif</image32>
+	<image32>species/icons32/70.png</image32>
 	<image80>species/icons80/weepinbell.png</image80>
 	<imageFront>species/iconsFront/70.png</imageFront>
 	<imageBack>species/iconsBack/70.png</imageBack>
@@ -20314,7 +20323,7 @@
 	<number>69</number>
 	<generation>1</generation>
 	<name>BELLSPROUT</name>
-	<image32>species/icons32/69.gif</image32>
+	<image32>species/icons32/69.png</image32>
 	<image80>species/icons80/bellsprout.png</image80>
 	<imageFront>species/iconsFront/69.png</imageFront>
 	<imageBack>species/iconsBack/69.png</imageBack>
@@ -20367,7 +20376,7 @@
 	<number>68</number>
 	<generation>1</generation>
 	<name>MACHAMP</name>
-	<image32>species/icons32/68.gif</image32>
+	<image32>species/icons32/68.png</image32>
 	<image80>species/icons80/machamp.png</image80>
 	<imageFront>species/iconsFront/68.png</imageFront>
 	<imageBack>species/iconsBack/68.png</imageBack>
@@ -20412,7 +20421,7 @@
 	<number>67</number>
 	<generation>1</generation>
 	<name>MACHOKE</name>
-	<image32>species/icons32/67.gif</image32>
+	<image32>species/icons32/67.png</image32>
 	<image80>species/icons80/machoke.png</image80>
 	<imageFront>species/iconsFront/67.png</imageFront>
 	<imageBack>species/iconsBack/67.png</imageBack>
@@ -20457,7 +20466,7 @@
 	<number>66</number>
 	<generation>1</generation>
 	<name>MACHOP</name>
-	<image32>species/icons32/66.gif</image32>
+	<image32>species/icons32/66.png</image32>
 	<image80>species/icons80/machop.png</image80>
 	<imageFront>species/iconsFront/66.png</imageFront>
 	<imageBack>species/iconsBack/66.png</imageBack>
@@ -20513,7 +20522,7 @@
 	<number>65</number>
 	<generation>1</generation>
 	<name>ALAKAZAM</name>
-	<image32>species/icons32/65.gif</image32>
+	<image32>species/icons32/65.png</image32>
 	<image80>species/icons80/alakazam.png</image80>
 	<imageFront>species/iconsFront/65.png</imageFront>
 	<imageBack>species/iconsBack/65.png</imageBack>
@@ -20558,7 +20567,7 @@
 	<number>64</number>
 	<generation>1</generation>
 	<name>KADABRA</name>
-	<image32>species/icons32/64.gif</image32>
+	<image32>species/icons32/64.png</image32>
 	<image80>species/icons80/kadabra.png</image80>
 	<imageFront>species/iconsFront/64.png</imageFront>
 	<imageBack>species/iconsBack/64.png</imageBack>
@@ -20603,7 +20612,7 @@
 	<number>63</number>
 	<generation>1</generation>
 	<name>ABRA</name>
-	<image32>species/icons32/63.gif</image32>
+	<image32>species/icons32/63.png</image32>
 	<image80>species/icons80/abra.png</image80>
 	<imageFront>species/iconsFront/63.png</imageFront>
 	<imageBack>species/iconsBack/63.png</imageBack>
@@ -20643,7 +20652,7 @@
 	<number>62</number>
 	<generation>1</generation>
 	<name>POLIWRATH</name>
-	<image32>species/icons32/62.gif</image32>
+	<image32>species/icons32/62.png</image32>
 	<image80>species/icons80/poliwrath.png</image80>
 	<imageFront>species/iconsFront/62.png</imageFront>
 	<imageBack>species/iconsBack/62.png</imageBack>
@@ -20680,7 +20689,7 @@
 	<number>61</number>
 	<generation>1</generation>
 	<name>POLIWHIRL</name>
-	<image32>species/icons32/61.gif</image32>
+	<image32>species/icons32/61.png</image32>
 	<image80>species/icons80/poliwhirl.png</image80>
 	<imageFront>species/iconsFront/61.png</imageFront>
 	<imageBack>species/iconsBack/61.png</imageBack>
@@ -20726,7 +20735,7 @@
 	<number>60</number>
 	<generation>1</generation>
 	<name>POLIWAG</name>
-	<image32>species/icons32/60.gif</image32>
+	<image32>species/icons32/60.png</image32>
 	<image80>species/icons80/poliwag.png</image80>
 	<imageFront>species/iconsFront/60.png</imageFront>
 	<imageBack>species/iconsBack/60.png</imageBack>
@@ -20780,7 +20789,7 @@
 	<number>59</number>
 	<generation>1</generation>
 	<name>ARCANINE</name>
-	<image32>species/icons32/59.gif</image32>
+	<image32>species/icons32/59.png</image32>
 	<image80>species/icons80/arcanine.png</image80>
 	<imageFront>species/iconsFront/59.png</imageFront>
 	<imageBack>species/iconsBack/59.png</imageBack>
@@ -20817,7 +20826,7 @@
 	<number>58</number>
 	<generation>1</generation>
 	<name>GROWLITHE</name>
-	<image32>species/icons32/58.gif</image32>
+	<image32>species/icons32/58.png</image32>
 	<image80>species/icons80/growlithe.png</image80>
 	<imageFront>species/iconsFront/58.png</imageFront>
 	<imageBack>species/iconsBack/58.png</imageBack>
@@ -20872,7 +20881,7 @@
 	<number>57</number>
 	<generation>1</generation>
 	<name>PRIMEAPE</name>
-	<image32>species/icons32/57.gif</image32>
+	<image32>species/icons32/57.png</image32>
 	<image80>species/icons80/primeape.png</image80>
 	<imageFront>species/iconsFront/57.png</imageFront>
 	<imageBack>species/iconsBack/57.png</imageBack>
@@ -20919,7 +20928,7 @@
 	<number>56</number>
 	<generation>1</generation>
 	<name>MANKEY</name>
-	<image32>species/icons32/56.gif</image32>
+	<image32>species/icons32/56.png</image32>
 	<image80>species/icons80/mankey.png</image80>
 	<imageFront>species/iconsFront/56.png</imageFront>
 	<imageBack>species/iconsBack/56.png</imageBack>
@@ -20974,7 +20983,7 @@
 	<number>55</number>
 	<generation>1</generation>
 	<name>GOLDUCK</name>
-	<image32>species/icons32/55.gif</image32>
+	<image32>species/icons32/55.png</image32>
 	<image80>species/icons80/golduck.png</image80>
 	<imageFront>species/iconsFront/55.png</imageFront>
 	<imageBack>species/iconsBack/55.png</imageBack>
@@ -21020,7 +21029,7 @@
 	<number>54</number>
 	<generation>1</generation>
 	<name>PSYDUCK</name>
-	<image32>species/icons32/54.gif</image32>
+	<image32>species/icons32/54.png</image32>
 	<image80>species/icons80/psyduck.png</image80>
 	<imageFront>species/iconsFront/54.png</imageFront>
 	<imageBack>species/iconsBack/54.png</imageBack>
@@ -21075,7 +21084,7 @@
 	<number>53</number>
 	<generation>1</generation>
 	<name>PERSIAN</name>
-	<image32>species/icons32/53.gif</image32>
+	<image32>species/icons32/53.png</image32>
 	<image80>species/icons80/persian.png</image80>
 	<imageFront>species/iconsFront/53.png</imageFront>
 	<imageBack>species/iconsBack/53.png</imageBack>
@@ -21123,7 +21132,7 @@
 	<number>52</number>
 	<generation>1</generation>
 	<name>MEOWTH</name>
-	<image32>species/icons32/52.gif</image32>
+	<image32>species/icons32/52.png</image32>
 	<image80>species/icons80/meowth.png</image80>
 	<imageFront>species/iconsFront/52.png</imageFront>
 	<imageBack>species/iconsBack/52.png</imageBack>
@@ -21178,7 +21187,7 @@
 	<number>51</number>
 	<generation>1</generation>
 	<name>DUGTRIO</name>
-	<image32>species/icons32/51.gif</image32>
+	<image32>species/icons32/51.png</image32>
 	<image80>species/icons80/dugtrio.png</image80>
 	<imageFront>species/iconsFront/51.png</imageFront>
 	<imageBack>species/iconsBack/51.png</imageBack>
@@ -21226,7 +21235,7 @@
 	<number>50</number>
 	<generation>1</generation>
 	<name>DIGLETT</name>
-	<image32>species/icons32/50.gif</image32>
+	<image32>species/icons32/50.png</image32>
 	<image80>species/icons80/diglett.png</image80>
 	<imageFront>species/iconsFront/50.png</imageFront>
 	<imageBack>species/iconsBack/50.png</imageBack>
@@ -21279,7 +21288,7 @@
 	<number>49</number>
 	<generation>1</generation>
 	<name>VENOMOTH</name>
-	<image32>species/icons32/49.gif</image32>
+	<image32>species/icons32/49.png</image32>
 	<image80>species/icons80/venomoth.png</image80>
 	<imageFront>species/iconsFront/49.png</imageFront>
 	<imageBack>species/iconsBack/49.png</imageBack>
@@ -21328,7 +21337,7 @@
 	<number>48</number>
 	<generation>1</generation>
 	<name>VENONAT</name>
-	<image32>species/icons32/48.gif</image32>
+	<image32>species/icons32/48.png</image32>
 	<image80>species/icons80/venonat.png</image80>
 	<imageFront>species/iconsFront/48.png</imageFront>
 	<imageBack>species/iconsBack/48.png</imageBack>
@@ -21381,7 +21390,7 @@
 	<number>47</number>
 	<generation>1</generation>
 	<name>PARASECT</name>
-	<image32>species/icons32/47.gif</image32>
+	<image32>species/icons32/47.png</image32>
 	<image80>species/icons80/parasect.png</image80>
 	<imageFront>species/iconsFront/47.png</imageFront>
 	<imageBack>species/iconsBack/47.png</imageBack>
@@ -21426,7 +21435,7 @@
 	<number>46</number>
 	<generation>1</generation>
 	<name>PARAS</name>
-	<image32>species/icons32/46.gif</image32>
+	<image32>species/icons32/46.png</image32>
 	<image80>species/icons80/paras.png</image80>
 	<imageFront>species/iconsFront/46.png</imageFront>
 	<imageBack>species/iconsBack/46.png</imageBack>
@@ -21478,7 +21487,7 @@
 	<number>45</number>
 	<generation>1</generation>
 	<name>VILEPLUME</name>
-	<image32>species/icons32/45.gif</image32>
+	<image32>species/icons32/45.png</image32>
 	<image80>species/icons80/vileplume.png</image80>
 	<imageFront>species/iconsFront/45.png</imageFront>
 	<imageBack>species/iconsBack/45.png</imageBack>
@@ -21515,7 +21524,7 @@
 	<number>44</number>
 	<generation>1</generation>
 	<name>GLOOM</name>
-	<image32>species/icons32/44.gif</image32>
+	<image32>species/icons32/44.png</image32>
 	<image80>species/icons80/gloom.png</image80>
 	<imageFront>species/iconsFront/44.png</imageFront>
 	<imageBack>species/iconsBack/44.png</imageBack>
@@ -21560,7 +21569,7 @@
 	<number>43</number>
 	<generation>1</generation>
 	<name>ODDISH</name>
-	<image32>species/icons32/43.gif</image32>
+	<image32>species/icons32/43.png</image32>
 	<image80>species/icons80/oddish.png</image80>
 	<imageFront>species/iconsFront/43.png</imageFront>
 	<imageBack>species/iconsBack/43.png</imageBack>
@@ -21610,7 +21619,7 @@
 	<number>42</number>
 	<generation>1</generation>
 	<name>GOLBAT</name>
-	<image32>species/icons32/42.gif</image32>
+	<image32>species/icons32/42.png</image32>
 	<image80>species/icons80/golbat.png</image80>
 	<imageFront>species/iconsFront/42.png</imageFront>
 	<imageBack>species/iconsBack/42.png</imageBack>
@@ -21655,7 +21664,7 @@
 	<number>41</number>
 	<generation>1</generation>
 	<name>ZUBAT</name>
-	<image32>species/icons32/41.gif</image32>
+	<image32>species/icons32/41.png</image32>
 	<image80>species/icons80/zubat.png</image80>
 	<imageFront>species/iconsFront/41.png</imageFront>
 	<imageBack>species/iconsBack/41.png</imageBack>
@@ -21707,7 +21716,7 @@
 	<number>40</number>
 	<generation>1</generation>
 	<name>WIGGLYTUFF</name>
-	<image32>species/icons32/40.gif</image32>
+	<image32>species/icons32/40.png</image32>
 	<image80>species/icons80/wigglytuff.png</image80>
 	<imageFront>species/iconsFront/40.png</imageFront>
 	<imageBack>species/iconsBack/40.png</imageBack>
@@ -21742,7 +21751,7 @@
 	<number>39</number>
 	<generation>1</generation>
 	<name>JIGGLYPUFF</name>
-	<image32>species/icons32/39.gif</image32>
+	<image32>species/icons32/39.png</image32>
 	<image80>species/icons80/jigglypuff.png</image80>
 	<imageFront>species/iconsFront/39.png</imageFront>
 	<imageBack>species/iconsBack/39.png</imageBack>
@@ -21786,7 +21795,7 @@
 	<number>38</number>
 	<generation>1</generation>
 	<name>NINETALES</name>
-	<image32>species/icons32/38.gif</image32>
+	<image32>species/icons32/38.png</image32>
 	<image80>species/icons80/ninetales.png</image80>
 	<imageFront>species/iconsFront/38.png</imageFront>
 	<imageBack>species/iconsBack/38.png</imageBack>
@@ -21822,7 +21831,7 @@
 	<number>37</number>
 	<generation>1</generation>
 	<name>VULPIX</name>
-	<image32>species/icons32/37.gif</image32>
+	<image32>species/icons32/37.png</image32>
 	<image80>species/icons80/vulpix.png</image80>
 	<imageFront>species/iconsFront/37.png</imageFront>
 	<imageBack>species/iconsBack/37.png</imageBack>
@@ -21879,7 +21888,7 @@
 	<number>36</number>
 	<generation>1</generation>
 	<name>CLEFABLE</name>
-	<image32>species/icons32/36.gif</image32>
+	<image32>species/icons32/36.png</image32>
 	<image80>species/icons80/clefable.png</image80>
 	<imageFront>species/iconsFront/36.png</imageFront>
 	<imageBack>species/iconsBack/36.png</imageBack>
@@ -21914,7 +21923,7 @@
 	<number>35</number>
 	<generation>1</generation>
 	<name>CLEFAIRY</name>
-	<image32>species/icons32/35.gif</image32>
+	<image32>species/icons32/35.png</image32>
 	<image80>species/icons80/clefairy.png</image80>
 	<imageFront>species/iconsFront/35.png</imageFront>
 	<imageBack>species/iconsBack/35.png</imageBack>
@@ -21962,7 +21971,7 @@
 	<number>34</number>
 	<generation>1</generation>
 	<name>NIDOKING</name>
-	<image32>species/icons32/34.gif</image32>
+	<image32>species/icons32/34.png</image32>
 	<image80>species/icons80/nidoking.png</image80>
 	<imageFront>species/iconsFront/34.png</imageFront>
 	<imageBack>species/iconsBack/34.png</imageBack>
@@ -22000,7 +22009,7 @@
 	<number>33</number>
 	<generation>1</generation>
 	<name>NIDORINO</name>
-	<image32>species/icons32/33.gif</image32>
+	<image32>species/icons32/33.png</image32>
 	<image80>species/icons80/nidorino.png</image80>
 	<imageFront>species/iconsFront/33.png</imageFront>
 	<imageBack>species/iconsBack/33.png</imageBack>
@@ -22044,7 +22053,7 @@
 	<number>32</number>
 	<generation>1</generation>
 	<name>NIDORANmA</name>
-	<image32>species/icons32/32.gif</image32>
+	<image32>species/icons32/32.png</image32>
 	<image80>species/icons80/nidoranma.png</image80>
 	<imageFront>species/iconsFront/32.png</imageFront>
 	<imageBack>species/iconsBack/32.png</imageBack>
@@ -22096,7 +22105,7 @@
 	<number>31</number>
 	<generation>1</generation>
 	<name>NIDOQUEEN</name>
-	<image32>species/icons32/31.gif</image32>
+	<image32>species/icons32/31.png</image32>
 	<image80>species/icons80/nidoqueen.png</image80>
 	<imageFront>species/iconsFront/31.png</imageFront>
 	<imageBack>species/iconsBack/31.png</imageBack>
@@ -22134,7 +22143,7 @@
 	<number>30</number>
 	<generation>1</generation>
 	<name>NIDORINA</name>
-	<image32>species/icons32/30.gif</image32>
+	<image32>species/icons32/30.png</image32>
 	<image80>species/icons80/nidorina.png</image80>
 	<imageFront>species/iconsFront/30.png</imageFront>
 	<imageBack>species/iconsBack/30.png</imageBack>
@@ -22178,7 +22187,7 @@
 	<number>29</number>
 	<generation>1</generation>
 	<name>NIDORANfE</name>
-	<image32>species/icons32/29.gif</image32>
+	<image32>species/icons32/29.png</image32>
 	<image80>species/icons80/nidoranfe.png</image80>
 	<imageFront>species/iconsFront/29.png</imageFront>
 	<imageBack>species/iconsBack/29.png</imageBack>
@@ -22230,7 +22239,7 @@
 	<number>28</number>
 	<generation>1</generation>
 	<name>SANDSLASH</name>
-	<image32>species/icons32/28.gif</image32>
+	<image32>species/icons32/28.png</image32>
 	<image80>species/icons80/sandslash.png</image80>
 	<imageFront>species/iconsFront/28.png</imageFront>
 	<imageBack>species/iconsBack/28.png</imageBack>
@@ -22277,7 +22286,7 @@
 	<number>27</number>
 	<generation>1</generation>
 	<name>SANDSHREW</name>
-	<image32>species/icons32/27.gif</image32>
+	<image32>species/icons32/27.png</image32>
 	<image80>species/icons80/sandshrew.png</image80>
 	<imageFront>species/iconsFront/27.png</imageFront>
 	<imageBack>species/iconsBack/27.png</imageBack>
@@ -22330,7 +22339,7 @@
 	<number>26</number>
 	<generation>1</generation>
 	<name>RAICHU</name>
-	<image32>species/icons32/26.gif</image32>
+	<image32>species/icons32/26.png</image32>
 	<image80>species/icons80/raichu.png</image80>
 	<imageFront>species/iconsFront/26.png</imageFront>
 	<imageBack>species/iconsBack/26.png</imageBack>
@@ -22365,7 +22374,7 @@
 	<number>25</number>
 	<generation>1</generation>
 	<name>PIKACHU</name>
-	<image32>species/icons32/25.gif</image32>
+	<image32>species/icons32/25.png</image32>
 	<image80>species/icons80/pikachu.png</image80>
 	<imageFront>species/iconsFront/25.png</imageFront>
 	<imageBack>species/iconsBack/25.png</imageBack>
@@ -22409,7 +22418,7 @@
 	<number>24</number>
 	<generation>1</generation>
 	<name>ARBOK</name>
-	<image32>species/icons32/24.gif</image32>
+	<image32>species/icons32/24.png</image32>
 	<image80>species/icons80/arbok.png</image80>
 	<imageFront>species/iconsFront/24.png</imageFront>
 	<imageBack>species/iconsBack/24.png</imageBack>
@@ -22460,7 +22469,7 @@
 	<number>23</number>
 	<generation>1</generation>
 	<name>EKANS</name>
-	<image32>species/icons32/23.gif</image32>
+	<image32>species/icons32/23.png</image32>
 	<image80>species/icons80/ekans.png</image80>
 	<imageFront>species/iconsFront/23.png</imageFront>
 	<imageBack>species/iconsBack/23.png</imageBack>
@@ -22513,7 +22522,7 @@
 	<number>22</number>
 	<generation>1</generation>
 	<name>FEAROW</name>
-	<image32>species/icons32/22.gif</image32>
+	<image32>species/icons32/22.png</image32>
 	<image80>species/icons80/fearow.png</image80>
 	<imageFront>species/iconsFront/22.png</imageFront>
 	<imageBack>species/iconsBack/22.png</imageBack>
@@ -22558,7 +22567,7 @@
 	<number>21</number>
 	<generation>1</generation>
 	<name>SPEAROW</name>
-	<image32>species/icons32/21.gif</image32>
+	<image32>species/icons32/21.png</image32>
 	<image80>species/icons80/spearow.png</image80>
 	<imageFront>species/iconsFront/21.png</imageFront>
 	<imageBack>species/iconsBack/21.png</imageBack>
@@ -22609,7 +22618,7 @@
 	<number>20</number>
 	<generation>1</generation>
 	<name>RATICATE</name>
-	<image32>species/icons32/20.gif</image32>
+	<image32>species/icons32/20.png</image32>
 	<image80>species/icons80/raticate.png</image80>
 	<imageFront>species/iconsFront/20.png</imageFront>
 	<imageBack>species/iconsBack/20.png</imageBack>
@@ -22657,7 +22666,7 @@
 	<number>19</number>
 	<generation>1</generation>
 	<name>RATTATA</name>
-	<image32>species/icons32/19.gif</image32>
+	<image32>species/icons32/19.png</image32>
 	<image80>species/icons80/rattata.png</image80>
 	<imageFront>species/iconsFront/19.png</imageFront>
 	<imageBack>species/iconsBack/19.png</imageBack>
@@ -22711,7 +22720,7 @@
 	<number>18</number>
 	<generation>1</generation>
 	<name>PIDGEOT</name>
-	<image32>species/icons32/18.gif</image32>
+	<image32>species/icons32/18.png</image32>
 	<image80>species/icons80/pidgeot.png</image80>
 	<imageFront>species/iconsFront/18.png</imageFront>
 	<imageBack>species/iconsBack/18.png</imageBack>
@@ -22758,7 +22767,7 @@
 	<number>17</number>
 	<generation>1</generation>
 	<name>PIDGEOTTO</name>
-	<image32>species/icons32/17.gif</image32>
+	<image32>species/icons32/17.png</image32>
 	<image80>species/icons80/pidgeotto.png</image80>
 	<imageFront>species/iconsFront/17.png</imageFront>
 	<imageBack>species/iconsBack/17.png</imageBack>
@@ -22804,7 +22813,7 @@
 	<number>16</number>
 	<generation>1</generation>
 	<name>PIDGEY</name>
-	<image32>species/icons32/16.gif</image32>
+	<image32>species/icons32/16.png</image32>
 	<image80>species/icons80/pidgey.png</image80>
 	<imageFront>species/iconsFront/16.png</imageFront>
 	<imageBack>species/iconsBack/16.png</imageBack>
@@ -22856,7 +22865,7 @@
 	<number>15</number>
 	<generation>1</generation>
 	<name>BEEDRILL</name>
-	<image32>species/icons32/15.gif</image32>
+	<image32>species/icons32/15.png</image32>
 	<image80>species/icons80/beedrill.png</image80>
 	<imageFront>species/iconsFront/15.png</imageFront>
 	<imageBack>species/iconsBack/15.png</imageBack>
@@ -22899,7 +22908,7 @@
 	<number>14</number>
 	<generation>1</generation>
 	<name>KAKUNA</name>
-	<image32>species/icons32/14.gif</image32>
+	<image32>species/icons32/14.png</image32>
 	<image80>species/icons80/kakuna.png</image80>
 	<imageFront>species/iconsFront/14.png</imageFront>
 	<imageBack>species/iconsBack/14.png</imageBack>
@@ -22932,7 +22941,7 @@
 	<number>13</number>
 	<generation>1</generation>
 	<name>WEEDLE</name>
-	<image32>species/icons32/13.gif</image32>
+	<image32>species/icons32/13.png</image32>
 	<image80>species/icons80/weedle.png</image80>
 	<imageFront>species/iconsFront/13.png</imageFront>
 	<imageBack>species/iconsBack/13.png</imageBack>
@@ -22965,7 +22974,7 @@
 	<number>12</number>
 	<generation>1</generation>
 	<name>BUTTERFREE</name>
-	<image32>species/icons32/12.gif</image32>
+	<image32>species/icons32/12.png</image32>
 	<image80>species/icons80/butterfree.png</image80>
 	<imageFront>species/iconsFront/12.png</imageFront>
 	<imageBack>species/iconsBack/12.png</imageBack>
@@ -23010,7 +23019,7 @@
 	<number>11</number>
 	<generation>1</generation>
 	<name>METAPOD</name>
-	<image32>species/icons32/11.gif</image32>
+	<image32>species/icons32/11.png</image32>
 	<image80>species/icons80/metapod.png</image80>
 	<imageFront>species/iconsFront/11.png</imageFront>
 	<imageBack>species/iconsBack/11.png</imageBack>
@@ -23043,7 +23052,7 @@
 	<number>10</number>
 	<generation>1</generation>
 	<name>CATERPIE</name>
-	<image32>species/icons32/10.gif</image32>
+	<image32>species/icons32/10.png</image32>
 	<image80>species/icons80/caterpie.png</image80>
 	<imageFront>species/iconsFront/10.png</imageFront>
 	<imageBack>species/iconsBack/10.png</imageBack>
@@ -23076,7 +23085,7 @@
 	<number>9</number>
 	<generation>1</generation>
 	<name>BLASTOISE</name>
-	<image32>species/icons32/9.gif</image32>
+	<image32>species/icons32/9.png</image32>
 	<image80>species/icons80/blastoise.png</image80>
 	<imageFront>species/iconsFront/9.png</imageFront>
 	<imageBack>species/iconsBack/9.png</imageBack>
@@ -23124,7 +23133,7 @@
 	<number>8</number>
 	<generation>1</generation>
 	<name>WARTORTLE</name>
-	<image32>species/icons32/8.gif</image32>
+	<image32>species/icons32/8.png</image32>
 	<image80>species/icons80/wartortle.png</image80>
 	<imageFront>species/iconsFront/8.png</imageFront>
 	<imageBack>species/iconsBack/8.png</imageBack>
@@ -23170,7 +23179,7 @@
 	<number>7</number>
 	<generation>1</generation>
 	<name>SQUIRTLE</name>
-	<image32>species/icons32/7.gif</image32>
+	<image32>species/icons32/7.png</image32>
 	<image80>species/icons80/squirtle.png</image80>
 	<imageFront>species/iconsFront/7.png</imageFront>
 	<imageBack>species/iconsBack/7.png</imageBack>
@@ -23226,7 +23235,7 @@
 	<number>6</number>
 	<generation>1</generation>
 	<name>CHARIZARD</name>
-	<image32>species/icons32/6.gif</image32>
+	<image32>species/icons32/6.png</image32>
 	<image80>species/icons80/charizard.png</image80>
 	<imageFront>species/iconsFront/6.png</imageFront>
 	<imageBack>species/iconsBack/6.png</imageBack>
@@ -23275,7 +23284,7 @@
 	<number>5</number>
 	<generation>1</generation>
 	<name>CHARMELEON</name>
-	<image32>species/icons32/5.gif</image32>
+	<image32>species/icons32/5.png</image32>
 	<image80>species/icons80/charmeleon.png</image80>
 	<imageFront>species/iconsFront/5.png</imageFront>
 	<imageBack>species/iconsBack/5.png</imageBack>
@@ -23317,7 +23326,7 @@
 	<number>4</number>
 	<generation>1</generation>
 	<name>CHARMANDER</name>
-	<image32>species/icons32/4.gif</image32>
+	<image32>species/icons32/4.png</image32>
 	<image80>species/icons80/charmander.png</image80>
 	<imageFront>species/iconsFront/4.png</imageFront>
 	<imageBack>species/iconsBack/4.png</imageBack>
@@ -23370,7 +23379,7 @@
 	<number>3</number>
 	<generation>1</generation>
 	<name>VENUSAUR</name>
-	<image32>species/icons32/3.gif</image32>
+	<image32>species/icons32/3.png</image32>
 	<image80>species/icons80/venusaur.png</image80>
 	<imageFront>species/iconsFront/3.png</imageFront>
 	<imageBack>species/iconsBack/3.png</imageBack>
@@ -23419,7 +23428,7 @@
 	<number>2</number>
 	<generation>1</generation>
 	<name>IVYSAUR</name>
-	<image32>species/icons32/2.gif</image32>
+	<image32>species/icons32/2.png</image32>
 	<image80>species/icons80/ivysaur.png</image80>
 	<imageFront>species/iconsFront/2.png</imageFront>
 	<imageBack>species/iconsBack/2.png</imageBack>
@@ -23466,7 +23475,7 @@
 	<number>1</number>
 	<generation>1</generation>
 	<name>BULBASAUR</name>
-	<image32>species/icons32/1.gif</image32>
+	<image32>species/icons32/1.png</image32>
 	<image80>species/icons80/bulbasaur.png</image80>
 	<imageFront>species/iconsFront/1.png</imageFront>
 	<imageBack>species/iconsBack/1.png</imageBack>
