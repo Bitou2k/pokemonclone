@@ -97,6 +97,56 @@ public class Pokemon
 		if (currentHp < 0)
 			currentHp = 0;
 	}
+
+	void checkLevelUp()
+	{
+		double levelXp = 0;
+		double tlevel = level + 1;
+		if (species.GrowthRate().equals("Slow"))
+		{
+			levelXp = (5 * tlevel * tlevel * tlevel / 4);
+		}
+		else if (species.GrowthRate().equals("Medium"))
+		{
+			levelXp = tlevel * tlevel * tlevel;
+		}
+		else if (species.GrowthRate().equals("Fast"))
+		{
+			levelXp = 4 * tlevel * tlevel * tlevel / 5;
+		}
+		else if (species.GrowthRate().equals("Parabolic"))
+		{
+			levelXp = 6 * tlevel * tlevel * tlevel / 5 - 15 * tlevel * tlevel + 100 * tlevel - 140;
+		}
+		else if (species.GrowthRate().equals("Erratic"))
+		{
+			if (tlevel <= 50)
+				levelXp = tlevel * tlevel * tlevel * ((100 - tlevel) / 50);
+			else if (tlevel <= 68)
+				levelXp = tlevel * tlevel * tlevel * ((150 - tlevel) / 50);
+			else if (tlevel <= 98)
+				levelXp = tlevel * tlevel * tlevel * (1.274 - (1 / 50) * (tlevel / 3));
+			else
+				levelXp = tlevel * tlevel * tlevel * ((160 - tlevel) / 50);
+		}
+		else if (species.GrowthRate().equals("Fluctuating"))
+		{
+			if (tlevel <= 15)
+				levelXp = tlevel * tlevel * tlevel * ((24 + ((tlevel + 1) / 3)) / 50);
+			else if (tlevel <= 35)
+				levelXp = tlevel * tlevel * tlevel * ((14 + tlevel) / 50);
+			else
+				levelXp = tlevel * tlevel * tlevel * ((32 + (tlevel / 2)) / 50);
+		}
+		if (xp >= levelXp)
+		{
+			// level up
+			level += 1;
+			//leveluppresenter
+		}
+	}
+
+
 }
 
 
