@@ -78,7 +78,14 @@ public class Species {
 	public boolean canLearnTM(TM t){return tms.contains(t);}
 	public boolean canLearnHM(HM h){return hms.contains(h);}
 	
-	//public Species firstForm(){return null;}
+	/**
+	*Not yet implemented.
+	*/
+	public Species firstForm(){return null;}
+	/**
+	*Not yet implemented.
+	*/
+	public Species finalForm(){return null;}
 	
 	/**
 	*MOVELEARNED==>LEVELLEARNED.
@@ -132,11 +139,9 @@ public class Species {
 		
 		
 		for(XmlElement mn: e.children("move"))
-		{
 			moves.put(
-				Move.named(mn.contentOf("name")) , mn.icontentOf("level")
-			);
-		}
+				Move.named(mn.contentOf("name")),
+				mn.icontentOf("level"));
 		
 		String[] tmsStr = e.contentOf("TMs").trim().split(",");
 		for(String tmStr: tmsStr)

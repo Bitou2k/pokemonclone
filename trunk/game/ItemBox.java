@@ -6,8 +6,9 @@ import java.awt.Image;
 import java.awt.Color;
 import java.awt.event.*;
 import javax.swing.*;
-
 import java.util.*;
+
+import static game.Button.*;
 
 /**
  * displays the players's collection of items (the up to six items with him
@@ -15,19 +16,20 @@ import java.util.*;
  * @author kinis
  *
  */
-public class ItemBox extends Presenter {
+public class ItemBox extends Presenter
+ {
 	/**
 	 * the computer presenter to go back to
 	 */
-	Presenter oldPresenter;
+	private Presenter oldPresenter;
 	/*
 	 * cursor index next to item
 	 */
-	int itemCursorIndex;
+	private int itemCursorIndex;
 	/**
 	 * cursor index next to item to switch
 	 */
-	int switchCursorIndex;
+	private int switchCursorIndex;
 	/**
 	 * flag for switch item
 	 */
@@ -79,19 +81,24 @@ public class ItemBox extends Presenter {
 
 	public void buttonPressed(Button b)
 	{
-		if (b == Button.START) { enterPresenter(oldPresenter); }
-		if (b == Button.A)
+		if(b==START)
+		{ 
+			enterPresenter(oldPresenter);
+		}
+		if(b==A)
 		{
 			if (itemCursorIndex == player().pack().getAllItems().size()) { enterPresenter(oldPresenter); }
 			if (switchCursorIndex == player().pack().getAllItems().size()) { enterPresenter(oldPresenter); }
 		}
-
-		
-		if (b == Button.DOWN)
+		if(b==DOWN)
+		{
 			if (itemCursorIndex < player().pack().getAllItems().size()) { itemCursorIndex++; }
-		if (b == Button.UP)
+		}
+		if(b==UP)
+		{
 			if (itemCursorIndex > 0) { itemCursorIndex--; }
-		if (b == Button.A)
+		}
+		if(b==A)
 		{
 			if (itemCursorIndex == player().pack().getAllItems().size()) { enterPresenter(oldPresenter); }
 			else
@@ -103,6 +110,5 @@ public class ItemBox extends Presenter {
 				if ("Cancel".equals(choice)) { enterPresenter(oldPresenter); }
 			}
 		}
-		
 	}
 }
