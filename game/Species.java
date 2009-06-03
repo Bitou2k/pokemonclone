@@ -21,6 +21,8 @@ public class Species {
 	private Map<String,Species> evolutions = new HashMap<String,Species>();
 	private List<TM> tms = new LinkedList<TM>();
 	private List<HM> hms = new LinkedList<HM>();
+	private String GrowthRate;
+	private int BaseExp;
 	
 	public String name(){return name;}
 	public int generation(){return generation;}
@@ -30,6 +32,8 @@ public class Species {
 	public Image imageFront(){return imageFront;}
 	public Image imageBack(){return imageBack;}
 	public int number(){return number;}
+	public int BaseExp(){return BaseExp;};
+	public String GrowthRate(){return GrowthRate;}
 	
 	/**
 	*E.g., 004
@@ -109,6 +113,8 @@ public class Species {
 		description = e.contentOf("description");
 		type1 = Type.named(e.contentOf("type"));
 		type2 = Type.named(e.contentOf("type2"));
+		GrowthRate = e.contentOf("growthRate");
+		BaseExp = e.icontentOf("baseExperience");
 		
 		hp = e.icontentOf("baseHp");
 		attack = e.icontentOf("baseAttack");
