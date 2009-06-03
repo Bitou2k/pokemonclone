@@ -9,7 +9,8 @@
           Fuchsia city (fuchsia.nml)
           Holding off on Lavender Town
           Pewter City (pewter.nml)
-          Routes 1-18 (not 12 or 14)
+          Routes 1-18 (not 12 or 14 or 21)
+          ****Route 20 needs to be redone*****
 
   * connecting pokegrass to the wild generators (Dana)
 
