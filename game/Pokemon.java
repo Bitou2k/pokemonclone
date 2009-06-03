@@ -85,7 +85,11 @@ public class Pokemon
 	public int level(){return level;}
 	public int xp(){return xp;}
 	public void xp(int i) { xp = i; }
-	public void gainXp(double i) { xp += (int)i; }
+	public void gainXp(double i) 
+	{ 
+		xp += (int)i;
+		checkLevelUp();
+	}
 	
 	public List<Move> moves(){return moves;}
 	
