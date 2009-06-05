@@ -210,7 +210,8 @@ class Battle extends Presenter {
 			g.fillRect(203,146,(int)(FULLHEALTH * ashsPokemon.percentHp()),7);
 			//XP
 			g.setColor(Color.BLUE);
-			g.fillRect(203,153,(int)(FULLHEALTH * ashsPokemon.xp() / ashsPokemon.nextLevelXp()),7);
+			g.fillRect(203, 153, (int)(FULLHEALTH * (ashsPokemon.xp() - ashsPokemon.species().xpForLevel(ashsPokemon.level())) / (ashsPokemon.nextLevelXp() - ashsPokemon.species().xpForLevel(ashsPokemon.level()))), 7);
+			
 			//health numbers
 			g.setColor(Color.BLACK);
 			g.drawString(ashsPokemon.currentHp() + "   "  + ashsPokemon.baseHp(),200,180);
