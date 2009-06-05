@@ -89,9 +89,9 @@ public class Species {
 	{
 		try
 		{
-			java.io.File f = new java.io.File("./species/cries/"+paddedNumber()+"Cry.mp3");
+			String x = "species/cries/"+paddedNumber()+"Cry.mp3";
 		
-			javazoom.jl.player.advanced.AdvancedPlayer p = new javazoom.jl.player.advanced.AdvancedPlayer( new java.io.FileInputStream(f) );
+			javazoom.jl.player.advanced.AdvancedPlayer p = new javazoom.jl.player.advanced.AdvancedPlayer( Game.jarStream(x) );
 			p.play();
 		}
 		catch(Exception ex)

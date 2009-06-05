@@ -70,7 +70,7 @@ public class StartPresenter extends Presenter
 	{
 		p.start();
 		
-		if(first&& !new File("D:/Ryan").exists())backgroundMusic("./music/PALLET.mid");
+		if(first&& !new File("D:/Ryan").exists())backgroundMusic("music/PALLET.mid");
 		first=false;
 	}
 	public void lostFocus()
