@@ -204,9 +204,9 @@ class Area extends Presenter
 		}.start();
 	}
 	
-	private Area(File f) throws Exception
+	private Area(String x) throws Exception
 	{
-		XmlElement mapE = XmlElement.parseFrom(new FileInputStream(f));
+		XmlElement mapE = XmlElement.parseFrom(Game.jarStream(x));
 		name = mapE.contentOf("name");
 		
 		for(XmlElement tileE: mapE.children("tile"))
@@ -227,12 +227,12 @@ class Area extends Presenter
 				return a;
 				
 		try{
-			Area a = new Area(new File("./areas/"+name+".xml"));
+			Area a = new Area("areas/"+name+".xml");
 			areas.add(a);
 			return a;
 		}catch(Exception exx){}
 		try{
-			Area a = new Area(new File("./areas/"+name+".nml"));
+			Area a = new Area("areas/"+name+".nml");
 			areas.add(a);
 			return a;
 		}catch(Exception exx){}

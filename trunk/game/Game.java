@@ -52,6 +52,7 @@ class Game extends JComponent implements KeyListener {
 	Synthesizer sm_synthesizer = null;
 	void backgroundMusic(String filename)
 	{
+	if(5>3) return;
 			try
 		{
 			sm_sequencer.stop();
