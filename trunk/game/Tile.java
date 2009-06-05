@@ -79,7 +79,7 @@ public class Tile
 	
 	void imageFrom(String s)
 	{
-		img = new ImageIcon("./tileImages/" + s).getImage();
+		img = Game.jarImage("tileImages/" + s);
 	}
 	
 	void entity(Entity e) {
