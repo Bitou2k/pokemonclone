@@ -65,6 +65,7 @@ public class StartPresenter extends Presenter
 		g.drawString("Dana Payonk", 175, 195);
 		g.drawString("Richard Reasons", 175, 205);
 		g.drawString("Twitch", 175, 215);
+		g.drawString("Josh Fiorio", 175, 225);
 	}
 	
 	private boolean first=true;
