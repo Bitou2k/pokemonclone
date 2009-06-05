@@ -1,0 +1,419 @@
+<note>SPECIAL: B = battle, O = out, P = permanent, F=fainted</note>
+
+<note>random conflictions:
+	
+	crit = critical hit
+	stat = stat reduction (guard spec)
+	PPA = PP All
+	maxHP = fills HP
+	maxPP = fills PP
+	max+ail = fills HP and takes care of all ailments
+</note>
+
+<note>
+	battle = items used in battle
+	stats = items that permanently boost stats
+	ball = pokeballs
+	misc = escape rope, nugget, stone, etc.
+	resto = restorative
+</note>
+
+<note>
+<item>
+	<name></name>
+	<type></type>
+	<desc></desc>
+	<price></price>
+	<stat></stat>
+	<effect></effect>
+</item>
+</note>
+
+
+<item>
+	<name>Antidote</name>
+	<type>resto</type>
+	<desc>Cures Poison</desc>
+	<price>100</price>
+	<stat>poison</stat>
+	<effect>cure</effect>
+</item>
+<item>
+	<name>Awakening</name>
+	<type>resto</type>
+	<desc>Cures Sleep</desc>
+	<price>250</price>
+	<stat>Sleep</stat>
+	<effect>cure</effect>
+</item>
+<item>
+	<name>Burn Heal</name>
+	<type>resto</type>
+	<desc>Cures Burn</desc>
+	<price>250</price>
+	<stat>burn</stat>
+	<effect>cure</effect>
+</item>
+<item>
+	<name>Calcium</name>
+	<type>stats</type>
+	<desc>Raises Special Attack</desc>
+	<price>9800</price>
+	<stat>sp atk</stat>
+	<effect></effect>
+</item>
+<item>
+	<name>Carbos</name>
+	<type>stats</type>
+	<desc>Raises Speed</desc>
+	<price>9800</price>
+	<stat>speed</stat>
+	<effect></effect>
+</item>
+<item>
+	<name>Dire Hit</name>
+	<type>battle</type>
+	<desc>Raises chances of a Critical Hit in battle</desc>
+	<price>650</price>
+	<stat>crit</stat>
+	<effect></effect>
+</item>
+<item>
+	<name>Elixir</name>
+	<type>resto</type>
+	<desc>Restores 10PP to each move</desc>
+	<price>1</price>
+	<stat>PP</stat>
+	<effect>10all</effect>
+</item>
+<item>
+	<name>Escape Rope</name>
+	<type>misc</type>
+	<desc>Escape from the current cave</desc>
+	<price>550</price>
+	<stat></stat>
+	<effect>exit</effect>
+</item>
+<item>
+	<name>Ether</name>
+	<type>resto</type>
+	<desc>Restores 10PP of one move</desc>
+	<price>1</price>
+	<stat>PP</stat>
+	<effect>10</effect>
+</item>
+<item>
+	<name>Fire Stone</name>
+	<type>misc</type>
+	<desc>Causes certain POKEMON to evolve.</desc>
+	<price>2100</price>
+	<stat></stat>
+	<effect>Eevee, Growlithe, Vulpix</effect>
+</item>
+<item>
+	<name>Fresh Water</name>
+	<type>resto</type>
+	<desc>Recovers 50 HP</desc>
+	<price>200</price>
+	<stat>HP</stat>
+	<effect>50</effect>
+</item>
+<item>
+	<name>Full Heal</name>
+	<type>resto</type>
+	<desc>Cures all status ailments</desc>
+	<price><600/price>
+	<stat>Ail</stat>
+	<effect>cure</effect>
+</item>
+<item>
+	<name>Full Restore</name>
+	<type>resto</type>
+	<desc>Restores all HP and cures all status ailments</desc>
+	<price>3000</price>
+	<stat>HP+Ail</stat>
+	<effect>max</effect>
+</item>
+<item>
+	<name>Guard Spec</name>
+	<type>battle</type>
+	<desc>Prevents stat reduction in a battle</desc>
+	<price>700</price>
+	<stat>All</stat>
+	<effect></effect>
+</item>
+<item>
+	<name>HP Up</name>
+	<type>stats</type>
+	<desc>Raises max HP</desc>
+	<price>9800</price>
+	<stat>HP</stat>
+	<effect></effect>
+</item>
+<item>
+	<name>Hyper Potion</name>
+	<type>resto</type>
+	<desc>Restores 200HP</desc>
+	<price>1200</price>
+	<stat>HP</stat>
+	<effect>200</effect>
+</item>
+<item>
+	<name>Ice Heal</name>
+	<type>resto</type>
+	<desc>Cures Freeze</desc>
+	<price>250</price>
+	<stat>freeze</stat>
+	<effect>cure</effect>
+</item>
+<item>
+	<name>Iron</name>
+	<type>stats</type>
+	<desc>Raises Defense</desc>
+	<price>9800</price>
+	<stat>def</stat>
+	<effect></effect>
+</item>
+<item>
+	<name>Leaf Stone</name>
+	<type>misc</type>
+	<desc>Causes certain pokemon to evolve</desc>
+	<price>2100</price>
+	<stat></stat>
+	<effect>Exeggcute, Gloom, Weepinbell</effect>
+</item>
+
+<item>
+	<name>Lemonade</name>
+	<type>resto</type>
+	<desc>Restores 80 HP</desc>
+	<price>350</price>
+	<stat>HP</stat>
+	<effect>80</effect>
+</item>
+<item>
+	<name>Max Elixer</name>
+	<type>resto</type>
+	<desc>Restores all PP to all moves</desc>
+	<price>1</price>
+	<stat>PP</stat>
+	<effect>MaxAll</effect>
+</item>
+
+<item>
+	<name>Max Ether</name>
+	<type>resto</type>
+	<desc>Restores all PP to one move</desc>
+	<price>1</price>
+	<stat>PP</stat>
+	<effect>Max</effect>
+</item>
+<item>
+	<name>Max Potion</name>
+	<type>resto</type>
+	<desc>Restores all HP</desc>
+	<price>2500</price>
+	<stat>HP</stat>
+	<effect>Max</effect>
+</item>
+
+<item>
+	<name>Max Repel</name>
+	<type>misc</type>
+	<desc>Repels weaker Pokemin for 250 steps</desc>
+	<price>700</price>
+	<stat>repel</stat>
+	<effect>250</effect>
+</item>
+<item>
+	<name>Max Revive</name>
+	<type>resto</type>
+	<desc>Revives a fainted </desc>
+	<price>1</price>
+	<stat>faint</stat>
+	<effect>max</effect>
+</item>
+
+<item>
+	<name>Moon Stone</name>
+	<type>misc</type>
+	<desc>Causes Certain pokemon to evlove</desc>
+	<price>1</price>
+	<stat></stat>
+	<effect>Clefairy,Jigglypuff,Nidorina,Nidorino</effect>
+</item>
+<item>
+	<name>Nugget</name>
+	<type>misc</type>
+	<desc>Sell for money</desc>
+	<price>10000</price>
+	<stat></stat>
+	<effect></effect>
+</item>
+
+<item>
+	<name>Paralyz Heal</name>
+	<type>resto</type>
+	<desc>Cures Paralysis</desc>
+	<price>200</price>
+	<stat>paralyz</stat>
+	<effect>cure</effect>
+</item>
+
+<item>
+	<name>Poke Doll</name>
+	<type>misc</type>
+	<desc>Trade for TM31 in Saffron, Allows escape from battle</desc>
+	<price>1000</price>
+	<stat></stat>
+	<effect>exit</effect>
+</item>
+
+
+<item>
+	<name>Potion</name>
+	<type>resto</type>
+	<desc>Restores 20HP</desc>
+	<price>300</price>
+	<stat>hp</stat>
+	<effect>20</effect>
+</item>
+
+
+<item>
+	<name>PP Up</name>
+	<type>stat</type>
+	<desc>Increases the max PP of a move</desc>
+	<price>1</price>
+	<stat>pp</stat>
+	<effect>1</effect>
+</item>
+
+<item>
+	<name>Protein</name>
+	<type>stat</type>
+	<desc>Raises Attack</desc>
+	<price>9800</price>
+	<stat>attack</stat>
+	<effect></effect>
+</item>
+
+<item>
+	<name>Rare Candy</name>
+	<type>misc</type>
+	<desc>Raises a Pokemon's level by one</desc>
+	<price>1</price>
+	<stat>level</stat>
+	<effect>1</effect>
+</item>
+
+
+<item>
+	<name>Repel</name>
+	<type>misc</type>
+	<desc>Repels weaker Pokemon for 100 steps</desc>
+	<price>350</price>
+	<stat></stat>
+	<effect>100</effect>
+</item>
+
+<item>
+	<name>Revive</name>
+	<type>resto</type>
+	<desc>Recovers a fainted Pokemon to half max HP</desc>
+	<price>1500</price>
+	<stat>hp</stat>
+	<effect>half max</effect>
+</item>
+
+
+<item>
+	<name>Soda Pop</name>
+	<type>resto</type>
+	<desc>Restores 80HP</desc>
+	<price>300</price>
+	<stat>hp</stat>
+	<effect>80</effect>
+</item>
+
+
+<item>
+	<name>Super Potion</name>
+	<type>resto</type>
+	<desc>Restores 50HP</desc>
+	<price>700</price>
+	<stat>hp</stat>
+	<effect>50</effect>
+</item>
+
+<item>
+	<name>Super Repel</name>
+	<type>misc</type>
+	<desc>Repels weaker Pokemon for 200 steps</desc>
+	<price>500</price>
+	<stat></stat>
+	<effect>200</effect>
+</item>
+
+<item>
+	<name>Thunder Stone</name>
+	<type>misc</type>
+	<desc>Causes certain polemon to evolve</desc>
+	<price>2100</price>
+	<stat></stat>
+	<effect>Eevee and Pikachu</effect>
+</item>
+
+<item>
+	<name>Water Stone</name>
+	<type>misc</type>
+	<desc>Causes certain polemon to evolve</desc>
+	<price>2100</price>
+	<stat></stat>
+	<effect>Eevee, Poliwag, Shellder, Staryu</effect>
+</item>
+
+<item>
+	<name>X Accuracy</name>
+	<type>battle</type>
+	<desc>Raises accuracy in a battle</desc>
+	<price>950</price>
+	<stat>accuracy</stat>
+	<effect></effect>
+</item>
+
+<item>
+	<name>X Attack</name>
+	<type>battle</type>
+	<desc>Raises attack in a battle</desc>
+	<price>500</price>
+	<stat>attack</stat>
+	<effect></effect>
+</item>
+
+<item>
+	<name>X Defend</name>
+	<type>battle</type>
+	<desc>Raises defense in a battle</desc>
+	<price>550</price>
+	<stat>defense</stat>
+	<effect></effect>
+</item>
+
+<item>
+	<name>X Special</name>
+	<type>battle</type>
+	<desc>Raises special attack in a battle</desc>
+	<price>350</price>
+	<stat>spec attack</stat>
+	<effect></effect>
+</item>
+
+<item>
+	<name>X Speed</name>
+	<type>battle</type>
+	<desc>Raises speed in a battle</desc>
+	<price>350</price>
+	<stat>speed</stat>
+	<effect></effect>
+</item>

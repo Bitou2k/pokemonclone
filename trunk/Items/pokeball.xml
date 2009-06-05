@@ -1,0 +1,25 @@
+<item>
+	<name>Pokeball</name>
+	<type>pokeball</type>
+	<strength>1<strength>
+</item>
+<item>
+	<name>Great Ball</name>
+	<type>pokeball</type>
+	<strength>2<strength>
+</item>
+<item>
+	<name>Ultra Ball</name>
+	<type>pokeball</type>
+	<strength>3<strength>
+</item>
+<item>
+	<name>Master Ball</name>
+	<type>pokeball</type>
+	<strength>4<strength>
+</item>
+<item>
+	<name>Safari Ball</name>
+	<type>pokeball</type>
+	<strength>S<strength>
+</item>
