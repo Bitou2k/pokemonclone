@@ -12,7 +12,7 @@ public class StartPresenter extends Presenter
 {
 
 	private List<Species> ss = Species.all();
-	private Species s = ss.get( (int)Math.floor(Math.random()*ss.size()) );
+	private Species s = ss.get( (int)Math.floor(ss.size()-1) );
 	private Pulser p;
 	
 	StartPresenter()
