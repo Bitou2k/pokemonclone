@@ -49,23 +49,23 @@ public class StartPresenter extends Presenter
 		if(s.type2()!=null)g.drawString(s.type2().toString(),38,150);
 		
 		g.drawString("Credits:",5,165);
-		g.drawString("(add yourself but no one else.)",5,175);
+		g.drawString("Lake Central AP Computer Science Class", 5, 175);	
 		g.drawString("Ryan Macnak",5,185);
 		g.drawString("Adam Hendrickson", 5, 195);
-		g.drawString("Michal Broniek",5,205);
-		g.drawString("Andrew Siegle",5,215);
-		g.drawString("Joe Maguire",5,225);
-		g.drawString("Colin Hoernig",5,235);
-		g.drawString("Brett Guiden",5,245);
+		g.drawString("Michal Broniek", 5, 205);
+		g.drawString("Andrew Siegle", 5, 215);
+		g.drawString("Joe Maguire", 5, 225);
+		g.drawString("Colin Hoernig", 5, 235);
+		g.drawString("Brett Guiden", 5, 245);
 		g.drawString("Nick West", 5, 255);
 		g.drawString("Jay Lannin", 5, 265);
 		g.drawString("Ryan Craine", 5, 275);
 		g.drawString("Shloka Kini", 5, 285);
-		g.drawString("Jon Borgetti", 175, 185);
-		g.drawString("Dana Payonk", 175, 195);
-		g.drawString("Richard Reasons", 175, 205);
-		g.drawString("Twitch", 175, 215);
-		g.drawString("Josh Fiorio", 175, 225);
+		g.drawString("Jon Borgetti", 165, 185);
+		g.drawString("Dana Payonk", 165, 195);
+		g.drawString("Richard Reasons", 165, 205);
+		g.drawString("Marc Brouillette", 165, 215);
+		g.drawString("Josh Fiorio", 165, 225);
 	}
 	
 	private boolean first=true;
