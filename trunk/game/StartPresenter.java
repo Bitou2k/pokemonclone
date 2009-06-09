@@ -61,18 +61,15 @@ public class StartPresenter extends Presenter
 		g.drawString("Jay Lannin", 5, 265);
 		g.drawString("Ryan Craine", 5, 275);
 		g.drawString("Shloka Kini", 5, 285);
-<<<<<<< .mine
 		g.drawString("Jon Borgetti", 175, 185);
 		g.drawString("Dana Payonk", 175, 195);
 		g.drawString("Richard Reasons", 175, 205);
 		g.drawString("Twitch Brouillette", 175, 215);
-=======
 		g.drawString("Jon Borgetti", 165, 185);
 		g.drawString("Dana Payonk", 165, 195);
 		g.drawString("Richard Reasons", 165, 205);
 		g.drawString("Marc Brouillette", 165, 215);
 		g.drawString("Josh Fiorio", 165, 225);
->>>>>>> .r858
 	}
 	
 	private boolean first=true;
