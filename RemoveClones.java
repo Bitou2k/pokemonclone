@@ -2,9 +2,6 @@ import java.util.*;
 import java.io.*;
 import javax.imageio.stream.*;
 
-//needs to import the game package or node class 
-//will not work until this is/can b done
-import game.Node;
 
 public class RemoveClones
 {
@@ -92,31 +89,34 @@ public class RemoveClones
 
 		if (children != null)
 		{
-			int counter = 0;
 			for (int i = 0; i < children.length; i++)
 			{
 				for (int j = 0; j < children.length; j++)
 				{
+					//as to not check it with itself
 					if (i != j)
 					{
 						try
 						{
+							//get the byte sequences from the pics
 							byte[] file1 = getBytesFromFile(children[i]);
 							byte[] file2 = getBytesFromFile(children[j]);
 
 							boolean isEqual = Arrays.equals(file1, file2);
+							//
 							if (isEqual)
 							{
 								s1 = file1.toString();
 								s2 = file2.toString();
 
-								System.out.println("before for loop");
 								for (int k = 0; k < maps.length; k++)
 								{
-									System.out.println("in for loop");
 									try
 									{
+										//needs alteration
+										//onSec just for pausing to manually see what has been down and to view variables
 										Node mapNode = Node.parseFrom(new FileInputStream(maps.toString()));
+										oneSec();
 										System.out.println("in try");
 										mapString = mapNode.content();
 										System.out.println("mapNode content: " + mapString);
@@ -128,7 +128,7 @@ public class RemoveClones
 									}
 									catch (Exception ex) { System.err.println("Caught Exception: " + ex.getMessage()); }
 								}
-								System.out.println("after for loop");
+								//delete the pic after switched out
 								deleteFile(children[j]);
 							}
 						}
