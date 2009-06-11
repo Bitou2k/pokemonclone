@@ -1,6 +1,9 @@
 import java.util.*;
 import java.io.*;
 import javax.imageio.stream.*;
+
+//needs to import the game package or node class 
+//will not work until this is/can b done
 import game.Node;
 
 public class RemoveClones
@@ -114,7 +117,6 @@ public class RemoveClones
 									try
 									{
 										Node mapNode = Node.parseFrom(new FileInputStream(maps.toString()));
-										oneSec();
 										System.out.println("in try");
 										mapString = mapNode.content();
 										System.out.println("mapNode content: " + mapString);
